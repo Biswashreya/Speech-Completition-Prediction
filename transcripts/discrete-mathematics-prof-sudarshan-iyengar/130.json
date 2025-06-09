@@ -1,0 +1,38 @@
+{
+  "title": "Reflexive relation - Introduction",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:07",
+      "text": "You see, life is full of different  types of things. You take a vehicle,"
+    },
+    {
+      "start": "0:07",
+      "end": "0:11",
+      "text": "there are different types of vehicles,  a two-wheeler, a three-wheeler,"
+    },
+    {
+      "start": "0:11",
+      "end": "0:19",
+      "text": "a four-wheeler, right, even an aeroplane for  that matter is a type of vehicle. Similarly,"
+    },
+    {
+      "start": "0:19",
+      "end": "0:26",
+      "text": "a relation, as we define, even that comes  in different types. It is important for"
+    },
+    {
+      "start": "0:26",
+      "end": "0:34",
+      "text": "us to study them by segregating different  types of relations. First in the sequence"
+    },
+    {
+      "start": "0:34",
+      "end": "0:41",
+      "text": "is what we call the Reflexive Relation. Let  me motivate it properly with a nice example."
+    }
+  ],
+  "timestamped": true
+}

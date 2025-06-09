@@ -1,0 +1,43 @@
+{
+  "title": "Few notations",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:12",
+      "text": "Here is a very important notation to  note. Whenever I say a relation matrix"
+    },
+    {
+      "start": "0:12",
+      "end": "0:18",
+      "text": "representation and another relation’s matrix  representation, let’s say these two matrices here,"
+    },
+    {
+      "start": "0:18",
+      "end": "0:26",
+      "text": "I say one matrix is less than or equal to the  other matrix if for every entry on the left"
+    },
+    {
+      "start": "0:26",
+      "end": "0:34",
+      "text": "matrix for every entry; corresponding entry  in the right matrix is greater or equal to."
+    },
+    {
+      "start": "0:34",
+      "end": "0:41",
+      "text": "For example, on the left if you have a 0, on  the right you must have 0 or 1. If you have 1"
+    },
+    {
+      "start": "0:41",
+      "end": "0:47",
+      "text": "on the left side, you must then should have  1 on the right side. All that we are saying"
+    },
+    {
+      "start": "0:47",
+      "end": "0:53",
+      "text": "is that the corresponding entries respect the  inequality that is put between these two matrices."
+    }
+  ],
+  "timestamped": true
+}

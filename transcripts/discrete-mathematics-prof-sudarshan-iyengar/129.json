@@ -1,0 +1,88 @@
+{
+  "title": "Number of relations - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "So, formally speaking, if we had the set S  with not just five elements but let's say,"
+    },
+    {
+      "start": "0:09",
+      "end": "0:18",
+      "text": "in general, n elements a1 to an, S cross S will  have the following elements. From (a1, a1),"
+    },
+    {
+      "start": "0:18",
+      "end": "0:33",
+      "text": "(a1, a2), up to (an-1, an), and then (an, an),  right. So you’ll have total number of elements"
+    },
+    {
+      "start": "0:33",
+      "end": "0:39",
+      "text": "in S cross S will be n square elements. Our question is, what is the total possible"
+    },
+    {
+      "start": "0:39",
+      "end": "0:47",
+      "text": "subsets of this S cross S. So before that, we  all know that in general when you take a set A,"
+    },
+    {
+      "start": "0:47",
+      "end": "0:55",
+      "text": "comprising of some, let’s say, n elements,  alpha 1, alpha 2; up to let’s not say n,"
+    },
+    {
+      "start": "0:55",
+      "end": "1:03",
+      "text": "let's say m elements. We know the total number  of subsets of this. It's called the power set,"
+    },
+    {
+      "start": "1:03",
+      "end": "1:09",
+      "text": "if you remember. Total possible subsets is -  you basically write all possible sets here,"
+    },
+    {
+      "start": "1:09",
+      "end": "1:19",
+      "text": "all possible subsets of A here. The number of  elements in this power set will be 2 to the n"
+    },
+    {
+      "start": "1:19",
+      "end": "1:29",
+      "text": "rather m, you took m here, 2 to the m, correct. The result is straightforward. You can map this"
+    },
+    {
+      "start": "1:29",
+      "end": "1:37",
+      "text": "to all possible binary numbers of length m.  There are 2 to the m of them. Every binary"
+    },
+    {
+      "start": "1:37",
+      "end": "1:44",
+      "text": "number represents whether you pick an element  from the set A or not, right. We have discussed"
+    },
+    {
+      "start": "1:44",
+      "end": "1:52",
+      "text": "this before. It's a straightforward observation. Now the total number of subsets of S cross S will"
+    },
+    {
+      "start": "1:52",
+      "end": "1:58",
+      "text": "simply be, 2 to the power of the number of  elements in S cross S, which is 2 to the n"
+    },
+    {
+      "start": "1:58",
+      "end": "2:05",
+      "text": "square. Why? Because every possible subset of  S cross S is a valid relation, and hence, there"
+    },
+    {
+      "start": "2:05",
+      "end": "2:13",
+      "text": "are 2 to the n square valid relations, and that  is the number of total number of relations on S."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,178 @@
+{
+  "title": "Number of symmetric relations - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "What are the total possible symmetric  relations given a set S with n elements?"
+    },
+    {
+      "start": "0:09",
+      "end": "0:17",
+      "text": "This is a very little trickier question  but the answer is a very nice once you"
+    },
+    {
+      "start": "0:17",
+      "end": "0:20",
+      "text": "understand it. It's a little involved. You  will take some time to understand this."
+    },
+    {
+      "start": "0:20",
+      "end": "0:28",
+      "text": "So, what are the total possible symmetric  relations? Firstly, let us write down the given"
+    },
+    {
+      "start": "0:28",
+      "end": "0:36",
+      "text": "symmetric relation and its matrix representation.  So, you have a matrix here and as you know this is"
+    },
+    {
+      "start": "0:36",
+      "end": "0:43",
+      "text": "called the lower triangle of the matrix and this  is called the upper triangle of the matrix and you"
+    },
+    {
+      "start": "0:43",
+      "end": "0:54",
+      "text": "have the diagonal. Now let me paint the items  in the diagonal and the lower triangle. Let me"
+    },
+    {
+      "start": "0:54",
+      "end": "1:00",
+      "text": "paint this item blue. You see all of them became  blue and all the elements above the diagonal,"
+    },
+    {
+      "start": "1:00",
+      "end": "1:07",
+      "text": "the upper triangle I am going to paint it  red. You will soon see why I am doing this."
+    },
+    {
+      "start": "1:07",
+      "end": "1:19",
+      "text": "Now observe closely. Any element in the lower  diagonal, any space in the lower diagonal of this"
+    },
+    {
+      "start": "1:19",
+      "end": "1:26",
+      "text": "matrix if you put one, the corresponding symmetric  side on the red zone should also be one. So,"
+    },
+    {
+      "start": "1:26",
+      "end": "1:32",
+      "text": "you don't have a choice for the red zone once  you decide on what is in the blue zone. That"
+    },
+    {
+      "start": "1:32",
+      "end": "1:36",
+      "text": "is lower triangle. Correct. So, you have your  freedom to put whatever you want in the lower"
+    },
+    {
+      "start": "1:36",
+      "end": "1:42",
+      "text": "triangle and of course you can put whatever  you want in the diagonal. Why? What is the"
+    },
+    {
+      "start": "1:42",
+      "end": "1:46",
+      "text": "diagonal doesn't matter for a symmetric  relation? All that you need to observe,"
+    },
+    {
+      "start": "1:46",
+      "end": "1:53",
+      "text": "all that you need to ensure is that whatever  is below the diagonal symmetrically should be"
+    },
+    {
+      "start": "1:53",
+      "end": "1:58",
+      "text": "there above the diagonal. If it's zero here, it  should be zero there. If there is a one here,"
+    },
+    {
+      "start": "1:58",
+      "end": "2:04",
+      "text": "it should be a one there. Correct. Now I have my freedom to put whatever"
+    },
+    {
+      "start": "2:04",
+      "end": "2:13",
+      "text": "I want in this blue space holders, these blue  rectangles basically, small-small rectangles. So,"
+    },
+    {
+      "start": "2:13",
+      "end": "2:19",
+      "text": "in this blue a rather squares, in these blue  squares I have a right to put anything I want"
+    },
+    {
+      "start": "2:19",
+      "end": "2:27",
+      "text": "but of course zeros are ones. So how many blue  squares are there to begin with? One plus two"
+    },
+    {
+      "start": "2:27",
+      "end": "2:39",
+      "text": "plus three plus four plus five so on up to  n. So, you have in total n into n plus 1 by"
+    },
+    {
+      "start": "2:39",
+      "end": "2:46",
+      "text": "2 number of blue squares and you can put whatever  you want here. Whatever you put here you will get"
+    },
+    {
+      "start": "2:46",
+      "end": "2:53",
+      "text": "a corresponding values in your red blocks as  you can see and it'll be a symmetric relation."
+    },
+    {
+      "start": "2:53",
+      "end": "2:59",
+      "text": "Or given symmetric relation you can always see  that they are symmetric along the diagonal. So,"
+    },
+    {
+      "start": "2:59",
+      "end": "3:07",
+      "text": "all that I need to count right now is in how  many ways can I write zeros and ones in the"
+    },
+    {
+      "start": "3:07",
+      "end": "3:14",
+      "text": "blue zone which by the way has n into  n plus 1 by 2 number of blue squares."
+    },
+    {
+      "start": "3:14",
+      "end": "3:24",
+      "text": "So, the answer simply is 2 to the power of n  into n plus 1 by 2 which is 2 to the power n"
+    },
+    {
+      "start": "3:24",
+      "end": "3:32",
+      "text": "square plus n by 2. n square plus n by 2  in the exponent. Now why is it 2 to the"
+    },
+    {
+      "start": "3:32",
+      "end": "3:39",
+      "text": "power of because you can take only a part  of this blue zone and call it all ones,"
+    },
+    {
+      "start": "3:39",
+      "end": "3:46",
+      "text": "rest are zeros. It again boils down to  you considering a subset of these blue"
+    },
+    {
+      "start": "3:46",
+      "end": "3:52",
+      "text": "squares. You can consider the subset of  these blue squares in 2 to the n square"
+    },
+    {
+      "start": "3:52",
+      "end": "4:00",
+      "text": "plus n by 2 ways. It's a little involved maybe  you should try watching the video once again or"
+    },
+    {
+      "start": "4:00",
+      "end": "4:05",
+      "text": "maybe try thinking about it with 3 cross 3 matrix  example and it will be very clear to you people."
+    }
+  ],
+  "timestamped": true
+}

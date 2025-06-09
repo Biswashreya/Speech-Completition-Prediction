@@ -1,0 +1,103 @@
+{
+  "title": "Introduction to Relation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "Let us start with an example. Assume, there are  two people A and B. There are so many ways in"
+    },
+    {
+      "start": "0:10",
+      "end": "0:19",
+      "text": "which one might know the other person. One way is  they don't know each other. Other way, second way,"
+    },
+    {
+      "start": "0:19",
+      "end": "0:29",
+      "text": "is A knows B but B doesn't know A. Second way.  Third way would be B knows A but A doesn't know"
+    },
+    {
+      "start": "0:29",
+      "end": "0:38",
+      "text": "B. Third way. The last way, as you would have  guessed, is A knows B and B knows A. You see there"
+    },
+    {
+      "start": "0:38",
+      "end": "0:46",
+      "text": "are 4 different ways in which A and B can know  each other, not knowing each other is also a way."
+    },
+    {
+      "start": "0:46",
+      "end": "0:58",
+      "text": "Let us take 5 people A, B, C, D and E. These  are 5 people. They might know each other in"
+    },
+    {
+      "start": "0:58",
+      "end": "1:10",
+      "text": "many different ways. One such probable way is, A,  B, C, D, E know each other in a very complex way;"
+    },
+    {
+      "start": "1:10",
+      "end": "1:14",
+      "text": "some people know someone, some people  doesn't know; they don't know someone else,"
+    },
+    {
+      "start": "1:14",
+      "end": "1:24",
+      "text": "and so on. This is actually called a relation. By a relation we mean given a set of, let's say,"
+    },
+    {
+      "start": "1:24",
+      "end": "1:31",
+      "text": "5 people, these 5 can be anything, A, B, C, D, E,  let’s say. There could be any kind of relationship"
+    },
+    {
+      "start": "1:31",
+      "end": "1:39",
+      "text": "between people and one such diagram is called  a relation. It will be clear to you people"
+    },
+    {
+      "start": "1:39",
+      "end": "1:45",
+      "text": "very soon. But then just concentrate on this  fact that given a set S, there are many ways"
+    },
+    {
+      "start": "1:45",
+      "end": "1:53",
+      "text": "in which we can define a relation. You see. Everyone knowing everyone else is a relation,"
+    },
+    {
+      "start": "1:53",
+      "end": "2:01",
+      "text": "as you can see here. Nobody knowing anyone is  another relation. Correct? So they are extremes"
+    },
+    {
+      "start": "2:01",
+      "end": "2:09",
+      "text": "basically, situation where nobody knows anyone to  situation where everyone knows everyone. So here"
+    },
+    {
+      "start": "2:09",
+      "end": "2:14",
+      "text": "is a basically there's a spectrum of different  possible relationships between these two things."
+    },
+    {
+      "start": "2:14",
+      "end": "2:21",
+      "text": "Each one of them is called a relation. Right? Let's see more of this very soon, but all you"
+    },
+    {
+      "start": "2:21",
+      "end": "2:29",
+      "text": "need to know is given a few people represented  by dots and relationship between them basically"
+    },
+    {
+      "start": "2:29",
+      "end": "2:35",
+      "text": "about who knows who, this entire thing  comprises of what we call a relation."
+    }
+  ],
+  "timestamped": true
+}

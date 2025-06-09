@@ -1,0 +1,43 @@
+{
+  "title": "Cartesian Product",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:14",
+      "text": "Let's take a set A of some five elements and then  I write down A in two columns, as you can see, and"
+    },
+    {
+      "start": "0:14",
+      "end": "0:24",
+      "text": "then I will try to pick all possible two-element  sets from A. How do I do that? I take something"
+    },
+    {
+      "start": "0:24",
+      "end": "0:32",
+      "text": "from the left side something from right side. How  can I do this? I can take A and an A, A and a B,"
+    },
+    {
+      "start": "0:32",
+      "end": "0:41",
+      "text": "A and a C, A and a D, A and an E; or B and an  A, B and a B, B and a C, so on and so forth. Do"
+    },
+    {
+      "start": "0:41",
+      "end": "0:48",
+      "text": "you see how many possible such two tuples I can  take? It's called the two tuples. I can actually"
+    },
+    {
+      "start": "0:48",
+      "end": "0:59",
+      "text": "take 5 into 5, 25 of them. This is called the  cross product of a set A with itself. We denote"
+    },
+    {
+      "start": "0:59",
+      "end": "1:07",
+      "text": "that by A cross A. Note this. Throughout this  chapter, this notation will be excessively used."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,153 @@
+{
+  "title": "Examples of Relations",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:08",
+      "text": "You’re now familiar with Cartesian product and relations, let us now see some problems"
+    },
+    {
+      "start": "0:08",
+      "end": "0:09",
+      "text": "on it."
+    },
+    {
+      "start": "0:09",
+      "end": "0:17",
+      "text": "Consider this set A one two three and B to be a, b, c and d."
+    },
+    {
+      "start": "0:17",
+      "end": "0:23",
+      "text": "The question is what is A cross B. It’s a very straightforward question."
+    },
+    {
+      "start": "0:23",
+      "end": "0:28",
+      "text": "A cross B will have the elements, I am going to take one element from A and B and I am"
+    },
+    {
+      "start": "0:28",
+      "end": "0:34",
+      "text": "going to follow this procedure for all the elements of A and B. So what will A cross"
+    },
+    {
+      "start": "0:34",
+      "end": "0:35",
+      "text": "B look like?"
+    },
+    {
+      "start": "0:35",
+      "end": "0:44",
+      "text": "A cross B looks like set of all x comma y where x belongs to A and y belongs to B. So"
+    },
+    {
+      "start": "0:44",
+      "end": "0:50",
+      "text": "A cross B will be 1 comma a, 1 comma b, 1 comma c, 1 comma d, 2 comma a, 2 comma b,"
+    },
+    {
+      "start": "0:50",
+      "end": "0:56",
+      "text": "2 comma c, 2 comma d, 3 comma a, 3 comma b, 3 comma c and 3 comma d."
+    },
+    {
+      "start": "0:56",
+      "end": "1:03",
+      "text": "So all these are the elements of A cross B. Please note A cross B is not equal to B cross"
+    },
+    {
+      "start": "1:03",
+      "end": "1:04",
+      "text": "A."
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "You see here 1 comma a belongs to A cross B, but a comma 1 does not belong to A cross"
+    },
+    {
+      "start": "1:10",
+      "end": "1:17",
+      "text": "B. I am just making a point here that A cross B and B cross A are not same in general."
+    },
+    {
+      "start": "1:17",
+      "end": "1:20",
+      "text": "So what is going to be the cardinality of A cross B?"
+    },
+    {
+      "start": "1:20",
+      "end": "1:26",
+      "text": "So to find the cardinality of A cross B, we use the formula it is equal to cardinality"
+    },
+    {
+      "start": "1:26",
+      "end": "1:35",
+      "text": "of A into cardinality of B. Cardinality of A happens to be 3 and B happens to be 4, and"
+    },
+    {
+      "start": "1:35",
+      "end": "1:39",
+      "text": "hence cardinality of A cross B is equal to 12."
+    },
+    {
+      "start": "1:39",
+      "end": "1:44",
+      "text": "The next question: Consider the set S having the elements 1, 2, 3, 4, 5, 6."
+    },
+    {
+      "start": "1:44",
+      "end": "1:51",
+      "text": "Now I am going to define the relation R on the set S as set of all (a, b) such that a"
+    },
+    {
+      "start": "1:51",
+      "end": "1:54",
+      "text": "+ b is less than equal to 4."
+    },
+    {
+      "start": "1:54",
+      "end": "1:59",
+      "text": "So what are the elements in this relation R. So the relation R has elements, which satisfied"
+    },
+    {
+      "start": "1:59",
+      "end": "2:02",
+      "text": "this condition a +b is less than or equal to 4."
+    },
+    {
+      "start": "2:02",
+      "end": "2:12",
+      "text": "Now, so it will precisely have 1 comma 1, 1 comma 2, 1 comma 3, 2 comma 1, 2 comma 2"
+    },
+    {
+      "start": "2:12",
+      "end": "2:13",
+      "text": "and 3 comma 1."
+    },
+    {
+      "start": "2:13",
+      "end": "2:20",
+      "text": "Please note 1 comma 3 and 3 comma 1 are not the same, as illustrated in the first question,"
+    },
+    {
+      "start": "2:20",
+      "end": "2:23",
+      "text": "and hence, they are to be returned as two different elements."
+    },
+    {
+      "start": "2:23",
+      "end": "2:25",
+      "text": "So that is it."
+    },
+    {
+      "start": "2:25",
+      "end": "2:26",
+      "text": "These are the elements in the relation R."
+    }
+  ],
+  "timestamped": true
+}

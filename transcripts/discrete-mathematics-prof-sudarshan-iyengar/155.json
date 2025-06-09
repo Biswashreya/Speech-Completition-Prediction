@@ -1,0 +1,83 @@
+{
+  "title": "Equivalence relation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "Let us start with a couple of examples.  First example, assume I walk into a town,"
+    },
+    {
+      "start": "0:10",
+      "end": "0:20",
+      "text": "a town full of people. Let this be my set S.  I called two people to be related, let’s say,"
+    },
+    {
+      "start": "0:20",
+      "end": "0:32",
+      "text": "a and b are related. (a, b) belongs to R if a and  b both are born in the same month. Assume here is"
+    },
+    {
+      "start": "0:32",
+      "end": "0:38",
+      "text": "a person, here is a person and they both were  born in November. Then this, this belongs to R,"
+    },
+    {
+      "start": "0:38",
+      "end": "0:47",
+      "text": "(a, b) belongs to R. This is one example. The second example is, assume I go to a school,"
+    },
+    {
+      "start": "0:47",
+      "end": "0:56",
+      "text": "my set S here is going to be a school  full of kids. Any two kids are related (a,"
+    },
+    {
+      "start": "0:57",
+      "end": "1:05",
+      "text": "b) belongs to R, S is set of all children in  the school. (a, b) belongs to R if a and b"
+    },
+    {
+      "start": "1:05",
+      "end": "1:15",
+      "text": "have the same blood group. Assume a was of  blood group B positive, b is also of blood"
+    },
+    {
+      "start": "1:15",
+      "end": "1:21",
+      "text": "group B positive then (a, b) belongs to R.  In case they are of different blood groups,"
+    },
+    {
+      "start": "1:21",
+      "end": "1:28",
+      "text": "that don’t belong to R. (c, d) is of different  blood groups, then they do not belong to R."
+    },
+    {
+      "start": "1:28",
+      "end": "1:37",
+      "text": "What do you see common in these two examples? In  fact, these two relations are more or less the"
+    },
+    {
+      "start": "1:37",
+      "end": "1:45",
+      "text": "same. How? Do you observe that both the  relations satisfy the three properties,"
+    },
+    {
+      "start": "1:45",
+      "end": "1:53",
+      "text": "namely reflexive, symmetric and transitive?  It’s easy to verify this. Such a relation"
+    },
+    {
+      "start": "1:53",
+      "end": "1:58",
+      "text": "is called an equivalence relation. So, what’s an equivalence relation?"
+    },
+    {
+      "start": "1:58",
+      "end": "2:04",
+      "text": "Something that satisfies reflexive, symmetric  and transitive, all three put together."
+    }
+  ],
+  "timestamped": true
+}

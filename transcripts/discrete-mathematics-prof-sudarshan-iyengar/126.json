@@ -1,0 +1,88 @@
+{
+  "title": "Revisiting Representations of a Relation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "So points to note people, look I defined  a relation using three different ways,"
+    },
+    {
+      "start": "0:09",
+      "end": "0:17",
+      "text": "rather different representations, right. First one was graphical, I call it graphical,"
+    },
+    {
+      "start": "0:17",
+      "end": "0:22",
+      "text": "arrows going from one thing to the other.  Second one was simple matrix with 0s and"
+    },
+    {
+      "start": "0:22",
+      "end": "0:30",
+      "text": "1s. The third one, as you can see was a  set theoretic notation. One two and three,"
+    },
+    {
+      "start": "0:30",
+      "end": "0:35",
+      "text": "please note this, we might toggle between  these things when we talk about relations."
+    },
+    {
+      "start": "0:35",
+      "end": "0:45",
+      "text": "A small key point to keep in mind: The first one  is a graphical representation, it is mainly for"
+    },
+    {
+      "start": "0:45",
+      "end": "0:50",
+      "text": "our minds to understand what's a relation. It's  easy on our minds. Although first and second,"
+    },
+    {
+      "start": "0:50",
+      "end": "0:56",
+      "text": "the matrix representation and the graphical  representation, denote the same relation,"
+    },
+    {
+      "start": "0:56",
+      "end": "1:02",
+      "text": "second one is easy on the minds of your  computer, as you know computers only take"
+    },
+    {
+      "start": "1:02",
+      "end": "1:10",
+      "text": "matrices and Boolean values, right, it is  easy to feed this to the computer, right."
+    },
+    {
+      "start": "1:10",
+      "end": "1:18",
+      "text": "The last one is a set theoretic notation,  as you can see. It again an easy one for a"
+    },
+    {
+      "start": "1:18",
+      "end": "1:23",
+      "text": "computer to read, understand, and we can ask  more questions about such a relation. You'll"
+    },
+    {
+      "start": "1:23",
+      "end": "1:28",
+      "text": "understand very soon what I am talking. All that  you need to know is the matrix representation is"
+    },
+    {
+      "start": "1:28",
+      "end": "1:33",
+      "text": "easy on the computer; the first one, the  graphical representation is easy on the"
+    },
+    {
+      "start": "1:33",
+      "end": "1:39",
+      "text": "minds of humans. So if you are wondering why  state the same thing in three different forms,"
+    },
+    {
+      "start": "1:39",
+      "end": "1:43",
+      "text": "as I told you, it is just the ease  of representation, nothing else."
+    }
+  ],
+  "timestamped": true
+}

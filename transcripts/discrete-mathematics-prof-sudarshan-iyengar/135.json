@@ -1,0 +1,78 @@
+{
+  "title": "Symmetric Relation - Matrix representation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "I'm sure things are getting easy on your  minds. Let me ask you a question. I just"
+    },
+    {
+      "start": "0:10",
+      "end": "0:16",
+      "text": "now defined what is a symmetric relation. Can  you tell me how does a matrix corresponding to"
+    },
+    {
+      "start": "0:16",
+      "end": "0:26",
+      "text": "a symmetric relation look like that of let's  say parallel lines, or any symmetric relation"
+    },
+    {
+      "start": "0:26",
+      "end": "0:31",
+      "text": "you can think of? What's the rule there? What's  the property of a relation that is symmetric?"
+    },
+    {
+      "start": "0:31",
+      "end": "0:40",
+      "text": "Whenever A, B is there B, A should be there,  correct, which means Ath row and Bth column"
+    },
+    {
+      "start": "0:40",
+      "end": "0:47",
+      "text": "will have a 1 whenever A, B is part of the  relation but then if it's a symmetric relation B,"
+    },
+    {
+      "start": "0:47",
+      "end": "0:55",
+      "text": "A should also be present which means whenever  Ath row and Bth column has a 1, Bth row,"
+    },
+    {
+      "start": "0:55",
+      "end": "1:01",
+      "text": "Ath column should also have a 1. So, what do  you mean by Ath row, Bth column and Bth row,"
+    },
+    {
+      "start": "1:01",
+      "end": "1:09",
+      "text": "Ath column? Think about it. As you can see,  they are two entries symmetrically across the"
+    },
+    {
+      "start": "1:09",
+      "end": "1:21",
+      "text": "diagonal of the matrix right. So, pause and think  if required. If a relation is symmetric then the"
+    },
+    {
+      "start": "1:21",
+      "end": "1:33",
+      "text": "ijth entry of the matrix and the jith entry of  the matrix will both be either 1s or 0s. Correct?"
+    },
+    {
+      "start": "1:33",
+      "end": "1:36",
+      "text": "The matrix will appear like a mirror  reflection of what is above the diagonal"
+    },
+    {
+      "start": "1:36",
+      "end": "1:43",
+      "text": "and what is below the diagonal. So  formally speaking a relation R is"
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "said to be symmetric if whenever A, B  belongs to R, B, A also belongs to R."
+    }
+  ],
+  "timestamped": true
+}

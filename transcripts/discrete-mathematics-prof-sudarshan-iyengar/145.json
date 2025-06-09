@@ -1,0 +1,53 @@
+{
+  "title": "Antisymmetric - Graphical representation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:08",
+      "text": "Now that we saw a couple of examples of  antisymmetric relations, I am sure it is"
+    },
+    {
+      "start": "0:08",
+      "end": "0:16",
+      "text": "very clear to you people. Let me go ahead and make  a few observations about antisymmetric relations."
+    },
+    {
+      "start": "0:16",
+      "end": "0:23",
+      "text": "First observation, let me look at the graphical  representation of an antisymmetric relation."
+    },
+    {
+      "start": "0:23",
+      "end": "0:34",
+      "text": "How does it look like? So whenever (a, b) is  present; (b, a) is not present. Which means (a,"
+    },
+    {
+      "start": "0:36",
+      "end": "0:41",
+      "text": "b) is present; means there is an arrow  starting from a going to b. Whenever"
+    },
+    {
+      "start": "0:41",
+      "end": "0:50",
+      "text": "there is an arrow from one node to another node  the other way arrow is strictly missing. That’s"
+    },
+    {
+      "start": "0:50",
+      "end": "0:56",
+      "text": "what we mean by an antisymmetric relation. However, there can be loops, you see. (a,"
+    },
+    {
+      "start": "0:57",
+      "end": "1:05",
+      "text": "a) can be present but whenever (a, b) is present  (b, a), cannot be present. Just in case (b,"
+    },
+    {
+      "start": "1:05",
+      "end": "1:12",
+      "text": "a) is present, then (a, b) cannot be present.  This is what we mean by an antisymmetric relation."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Number of symmetric relations - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "As repetitive as this may sound.Yes, we are  emphasizing on the fact that discrete math is"
+    },
+    {
+      "start": "0:09",
+      "end": "0:15",
+      "text": "all about counting. We have been asking this  question of how many ways again and again,"
+    },
+    {
+      "start": "0:15",
+      "end": "0:24",
+      "text": "and we'll ask it once more for symmetric  relations. So, my question is what are the"
+    },
+    {
+      "start": "0:24",
+      "end": "0:32",
+      "text": "total possible symmetric relations on a set  S with five elements? In general n elements."
+    }
+  ],
+  "timestamped": true
+}

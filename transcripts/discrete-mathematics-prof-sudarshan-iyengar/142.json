@@ -1,0 +1,83 @@
+{
+  "title": "Transitive relation - Examples and non examples",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:12",
+      "text": "Let us take an example. Consider a hall full  of 50 students and the relation there is A,"
+    },
+    {
+      "start": "0:13",
+      "end": "0:23",
+      "text": "B belongs to R if A is taller than B. You can  observe something nice in this relation which"
+    },
+    {
+      "start": "0:23",
+      "end": "0:35",
+      "text": "is not always true with all relations and that is  whenever A is taller than B and B is taller than"
+    },
+    {
+      "start": "0:35",
+      "end": "0:46",
+      "text": "C then A is taller than C. Correct. By that I mean  if A, B belongs to R and B, C belongs to R then A,"
+    },
+    {
+      "start": "0:46",
+      "end": "0:53",
+      "text": "C belongs to R. Very easy to observe. I  repeat A, B if it's in the relation B,"
+    },
+    {
+      "start": "0:53",
+      "end": "1:01",
+      "text": "C if it's in the relation then A, C is in  the relation. If this be the case then you"
+    },
+    {
+      "start": "1:01",
+      "end": "1:08",
+      "text": "call such a relation as a transitive relation. You see not every relation is transitive. I'll"
+    },
+    {
+      "start": "1:08",
+      "end": "1:16",
+      "text": "try giving you an example of a relation that is  not at all transitive. I shake my hands with you"
+    },
+    {
+      "start": "1:16",
+      "end": "1:23",
+      "text": "and you shake your hands with your friend. It  doesn’t mean that I have shaken hands with your"
+    },
+    {
+      "start": "1:23",
+      "end": "1:31",
+      "text": "friend right. So, A shakes hand with B so A, B  belongs to R if that be the relation and if B,"
+    },
+    {
+      "start": "1:31",
+      "end": "1:39",
+      "text": "C have shaken hands observe this is a  symmetric relation. If A, B is there then B,"
+    },
+    {
+      "start": "1:39",
+      "end": "1:48",
+      "text": "A is there but then it is in no way transitive  because A, B and B, C doesn't imply A,"
+    },
+    {
+      "start": "1:49",
+      "end": "1:53",
+      "text": "C belongs to the relation right. So, I just now gave you an example"
+    },
+    {
+      "start": "1:53",
+      "end": "1:59",
+      "text": "of a relation that is not transitive.  So, not all relations are transitive."
+    },
+    {
+      "start": "1:59",
+      "end": "2:04",
+      "text": "Only some relations are transitive. Can you  think of more relations that are transitive?"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,128 @@
+{
+  "title": "Example of a Reflexive relation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "Remember in your school days, there used to be  voting for the leader of the class, and my teacher"
+    },
+    {
+      "start": "0:11",
+      "end": "0:20",
+      "text": "would get into a classroom full of 50 students  and say, open a chit of paper and write down"
+    },
+    {
+      "start": "0:20",
+      "end": "0:27",
+      "text": "the names of people whom you would like to vote.  We were given the liberty of writing many names,"
+    },
+    {
+      "start": "0:27",
+      "end": "0:37",
+      "text": "so I would write some four names, saying I would  want this person as the leader or this person or"
+    },
+    {
+      "start": "0:37",
+      "end": "0:42",
+      "text": "this person or this person, some four names. So invariably, the teacher would observe that"
+    },
+    {
+      "start": "0:42",
+      "end": "0:47",
+      "text": "everyone would write down their name  first. They all wanted to be leaders"
+    },
+    {
+      "start": "0:47",
+      "end": "0:52",
+      "text": "of the class. Leaders would get some perks,  so nobody wanted to miss that opportunity,"
+    },
+    {
+      "start": "0:52",
+      "end": "0:59",
+      "text": "but at the same time if everyone only included  their names, then nobody else will get elected."
+    },
+    {
+      "start": "0:59",
+      "end": "1:05",
+      "text": "So they would include others name as well. So  do you see a kind of relation happening here?"
+    },
+    {
+      "start": "1:05",
+      "end": "1:12",
+      "text": "Let's not take the example of 50 students; let's  take only 10 students, as you can see the example"
+    },
+    {
+      "start": "1:12",
+      "end": "1:23",
+      "text": "here, right. Ten dots and some sort of voting  that people do. I vote for some four people,"
+    },
+    {
+      "start": "1:23",
+      "end": "1:29",
+      "text": "this is how it looks like. One of them is me for  sure. So when I vote for myself how does the arrow"
+    },
+    {
+      "start": "1:29",
+      "end": "1:37",
+      "text": "look like? You guessed it right, it should  be a loop like this, right. Here is a loop."
+    },
+    {
+      "start": "1:37",
+      "end": "1:43",
+      "text": "In this example of the class teacher  taking notes from everyone, there is a"
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "loop on every single person, because I told you  everybody would vote for themselves invariably,"
+    },
+    {
+      "start": "1:50",
+      "end": "1:56",
+      "text": "and would vote for others as well. So here is a relation. Let’s get back to"
+    },
+    {
+      "start": "1:56",
+      "end": "2:07",
+      "text": "our A x A definition. Here is a relation, which  is a subset of our set A x A where A comprises"
+    },
+    {
+      "start": "2:07",
+      "end": "2:18",
+      "text": "of all ten students. Definitely, for sure, you  observe that self loops are here, which means X,"
+    },
+    {
+      "start": "2:18",
+      "end": "2:25",
+      "text": "X is here. The first person, the same person  is here. Second person, second person is here,"
+    },
+    {
+      "start": "2:25",
+      "end": "2:32",
+      "text": "right; (a1, a1) (a2, a2) (a3, a3) and so  on up to (a10, a10) is definitely here,"
+    },
+    {
+      "start": "2:32",
+      "end": "2:42",
+      "text": "and beyond this, there are more elements of A x A. Such a relation is called a Reflexive Relation."
+    },
+    {
+      "start": "2:42",
+      "end": "2:53",
+      "text": "To summarize, a relation is a subset of A x A. If  it contains all possible elements of the form (x,"
+    },
+    {
+      "start": "2:53",
+      "end": "3:01",
+      "text": "x) for all values of x from the set A, we  call such a relation a Reflexive Relation."
+    },
+    {
+      "start": "3:01",
+      "end": "3:08",
+      "text": "We'll see some examples of what makes a reflexive  relation, so that it becomes very clear to you."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Partition - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:08",
+      "text": "Let’s get back to the example of a town full of  people where two people are related if they have"
+    },
+    {
+      "start": "0:08",
+      "end": "0:17",
+      "text": "the same birth month. There is something that  we observe here. Any random person you take"
+    },
+    {
+      "start": "0:17",
+      "end": "0:26",
+      "text": "like say an x belonging to the set S, his  month of birth happens to be April. Don’t"
+    },
+    {
+      "start": "0:26",
+      "end": "0:34",
+      "text": "you think he is related to everyone who is born  in April? Right? So is true with someone else,"
+    },
+    {
+      "start": "0:34",
+      "end": "0:41",
+      "text": "let’s say y who was born in November, and this  chap will be related to everyone born in November."
+    },
+    {
+      "start": "0:41",
+      "end": "0:53",
+      "text": "Let us observe something in this example. You  see the entire town comprises of people. Each"
+    },
+    {
+      "start": "0:53",
+      "end": "1:00",
+      "text": "and every person is born in one month or the  other. Let us take everyone who were born in"
+    },
+    {
+      "start": "1:00",
+      "end": "1:07",
+      "text": "January. Call them the January cluster.  Let’s take everyone born in February and"
+    },
+    {
+      "start": "1:07",
+      "end": "1:17",
+      "text": "call it the February cluster. So, on and so forth. Do you observe something? In the January cluster,"
+    },
+    {
+      "start": "1:17",
+      "end": "1:25",
+      "text": "every single person born on January is  present of that town. Any two people"
+    },
+    {
+      "start": "1:25",
+      "end": "1:34",
+      "text": "inside this cluster are related. Any (a,b)  where a and b are from this cluster satisfy"
+    },
+    {
+      "start": "1:34",
+      "end": "1:41",
+      "text": "this property that (a,b) belongs to R. On the contrary, if you take two people"
+    },
+    {
+      "start": "1:41",
+      "end": "1:49",
+      "text": "across clusters, they are obviously not related. So, let’s summarize. Take any two people within"
+    },
+    {
+      "start": "1:49",
+      "end": "1:55",
+      "text": "any of these clusters. Pick a cluster. Pick  two people from the cluster. You will see that"
+    },
+    {
+      "start": "1:55",
+      "end": "2:03",
+      "text": "they are related. Pick two people across  the clusters. They are not related. This"
+    },
+    {
+      "start": "2:03",
+      "end": "2:09",
+      "text": "happens to be a very important observation  about equivalence relations in general."
+    }
+  ],
+  "timestamped": true
+}

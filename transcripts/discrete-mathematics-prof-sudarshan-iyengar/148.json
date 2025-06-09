@@ -1,0 +1,98 @@
+{
+  "title": "Condition for relation to be reflexive",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "So I told you, discrete math, the very origin  of this subject was because of the advent of"
+    },
+    {
+      "start": "0:10",
+      "end": "0:19",
+      "text": "computing. It was computer science that led to  this whole new branch of mathematics mainly. So"
+    },
+    {
+      "start": "0:19",
+      "end": "0:28",
+      "text": "let us ask a question with computing in mind.  Here is a question, we’ve been discussing"
+    },
+    {
+      "start": "0:28",
+      "end": "0:34",
+      "text": "relations which are sort of you know the set  is small set and the possible relation is also"
+    },
+    {
+      "start": "0:34",
+      "end": "0:42",
+      "text": "obviously small if the set is small, but now let  us ask a question on a huge relation. By huge,"
+    },
+    {
+      "start": "0:42",
+      "end": "0:50",
+      "text": "I mean a big relation with several elements. So let me take my set S or A, by the way,"
+    },
+    {
+      "start": "0:50",
+      "end": "0:57",
+      "text": "S and A, I use it interchangeably. Let me use  let me take a set A with 1000 elements and"
+    },
+    {
+      "start": "0:57",
+      "end": "1:06",
+      "text": "then let me consider some relation on A. what  do I mean by some relation? A relation R is a"
+    },
+    {
+      "start": "1:06",
+      "end": "1:13",
+      "text": "subset of A cross A. I’ll take some relation. Now this relation is fed into the computer."
+    },
+    {
+      "start": "1:13",
+      "end": "1:26",
+      "text": "How? By let’s say its corresponding matrix and  my computer should tell me whether the given"
+    },
+    {
+      "start": "1:26",
+      "end": "1:35",
+      "text": "matrix corresponds to a relation which  is reflexive or not. How do I do that?"
+    },
+    {
+      "start": "1:35",
+      "end": "1:42",
+      "text": "It’s only obvious that in the matrix  representing a reflexive relation,"
+    },
+    {
+      "start": "1:42",
+      "end": "1:50",
+      "text": "the diagonal should all be 1. Why? That’s  the definition of reflexive relation. For"
+    },
+    {
+      "start": "1:50",
+      "end": "1:56",
+      "text": "every element in the set A that element,  the same element belongs to the relation."
+    },
+    {
+      "start": "1:56",
+      "end": "2:04",
+      "text": "This is true for every element containing in A  which means (i, i) entry, iith entry in the matrix"
+    },
+    {
+      "start": "2:04",
+      "end": "2:13",
+      "text": "should always be 1, which means the whole diagonal  should be 1, 1, 1, 1, 1, 1, 1 however, the other"
+    },
+    {
+      "start": "2:13",
+      "end": "2:22",
+      "text": "entries may or may not be 1; it can be 0s or 1s,  we don’t care. But the diagonal should all be 1."
+    },
+    {
+      "start": "2:22",
+      "end": "2:32",
+      "text": "Note, even if one entry in the diagonal is not  1, it is 0, means the relation is not reflexive."
+    }
+  ],
+  "timestamped": true
+}

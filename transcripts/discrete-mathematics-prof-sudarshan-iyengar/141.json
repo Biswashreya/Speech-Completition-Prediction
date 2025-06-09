@@ -1,0 +1,33 @@
+{
+  "title": "Pattern",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "You're probably seeing a pattern in the video  clips, right. So, we start with a relation, a type"
+    },
+    {
+      "start": "0:11",
+      "end": "0:20",
+      "text": "of relation and then we end up asking the same old  question of what are the total possible relations"
+    },
+    {
+      "start": "0:20",
+      "end": "0:26",
+      "text": "of this type right. We basically ask this counting  question which I told you is very important right."
+    },
+    {
+      "start": "0:26",
+      "end": "0:33",
+      "text": "So, we will continue to have this pattern. We will  see more different types of relations and then ask"
+    },
+    {
+      "start": "0:33",
+      "end": "0:38",
+      "text": "the same question of what are the total possible  ways in which you can find such a relation."
+    }
+  ],
+  "timestamped": true
+}

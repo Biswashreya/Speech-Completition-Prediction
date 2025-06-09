@@ -1,0 +1,118 @@
+{
+  "title": "Number of Reflexive relations",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "So we are going to ask the same question again  and again. As you know discrete math is all about"
+    },
+    {
+      "start": "0:10",
+      "end": "0:19",
+      "text": "counting in fact more than 50% of the subject is  all about counting. So let us again ask a counting"
+    },
+    {
+      "start": "0:19",
+      "end": "0:30",
+      "text": "question. We defined what is a reflexive relation  right. So let me consider a set S as usual which"
+    },
+    {
+      "start": "0:30",
+      "end": "0:39",
+      "text": "comprises of n elements a1, a2 up to an and now  I ask the question what are the total number of"
+    },
+    {
+      "start": "0:39",
+      "end": "0:50",
+      "text": "reflexive relations on S. What do I mean by that? Remember in the previous lecture we saw we asked"
+    },
+    {
+      "start": "0:50",
+      "end": "0:56",
+      "text": "the question what are the total number of possible  relations in general. Now I am asking the question"
+    },
+    {
+      "start": "0:56",
+      "end": "1:06",
+      "text": "what are the total possible reflexive relations on  a set with n elements. So let me think. How will"
+    },
+    {
+      "start": "1:06",
+      "end": "1:16",
+      "text": "a relation R look like? It is definitely a subset  of S cross S but not all subsets of S cross S will"
+    },
+    {
+      "start": "1:16",
+      "end": "1:28",
+      "text": "be a valid reflexive relation. It is that subset  which has all the elements (a1, a1),( a2, a2), up"
+    },
+    {
+      "start": "1:28",
+      "end": "1:38",
+      "text": "to (an, an). These n elements are definitely  going to be there but the rest of the elements,"
+    },
+    {
+      "start": "1:38",
+      "end": "1:48",
+      "text": "the rest of them right, rest of them may or may  not be there. Take a pause and then think about"
+    },
+    {
+      "start": "1:48",
+      "end": "1:57",
+      "text": "what I'm saying. These n elements must and should  be there, right. But the rest of them may or may"
+    },
+    {
+      "start": "1:57",
+      "end": "2:06",
+      "text": "not be there and all possible ways in which  you can put the rest of them, in quotes, “rest"
+    },
+    {
+      "start": "2:06",
+      "end": "2:14",
+      "text": "of them” in all possible ways in which you can  include this is what makes all possible relations"
+    },
+    {
+      "start": "2:14",
+      "end": "2:23",
+      "text": "that are reflexive. So what is that? That is going  to be straightforward. In S cross S definitely"
+    },
+    {
+      "start": "2:23",
+      "end": "2:34",
+      "text": "you need to include (a1, a1), (a2, a2) up to (an,  an). The rest of the elements which are n square"
+    },
+    {
+      "start": "2:34",
+      "end": "2:43",
+      "text": "in number I need to exclude these entities,  these n elements which is n square minus n and"
+    },
+    {
+      "start": "2:43",
+      "end": "2:50",
+      "text": "all possible ways in which I can choose the rest  of them that I stated here which is going to be"
+    },
+    {
+      "start": "2:50",
+      "end": "3:00",
+      "text": "as and always 2 to the power of n square minus n. So the total number of reflexive relations happen"
+    },
+    {
+      "start": "3:00",
+      "end": "3:08",
+      "text": "to be 2 to the n square minus n. Again why?  That's because I need to put these n elements"
+    },
+    {
+      "start": "3:08",
+      "end": "3:14",
+      "text": "for sure and the rest of them I have 2 to the  rest of them choices. The rest of them happens"
+    },
+    {
+      "start": "3:14",
+      "end": "3:21",
+      "text": "to be n square minus n and hence the answer for my  question happens to be 2 to the n square minus n."
+    }
+  ],
+  "timestamped": true
+}
