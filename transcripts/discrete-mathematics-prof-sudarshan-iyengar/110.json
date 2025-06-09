@@ -1,0 +1,138 @@
+{
+  "title": "De Morgan's Law - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:10",
+      "text": "You would have observed that the example which I gave to explain this law “Both the ladies"
+    },
+    {
+      "start": "0:10",
+      "end": "0:14",
+      "text": "are good looking” is actually not a statement."
+    },
+    {
+      "start": "0:14",
+      "end": "0:20",
+      "text": "My choice of this example was simply because it was very easy on your minds."
+    },
+    {
+      "start": "0:20",
+      "end": "0:23",
+      "text": "It is nice to see the negation of this statement."
+    },
+    {
+      "start": "0:23",
+      "end": "0:24",
+      "text": "Okay."
+    },
+    {
+      "start": "0:24",
+      "end": "0:31",
+      "text": "Let us now look at De Morgan's Law a little more closely."
+    },
+    {
+      "start": "0:31",
+      "end": "0:38",
+      "text": "It says NOT of (p AND q) is same as NOT p OR NOT q."
+    },
+    {
+      "start": "0:38",
+      "end": "0:44",
+      "text": "So you now know that equivalence means the corresponding entries in the truth table should"
+    },
+    {
+      "start": "0:44",
+      "end": "0:45",
+      "text": "match."
+    },
+    {
+      "start": "0:45",
+      "end": "0:47",
+      "text": "Let’s see if this happens or not."
+    },
+    {
+      "start": "0:47",
+      "end": "0:58",
+      "text": "p, q, p AND q, NOT of (p AND q), then I will write NOT p, NOT q, and finally, NOT p OR"
+    },
+    {
+      "start": "0:58",
+      "end": "0:59",
+      "text": "NOT q."
+    },
+    {
+      "start": "0:59",
+      "end": "1:04",
+      "text": "As I fill the entries, you should be able to do it all by yourself, you will observe"
+    },
+    {
+      "start": "1:04",
+      "end": "1:11",
+      "text": "that the fourth column and the seventh column match exactly."
+    },
+    {
+      "start": "1:11",
+      "end": "1:17",
+      "text": "So is the case with NOT of (p OR q) being equivalent to NOT p AND NOT q."
+    },
+    {
+      "start": "1:17",
+      "end": "1:22",
+      "text": "Now look at the truth table here with these seven columns."
+    },
+    {
+      "start": "1:22",
+      "end": "1:27",
+      "text": "Again, here the fourth column and the last column does match."
+    },
+    {
+      "start": "1:27",
+      "end": "1:30",
+      "text": "We verified these two laws."
+    },
+    {
+      "start": "1:30",
+      "end": "1:32",
+      "text": "These are very important."
+    },
+    {
+      "start": "1:32",
+      "end": "1:37",
+      "text": "By two laws I mean De Morgan's Law, a two different versions."
+    },
+    {
+      "start": "1:37",
+      "end": "1:41",
+      "text": "You can now connect De Morgan's Law to set theory."
+    },
+    {
+      "start": "1:41",
+      "end": "1:45",
+      "text": "Complement actually is equivalent to negation."
+    },
+    {
+      "start": "1:45",
+      "end": "1:51",
+      "text": "Union here is equivalent to OR and intersection is equivalent to AND."
+    },
+    {
+      "start": "1:51",
+      "end": "1:57",
+      "text": "So you see some sort of a similarity between the De Morgan's Law of set theory and the"
+    },
+    {
+      "start": "1:57",
+      "end": "1:59",
+      "text": "De Morgan's Law of logic."
+    },
+    {
+      "start": "1:59",
+      "end": "2:06",
+      "text": "Now that we have studied these laws, let us see the laws in action in the coming lectures."
+    }
+  ],
+  "timestamped": true
+}

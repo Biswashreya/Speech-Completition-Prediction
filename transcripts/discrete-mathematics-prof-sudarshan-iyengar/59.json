@@ -1,0 +1,43 @@
+{
+  "title": "De Morgan's Laws - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "Compliment of a set seems to be a straightforward  concept. Yes it is! And a celebrated law called"
+    },
+    {
+      "start": "0:10",
+      "end": "0:17",
+      "text": "the De Morgan's law is an immediate consequence of  this concept. Compliments can swap intersections"
+    },
+    {
+      "start": "0:17",
+      "end": "0:25",
+      "text": "with unions and unions with intersections. Let  us move on and see more of it. This is one result"
+    },
+    {
+      "start": "0:25",
+      "end": "0:31",
+      "text": "that appears to be very unclear when you see  it in the beginning but it is pretty obvious"
+    },
+    {
+      "start": "0:31",
+      "end": "0:43",
+      "text": "it is called the De Morgan's law. It goes like  this, the set A union B, take its complement,"
+    },
+    {
+      "start": "0:43",
+      "end": "0:52",
+      "text": "is actually equal to A complement, B complement,  their intersection. Similarly A intersection"
+    },
+    {
+      "start": "0:52",
+      "end": "0:59",
+      "text": "B complement is A complement union B  complement, let us see how this is true."
+    }
+  ],
+  "timestamped": true
+}

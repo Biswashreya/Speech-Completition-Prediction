@@ -1,0 +1,83 @@
+{
+  "title": "Power set - Problems",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:09",
+      "text": "What is the cardinality of the power set of a set containing 2 elements let’s say A"
+    },
+    {
+      "start": "0:09",
+      "end": "0:14",
+      "text": "and B, we know it is 2 square which is 4, but let us try enumerating it."
+    },
+    {
+      "start": "0:14",
+      "end": "0:21",
+      "text": "What all will it have an empty set, a set containing only A, and a set containing only"
+    },
+    {
+      "start": "0:21",
+      "end": "0:27",
+      "text": "B, and a set containing both A and B, so precisely 4 elements."
+    },
+    {
+      "start": "0:27",
+      "end": "0:34",
+      "text": "Now let me ask you this question consider this set as another set, which set?"
+    },
+    {
+      "start": "0:34",
+      "end": "0:41",
+      "text": "Your power set of the previous set S, S was equal to A, B, you saw what was P(S), now"
+    },
+    {
+      "start": "0:41",
+      "end": "0:47",
+      "text": "my question is P(S) is again another set you see, one can talk about the power set of this"
+    },
+    {
+      "start": "0:47",
+      "end": "0:52",
+      "text": "power set, right, yeah I am just trying to give you a complicated question to challenge"
+    },
+    {
+      "start": "0:52",
+      "end": "0:58",
+      "text": "you people, so what will be the cardinality of a power set of a power set of a set S?"
+    },
+    {
+      "start": "0:58",
+      "end": "1:04",
+      "text": "Power set of S is 2 to the power of cardinality of S, and power set of this will simply be"
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "2 to the power of the elements of P(S) which is 2 to the power of cardinality of S, and"
+    },
+    {
+      "start": "1:10",
+      "end": "1:17",
+      "text": "now the answer will simply be 2 to the power of 2 to the power of cardinality of S, right?"
+    },
+    {
+      "start": "1:17",
+      "end": "1:21",
+      "text": "I was very quick in explaining the reason behind this, you may want to work out the"
+    },
+    {
+      "start": "1:21",
+      "end": "1:22",
+      "text": "details all by yourself."
+    },
+    {
+      "start": "1:22",
+      "end": "1:22",
+      "text": "I"
+    }
+  ],
+  "timestamped": true
+}

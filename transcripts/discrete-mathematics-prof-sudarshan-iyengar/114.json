@@ -1,0 +1,233 @@
+{
+  "title": "Rules of Inferences - Part 4",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:04",
+      "text": "A word of warning."
+    },
+    {
+      "start": "0:04",
+      "end": "0:07",
+      "text": "There could be questions where you cannot conclude anything."
+    },
+    {
+      "start": "0:07",
+      "end": "0:10",
+      "text": "For example, look at this."
+    },
+    {
+      "start": "0:10",
+      "end": "0:16",
+      "text": "I said p OR q is true and I also say q OR r is true."
+    },
+    {
+      "start": "0:16",
+      "end": "0:17",
+      "text": "What can you say?"
+    },
+    {
+      "start": "0:17",
+      "end": "0:23",
+      "text": "You cannot say anything decisively about any variable here."
+    },
+    {
+      "start": "0:23",
+      "end": "0:24",
+      "text": "Okay."
+    },
+    {
+      "start": "0:24",
+      "end": "0:27",
+      "text": "I will give you one more extra information."
+    },
+    {
+      "start": "0:27",
+      "end": "0:29",
+      "text": "p is given to be true."
+    },
+    {
+      "start": "0:29",
+      "end": "0:31",
+      "text": "p is given to be true."
+    },
+    {
+      "start": "0:31",
+      "end": "0:33",
+      "text": "p OR q is true."
+    },
+    {
+      "start": "0:33",
+      "end": "0:35",
+      "text": "q OR r is true."
+    },
+    {
+      "start": "0:35",
+      "end": "0:39",
+      "text": "Still you cannot conclude anything about let’s say p is given to be true."
+    },
+    {
+      "start": "0:39",
+      "end": "0:42",
+      "text": "Writing therefore p here is redundant."
+    },
+    {
+      "start": "0:42",
+      "end": "0:44",
+      "text": "You see we already know p is true."
+    },
+    {
+      "start": "0:44",
+      "end": "0:45",
+      "text": "Correct?"
+    },
+    {
+      "start": "0:45",
+      "end": "0:47",
+      "text": "Can you conclude q is true here?"
+    },
+    {
+      "start": "0:47",
+      "end": "0:49",
+      "text": "Can you conclude r is true here?"
+    },
+    {
+      "start": "0:49",
+      "end": "0:50",
+      "text": "Not really."
+    },
+    {
+      "start": "0:50",
+      "end": "0:51",
+      "text": "You cannot."
+    },
+    {
+      "start": "0:51",
+      "end": "0:56",
+      "text": "I gave you an example where you cannot conclude that something is true."
+    },
+    {
+      "start": "0:56",
+      "end": "1:00",
+      "text": "I'm now giving you an example where you can conclude that a lot of things are true as"
+    },
+    {
+      "start": "1:00",
+      "end": "1:01",
+      "text": "well."
+    },
+    {
+      "start": "1:01",
+      "end": "1:05",
+      "text": "You see, look at this p AND q is true."
+    },
+    {
+      "start": "1:05",
+      "end": "1:07",
+      "text": "q implies r is true."
+    },
+    {
+      "start": "1:07",
+      "end": "1:08",
+      "text": "What can you conclude?"
+    },
+    {
+      "start": "1:08",
+      "end": "1:12",
+      "text": "I am saying p AND q is true, which means p is true and q is true."
+    },
+    {
+      "start": "1:12",
+      "end": "1:19",
+      "text": "So p is true, q is true, and q is implying r, which means r is true."
+    },
+    {
+      "start": "1:19",
+      "end": "1:24",
+      "text": "You see, therefore, you can say that r is true here."
+    },
+    {
+      "start": "1:24",
+      "end": "1:25",
+      "text": "Correct?"
+    },
+    {
+      "start": "1:25",
+      "end": "1:27",
+      "text": "What if I added one more implication here?"
+    },
+    {
+      "start": "1:27",
+      "end": "1:29",
+      "text": "I said p AND q is true."
+    },
+    {
+      "start": "1:29",
+      "end": "1:34",
+      "text": "q implies r and r implies s."
+    },
+    {
+      "start": "1:34",
+      "end": "1:37",
+      "text": "So given that p AND q is true, definitely q is true."
+    },
+    {
+      "start": "1:37",
+      "end": "1:38",
+      "text": "Okay."
+    },
+    {
+      "start": "1:38",
+      "end": "1:47",
+      "text": "q implying r is true, which means when q is true, q implies r is true, which means r should"
+    },
+    {
+      "start": "1:47",
+      "end": "1:48",
+      "text": "be true."
+    },
+    {
+      "start": "1:48",
+      "end": "1:49",
+      "text": "r is true."
+    },
+    {
+      "start": "1:49",
+      "end": "1:50",
+      "text": "I can say, therefore, r."
+    },
+    {
+      "start": "1:50",
+      "end": "1:52",
+      "text": "Also r is implying s."
+    },
+    {
+      "start": "1:52",
+      "end": "1:54",
+      "text": "r is true, which implies s is true."
+    },
+    {
+      "start": "1:54",
+      "end": "1:57",
+      "text": "I can even say, therefore, s."
+    },
+    {
+      "start": "1:57",
+      "end": "2:01",
+      "text": "You saw an example where you could conclude that something is true."
+    },
+    {
+      "start": "2:01",
+      "end": "2:05",
+      "text": "You saw an example where you couldn’t conclude that anything is true."
+    },
+    {
+      "start": "2:05",
+      "end": "2:09",
+      "text": "Now we are seeing an example where you could conclude multiple things are true."
+    }
+  ],
+  "timestamped": true
+}

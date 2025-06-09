@@ -1,0 +1,72 @@
+{
+  "title": "Catalan Numbers - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:12",
+      "text": "Let us take up this problem that we discussed  just now of going from (0,0) to (5,5). As you"
+    },
+    {
+      "start": "0:12",
+      "end": "0:23",
+      "text": "can see there are 4 rights, I'm sorry 5  rights and 5 ups for you to reach (5,5)"
+    },
+    {
+      "start": "0:23",
+      "end": "0:36",
+      "text": "but then let me take an example of let's  say right up, right up, right right up,"
+    },
+    {
+      "start": "0:36",
+      "end": "0:46",
+      "text": "right and then up up. You see let me try  looking at this instance by actually going"
+    },
+    {
+      "start": "0:46",
+      "end": "0:55",
+      "text": "up and then seeing what exactly happens  here; right and an up, right and an up,"
+    },
+    {
+      "start": "0:55",
+      "end": "1:07",
+      "text": "two rights and an up and then a right and an up  up. You observed something very important here"
+    },
+    {
+      "start": "1:07",
+      "end": "1:16",
+      "text": "that you never crossed the diagonal. Although  you touched the diagonal you never crossed it."
+    },
+    {
+      "start": "1:16",
+      "end": "1:28",
+      "text": "So here goes my question. In how many ways can  we start from (0,0) and go towards (5,5) and"
+    },
+    {
+      "start": "1:28",
+      "end": "1:36",
+      "text": "end our journey in (5,5) without trespassing the  diagonal. By trespassing I mean you cannot cross"
+    },
+    {
+      "start": "1:36",
+      "end": "1:42",
+      "text": "this fence. I am putting a fence here. The fence  is a diagonal. You can however touch the diagonal."
+    },
+    {
+      "start": "1:42",
+      "end": "1:50",
+      "text": "What is the question? The question is in how many  ways can you reach your destination (5,5) from"
+    },
+    {
+      "start": "1:50",
+      "end": "1:57",
+      "text": "your starting point (0,0) without trespassing  the fence which happens to be our diagonal."
+    },
+    {
+      "start": "1:57",
+      "end": "2:02",
+      "text": "So let me count the total  number of ways for this now."
+    }
+  ]
+}

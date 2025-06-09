@@ -1,0 +1,88 @@
+{
+  "title": "A proof technique",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "In set theory one of the important problems that  you will note and you should learn as a math"
+    },
+    {
+      "start": "0:11",
+      "end": "0:18",
+      "text": "student or a computer science student is, to show  when is a set X = Y? now what do you mean by that?"
+    },
+    {
+      "start": "0:18",
+      "end": "0:25",
+      "text": "It looks very weird when I say show that a set X  is equal to a set Y, there's a common trick that"
+    },
+    {
+      "start": "0:25",
+      "end": "0:33",
+      "text": "we use always so concentrate on the trick, the  trick is if we can show that X is a subset of Y,"
+    },
+    {
+      "start": "0:33",
+      "end": "0:40",
+      "text": "we cannot of course conclude that X = Y  you see, all we say is Y is bigger than X,"
+    },
+    {
+      "start": "0:40",
+      "end": "0:55",
+      "text": "but if we can also show simultaneously that Y is  a subset of X, then we show indeed that X = Y."
+    },
+    {
+      "start": "0:55",
+      "end": "1:05",
+      "text": "Let me illustrate this with a nice example you  come and tell me what is your age? I’ll tell you"
+    },
+    {
+      "start": "1:05",
+      "end": "1:15",
+      "text": "I know your age, your age is less than or equal  to my age, now you know for sure that your age is"
+    },
+    {
+      "start": "1:15",
+      "end": "1:23",
+      "text": "not greater than mine, and I also tell you that  my age is also less than or equal to your age,"
+    },
+    {
+      "start": "1:23",
+      "end": "1:29",
+      "text": "I repeat your age is less than or equal to my  age, and my age is less than or equal to your age,"
+    },
+    {
+      "start": "1:29",
+      "end": "1:37",
+      "text": "this is only possible if my age is equal to  your age. You see these two statements put"
+    },
+    {
+      "start": "1:37",
+      "end": "1:45",
+      "text": "together implies that equality happens. Similarly this is very analogous if a"
+    },
+    {
+      "start": "1:45",
+      "end": "1:50",
+      "text": "set is contained in the other set, and the  other set is also contained in this set,"
+    },
+    {
+      "start": "1:50",
+      "end": "1:57",
+      "text": "then these two sets are the same. In fact all  those sounds so straightforward that it doesn't"
+    },
+    {
+      "start": "1:57",
+      "end": "2:03",
+      "text": "deserve any explanation, this is a standard  way in which we show that two things are equal,"
+    },
+    {
+      "start": "2:03",
+      "end": "2:11",
+      "text": "two sets are equal. So let us try showing  that this very De Morgan's law is indeed true."
+    }
+  ],
+  "timestamped": true
+}

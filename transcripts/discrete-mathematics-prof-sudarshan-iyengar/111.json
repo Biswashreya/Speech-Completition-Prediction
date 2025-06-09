@@ -1,0 +1,58 @@
+{
+  "title": "Rules of Inferences - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "So there's a theft scene, and our detective  Sherlock Holmes is investigating on the case,"
+    },
+    {
+      "start": "0:10",
+      "end": "0:14",
+      "text": "and he observes that there is this"
+    },
+    {
+      "start": "0:16",
+      "end": "0:27",
+      "text": "theft, but there is no clue whatsoever. And  then he gets to know that for sure there has"
+    },
+    {
+      "start": "0:27",
+      "end": "0:39",
+      "text": "been some sort of a burglary, but he gets to know  that that dog did not bark in that particular"
+    },
+    {
+      "start": "0:39",
+      "end": "0:48",
+      "text": "house where burglary happened. Dog did not bark. In fact, the statement is there is absolutely no"
+    },
+    {
+      "start": "0:48",
+      "end": "0:55",
+      "text": "clue what happened. Even the dog did not bark is  what someone tells Sherlock Holmes, and Sherlock"
+    },
+    {
+      "start": "0:55",
+      "end": "1:04",
+      "text": "Holmes immediately reduces there is this  burglary that happened and dog did not bark,"
+    },
+    {
+      "start": "1:04",
+      "end": "1:12",
+      "text": "which means the conclusion is that someone  inside the house probably is involved that"
+    },
+    {
+      "start": "1:12",
+      "end": "1:17",
+      "text": "the dog recognized the person and hence did  not bark. And that’s the climax of the story"
+    },
+    {
+      "start": "1:17",
+      "end": "1:22",
+      "text": "and he finally solves the crime mystery. So what just happened? Think about it."
+    }
+  ],
+  "timestamped": true
+}

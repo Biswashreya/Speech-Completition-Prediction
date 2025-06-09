@@ -1,0 +1,168 @@
+{
+  "title": "Introduction to OR operator",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:06",
+      "text": "You see all the possibilities that I just enumerated."
+    },
+    {
+      "start": "0:06",
+      "end": "0:08",
+      "text": "There was 0,0 there."
+    },
+    {
+      "start": "0:08",
+      "end": "0:11",
+      "text": "That was the dangerous person."
+    },
+    {
+      "start": "0:11",
+      "end": "0:12",
+      "text": "It's tough to handle him."
+    },
+    {
+      "start": "0:12",
+      "end": "0:17",
+      "text": "So I put no, false meaning do not interact with him."
+    },
+    {
+      "start": "0:17",
+      "end": "0:18",
+      "text": "0."
+    },
+    {
+      "start": "0:18",
+      "end": "0:20",
+      "text": "0 and 0 means 0."
+    },
+    {
+      "start": "0:20",
+      "end": "0:24",
+      "text": "He who knows not and knows not that he knows not is a fool surname."
+    },
+    {
+      "start": "0:24",
+      "end": "0:25",
+      "text": "Fool, zero."
+    },
+    {
+      "start": "0:25",
+      "end": "0:29",
+      "text": "Second one is completely harmless."
+    },
+    {
+      "start": "0:29",
+      "end": "0:32",
+      "text": "The simple person 1 and 0."
+    },
+    {
+      "start": "0:32",
+      "end": "0:33",
+      "text": "He knows."
+    },
+    {
+      "start": "0:33",
+      "end": "0:35",
+      "text": "I am sorry, it's 0, 1."
+    },
+    {
+      "start": "0:35",
+      "end": "0:38",
+      "text": "He doesn't know but he knows that he doesn't know."
+    },
+    {
+      "start": "0:38",
+      "end": "0:39",
+      "text": "He is simple."
+    },
+    {
+      "start": "0:39",
+      "end": "0:41",
+      "text": "Teach him."
+    },
+    {
+      "start": "0:41",
+      "end": "0:42",
+      "text": "Harmless person."
+    },
+    {
+      "start": "0:42",
+      "end": "0:43",
+      "text": "Put 1 there."
+    },
+    {
+      "start": "0:43",
+      "end": "0:44",
+      "text": "You can handle him."
+    },
+    {
+      "start": "0:44",
+      "end": "0:50",
+      "text": "Third one is 1,0 someone who knows but he is unaware of the fact that he knows."
+    },
+    {
+      "start": "0:50",
+      "end": "0:53",
+      "text": "Okay? he is asleep, wake him up."
+    },
+    {
+      "start": "0:53",
+      "end": "0:56",
+      "text": "Again harmless and it's your duty to go and wake him up."
+    },
+    {
+      "start": "0:56",
+      "end": "0:59",
+      "text": "He has the content but he just needs a trigger."
+    },
+    {
+      "start": "0:59",
+      "end": "1:00",
+      "text": "He is harmless again."
+    },
+    {
+      "start": "1:00",
+      "end": "1:01",
+      "text": "Put a 1."
+    },
+    {
+      "start": "1:01",
+      "end": "1:05",
+      "text": "The last one is an intellectual because he knows and he knows that he knows."
+    },
+    {
+      "start": "1:05",
+      "end": "1:09",
+      "text": "1 and 1 would be a 1."
+    },
+    {
+      "start": "1:09",
+      "end": "1:11",
+      "text": "So do you see this table?"
+    },
+    {
+      "start": "1:11",
+      "end": "1:19",
+      "text": "Set of all possible truth and false assignments and some inference that we are making in the"
+    },
+    {
+      "start": "1:19",
+      "end": "1:21",
+      "text": "third column."
+    },
+    {
+      "start": "1:21",
+      "end": "1:26",
+      "text": "The third column is actually called, there is a name for it, I am sure most of you even"
+    },
+    {
+      "start": "1:26",
+      "end": "1:28",
+      "text": "know it, an OR operator."
+    }
+  ],
+  "timestamped": true
+}

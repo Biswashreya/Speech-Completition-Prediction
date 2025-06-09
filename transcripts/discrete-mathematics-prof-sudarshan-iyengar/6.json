@@ -1,0 +1,143 @@
+{
+  "title": "Motivation for Catalan numbers",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:23",
+      "end": "00:00:28",
+      "text": "So this chapter is all about training you all on how to count."
+    },
+    {
+      "start": "00:00:28",
+      "end": "00:00:36",
+      "text": "I'll give you a good illustration of how counting can get very complicated. Look at this figure."
+    },
+    {
+      "start": "00:00:36",
+      "end": "00:00:43",
+      "text": "In how many ways can you start from 0,0, and then reach 5,5?"
+    },
+    {
+      "start": "00:00:43",
+      "end": "00:00:51",
+      "text": "As you can see this is a grid, labeling the bottom left most point as 0,0 and the top rightmost point as 5,5."
+    },
+    {
+      "start": "00:00:51",
+      "end": "00:00:54",
+      "text": "In how many ways can you reach 5,5 starting from 0,0 by using only rights and ups?"
+    },
+    {
+      "start": "00:00:54",
+      "end": "00:01:02",
+      "text": "You see this is one way."
+    },
+    {
+      "start": "00:01:02",
+      "end": "00:01:05",
+      "text": "This is yet another way so on and so forth as you can see."
+    },
+    {
+      "start": "00:01:05",
+      "end": "00:01:11",
+      "text": "What are the total number of ways?"
+    },
+    {
+      "start": "00:01:11",
+      "end": "00:01:14",
+      "text": "Try Solving Probably the problem that I just now stated is easy."
+    },
+    {
+      "start": "00:01:14",
+      "end": "00:01:19",
+      "text": "Some of you could even figure out the answer."
+    },
+    {
+      "start": "00:01:19",
+      "end": "00:01:24",
+      "text": "We will discuss the answer later but I want to give you a complicated version of the same question."
+    },
+    {
+      "start": "00:01:24",
+      "end": "00:01:30",
+      "text": "What is the total number of ways in which you can reach 5,5 starting from 0,0; same question, there is a twist here provided you do not cross the diagonal joining 0,0, and 5,5."
+    },
+    {
+      "start": "00:01:30",
+      "end": "00:01:39",
+      "text": "You can touch the diagonal but cannot cross the diagonal."
+    },
+    {
+      "start": "00:01:39",
+      "end": "00:01:50",
+      "text": "So this is a valid possibility."
+    },
+    {
+      "start": "00:01:50",
+      "end": "00:01:54",
+      "text": "This is another valid possibility and this one as you can see it's crossing the diagonal is an invalid possibility."
+    },
+    {
+      "start": "00:01:54",
+      "end": "00:02:05",
+      "text": "Now count all those ways which do not cross the diagonal."
+    },
+    {
+      "start": "00:02:05",
+      "end": "00:02:12",
+      "text": "If you think the answer is whatever was the answer without diagonal by two you are wrong."
+    },
+    {
+      "start": "00:02:12",
+      "end": "00:02:21",
+      "text": "This requires a brand new way of thinking."
+    },
+    {
+      "start": "00:02:21",
+      "end": "00:02:25",
+      "text": "Right and observe."
+    },
+    {
+      "start": "00:02:25",
+      "end": "00:02:29",
+      "text": "I'm asking you to count."
+    },
+    {
+      "start": "00:02:29",
+      "end": "00:02:34",
+      "text": "I am asking you to count the total possible ways in which you can go from here to here without crossing the diagonal."
+    },
+    {
+      "start": "00:02:34",
+      "end": "00:02:36",
+      "text": "This is one of the most important questions in computer science."
+    },
+    {
+      "start": "00:02:36",
+      "end": "00:02:40",
+      "text": "We will see more of it at the end of the chapter but I am just trying to illustrate to you all that counting can get extremely complicated at times."
+    },
+    {
+      "start": "00:02:40",
+      "end": "00:02:51",
+      "text": "Pause the video and think for a while So far I have just been motivating you all to think on the lines of counting and its importance."
+    },
+    {
+      "start": "00:02:51",
+      "end": "00:03:05",
+      "text": "I even illustrated an example which is non-trivial, and I'm sure most of you did not get even close to the answer for the previous question."
+    },
+    {
+      "start": "00:03:05",
+      "end": "00:03:18",
+      "text": "Don't worry, we'll describe that in detail very soon."
+    },
+    {
+      "start": "00:03:18",
+      "end": "00:03:22",
+      "text": "Now let us go very slowly and try helping you all, I'm going to help you all to count from some of the basic, using some of the basic questions."
+    }
+  ],
+  "timestamped": true
+}

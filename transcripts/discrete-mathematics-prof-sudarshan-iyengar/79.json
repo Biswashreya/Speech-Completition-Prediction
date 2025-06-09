@@ -1,0 +1,238 @@
+{
+  "title": "OR operator for 3 Variables",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:13",
+      "text": "Given the Boolean variables P, Q and R how does the truthtable of P or Q or R look like?"
+    },
+    {
+      "start": "0:13",
+      "end": "0:16",
+      "text": "How can you even construct it?"
+    },
+    {
+      "start": "0:16",
+      "end": "0:18",
+      "text": "You saw how to construct a truthtable for two variables."
+    },
+    {
+      "start": "0:18",
+      "end": "0:20",
+      "text": "It was very easy."
+    },
+    {
+      "start": "0:20",
+      "end": "0:24",
+      "text": "Take simply two variables P and Q. assign P to be 0, Q to be 0."
+    },
+    {
+      "start": "0:24",
+      "end": "0:26",
+      "text": "P to be 0, Q to be 1."
+    },
+    {
+      "start": "0:26",
+      "end": "0:30",
+      "text": "1, 0, 1, 1; only four lines and you are through."
+    },
+    {
+      "start": "0:30",
+      "end": "0:35",
+      "text": "You would have written all possibilities but when you have three variables you got to do"
+    },
+    {
+      "start": "0:35",
+      "end": "0:36",
+      "text": "a little more work."
+    },
+    {
+      "start": "0:36",
+      "end": "0:38",
+      "text": "What is that?"
+    },
+    {
+      "start": "0:38",
+      "end": "0:41",
+      "text": "Write all possible values that P, Q, R can take."
+    },
+    {
+      "start": "0:41",
+      "end": "0:43",
+      "text": "0, 0, 0."
+    },
+    {
+      "start": "0:43",
+      "end": "0:44",
+      "text": "0, 0,1."
+    },
+    {
+      "start": "0:44",
+      "end": "0:45",
+      "text": "0, 1, 0."
+    },
+    {
+      "start": "0:45",
+      "end": "0:46",
+      "text": "0, 1, 1."
+    },
+    {
+      "start": "0:46",
+      "end": "0:47",
+      "text": "1, 0, 0."
+    },
+    {
+      "start": "0:47",
+      "end": "0:48",
+      "text": "1, 0, 1."
+    },
+    {
+      "start": "0:48",
+      "end": "0:50",
+      "text": "1, 1, 0."
+    },
+    {
+      "start": "0:50",
+      "end": "0:57",
+      "text": "And 1, 1, 1.Totally you are going to get eight lines here."
+    },
+    {
+      "start": "0:57",
+      "end": "0:58",
+      "text": "Why is that?"
+    },
+    {
+      "start": "0:58",
+      "end": "1:03",
+      "text": "If you don't know the answer for this you probably should revise back your counting"
+    },
+    {
+      "start": "1:03",
+      "end": "1:04",
+      "text": "chapter."
+    },
+    {
+      "start": "1:04",
+      "end": "1:05",
+      "text": "Right?"
+    },
+    {
+      "start": "1:05",
+      "end": "1:07",
+      "text": "It's a very obvious reason here."
+    },
+    {
+      "start": "1:07",
+      "end": "1:10",
+      "text": "How many possible three digit binary numbers can you think of?"
+    },
+    {
+      "start": "1:10",
+      "end": "1:11",
+      "text": "Eight?"
+    },
+    {
+      "start": "1:11",
+      "end": "1:13",
+      "text": "2 to the 3, right."
+    },
+    {
+      "start": "1:13",
+      "end": "1:15",
+      "text": "That's why you have eight entries."
+    },
+    {
+      "start": "1:15",
+      "end": "1:16",
+      "text": "Okay."
+    },
+    {
+      "start": "1:16",
+      "end": "1:20",
+      "text": "so how do we computer P or Q or R?"
+    },
+    {
+      "start": "1:20",
+      "end": "1:25",
+      "text": "The idea of OR is one of them should be true."
+    },
+    {
+      "start": "1:25",
+      "end": "1:27",
+      "text": "So is one of them true here?"
+    },
+    {
+      "start": "1:27",
+      "end": "1:28",
+      "text": "0,0,0."
+    },
+    {
+      "start": "1:28",
+      "end": "1:29",
+      "text": "None of them are true."
+    },
+    {
+      "start": "1:29",
+      "end": "1:31",
+      "text": "So this is going to be 0."
+    },
+    {
+      "start": "1:31",
+      "end": "1:35",
+      "text": "Remember how the OR table look like in two variables."
+    },
+    {
+      "start": "1:35",
+      "end": "1:38",
+      "text": "In three variables it's going to be very similar."
+    },
+    {
+      "start": "1:38",
+      "end": "1:43",
+      "text": "If you spot a 1 anywhere, you must call that as true."
+    },
+    {
+      "start": "1:43",
+      "end": "1:44",
+      "text": "So I see a 1 here."
+    },
+    {
+      "start": "1:44",
+      "end": "1:46",
+      "text": "This second line 0, 0, 1."
+    },
+    {
+      "start": "1:46",
+      "end": "1:47",
+      "text": "So it's 1."
+    },
+    {
+      "start": "1:47",
+      "end": "1:49",
+      "text": "I see a 1 here."
+    },
+    {
+      "start": "1:49",
+      "end": "1:50",
+      "text": "So it's 1."
+    },
+    {
+      "start": "1:50",
+      "end": "1:54",
+      "text": "Everything else has a 1 for obvious reason that you will spot 1 somewhere."
+    },
+    {
+      "start": "1:54",
+      "end": "2:03",
+      "text": "So the truthtable of P or Q or R will have all 1s except for the first entry where P,"
+    },
+    {
+      "start": "2:03",
+      "end": "2:09",
+      "text": "Q, R are all 0s and hence the OR of P, Q and R will be 0."
+    }
+  ],
+  "timestamped": true
+}

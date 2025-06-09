@@ -1,0 +1,318 @@
+{
+  "title": "Motivational example",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:23",
+      "end": "0:24",
+      "text": "“There is nothing as dreamy and poetic, nothing as radical, subversive and psychedelic"
+    },
+    {
+      "start": "0:24",
+      "end": "0:25",
+      "text": "as Mathematics.” – Paul Lockhart."
+    },
+    {
+      "start": "0:25",
+      "end": "0:30",
+      "text": "Let me start with a nice story. The story is in different pieces. We will put together"
+    },
+    {
+      "start": "0:30",
+      "end": "0:40",
+      "text": "all the pieces in a while. So the first piece is you take any number and even number. Let's"
+    },
+    {
+      "start": "0:40",
+      "end": "0:54",
+      "text": "say 12. And then square it. What you get? 144. Note that 144 is a multiple of 4. Okay."
+    },
+    {
+      "start": "0:54",
+      "end": "0:59",
+      "text": "In general when you take an even number it's in the form 2m and when you square it it becomes"
+    },
+    {
+      "start": "0:59",
+      "end": "1:11",
+      "text": "the form 4m2. You observe that it is always a multiple of 4. So what did we observe? Even"
+    },
+    {
+      "start": "1:11",
+      "end": "1:17",
+      "text": "square is a multiple of 4. If a number is a square number what do you mean by square"
+    },
+    {
+      "start": "1:17",
+      "end": "1:23",
+      "text": "number? A number whose square root is an integer. You see 9 is a square number. 16 is a square"
+    },
+    {
+      "start": "1:23",
+      "end": "1:31",
+      "text": "number. 25 a square number. 81 a square number. 100 a square number. 625 being a square of"
+    },
+    {
+      "start": "1:31",
+      "end": "1:41",
+      "text": "25 is a square number. You take any square number that is even. So you see 25 doesn't"
+    },
+    {
+      "start": "1:41",
+      "end": "1:47",
+      "text": "qualify. I want a square number that is even , let's say 100 is even. Whenever you pick"
+    },
+    {
+      "start": "1:47",
+      "end": "1:56",
+      "text": "a even square it's a multiple of 4. Why is that? Can you think about it? Observe."
+    },
+    {
+      "start": "1:56",
+      "end": "2:06",
+      "text": "Can an odd number square become even? No, which means whenever you have a square number"
+    },
+    {
+      "start": "2:06",
+      "end": "2:13",
+      "text": "it should be obtained by squaring any one number. Correct? So 100 you obtained 100 by"
+    },
+    {
+      "start": "2:13",
+      "end": "2:22",
+      "text": "squaring 10 which is an even number. You obtained 144 by squaring 12 which was an even number."
+    },
+    {
+      "start": "2:22",
+      "end": "2:28",
+      "text": "So whenever you have an even square you got it by squaring an even number and when you"
+    },
+    {
+      "start": "2:28",
+      "end": "2:34",
+      "text": "square an even number it gives you a multiple of 4. So what did we observe? What can be"
+    },
+    {
+      "start": "2:34",
+      "end": "2:40",
+      "text": "hypothesize now? We can say that whenever you spot an even"
+    },
+    {
+      "start": "2:40",
+      "end": "2:48",
+      "text": "square it is always a multiple of 4. Think about it. Let us now take this number square"
+    },
+    {
+      "start": "2:48",
+      "end": "2:54",
+      "text": "root of 2 and show that it is irrational. Most of you know the proof of this I believe."
+    },
+    {
+      "start": "2:54",
+      "end": "3:01",
+      "text": "But for the sake of being self-contained in this course, let me tell you the proof of"
+    },
+    {
+      "start": "3:01",
+      "end": "3:09",
+      "text": "root 2 being irrational. Now let me assume square root of 2 is rational. By that I mean"
+    },
+    {
+      "start": "3:09",
+      "end": "3:18",
+      "text": "it can be written as P/Q which means 2 is equal to P square by Q square."
+    },
+    {
+      "start": "3:18",
+      "end": "3:24",
+      "text": "Now please note whenever I write root 2 is equal to P/Q it means P and Q are in its simplest"
+    },
+    {
+      "start": "3:24",
+      "end": "3:34",
+      "text": "possible form. For example, 12/16 is same as 3/4. 3/4 is called the simplistic form."
+    },
+    {
+      "start": "3:34",
+      "end": "3:40",
+      "text": "12/16 has things in common so you should cancel things off and then write it in its simplest"
+    },
+    {
+      "start": "3:40",
+      "end": "3:46",
+      "text": "form namely 3/4. The idea is write in such a way that they do not have any common multiples."
+    },
+    {
+      "start": "3:46",
+      "end": "3:52",
+      "text": "common divisors, rather. Okay. so I write P and Q obviously if 2 is"
+    },
+    {
+      "start": "3:52",
+      "end": "3:58",
+      "text": "a multiple of P Q cannot be a multiple of P. Note this. If it were to be a multiple"
+    },
+    {
+      "start": "3:58",
+      "end": "4:05",
+      "text": "of P then you would cancel 2 off. For example, if you had something like 60/70 you would"
+    },
+    {
+      "start": "4:05",
+      "end": "4:16",
+      "text": "write this as 30/35 and then again 30/35 gets simplified as 5 six times and 5 seven times"
+    },
+    {
+      "start": "4:16",
+      "end": "4:22",
+      "text": "this gives you 6/7. So I can assume that P and Q are what is called relatively prime."
+    },
+    {
+      "start": "4:22",
+      "end": "4:28",
+      "text": "Their GCD is 1. Don't break your head. All I am saying is both P and Q cannot be a multiple"
+    },
+    {
+      "start": "4:28",
+      "end": "4:33",
+      "text": "of 2. Now 2 is P square into Q square which implies"
+    },
+    {
+      "start": "4:33",
+      "end": "4:40",
+      "text": "P square is two times Q square. You see 2Q square is even so P square is even. P square"
+    },
+    {
+      "start": "4:40",
+      "end": "4:51",
+      "text": "is even implies P is even. Why? We just saw. Whenever a square number is even. Then it's"
+    },
+    {
+      "start": "4:51",
+      "end": "4:59",
+      "text": "– that number whose square is this number is even. 100 is even implies 10 was even."
+    },
+    {
+      "start": "4:59",
+      "end": "5:05",
+      "text": "144 is even implies 12 is even. Correct? It's only obvious. We saw the proof. So P square"
+    },
+    {
+      "start": "5:05",
+      "end": "5:19",
+      "text": "is even implies P is even and you see when P is even P square is a multiple of 4. Correct?"
+    },
+    {
+      "start": "5:19",
+      "end": "5:24",
+      "text": "We even saw that. P is even. Square is an even number. You get a multiple of 4 which"
+    },
+    {
+      "start": "5:24",
+      "end": "5:34",
+      "text": "means 2Q square is a multiple of 4 which means Q square is even. Why is that? 2 times something"
+    },
+    {
+      "start": "5:34",
+      "end": "5:40",
+      "text": "is a multiple of 4 means that something should be a multiple of 2. Correct? Q square is even"
+    },
+    {
+      "start": "5:40",
+      "end": "5:47",
+      "text": "implies Q is even. Now round this off Q is even, P is even which"
+    },
+    {
+      "start": "5:47",
+      "end": "5:52",
+      "text": "means P is a multiple of 2 and Q is a multiple of 2. Come on, is this even possible? We just"
+    },
+    {
+      "start": "5:52",
+      "end": "5:56",
+      "text": "started off with P and Q not being multiples of 2."
+    },
+    {
+      "start": "5:56",
+      "end": "6:02",
+      "text": "Both cannot be multiples of 2. Correct? That's who we started. So what just happened here?"
+    },
+    {
+      "start": "6:02",
+      "end": "6:09",
+      "text": "To show the square root of 2 is irrational to prove this statement we assume square root"
+    },
+    {
+      "start": "6:09",
+      "end": "6:19",
+      "text": "of 2 to be rational. Let me call that statement as P root 2 is rational and this implied something"
+    },
+    {
+      "start": "6:19",
+      "end": "6:25",
+      "text": "implied something implied something and finally we arrive at a fact that was not a fact. That"
+    },
+    {
+      "start": "6:25",
+      "end": "6:34",
+      "text": "was some weirdity. If P implies weirdity then P should not be true, correct, which means"
+    },
+    {
+      "start": "6:34",
+      "end": "6:44",
+      "text": "P which is root 2 is rational is not true which means root 2 is irrational."
+    },
+    {
+      "start": "6:44",
+      "end": "6:49",
+      "text": "So this was the story which I thought I will tell you all. Observe this story closely."
+    },
+    {
+      "start": "6:49",
+      "end": "6:54",
+      "text": "You would have seen this proof in your high school days or even before. It's a very standard"
+    },
+    {
+      "start": "6:54",
+      "end": "7:00",
+      "text": "proof. You will see it in many books. It's also sort of fun math that many people like"
+    },
+    {
+      "start": "7:00",
+      "end": "7:08",
+      "text": "teaching and learning. Root 2 is irrational. So the point we are trying to make in teaching"
+    },
+    {
+      "start": "7:08",
+      "end": "7:14",
+      "text": "you why root 2 is irrational the proof of it is to tell you that there is some kind"
+    },
+    {
+      "start": "7:14",
+      "end": "7:21",
+      "text": "of a math in the proof of statement. So understand carefully, the way we proved"
+    },
+    {
+      "start": "7:21",
+      "end": "7:29",
+      "text": "that root 2 is irrational is by using some math. Correct? The usage of this math has"
+    },
+    {
+      "start": "7:29",
+      "end": "7:39",
+      "text": "what is called logical deduction. Logical deduction. So how is it done? what is all"
+    },
+    {
+      "start": "7:39",
+      "end": "7:45",
+      "text": "about? what is logic? how do you deduce a piece of truth? is what makes this chapter"
+    },
+    {
+      "start": "7:45",
+      "end": "7:48",
+      "text": "called mathematical logic."
+    }
+  ],
+  "timestamped": true
+}

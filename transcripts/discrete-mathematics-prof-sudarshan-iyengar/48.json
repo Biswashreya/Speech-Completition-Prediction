@@ -1,0 +1,143 @@
+{
+  "title": "Union and intersections of sets - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:09",
+      "text": "Nita needs to shop for sweets to gift her loved ones on the occasion of Diwali."
+    },
+    {
+      "start": "0:09",
+      "end": "0:14",
+      "text": "She decides on giving assorted sweets as festival gift."
+    },
+    {
+      "start": "0:14",
+      "end": "0:21",
+      "text": "She goes to a shop nearby and buys two different packets of assorted sweets."
+    },
+    {
+      "start": "0:21",
+      "end": "0:28",
+      "text": "The first packet has 5 pieces of sweets and they are all of different types."
+    },
+    {
+      "start": "0:28",
+      "end": "0:35",
+      "text": "The second packet has 8 pieces of sweets and all of them again are of different types."
+    },
+    {
+      "start": "0:35",
+      "end": "0:41",
+      "text": "What do you think is the union of the first packet and the second packet?"
+    },
+    {
+      "start": "0:41",
+      "end": "0:46",
+      "text": "Yes, it is 11 as you can see."
+    },
+    {
+      "start": "0:46",
+      "end": "0:51",
+      "text": "Now what do you think about the intersection of these two sweet packets?"
+    },
+    {
+      "start": "0:51",
+      "end": "0:56",
+      "text": "Yes, it’s going to be 2 as you can see."
+    },
+    {
+      "start": "0:56",
+      "end": "1:04",
+      "text": "So as is evident already union simply stands for all possible unique items in the 2 sets"
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "put together and intersection gives us the total number of unique items that are common"
+    },
+    {
+      "start": "1:10",
+      "end": "1:13",
+      "text": "in both the sets."
+    },
+    {
+      "start": "1:13",
+      "end": "1:22",
+      "text": "Consider the set of all natural numbers, N = 1, 2, 3, 4, and so on up to infinity, right."
+    },
+    {
+      "start": "1:22",
+      "end": "1:29",
+      "text": "Now let me consider the following two sets A, which is equal to set of all even numbers,"
+    },
+    {
+      "start": "1:29",
+      "end": "1:41",
+      "text": "2, 4, 6, 8 and so on, and set B is equal to set of all odd numbers 1, 3, 5, 7, and so"
+    },
+    {
+      "start": "1:41",
+      "end": "1:43",
+      "text": "on."
+    },
+    {
+      "start": "1:43",
+      "end": "1:47",
+      "text": "So what do you think is A intersection B?"
+    },
+    {
+      "start": "1:47",
+      "end": "1:54",
+      "text": "Do you see that no even number is odd, and no odd number is even and hence there cannot"
+    },
+    {
+      "start": "1:54",
+      "end": "2:03",
+      "text": "be an element that can belong to both A as well as B, and so A intersection B is an empty"
+    },
+    {
+      "start": "2:03",
+      "end": "2:04",
+      "text": "set."
+    },
+    {
+      "start": "2:04",
+      "end": "2:09",
+      "text": "Whenever two sets are such that they do not have any elements in common, in other words"
+    },
+    {
+      "start": "2:09",
+      "end": "2:18",
+      "text": "whenever two sets intersection is empty we call such sets as disjoint sets, note we’ll"
+    },
+    {
+      "start": "2:18",
+      "end": "2:22",
+      "text": "be using this word very often from now on."
+    },
+    {
+      "start": "2:22",
+      "end": "2:30",
+      "text": "Okay, going ahead what is A union B, it’s very easy to see that A union B is indeed"
+    },
+    {
+      "start": "2:30",
+      "end": "2:35",
+      "text": "the whole of the natural numbers, namely 1, 2, 3, 4, 5, and so on, why?"
+    },
+    {
+      "start": "2:35",
+      "end": "2:41",
+      "text": "That’s because a number is either even or odd, so every natural number appears either"
+    },
+    {
+      "start": "2:41",
+      "end": "2:45",
+      "text": "in A or in B, and hence A union B should be the whole of N."
+    }
+  ],
+  "timestamped": true
+}

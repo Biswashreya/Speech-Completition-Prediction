@@ -1,0 +1,83 @@
+{
+  "title": "Logical Equivalence - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:05",
+      "text": "So look at this particular truthtable."
+    },
+    {
+      "start": "0:05",
+      "end": "0:11",
+      "text": "Do you see these two columns?"
+    },
+    {
+      "start": "0:11",
+      "end": "0:15",
+      "text": "It's clear that these two columns are exactly the same."
+    },
+    {
+      "start": "0:15",
+      "end": "0:17",
+      "text": "Think about it."
+    },
+    {
+      "start": "0:17",
+      "end": "0:21",
+      "text": "What does this signify?"
+    },
+    {
+      "start": "0:21",
+      "end": "0:28",
+      "text": "It simply signifies that look at the columns and the corresponding headers of these columns."
+    },
+    {
+      "start": "0:28",
+      "end": "0:33",
+      "text": "They are the Boolean expressions."
+    },
+    {
+      "start": "0:33",
+      "end": "0:40",
+      "text": "The fact that for every possible input that you can think of these two Boolean expressions"
+    },
+    {
+      "start": "0:40",
+      "end": "0:42",
+      "text": "agree."
+    },
+    {
+      "start": "0:42",
+      "end": "0:45",
+      "text": "By agree I mean if he is zero, he is zero."
+    },
+    {
+      "start": "0:45",
+      "end": "0:47",
+      "text": "That is one, this is one."
+    },
+    {
+      "start": "0:47",
+      "end": "0:51",
+      "text": "Right, which means they both are equivalent."
+    },
+    {
+      "start": "0:51",
+      "end": "0:52",
+      "text": "Right."
+    },
+    {
+      "start": "0:52",
+      "end": "0:57",
+      "text": "So this is what we mean by equivalence of two Boolean expressions."
+    },
+    {
+      "start": "0:57",
+      "end": "1:00",
+      "text": "We say they are logically the same."
+    }
+  ],
+  "timestamped": true
+}

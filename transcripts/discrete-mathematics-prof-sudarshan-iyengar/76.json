@@ -1,0 +1,153 @@
+{
+  "title": "Motivation for OR operator",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:07",
+      "text": "Let us start with a very famous quote."
+    },
+    {
+      "start": "0:07",
+      "end": "0:16",
+      "text": "The quote goes like this; he who knows not and knows not that he knows not he's a fool,"
+    },
+    {
+      "start": "0:16",
+      "end": "0:18",
+      "text": "shun him."
+    },
+    {
+      "start": "0:18",
+      "end": "0:27",
+      "text": "He who knows not and knows that he knows not is simple, teach him."
+    },
+    {
+      "start": "0:27",
+      "end": "0:35",
+      "text": "He who knows and knows not that he knows, he is asleep, wake him up."
+    },
+    {
+      "start": "0:35",
+      "end": "0:43",
+      "text": "He who knows and knows that he knows is an intellectual, he's a leader, follow him."
+    },
+    {
+      "start": "0:43",
+      "end": "0:45",
+      "text": "Do you see what just happened?"
+    },
+    {
+      "start": "0:45",
+      "end": "0:51",
+      "text": "So let me write this thing in the form of 1s and 0s."
+    },
+    {
+      "start": "0:51",
+      "end": "1:00",
+      "text": "So let me write if a person is knowledgeable or not as a first thing and then is he aware,"
+    },
+    {
+      "start": "1:00",
+      "end": "1:01",
+      "text": "if he's knowledgeable or not."
+    },
+    {
+      "start": "1:01",
+      "end": "1:08",
+      "text": "So the first thing says he who knows not he is not knowledgeable and knows not that he"
+    },
+    {
+      "start": "1:08",
+      "end": "1:14",
+      "text": "knows not which means he's unaware that he is not knowledgeable."
+    },
+    {
+      "start": "1:14",
+      "end": "1:15",
+      "text": "That's the first one."
+    },
+    {
+      "start": "1:15",
+      "end": "1:22",
+      "text": "Second one is he who knows not, not knowledgeable, and knows that he knows not."
+    },
+    {
+      "start": "1:22",
+      "end": "1:28",
+      "text": "He is aware of the fact of his knowledge status."
+    },
+    {
+      "start": "1:28",
+      "end": "1:31",
+      "text": "This chap was not aware of his knowledge status."
+    },
+    {
+      "start": "1:31",
+      "end": "1:36",
+      "text": "Whatever is his knowledge status he was unaware of what was his knowledge status, but the"
+    },
+    {
+      "start": "1:36",
+      "end": "1:42",
+      "text": "second one is ignorant, he's not knowledgeable but he's aware of the fact that he is ignorant,"
+    },
+    {
+      "start": "1:42",
+      "end": "1:43",
+      "text": "that is not knowledgeable."
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "Third one he who knows, a fellow who is knowledgeable and knows not that he knows."
+    },
+    {
+      "start": "1:50",
+      "end": "1:56",
+      "text": "He is unaware of the fact that he is knowledgeable, right."
+    },
+    {
+      "start": "1:56",
+      "end": "1:58",
+      "text": "It says he's asleep wake him up."
+    },
+    {
+      "start": "1:58",
+      "end": "1:59",
+      "text": "Correct?"
+    },
+    {
+      "start": "1:59",
+      "end": "2:00",
+      "text": "Makes sense?"
+    },
+    {
+      "start": "2:00",
+      "end": "2:07",
+      "text": "The last one is he who knows and knows that he knows he's an intellectual, follow him."
+    },
+    {
+      "start": "2:07",
+      "end": "2:09",
+      "text": "Look at this table."
+    },
+    {
+      "start": "2:09",
+      "end": "2:13",
+      "text": "The table has a 0, 0, 0, 1, 1, 0, 1, 1."
+    },
+    {
+      "start": "2:13",
+      "end": "2:17",
+      "text": "These are the only possible enumerations you can think of right."
+    },
+    {
+      "start": "2:17",
+      "end": "2:18",
+      "text": "Let's see what this has to say."
+    }
+  ],
+  "timestamped": true
+}

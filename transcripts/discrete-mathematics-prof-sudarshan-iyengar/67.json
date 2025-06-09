@@ -1,0 +1,168 @@
+{
+  "title": "History",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "Georg Cantor, Richard Dedekind, Bertrand  Russell, Kurt Gödel, Zermelo, Paul Cohan,"
+    },
+    {
+      "start": "0:11",
+      "end": "0:17",
+      "text": "and many more, these are a few of the several  great mathematicians who have laid the foundations"
+    },
+    {
+      "start": "0:17",
+      "end": "0:23",
+      "text": "of whatever we have learned this week, set  theory. Their contribution is acknowledged"
+    },
+    {
+      "start": "0:23",
+      "end": "0:30",
+      "text": "worldwide even today, it is not very easy to  sort out the dates exactly of what happened when,"
+    },
+    {
+      "start": "0:30",
+      "end": "0:37",
+      "text": "when, we speak about the history of the subject.  Several interactions have led to its development,"
+    },
+    {
+      "start": "0:37",
+      "end": "0:45",
+      "text": "but set theory is actually known to be  one person's creation - Georg Cantor."
+    },
+    {
+      "start": "0:45",
+      "end": "0:53",
+      "text": "Early 19th century saw the inception of set theory  where mathematicians were struggling to understand"
+    },
+    {
+      "start": "0:53",
+      "end": "1:02",
+      "text": "the concept of infinity, in 1872 Cantor formulated  real numbers as sequences of rational numbers this"
+    },
+    {
+      "start": "1:02",
+      "end": "1:09",
+      "text": "was a motivational drive for the mathematicians  to understand the notion of infinity, Cantor"
+    },
+    {
+      "start": "1:09",
+      "end": "1:15",
+      "text": "brought in the concept of proving two sects to be  equivalent if there is a one-to-one correspondence"
+    },
+    {
+      "start": "1:15",
+      "end": "1:22",
+      "text": "which is a very powerful concept even today, using  this Cantor also proved that there are infinitely"
+    },
+    {
+      "start": "1:22",
+      "end": "1:30",
+      "text": "many levels of infinity or there are infinitely  many different infinite cardinal numbers, I repeat"
+    },
+    {
+      "start": "1:30",
+      "end": "1:36",
+      "text": "there are infinitely many levels of infinity  or there are infinitely many different infinite"
+    },
+    {
+      "start": "1:36",
+      "end": "1:43",
+      "text": "cardinal numbers, and that sounds confusing! don't  worry if you don't understand this if you really"
+    },
+    {
+      "start": "1:43",
+      "end": "1:48",
+      "text": "want to understand more you can always search  the internet there are a whole lot of references."
+    },
+    {
+      "start": "1:48",
+      "end": "1:56",
+      "text": "Further interactions of Cantor with Dedekind,  during 1870s developed a mutual respect between"
+    },
+    {
+      "start": "1:56",
+      "end": "2:01",
+      "text": "the two and Dedekind was the first one to  acknowledge Cantor's work on infinite sets,"
+    },
+    {
+      "start": "2:01",
+      "end": "2:08",
+      "text": "it was actually disagreed upon by other  contemporaries, Dedekind has developed the"
+    },
+    {
+      "start": "2:08",
+      "end": "2:14",
+      "text": "concept of cuts which forms the basis for  defining real numbers, he has shed light"
+    },
+    {
+      "start": "2:14",
+      "end": "2:23",
+      "text": "on how two infinite sets can be turned similar. It was then during 1900’s that Bertrand Russell"
+    },
+    {
+      "start": "2:23",
+      "end": "2:32",
+      "text": "and Ernst Zermelo independently found that Cantor  discoveries lead to paradoxes, and these paradoxes"
+    },
+    {
+      "start": "2:32",
+      "end": "2:39",
+      "text": "were in itself very interesting, Russell's paradox  is one such contradiction to what Cantor stated,"
+    },
+    {
+      "start": "2:39",
+      "end": "2:46",
+      "text": "at the end of 1890s Cantor had himself figured  out that his theory would lead to contradictions,"
+    },
+    {
+      "start": "2:46",
+      "end": "2:54",
+      "text": "which he had himself told Hilbert and Russell in  a letter. Though set theory had paradoxes and huge"
+    },
+    {
+      "start": "2:54",
+      "end": "3:01",
+      "text": "debates it did not lose its momentum, Zermelo in  1904 proved that every set can be well ordered"
+    },
+    {
+      "start": "3:01",
+      "end": "3:09",
+      "text": "which was conjectured by Cantor, there has also  been debates on axiom of choice between Kurt Gödel"
+    },
+    {
+      "start": "3:09",
+      "end": "3:17",
+      "text": "and Paul Cohan, this is how set theory has taken  shape to what it is today, it is impossible to"
+    },
+    {
+      "start": "3:17",
+      "end": "3:22",
+      "text": "mention all the details in this short video clip,  this must be an initial trigger for you all to"
+    },
+    {
+      "start": "3:22",
+      "end": "3:28",
+      "text": "read more about the development on the internet. Now go back to the first lecture of this week,"
+    },
+    {
+      "start": "3:28",
+      "end": "3:34",
+      "text": "read the quote again and you would understand it  with a brand new perspective. “No one shall expel"
+    },
+    {
+      "start": "3:34",
+      "end": "3:41",
+      "text": "us from the paradise which Cantor has created  for us.” said David Hilbert, he just meant he was"
+    },
+    {
+      "start": "3:41",
+      "end": "3:46",
+      "text": "trying to express the importance of Georg Cantor’s  set theory in the development of mathematics."
+    }
+  ],
+  "timestamped": true
+}

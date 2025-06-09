@@ -1,0 +1,68 @@
+{
+  "title": "De Morgan's Laws - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:12",
+      "text": "De Morgan's law states that whenever  you take two sets A and B and its union,"
+    },
+    {
+      "start": "0:12",
+      "end": "0:18",
+      "text": "if you take its complement that'll always be  equal to A complement intersection B complement."
+    },
+    {
+      "start": "0:18",
+      "end": "0:25",
+      "text": "So I'm going to give you two proofs for this. Venn  diagram proof is pretty straightforward what you"
+    },
+    {
+      "start": "0:25",
+      "end": "0:32",
+      "text": "do is you write down A, you write down B, A and  B are always going to be like this intersection"
+    },
+    {
+      "start": "0:32",
+      "end": "0:36",
+      "text": "might have some elements it may not have any  elements but still we'll write that down,"
+    },
+    {
+      "start": "0:36",
+      "end": "0:43",
+      "text": "so what is A union B? A union B is the entire  thing, its complement will be what is outside"
+    },
+    {
+      "start": "0:43",
+      "end": "0:51",
+      "text": "the two ovals. So now A union B complement  is basically all the dots outside the circle,"
+    },
+    {
+      "start": "0:51",
+      "end": "0:58",
+      "text": "now is that equal to A complement intersection B  complement? Now isn't that obvious all the dots"
+    },
+    {
+      "start": "0:58",
+      "end": "1:05",
+      "text": "outside this circle will also include some  elements of A? Okay? and then I take all the"
+    },
+    {
+      "start": "1:05",
+      "end": "1:13",
+      "text": "dots outside the circle A, and all the dots  outside the circle B and it's intersection,"
+    },
+    {
+      "start": "1:13",
+      "end": "1:21",
+      "text": "what will that be? Any dot that is outside A as  well as outside B are the dots precisely here,"
+    },
+    {
+      "start": "1:21",
+      "end": "1:28",
+      "text": "so combinatorially you see that this result is  actually true, but let's prove it very rigorously."
+    }
+  ],
+  "timestamped": true
+}

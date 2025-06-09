@@ -1,0 +1,113 @@
+{
+  "title": "Problems",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:10",
+      "text": "Let us write a very simple truthtable for P  implies not P. how does it look like? P will be 0,"
+    },
+    {
+      "start": "0:10",
+      "end": "0:17",
+      "text": "1. Not P will be 1,0 and then you will get P  implies not P which means 0 implies 1 which is"
+    },
+    {
+      "start": "0:17",
+      "end": "0:24",
+      "text": "1. 1 implies 0 means it is false. So it will  be 0. This is how the truthtable looks like."
+    },
+    {
+      "start": "0:24",
+      "end": "0:34",
+      "text": "We need to now write the truthtable for P XOR P  OR Q. Okay. How do we go about? P will be this."
+    },
+    {
+      "start": "0:34",
+      "end": "0:43",
+      "text": "Q will be this. P OR Q will be simply OR of this  P column and Q column which will give you 0, 1,"
+    },
+    {
+      "start": "0:43",
+      "end": "0:52",
+      "text": "1, 1. Okay. And then we are XOR in P the first  column with P OR Q, the third column. So what is"
+    },
+    {
+      "start": "0:52",
+      "end": "0:58",
+      "text": "exclusive OR? Precisely one of them should be true  and the other one should be 0. As you can see 0"
+    },
+    {
+      "start": "0:58",
+      "end": "1:08",
+      "text": "XOR 0 will be 0. 0 XOR 1 will be 1. 1 XOR 1 will  be 0. See how that how XOR works. Again 1 XOR 1"
+    },
+    {
+      "start": "1:08",
+      "end": "1:15",
+      "text": "will be 0. So the entries will be 0, 1, 0, 0. Let  us write the truthtable for this weirdly looking,"
+    },
+    {
+      "start": "1:15",
+      "end": "1:21",
+      "text": "weird looking expression. Q and P implies an  implied by Q. what do you mean by implies and"
+    },
+    {
+      "start": "1:21",
+      "end": "1:27",
+      "text": "implied by Q? I'll explain. So P entries Q entries  in the table, first 2 columns and then P implies"
+    },
+    {
+      "start": "1:27",
+      "end": "1:34",
+      "text": "and implied by Q means when P is 0, Q should be 0  and vice versa. Both of them should be of the same"
+    },
+    {
+      "start": "1:34",
+      "end": "1:42",
+      "text": "value, same parity to be precise. Right. Okay.  So this will be 0 implies 0 means it should be"
+    },
+    {
+      "start": "1:42",
+      "end": "1:49",
+      "text": "1. 0 implies 1 means as I told you they are of  different parity so this will be 0. 1 implies 0"
+    },
+    {
+      "start": "1:49",
+      "end": "1:59",
+      "text": "will be 0. 1 and 1 will yield 1. Now what should  we find Q AND P is implied and implies Q. 0,"
+    },
+    {
+      "start": "1:59",
+      "end": "2:05",
+      "text": "0 so which is basically the what we should do is  2nd column and the 3rd column we should take an"
+    },
+    {
+      "start": "2:05",
+      "end": "2:14",
+      "text": "AND. 0 and 1 is 0. 1 and 0 is 0. 0 and 0 is 0. 1  and 1 is 1. I'm sure you all are as fast as me."
+    },
+    {
+      "start": "2:14",
+      "end": "2:19",
+      "text": "There's nothing much here. So why are we doing all  these things? It sounds like waste of time. No you"
+    },
+    {
+      "start": "2:19",
+      "end": "2:25",
+      "text": "should get used to how to write truthtables. I  mean that's a very important skill not something"
+    },
+    {
+      "start": "2:25",
+      "end": "2:31",
+      "text": "that will make you become a champion in computer  science or math. It is just that someone who"
+    },
+    {
+      "start": "2:31",
+      "end": "2:39",
+      "text": "claims he knows everything about these operators  should know how one writes truthtables. That's it."
+    }
+  ],
+  "timestamped": true
+}

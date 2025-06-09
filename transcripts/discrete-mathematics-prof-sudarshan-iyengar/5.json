@@ -1,0 +1,48 @@
+{
+  "title": "Counting in computer science",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:03",
+      "end": "00:00:09",
+      "text": "We just saw three interesting examples; paper folding, Rubik's cube and the friends taking photos example."
+    },
+    {
+      "start": "00:00:09",
+      "end": "00:00:11",
+      "text": "If you are wondering what has this to do with computing, here goes the answer."
+    },
+    {
+      "start": "00:00:11",
+      "end": "00:00:17",
+      "text": "It is indeed important for us to understand when will my piece of program stop."
+    },
+    {
+      "start": "00:00:17",
+      "end": "00:00:26",
+      "text": "It might go on forever what if you are trying to enumerate all possible permutations of 1, 2, 3, up to 20, this is same as 20 people taking all possible pictures."
+    },
+    {
+      "start": "00:00:26",
+      "end": "00:00:33",
+      "text": "If you were to enumerate all these things on your computer you will not be able to do it for a simple reason that it's a huge number of possibilities."
+    },
+    {
+      "start": "00:00:33",
+      "end": "00:00:41",
+      "text": "So all we are trying to say is it is very, very, very important for us to have an idea as to how many steps will your computer take in order to execute a task."
+    },
+    {
+      "start": "00:00:41",
+      "end": "00:00:52",
+      "text": "For that we need to understand counting at a very different level."
+    },
+    {
+      "start": "00:00:52",
+      "end": "00:01:20",
+      "text": "And this chapter is all about understanding how to count in a situation where it is not just about 1, 2, 3, 4, it's about enumerated all the objects in a system."
+    }
+  ],
+  "timestamped": true
+}

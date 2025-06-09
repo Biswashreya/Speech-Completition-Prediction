@@ -1,0 +1,257 @@
+{
+  "title": "Combinations - Part 4",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:14",
+      "text": "We are now going to see how nCr is equal to n minus 1 Cr plus n minus 1 r-1."
+    },
+    {
+      "start": "0:14",
+      "end": "0:15",
+      "text": "Okay."
+    },
+    {
+      "start": "0:15",
+      "end": "0:20",
+      "text": "So this just follows from our definition of nCr."
+    },
+    {
+      "start": "0:20",
+      "end": "0:22",
+      "text": "What is that?"
+    },
+    {
+      "start": "0:22",
+      "end": "0:31",
+      "text": "nCr is given by factorial n divided by factorial r times n minus r factorial."
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "Now that becomes your left hand side."
+    },
+    {
+      "start": "0:34",
+      "end": "0:36",
+      "text": "Right."
+    },
+    {
+      "start": "0:36",
+      "end": "0:38",
+      "text": "Perfect."
+    },
+    {
+      "start": "0:38",
+      "end": "0:41",
+      "text": "Now what is the right hand side?"
+    },
+    {
+      "start": "0:41",
+      "end": "0:48",
+      "text": "n minus 1 Cr which becomes n minus 1 factorial divided by r factorial times n minus 1 minus r factorial plus and this n minus 1 Cr minus 1 becomes n minus 1 factorial divided by r"
+    },
+    {
+      "start": "0:48",
+      "end": "0:56",
+      "text": "minus 1 factorial into n minus 1 minus r plus 1 factorial."
+    },
+    {
+      "start": "0:56",
+      "end": "1:01",
+      "text": "Why is that?"
+    },
+    {
+      "start": "1:01",
+      "end": "1:08",
+      "text": "I just subtract n minus 1 and r minus 1 rather rather r minus 1 is subtracted from n minus 1."
+    },
+    {
+      "start": "1:08",
+      "end": "1:14",
+      "text": "That's why you get n minus 1 minus r minus of 1 and minus minus becomes plus so you have a minus 1 and a plus 1 here which gets canceled which gives you simply n minus r factorial"
+    },
+    {
+      "start": "1:14",
+      "end": "1:20",
+      "text": "here."
+    },
+    {
+      "start": "1:20",
+      "end": "1:29",
+      "text": "So this is the same old-school method of trying to prove a formula by showing that the left hand side is indeed equal to the right hand side."
+    },
+    {
+      "start": "1:29",
+      "end": "1:33",
+      "text": "Let's see how we can proceed."
+    },
+    {
+      "start": "1:33",
+      "end": "1:35",
+      "text": "As you can see there is an n factorial in the numerator on the left hand side and n"
+    },
+    {
+      "start": "1:35",
+      "end": "1:40",
+      "text": "minus 1 factorial on the right hand side."
+    },
+    {
+      "start": "1:40",
+      "end": "1:43",
+      "text": "So I will take n minus 1 factorial common on the right hand side and then bring that"
+    },
+    {
+      "start": "1:43",
+      "end": "1:48",
+      "text": "down to left hand side which makes it n factorial divided by n minus 1 factorial which you all"
+    },
+    {
+      "start": "1:48",
+      "end": "1:54",
+      "text": "know what is 10 factorial by 9 factorial."
+    },
+    {
+      "start": "1:54",
+      "end": "1:57",
+      "text": "It is simply 10 right."
+    },
+    {
+      "start": "1:57",
+      "end": "2:00",
+      "text": "So n factorial divided by n minus 1 factorial happens to be n."
+    },
+    {
+      "start": "2:00",
+      "end": "2:05",
+      "text": "Correct."
+    },
+    {
+      "start": "2:05",
+      "end": "2:06",
+      "text": "So you get an n here and these things numerators become one and one on the right hand side."
+    },
+    {
+      "start": "2:06",
+      "end": "2:11",
+      "text": "Okay."
+    },
+    {
+      "start": "2:11",
+      "end": "2:12",
+      "text": "And then next."
+    },
+    {
+      "start": "2:12",
+      "end": "2:13",
+      "text": "Do you observe r factorial in the denominator throughout and an r minus one factorial here?"
+    },
+    {
+      "start": "2:13",
+      "end": "2:18",
+      "text": "So what I do is I will multiply the numerators by the r factorial."
+    },
+    {
+      "start": "2:18",
+      "end": "2:24",
+      "text": "So what do I get?"
+    },
+    {
+      "start": "2:24",
+      "end": "2:26",
+      "text": "r factorial gets cancel here when I put r factorial numerator on the left hand side"
+    },
+    {
+      "start": "2:26",
+      "end": "2:30",
+      "text": "and then r factorial again on the right hand side gets canceled but when you put an r factorial"
+    },
+    {
+      "start": "2:30",
+      "end": "2:35",
+      "text": "here in the second term r factorial divided by r minus 1 factorial gives you r so r remains"
+    },
+    {
+      "start": "2:35",
+      "end": "2:40",
+      "text": "the numerator right and then the next step, do you see what's happening?"
+    },
+    {
+      "start": "2:40",
+      "end": "2:45",
+      "text": "I'm multiplying throughout by n minus r factorial, right."
+    },
+    {
+      "start": "2:45",
+      "end": "2:48",
+      "text": "And that gives me simply a little observation one more step tells me this simply makes this"
+    },
+    {
+      "start": "2:48",
+      "end": "2:56",
+      "text": "n equals n minus r the first term becomes n minus r right, rest gets canceled plus r."
+    },
+    {
+      "start": "2:56",
+      "end": "3:04",
+      "text": "So n equals n minus r plus r plus r minus r gets canceled."
+    },
+    {
+      "start": "3:04",
+      "end": "3:09",
+      "text": "This implies n equals n of course left hand side is equal to right hand side and so you"
+    },
+    {
+      "start": "3:09",
+      "end": "3:16",
+      "text": "go back and you say that the formula is indeed right."
+    },
+    {
+      "start": "3:16",
+      "end": "3:24",
+      "text": "So how do we show that nCr is equal to nCn-r, right, in a very mathematical way."
+    },
+    {
+      "start": "3:24",
+      "end": "3:34",
+      "text": "So what is nCr factorial n divided by factorial r into factorial n minus r, correct."
+    },
+    {
+      "start": "3:34",
+      "end": "3:42",
+      "text": "But what is n choose n minus r?"
+    },
+    {
+      "start": "3:42",
+      "end": "3:46",
+      "text": "It is n factorial divided by n minus r factorial times n minus of n minus r factorial."
+    },
+    {
+      "start": "3:46",
+      "end": "3:55",
+      "text": "You see n and minus n gets canceled and this becomes r here and as you can see the left"
+    },
+    {
+      "start": "3:55",
+      "end": "4:01",
+      "text": "hand side is equal to right hand side."
+    },
+    {
+      "start": "4:01",
+      "end": "4:04",
+      "text": "Remember this is how we used to show a lot of things to be true in our school days basic"
+    },
+    {
+      "start": "4:04",
+      "end": "4:10",
+      "text": "algebra right."
+    },
+    {
+      "start": "4:10",
+      "end": "4:11",
+      "text": "So LHS is equal to RHS and hence we show that nCr is indeed equal to nCn-r."
+    }
+  ]
+}

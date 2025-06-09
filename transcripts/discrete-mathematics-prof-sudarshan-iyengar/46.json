@@ -1,0 +1,163 @@
+{
+  "title": "Union and intersections of sets",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:01",
+      "end": "0:08",
+      "text": "It is now time for us to put our understanding to test, let us now play around with sets"
+    },
+    {
+      "start": "0:08",
+      "end": "0:12",
+      "text": "by performing a few operations on that."
+    },
+    {
+      "start": "0:12",
+      "end": "0:19",
+      "text": "Let me consider a set U with 10 people, and let me represent this people as P1, P2, P3,"
+    },
+    {
+      "start": "0:19",
+      "end": "0:28",
+      "text": "P4, P5, P6, P7, P8, P9 and P10, right, instead of seeing it as a set I’m going to take"
+    },
+    {
+      "start": "0:28",
+      "end": "0:36",
+      "text": "a rectangle and put this people here into this rectangle, P1, P2, up to P10, you see"
+    },
+    {
+      "start": "0:36",
+      "end": "0:44",
+      "text": "in this some of them are boys, and some of them are girls, let’s say these 6 people"
+    },
+    {
+      "start": "0:44",
+      "end": "0:51",
+      "text": "are boys and these 4 people are girls, and then again you see I’m going to use another"
+    },
+    {
+      "start": "0:51",
+      "end": "0:59",
+      "text": "circle to represent that these people are from the state Karnataka, and these people"
+    },
+    {
+      "start": "0:59",
+      "end": "1:06",
+      "text": "are from the state West Bengal, and these are from Punjab, so there are these 10 people"
+    },
+    {
+      "start": "1:06",
+      "end": "1:15",
+      "text": "belong to 3 different states, and then let me go ahead and also tell you that some of"
+    },
+    {
+      "start": "1:15",
+      "end": "1:21",
+      "text": "them know Hindi, and these many people know English, and guess what is in between, these"
+    },
+    {
+      "start": "1:21",
+      "end": "1:30",
+      "text": "are the people who know both Hindi as well as English, you see this is called the intersection."
+    },
+    {
+      "start": "1:30",
+      "end": "1:43",
+      "text": "Intersection which stands for those elements that are common amongst these two sets H and"
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "E where H stands for those people who know to speak in Hindi, and E stands for those"
+    },
+    {
+      "start": "1:50",
+      "end": "1:57",
+      "text": "people amongst these 10 people who know English, and obviously you will find some people in"
+    },
+    {
+      "start": "1:57",
+      "end": "2:05",
+      "text": "the intersection of E and H which denotes people who know both English and Hindi."
+    },
+    {
+      "start": "2:05",
+      "end": "2:11",
+      "text": "Please note this is a very important symbol, we’ll encounter this very often."
+    },
+    {
+      "start": "2:11",
+      "end": "2:19",
+      "text": "Amongst these 10 people assume these many people love vanilla ice-cream, and these many"
+    },
+    {
+      "start": "2:19",
+      "end": "2:28",
+      "text": "love strawberry ice cream, you see there can be people who love both vanilla and strawberry."
+    },
+    {
+      "start": "2:28",
+      "end": "2:31",
+      "text": "Now what does this denote?"
+    },
+    {
+      "start": "2:31",
+      "end": "2:37",
+      "text": "This entire circle as well as this entire circle, it denotes all those people who love"
+    },
+    {
+      "start": "2:37",
+      "end": "2:46",
+      "text": "either vanilla or strawberry that is called the union you see, the set V and S it’s"
+    },
+    {
+      "start": "2:46",
+      "end": "2:54",
+      "text": "union comprises of all the people in these circles with simply, will be these people"
+    },
+    {
+      "start": "2:54",
+      "end": "2:58",
+      "text": "and they all are, what is this set?"
+    },
+    {
+      "start": "2:58",
+      "end": "3:07",
+      "text": "As you can see V union S is the set of all those people who like either vanilla or strawberry."
+    },
+    {
+      "start": "3:07",
+      "end": "3:14",
+      "text": "In fact anyone outside these two circles, let’s say this person does not belong to"
+    },
+    {
+      "start": "3:14",
+      "end": "3:17",
+      "text": "this set, for a simple reason that he neither likes vanilla nor strawberry."
+    },
+    {
+      "start": "3:17",
+      "end": "3:18",
+      "text": "IIT MADRAS PRODUCTION Funded by"
+    },
+    {
+      "start": "3:18",
+      "end": "3:19",
+      "text": "Department of Higher Education Ministry of Human Resource Development"
+    },
+    {
+      "start": "3:19",
+      "end": "3:20",
+      "text": "Government of India www.nptel.iitm.ac.in"
+    },
+    {
+      "start": "3:20",
+      "end": "3:20",
+      "text": "Copyrights Reserved"
+    }
+  ],
+  "timestamped": true
+}

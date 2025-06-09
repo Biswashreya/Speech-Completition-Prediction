@@ -1,0 +1,332 @@
+{
+  "title": "Catalan Numbers - Part 3",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:11",
+      "text": "So I have tried all the possibilities manually  for the total number of paths without crossing"
+    },
+    {
+      "start": "0:11",
+      "end": "0:20",
+      "text": "the diagonal from (0,0) to (5,5). Let me show  you. This is one possibility. This is another"
+    },
+    {
+      "start": "0:20",
+      "end": "0:29",
+      "text": "one. This is yet another possibility and so  on. It might surprise you that there are 42"
+    },
+    {
+      "start": "0:29",
+      "end": "0:36",
+      "text": "such possibilities to go from (0,0) to  (5,5) without crossing the diagonal."
+    },
+    {
+      "start": "0:36",
+      "end": "0:45",
+      "text": "We saw that the answer is not necessarily  10 choose 5 which is all possibilities"
+    },
+    {
+      "start": "0:45",
+      "end": "0:54",
+      "text": "divided by 2. It was something else. So a  straightforward intuition of seeing that"
+    },
+    {
+      "start": "0:54",
+      "end": "1:00",
+      "text": "crossing and not crossing would be of the same  numbers and hence it's going to be 10 choose 5 by"
+    },
+    {
+      "start": "1:00",
+      "end": "1:07",
+      "text": "2 may not work. Something to note here. Correct. So what else will work? Let's see what works"
+    },
+    {
+      "start": "1:07",
+      "end": "1:14",
+      "text": "here. Before going any further I will try  recollecting a small tip that I have been"
+    },
+    {
+      "start": "1:14",
+      "end": "1:21",
+      "text": "giving you when it comes to counting, correct.  When you want to count a set count the number of"
+    },
+    {
+      "start": "1:21",
+      "end": "1:27",
+      "text": "elements in a set what you do is you try  creating a one-to-one correspondence to"
+    },
+    {
+      "start": "1:27",
+      "end": "1:35",
+      "text": "another set where counting is very easy and  then show that this set has the same number"
+    },
+    {
+      "start": "1:35",
+      "end": "1:41",
+      "text": "of elements as this set and counting in this set  is very easy and hence the number of elements in"
+    },
+    {
+      "start": "1:41",
+      "end": "1:48",
+      "text": "this set is now known, right? I'm going to use  this technique right now in a very subtle way."
+    },
+    {
+      "start": "1:48",
+      "end": "1:53",
+      "text": "The concept is slightly deep. You may want to  watch this video multiple times to understand"
+    },
+    {
+      "start": "1:53",
+      "end": "2:00",
+      "text": "what we are saying. So now let's get started.  What was the question? What are the total"
+    },
+    {
+      "start": "2:00",
+      "end": "2:09",
+      "text": "number of ways in which you can reach (5,5) from  (0,0) without trespassing the diagonal? Alright."
+    },
+    {
+      "start": "2:09",
+      "end": "2:16",
+      "text": "Let me now observe an instance where I actually  trespassed the diagonal and I will count all those"
+    },
+    {
+      "start": "2:16",
+      "end": "2:23",
+      "text": "possibilities which crosses the diagonal. And then  I will subtract that from my all possibilities"
+    },
+    {
+      "start": "2:23",
+      "end": "2:31",
+      "text": "which is 10 choose 5 and I am done, correct. So  all that remains right now is to count the number"
+    },
+    {
+      "start": "2:31",
+      "end": "2:39",
+      "text": "of ways in which you can trespass the fence. I will start with just one such instance. Look at"
+    },
+    {
+      "start": "2:39",
+      "end": "2:54",
+      "text": "this. RUURURRURU. When you take a first step that  is R you are well below the fence and next when"
+    },
+    {
+      "start": "2:54",
+      "end": "3:04",
+      "text": "you take U, you touch the fence and another U you  trespass the fence. Right? And then you take a few"
+    },
+    {
+      "start": "3:04",
+      "end": "3:13",
+      "text": "more steps. Let me put a vertical line immediately  after that state when you trespass the fence, and"
+    },
+    {
+      "start": "3:13",
+      "end": "3:22",
+      "text": "what I do is a small trick here. I take the right  side of this vertical line and take the compliment"
+    },
+    {
+      "start": "3:22",
+      "end": "3:30",
+      "text": "of it. So an R becomes U and a U becomes R. I will  take a compliment of it like this. Alright. Why am"
+    },
+    {
+      "start": "3:30",
+      "end": "3:36",
+      "text": "I doing this? Call me crazy. You will get to  know why I am doing this in some time but as"
+    },
+    {
+      "start": "3:36",
+      "end": "3:42",
+      "text": "of now you don't worry much about why exactly  is he doing this compliment business. Right.?"
+    },
+    {
+      "start": "3:42",
+      "end": "3:52",
+      "text": "Okay. Observe. On the left side of the vertical  line you have one U more than the R that is"
+    },
+    {
+      "start": "3:52",
+      "end": "3:57",
+      "text": "when you put a vertical line the rule is not  just you put a vertical line after two Us,"
+    },
+    {
+      "start": "3:57",
+      "end": "4:05",
+      "text": "it is whenever you trespass trespassing is when  you have one U more than the number of Rs correct."
+    },
+    {
+      "start": "4:05",
+      "end": "4:12",
+      "text": "There are two Us here, one R here that is when  you trespass the diagonal. When you are on the"
+    },
+    {
+      "start": "4:12",
+      "end": "4:18",
+      "text": "diagonal the number of Rs and Us is the same,  correct. When you trespass one there is one U"
+    },
+    {
+      "start": "4:18",
+      "end": "4:25",
+      "text": "more than the number of Rs. Put a vertical line  and on the right side when you have one R, one"
+    },
+    {
+      "start": "4:25",
+      "end": "4:31",
+      "text": "U more than an R on the left side of the vertical  line obviously there should be one R more than the"
+    },
+    {
+      "start": "4:31",
+      "end": "4:37",
+      "text": "number of Us in the right side that is when you  will get equal number of Rs Us. Pause the video"
+    },
+    {
+      "start": "4:37",
+      "end": "4:43",
+      "text": "and think about it. On the left side you have one  U more than the number of Rs; on the right side"
+    },
+    {
+      "start": "4:43",
+      "end": "4:50",
+      "text": "you have one R more than a number of Us always  whenever you put a vertical line on the left side"
+    },
+    {
+      "start": "4:50",
+      "end": "4:55",
+      "text": "you will have this on the right side you will have  this and what I do is I take the compliment of the"
+    },
+    {
+      "start": "4:55",
+      "end": "5:03",
+      "text": "right side which had one R more than a number of  Us. In the compliment you will get one U more than"
+    },
+    {
+      "start": "5:03",
+      "end": "5:11",
+      "text": "the number of Rs. On the left side you already had  one U more than the number of Rs and a net total"
+    },
+    {
+      "start": "5:11",
+      "end": "5:22",
+      "text": "right now will be 2 Us more than the number of Rs  which means you now have four Rs and six Us. What"
+    },
+    {
+      "start": "5:22",
+      "end": "5:29",
+      "text": "on earth does this denote? This doesn't denote  a way from (0,0) to (5,5). This simply denotes"
+    },
+    {
+      "start": "5:29",
+      "end": "5:39",
+      "text": "a combination of four Rs and six Us. Okay. Now what exactly happened so far? I took an"
+    },
+    {
+      "start": "5:39",
+      "end": "5:51",
+      "text": "invalid move and I created a unique mapping to  a set containing elements with four Rs and 6 Us"
+    },
+    {
+      "start": "5:51",
+      "end": "6:00",
+      "text": "and my claim right now is this mapping is unique.  Unique in what sense? Every element on this side,"
+    },
+    {
+      "start": "6:00",
+      "end": "6:06",
+      "text": "on which side? Of the left side what does that  denote? It denotes all possible trespassing cases"
+    },
+    {
+      "start": "6:06",
+      "end": "6:11",
+      "text": "on the left side and on the right side  all possible four Rs and six Us and its"
+    },
+    {
+      "start": "6:11",
+      "end": "6:18",
+      "text": "combinations. How many such things are there?  Pretty straightforward, isn't it? 10 choose 6"
+    },
+    {
+      "start": "6:18",
+      "end": "6:30",
+      "text": "correct. There are 10 choose 6 such possibilities  and now what do we observe, for any 4 Rs and 6 Us"
+    },
+    {
+      "start": "6:30",
+      "end": "6:36",
+      "text": "possibilities you can actually put a vertical line  after one U more than the R possibility and then"
+    },
+    {
+      "start": "6:36",
+      "end": "6:43",
+      "text": "take the complement you will get a unique element  in the left side and vice-versa, correct, for an"
+    },
+    {
+      "start": "6:43",
+      "end": "6:47",
+      "text": "element to the left side you have a unique element  on the right side. For every element in the right"
+    },
+    {
+      "start": "6:47",
+      "end": "6:54",
+      "text": "side you have a unique element on the left side.  Right? And hence the total number of possibilities"
+    },
+    {
+      "start": "6:54",
+      "end": "7:03",
+      "text": "that are trespassing are precisely 10 choose 6  and I want to subtract this from 10 choose 5 which"
+    },
+    {
+      "start": "7:03",
+      "end": "7:09",
+      "text": "is total number of possibilities. So my final  answer of all those possibilities that doesn't"
+    },
+    {
+      "start": "7:09",
+      "end": "7:19",
+      "text": "trespass the line is 10 choose 5 minus all the  invalid ones trespassing 10 choose 6. 10 choose"
+    },
+    {
+      "start": "7:19",
+      "end": "7:27",
+      "text": "5 minus 10 choose 6 and that's going to be my  answer. Observe. We can even generalize this and"
+    },
+    {
+      "start": "7:27",
+      "end": "7:37",
+      "text": "we get 2n choose n minus 2n choose n minus 1 as  the answer for the question when you want to move"
+    },
+    {
+      "start": "7:37",
+      "end": "7:44",
+      "text": "from (0,0) to (n,n) without trespassing the line. I believe this lecture was quick. It was intended"
+    },
+    {
+      "start": "7:44",
+      "end": "7:50",
+      "text": "to be that way. I request you all to please pause  here and there and watch the video multiple times"
+    },
+    {
+      "start": "7:50",
+      "end": "7:55",
+      "text": "so that you understand every piece of what is  being told. There are actually several pieces"
+    },
+    {
+      "start": "7:55",
+      "end": "8:00",
+      "text": "here, right? There's a beautiful one-to-one  correspondence idea that we use to count the"
+    },
+    {
+      "start": "8:00",
+      "end": "8:05",
+      "text": "total number of trespassing instances  and you use that to subtract from all"
+    },
+    {
+      "start": "8:05",
+      "end": "8:11",
+      "text": "possibilities and hence finally you will get  those possibilities where you do not trespass."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Factorial explained",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:05",
+      "end": "00:00:11",
+      "text": "Our aim now would be to understand the notion of factorial of a number."
+    },
+    {
+      "start": "00:00:11",
+      "end": "00:00:15",
+      "text": "Let us see what are factorials all about."
+    },
+    {
+      "start": "00:00:15",
+      "end": "00:00:19",
+      "text": "Let us revisit how we started off with the chapter."
+    },
+    {
+      "start": "00:00:19",
+      "end": "00:00:23",
+      "text": "In how many ways can this one person take her photographs?"
+    },
+    {
+      "start": "00:00:23",
+      "end": "00:00:26",
+      "text": "In how many ways can two people take it?"
+    },
+    {
+      "start": "00:00:26",
+      "end": "00:00:28",
+      "text": "In how many ways can three people take it."
+    },
+    {
+      "start": "00:00:28",
+      "end": "00:00:32",
+      "text": "In how many ways can four and five people take it."
+    },
+    {
+      "start": "00:00:32",
+      "end": "00:00:39",
+      "text": "As you're observing all we are doing here is n factorial."
+    },
+    {
+      "start": "00:00:39",
+      "end": "",
+      "text": "Let us now see how exactly it turns out to be n factorial."
+    }
+  ],
+  "timestamped": true
+}

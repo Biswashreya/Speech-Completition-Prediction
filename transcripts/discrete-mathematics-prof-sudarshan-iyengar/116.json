@@ -1,0 +1,528 @@
+{
+  "title": "Rules of Inferences - Part 6",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:16",
+      "text": "Let statement p denote Raj does yoga regularly and statement q denote Raj’s blood pressure"
+    },
+    {
+      "start": "0:16",
+      "end": "0:18",
+      "text": "is normal."
+    },
+    {
+      "start": "0:18",
+      "end": "0:19",
+      "text": "Right?"
+    },
+    {
+      "start": "0:19",
+      "end": "0:26",
+      "text": "Now don’t you think p implies q is true?"
+    },
+    {
+      "start": "0:26",
+      "end": "0:29",
+      "text": "We are revisiting p implies q."
+    },
+    {
+      "start": "0:29",
+      "end": "0:36",
+      "text": "If you remember, p implies q meant it will not so happen that whenever p is 1, q happens"
+    },
+    {
+      "start": "0:36",
+      "end": "0:37",
+      "text": "to be 0."
+    },
+    {
+      "start": "0:37",
+      "end": "0:38",
+      "text": "This is never possible."
+    },
+    {
+      "start": "0:38",
+      "end": "0:39",
+      "text": "Right?"
+    },
+    {
+      "start": "0:39",
+      "end": "0:42",
+      "text": "When p is 1, q is also 1."
+    },
+    {
+      "start": "0:42",
+      "end": "0:45",
+      "text": "Then you say the implication is always true."
+    },
+    {
+      "start": "0:45",
+      "end": "0:46",
+      "text": "Correct?"
+    },
+    {
+      "start": "0:46",
+      "end": "0:53",
+      "text": "I repeat, look at the truth table of p, q and p implies q. 0 0 is 1."
+    },
+    {
+      "start": "0:53",
+      "end": "0:56",
+      "text": "0 1 is 1."
+    },
+    {
+      "start": "0:56",
+      "end": "0:58",
+      "text": "1 0 is 0."
+    },
+    {
+      "start": "0:58",
+      "end": "1:01",
+      "text": "1 1 is 1."
+    },
+    {
+      "start": "1:01",
+      "end": "1:06",
+      "text": "The only situation where it is false is when p is 1 and q is 0."
+    },
+    {
+      "start": "1:06",
+      "end": "1:09",
+      "text": "Then p implies q becomes false."
+    },
+    {
+      "start": "1:09",
+      "end": "1:12",
+      "text": "The statement becomes false you see."
+    },
+    {
+      "start": "1:12",
+      "end": "1:16",
+      "text": "Now is this statement true, p implies q here?"
+    },
+    {
+      "start": "1:16",
+      "end": "1:23",
+      "text": "Very true because you observe logically speaking if you are physically active, your blood pressure"
+    },
+    {
+      "start": "1:23",
+      "end": "1:27",
+      "text": "remains normal, okay, most of the cases."
+    },
+    {
+      "start": "1:27",
+      "end": "1:30",
+      "text": "Let us assume this to be true always, right?"
+    },
+    {
+      "start": "1:30",
+      "end": "1:31",
+      "text": "p implies q is true."
+    },
+    {
+      "start": "1:31",
+      "end": "1:39",
+      "text": "Now look at this, but does Raj do yoga regularly?"
+    },
+    {
+      "start": "1:39",
+      "end": "1:46",
+      "text": "If p is not true, if p is false, you cannot say anything about q, but if p is true, you"
+    },
+    {
+      "start": "1:46",
+      "end": "1:50",
+      "text": "know for sure q is true because p implies q is true."
+    },
+    {
+      "start": "1:50",
+      "end": "1:52",
+      "text": "Now look at this."
+    },
+    {
+      "start": "1:52",
+      "end": "1:59",
+      "text": "If p is true, given that p is true and if p implies q is true, you can conclude that"
+    },
+    {
+      "start": "1:59",
+      "end": "2:02",
+      "text": "therefore q is true."
+    },
+    {
+      "start": "2:02",
+      "end": "2:07",
+      "text": "Observe this boxed stuff deeply."
+    },
+    {
+      "start": "2:07",
+      "end": "2:10",
+      "text": "This is not in particular about the given example."
+    },
+    {
+      "start": "2:10",
+      "end": "2:19",
+      "text": "In general whenever you say p implies q is true and p is given to be true, you forcefully"
+    },
+    {
+      "start": "2:19",
+      "end": "2:23",
+      "text": "should conclude that q is true."
+    },
+    {
+      "start": "2:23",
+      "end": "2:28",
+      "text": "Now it may take some time for this idea to sink into your mind as and always you should"
+    },
+    {
+      "start": "2:28",
+      "end": "2:30",
+      "text": "solve a lot of problems."
+    },
+    {
+      "start": "2:30",
+      "end": "2:32",
+      "text": "Don't worry if you don't understand what I am saying."
+    },
+    {
+      "start": "2:32",
+      "end": "2:39",
+      "text": "What I'm saying might even sound ambiguous, but let us solve some 5 to 6 problems, and"
+    },
+    {
+      "start": "2:39",
+      "end": "2:43",
+      "text": "at the end of these problems it will be very clear to you what we are doing."
+    },
+    {
+      "start": "2:43",
+      "end": "2:44",
+      "text": "Okay."
+    },
+    {
+      "start": "2:44",
+      "end": "2:47",
+      "text": "We have solved questions with implication being our final inference."
+    },
+    {
+      "start": "2:47",
+      "end": "2:54",
+      "text": "Now we will try to show this question with four statements and one final inference, which"
+    },
+    {
+      "start": "2:54",
+      "end": "3:01",
+      "text": "is therefore r OR s, we have to show that r OR s is true."
+    },
+    {
+      "start": "3:01",
+      "end": "3:02",
+      "text": "Now the same old trick."
+    },
+    {
+      "start": "3:02",
+      "end": "3:06",
+      "text": "We will try to show this by contradiction."
+    },
+    {
+      "start": "3:06",
+      "end": "3:07",
+      "text": "What do we do?"
+    },
+    {
+      "start": "3:07",
+      "end": "3:13",
+      "text": "We'll assume r OR s is not true, which means r is false, s is false."
+    },
+    {
+      "start": "3:13",
+      "end": "3:18",
+      "text": "The moment you say r is false, I am going to spot all r’s and make them 0."
+    },
+    {
+      "start": "3:18",
+      "end": "3:23",
+      "text": "You have one in the second line, one in the third line and then s is also 0, so I put"
+    },
+    {
+      "start": "3:23",
+      "end": "3:32",
+      "text": "s as 0, one in the second line and one in the first line."
+    },
+    {
+      "start": "3:32",
+      "end": "3:34",
+      "text": "Okay."
+    },
+    {
+      "start": "3:34",
+      "end": "3:36",
+      "text": "Perfect."
+    },
+    {
+      "start": "3:36",
+      "end": "3:40",
+      "text": "Now you see that look at the first line."
+    },
+    {
+      "start": "3:40",
+      "end": "3:42",
+      "text": "s is false."
+    },
+    {
+      "start": "3:42",
+      "end": "3:49",
+      "text": "First line says NOT p OR s is true, which means NOT p should be true, which means p"
+    },
+    {
+      "start": "3:49",
+      "end": "3:51",
+      "text": "is false."
+    },
+    {
+      "start": "3:51",
+      "end": "3:52",
+      "text": "Okay."
+    },
+    {
+      "start": "3:52",
+      "end": "3:54",
+      "text": "So p should be false everywhere."
+    },
+    {
+      "start": "3:54",
+      "end": "3:56",
+      "text": "You see p is false."
+    },
+    {
+      "start": "3:56",
+      "end": "3:57",
+      "text": "Fine."
+    },
+    {
+      "start": "3:57",
+      "end": "4:02",
+      "text": "I make p as false in the fourth line as you saw."
+    },
+    {
+      "start": "4:02",
+      "end": "4:03",
+      "text": "Right?"
+    },
+    {
+      "start": "4:03",
+      "end": "4:04",
+      "text": "Okay."
+    },
+    {
+      "start": "4:04",
+      "end": "4:08",
+      "text": "So p is false and now r is given to be false."
+    },
+    {
+      "start": "4:08",
+      "end": "4:11",
+      "text": "NOT q OR r is true."
+    },
+    {
+      "start": "4:11",
+      "end": "4:13",
+      "text": "So q has to be false."
+    },
+    {
+      "start": "4:13",
+      "end": "4:19",
+      "text": "So I put q to be false and I put q to be false in the fourth line as well."
+    },
+    {
+      "start": "4:19",
+      "end": "4:20",
+      "text": "Okay."
+    },
+    {
+      "start": "4:20",
+      "end": "4:22",
+      "text": "Now look at the second line."
+    },
+    {
+      "start": "4:22",
+      "end": "4:24",
+      "text": "s is false."
+    },
+    {
+      "start": "4:24",
+      "end": "4:25",
+      "text": "r is false."
+    },
+    {
+      "start": "4:25",
+      "end": "4:34",
+      "text": "s and r becomes false and NOT t OR this second line, NOT t OR (s AND r) is true, right?"
+    },
+    {
+      "start": "4:34",
+      "end": "4:36",
+      "text": "But s AND r is turning out to be false."
+    },
+    {
+      "start": "4:36",
+      "end": "4:39",
+      "text": "So NOT t should be true and hence t is false."
+    },
+    {
+      "start": "4:39",
+      "end": "4:41",
+      "text": "So t is false."
+    },
+    {
+      "start": "4:41",
+      "end": "4:42",
+      "text": "Look at the last line."
+    },
+    {
+      "start": "4:42",
+      "end": "4:43",
+      "text": "We have a contradiction."
+    },
+    {
+      "start": "4:43",
+      "end": "4:49",
+      "text": "p is false, q is false, t is false, but you are saying p OR q OR t is true."
+    },
+    {
+      "start": "4:49",
+      "end": "4:51",
+      "text": "That’s not possible."
+    },
+    {
+      "start": "4:51",
+      "end": "4:59",
+      "text": "So contradiction to our assumption that r OR s is false, which means r OR s should be"
+    },
+    {
+      "start": "4:59",
+      "end": "5:03",
+      "text": "true and therefore r OR s is our answer."
+    },
+    {
+      "start": "5:03",
+      "end": "5:06",
+      "text": "I am sure you people are getting a hang of it right now."
+    },
+    {
+      "start": "5:06",
+      "end": "5:08",
+      "text": "Look at this question."
+    },
+    {
+      "start": "5:08",
+      "end": "5:10",
+      "text": "I got to show that t is true."
+    },
+    {
+      "start": "5:10",
+      "end": "5:12",
+      "text": "It is slightly tricky."
+    },
+    {
+      "start": "5:12",
+      "end": "5:14",
+      "text": "How do I go about it?"
+    },
+    {
+      "start": "5:14",
+      "end": "5:16",
+      "text": "Now look at the first line."
+    },
+    {
+      "start": "5:16",
+      "end": "5:23",
+      "text": "It says NOT p AND q is true, which means q is 1 and p is 0."
+    },
+    {
+      "start": "5:23",
+      "end": "5:27",
+      "text": "Only then will NOT p be true and NOT p AND q be true."
+    },
+    {
+      "start": "5:27",
+      "end": "5:28",
+      "text": "Okay."
+    },
+    {
+      "start": "5:28",
+      "end": "5:29",
+      "text": "So p is 0."
+    },
+    {
+      "start": "5:29",
+      "end": "5:30",
+      "text": "Look at the second line."
+    },
+    {
+      "start": "5:30",
+      "end": "5:32",
+      "text": "P is zero."
+    },
+    {
+      "start": "5:32",
+      "end": "5:35",
+      "text": "Something which is true cannot imply 0."
+    },
+    {
+      "start": "5:35",
+      "end": "5:36",
+      "text": "r implies p is true."
+    },
+    {
+      "start": "5:36",
+      "end": "5:38",
+      "text": "So r has to be 0 only."
+    },
+    {
+      "start": "5:38",
+      "end": "5:43",
+      "text": "If r becomes 1, 1 cannot imply 0, which is p. p is known to be 0 you see."
+    },
+    {
+      "start": "5:43",
+      "end": "5:48",
+      "text": "So r implies p, I very well infer that r is 0 here."
+    },
+    {
+      "start": "5:48",
+      "end": "5:49",
+      "text": "So far so good."
+    },
+    {
+      "start": "5:49",
+      "end": "5:55",
+      "text": "If r is 0 and NOT r becomes 1, the next line, correct, if NOT r is 1, and this 1 is implying"
+    },
+    {
+      "start": "5:55",
+      "end": "5:59",
+      "text": "something that something should also be 1, so s is 1."
+    },
+    {
+      "start": "5:59",
+      "end": "6:00",
+      "text": "Perfect."
+    },
+    {
+      "start": "6:00",
+      "end": "6:05",
+      "text": "s is 1, s implies t, so t has to be 1."
+    },
+    {
+      "start": "6:05",
+      "end": "6:09",
+      "text": "So I can conclude that therefore t is true."
+    }
+  ],
+  "timestamped": true
+}

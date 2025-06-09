@@ -1,0 +1,128 @@
+{
+  "title": "Set difference - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:12",
+      "text": "This A-B that we have been discussing has  a very interesting form, and that is it is"
+    },
+    {
+      "start": "0:12",
+      "end": "0:19",
+      "text": "actually equal to A intersection B complement,  so how is that true? Let us try proving this"
+    },
+    {
+      "start": "0:19",
+      "end": "0:23",
+      "text": "using the same old technique that we are  advertising for a long time that is take"
+    },
+    {
+      "start": "0:23",
+      "end": "0:28",
+      "text": "the left-hand side show that it's subset of  right-hand side and the other way around."
+    },
+    {
+      "start": "0:28",
+      "end": "0:39",
+      "text": "So let me take an element X belonging to A-B this  implies that X belongs to A and X does not belong"
+    },
+    {
+      "start": "0:39",
+      "end": "0:47",
+      "text": "to B only then X will be in A-B, what does this  imply? X belongs to A and X does not belong to B"
+    },
+    {
+      "start": "0:47",
+      "end": "0:56",
+      "text": "implies X belongs to A and X does not belong to  B means X belongs to B complement, which means X"
+    },
+    {
+      "start": "0:56",
+      "end": "1:02",
+      "text": "is in some set and in some other set means it is  there in the intersection of these two sets, and"
+    },
+    {
+      "start": "1:02",
+      "end": "1:15",
+      "text": "hence X belongs to A intersection B complement.  Now this means A-B is a subset of A intersection"
+    },
+    {
+      "start": "1:15",
+      "end": "1:23",
+      "text": "B complement, now how do we show that the other  way subset is also true, other way containment we"
+    },
+    {
+      "start": "1:23",
+      "end": "1:28",
+      "text": "say that’s the language containment is also true,  A intersection B complement is a subset of A-B,"
+    },
+    {
+      "start": "1:28",
+      "end": "1:34",
+      "text": "how do we show this? Very simple take an X  in A intersection B complement this means X"
+    },
+    {
+      "start": "1:34",
+      "end": "1:40",
+      "text": "belongs to A and X belongs to B complement,  I'm going to be fast now because we have,"
+    },
+    {
+      "start": "1:41",
+      "end": "1:45",
+      "text": "this is not new for us we have solved a couple  of problems already, implies X belongs to A and X"
+    },
+    {
+      "start": "1:45",
+      "end": "1:56",
+      "text": "belongs to B complement. And now this implies that  X belongs to A, and X does not belong to B, that's"
+    },
+    {
+      "start": "1:56",
+      "end": "2:02",
+      "text": "what your X belonging to B complement means, now  this, observe this what does it say? X is in A but"
+    },
+    {
+      "start": "2:02",
+      "end": "2:09",
+      "text": "not in B, which means by definition X should be  in A but not in B which means X belongs to A-B,"
+    },
+    {
+      "start": "2:09",
+      "end": "2:15",
+      "text": "correct? so the inclusion is now proven A  intersection B complement subset of A-B,"
+    },
+    {
+      "start": "2:15",
+      "end": "2:23",
+      "text": "if you observe carefully you will realize that  proofs of both the sides this way and that way"
+    },
+    {
+      "start": "2:23",
+      "end": "2:29",
+      "text": "of containment is more or less the same, correct  and hence I have shown that A-B is indeed equal"
+    },
+    {
+      "start": "2:29",
+      "end": "2:34",
+      "text": "to A intersection B complement this is true in  the Venn diagram as well, if you look at this"
+    },
+    {
+      "start": "2:34",
+      "end": "2:43",
+      "text": "diagram here A, in A you remove those parts of B  and what is this equal to? it is actually equal"
+    },
+    {
+      "start": "2:43",
+      "end": "2:50",
+      "text": "to A intersecting with B complement look at this  figure shaded figure outside B, and that time A"
+    },
+    {
+      "start": "2:50",
+      "end": "2:59",
+      "text": "only have this moon-like structure in common,  correct, so A-B is A intersection B complement."
+    }
+  ],
+  "timestamped": true
+}

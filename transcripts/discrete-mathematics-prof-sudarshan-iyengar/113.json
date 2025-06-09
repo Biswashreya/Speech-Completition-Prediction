@@ -1,0 +1,178 @@
+{
+  "title": "Rules of Inferences - Part 3",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "Look at the statement p. I stay in the  state called Punjab in the country India,"
+    },
+    {
+      "start": "0:09",
+      "end": "0:17",
+      "text": "and we have this beautiful city right next  to our institute IIT. The name of the city"
+    },
+    {
+      "start": "0:17",
+      "end": "0:26",
+      "text": "is Chandigarh. It is a very beautiful city. Now look at this. I made this statement p. It"
+    },
+    {
+      "start": "0:26",
+      "end": "0:31",
+      "text": "is raining in Chandigarh. When is p true?  p is true if it is actually raining right"
+    },
+    {
+      "start": "0:31",
+      "end": "0:42",
+      "text": "now. Okay. q is the weather in Chandigarh  is very good today. What is p? p is it is"
+    },
+    {
+      "start": "0:42",
+      "end": "0:48",
+      "text": "raining in Chandigarh today. q is weather  is very pleasant in Chandigarh today."
+    },
+    {
+      "start": "0:48",
+      "end": "0:58",
+      "text": "Now I say p implies q is true. What do I  mean by that? I mean that if it is raining"
+    },
+    {
+      "start": "0:58",
+      "end": "1:04",
+      "text": "in Chandigarh today, it implies that weather  is going to be nice today. It’s going to be"
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "pleasant today. This is true. Right? You should  not debate on how do you know if this is right,"
+    },
+    {
+      "start": "1:10",
+      "end": "1:13",
+      "text": "right? I am telling you it's always true  in Chandigarh that whenever it rains,"
+    },
+    {
+      "start": "1:13",
+      "end": "1:22",
+      "text": "the weather becomes really pleasant and awesome. Now p implies q and it did rain today. p is true."
+    },
+    {
+      "start": "1:22",
+      "end": "1:29",
+      "text": "What can you conclude? Therefore, you can say q  is true. The weather is indeed pleasant today."
+    },
+    {
+      "start": "1:29",
+      "end": "1:41",
+      "text": "Now let us dissect this more. On some given day  you go and you observe that q is true, and we"
+    },
+    {
+      "start": "1:41",
+      "end": "1:46",
+      "text": "all know that p implies q is true. q is true means  weather is good in Chandigarh today, and p implies"
+    },
+    {
+      "start": "1:46",
+      "end": "1:52",
+      "text": "q means when it rains in Chandigarh, the weather  becomes pleasant in Chandigarh, q, p implies q."
+    },
+    {
+      "start": "1:52",
+      "end": "2:01",
+      "text": "Can you conclude that p is true here? Absolutely  not. That is because whenever the weather is"
+    },
+    {
+      "start": "2:01",
+      "end": "2:10",
+      "text": "pleasant, I never told you that pleasant weather  means that day there was rain. Right? I never said"
+    },
+    {
+      "start": "2:10",
+      "end": "2:16",
+      "text": "that. I only said if it rains on a given day, on  a particular day, that day the weather becomes"
+    },
+    {
+      "start": "2:16",
+      "end": "2:22",
+      "text": "very pleasant. Correct? So this is false. If  q is true, p implies q is true. Therefore,"
+    },
+    {
+      "start": "2:22",
+      "end": "2:28",
+      "text": "p we cannot conclude, but if p is true, p implies  q is true. Therefore, q we can conclude, not just"
+    },
+    {
+      "start": "2:28",
+      "end": "2:35",
+      "text": "in this case, in any case for that matter. Okay.  I just revisited this problem although I solved"
+    },
+    {
+      "start": "2:35",
+      "end": "2:42",
+      "text": "it before. This is a good application of this  problem and we will see more of such inference"
+    },
+    {
+      "start": "2:42",
+      "end": "2:48",
+      "text": "techniques in the forthcoming questions. Let us look at this question. I will from"
+    },
+    {
+      "start": "2:48",
+      "end": "2:54",
+      "text": "now onwards not worry much about the English  statements. I will simply write the mathematical"
+    },
+    {
+      "start": "2:54",
+      "end": "3:00",
+      "text": "logical statements. It is given that statement  p, statement q and statement r, these three"
+    },
+    {
+      "start": "3:00",
+      "end": "3:09",
+      "text": "statements are given and you are told that p OR  q is true. You are also told that NOT p OR r is"
+    },
+    {
+      "start": "3:09",
+      "end": "3:14",
+      "text": "true. You might be wondering what am I doing? Treat this more like a mathematical puzzle."
+    },
+    {
+      "start": "3:14",
+      "end": "3:27",
+      "text": "Okay. And NOT r is true meaning r is false. r is  false. NOT p OR r is true. When r is false, right,"
+    },
+    {
+      "start": "3:27",
+      "end": "3:35",
+      "text": "this particular r becomes false and I say NOT p  OR r is true. When this is false and this entire"
+    },
+    {
+      "start": "3:35",
+      "end": "3:44",
+      "text": "r thing is true, NOT p should be true, which  means p should be false. So p is false here,"
+    },
+    {
+      "start": "3:44",
+      "end": "3:53",
+      "text": "but p OR q is true. When p is false, p OR q is  true. Absolutely, one can conclude that without"
+    },
+    {
+      "start": "3:53",
+      "end": "3:59",
+      "text": "any question or doubt, q should be true. Observe this problem carefully. If you"
+    },
+    {
+      "start": "3:59",
+      "end": "4:04",
+      "text": "didn’t understand, think about it, watch  this video once again. All that we did was"
+    },
+    {
+      "start": "4:04",
+      "end": "4:10",
+      "text": "every single line of this is true. What  can you say? We can say that q is true."
+    }
+  ],
+  "timestamped": true
+}

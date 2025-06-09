@@ -1,0 +1,247 @@
+{
+  "title": "Combination with Repetition - Problems",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:05",
+      "end": "0:08",
+      "text": "So here is a question."
+    },
+    {
+      "start": "0:08",
+      "end": "0:12",
+      "text": "In how many ways can we write 100 as sum of four numbers?"
+    },
+    {
+      "start": "0:12",
+      "end": "0:18",
+      "text": "That is A+B+C+D should be equal to 100."
+    },
+    {
+      "start": "0:18",
+      "end": "0:25",
+      "text": "Now you see 30+30+20+20 becomes 100."
+    },
+    {
+      "start": "0:25",
+      "end": "0:27",
+      "text": "This is one possibility."
+    },
+    {
+      "start": "0:27",
+      "end": "0:33",
+      "text": "Please note, 30+20+30+20 is another possibility."
+    },
+    {
+      "start": "0:33",
+      "end": "0:37",
+      "text": "You see change of ordering leads to another possibility."
+    },
+    {
+      "start": "0:37",
+      "end": "0:39",
+      "text": "That is how we are counting here."
+    },
+    {
+      "start": "0:39",
+      "end": "0:44",
+      "text": "So you probably are wondering why should we consider these two are different possibilities"
+    },
+    {
+      "start": "0:44",
+      "end": "0:47",
+      "text": "that is a rule led by us, right."
+    },
+    {
+      "start": "0:47",
+      "end": "0:50",
+      "text": "I mean that's how we are going to count."
+    },
+    {
+      "start": "0:50",
+      "end": "1:01",
+      "text": "So in how many ways can we write 100 as A+B+C+D and please note we say non-negative integer"
+    },
+    {
+      "start": "1:01",
+      "end": "1:03",
+      "text": "which means 0 is also allowed."
+    },
+    {
+      "start": "1:03",
+      "end": "1:07",
+      "text": "So 100+0+0+0 is one possibility."
+    },
+    {
+      "start": "1:07",
+      "end": "1:11",
+      "text": "0+100+0+0 is another possibility."
+    },
+    {
+      "start": "1:11",
+      "end": "1:12",
+      "text": "0+0+100+0 is another."
+    },
+    {
+      "start": "1:12",
+      "end": "1:13",
+      "text": "0+0+0+100 is another."
+    },
+    {
+      "start": "1:13",
+      "end": "1:16",
+      "text": "So let us answer this question."
+    },
+    {
+      "start": "1:16",
+      "end": "1:21",
+      "text": "Now that you are very familiar with the formula, you already see that this is nothing else"
+    },
+    {
+      "start": "1:21",
+      "end": "1:28",
+      "text": "but 100 slots plus three separators."
+    },
+    {
+      "start": "1:28",
+      "end": "1:43",
+      "text": "So it's going to be 100+3 slots and in this 103 in how many ways can you place three placeholders"
+    },
+    {
+      "start": "1:43",
+      "end": "1:48",
+      "text": "which will be 103, 103C3."
+    },
+    {
+      "start": "1:48",
+      "end": "1:52",
+      "text": "N plus r minus 1 C r minus 1."
+    },
+    {
+      "start": "1:52",
+      "end": "2:00",
+      "text": "And here is 100, r here is four so it's going to be 100 plus 4 minus 1 C 4 minus 1 which"
+    },
+    {
+      "start": "2:00",
+      "end": "2:05",
+      "text": "is 103C3."
+    },
+    {
+      "start": "2:05",
+      "end": "2:15",
+      "text": "Assume I have this jar which can contain 100 candies and these candies come in seven different"
+    },
+    {
+      "start": "2:15",
+      "end": "2:19",
+      "text": "colors, let's say seven different flavors and seven different colors."
+    },
+    {
+      "start": "2:19",
+      "end": "2:26",
+      "text": "And let these colors be VIBGYOR which is violet, Indigo, Blue, Green, Yellow, Orange, Red."
+    },
+    {
+      "start": "2:26",
+      "end": "2:33",
+      "text": "The question now is in how many ways can I fill this jar which can actually hold 100"
+    },
+    {
+      "start": "2:33",
+      "end": "2:38",
+      "text": "candies with candies which come in seven colors."
+    },
+    {
+      "start": "2:38",
+      "end": "2:39",
+      "text": "Corrrect?"
+    },
+    {
+      "start": "2:39",
+      "end": "2:47",
+      "text": "Now isn't this question the same as in how many ways can you write 100 as a1 plus a2"
+    },
+    {
+      "start": "2:47",
+      "end": "2:50",
+      "text": "plus a3 plus a4 plus a5 plus a6 plus a7."
+    },
+    {
+      "start": "2:50",
+      "end": "2:53",
+      "text": "Think about it."
+    },
+    {
+      "start": "2:53",
+      "end": "2:54",
+      "text": "Correct."
+    },
+    {
+      "start": "2:54",
+      "end": "3:08",
+      "text": "You see you pouring 100 violet candies is one possibility that translates to 100+0+0+0+0+0"
+    },
+    {
+      "start": "3:08",
+      "end": "3:09",
+      "text": "correct and so on."
+    },
+    {
+      "start": "3:09",
+      "end": "3:10",
+      "text": "So what's the answer?"
+    },
+    {
+      "start": "3:10",
+      "end": "3:12",
+      "text": "Pretty clear."
+    },
+    {
+      "start": "3:12",
+      "end": "3:18",
+      "text": "So 100 equals 7 slots which is n plus r minus 1 C r minus 1."
+    },
+    {
+      "start": "3:18",
+      "end": "3:25",
+      "text": "I have a advice for you all and the advice goes like this, do not see the formula always."
+    },
+    {
+      "start": "3:25",
+      "end": "3:31",
+      "text": "Try to solve it without the formula and try to get used to the formula."
+    },
+    {
+      "start": "3:31",
+      "end": "3:33",
+      "text": "So what will be the answer?"
+    },
+    {
+      "start": "3:33",
+      "end": "3:39",
+      "text": "106 slots and 6 placeholders."
+    },
+    {
+      "start": "3:39",
+      "end": "3:45",
+      "text": "Six vertical sticks in how many ways can you put six vertical sticks on 106 slots."
+    },
+    {
+      "start": "3:45",
+      "end": "3:54",
+      "text": "That would be n equals 100 r equals 7, n plus r minus 1 turns out to be 106C6 and there"
+    },
+    {
+      "start": "3:54",
+      "end": "3:56",
+      "text": "we are."
+    },
+    {
+      "start": "3:56",
+      "end": "3:58",
+      "text": "That's the answer."
+    }
+  ]
+}

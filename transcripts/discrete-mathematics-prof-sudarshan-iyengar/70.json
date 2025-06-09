@@ -1,0 +1,123 @@
+{
+  "title": "Introduction to Statements",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:06",
+      "text": "NPTEL Let us consider these two sentences."
+    },
+    {
+      "start": "0:06",
+      "end": "0:07",
+      "text": "Look at the first sentence."
+    },
+    {
+      "start": "0:07",
+      "end": "0:10",
+      "text": "It says she is beautiful."
+    },
+    {
+      "start": "0:10",
+      "end": "0:11",
+      "text": "The second sentence."
+    },
+    {
+      "start": "0:11",
+      "end": "0:16",
+      "text": "New Delhi is the capital of India."
+    },
+    {
+      "start": "0:16",
+      "end": "0:21",
+      "text": "Of course these two are not related as it is obvious to you people."
+    },
+    {
+      "start": "0:21",
+      "end": "0:27",
+      "text": "But then there is a very important difference between that type of sentence that the first"
+    },
+    {
+      "start": "0:27",
+      "end": "0:30",
+      "text": "one and the second one is."
+    },
+    {
+      "start": "0:30",
+      "end": "0:37",
+      "text": "She is beautiful is a sentence which cannot be considered as true or false."
+    },
+    {
+      "start": "0:37",
+      "end": "0:38",
+      "text": "Why?"
+    },
+    {
+      "start": "0:38",
+      "end": "0:41",
+      "text": "Because beauty is a very subjective term."
+    },
+    {
+      "start": "0:41",
+      "end": "0:42",
+      "text": "Right?"
+    },
+    {
+      "start": "0:42",
+      "end": "0:47",
+      "text": "But the second sentence as you can observe."
+    },
+    {
+      "start": "0:47",
+      "end": "0:53",
+      "text": "That is called a statement because it is this is such a statement, such a sentence can only"
+    },
+    {
+      "start": "0:53",
+      "end": "0:56",
+      "text": "be true or false."
+    },
+    {
+      "start": "0:56",
+      "end": "0:57",
+      "text": "Right?"
+    },
+    {
+      "start": "0:57",
+      "end": "1:05",
+      "text": "A sentence like he is very tall you cannot classify as true or false."
+    },
+    {
+      "start": "1:05",
+      "end": "1:07",
+      "text": "Correct?"
+    },
+    {
+      "start": "1:07",
+      "end": "1:15",
+      "text": "So any sentence which can be classified as true or false is called a statement."
+    },
+    {
+      "start": "1:15",
+      "end": "1:19",
+      "text": "Sometimes we also call it a proposition."
+    },
+    {
+      "start": "1:19",
+      "end": "1:24",
+      "text": "These two are interchangeably used in different textbooks of discrete mathematics but please"
+    },
+    {
+      "start": "1:24",
+      "end": "1:30",
+      "text": "note, from now onward we are only going to talk about what is called statements, something"
+    },
+    {
+      "start": "1:30",
+      "end": "1:33",
+      "text": "that can be classified as true or false."
+    }
+  ],
+  "timestamped": true
+}

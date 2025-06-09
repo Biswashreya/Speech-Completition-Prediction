@@ -1,0 +1,68 @@
+{
+  "title": "Permutations - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:01",
+      "end": "00:00:05",
+      "text": "We are now in a position to learn how to count."
+    },
+    {
+      "start": "00:00:05",
+      "end": "00:00:07",
+      "text": "We will be learning permutations now."
+    },
+    {
+      "start": "00:00:07",
+      "end": "00:00:11",
+      "text": "And we will be solving a variety of problems."
+    },
+    {
+      "start": "00:00:11",
+      "end": "00:00:17",
+      "text": "The knowledge of factorial, rule of sum and rule of product will come handy from this point onwards."
+    },
+    {
+      "start": "00:00:19",
+      "end": "00:00:24",
+      "text": "Look at these five friends wearing different colored shirts."
+    },
+    {
+      "start": "00:00:24",
+      "end": "00:01:10",
+      "text": "In how many ways can three people come forward and take a picture?"
+    },
+    {
+      "start": "00:01:10",
+      "end": "00:01:11",
+      "text": "You saw what just happened, right?"
+    },
+    {
+      "start": "00:01:11",
+      "end": "00:01:17",
+      "text": "So there are five friends; three of them come forward, two of them run away from the scene"
+    },
+    {
+      "start": "00:01:17",
+      "end": "00:01:24",
+      "text": "and these three people take all possible pictures with their locations shifted."
+    },
+    {
+      "start": "00:01:24",
+      "end": "00:01:27",
+      "text": "And which is indeed 3 into 2 into 1; 6 ways."
+    },
+    {
+      "start": "00:01:27",
+      "end": "00:01:34",
+      "text": "For every such 3 pics from five people you take 6 pictures out of that."
+    },
+    {
+      "start": "00:01:34",
+      "end": "00:01:41",
+      "text": "So in total in how many ways can these five friends take their pictures where every picture contains three of them in all possible coordinates?"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,133 @@
+{
+  "title": "Conclusion",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "Well, we have now come to the fag end of this  chapter, which involves basics of mathematical"
+    },
+    {
+      "start": "0:11",
+      "end": "0:16",
+      "text": "logic. Let us go back and recollect  how we started off with this chapter."
+    },
+    {
+      "start": "0:16",
+      "end": "0:22",
+      "text": "We proved that square root 2 was irrational.  How did we prove it? We assumed it to be"
+    },
+    {
+      "start": "0:22",
+      "end": "0:29",
+      "text": "rational and arrived at a contradiction. Now you are probably wondering in what"
+    },
+    {
+      "start": "0:29",
+      "end": "0:36",
+      "text": "context this was start back then and where did  we see its relationship to the chapter? Now is"
+    },
+    {
+      "start": "0:36",
+      "end": "0:42",
+      "text": "the time for us to tell you the relationship. Look at this. Let the statement S be square"
+    },
+    {
+      "start": "0:42",
+      "end": "0:50",
+      "text": "root of 2 is rational. While we had to prove that  square root of 2 is irrational, we assume that it"
+    },
+    {
+      "start": "0:50",
+      "end": "0:58",
+      "text": "is rational and call this statement S and S  implies some S1, right. We did that. Square"
+    },
+    {
+      "start": "0:58",
+      "end": "1:05",
+      "text": "root of 2 we assumed is equal to some p by q and 2  will be equal to p2 by q2 and so on and so forth."
+    },
+    {
+      "start": "1:05",
+      "end": "1:11",
+      "text": "We also assume that p and q are in its simplified  form and that it cannot be simplified any further."
+    },
+    {
+      "start": "1:11",
+      "end": "1:19",
+      "text": "So S implies S1, S1 implies S2 and so on  we proceed until we conclude something."
+    },
+    {
+      "start": "1:19",
+      "end": "1:26",
+      "text": "What do we conclude? We conclude that p  and q is not in its simplest form with"
+    },
+    {
+      "start": "1:26",
+      "end": "1:34",
+      "text": "the conclusion statement B, C, right? We start with S that square root of 2"
+    },
+    {
+      "start": "1:34",
+      "end": "1:39",
+      "text": "is rational and root 2 is equal to p by q in its  simplest form, and we arrive at a conclusion C,"
+    },
+    {
+      "start": "1:39",
+      "end": "1:47",
+      "text": "which says otherwise that p and q is not in  its simplest form, which is absurdity as you"
+    },
+    {
+      "start": "1:47",
+      "end": "1:55",
+      "text": "can know. S implies C and C is absurd. Absurd  means false. It is not true. Something is not"
+    },
+    {
+      "start": "1:55",
+      "end": "2:03",
+      "text": "true. When S implies false, what can you say  about S? You now have the wisdom to answer this"
+    },
+    {
+      "start": "2:03",
+      "end": "2:09",
+      "text": "question. If something implies falsity, what is  that something? That something is also false. I am"
+    },
+    {
+      "start": "2:09",
+      "end": "2:18",
+      "text": "sure you understand implication really well now. What was S? S was square root of 2 is rational"
+    },
+    {
+      "start": "2:18",
+      "end": "2:25",
+      "text": "and you are saying that this is not true, which  means S complement is true. If S is square root"
+    },
+    {
+      "start": "2:25",
+      "end": "2:31",
+      "text": "of 2 is rational, what is S compliment?  S compliment stands for square root of 2"
+    },
+    {
+      "start": "2:31",
+      "end": "2:38",
+      "text": "is irrational and that is how the proof went. What we just now did is we dissected the math"
+    },
+    {
+      "start": "2:38",
+      "end": "2:49",
+      "text": "behind a mathematical proof. Isn’t that awesome?  Do you see a math hidden in doing math? Logic"
+    },
+    {
+      "start": "2:49",
+      "end": "2:54",
+      "text": "actually helps you do this. Its relevance in  computer science is in the sense that you can"
+    },
+    {
+      "start": "2:54",
+      "end": "3:01",
+      "text": "use logic to deduce some conclusions. It is a  very highly applied subject in modern computing."
+    }
+  ],
+  "timestamped": true
+}

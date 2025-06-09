@@ -1,0 +1,153 @@
+{
+  "title": "Proof of n! - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:04",
+      "end": "00:00:10",
+      "text": "So you would have observed something here. There are two ways in which you can write"
+    },
+    {
+      "start": "00:00:10",
+      "end": "00:00:18",
+      "text": "a and b but then keep it as it is. Similarly there are two ways in which you can write"
+    },
+    {
+      "start": "00:00:18",
+      "end": "00:00:26",
+      "text": "b and c you see and two ways in which you can write a and c. So the point is whenever"
+    },
+    {
+      "start": "00:00:26",
+      "end": "00:00:34",
+      "text": "you bring in a new entity, let's say c you can think of keeping c in the first place"
+    },
+    {
+      "start": "00:00:34",
+      "end": "00:00:39",
+      "text": "or the second place or the third place. When you keep seeing the first place you have options"
+    },
+    {
+      "start": "00:00:39",
+      "end": "00:00:47",
+      "text": "to put your other two letters a and b in the other two places and this you can do in two"
+    },
+    {
+      "start": "00:00:47",
+      "end": "00:00:56",
+      "text": "ways. Similarly a, b here this you can do in two ways and here this you can do in two"
+    },
+    {
+      "start": "00:00:56",
+      "end": "00:01:04",
+      "text": "ways. The point I'm trying to make is if for two objects a b it takes two ways for three"
+    },
+    {
+      "start": "00:01:04",
+      "end": "00:01:16",
+      "text": "objects it takes three times because you can write c in first or second or third placeholder"
+    },
+    {
+      "start": "00:01:16",
+      "end": "00:01:24",
+      "text": "three times the times it takes for you to arrange two objects. So the answer is the"
+    },
+    {
+      "start": "00:01:24",
+      "end": "00:01:41",
+      "text": "answer for three objects is going to be the answer for two objects times three. Now you"
+    },
+    {
+      "start": "00:01:41",
+      "end": "00:01:50",
+      "text": "note if we had four objects let's say a, b, c and d you take d in the first place, d in"
+    },
+    {
+      "start": "00:01:50",
+      "end": "00:01:54",
+      "text": "the second place, d in the third place and d in the fourth place and in the remaining"
+    },
+    {
+      "start": "00:01:54",
+      "end": "00:02:03",
+      "text": "three places a, b, c can appear in how many ways; whatever was the answer for three objects"
+    },
+    {
+      "start": "00:02:03",
+      "end": "00:02:11",
+      "text": "right and here again you have one placeholder, one here, one here, and a, b, c is the possibilities"
+    },
+    {
+      "start": "00:02:11",
+      "end": "00:02:17",
+      "text": "for this placeholders and this a, b, c can appear as you can see in six ways. Six ways"
+    },
+    {
+      "start": "00:02:17",
+      "end": "00:02:26",
+      "text": "here. Six ways here and six ways here. So basically it is four times six ways which"
+    },
+    {
+      "start": "00:02:26",
+      "end": "00:02:37",
+      "text": "in other words let me write that down answer for four objects is going to be answer for"
+    },
+    {
+      "start": "00:02:37",
+      "end": "00:02:47",
+      "text": "three objects times four which we know answer for three objects was 6, it is 6 into 4."
+    },
+    {
+      "start": "00:02:47",
+      "end": "00:02:56",
+      "text": "So in general you probably are seeing a pattern that's forming here. The answer for 5 objects"
+    },
+    {
+      "start": "00:02:56",
+      "end": "00:03:09",
+      "text": "is answer for 4 objects into five. Correct? So answer for n objects in general is going"
+    },
+    {
+      "start": "00:03:09",
+      "end": "00:03:21",
+      "text": "to be answered for n minus 1 objects times n. So for 3 it happened to be 2 into 1. For"
+    },
+    {
+      "start": "00:03:21",
+      "end": "00:03:28",
+      "text": "4 it turns out to be 4 into answer for 3 which is 3 into 2 into 1. For 5 it's going to be"
+    },
+    {
+      "start": "00:03:28",
+      "end": "00:03:37",
+      "text": "5 times 4 into 3 into 2 into 1. In general for n this is going to be n into n minus 1"
+    },
+    {
+      "start": "00:03:37",
+      "end": "00:03:45",
+      "text": "into n minus 2 up to 2 into 1. So this is also called n factorial. What did we just"
+    },
+    {
+      "start": "00:03:45",
+      "end": "00:04:03",
+      "text": "now observe? We observed that ways in which n people can take all possible photographs"
+    },
+    {
+      "start": "00:04:03",
+      "end": "00:04:13",
+      "text": "happens to be n factorial which stands for n into n minus 1 into n minus 2 up to 2 into"
+    },
+    {
+      "start": "00:04:13",
+      "end": "00:04:19",
+      "text": "1. Now this is a very important finding that we have observed and we're going to use this"
+    },
+    {
+      "start": "00:04:19",
+      "end": "",
+      "text": "in almost all of the lectures that are forthcoming from this onwards."
+    }
+  ],
+  "timestamped": true
+}

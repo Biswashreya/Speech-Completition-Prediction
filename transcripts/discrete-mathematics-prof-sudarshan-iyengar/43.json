@@ -1,0 +1,33 @@
+{
+  "title": "Subsets - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "Let us consider a set S with  these 6 elements a, b, c, d,"
+    },
+    {
+      "start": "0:09",
+      "end": "0:22",
+      "text": "e and f. Now consider another set T that  has some elements from S, namely a, c, e,"
+    },
+    {
+      "start": "0:22",
+      "end": "0:36",
+      "text": "and f. So this set T is called a subset of S.  The word subset is rather self-explanatory. We"
+    },
+    {
+      "start": "0:36",
+      "end": "0:45",
+      "text": "use the notation this to denote that  T is a subset of S. So by subset we"
+    },
+    {
+      "start": "0:45",
+      "end": "0:51",
+      "text": "mean as you would have guessed a set that  comprises of some elements from the set S."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Tautology, Contradiction - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:08",
+      "text": "Let us consider a compound statement. A compound  statement as you all know we have been discussing,"
+    },
+    {
+      "start": "0:08",
+      "end": "0:16",
+      "text": "can be represented as a Boolean expression like  this, right. Consider these three expressions."
+    },
+    {
+      "start": "0:19",
+      "end": "0:26",
+      "text": "Do you think one can come out with an expression  that is always true? Do you think any of these"
+    },
+    {
+      "start": "0:26",
+      "end": "0:34",
+      "text": "fall into that category? Forget about that being  always true. What about a compound statement"
+    },
+    {
+      "start": "0:34",
+      "end": "0:42",
+      "text": "that is always false? Which among these is  a compound statement that is always false?"
+    }
+  ],
+  "timestamped": true
+}

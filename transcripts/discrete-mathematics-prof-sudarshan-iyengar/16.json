@@ -1,0 +1,47 @@
+{
+  "title": "Permutations - Part 4",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:04",
+      "end": "00:00:16",
+      "text": "So a formula for nPr in general is going to be you have n objects let's say a1, a2 up to an and you have r slots to fill, r number of slots and the first slot you can fill you have n choices for the first slot and n minus 1 choices for the second, n minus 2 for the third, so on and so forth."
+    },
+    {
+      "start": "00:00:16",
+      "end": "00:00:25",
+      "text": "For the last one you have n minus r plus 1."
+    },
+    {
+      "start": "00:00:25",
+      "end": "00:00:32",
+      "text": "You want to think why it's minus r plus 1."
+    },
+    {
+      "start": "00:00:32",
+      "end": "00:00:35",
+      "text": "Right?"
+    },
+    {
+      "start": "00:00:35",
+      "end": "00:00:39",
+      "text": "So it will be the product of these things is going to be n into n minus 1 into n minus 2 up to n minus r plus 1."
+    },
+    {
+      "start": "00:00:39",
+      "end": "00:00:53",
+      "text": "A little bit of observation says this is nothing else but n factorial in some terms chopped off, correct."
+    },
+    {
+      "start": "00:00:53",
+      "end": "00:01:00",
+      "text": "What is that n factorial divided by what is the immediate next term after this as you can see it's decreasing so after n-r+1 it will be 1 less starting from here which is n minus r and factorial of that which is being chopped off I can start write that in the denominator."
+    },
+    {
+      "start": "00:01:00",
+      "end": "00:01:24",
+      "text": "Perfect. That's the formula for nPr."
+    }
+  ]
+}

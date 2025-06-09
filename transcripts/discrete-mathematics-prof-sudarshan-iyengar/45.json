@@ -1,0 +1,153 @@
+{
+  "title": "Subsets - Part 3",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:13",
+      "text": "Consider a set as with natural numbers, integers, rationals, and real numbers in it, so what"
+    },
+    {
+      "start": "0:13",
+      "end": "0:14",
+      "text": "is a set?"
+    },
+    {
+      "start": "0:14",
+      "end": "0:21",
+      "text": "The set comprises of all natural numbers as a set, all integers as another set, all rational"
+    },
+    {
+      "start": "0:21",
+      "end": "0:27",
+      "text": "numbers as yet another set, and finally we have all real numbers too."
+    },
+    {
+      "start": "0:27",
+      "end": "0:31",
+      "text": "Now what is the cardinality of this set?"
+    },
+    {
+      "start": "0:31",
+      "end": "0:36",
+      "text": "This set simply comprises of 4 elements, N is an element, of course N is an infinite"
+    },
+    {
+      "start": "0:36",
+      "end": "0:41",
+      "text": "set in itself, but then we should consider it as an element, Z is an another element,"
+    },
+    {
+      "start": "0:41",
+      "end": "0:48",
+      "text": "Q is another and R is the fourth one, and hence the cardinality of S happens to be 4"
+    },
+    {
+      "start": "0:48",
+      "end": "0:49",
+      "text": "here."
+    },
+    {
+      "start": "0:49",
+      "end": "0:58",
+      "text": "Now let’s look at this question, a set comprising of A, and another set A, and a set B close"
+    },
+    {
+      "start": "0:58",
+      "end": "1:01",
+      "text": "the set, and close the set."
+    },
+    {
+      "start": "1:01",
+      "end": "1:04",
+      "text": "How many element does the set contain?"
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "So this entire thing should be treated as one element, a set containing A and a set"
+    },
+    {
+      "start": "1:10",
+      "end": "1:17",
+      "text": "containing B inside the set all this things put together is a set, and A is another element."
+    },
+    {
+      "start": "1:17",
+      "end": "1:22",
+      "text": "A is an element, and this stuff is another element and hence the cardinality should be"
+    },
+    {
+      "start": "1:22",
+      "end": "1:24",
+      "text": "2."
+    },
+    {
+      "start": "1:24",
+      "end": "1:35",
+      "text": "okay, look at this set of all those numbers such that X is an integer, and X square is"
+    },
+    {
+      "start": "1:35",
+      "end": "1:42",
+      "text": "2, that’s what this notation denotes, look at the set how an elements do you have in"
+    },
+    {
+      "start": "1:42",
+      "end": "1:43",
+      "text": "this set?"
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "Okay, it is that number whose square is 2, not just that number it is that number whose"
+    },
+    {
+      "start": "1:50",
+      "end": "1:56",
+      "text": "square is 2, and that number should be an integer, is it even possible, 0 square is"
+    },
+    {
+      "start": "1:56",
+      "end": "2:05",
+      "text": "0, 1 square is 1, 2 square is 4, a number between 1 to 4 is your 2, and the number whose"
+    },
+    {
+      "start": "2:05",
+      "end": "2:12",
+      "text": "square is 2 cannot be an integer and hence this set should be empty and hence the cardinality"
+    },
+    {
+      "start": "2:12",
+      "end": "2:18",
+      "text": "of this set should be 0."
+    },
+    {
+      "start": "2:18",
+      "end": "2:23",
+      "text": "What is the cardinality of a set containing phi, the empty set?"
+    },
+    {
+      "start": "2:23",
+      "end": "2:32",
+      "text": "so phi, as I told you, you should not see it as nothingness, phi is a set containing"
+    },
+    {
+      "start": "2:32",
+      "end": "2:38",
+      "text": "nothing and it can be treated as an element at times, now if you put phi around brackets"
+    },
+    {
+      "start": "2:38",
+      "end": "2:45",
+      "text": "like this, I would say here is a set containing one element and so this set has cardinality"
+    },
+    {
+      "start": "2:45",
+      "end": "2:46",
+      "text": "1."
+    }
+  ],
+  "timestamped": true
+}

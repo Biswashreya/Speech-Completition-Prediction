@@ -1,0 +1,33 @@
+{
+  "title": "Logical Equivalence - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:08",
+      "text": "Let us look at this particular example that we  have been seeing from a long time, P implies Q,"
+    },
+    {
+      "start": "0:08",
+      "end": "0:18",
+      "text": "and look at another column which is not P  OR Q. What do you have to say about these"
+    },
+    {
+      "start": "0:18",
+      "end": "0:24",
+      "text": "truthtables? These two columns, the two tables  they are exactly the same which means they both"
+    },
+    {
+      "start": "0:24",
+      "end": "0:33",
+      "text": "are actually logically equivalent by that I mean  we can replace P implies Q. Wherever you spot P"
+    },
+    {
+      "start": "0:33",
+      "end": "0:43",
+      "text": "implies Q you can replace it by not P OR Q and the  resulting expression will continue to be the same."
+    }
+  ],
+  "timestamped": true
+}

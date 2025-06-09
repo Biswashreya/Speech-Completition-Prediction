@@ -1,0 +1,113 @@
+{
+  "title": "Power set - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:12",
+      "text": "Five is slightly on the higher side, let me take only 3 people, let’s say A, B and C."
+    },
+    {
+      "start": "0:12",
+      "end": "0:21",
+      "text": "All of them not coming is represented by 0 0 0. A coming and B not coming, C not coming,"
+    },
+    {
+      "start": "0:21",
+      "end": "0:28",
+      "text": "we represent that by 1 0 0. Let me write this down this is nobody comes, this would be A"
+    },
+    {
+      "start": "0:28",
+      "end": "0:44",
+      "text": "alone comes, 0 1 0 represents B alone comes, 0 0 1 represents C alone comes, 1 1 0 represents"
+    },
+    {
+      "start": "0:44",
+      "end": "0:59",
+      "text": "A and B come, 1 0 1 means A and C comes, 0 1 1 stands for B and C they come, and 1 1"
+    },
+    {
+      "start": "0:59",
+      "end": "1:08",
+      "text": "1 stands for A, B, C all of them come. Do you know something, we observe something"
+    },
+    {
+      "start": "1:08",
+      "end": "1:16",
+      "text": "really fascinating here, you write all possible binary numbers of three digits and you see"
+    },
+    {
+      "start": "1:16",
+      "end": "1:24",
+      "text": "that for every such binary representation you associate a subset of A, B, C, and for"
+    },
+    {
+      "start": "1:24",
+      "end": "1:32",
+      "text": "every subset of A, B, C you have a unique binary representation, and you see the number"
+    },
+    {
+      "start": "1:32",
+      "end": "1:38",
+      "text": "of elements on the right side should be equal to the number of elements on the left side,"
+    },
+    {
+      "start": "1:38",
+      "end": "1:46",
+      "text": "and the number of elements on the left side as you all know is 2 to the 3, why is that?"
+    },
+    {
+      "start": "1:46",
+      "end": "1:54",
+      "text": "If you take 3 place holders, where each place holder can have a 0 or a 1, there are two"
+    },
+    {
+      "start": "1:54",
+      "end": "2:02",
+      "text": "possibilities here, 2 here, 2 here, finally giving you 8 possibilities which means there"
+    },
+    {
+      "start": "2:02",
+      "end": "2:10",
+      "text": "are 8 ways in which you can write a 3 digit binary number and hence there are so many"
+    },
+    {
+      "start": "2:10",
+      "end": "2:18",
+      "text": "subsets of A, B, C, which is 2 to the 3 number. Similarly as we have been discussing, 5 of"
+    },
+    {
+      "start": "2:18",
+      "end": "2:24",
+      "text": "my students let me know call them A, B, C, D and E because they are 5 in number, none"
+    },
+    {
+      "start": "2:24",
+      "end": "2:34",
+      "text": "of them coming will be 0 0 0 0 0. Let’s say A and C come and B D E don’t come that"
+    },
+    {
+      "start": "2:34",
+      "end": "2:44",
+      "text": "represents this and so on, so all of them coming would be all five are ones, these are"
+    },
+    {
+      "start": "2:44",
+      "end": "2:52",
+      "text": "precisely 2 to the 5 in number and hence total possible subsets of A, B, C, D and E has to"
+    },
+    {
+      "start": "2:52",
+      "end": "3:02",
+      "text": "be 2 to the 5. So in general you see if there are N elements A1, A2 up to AN all possible"
+    },
+    {
+      "start": "3:02",
+      "end": "3:10",
+      "text": "subsets of this set will be 2 to the N, think about it for a moment."
+    }
+  ],
+  "timestamped": true
+}

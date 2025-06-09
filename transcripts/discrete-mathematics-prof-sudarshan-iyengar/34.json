@@ -1,0 +1,72 @@
+{
+  "title": "Catalan Numbers - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:08",
+      "text": "We posed a question in the beginning of  this chapter and told you that we'll be"
+    },
+    {
+      "start": "0:08",
+      "end": "0:14",
+      "text": "covering it at the end of the chapter.  Here we present the concept of Catalan"
+    },
+    {
+      "start": "0:14",
+      "end": "0:18",
+      "text": "numbers. This concept appears  in many works of computing."
+    },
+    {
+      "start": "0:18",
+      "end": "0:22",
+      "text": "Remember this problem that we started  off in the beginning of this chapter;"
+    },
+    {
+      "start": "0:22",
+      "end": "0:31",
+      "text": "in how many ways can one start from (0,0) and then  reach (5,5) without crossing the diagonal. Right?"
+    },
+    {
+      "start": "0:31",
+      "end": "0:38",
+      "text": "This is a complicated problem and it involves some  different method that we have not seen so far."
+    },
+    {
+      "start": "0:38",
+      "end": "0:46",
+      "text": "Let's see how to solve this problem now. Let me ask you a puzzle here. If I start"
+    },
+    {
+      "start": "0:46",
+      "end": "0:54",
+      "text": "from this point (0,0) and if I have to reach  this point (5,5) in how many ways can I reach"
+    },
+    {
+      "start": "0:54",
+      "end": "1:02",
+      "text": "there? What are the total number of paths  that I can take from (0,0) to reach (5,5)?"
+    },
+    {
+      "start": "1:02",
+      "end": "1:15",
+      "text": "What I mean here is this is one path to reach  (5,5). This is another path to reach (5,5). So"
+    },
+    {
+      "start": "1:15",
+      "end": "1:24",
+      "text": "the question is in how many ways can I reach  (5,5) if I start from (0,0). Think about it."
+    },
+    {
+      "start": "1:31",
+      "end": "1:37",
+      "text": "Please try solving this problem.  The professor is now going to give"
+    },
+    {
+      "start": "1:37",
+      "end": "1:42",
+      "text": "a constrained version of the same  problem. Let us see the problem now."
+    }
+  ]
+}

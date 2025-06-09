@@ -1,0 +1,213 @@
+{
+  "title": "Proof of n! - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "00:00:02",
+      "end": "00:00:04",
+      "text": "What did you just now see?"
+    },
+    {
+      "start": "00:00:04",
+      "end": "00:00:12",
+      "text": "You saw that one person could take a picture in precisely one way."
+    },
+    {
+      "start": "00:00:12",
+      "end": "00:00:13",
+      "text": "Now that was a very boring case."
+    },
+    {
+      "start": "00:00:13",
+      "end": "00:00:14",
+      "text": "Right?"
+    },
+    {
+      "start": "00:00:14",
+      "end": "00:00:19",
+      "text": "There is nothing interesting there because you can probably take another picture in a"
+    },
+    {
+      "start": "00:00:19",
+      "end": "00:00:20",
+      "text": "different location."
+    },
+    {
+      "start": "00:00:20",
+      "end": "00:00:23",
+      "text": "That is what going to change the picture."
+    },
+    {
+      "start": "00:00:23",
+      "end": "00:00:28",
+      "text": "But then imagine two people taking this photo."
+    },
+    {
+      "start": "00:00:28",
+      "end": "00:00:33",
+      "text": "They can take this photo in two different ways."
+    },
+    {
+      "start": "00:00:33",
+      "end": "00:00:34",
+      "text": "Right?"
+    },
+    {
+      "start": "00:00:34",
+      "end": "00:00:35",
+      "text": "Two."
+    },
+    {
+      "start": "00:00:35",
+      "end": "00:00:38",
+      "text": "How about three people?"
+    },
+    {
+      "start": "00:00:38",
+      "end": "00:00:45",
+      "text": "Let's say A, B and C. Let's see in how many ways they can take the picture."
+    },
+    {
+      "start": "00:00:45",
+      "end": "00:00:47",
+      "text": "So how do we solve this question?"
+    },
+    {
+      "start": "00:00:47",
+      "end": "00:00:53",
+      "text": "The question is this; there are these three people A, B, C in how many ways can you arrange"
+    },
+    {
+      "start": "00:00:53",
+      "end": "00:00:56",
+      "text": "them and take a picture each of these three people?"
+    },
+    {
+      "start": "00:00:56",
+      "end": "00:00:57",
+      "text": "Right?"
+    },
+    {
+      "start": "00:00:57",
+      "end": "00:00:59",
+      "text": "One way would be ABC in this order."
+    },
+    {
+      "start": "00:00:59",
+      "end": "00:01:07",
+      "text": "The other way would be A remains in the same place while C and B swap their locations."
+    },
+    {
+      "start": "00:01:07",
+      "end": "00:01:08",
+      "text": "Now they are done."
+    },
+    {
+      "start": "00:01:08",
+      "end": "00:01:09",
+      "text": "This is the second option."
+    },
+    {
+      "start": "00:01:09",
+      "end": "00:01:16",
+      "text": "The third one would be and just repeating what we saw in the video, because I am interested"
+    },
+    {
+      "start": "00:01:16",
+      "end": "00:01:20",
+      "text": "right now in coming on with a formula given n people."
+    },
+    {
+      "start": "00:01:20",
+      "end": "00:01:27",
+      "text": "Given three people A, B, C, A, C, B and then let's say B in the first place, A and C in"
+    },
+    {
+      "start": "00:01:27",
+      "end": "00:01:28",
+      "text": "the second and third place."
+    },
+    {
+      "start": "00:01:28",
+      "end": "00:01:34",
+      "text": "Next again, B as it is and A, C swapped."
+    },
+    {
+      "start": "00:01:34",
+      "end": "00:01:39",
+      "text": "Then finally C here, A, B here and the last option would be C, B, A."
+    },
+    {
+      "start": "00:01:39",
+      "end": "00:01:45",
+      "text": "Now my question is have we exhausted all the possibilities?"
+    },
+    {
+      "start": "00:01:45",
+      "end": "00:01:46",
+      "text": "Probably yes."
+    },
+    {
+      "start": "00:01:46",
+      "end": "00:01:51",
+      "text": "How about you are sure that you have not left out a possibility that's because we went step"
+    },
+    {
+      "start": "00:01:51",
+      "end": "00:01:52",
+      "text": "by step."
+    },
+    {
+      "start": "00:01:52",
+      "end": "00:01:58",
+      "text": "We saw all possible ways in which A in the first place can take pictures."
+    },
+    {
+      "start": "00:01:58",
+      "end": "00:02:00",
+      "text": "B in the first place can take pictures."
+    },
+    {
+      "start": "00:02:00",
+      "end": "00:02:03",
+      "text": "C in the first place can take pictures."
+    },
+    {
+      "start": "00:02:03",
+      "end": "00:02:05",
+      "text": "Right."
+    },
+    {
+      "start": "00:02:05",
+      "end": "00:02:08",
+      "text": "There is no way we would have left out a possibility here."
+    },
+    {
+      "start": "00:02:08",
+      "end": "00:02:13",
+      "text": "So there are six possibilities as you can see."
+    },
+    {
+      "start": "00:02:13",
+      "end": "00:02:14",
+      "text": "Correct."
+    },
+    {
+      "start": "00:02:14",
+      "end": "00:02:15",
+      "text": "Perfect."
+    },
+    {
+      "start": "00:02:15",
+      "end": "00:02:22",
+      "text": "Now how about doing this for four things, A, B, C and D?"
+    },
+    {
+      "start": "00:02:22",
+      "end": "",
+      "text": "Let us see."
+    }
+  ],
+  "timestamped": true
+}

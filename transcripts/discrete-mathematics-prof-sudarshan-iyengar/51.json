@@ -1,0 +1,103 @@
+{
+  "title": "Cardinality of Union of sets - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:06",
+      "text": "Here is a good application of what we just learnt."
+    },
+    {
+      "start": "0:06",
+      "end": "0:17",
+      "text": "Consider, a set of people in a classroom of 100 students, these students play cricket"
+    },
+    {
+      "start": "0:17",
+      "end": "0:23",
+      "text": "and football, so every student is supposed to play cricket or football."
+    },
+    {
+      "start": "0:23",
+      "end": "0:29",
+      "text": "Of course he’s encourage to play both if he wants but not many like playing both, but"
+    },
+    {
+      "start": "0:29",
+      "end": "0:33",
+      "text": "they enjoy playing at least one of these games."
+    },
+    {
+      "start": "0:33",
+      "end": "0:45",
+      "text": "So here is the question, there are 30 people who say they like playing cricket, they never"
+    },
+    {
+      "start": "0:45",
+      "end": "0:51",
+      "text": "say they don’t like football, they only say they like playing cricket, and 80 people"
+    },
+    {
+      "start": "0:51",
+      "end": "0:55",
+      "text": "say they like playing football."
+    },
+    {
+      "start": "0:55",
+      "end": "1:03",
+      "text": "Okay, now the question is given 100 students if 30 say they like cricket, 80 say they like"
+    },
+    {
+      "start": "1:03",
+      "end": "1:10",
+      "text": "football, 30 + 80 is turning out to be 110, but the number of students is 100."
+    },
+    {
+      "start": "1:10",
+      "end": "1:15",
+      "text": "Our question is how many students like both cricket and football?"
+    },
+    {
+      "start": "1:15",
+      "end": "1:16",
+      "text": "that’s the question."
+    },
+    {
+      "start": "1:16",
+      "end": "1:22",
+      "text": "The answer is the simple application of the formula that we discussed, number of elements"
+    },
+    {
+      "start": "1:22",
+      "end": "1:29",
+      "text": "in A union B is number of elements in A, let’s say A stands for cricket, B stands for football,"
+    },
+    {
+      "start": "1:29",
+      "end": "1:35",
+      "text": "plus number of elements in B – number of elements in A intersection B, so number of"
+    },
+    {
+      "start": "1:35",
+      "end": "1:40",
+      "text": "elements in A union B is given, there are 100 students, number of elements in A is also"
+    },
+    {
+      "start": "1:40",
+      "end": "1:48",
+      "text": "given 30 like playing cricket, number of elements in B is 80, so what is this number here?"
+    },
+    {
+      "start": "1:48",
+      "end": "1:55",
+      "text": "And little bit of calculation tells you that this number is supposed to be 10 which is"
+    },
+    {
+      "start": "1:55",
+      "end": "1:57",
+      "text": "in the intersection of A and B."
+    }
+  ],
+  "timestamped": true
+}

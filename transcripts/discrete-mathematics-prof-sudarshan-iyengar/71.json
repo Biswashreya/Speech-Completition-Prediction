@@ -1,0 +1,198 @@
+{
+  "title": "Examples and Non-examples of Statements",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:05",
+      "text": "What a beautiful evening."
+    },
+    {
+      "start": "0:05",
+      "end": "0:10",
+      "text": "I am sure you all must be rightly guessing that it is not a statement."
+    },
+    {
+      "start": "0:10",
+      "end": "0:13",
+      "text": "It's an exclamatory sentence."
+    },
+    {
+      "start": "0:13",
+      "end": "0:15",
+      "text": "What time is it?"
+    },
+    {
+      "start": "0:15",
+      "end": "0:16",
+      "text": "How are you?"
+    },
+    {
+      "start": "0:16",
+      "end": "0:18",
+      "text": "What are you doing?"
+    },
+    {
+      "start": "0:18",
+      "end": "0:25",
+      "text": "Well these are some general questions people exchange."
+    },
+    {
+      "start": "0:25",
+      "end": "0:26",
+      "text": "Go to the gym."
+    },
+    {
+      "start": "0:26",
+      "end": "0:28",
+      "text": "Don't eat junk."
+    },
+    {
+      "start": "0:28",
+      "end": "0:30",
+      "text": "Study well."
+    },
+    {
+      "start": "0:30",
+      "end": "0:35",
+      "text": "Well these are some commands what we encounter in our daily lives."
+    },
+    {
+      "start": "0:35",
+      "end": "0:38",
+      "text": "I initially quoted about the evening."
+    },
+    {
+      "start": "0:38",
+      "end": "0:40",
+      "text": "Then I asked certain questions."
+    },
+    {
+      "start": "0:40",
+      "end": "0:43",
+      "text": "Then I commanded certain things."
+    },
+    {
+      "start": "0:43",
+      "end": "0:52",
+      "text": "All these whatever I have stated till now are not statements or propositions."
+    },
+    {
+      "start": "0:52",
+      "end": "0:55",
+      "text": "It is very pleasant today."
+    },
+    {
+      "start": "0:55",
+      "end": "0:57",
+      "text": "This statement is my opinion."
+    },
+    {
+      "start": "0:57",
+      "end": "1:04",
+      "text": "It might not be my friend's opinion and hence this is another example which is not a statement."
+    },
+    {
+      "start": "1:04",
+      "end": "1:11",
+      "text": "So right now we have seen certain exclamatory sentences, questions, commands, and opinions"
+    },
+    {
+      "start": "1:11",
+      "end": "1:17",
+      "text": "which are not considered to be statements or propositions."
+    },
+    {
+      "start": "1:17",
+      "end": "1:18",
+      "text": "J.K."
+    },
+    {
+      "start": "1:18",
+      "end": "1:21",
+      "text": "Rowling is the author of Harry Potter series."
+    },
+    {
+      "start": "1:21",
+      "end": "1:25",
+      "text": "3 plus 2 is equal to 2."
+    },
+    {
+      "start": "1:25",
+      "end": "1:28",
+      "text": "Crow is not a bird."
+    },
+    {
+      "start": "1:28",
+      "end": "1:31",
+      "text": "Now let us just observe these sentences."
+    },
+    {
+      "start": "1:31",
+      "end": "1:32",
+      "text": "J.K."
+    },
+    {
+      "start": "1:32",
+      "end": "1:34",
+      "text": "Rowling is the author of Harry Potter series."
+    },
+    {
+      "start": "1:34",
+      "end": "1:36",
+      "text": "We all know that it is a true sentence."
+    },
+    {
+      "start": "1:36",
+      "end": "1:43",
+      "text": "3 plus 2 is 2 I am sure you must be thinking why am I even stating this or you might be"
+    },
+    {
+      "start": "1:43",
+      "end": "1:46",
+      "text": "even thinking that this is wrong."
+    },
+    {
+      "start": "1:46",
+      "end": "1:48",
+      "text": "Yes it is false."
+    },
+    {
+      "start": "1:48",
+      "end": "1:49",
+      "text": "Crow is not a bird."
+    },
+    {
+      "start": "1:49",
+      "end": "1:52",
+      "text": "We all know that crow is a bird."
+    },
+    {
+      "start": "1:52",
+      "end": "1:56",
+      "text": "So these three sentences were either true or false."
+    },
+    {
+      "start": "1:56",
+      "end": "1:58",
+      "text": "And it is universal."
+    },
+    {
+      "start": "1:58",
+      "end": "2:00",
+      "text": "It is true or false for all of us."
+    },
+    {
+      "start": "2:00",
+      "end": "2:05",
+      "text": "So these three are examples of statements."
+    },
+    {
+      "start": "2:05",
+      "end": "2:10",
+      "text": "So in this video you have seen certain examples and non-examples of statements."
+    }
+  ],
+  "timestamped": true
+}

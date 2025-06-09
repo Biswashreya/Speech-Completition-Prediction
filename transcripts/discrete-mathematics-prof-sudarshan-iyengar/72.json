@@ -1,0 +1,53 @@
+{
+  "title": "Introduction to Negation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:08",
+      "text": "Here is an important point I'm getting you all  prepared for the kind of language and notations"
+    },
+    {
+      "start": "0:08",
+      "end": "0:15",
+      "text": "that we'll be using throughout this chapter. This  is one notation that you all should know. So look"
+    },
+    {
+      "start": "0:15",
+      "end": "0:24",
+      "text": "at these two statements. Statement one, it rained  in my location today. That's the first statement."
+    },
+    {
+      "start": "0:24",
+      "end": "0:34",
+      "text": "Second statement is yesterday was a full moon  day. Now these statements can be true or false,"
+    },
+    {
+      "start": "0:34",
+      "end": "0:40",
+      "text": "right. There's no ambiguity here. It rains or it  doesn't rain. It's a full moon day or it's not a"
+    },
+    {
+      "start": "0:40",
+      "end": "0:47",
+      "text": "full moon day at least according to the calendar,  you see. Okay. so look at this statement first"
+    },
+    {
+      "start": "0:47",
+      "end": "0:57",
+      "text": "statement P and the second statement Q. What if  I tell you you are supposed to insert a not, the"
+    },
+    {
+      "start": "0:57",
+      "end": "1:04",
+      "text": "word not somewhere and make this entire statement  sound the other way around? By that I mean if it's"
+    },
+    {
+      "start": "1:04",
+      "end": "1:10",
+      "text": "true make it false if it's false make it true.  How do you do that? Look at the first statement."
+    }
+  ],
+  "timestamped": true
+}

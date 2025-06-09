@@ -1,0 +1,193 @@
+{
+  "title": "Tautology, Contradiction - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:07",
+      "text": "Let us now look at an example of a Boolean expression that is a tautology."
+    },
+    {
+      "start": "0:07",
+      "end": "0:10",
+      "text": "So what do we do?"
+    },
+    {
+      "start": "0:10",
+      "end": "0:15",
+      "text": "We should just observe that the entries below that expression is all 1s."
+    },
+    {
+      "start": "0:15",
+      "end": "0:18",
+      "text": "You should not even spot a single 0."
+    },
+    {
+      "start": "0:18",
+      "end": "0:19",
+      "text": "Okay, let's see."
+    },
+    {
+      "start": "0:19",
+      "end": "0:26",
+      "text": "Our example is going to be P implies P OR Q. Now how do I write the truthtable of this?"
+    },
+    {
+      "start": "0:26",
+      "end": "0:35",
+      "text": "First I write down P, then Q and I now have P OR Q. what is P OR Q? 0, 1, 1, 1."
+    },
+    {
+      "start": "0:35",
+      "end": "0:36",
+      "text": "Correct."
+    },
+    {
+      "start": "0:36",
+      "end": "0:41",
+      "text": "This is how the OR works."
+    },
+    {
+      "start": "0:41",
+      "end": "0:44",
+      "text": "Now P implies P OR Q. How does this work?"
+    },
+    {
+      "start": "0:44",
+      "end": "0:46",
+      "text": "Look at the P column."
+    },
+    {
+      "start": "0:46",
+      "end": "0:48",
+      "text": "Look at the P OR R column."
+    },
+    {
+      "start": "0:48",
+      "end": "0:52",
+      "text": "Simply do implication of this with this."
+    },
+    {
+      "start": "0:52",
+      "end": "0:54",
+      "text": "So 0 implies 0 is 1."
+    },
+    {
+      "start": "0:54",
+      "end": "0:58",
+      "text": "You remember how A implies B works?"
+    },
+    {
+      "start": "0:58",
+      "end": "1:01",
+      "text": "0 implies 1 is 1."
+    },
+    {
+      "start": "1:01",
+      "end": "1:02",
+      "text": "1 implies 1 is 1."
+    },
+    {
+      "start": "1:02",
+      "end": "1:04",
+      "text": "1 implies 1 is 1."
+    },
+    {
+      "start": "1:04",
+      "end": "1:15",
+      "text": "And so I get all 1s in this column corresponding to P implies P OR Q and hence this expression,"
+    },
+    {
+      "start": "1:15",
+      "end": "1:24",
+      "text": "this truthtable, this P implies P OR Q is a tautology which means it's always true."
+    },
+    {
+      "start": "1:24",
+      "end": "1:28",
+      "text": "So do we really need to use these truthtable to say that this is always true?"
+    },
+    {
+      "start": "1:28",
+      "end": "1:29",
+      "text": "Not really."
+    },
+    {
+      "start": "1:29",
+      "end": "1:33",
+      "text": "P implies P OR Q let me think about it."
+    },
+    {
+      "start": "1:33",
+      "end": "1:35",
+      "text": "When it is not a tautology?"
+    },
+    {
+      "start": "1:35",
+      "end": "1:40",
+      "text": "When P ends up being 1 and P OR Q ends up being 0."
+    },
+    {
+      "start": "1:40",
+      "end": "1:43",
+      "text": "That's the only place where an implication can go false."
+    },
+    {
+      "start": "1:43",
+      "end": "1:50",
+      "text": "If I can show that this is impossible that P being 1 and this being 0 is impossible obviously"
+    },
+    {
+      "start": "1:50",
+      "end": "1:51",
+      "text": "it is a tautology."
+    },
+    {
+      "start": "1:51",
+      "end": "1:52",
+      "text": "Isn't it?"
+    },
+    {
+      "start": "1:52",
+      "end": "1:55",
+      "text": "Think about it and how do I do that?"
+    },
+    {
+      "start": "1:55",
+      "end": "1:58",
+      "text": "Let me say P is 1 then this P becomes 1."
+    },
+    {
+      "start": "1:58",
+      "end": "2:04",
+      "text": "When this P becomes 1 irrespective of what Q is P OR Q will be 1."
+    },
+    {
+      "start": "2:04",
+      "end": "2:12",
+      "text": "So you can never have 1 implies 0 ever which means this implication will always be true"
+    },
+    {
+      "start": "2:12",
+      "end": "2:14",
+      "text": "which means it is a tautology."
+    },
+    {
+      "start": "2:14",
+      "end": "2:16",
+      "text": "You see the ingenuity of this argument."
+    },
+    {
+      "start": "2:16",
+      "end": "2:21",
+      "text": "I did not write a truthtable but still showed that every entry here will be 1."
+    },
+    {
+      "start": "2:21",
+      "end": "2:22",
+      "text": "It can never be 0."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,153 @@
+{
+  "title": "Negation - Explanation",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:08",
+      "text": "Considering that statement it rained in my location today where do we insert not?"
+    },
+    {
+      "start": "0:08",
+      "end": "0:14",
+      "text": "As you can see this is a straightforward English question."
+    },
+    {
+      "start": "0:14",
+      "end": "0:19",
+      "text": "So the negation of this statement is going to be."
+    },
+    {
+      "start": "0:19",
+      "end": "0:31",
+      "text": "It did not rain in my location today."
+    },
+    {
+      "start": "0:31",
+      "end": "0:35",
+      "text": "Now that is called your P compliment."
+    },
+    {
+      "start": "0:35",
+      "end": "0:41",
+      "text": "This is a notation for P compliment."
+    },
+    {
+      "start": "0:41",
+      "end": "0:46",
+      "text": "So this means the statement P did not happen."
+    },
+    {
+      "start": "0:46",
+      "end": "0:52",
+      "text": "Similarly for statement Q which as I said is yesterday was a full moon day."
+    },
+    {
+      "start": "0:52",
+      "end": "0:55",
+      "text": "How do you write the negation of it?"
+    },
+    {
+      "start": "0:55",
+      "end": "0:58",
+      "text": "You see the word negation could be quite new to you."
+    },
+    {
+      "start": "0:58",
+      "end": "1:04",
+      "text": "All that we mean by negation is that the given statement you should write the opposite of"
+    },
+    {
+      "start": "1:04",
+      "end": "1:05",
+      "text": "it."
+    },
+    {
+      "start": "1:05",
+      "end": "1:06",
+      "text": "What is opposite of this?"
+    },
+    {
+      "start": "1:06",
+      "end": "1:15",
+      "text": "By opposite I mean what is the negation of this is going to be yesterday wasn't a full"
+    },
+    {
+      "start": "1:15",
+      "end": "1:17",
+      "text": "moon day."
+    },
+    {
+      "start": "1:17",
+      "end": "1:23",
+      "text": "Wasn't is actually was not a full moon day."
+    },
+    {
+      "start": "1:23",
+      "end": "1:30",
+      "text": "And this was your statement Q and so this statement will become not Q. So negation is"
+    },
+    {
+      "start": "1:30",
+      "end": "1:33",
+      "text": "a very straightforward concept."
+    },
+    {
+      "start": "1:33",
+      "end": "1:38",
+      "text": "Given any statement let's say I will give you another statement R right now."
+    },
+    {
+      "start": "1:38",
+      "end": "1:53",
+      "text": "Statement R is going to be my weight is less than 70 kgs."
+    },
+    {
+      "start": "1:53",
+      "end": "1:55",
+      "text": "What is the negation of this?"
+    },
+    {
+      "start": "1:55",
+      "end": "2:03",
+      "text": "Not R is going to be my weight of course is not less than 70 kgs."
+    },
+    {
+      "start": "2:03",
+      "end": "2:09",
+      "text": "More polished way to say that is greater than or equal to."
+    },
+    {
+      "start": "2:09",
+      "end": "2:12",
+      "text": "You see that's the negation of less than 70."
+    },
+    {
+      "start": "2:12",
+      "end": "2:14",
+      "text": "Less than doesn't not include 70."
+    },
+    {
+      "start": "2:14",
+      "end": "2:25",
+      "text": "So the negation of this that is going to be my weight is greater than or equal to 70 kgs."
+    },
+    {
+      "start": "2:25",
+      "end": "2:31",
+      "text": "Please take note simply putting not here will also make it not R but we are just being very"
+    },
+    {
+      "start": "2:31",
+      "end": "2:39",
+      "text": "precise and polished and we say that my weight is greater than or equal to 70 kgs which is"
+    },
+    {
+      "start": "2:39",
+      "end": "2:44",
+      "text": "the negation of my weight is less than 70 kgs."
+    }
+  ],
+  "timestamped": true
+}

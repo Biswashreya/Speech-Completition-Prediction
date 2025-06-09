@@ -1,0 +1,623 @@
+{
+  "title": "Examples and Non-examples of Implication - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:10",
+      "text": "One of the most important topics in this chapter is the implication."
+    },
+    {
+      "start": "0:10",
+      "end": "0:17",
+      "text": "P implies Q. So let's understand this in detail."
+    },
+    {
+      "start": "0:17",
+      "end": "0:18",
+      "text": "Okay."
+    },
+    {
+      "start": "0:18",
+      "end": "0:24",
+      "text": "So please note that this is the most confused part of this chapter."
+    },
+    {
+      "start": "0:24",
+      "end": "0:29",
+      "text": "So we are going to go slowly and we are going to give you many examples so that things are"
+    },
+    {
+      "start": "0:29",
+      "end": "0:31",
+      "text": "very clear to you."
+    },
+    {
+      "start": "0:31",
+      "end": "0:32",
+      "text": "Okay."
+    },
+    {
+      "start": "0:32",
+      "end": "0:39",
+      "text": "The confusing part here is there are some situations in real life that appears like"
+    },
+    {
+      "start": "0:39",
+      "end": "0:41",
+      "text": "P implies Q but it is not."
+    },
+    {
+      "start": "0:41",
+      "end": "0:44",
+      "text": "We will explain what we are trying to say."
+    },
+    {
+      "start": "0:44",
+      "end": "0:49",
+      "text": "Firstly let's look at this familiar example of you know when I was a school student when"
+    },
+    {
+      "start": "0:49",
+      "end": "0:56",
+      "text": "I was in my high school, I used to attend these examinations and sometimes the questions"
+    },
+    {
+      "start": "0:56",
+      "end": "0:58",
+      "text": "that they would ask would be erroneous."
+    },
+    {
+      "start": "0:58",
+      "end": "1:01",
+      "text": "There will be a mistake in the question."
+    },
+    {
+      "start": "1:01",
+      "end": "1:07",
+      "text": "And the verdict, the idea would be if you attempted you will get marks."
+    },
+    {
+      "start": "1:07",
+      "end": "1:10",
+      "text": "Let us understand this carefully."
+    },
+    {
+      "start": "1:10",
+      "end": "1:17",
+      "text": "So, on this side let me write down all the possibilities of the question being right"
+    },
+    {
+      "start": "1:17",
+      "end": "1:21",
+      "text": "or wrong and on this side I will write down my attempt."
+    },
+    {
+      "start": "1:21",
+      "end": "1:22",
+      "text": "Okay."
+    },
+    {
+      "start": "1:22",
+      "end": "1:24",
+      "text": "Here is the question."
+    },
+    {
+      "start": "1:24",
+      "end": "1:25",
+      "text": "Here is the answer."
+    },
+    {
+      "start": "1:25",
+      "end": "1:29",
+      "text": "Now the question is wrong and my answer is wrong."
+    },
+    {
+      "start": "1:29",
+      "end": "1:30",
+      "text": "I will get marks."
+    },
+    {
+      "start": "1:30",
+      "end": "1:31",
+      "text": "Right."
+    },
+    {
+      "start": "1:31",
+      "end": "1:33",
+      "text": "So I will put 1 here."
+    },
+    {
+      "start": "1:33",
+      "end": "1:37",
+      "text": "So the column Q is the question type."
+    },
+    {
+      "start": "1:37",
+      "end": "1:39",
+      "text": "0 represents a wrong question."
+    },
+    {
+      "start": "1:39",
+      "end": "1:42",
+      "text": "1 represents the right question."
+    },
+    {
+      "start": "1:42",
+      "end": "1:43",
+      "text": "Okay."
+    },
+    {
+      "start": "1:43",
+      "end": "1:47",
+      "text": "And A column is about my answer to the question."
+    },
+    {
+      "start": "1:47",
+      "end": "1:49",
+      "text": "0 represents wrong answer."
+    },
+    {
+      "start": "1:49",
+      "end": "1:51",
+      "text": "1 represents right answer."
+    },
+    {
+      "start": "1:51",
+      "end": "1:56",
+      "text": "So please note there can be a case when the question is incorrect."
+    },
+    {
+      "start": "1:56",
+      "end": "2:00",
+      "text": "But I will assume what the question is and my answer will be right."
+    },
+    {
+      "start": "2:00",
+      "end": "2:02",
+      "text": "Perfectly right, that's also possible."
+    },
+    {
+      "start": "2:02",
+      "end": "2:03",
+      "text": "So let's start."
+    },
+    {
+      "start": "2:03",
+      "end": "2:05",
+      "text": "Question is wrong, answer is wrong."
+    },
+    {
+      "start": "2:05",
+      "end": "2:09",
+      "text": "I will get marks because you see it's the mistake of the question paper setter that"
+    },
+    {
+      "start": "2:09",
+      "end": "2:11",
+      "text": "he gave a wrong question."
+    },
+    {
+      "start": "2:11",
+      "end": "2:13",
+      "text": "I am not responsible for my wrong answer."
+    },
+    {
+      "start": "2:13",
+      "end": "2:18",
+      "text": "If the question was right I probably would have written the right answer."
+    },
+    {
+      "start": "2:18",
+      "end": "2:20",
+      "text": "So the benefit of doubt is always to the students as you all know."
+    },
+    {
+      "start": "2:20",
+      "end": "2:23",
+      "text": "So I will get my marks."
+    },
+    {
+      "start": "2:23",
+      "end": "2:26",
+      "text": "Question is wrong my answer is right."
+    },
+    {
+      "start": "2:26",
+      "end": "2:32",
+      "text": "Obviously the only genius students do this despite the question being wrong they might"
+    },
+    {
+      "start": "2:32",
+      "end": "2:35",
+      "text": "imagine what should be the right version of the question and then they will write the"
+    },
+    {
+      "start": "2:35",
+      "end": "2:37",
+      "text": "answer."
+    },
+    {
+      "start": "2:37",
+      "end": "2:38",
+      "text": "No doubt this is right."
+    },
+    {
+      "start": "2:38",
+      "end": "2:39",
+      "text": "Marks is 1."
+    },
+    {
+      "start": "2:39",
+      "end": "2:44",
+      "text": "The question is right, and your answer is wrong."
+    },
+    {
+      "start": "2:44",
+      "end": "2:46",
+      "text": "This would be no marks."
+    },
+    {
+      "start": "2:46",
+      "end": "2:47",
+      "text": "Right."
+    },
+    {
+      "start": "2:47",
+      "end": "2:49",
+      "text": "We all go and argue to the teacher that my answer is right."
+    },
+    {
+      "start": "2:49",
+      "end": "2:50",
+      "text": "Teacher will say no."
+    },
+    {
+      "start": "2:50",
+      "end": "2:51",
+      "text": "The question is right."
+    },
+    {
+      "start": "2:51",
+      "end": "2:52",
+      "text": "Your answer is wrong."
+    },
+    {
+      "start": "2:52",
+      "end": "2:54",
+      "text": "You don't get any marks."
+    },
+    {
+      "start": "2:54",
+      "end": "2:56",
+      "text": "Question is right."
+    },
+    {
+      "start": "2:56",
+      "end": "2:57",
+      "text": "Answer is right."
+    },
+    {
+      "start": "2:57",
+      "end": "3:01",
+      "text": "Very unlikely right we will writ the right answers to the right question."
+    },
+    {
+      "start": "3:01",
+      "end": "3:04",
+      "text": "So technically speaking this is – this should fetch me marks."
+    },
+    {
+      "start": "3:04",
+      "end": "3:10",
+      "text": "Now this is called your P implies Q truthtable."
+    },
+    {
+      "start": "3:10",
+      "end": "3:18",
+      "text": "When the question is right it implies that you will get your marks M. Q implies M. the"
+    },
+    {
+      "start": "3:18",
+      "end": "3:22",
+      "text": "question is right and your answer is right you get marks."
+    },
+    {
+      "start": "3:22",
+      "end": "3:24",
+      "text": "Right."
+    },
+    {
+      "start": "3:24",
+      "end": "3:29",
+      "text": "This is the typical P implies Q or A implies B concept."
+    },
+    {
+      "start": "3:29",
+      "end": "3:32",
+      "text": "We will see more examples."
+    },
+    {
+      "start": "3:32",
+      "end": "3:34",
+      "text": "Point to note."
+    },
+    {
+      "start": "3:34",
+      "end": "3:44",
+      "text": "Whenever you say A implies B then your table should look like this 0, 0 is 1."
+    },
+    {
+      "start": "3:44",
+      "end": "3:45",
+      "text": "0, 1 is 1."
+    },
+    {
+      "start": "3:45",
+      "end": "3:46",
+      "text": "1, 0 is 0."
+    },
+    {
+      "start": "3:46",
+      "end": "3:48",
+      "text": "1, 1 is 1."
+    },
+    {
+      "start": "3:48",
+      "end": "3:53",
+      "text": "Only then can you say A implies B. Ath column will be 0, 0, 1, 1."
+    },
+    {
+      "start": "3:53",
+      "end": "3:56",
+      "text": "Bth column will be 0, 1, 0, 1."
+    },
+    {
+      "start": "3:56",
+      "end": "4:02",
+      "text": "And the last column will be 1, 1, 0, 1 if that be the case then you say A implies B."
+    },
+    {
+      "start": "4:02",
+      "end": "4:08",
+      "text": "Now is this I will give you an example, illustration of when this is not true."
+    },
+    {
+      "start": "4:08",
+      "end": "4:11",
+      "text": "That will make things clear."
+    },
+    {
+      "start": "4:11",
+      "end": "4:13",
+      "text": "Okay."
+    },
+    {
+      "start": "4:13",
+      "end": "4:14",
+      "text": "I am rich."
+    },
+    {
+      "start": "4:14",
+      "end": "4:15",
+      "text": "I may be rich."
+    },
+    {
+      "start": "4:15",
+      "end": "4:17",
+      "text": "I may not be rich."
+    },
+    {
+      "start": "4:17",
+      "end": "4:18",
+      "text": "I am happy."
+    },
+    {
+      "start": "4:18",
+      "end": "4:20",
+      "text": "I may be happy."
+    },
+    {
+      "start": "4:20",
+      "end": "4:22",
+      "text": "I may not be happy."
+    },
+    {
+      "start": "4:22",
+      "end": "4:25",
+      "text": "Let me consider all possibilities."
+    },
+    {
+      "start": "4:25",
+      "end": "4:26",
+      "text": "I am rich."
+    },
+    {
+      "start": "4:26",
+      "end": "4:27",
+      "text": "I am happy."
+    },
+    {
+      "start": "4:27",
+      "end": "4:28",
+      "text": "I am not rich."
+    },
+    {
+      "start": "4:28",
+      "end": "4:29",
+      "text": "I am not happy."
+    },
+    {
+      "start": "4:29",
+      "end": "4:30",
+      "text": "I am rich, but not happy."
+    },
+    {
+      "start": "4:30",
+      "end": "4:32",
+      "text": "I am not rich but I am happy."
+    },
+    {
+      "start": "4:32",
+      "end": "4:36",
+      "text": "Now let us look at what happens in this truthtable."
+    },
+    {
+      "start": "4:36",
+      "end": "4:43",
+      "text": "Is it true that a person who is not rich is not happy?"
+    },
+    {
+      "start": "4:43",
+      "end": "4:47",
+      "text": "What you have to say?"
+    },
+    {
+      "start": "4:47",
+      "end": "4:51",
+      "text": "Can it so happen that a poor person not rich means what he is poor."
+    },
+    {
+      "start": "4:51",
+      "end": "4:53",
+      "text": "And he is not happy."
+    },
+    {
+      "start": "4:53",
+      "end": "4:55",
+      "text": "This is not always true."
+    },
+    {
+      "start": "4:55",
+      "end": "4:58",
+      "text": "You know poor people who can be happy."
+    },
+    {
+      "start": "4:58",
+      "end": "5:01",
+      "text": "So I will say 0 in the last column."
+    },
+    {
+      "start": "5:01",
+      "end": "5:06",
+      "text": "If you are not rich, you are not happy is a wrong inference."
+    },
+    {
+      "start": "5:06",
+      "end": "5:07",
+      "text": "Correct?"
+    },
+    {
+      "start": "5:07",
+      "end": "5:08",
+      "text": "Next."
+    },
+    {
+      "start": "5:08",
+      "end": "5:12",
+      "text": "You are not rich but you are happy."
+    },
+    {
+      "start": "5:12",
+      "end": "5:13",
+      "text": "This again is not true."
+    },
+    {
+      "start": "5:13",
+      "end": "5:17",
+      "text": "We know people who are not rich but are unhappy."
+    },
+    {
+      "start": "5:17",
+      "end": "5:18",
+      "text": "There are exceptions."
+    },
+    {
+      "start": "5:18",
+      "end": "5:22",
+      "text": "You cannot always say that not rich means happy."
+    },
+    {
+      "start": "5:22",
+      "end": "5:23",
+      "text": "This is not true."
+    },
+    {
+      "start": "5:23",
+      "end": "5:24",
+      "text": "0."
+    },
+    {
+      "start": "5:24",
+      "end": "5:27",
+      "text": "You are rich and you are unhappy."
+    },
+    {
+      "start": "5:27",
+      "end": "5:32",
+      "text": "I am sure this is mostly true but then there are people who are rich and also happy."
+    },
+    {
+      "start": "5:32",
+      "end": "5:34",
+      "text": "Even this is not true."
+    },
+    {
+      "start": "5:34",
+      "end": "5:36",
+      "text": "You are rich and you are happy."
+    },
+    {
+      "start": "5:36",
+      "end": "5:37",
+      "text": "1 and 1."
+    },
+    {
+      "start": "5:37",
+      "end": "5:39",
+      "text": "Even this is not true."
+    },
+    {
+      "start": "5:39",
+      "end": "5:40",
+      "text": "Okay?"
+    },
+    {
+      "start": "5:40",
+      "end": "5:46",
+      "text": "We cannot say anything about a person being happy when he is rich."
+    },
+    {
+      "start": "5:46",
+      "end": "5:49",
+      "text": "So rich implies happiness is not true."
+    },
+    {
+      "start": "5:49",
+      "end": "5:50",
+      "text": "Correct?"
+    },
+    {
+      "start": "5:50",
+      "end": "5:53",
+      "text": "When will it be true?"
+    },
+    {
+      "start": "5:53",
+      "end": "5:59",
+      "text": "An implication will be true if the last column turns out to be 1, 1, 0, 1 only, if it not"
+    },
+    {
+      "start": "5:59",
+      "end": "6:04",
+      "text": "that then the implication is not true."
+    },
+    {
+      "start": "6:04",
+      "end": "6:07",
+      "text": "As and always let's see more examples to make it clear to you."
+    }
+  ],
+  "timestamped": true
+}

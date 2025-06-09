@@ -1,0 +1,153 @@
+{
+  "title": "Double negation - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:09",
+      "text": "Here goes some interesting examples of what I just said, the double negation."
+    },
+    {
+      "start": "0:09",
+      "end": "0:10",
+      "text": "Look at this statement."
+    },
+    {
+      "start": "0:10",
+      "end": "0:14",
+      "text": "I never said I don't like sweets."
+    },
+    {
+      "start": "0:14",
+      "end": "0:16",
+      "text": "What do I mean by this?"
+    },
+    {
+      "start": "0:16",
+      "end": "0:26",
+      "text": "If the statement P is I like sweets, P complement will be I don't like sweets, and the complement"
+    },
+    {
+      "start": "0:26",
+      "end": "0:31",
+      "text": "of this would be it is not true that I don't like sweets."
+    },
+    {
+      "start": "0:31",
+      "end": "0:33",
+      "text": "Correct?"
+    },
+    {
+      "start": "0:33",
+      "end": "0:39",
+      "text": "So it is not true that I don't like sweets implies that I like sweets which is your statement"
+    },
+    {
+      "start": "0:39",
+      "end": "0:47",
+      "text": "P. So complement of a statement and its complement will give you back the statement."
+    },
+    {
+      "start": "0:47",
+      "end": "0:51",
+      "text": "Now this is like straightforward and commonsensical."
+    },
+    {
+      "start": "0:51",
+      "end": "0:54",
+      "text": "Talk to anyone who understands basic language."
+    },
+    {
+      "start": "0:54",
+      "end": "0:57",
+      "text": "They will say, “What is so great about it?”"
+    },
+    {
+      "start": "0:57",
+      "end": "0:58",
+      "text": "Right?"
+    },
+    {
+      "start": "0:58",
+      "end": "1:02",
+      "text": "But then this goes by the name double negation."
+    },
+    {
+      "start": "1:02",
+      "end": "1:05",
+      "text": "Not of not is the same."
+    },
+    {
+      "start": "1:05",
+      "end": "1:06",
+      "text": "I’ll give you another example."
+    },
+    {
+      "start": "1:06",
+      "end": "1:12",
+      "text": "There is this very popular way of stating something in a funny way."
+    },
+    {
+      "start": "1:12",
+      "end": "1:17",
+      "text": "You see I can't not treat my friend badly."
+    },
+    {
+      "start": "1:17",
+      "end": "1:18",
+      "text": "What do you mean by that?"
+    },
+    {
+      "start": "1:18",
+      "end": "1:22",
+      "text": "I cannot not treat my friend badly."
+    },
+    {
+      "start": "1:22",
+      "end": "1:24",
+      "text": "You see there is a double negation here as well."
+    },
+    {
+      "start": "1:24",
+      "end": "1:26",
+      "text": "The not not gets cancelled."
+    },
+    {
+      "start": "1:26",
+      "end": "1:30",
+      "text": "All you are trying to say is that you will treat your friend well."
+    },
+    {
+      "start": "1:30",
+      "end": "1:33",
+      "text": "Let’s now look at the truth table of this."
+    },
+    {
+      "start": "1:33",
+      "end": "1:38",
+      "text": "There is only one variable P, which can take the value 0 or 1."
+    },
+    {
+      "start": "1:38",
+      "end": "1:42",
+      "text": "P complement will simply be complement of 0 is 1, complement of 1 is 0."
+    },
+    {
+      "start": "1:42",
+      "end": "1:47",
+      "text": "And the complement of this will be complement of 1 is 0, complement of 0 is 1."
+    },
+    {
+      "start": "1:47",
+      "end": "1:54",
+      "text": "You see the entries of P and P double negation is the same and hence P and P double negation"
+    },
+    {
+      "start": "1:54",
+      "end": "1:56",
+      "text": "are equivalent."
+    }
+  ],
+  "timestamped": true
+}

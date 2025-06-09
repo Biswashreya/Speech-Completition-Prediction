@@ -1,0 +1,98 @@
+{
+  "title": "AND operator for 3 Variables",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:11",
+      "text": "We saw that OR truth table of PQ and R. How will an AND truth table of three variables"
+    },
+    {
+      "start": "0:11",
+      "end": "0:12",
+      "text": "look like?"
+    },
+    {
+      "start": "0:12",
+      "end": "0:14",
+      "text": "So let's fill in the table."
+    },
+    {
+      "start": "0:14",
+      "end": "0:19",
+      "text": "PQR 0,0,0 to 1,1,1 eight entries."
+    },
+    {
+      "start": "0:19",
+      "end": "0:20",
+      "text": "So what you mean by AND?"
+    },
+    {
+      "start": "0:20",
+      "end": "0:22",
+      "text": "All of them should be true."
+    },
+    {
+      "start": "0:22",
+      "end": "0:24",
+      "text": "0, 0, 0 do you think all of them are true?"
+    },
+    {
+      "start": "0:24",
+      "end": "0:25",
+      "text": "No."
+    },
+    {
+      "start": "0:25",
+      "end": "0:26",
+      "text": "All of them are not true."
+    },
+    {
+      "start": "0:26",
+      "end": "0:27",
+      "text": "So 0."
+    },
+    {
+      "start": "0:27",
+      "end": "0:28",
+      "text": "0,0, 1."
+    },
+    {
+      "start": "0:28",
+      "end": "0:29",
+      "text": "No."
+    },
+    {
+      "start": "0:29",
+      "end": "0:30",
+      "text": "All of them are not true."
+    },
+    {
+      "start": "0:30",
+      "end": "0:34",
+      "text": "If I spot even a single 0, I should say it is 0."
+    },
+    {
+      "start": "0:34",
+      "end": "0:40",
+      "text": "So obviously every single entry will be 0 except for the last entry which is 1,1,1 which"
+    },
+    {
+      "start": "0:40",
+      "end": "0:42",
+      "text": "will give you 1."
+    },
+    {
+      "start": "0:42",
+      "end": "0:48",
+      "text": "So P and Q and R will be all 0s, first seven entries will be 0 and the last one will be"
+    },
+    {
+      "start": "0:48",
+      "end": "0:49",
+      "text": "1."
+    }
+  ],
+  "timestamped": true
+}

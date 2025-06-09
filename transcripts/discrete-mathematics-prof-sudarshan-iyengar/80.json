@@ -1,0 +1,118 @@
+{
+  "title": "Truthtable for AND operator",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:05",
+      "text": "Let us now look at the AND operator."
+    },
+    {
+      "start": "0:05",
+      "end": "0:07",
+      "text": "These are all very obvious things."
+    },
+    {
+      "start": "0:07",
+      "end": "0:12",
+      "text": "I'm sure you would have guessed what I'll be saying the moment I said AND here."
+    },
+    {
+      "start": "0:12",
+      "end": "0:14",
+      "text": "What is AND?"
+    },
+    {
+      "start": "0:14",
+      "end": "0:16",
+      "text": "The same example."
+    },
+    {
+      "start": "0:16",
+      "end": "0:17",
+      "text": "Mom doesn't come."
+    },
+    {
+      "start": "0:17",
+      "end": "0:18",
+      "text": "Dad doesn't come."
+    },
+    {
+      "start": "0:18",
+      "end": "0:20",
+      "text": "That is not their first entry."
+    },
+    {
+      "start": "0:20",
+      "end": "0:21",
+      "text": "Mom isn't there, 0, 0."
+    },
+    {
+      "start": "0:21",
+      "end": "0:23",
+      "text": "I'll be unhappy."
+    },
+    {
+      "start": "0:23",
+      "end": "0:24",
+      "text": "Okay?"
+    },
+    {
+      "start": "0:24",
+      "end": "0:26",
+      "text": "now I have a different condition."
+    },
+    {
+      "start": "0:26",
+      "end": "0:28",
+      "text": "Dad comes, mom doesn't come."
+    },
+    {
+      "start": "0:28",
+      "end": "0:31",
+      "text": "I will be unhappy because I miss mom."
+    },
+    {
+      "start": "0:31",
+      "end": "0:33",
+      "text": "Of course, dad is there."
+    },
+    {
+      "start": "0:33",
+      "end": "0:35",
+      "text": "I'm happy but I'm not very happy."
+    },
+    {
+      "start": "0:35",
+      "end": "0:40",
+      "text": "So AND operator means this is a different kind of a kid who expects both his parents"
+    },
+    {
+      "start": "0:40",
+      "end": "0:41",
+      "text": "to be present."
+    },
+    {
+      "start": "0:41",
+      "end": "0:43",
+      "text": "Dad doesn't come, mom comes."
+    },
+    {
+      "start": "0:43",
+      "end": "0:46",
+      "text": "I am still unhappy."
+    },
+    {
+      "start": "0:46",
+      "end": "0:50",
+      "text": "Dad comes, and mom comes I'm extremely happy."
+    },
+    {
+      "start": "0:50",
+      "end": "0:54",
+      "text": "So this is called the AND operator; very simple."
+    }
+  ],
+  "timestamped": true
+}

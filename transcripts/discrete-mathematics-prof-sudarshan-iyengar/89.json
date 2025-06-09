@@ -1,0 +1,53 @@
+{
+  "title": "Introduction to Double Implication",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:11",
+      "text": "You do encounter sentences such as these; necessary and sufficient condition, implies"
+    },
+    {
+      "start": "0:11",
+      "end": "0:21",
+      "text": "and implied by, if and only if, they are all perfectly sounding English statements but"
+    },
+    {
+      "start": "0:21",
+      "end": "0:22",
+      "text": "what exactly do they mean?"
+    },
+    {
+      "start": "0:22",
+      "end": "0:24",
+      "text": "In fact, they all mean the same."
+    },
+    {
+      "start": "0:24",
+      "end": "0:27",
+      "text": "And let me tell you what exactly they mean."
+    },
+    {
+      "start": "0:27",
+      "end": "0:36",
+      "text": "They simply mean whenever you are given two statements namely P and Q if P implies Q and"
+    },
+    {
+      "start": "0:36",
+      "end": "0:46",
+      "text": "Q implies P then you say P is implied and P implies and implied by Q. P is necessary"
+    },
+    {
+      "start": "0:46",
+      "end": "0:55",
+      "text": "for Q. P is necessary and sufficient for Q and we also say P if and only if Q."
+    },
+    {
+      "start": "0:55",
+      "end": "0:56",
+      "text": "We will see more of this very soon."
+    }
+  ],
+  "timestamped": true
+}
