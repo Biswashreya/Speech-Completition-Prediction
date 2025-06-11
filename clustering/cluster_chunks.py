@@ -8,7 +8,7 @@ from tqdm import tqdm
 import time
 import umap
 
-with open("../embeddings/chunk_embeddings_tedex.json", "r", encoding="utf-8") as f:
+with open("../", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 print(f"Loaded {len(data)} chunk embeddings")
