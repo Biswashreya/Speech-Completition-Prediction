@@ -1,2 +1,7 @@
 pandas
 requests
+sentence_transformers
+scikit-learn
+hdbscan
+tqdm
+umap
