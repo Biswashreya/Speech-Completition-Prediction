@@ -1,0 +1,118 @@
+{
+  "title": "Counting number of functions",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:05",
+      "end": "0:05",
+      "text": "counting counting counting we always"
+    },
+    {
+      "start": "0:05",
+      "end": "0:07",
+      "text": "counting counting counting we always talk about counting and I am back again"
+    },
+    {
+      "start": "0:07",
+      "end": "0:07",
+      "text": "talk about counting and I am back again"
+    },
+    {
+      "start": "0:07",
+      "end": "0:09",
+      "text": "talk about counting and I am back again talking about it once more in this"
+    },
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "talking about it once more in this"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "talking about it once more in this chapter you can easily guess what will"
+    },
+    {
+      "start": "0:12",
+      "end": "0:12",
+      "text": "chapter you can easily guess what will"
+    },
+    {
+      "start": "0:12",
+      "end": "0:15",
+      "text": "chapter you can easily guess what will be my next question can you count the"
+    },
+    {
+      "start": "0:15",
+      "end": "0:15",
+      "text": "be my next question can you count the"
+    },
+    {
+      "start": "0:15",
+      "end": "0:19",
+      "text": "be my next question can you count the total possible functions from a set a to"
+    },
+    {
+      "start": "0:19",
+      "end": "0:19",
+      "text": "total possible functions from a set a to"
+    },
+    {
+      "start": "0:19",
+      "end": "0:23",
+      "text": "total possible functions from a set a to a set P first question second question"
+    },
+    {
+      "start": "0:23",
+      "end": "0:23",
+      "text": "a set P first question second question"
+    },
+    {
+      "start": "0:23",
+      "end": "0:27",
+      "text": "a set P first question second question can you count all possible 1:1 functions"
+    },
+    {
+      "start": "0:27",
+      "end": "0:27",
+      "text": "can you count all possible 1:1 functions"
+    },
+    {
+      "start": "0:27",
+      "end": "0:31",
+      "text": "can you count all possible 1:1 functions from A to B a natural next question can"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "from A to B a natural next question can"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "from A to B a natural next question can you count all possible on two functions"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "you count all possible on two functions"
+    },
+    {
+      "start": "0:34",
+      "end": "0:36",
+      "text": "you count all possible on two functions from A to B and finally can you count"
+    },
+    {
+      "start": "0:36",
+      "end": "0:36",
+      "text": "from A to B and finally can you count"
+    },
+    {
+      "start": "0:36",
+      "end": "0:42",
+      "text": "from A to B and finally can you count all possible by directions from A to B"
+    }
+  ],
+  "timestamped": true
+}

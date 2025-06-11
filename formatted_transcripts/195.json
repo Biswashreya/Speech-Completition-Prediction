@@ -1,0 +1,78 @@
+{
+  "title": "Number of One-One functions - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:14",
+      "text": "So given let's say A, B, C and 1, 2, 3, how many possible one-one functions can you think"
+    },
+    {
+      "start": "0:14",
+      "end": "0:21",
+      "text": "of? Let me enumerate this properly. How will I do this? I will simply write A, B, C and"
+    },
+    {
+      "start": "0:21",
+      "end": "0:28",
+      "text": "below A, B, C I will write the mapping A goes to 1, B goes to 2, C goes to 3. 1, 2, 3. Another"
+    },
+    {
+      "start": "0:28",
+      "end": "0:37",
+      "text": "way is A, B, C go into let's A got to 2, B goes to 1 and C goes to 3."
+    },
+    {
+      "start": "0:37",
+      "end": "0:45",
+      "text": "Now I again write this as 2, 1, 3. If you know what I mean. Correct. I simply write"
+    },
+    {
+      "start": "0:45",
+      "end": "0:53",
+      "text": "A goes to 2, I write 2 below A. Now do you observe something? You must be smart enough"
+    },
+    {
+      "start": "0:53",
+      "end": "1:03",
+      "text": "to observe that all I am doing here is writing all possible permutations of 1, 2, 3. 123,"
+    },
+    {
+      "start": "1:03",
+      "end": "1:15",
+      "text": "213, 312, 321 so on. How many are there? Let's enumerate all of them. 123, 132, 213, 231,"
+    },
+    {
+      "start": "1:15",
+      "end": "1:22",
+      "text": "321, 312. You have precisely six of them. A better way to say it. A smarter way to say"
+    },
+    {
+      "start": "1:22",
+      "end": "1:32",
+      "text": "it is there are three factorial of them. So total possible one-one function from ABC to"
+    },
+    {
+      "start": "1:32",
+      "end": "1:38",
+      "text": "123 this question boils down to asking this question of in how many ways can you arrange"
+    },
+    {
+      "start": "1:38",
+      "end": "1:45",
+      "text": "123. All possible permutations happens to be 6. As I told you three factorial. And now"
+    },
+    {
+      "start": "1:45",
+      "end": "1:51",
+      "text": "that's the answer. Perfect. So now let's go ahead and ask a slightly more"
+    },
+    {
+      "start": "1:51",
+      "end": "1:53",
+      "text": "complicated question than this."
+    }
+  ],
+  "timestamped": true
+}

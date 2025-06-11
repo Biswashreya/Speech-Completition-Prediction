@@ -1,0 +1,48 @@
+{
+  "title": "Cardinality condition in One-One function - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:07",
+      "end": "0:07",
+      "text": "a question to you all assume you are"
+    },
+    {
+      "start": "0:07",
+      "end": "0:11",
+      "text": "a question to you all assume you are given two finite sets a and B and a"
+    },
+    {
+      "start": "0:11",
+      "end": "0:11",
+      "text": "given two finite sets a and B and a"
+    },
+    {
+      "start": "0:11",
+      "end": "0:15",
+      "text": "given two finite sets a and B and a function f from A to B which is given to"
+    },
+    {
+      "start": "0:15",
+      "end": "0:15",
+      "text": "function f from A to B which is given to"
+    },
+    {
+      "start": "0:15",
+      "end": "0:20",
+      "text": "function f from A to B which is given to be 1 1 the question is what can you say"
+    },
+    {
+      "start": "0:20",
+      "end": "0:20",
+      "text": "be 1 1 the question is what can you say"
+    },
+    {
+      "start": "0:20",
+      "end": "0:24",
+      "text": "be 1 1 the question is what can you say about the cardinalities of a and B here"
+    }
+  ],
+  "timestamped": true
+}

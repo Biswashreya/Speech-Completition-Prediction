@@ -1,0 +1,138 @@
+{
+  "title": "Introduction to Bijection",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:06",
+      "end": "0:06",
+      "text": "there is one type of function that is"
+    },
+    {
+      "start": "0:06",
+      "end": "0:09",
+      "text": "there is one type of function that is very important to us in the whole of"
+    },
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "very important to us in the whole of"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "very important to us in the whole of this subject and that is this function"
+    },
+    {
+      "start": "0:12",
+      "end": "0:12",
+      "text": "this subject and that is this function"
+    },
+    {
+      "start": "0:12",
+      "end": "0:16",
+      "text": "this subject and that is this function called the by Junction definition is"
+    },
+    {
+      "start": "0:16",
+      "end": "0:16",
+      "text": "called the by Junction definition is"
+    },
+    {
+      "start": "0:16",
+      "end": "0:20",
+      "text": "called the by Junction definition is very simple any function that is both 1"
+    },
+    {
+      "start": "0:20",
+      "end": "0:20",
+      "text": "very simple any function that is both 1"
+    },
+    {
+      "start": "0:20",
+      "end": "0:24",
+      "text": "very simple any function that is both 1 1 as well as on 2 is called a bijection"
+    },
+    {
+      "start": "0:24",
+      "end": "0:24",
+      "text": "1 as well as on 2 is called a bijection"
+    },
+    {
+      "start": "0:24",
+      "end": "0:26",
+      "text": "1 as well as on 2 is called a bijection please note I'll be using this word by"
+    },
+    {
+      "start": "0:26",
+      "end": "0:26",
+      "text": "please note I'll be using this word by"
+    },
+    {
+      "start": "0:26",
+      "end": "0:29",
+      "text": "please note I'll be using this word by addiction in several chapters that's"
+    },
+    {
+      "start": "0:29",
+      "end": "0:29",
+      "text": "addiction in several chapters that's"
+    },
+    {
+      "start": "0:29",
+      "end": "0:30",
+      "text": "addiction in several chapters that's going to come ahead"
+    },
+    {
+      "start": "0:30",
+      "end": "0:30",
+      "text": "going to come ahead"
+    },
+    {
+      "start": "0:30",
+      "end": "0:32",
+      "text": "going to come ahead we better be very clear with what one"
+    },
+    {
+      "start": "0:32",
+      "end": "0:32",
+      "text": "we better be very clear with what one"
+    },
+    {
+      "start": "0:32",
+      "end": "0:35",
+      "text": "we better be very clear with what one means by a bi-directional to summarize a"
+    },
+    {
+      "start": "0:35",
+      "end": "0:35",
+      "text": "means by a bi-directional to summarize a"
+    },
+    {
+      "start": "0:35",
+      "end": "0:38",
+      "text": "means by a bi-directional to summarize a function f from A to B is called a"
+    },
+    {
+      "start": "0:38",
+      "end": "0:38",
+      "text": "function f from A to B is called a"
+    },
+    {
+      "start": "0:38",
+      "end": "0:41",
+      "text": "function f from A to B is called a bisection if it is number one one one"
+    },
+    {
+      "start": "0:41",
+      "end": "0:41",
+      "text": "bisection if it is number one one one"
+    },
+    {
+      "start": "0:41",
+      "end": "0:45",
+      "text": "bisection if it is number one one one number two want"
+    }
+  ],
+  "timestamped": true
+}

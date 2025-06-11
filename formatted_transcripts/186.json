@@ -1,0 +1,38 @@
+{
+  "title": "Cardinality condition in Onto function - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:05",
+      "end": "0:05",
+      "text": "what if there is a function f from a"
+    },
+    {
+      "start": "0:05",
+      "end": "0:09",
+      "text": "what if there is a function f from a finite set a to a finite set B and given"
+    },
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "finite set a to a finite set B and given"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "finite set a to a finite set B and given that f is on - what can you say about"
+    },
+    {
+      "start": "0:12",
+      "end": "0:12",
+      "text": "that f is on - what can you say about"
+    },
+    {
+      "start": "0:12",
+      "end": "0:15",
+      "text": "that f is on - what can you say about the cardinality of a and B"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,168 @@
+{
+  "title": "Defintion of a function - Part 1",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:04",
+      "text": "let us define what a function is"
+    },
+    {
+      "start": "0:04",
+      "end": "0:08",
+      "text": "let us define what a function is formally you saw a couple of examples"
+    },
+    {
+      "start": "0:08",
+      "end": "0:08",
+      "text": "formally you saw a couple of examples"
+    },
+    {
+      "start": "0:08",
+      "end": "0:11",
+      "text": "formally you saw a couple of examples right in fact many examples let's take"
+    },
+    {
+      "start": "0:11",
+      "end": "0:11",
+      "text": "right in fact many examples let's take"
+    },
+    {
+      "start": "0:11",
+      "end": "0:13",
+      "text": "right in fact many examples let's take the examples that we told you just now"
+    },
+    {
+      "start": "0:13",
+      "end": "0:13",
+      "text": "the examples that we told you just now"
+    },
+    {
+      "start": "0:13",
+      "end": "0:18",
+      "text": "the examples that we told you just now of ABC and D from A to B there is an"
+    },
+    {
+      "start": "0:18",
+      "end": "0:18",
+      "text": "of ABC and D from A to B there is an"
+    },
+    {
+      "start": "0:18",
+      "end": "0:22",
+      "text": "of ABC and D from A to B there is an association of every element to a unique"
+    },
+    {
+      "start": "0:22",
+      "end": "0:22",
+      "text": "association of every element to a unique"
+    },
+    {
+      "start": "0:22",
+      "end": "0:25",
+      "text": "association of every element to a unique element on this side right so zero is"
+    },
+    {
+      "start": "0:25",
+      "end": "0:25",
+      "text": "element on this side right so zero is"
+    },
+    {
+      "start": "0:25",
+      "end": "0:28",
+      "text": "element on this side right so zero is associated with zero one was associated"
+    },
+    {
+      "start": "0:28",
+      "end": "0:28",
+      "text": "associated with zero one was associated"
+    },
+    {
+      "start": "0:28",
+      "end": "0:29",
+      "text": "associated with zero one was associated with one I'm sorry"
+    },
+    {
+      "start": "0:29",
+      "end": "0:29",
+      "text": "with one I'm sorry"
+    },
+    {
+      "start": "0:29",
+      "end": "0:35",
+      "text": "with one I'm sorry to two was mapped to 4 3 to 6 4 to 8 and"
+    },
+    {
+      "start": "0:35",
+      "end": "0:35",
+      "text": "to two was mapped to 4 3 to 6 4 to 8 and"
+    },
+    {
+      "start": "0:35",
+      "end": "0:38",
+      "text": "to two was mapped to 4 3 to 6 4 to 8 and 5 to 10 right you see this is called a"
+    },
+    {
+      "start": "0:38",
+      "end": "0:38",
+      "text": "5 to 10 right you see this is called a"
+    },
+    {
+      "start": "0:38",
+      "end": "0:42",
+      "text": "5 to 10 right you see this is called a function second example the mapping was"
+    },
+    {
+      "start": "0:42",
+      "end": "0:42",
+      "text": "function second example the mapping was"
+    },
+    {
+      "start": "0:42",
+      "end": "0:45",
+      "text": "function second example the mapping was in general a term X going to X square"
+    },
+    {
+      "start": "0:45",
+      "end": "0:45",
+      "text": "in general a term X going to X square"
+    },
+    {
+      "start": "0:45",
+      "end": "0:46",
+      "text": "in general a term X going to X square correct"
+    },
+    {
+      "start": "0:46",
+      "end": "0:46",
+      "text": "correct"
+    },
+    {
+      "start": "0:46",
+      "end": "0:49",
+      "text": "correct so by a function we mean something that"
+    },
+    {
+      "start": "0:49",
+      "end": "0:49",
+      "text": "so by a function we mean something that"
+    },
+    {
+      "start": "0:49",
+      "end": "0:52",
+      "text": "so by a function we mean something that map's elements of the left left side to"
+    },
+    {
+      "start": "0:52",
+      "end": "0:53",
+      "text": "map's elements of the left left side to"
+    },
+    {
+      "start": "0:53",
+      "end": "0:57",
+      "text": "map's elements of the left left side to unique elements of the right side"
+    }
+  ],
+  "timestamped": true
+}

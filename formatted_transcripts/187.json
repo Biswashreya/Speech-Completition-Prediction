@@ -1,0 +1,228 @@
+{
+  "title": "Cardinality condition in Onto function - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:05",
+      "text": "Now I will tell you a small instance and you tell me what you can infer."
+    },
+    {
+      "start": "0:05",
+      "end": "0:09",
+      "text": "There is this organization where every male in the organization is married and his wife"
+    },
+    {
+      "start": "0:09",
+      "end": "0:11",
+      "text": "also works in the same organization."
+    },
+    {
+      "start": "0:11",
+      "end": "0:12",
+      "text": "Now remember something in mathematics."
+    },
+    {
+      "start": "0:12",
+      "end": "0:14",
+      "text": "Whatever we say is all that we say."
+    },
+    {
+      "start": "0:14",
+      "end": "0:16",
+      "text": "Whatever we don't say should not be assumed."
+    },
+    {
+      "start": "0:16",
+      "end": "0:21",
+      "text": "For example I said every male in the office is married by that I don't mean that every"
+    },
+    {
+      "start": "0:21",
+      "end": "0:23",
+      "text": "female in the office is married."
+    },
+    {
+      "start": "0:23",
+      "end": "0:24",
+      "text": "I am not saying that."
+    },
+    {
+      "start": "0:24",
+      "end": "0:26",
+      "text": "If you see a male you must know that that male is married."
+    },
+    {
+      "start": "0:26",
+      "end": "0:27",
+      "text": "Not only that, that person's wife is also in the same office."
+    },
+    {
+      "start": "0:27",
+      "end": "0:32",
+      "text": "Then what can we say about the number of males and number of females in the office?"
+    },
+    {
+      "start": "0:32",
+      "end": "0:33",
+      "text": "Think about it."
+    },
+    {
+      "start": "0:33",
+      "end": "0:38",
+      "text": "So the number of males if I put them in a domain and call it M and number of females"
+    },
+    {
+      "start": "0:38",
+      "end": "0:40",
+      "text": "if I put them in set and call it F my function f will be from male M to let's not call it"
+    },
+    {
+      "start": "0:40",
+      "end": "0:41",
+      "text": "F let's call it W. Man to Woman."
+    },
+    {
+      "start": "0:41",
+      "end": "0:42",
+      "text": "Alright."
+    },
+    {
+      "start": "0:42",
+      "end": "0:46",
+      "text": "So f of an element here will simply take you to his wife."
+    },
+    {
+      "start": "0:46",
+      "end": "0:47",
+      "text": "What can you say about the organization here?"
+    },
+    {
+      "start": "0:47",
+      "end": "0:52",
+      "text": "I can say that the number of males here is certainly less than or equal to number of"
+    },
+    {
+      "start": "0:52",
+      "end": "0:53",
+      "text": "women here."
+    },
+    {
+      "start": "0:53",
+      "end": "0:54",
+      "text": "Why?"
+    },
+    {
+      "start": "0:54",
+      "end": "1:00",
+      "text": "Why because according to what I said I repeat I said every man here in this organization"
+    },
+    {
+      "start": "1:00",
+      "end": "1:03",
+      "text": "is both married as well as his wife works in the same organization."
+    },
+    {
+      "start": "1:03",
+      "end": "1:04",
+      "text": "This implies that no man is single."
+    },
+    {
+      "start": "1:04",
+      "end": "1:08",
+      "text": "And no man's wife it doesn't so happen that she is not in the organization."
+    },
+    {
+      "start": "1:08",
+      "end": "1:17",
+      "text": "A man is married and his wife is also in the same organization."
+    },
+    {
+      "start": "1:17",
+      "end": "1:24",
+      "text": "Note I am not talking a thing about a woman here who may be single."
+    },
+    {
+      "start": "1:24",
+      "end": "1:28",
+      "text": "I have never said anything about the woman here."
+    },
+    {
+      "start": "1:28",
+      "end": "1:29",
+      "text": "Correct."
+    },
+    {
+      "start": "1:29",
+      "end": "1:31",
+      "text": "So there could be a single woman."
+    },
+    {
+      "start": "1:31",
+      "end": "1:35",
+      "text": "So all that you can infer is that this is one-one function because in our country in"
+    },
+    {
+      "start": "1:35",
+      "end": "1:37",
+      "text": "fact many countries a person cannot be married to two people simultaneously."
+    },
+    {
+      "start": "1:37",
+      "end": "1:38",
+      "text": "Correct."
+    },
+    {
+      "start": "1:38",
+      "end": "1:41",
+      "text": "So a person here has a unique woman as his wife and hence the function is one-one function."
+    },
+    {
+      "start": "1:41",
+      "end": "1:44",
+      "text": "When the function is one-one the co-domain may have some left overs and we can only conclude"
+    },
+    {
+      "start": "1:44",
+      "end": "1:47",
+      "text": "that the number of elements in M is less than or equal to number of elements in W. So what"
+    },
+    {
+      "start": "1:47",
+      "end": "1:50",
+      "text": "is the moral of this video clip?"
+    },
+    {
+      "start": "1:50",
+      "end": "1:55",
+      "text": "We are trying to say that whenever there is a function F from a domain to a co-domain"
+    },
+    {
+      "start": "1:55",
+      "end": "2:01",
+      "text": "which is one-one we can sure that the number of elements in the co-domain will be equal"
+    },
+    {
+      "start": "2:01",
+      "end": "2:03",
+      "text": "to or greater than the number of elements in the domain."
+    },
+    {
+      "start": "2:03",
+      "end": "2:06",
+      "text": "Now this is a very important fact."
+    },
+    {
+      "start": "2:06",
+      "end": "2:08",
+      "text": "You may want to make a note of it."
+    },
+    {
+      "start": "2:08",
+      "end": "2:09",
+      "text": "And you may want to use this in solving some questions that can come by your way."
+    }
+  ],
+  "timestamped": true
+}

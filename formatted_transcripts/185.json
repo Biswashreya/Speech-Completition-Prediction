@@ -1,0 +1,253 @@
+{
+  "title": "Examples of Onto Function",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:07",
+      "text": "We are now going to see some examples of onto functions."
+    },
+    {
+      "start": "0:07",
+      "end": "0:12",
+      "text": "Consider this function f from the set of all natural numbers to the set of all natural"
+    },
+    {
+      "start": "0:12",
+      "end": "0:17",
+      "text": "numbers defined as f of x is equal to x."
+    },
+    {
+      "start": "0:17",
+      "end": "0:24",
+      "text": "This function where x goes to x is called as the identify function."
+    },
+    {
+      "start": "0:24",
+      "end": "0:27",
+      "text": "So let me start enumerating f of 1 is 1."
+    },
+    {
+      "start": "0:27",
+      "end": "0:28",
+      "text": "f of 2 is 2."
+    },
+    {
+      "start": "0:28",
+      "end": "0:29",
+      "text": "f of 3 is 3."
+    },
+    {
+      "start": "0:29",
+      "end": "0:31",
+      "text": "f of 4 is 4 and so on."
+    },
+    {
+      "start": "0:31",
+      "end": "0:36",
+      "text": "Each number is mapped to itself."
+    },
+    {
+      "start": "0:36",
+      "end": "0:40",
+      "text": "So I have to find out if this function is onto or not."
+    },
+    {
+      "start": "0:40",
+      "end": "0:43",
+      "text": "Consider any element Y belonging to the co-domain."
+    },
+    {
+      "start": "0:43",
+      "end": "0:47",
+      "text": "Co-domain is the set of all natural numbers."
+    },
+    {
+      "start": "0:47",
+      "end": "0:49",
+      "text": "What will be its pre-image?"
+    },
+    {
+      "start": "0:49",
+      "end": "0:55",
+      "text": "We see that the pre-image is the number itself."
+    },
+    {
+      "start": "0:55",
+      "end": "0:56",
+      "text": "Y will be mapped to y itself."
+    },
+    {
+      "start": "0:56",
+      "end": "1:05",
+      "text": "And hence every element in the co-domain has the same element as its pre-image in the domain"
+    },
+    {
+      "start": "1:05",
+      "end": "1:07",
+      "text": "and hence f is onto."
+    },
+    {
+      "start": "1:07",
+      "end": "1:14",
+      "text": "Consider this function f from the set of all integers to the set of all integers defined"
+    },
+    {
+      "start": "1:14",
+      "end": "1:20",
+      "text": "as f of x is equal to mod x. the modulus function."
+    },
+    {
+      "start": "1:20",
+      "end": "1:22",
+      "text": "How is it defined?"
+    },
+    {
+      "start": "1:22",
+      "end": "1:27",
+      "text": "F of -1 will be 1 that is mod -1 is 1."
+    },
+    {
+      "start": "1:27",
+      "end": "1:30",
+      "text": "f of 1 is 1."
+    },
+    {
+      "start": "1:30",
+      "end": "1:36",
+      "text": "f of -2 is 2 because mod of -2 is 2."
+    },
+    {
+      "start": "1:36",
+      "end": "1:37",
+      "text": "f of 2 is 2."
+    },
+    {
+      "start": "1:37",
+      "end": "1:43",
+      "text": "f of -3 is 3 and so on."
+    },
+    {
+      "start": "1:43",
+      "end": "1:47",
+      "text": "You see -1 and 1 are both mapped to the same element 1."
+    },
+    {
+      "start": "1:47",
+      "end": "1:52",
+      "text": "And the same goes with -2 and 2 both of them are mapped to 2."
+    },
+    {
+      "start": "1:52",
+      "end": "1:55",
+      "text": "Let us observe what is the range here."
+    },
+    {
+      "start": "1:55",
+      "end": "2:01",
+      "text": "The range is 1, 2, 3 and so on."
+    },
+    {
+      "start": "2:01",
+      "end": "2:08",
+      "text": "So we see that range is the set of all natural numbers but what are we given as co-domain."
+    },
+    {
+      "start": "2:08",
+      "end": "2:11",
+      "text": "Integers are co-domain."
+    },
+    {
+      "start": "2:11",
+      "end": "2:16",
+      "text": "Do you see that range is not equal to co-domain?"
+    },
+    {
+      "start": "2:16",
+      "end": "2:22",
+      "text": "And hence f is not onto because we know that if f is onto co-domain has to be equal to"
+    },
+    {
+      "start": "2:22",
+      "end": "2:24",
+      "text": "range."
+    },
+    {
+      "start": "2:24",
+      "end": "2:31",
+      "text": "Consider this function f. f is defined from the set of all whole numbers to the set of"
+    },
+    {
+      "start": "2:31",
+      "end": "2:41",
+      "text": "all whole numbers defined as f of x is equal to x-1 if x is odd, and x+1 if x is even."
+    },
+    {
+      "start": "2:41",
+      "end": "2:46",
+      "text": "Do you see that f of x is taking two value here and it depends on what x is."
+    },
+    {
+      "start": "2:46",
+      "end": "2:51",
+      "text": "If x is odd it takes the value x-1 and if x is even it takes the value x+1."
+    },
+    {
+      "start": "2:51",
+      "end": "3:01",
+      "text": "So we have a domain as whole numbers so 0 is mapped to 1 because 0 is even and hence"
+    },
+    {
+      "start": "3:01",
+      "end": "3:02",
+      "text": "0+1 is 1."
+    },
+    {
+      "start": "3:02",
+      "end": "3:06",
+      "text": "f of 1 is mapped to 2, 0."
+    },
+    {
+      "start": "3:06",
+      "end": "3:08",
+      "text": "f of 3 is mapped to 3."
+    },
+    {
+      "start": "3:08",
+      "end": "3:14",
+      "text": "f of 3 is 2, f of 4 is 5 and so on."
+    },
+    {
+      "start": "3:14",
+      "end": "3:16",
+      "text": "Do you see a pattern here?"
+    },
+    {
+      "start": "3:16",
+      "end": "3:20",
+      "text": "All odd numbers are mapped to even numbers."
+    },
+    {
+      "start": "3:20",
+      "end": "3:25",
+      "text": "And all even numbers are mapped to odd numbers."
+    },
+    {
+      "start": "3:25",
+      "end": "3:31",
+      "text": "Now let us consider an element y belonging to the core domain."
+    },
+    {
+      "start": "3:31",
+      "end": "3:39",
+      "text": "So either it is x-1 or x+1, correct depending on what x is."
+    },
+    {
+      "start": "3:39",
+      "end": "3:49",
+      "text": "So the pre-image of y is always either y+1 or y-1 and hence f is onto."
+    }
+  ],
+  "timestamped": true
+}

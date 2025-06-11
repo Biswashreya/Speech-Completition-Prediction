@@ -1,0 +1,228 @@
+{
+  "title": "Why study Composition of functions",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:06",
+      "end": "0:06",
+      "text": "why would a computer scientists care"
+    },
+    {
+      "start": "0:06",
+      "end": "0:08",
+      "text": "why would a computer scientists care about a concept like function"
+    },
+    {
+      "start": "0:08",
+      "end": "0:08",
+      "text": "about a concept like function"
+    },
+    {
+      "start": "0:08",
+      "end": "0:11",
+      "text": "about a concept like function composition that is because you see"
+    },
+    {
+      "start": "0:11",
+      "end": "0:11",
+      "text": "composition that is because you see"
+    },
+    {
+      "start": "0:11",
+      "end": "0:13",
+      "text": "composition that is because you see firstly why functions function a"
+    },
+    {
+      "start": "0:13",
+      "end": "0:13",
+      "text": "firstly why functions function a"
+    },
+    {
+      "start": "0:13",
+      "end": "0:15",
+      "text": "firstly why functions function a function is basically something that"
+    },
+    {
+      "start": "0:15",
+      "end": "0:15",
+      "text": "function is basically something that"
+    },
+    {
+      "start": "0:15",
+      "end": "0:21",
+      "text": "function is basically something that takes as an input and gives you an out"
+    },
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "takes as an input and gives you an out"
+    },
+    {
+      "start": "0:21",
+      "end": "0:24",
+      "text": "takes as an input and gives you an out cut so although mathematically we define"
+    },
+    {
+      "start": "0:24",
+      "end": "0:24",
+      "text": "cut so although mathematically we define"
+    },
+    {
+      "start": "0:24",
+      "end": "0:27",
+      "text": "cut so although mathematically we define F as a function from our domain X to a"
+    },
+    {
+      "start": "0:27",
+      "end": "0:27",
+      "text": "F as a function from our domain X to a"
+    },
+    {
+      "start": "0:27",
+      "end": "0:30",
+      "text": "F as a function from our domain X to a codomain y this is like a precise way of"
+    },
+    {
+      "start": "0:30",
+      "end": "0:30",
+      "text": "codomain y this is like a precise way of"
+    },
+    {
+      "start": "0:30",
+      "end": "0:34",
+      "text": "codomain y this is like a precise way of stating it in computers we define"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "stating it in computers we define"
+    },
+    {
+      "start": "0:34",
+      "end": "0:36",
+      "text": "stating it in computers we define functions some function that takes is"
+    },
+    {
+      "start": "0:36",
+      "end": "0:36",
+      "text": "functions some function that takes is"
+    },
+    {
+      "start": "0:36",
+      "end": "0:39",
+      "text": "functions some function that takes is input something it can even take many"
+    },
+    {
+      "start": "0:39",
+      "end": "0:39",
+      "text": "input something it can even take many"
+    },
+    {
+      "start": "0:39",
+      "end": "0:42",
+      "text": "input something it can even take many inputs and it gives out an output it"
+    },
+    {
+      "start": "0:42",
+      "end": "0:42",
+      "text": "inputs and it gives out an output it"
+    },
+    {
+      "start": "0:42",
+      "end": "0:44",
+      "text": "inputs and it gives out an output it might it may even give many outputs"
+    },
+    {
+      "start": "0:44",
+      "end": "0:44",
+      "text": "might it may even give many outputs"
+    },
+    {
+      "start": "0:44",
+      "end": "0:46",
+      "text": "might it may even give many outputs spider okay if you are into programming"
+    },
+    {
+      "start": "0:46",
+      "end": "0:46",
+      "text": "spider okay if you are into programming"
+    },
+    {
+      "start": "0:46",
+      "end": "0:48",
+      "text": "spider okay if you are into programming you will follow what I'm saying if you"
+    },
+    {
+      "start": "0:48",
+      "end": "0:48",
+      "text": "you will follow what I'm saying if you"
+    },
+    {
+      "start": "0:48",
+      "end": "0:50",
+      "text": "you will follow what I'm saying if you are not into programming yet don't worry"
+    },
+    {
+      "start": "0:50",
+      "end": "0:50",
+      "text": "are not into programming yet don't worry"
+    },
+    {
+      "start": "0:50",
+      "end": "0:52",
+      "text": "are not into programming yet don't worry much you will soon realize what"
+    },
+    {
+      "start": "0:52",
+      "end": "0:52",
+      "text": "much you will soon realize what"
+    },
+    {
+      "start": "0:52",
+      "end": "0:56",
+      "text": "much you will soon realize what functions are in your curriculum okay so"
+    },
+    {
+      "start": "0:56",
+      "end": "0:56",
+      "text": "functions are in your curriculum okay so"
+    },
+    {
+      "start": "0:56",
+      "end": "0:58",
+      "text": "functions are in your curriculum okay so a function takes an input and gives an"
+    },
+    {
+      "start": "0:58",
+      "end": "0:58",
+      "text": "a function takes an input and gives an"
+    },
+    {
+      "start": "0:58",
+      "end": "0:58",
+      "text": "a function takes an input and gives an output"
+    },
+    {
+      "start": "0:58",
+      "end": "0:58",
+      "text": "output"
+    },
+    {
+      "start": "0:58",
+      "end": "1:02",
+      "text": "output now sometimes output of a function will"
+    },
+    {
+      "start": "1:02",
+      "end": "1:02",
+      "text": "now sometimes output of a function will"
+    },
+    {
+      "start": "1:02",
+      "end": "1:06",
+      "text": "now sometimes output of a function will be an input of some other function"
+    }
+  ],
+  "timestamped": true
+}

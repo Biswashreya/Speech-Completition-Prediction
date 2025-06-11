@@ -1,0 +1,298 @@
+{
+  "title": "Number of Bijections",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:04",
+      "text": "what are the total possible functions"
+    },
+    {
+      "start": "0:04",
+      "end": "0:09",
+      "text": "what are the total possible functions from a domain of cardinality m to a"
+    },
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "from a domain of cardinality m to a"
+    },
+    {
+      "start": "0:09",
+      "end": "0:13",
+      "text": "from a domain of cardinality m to a domain of cardinality and we have seen"
+    },
+    {
+      "start": "0:13",
+      "end": "0:13",
+      "text": "domain of cardinality and we have seen"
+    },
+    {
+      "start": "0:13",
+      "end": "0:13",
+      "text": "domain of cardinality and we have seen this right"
+    },
+    {
+      "start": "0:13",
+      "end": "0:13",
+      "text": "this right"
+    },
+    {
+      "start": "0:13",
+      "end": "0:17",
+      "text": "this right it was N to the M now my question is"
+    },
+    {
+      "start": "0:17",
+      "end": "0:17",
+      "text": "it was N to the M now my question is"
+    },
+    {
+      "start": "0:17",
+      "end": "0:18",
+      "text": "it was N to the M now my question is what are the total number of functions"
+    },
+    {
+      "start": "0:18",
+      "end": "0:18",
+      "text": "what are the total number of functions"
+    },
+    {
+      "start": "0:18",
+      "end": "0:22",
+      "text": "what are the total number of functions from domain with cardinality m to a cord"
+    },
+    {
+      "start": "0:22",
+      "end": "0:22",
+      "text": "from domain with cardinality m to a cord"
+    },
+    {
+      "start": "0:22",
+      "end": "0:24",
+      "text": "from domain with cardinality m to a cord amine with cardinality n that are bi"
+    },
+    {
+      "start": "0:24",
+      "end": "0:24",
+      "text": "amine with cardinality n that are bi"
+    },
+    {
+      "start": "0:24",
+      "end": "0:26",
+      "text": "amine with cardinality n that are bi junctions now the question itself"
+    },
+    {
+      "start": "0:26",
+      "end": "0:26",
+      "text": "junctions now the question itself"
+    },
+    {
+      "start": "0:26",
+      "end": "0:28",
+      "text": "junctions now the question itself doesn't make sense you see because I"
+    },
+    {
+      "start": "0:28",
+      "end": "0:28",
+      "text": "doesn't make sense you see because I"
+    },
+    {
+      "start": "0:28",
+      "end": "0:30",
+      "text": "doesn't make sense you see because I just now told you that whenever there is"
+    },
+    {
+      "start": "0:30",
+      "end": "0:30",
+      "text": "just now told you that whenever there is"
+    },
+    {
+      "start": "0:30",
+      "end": "0:34",
+      "text": "just now told you that whenever there is a bijection M becomes equal to n the"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "a bijection M becomes equal to n the"
+    },
+    {
+      "start": "0:34",
+      "end": "0:36",
+      "text": "a bijection M becomes equal to n the number of elements here will be equal to"
+    },
+    {
+      "start": "0:36",
+      "end": "0:36",
+      "text": "number of elements here will be equal to"
+    },
+    {
+      "start": "0:36",
+      "end": "0:39",
+      "text": "number of elements here will be equal to number of elements here correct so what"
+    },
+    {
+      "start": "0:39",
+      "end": "0:39",
+      "text": "number of elements here correct so what"
+    },
+    {
+      "start": "0:39",
+      "end": "0:40",
+      "text": "number of elements here correct so what is that number what are the total"
+    },
+    {
+      "start": "0:40",
+      "end": "0:40",
+      "text": "is that number what are the total"
+    },
+    {
+      "start": "0:40",
+      "end": "0:42",
+      "text": "is that number what are the total possible by directions from our domain"
+    },
+    {
+      "start": "0:42",
+      "end": "0:42",
+      "text": "possible by directions from our domain"
+    },
+    {
+      "start": "0:42",
+      "end": "0:45",
+      "text": "possible by directions from our domain to codomain if the domain contains let's"
+    },
+    {
+      "start": "0:45",
+      "end": "0:45",
+      "text": "to codomain if the domain contains let's"
+    },
+    {
+      "start": "0:45",
+      "end": "0:47",
+      "text": "to codomain if the domain contains let's say M elements it's going to be M"
+    },
+    {
+      "start": "0:47",
+      "end": "0:47",
+      "text": "say M elements it's going to be M"
+    },
+    {
+      "start": "0:47",
+      "end": "0:51",
+      "text": "say M elements it's going to be M factorial why is that we saw that the"
+    },
+    {
+      "start": "0:51",
+      "end": "0:51",
+      "text": "factorial why is that we saw that the"
+    },
+    {
+      "start": "0:51",
+      "end": "0:55",
+      "text": "factorial why is that we saw that the total possible 1 1 functions from our"
+    },
+    {
+      "start": "0:55",
+      "end": "0:55",
+      "text": "total possible 1 1 functions from our"
+    },
+    {
+      "start": "0:55",
+      "end": "0:57",
+      "text": "total possible 1 1 functions from our domain to a co domain you remember the"
+    },
+    {
+      "start": "0:57",
+      "end": "0:57",
+      "text": "domain to a co domain you remember the"
+    },
+    {
+      "start": "0:57",
+      "end": "0:59",
+      "text": "domain to a co domain you remember the formula we used permutations there okay"
+    },
+    {
+      "start": "0:59",
+      "end": "0:59",
+      "text": "formula we used permutations there okay"
+    },
+    {
+      "start": "0:59",
+      "end": "1:02",
+      "text": "formula we used permutations there okay so even without that we can say how its"
+    },
+    {
+      "start": "1:02",
+      "end": "1:02",
+      "text": "so even without that we can say how its"
+    },
+    {
+      "start": "1:02",
+      "end": "1:05",
+      "text": "so even without that we can say how its M factorial it is basically all possible"
+    },
+    {
+      "start": "1:05",
+      "end": "1:05",
+      "text": "M factorial it is basically all possible"
+    },
+    {
+      "start": "1:05",
+      "end": "1:08",
+      "text": "M factorial it is basically all possible assignments of these M elements to M"
+    },
+    {
+      "start": "1:08",
+      "end": "1:08",
+      "text": "assignments of these M elements to M"
+    },
+    {
+      "start": "1:08",
+      "end": "1:10",
+      "text": "assignments of these M elements to M elements this side think about it I am"
+    },
+    {
+      "start": "1:10",
+      "end": "1:10",
+      "text": "elements this side think about it I am"
+    },
+    {
+      "start": "1:10",
+      "end": "1:12",
+      "text": "elements this side think about it I am just giving you the answer it is"
+    },
+    {
+      "start": "1:12",
+      "end": "1:12",
+      "text": "just giving you the answer it is"
+    },
+    {
+      "start": "1:12",
+      "end": "1:13",
+      "text": "just giving you the answer it is straightforward"
+    },
+    {
+      "start": "1:13",
+      "end": "1:13",
+      "text": "straightforward"
+    },
+    {
+      "start": "1:13",
+      "end": "1:15",
+      "text": "straightforward it follows from the theory that we"
+    },
+    {
+      "start": "1:15",
+      "end": "1:15",
+      "text": "it follows from the theory that we"
+    },
+    {
+      "start": "1:15",
+      "end": "1:20",
+      "text": "it follows from the theory that we discussed for one month functions"
+    }
+  ],
+  "timestamped": true
+}

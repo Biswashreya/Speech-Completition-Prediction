@@ -1,0 +1,478 @@
+{
+  "title": "Examples of Inverse functions",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:05",
+      "end": "0:05",
+      "text": "let us now see some examples of inverse"
+    },
+    {
+      "start": "0:05",
+      "end": "0:08",
+      "text": "let us now see some examples of inverse functions consider this function f from"
+    },
+    {
+      "start": "0:08",
+      "end": "0:08",
+      "text": "functions consider this function f from"
+    },
+    {
+      "start": "0:08",
+      "end": "0:11",
+      "text": "functions consider this function f from integers to integers defined as f of X"
+    },
+    {
+      "start": "0:11",
+      "end": "0:11",
+      "text": "integers to integers defined as f of X"
+    },
+    {
+      "start": "0:11",
+      "end": "0:17",
+      "text": "integers to integers defined as f of X is equal to 3x plus 2 now f of X I'll"
+    },
+    {
+      "start": "0:17",
+      "end": "0:17",
+      "text": "is equal to 3x plus 2 now f of X I'll"
+    },
+    {
+      "start": "0:17",
+      "end": "0:18",
+      "text": "is equal to 3x plus 2 now f of X I'll take it to be an element in the"
+    },
+    {
+      "start": "0:18",
+      "end": "0:18",
+      "text": "take it to be an element in the"
+    },
+    {
+      "start": "0:18",
+      "end": "0:22",
+      "text": "take it to be an element in the co-domain rather the range I'll write it"
+    },
+    {
+      "start": "0:22",
+      "end": "0:22",
+      "text": "co-domain rather the range I'll write it"
+    },
+    {
+      "start": "0:22",
+      "end": "0:26",
+      "text": "co-domain rather the range I'll write it as Y so Y is what it is equal to 3x plus"
+    },
+    {
+      "start": "0:26",
+      "end": "0:26",
+      "text": "as Y so Y is what it is equal to 3x plus"
+    },
+    {
+      "start": "0:26",
+      "end": "0:31",
+      "text": "as Y so Y is what it is equal to 3x plus 2 let me compute X from this equation y"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "2 let me compute X from this equation y"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "2 let me compute X from this equation y minus 2 is equal to 3x and hence X is y"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "minus 2 is equal to 3x and hence X is y"
+    },
+    {
+      "start": "0:34",
+      "end": "0:40",
+      "text": "minus 2 is equal to 3x and hence X is y minus 2 by 3 so what is X X is the"
+    },
+    {
+      "start": "0:40",
+      "end": "0:40",
+      "text": "minus 2 by 3 so what is X X is the"
+    },
+    {
+      "start": "0:40",
+      "end": "0:44",
+      "text": "minus 2 by 3 so what is X X is the inverse of Y rather X was mapped to Y"
+    },
+    {
+      "start": "0:44",
+      "end": "0:44",
+      "text": "inverse of Y rather X was mapped to Y"
+    },
+    {
+      "start": "0:44",
+      "end": "0:49",
+      "text": "inverse of Y rather X was mapped to Y and hence F inverse Y happens to be Y"
+    },
+    {
+      "start": "0:49",
+      "end": "0:49",
+      "text": "and hence F inverse Y happens to be Y"
+    },
+    {
+      "start": "0:49",
+      "end": "0:54",
+      "text": "and hence F inverse Y happens to be Y minus 2 by 3 pause and think how the"
+    },
+    {
+      "start": "0:54",
+      "end": "0:54",
+      "text": "minus 2 by 3 pause and think how the"
+    },
+    {
+      "start": "0:54",
+      "end": "0:57",
+      "text": "minus 2 by 3 pause and think how the steps have proceeded and you'll be able"
+    },
+    {
+      "start": "0:57",
+      "end": "0:57",
+      "text": "steps have proceeded and you'll be able"
+    },
+    {
+      "start": "0:57",
+      "end": "1:00",
+      "text": "steps have proceeded and you'll be able to understand it better so the inverse"
+    },
+    {
+      "start": "1:00",
+      "end": "1:00",
+      "text": "to understand it better so the inverse"
+    },
+    {
+      "start": "1:00",
+      "end": "1:03",
+      "text": "to understand it better so the inverse of every element Y belonging to the"
+    },
+    {
+      "start": "1:03",
+      "end": "1:03",
+      "text": "of every element Y belonging to the"
+    },
+    {
+      "start": "1:03",
+      "end": "1:11",
+      "text": "of every element Y belonging to the range of this codomain is y minus 2 by 3"
+    },
+    {
+      "start": "1:11",
+      "end": "1:11",
+      "text": "range of this codomain is y minus 2 by 3"
+    },
+    {
+      "start": "1:11",
+      "end": "1:14",
+      "text": "range of this codomain is y minus 2 by 3 consider this function f from the set of"
+    },
+    {
+      "start": "1:14",
+      "end": "1:14",
+      "text": "consider this function f from the set of"
+    },
+    {
+      "start": "1:14",
+      "end": "1:16",
+      "text": "consider this function f from the set of all real numbers to integers define as f"
+    },
+    {
+      "start": "1:16",
+      "end": "1:16",
+      "text": "all real numbers to integers define as f"
+    },
+    {
+      "start": "1:16",
+      "end": "1:18",
+      "text": "all real numbers to integers define as f of X is equal to greatest integer"
+    },
+    {
+      "start": "1:18",
+      "end": "1:18",
+      "text": "of X is equal to greatest integer"
+    },
+    {
+      "start": "1:18",
+      "end": "1:22",
+      "text": "of X is equal to greatest integer function that is the square bracket of X"
+    },
+    {
+      "start": "1:22",
+      "end": "1:22",
+      "text": "function that is the square bracket of X"
+    },
+    {
+      "start": "1:22",
+      "end": "1:28",
+      "text": "function that is the square bracket of X we see that f of 0.3 2 is 0 F of 0.45 is"
+    },
+    {
+      "start": "1:28",
+      "end": "1:28",
+      "text": "we see that f of 0.3 2 is 0 F of 0.45 is"
+    },
+    {
+      "start": "1:28",
+      "end": "1:32",
+      "text": "we see that f of 0.3 2 is 0 F of 0.45 is 0 F of 1 point 7 9 8 is 1 F of 1 point 4"
+    },
+    {
+      "start": "1:32",
+      "end": "1:32",
+      "text": "0 F of 1 point 7 9 8 is 1 F of 1 point 4"
+    },
+    {
+      "start": "1:32",
+      "end": "1:37",
+      "text": "0 F of 1 point 7 9 8 is 1 F of 1 point 4 5 is 1 F of 1 point 3 2 is 1 and so on"
+    },
+    {
+      "start": "1:37",
+      "end": "1:37",
+      "text": "5 is 1 F of 1 point 3 2 is 1 and so on"
+    },
+    {
+      "start": "1:37",
+      "end": "1:40",
+      "text": "5 is 1 F of 1 point 3 2 is 1 and so on so do you see that several elements will"
+    },
+    {
+      "start": "1:40",
+      "end": "1:40",
+      "text": "so do you see that several elements will"
+    },
+    {
+      "start": "1:40",
+      "end": "1:45",
+      "text": "so do you see that several elements will be mapped to 1 now how do we find the"
+    },
+    {
+      "start": "1:45",
+      "end": "1:45",
+      "text": "be mapped to 1 now how do we find the"
+    },
+    {
+      "start": "1:45",
+      "end": "1:49",
+      "text": "be mapped to 1 now how do we find the inverse of one let me tell you the"
+    },
+    {
+      "start": "1:49",
+      "end": "1:49",
+      "text": "inverse of one let me tell you the"
+    },
+    {
+      "start": "1:49",
+      "end": "1:51",
+      "text": "inverse of one let me tell you the inverse will be unique one element"
+    },
+    {
+      "start": "1:51",
+      "end": "1:51",
+      "text": "inverse will be unique one element"
+    },
+    {
+      "start": "1:51",
+      "end": "1:55",
+      "text": "inverse will be unique one element cannot be having two or three inverses"
+    },
+    {
+      "start": "1:55",
+      "end": "1:55",
+      "text": "cannot be having two or three inverses"
+    },
+    {
+      "start": "1:55",
+      "end": "1:59",
+      "text": "cannot be having two or three inverses right you must know that by now by the"
+    },
+    {
+      "start": "1:59",
+      "end": "1:59",
+      "text": "right you must know that by now by the"
+    },
+    {
+      "start": "1:59",
+      "end": "2:02",
+      "text": "right you must know that by now by the definition of function so will it be"
+    },
+    {
+      "start": "2:02",
+      "end": "2:02",
+      "text": "definition of function so will it be"
+    },
+    {
+      "start": "2:02",
+      "end": "2:04",
+      "text": "definition of function so will it be possible for us to find an inverse here"
+    },
+    {
+      "start": "2:04",
+      "end": "2:04",
+      "text": "possible for us to find an inverse here"
+    },
+    {
+      "start": "2:04",
+      "end": "2:08",
+      "text": "possible for us to find an inverse here definitely not but let us reason this"
+    },
+    {
+      "start": "2:08",
+      "end": "2:08",
+      "text": "definitely not but let us reason this"
+    },
+    {
+      "start": "2:08",
+      "end": "2:12",
+      "text": "definitely not but let us reason this out if F is from R to Z F inverse will"
+    },
+    {
+      "start": "2:12",
+      "end": "2:12",
+      "text": "out if F is from R to Z F inverse will"
+    },
+    {
+      "start": "2:12",
+      "end": "2:14",
+      "text": "out if F is from R to Z F inverse will be from set to R"
+    },
+    {
+      "start": "2:14",
+      "end": "2:14",
+      "text": "be from set to R"
+    },
+    {
+      "start": "2:14",
+      "end": "2:17",
+      "text": "be from set to R what does f inverse of 1 it will be"
+    },
+    {
+      "start": "2:17",
+      "end": "2:17",
+      "text": "what does f inverse of 1 it will be"
+    },
+    {
+      "start": "2:17",
+      "end": "2:19",
+      "text": "what does f inverse of 1 it will be associated to several numbers in the"
+    },
+    {
+      "start": "2:19",
+      "end": "2:19",
+      "text": "associated to several numbers in the"
+    },
+    {
+      "start": "2:19",
+      "end": "2:23",
+      "text": "associated to several numbers in the real line and hence it will not be a"
+    },
+    {
+      "start": "2:23",
+      "end": "2:23",
+      "text": "real line and hence it will not be a"
+    },
+    {
+      "start": "2:23",
+      "end": "2:26",
+      "text": "real line and hence it will not be a function and therefore we cannot find"
+    },
+    {
+      "start": "2:26",
+      "end": "2:26",
+      "text": "function and therefore we cannot find"
+    },
+    {
+      "start": "2:26",
+      "end": "2:30",
+      "text": "function and therefore we cannot find the inverse of this function it is not"
+    },
+    {
+      "start": "2:30",
+      "end": "2:30",
+      "text": "the inverse of this function it is not"
+    },
+    {
+      "start": "2:30",
+      "end": "2:35",
+      "text": "the inverse of this function it is not invertible the last question if f is a"
+    },
+    {
+      "start": "2:35",
+      "end": "2:35",
+      "text": "invertible the last question if f is a"
+    },
+    {
+      "start": "2:35",
+      "end": "2:38",
+      "text": "invertible the last question if f is a function from R to R defined as f of X"
+    },
+    {
+      "start": "2:38",
+      "end": "2:38",
+      "text": "function from R to R defined as f of X"
+    },
+    {
+      "start": "2:38",
+      "end": "2:40",
+      "text": "function from R to R defined as f of X is equal to X by 2 so I am taking the"
+    },
+    {
+      "start": "2:40",
+      "end": "2:40",
+      "text": "is equal to X by 2 so I am taking the"
+    },
+    {
+      "start": "2:40",
+      "end": "2:43",
+      "text": "is equal to X by 2 so I am taking the half of that element each time what is"
+    },
+    {
+      "start": "2:43",
+      "end": "2:43",
+      "text": "half of that element each time what is"
+    },
+    {
+      "start": "2:43",
+      "end": "2:48",
+      "text": "half of that element each time what is the inverse here f of X is y so what"
+    },
+    {
+      "start": "2:48",
+      "end": "2:48",
+      "text": "the inverse here f of X is y so what"
+    },
+    {
+      "start": "2:48",
+      "end": "2:50",
+      "text": "the inverse here f of X is y so what does y equal to X by 2 and therefore"
+    },
+    {
+      "start": "2:50",
+      "end": "2:50",
+      "text": "does y equal to X by 2 and therefore"
+    },
+    {
+      "start": "2:50",
+      "end": "2:55",
+      "text": "does y equal to X by 2 and therefore what is X very simple it is 2y right"
+    },
+    {
+      "start": "2:55",
+      "end": "2:55",
+      "text": "what is X very simple it is 2y right"
+    },
+    {
+      "start": "2:55",
+      "end": "3:01",
+      "text": "what is X very simple it is 2y right so f inverse Y happens to be 2y"
+    }
+  ],
+  "timestamped": true
+}
