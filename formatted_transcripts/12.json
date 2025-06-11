@@ -1,0 +1,123 @@
+{
+  "title": "Astronomical Numbers",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:13",
+      "text": "Although the notion of factorial sounds so  simple, there is something more to it which"
+    },
+    {
+      "start": "0:13",
+      "end": "0:20",
+      "text": "is not as simple as it appears. For example,  you see 1 factorial is simply 1. 2 factorial"
+    },
+    {
+      "start": "0:20",
+      "end": "0:33",
+      "text": "is 2. 3 factorial is 6. 4 factorial is  24. 5 factorial 120. 6 factorial is 720,"
+    },
+    {
+      "start": "0:33",
+      "end": "0:39",
+      "text": "and so on. What should surprise you is  10 factorial is actually a big number;"
+    },
+    {
+      "start": "0:39",
+      "end": "0:53",
+      "text": "3628800 roughly three and a half million.  Assume what is 10 factorial stands for? It"
+    },
+    {
+      "start": "0:53",
+      "end": "1:01",
+      "text": "stands for 10 people, a1, a2, up to a10 taking  all possible pictures and let's say they take"
+    },
+    {
+      "start": "1:01",
+      "end": "1:08",
+      "text": "one second to move around so that they can take  a picture with different configuration. Right."
+    },
+    {
+      "start": "1:08",
+      "end": "1:13",
+      "text": "If you look at all possibilities if these 10  friends decide to take all possible pictures by"
+    },
+    {
+      "start": "1:13",
+      "end": "1:25",
+      "text": "quickly shuffling within a second time they will  take 3628800 seconds which roughly is 42 days,"
+    },
+    {
+      "start": "1:25",
+      "end": "1:30",
+      "text": "roughly a month and a half. That's  quite some time as you can see."
+    },
+    {
+      "start": "1:30",
+      "end": "1:36",
+      "text": "So if there are 10 friends they probably should  not try taking all possible pictures. It probably"
+    },
+    {
+      "start": "1:36",
+      "end": "1:44",
+      "text": "works for one two and three may be even four but  not beyond that. Now what is more surprising is"
+    },
+    {
+      "start": "1:44",
+      "end": "1:56",
+      "text": "15 factorial in terms of seconds is approximately  40,000 years and slightly down this ladder which"
+    },
+    {
+      "start": "1:56",
+      "end": "2:08",
+      "text": "is 20 factorial seconds is close to the age of  the universe which happens to be 2 to the 60"
+    },
+    {
+      "start": "2:08",
+      "end": "2:17",
+      "text": "seconds. Now you see this factorial up to 20  itself is a very-very huge number; such huge"
+    },
+    {
+      "start": "2:17",
+      "end": "2:24",
+      "text": "numbers are called the astronomical numbers. In  computer science we encounter n factorial a whole"
+    },
+    {
+      "start": "2:24",
+      "end": "2:32",
+      "text": "lot. In fact some computation involves factorial  number of steps and they are generally considered"
+    },
+    {
+      "start": "2:32",
+      "end": "2:42",
+      "text": "to be very hard or just not feasible or we say we  should not think of computer programs that take"
+    },
+    {
+      "start": "2:42",
+      "end": "2:47",
+      "text": "factorial number of steps simply because we can  never achieve it for even inputs of smaller size."
+    },
+    {
+      "start": "2:47",
+      "end": "2:53",
+      "text": "More details of it in the forthcoming chapters  but you need to get the wisdom of the fact that"
+    },
+    {
+      "start": "2:53",
+      "end": "2:59",
+      "text": "factorial of a number when the number is  very small appears to be very small but"
+    },
+    {
+      "start": "2:59",
+      "end": "3:05",
+      "text": "for a sufficiently big number let's say even  a for a two-digit number factorial of this"
+    },
+    {
+      "start": "3:05",
+      "end": "3:11",
+      "text": "two-digit number happens to be too-too-too  huge that they're astronomical in size."
+    }
+  ],
+  "timestamped": true
+}

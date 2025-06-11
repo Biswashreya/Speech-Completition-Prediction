@@ -1,0 +1,63 @@
+{
+  "title": "Counting in Computer Science",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:09",
+      "text": "We just saw three interesting examples; paper  folding, Rubik's cube and the friends taking"
+    },
+    {
+      "start": "0:09",
+      "end": "0:17",
+      "text": "photos example. If you are wondering what has  this to do with computing, here goes the answer."
+    },
+    {
+      "start": "0:17",
+      "end": "0:27",
+      "text": "It is indeed important for us to understand  when will my piece of program stop. It might go"
+    },
+    {
+      "start": "0:27",
+      "end": "0:34",
+      "text": "on forever what if you are trying to enumerate  all possible permutations of one, two, three,"
+    },
+    {
+      "start": "0:34",
+      "end": "0:42",
+      "text": "up to twenty, this is same as twenty people  taking all possible pictures. If you were to"
+    },
+    {
+      "start": "0:42",
+      "end": "0:48",
+      "text": "enumerate all these things on your computer  you will not be able to do it for a simple"
+    },
+    {
+      "start": "0:48",
+      "end": "0:56",
+      "text": "reason that it's a huge number of possibilities.  So all we are trying to say is it is very, very,"
+    },
+    {
+      "start": "0:56",
+      "end": "1:04",
+      "text": "very important for us to have an idea as to how  many steps will your computer take in order to"
+    },
+    {
+      "start": "1:04",
+      "end": "1:12",
+      "text": "execute a task. For that we need to understand  counting at a very different level. And this"
+    },
+    {
+      "start": "1:12",
+      "end": "1:20",
+      "text": "chapter is all about understanding how to  count in a situation where it is not just"
+    },
+    {
+      "start": "1:20",
+      "end": "1:25",
+      "text": "about one, two, three, four, it's about  enumerating all the objects in a system."
+    }
+  ],
+  "timestamped": true
+}

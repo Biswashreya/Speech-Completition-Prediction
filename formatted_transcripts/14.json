@@ -1,0 +1,368 @@
+{
+  "title": "Permutations - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:11",
+      "text": "We saw a video where five people let's say A, B, C, D, and E these five girls want to"
+    },
+    {
+      "start": "0:11",
+      "end": "0:18",
+      "text": "come forward and then take a picture but they have a small constraint that the picture should"
+    },
+    {
+      "start": "0:18",
+      "end": "0:25",
+      "text": "be taken with three friends only which means two persons, two people should step back."
+    },
+    {
+      "start": "0:25",
+      "end": "0:26",
+      "text": "Right."
+    },
+    {
+      "start": "0:26",
+      "end": "0:32",
+      "text": "In how many ways can these five girls take a picture ensuring that the picture comprises"
+    },
+    {
+      "start": "0:32",
+      "end": "0:34",
+      "text": "of precisely three people?"
+    },
+    {
+      "start": "0:34",
+      "end": "0:42",
+      "text": "Now A, B, C let's say comes forward and as we have seen there are three factorial ways"
+    },
+    {
+      "start": "0:42",
+      "end": "0:44",
+      "text": "in which they can take a picture."
+    },
+    {
+      "start": "0:44",
+      "end": "0:45",
+      "text": "Right."
+    },
+    {
+      "start": "0:45",
+      "end": "0:55",
+      "text": "And then A, B, D comes forward and C, E steps back."
+    },
+    {
+      "start": "0:55",
+      "end": "0:57",
+      "text": "And you have three factorial ways."
+    },
+    {
+      "start": "0:57",
+      "end": "1:03",
+      "text": "You are probably worried if there are anything overlapping between this and this obviously"
+    },
+    {
+      "start": "1:03",
+      "end": "1:04",
+      "text": "not."
+    },
+    {
+      "start": "1:04",
+      "end": "1:07",
+      "text": "In a picture here C is included."
+    },
+    {
+      "start": "1:07",
+      "end": "1:12",
+      "text": "In a picture here, D is included and C is not there."
+    },
+    {
+      "start": "1:12",
+      "end": "1:15",
+      "text": "Although A and B are definitely there here and here."
+    },
+    {
+      "start": "1:15",
+      "end": "1:16",
+      "text": "Right."
+    },
+    {
+      "start": "1:16",
+      "end": "1:19",
+      "text": "These are obviously different pictures."
+    },
+    {
+      "start": "1:19",
+      "end": "1:21",
+      "text": "So you have six here and six here."
+    },
+    {
+      "start": "1:21",
+      "end": "1:23",
+      "text": "Now let's try enumerating more."
+    },
+    {
+      "start": "1:23",
+      "end": "1:32",
+      "text": "ABC, ABD and there are no more options with AB, well there is another one which is ABE,"
+    },
+    {
+      "start": "1:32",
+      "end": "1:40",
+      "text": "again three factorial ways in which you can make these people take all possible pictures."
+    },
+    {
+      "start": "1:40",
+      "end": "1:41",
+      "text": "And you are done."
+    },
+    {
+      "start": "1:41",
+      "end": "1:48",
+      "text": "You cannot have AB standing in the pictures anymore because you have exhausted all possibilities"
+    },
+    {
+      "start": "1:48",
+      "end": "1:51",
+      "text": "with A, B included."
+    },
+    {
+      "start": "1:51",
+      "end": "1:52",
+      "text": "Now next."
+    },
+    {
+      "start": "1:52",
+      "end": "1:55",
+      "text": "What is the immediate next possibility?"
+    },
+    {
+      "start": "1:55",
+      "end": "1:58",
+      "text": "Let me think."
+    },
+    {
+      "start": "1:58",
+      "end": "2:01",
+      "text": "So maybe BC."
+    },
+    {
+      "start": "2:01",
+      "end": "2:06",
+      "text": "BC and A is already included so I will start with BCD."
+    },
+    {
+      "start": "2:06",
+      "end": "2:09",
+      "text": "Three factorial ways."
+    },
+    {
+      "start": "2:09",
+      "end": "2:12",
+      "text": "BCE, three factorial ways."
+    },
+    {
+      "start": "2:12",
+      "end": "2:18",
+      "text": "With AB we had three possibilities and each possibility had three factorial ways."
+    },
+    {
+      "start": "2:18",
+      "end": "2:27",
+      "text": "With BC we have only two because we are excluding the possibility with BC including A because"
+    },
+    {
+      "start": "2:27",
+      "end": "2:29",
+      "text": "it is exhausted already."
+    },
+    {
+      "start": "2:29",
+      "end": "2:32",
+      "text": "Now AB is done, BC is done."
+    },
+    {
+      "start": "2:32",
+      "end": "2:36",
+      "text": "BC along with D, BC along with E exhaust all possibilities."
+    },
+    {
+      "start": "2:36",
+      "end": "2:48",
+      "text": "Now let me move onto let's say AD, A and D along with B. Now that's exhausted here as"
+    },
+    {
+      "start": "2:48",
+      "end": "2:49",
+      "text": "you can see."
+    },
+    {
+      "start": "2:49",
+      "end": "2:52",
+      "text": "So this possibility should not be considered."
+    },
+    {
+      "start": "2:52",
+      "end": "2:57",
+      "text": "AD along with let's say C. Is that over?"
+    },
+    {
+      "start": "2:57",
+      "end": "2:58",
+      "text": "No it's not over."
+    },
+    {
+      "start": "2:58",
+      "end": "3:01",
+      "text": "So three factorial permutations."
+    },
+    {
+      "start": "3:01",
+      "end": "3:04",
+      "text": "AD along with B is over."
+    },
+    {
+      "start": "3:04",
+      "end": "3:06",
+      "text": "AD along with C just got over."
+    },
+    {
+      "start": "3:06",
+      "end": "3:13",
+      "text": "AD along with E three factorial permutations."
+    },
+    {
+      "start": "3:13",
+      "end": "3:17",
+      "text": "Right and that ends all possibilities with AD."
+    },
+    {
+      "start": "3:17",
+      "end": "3:19",
+      "text": "How about AE?"
+    },
+    {
+      "start": "3:19",
+      "end": "3:22",
+      "text": "AE with D is over."
+    },
+    {
+      "start": "3:22",
+      "end": "3:25",
+      "text": "AE with B is over."
+    },
+    {
+      "start": "3:25",
+      "end": "3:30",
+      "text": "AE with C is not over as you can see."
+    },
+    {
+      "start": "3:30",
+      "end": "3:37",
+      "text": "So AE with C and AE with – that's it."
+    },
+    {
+      "start": "3:37",
+      "end": "3:39",
+      "text": "AE with D is over."
+    },
+    {
+      "start": "3:39",
+      "end": "3:41",
+      "text": "AE with C just got over."
+    },
+    {
+      "start": "3:41",
+      "end": "3:45",
+      "text": "AE with B is over."
+    },
+    {
+      "start": "3:45",
+      "end": "3:47",
+      "text": "This is three factorial ways."
+    },
+    {
+      "start": "3:47",
+      "end": "3:48",
+      "text": "Done."
+    },
+    {
+      "start": "3:48",
+      "end": "3:49",
+      "text": "Now next."
+    },
+    {
+      "start": "3:49",
+      "end": "3:54",
+      "text": "Let me think of different ways of having this."
+    },
+    {
+      "start": "3:54",
+      "end": "4:00",
+      "text": "One nice way to exhaust everything is to go in ascending order."
+    },
+    {
+      "start": "4:00",
+      "end": "4:01",
+      "text": "Right?"
+    },
+    {
+      "start": "4:01",
+      "end": "4:02",
+      "text": "Okay."
+    },
+    {
+      "start": "4:02",
+      "end": "4:13",
+      "text": "So let me start with C. CDE, three factorial ways."
+    },
+    {
+      "start": "4:13",
+      "end": "4:14",
+      "text": "Correct?"
+    },
+    {
+      "start": "4:14",
+      "end": "4:22",
+      "text": "The last possibility that we are missing here is DB and E again three factorial ways."
+    },
+    {
+      "start": "4:22",
+      "end": "4:34",
+      "text": "As you can see ABC, ABD, ABE, BCD, BCE, ADC, ADE, AEC, CDE, and DEB are all the possible"
+    },
+    {
+      "start": "4:34",
+      "end": "4:36",
+      "text": "ways in which three people can step forward."
+    },
+    {
+      "start": "4:36",
+      "end": "4:45",
+      "text": "They are precisely ten in number and each of them can take pictures in six ways so ten"
+    },
+    {
+      "start": "4:45",
+      "end": "4:50",
+      "text": "of them each of them with six ways is going to be 60 ways."
+    },
+    {
+      "start": "4:50",
+      "end": "4:54",
+      "text": "What did we just show?"
+    },
+    {
+      "start": "4:54",
+      "end": "5:03",
+      "text": "We showed that number of ways in which five people can decide to take pictures with three"
+    },
+    {
+      "start": "5:03",
+      "end": "5:10",
+      "text": "in each frame all possible ways is going to be precisely 60 ways."
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,543 @@
+{
+  "title": "Problems on Binomial theorem",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:08",
+      "text": "So that was a lot of learning on binomial  theorem, multinomial theorem and all the"
+    },
+    {
+      "start": "0:08",
+      "end": "0:13",
+      "text": "properties of binomial theorem. Let us now  solve some problems on binomial theorem."
+    },
+    {
+      "start": "0:13",
+      "end": "0:22",
+      "text": "The first one. Expand A plus B whole to the 6.  This is quite a direct problem. You just have"
+    },
+    {
+      "start": "0:22",
+      "end": "0:29",
+      "text": "to apply the formula here. So let me do it now. A  plus B whole to the 6 after applying the formula"
+    },
+    {
+      "start": "0:29",
+      "end": "0:42",
+      "text": "will give me 6 choose 0, A to the 6, B to the 0,  plus 6 choose 1 A to the 5 into B plus 6 choose"
+    },
+    {
+      "start": "0:42",
+      "end": "0:53",
+      "text": "2 A to the 4 B square plus 6 choose 3 A cube B  cube plus 6 choose 4 A square B to the 4 plus"
+    },
+    {
+      "start": "0:53",
+      "end": "1:03",
+      "text": "6 choose 5 A into B to the 5 plus 6 choose 6 A  to the 0 B to the 6 and after simplifying all"
+    },
+    {
+      "start": "1:03",
+      "end": "1:11",
+      "text": "the combinations that is 6 choose 1, 6 choose  2 etcetera, and simplifying we get A to the 6,"
+    },
+    {
+      "start": "1:11",
+      "end": "1:20",
+      "text": "6 choose 0 is 1 and therefore we get A to the 6  here plus 6 choose 1 is 6 so it becomes 6 into A"
+    },
+    {
+      "start": "1:20",
+      "end": "1:31",
+      "text": "to the 5 B plus 6 choose 2 gives me 15 into A  to the 4 B square plus 6 choose 3 is 20 A cube"
+    },
+    {
+      "start": "1:31",
+      "end": "1:42",
+      "text": "B cube plus 6 choose 4 is 15 and hence I'll  write that as 15 A square B 4 plus 6 choose"
+    },
+    {
+      "start": "1:42",
+      "end": "1:51",
+      "text": "5 is same as 6 choose 1 therefore it is 6A into B  to the 5 plus 6 choose 6 is 1. So as you can see"
+    },
+    {
+      "start": "1:51",
+      "end": "1:58",
+      "text": "here the coefficients go on increasing and at the  point they become the maximum and again decrease."
+    },
+    {
+      "start": "1:58",
+      "end": "2:06",
+      "text": "So this was with A plus B whole to the 6. Now let us go on to the next question. Expand"
+    },
+    {
+      "start": "2:06",
+      "end": "2:13",
+      "text": "1.04 whole to the 4. You might be thinking why  am I even asking this question because it's very"
+    },
+    {
+      "start": "2:13",
+      "end": "2:21",
+      "text": "simple to calculate this on a calculator but let  us see the beauty of binomial theorem and use it"
+    },
+    {
+      "start": "2:21",
+      "end": "2:32",
+      "text": "to expand 1.04 whole to the four. So 1.04 whole  to the four I can write it as 1 plus 0.04 whole"
+    },
+    {
+      "start": "2:32",
+      "end": "2:38",
+      "text": "to the four. Now it becomes very simple. You  can directly apply the formula here. Please"
+    },
+    {
+      "start": "2:38",
+      "end": "2:47",
+      "text": "do remember this is in the form 1 plus X whole to  the n so as I had told this becomes 4 choose 1 1"
+    },
+    {
+      "start": "2:47",
+      "end": "3:01",
+      "text": "to the 4 plus 4 choose 0 1 to the 4 plus 4 choose  1 0.04 plus 4 choose 2 into 0.04 whole square plus"
+    },
+    {
+      "start": "3:01",
+      "end": "3:10",
+      "text": "4 choose 3 into 0.04 whole cube plus 4 choose  4 into 0.04 whole to the four. It's all 1 here"
+    },
+    {
+      "start": "3:10",
+      "end": "3:17",
+      "text": "and therefore I am skipping it. I'm not telling it  because in every term we have the powers of 1 this"
+    },
+    {
+      "start": "3:17",
+      "end": "3:30",
+      "text": "gives me 1 plus 4 into 0.04 plus 4 choose 2 gives  me 6 so 6 into 0.0016 plus 4 choose 3 is same as"
+    },
+    {
+      "start": "3:30",
+      "end": "3:44",
+      "text": "4 choose 1 which is 4 into 0.04 cube is 0.000064  plus 4 choose 4 is 1 into 0.04 whole to the four"
+    },
+    {
+      "start": "3:44",
+      "end": "4:00",
+      "text": "gives me this number. Now after multiplication and  simplification I will get this as 0.16985856. So"
+    },
+    {
+      "start": "4:00",
+      "end": "4:07",
+      "text": "let me round off this to two decimal places  and therefore I will get 1.04 whole to the"
+    },
+    {
+      "start": "4:07",
+      "end": "4:15",
+      "text": "four as 1.17. So you must be thinking it can be  easily done on the calculator but did you see"
+    },
+    {
+      "start": "4:15",
+      "end": "4:21",
+      "text": "the beautiful application of binomial theorem  here. It can be used for such approximations."
+    },
+    {
+      "start": "4:21",
+      "end": "4:32",
+      "text": "So the next question. Find the fourth term  in the expansion of x cube by 2 minus 2 by x"
+    },
+    {
+      "start": "4:32",
+      "end": "4:41",
+      "text": "square whole to the nine. So the term seems to be  complicated but the problem is very simple. So we"
+    },
+    {
+      "start": "4:41",
+      "end": "4:47",
+      "text": "need to find the fourth term in this expansion. So  we have been asked to find a specific term and not"
+    },
+    {
+      "start": "4:47",
+      "end": "4:55",
+      "text": "all the terms. So as you remember the rth term  was given by n choose r minus 1 A power n minus"
+    },
+    {
+      "start": "4:55",
+      "end": "5:04",
+      "text": "r plus 1 B power r minus 1. So what is r here?  r is 4 and let me write the fourth term as T4,"
+    },
+    {
+      "start": "5:04",
+      "end": "5:15",
+      "text": "I just denote it like that. So T4 is equal to, so  n here is 9 as you can see so 9 choose r minus 1"
+    },
+    {
+      "start": "5:15",
+      "end": "5:26",
+      "text": "which gives me 9 choose 3 into A power what is  n minus r plus 1 n is 9 and r is 4 so we get A"
+    },
+    {
+      "start": "5:26",
+      "end": "5:37",
+      "text": "power 6 B to the r minus 1 is B cube. Now so what  does A and B here? A is x cube by 2 and B is 2"
+    },
+    {
+      "start": "5:37",
+      "end": "5:45",
+      "text": "by x square. Yes. So let me substitute them and  what do I get as the answer, 9 choose 3 gives me"
+    },
+    {
+      "start": "5:45",
+      "end": "5:56",
+      "text": "9 factorial by 3 factorial into 6 factorial into  x cube by 2 whole to the 6 into, please note B is"
+    },
+    {
+      "start": "5:56",
+      "end": "6:07",
+      "text": "-2 by x square into -2 by x square whole cube. So  after simplifying 9 choose 3 I'll get it as 84,"
+    },
+    {
+      "start": "6:07",
+      "end": "6:18",
+      "text": "84 into x to the 18 by 64 into minus 8 by x to  the 6. I have just multiplied the powers here."
+    },
+    {
+      "start": "6:18",
+      "end": "6:26",
+      "text": "So this gives me after simplification minus  21 by 2 x cube. You can do the calculation"
+    },
+    {
+      "start": "6:26",
+      "end": "6:36",
+      "text": "yourself. So the answer is the fourth term in the  expansion of this gives me minus 21 by 2 x cube."
+    },
+    {
+      "start": "6:36",
+      "end": "6:42",
+      "text": "I hope it was clear. If it is not please pause  the video here and there and watch it again."
+    },
+    {
+      "start": "6:42",
+      "end": "6:51",
+      "text": "Now the next question. Determine if the  expansion of x square minus 2 by x whole"
+    },
+    {
+      "start": "6:51",
+      "end": "6:58",
+      "text": "to the 18 will contain a term containing x to  the 10. The question is not difficult. Let me"
+    },
+    {
+      "start": "6:58",
+      "end": "7:06",
+      "text": "just explain. So the expansion of x square minus  2 by x whole to the 18. We have to find out if in"
+    },
+    {
+      "start": "7:06",
+      "end": "7:13",
+      "text": "the expansion of this there is a term containing  x to the 10. So it is very similar to the previous"
+    },
+    {
+      "start": "7:13",
+      "end": "7:22",
+      "text": "problem. So what is Tr? Tr as we know this is the  formula. Now let me apply the formula for this."
+    },
+    {
+      "start": "7:22",
+      "end": "7:30",
+      "text": "So how can I get -- how will I find out if there  is a term containing X to the 10. So what I mean"
+    },
+    {
+      "start": "7:30",
+      "end": "7:40",
+      "text": "here is Tr must have X to the 10 somewhere,  right. So how will I get X to the 10? Okay."
+    },
+    {
+      "start": "7:40",
+      "end": "7:48",
+      "text": "Let me apply the formula first. n is what? n is  18, r we don't know so let us keep it as it is,"
+    },
+    {
+      "start": "7:48",
+      "end": "8:01",
+      "text": "18 choose r minus 1 into A will be x square so it  is x square to the power 18 minus r plus 1 into B"
+    },
+    {
+      "start": "8:01",
+      "end": "8:12",
+      "text": "is -2 by x so it is -2 by x whole to power r minus  1. Now simplifying this 18 choose r minus 1 into"
+    },
+    {
+      "start": "8:12",
+      "end": "8:24",
+      "text": "x to the 38 minus 2 r into minus 2 to the power r  minus 1 by x power r minus 1. As you can see this"
+    },
+    {
+      "start": "8:24",
+      "end": "8:30",
+      "text": "is in the form x power m by x power n and I can  write it as x power m minus n. I'll simplify this."
+    },
+    {
+      "start": "8:30",
+      "end": "8:44",
+      "text": "It becomes 18 choose r minus 1 x to the power  39 minus 3 r into minus 2 power r minus 1. Now"
+    },
+    {
+      "start": "8:44",
+      "end": "8:52",
+      "text": "so this is the expansion I have. I don't know what  is r. So if there is a term containing x to the 10"
+    },
+    {
+      "start": "8:52",
+      "end": "9:04",
+      "text": "then x to the 10 here we'll have some coefficient  like this and that x to the 10 can be equated to x"
+    },
+    {
+      "start": "9:04",
+      "end": "9:11",
+      "text": "to the power 39 minus 3r, I am equating the like  terms on the right-hand side and the left-hand"
+    },
+    {
+      "start": "9:11",
+      "end": "9:20",
+      "text": "side and therefore x to the m is equal to x to the  n and this implies x to the m minus n is equal to"
+    },
+    {
+      "start": "9:20",
+      "end": "9:27",
+      "text": "is 1 if X is not 0. So this is the result we know  earlier and therefore I can write this as 38,"
+    },
+    {
+      "start": "9:27",
+      "end": "9:38",
+      "text": "sorry 39 minus 3r is equal to 10. simplifying  this gives me r is equal to -29 by 3 which is"
+    },
+    {
+      "start": "9:38",
+      "end": "9:47",
+      "text": "not possible because we know that r must be an  integer and hence the expansion of x square minus"
+    },
+    {
+      "start": "9:47",
+      "end": "9:53",
+      "text": "2 by x whole to the 18 does not contain a term  containing x to the 10. I hope it was clear."
+    },
+    {
+      "start": "9:53",
+      "end": "10:01",
+      "text": "So let us move on to the next question. Evaluate  96 the whole cube. Again here it becomes very"
+    },
+    {
+      "start": "10:01",
+      "end": "10:07",
+      "text": "easy to calculate this on a calculator but let  me explain how this can be done using binomial"
+    },
+    {
+      "start": "10:07",
+      "end": "10:14",
+      "text": "theorem. So as I had used binomial theorem for  approximation, I can use it here too in this"
+    },
+    {
+      "start": "10:14",
+      "end": "10:23",
+      "text": "way. 96 can be written as 100 minus 4. This is  very simple. So 96 cube will be 100 minus 4 the"
+    },
+    {
+      "start": "10:23",
+      "end": "10:30",
+      "text": "whole cube. This is the hint for this question  and now it becomes very simple just applying the"
+    },
+    {
+      "start": "10:30",
+      "end": "10:40",
+      "text": "binomial theorem 3 choose 0 into 100 cube into  4 to the 0 plus 3 choose 100 square into minus"
+    },
+    {
+      "start": "10:40",
+      "end": "10:48",
+      "text": "4 to the 1 plus 3 choose 2 into 100 power 1 into  minus 4 square plus 3 choose 3 into 100 power zero"
+    },
+    {
+      "start": "10:48",
+      "end": "10:55",
+      "text": "into minus 4 cube. So now let me simplify all of  this. This is very simple and I will get it as,"
+    },
+    {
+      "start": "10:55",
+      "end": "11:07",
+      "text": "it's a long number. 884736. I leave the  intermediate steps to you to solve it and"
+    },
+    {
+      "start": "11:07",
+      "end": "11:14",
+      "text": "I'm just giving the last answer for you to verify. Now find the middle term in the expansion of 3x"
+    },
+    {
+      "start": "11:14",
+      "end": "11:22",
+      "text": "minus 4 whole power six. So a lot of things to  keep in mind here. First of all we need to find"
+    },
+    {
+      "start": "11:22",
+      "end": "11:30",
+      "text": "the middle term and the next one is n is even  here. As we had seen earlier if n is even there"
+    },
+    {
+      "start": "11:30",
+      "end": "11:38",
+      "text": "is exactly one middle term and therefore we need  to find it but what is the middle term? Which term"
+    },
+    {
+      "start": "11:38",
+      "end": "11:46",
+      "text": "is the middle term? That is given by n plus 2 by  2, n is 6 and therefore it is 8 by 2 which is 4."
+    },
+    {
+      "start": "11:46",
+      "end": "11:54",
+      "text": "Therefore the fourth term in this expansion is the  middle term. So now we need to find even the 4th"
+    },
+    {
+      "start": "11:54",
+      "end": "12:02",
+      "text": "term here. So directly applying the formula let  me denote the fourth term as T4. So T4 is equal"
+    },
+    {
+      "start": "12:02",
+      "end": "12:13",
+      "text": "to n choose r minus 1 into A to the n minus r plus  1 into B to the r minus 1. So when I substitute I"
+    },
+    {
+      "start": "12:13",
+      "end": "12:23",
+      "text": "get T4 is equal to 6 choose 3 into 3x the whole  cube into minus 4 the whole cube. I hope it is"
+    },
+    {
+      "start": "12:23",
+      "end": "12:30",
+      "text": "clear because r is equal to four here and applying  it appropriately gives me this expression. Now"
+    },
+    {
+      "start": "12:30",
+      "end": "12:38",
+      "text": "simplify; 6 choose 3 gives me 6 factorial by 3  factorial into 3 factorial into this is 27x cube"
+    },
+    {
+      "start": "12:38",
+      "end": "12:50",
+      "text": "into minus 64. So after calculation this gives me  minus 34560x cube. So this is the middle term in"
+    },
+    {
+      "start": "12:50",
+      "end": "13:01",
+      "text": "the expansion of 3x minus 4 the whole power 6. So that is it. Next question. What is the"
+    },
+    {
+      "start": "13:01",
+      "end": "13:10",
+      "text": "coefficient of x square yz in the expansion of x  plus y plus z whole to the four? So here comes the"
+    },
+    {
+      "start": "13:10",
+      "end": "13:16",
+      "text": "multinomial theorem. So how do we apply it? As  I had told you we need to find the coefficient"
+    },
+    {
+      "start": "13:16",
+      "end": "13:24",
+      "text": "of x square yz here so we have three terms. So  let me write it in general. The coefficient of"
+    },
+    {
+      "start": "13:24",
+      "end": "13:33",
+      "text": "x to the n1 into y to the power n2 into z to the  power n3 is given by n factorial by n1 factorial"
+    },
+    {
+      "start": "13:33",
+      "end": "13:40",
+      "text": "into n2 factorial into n3 factorial.  So this is the generalized coefficient."
+    },
+    {
+      "start": "13:40",
+      "end": "13:48",
+      "text": "Now applying it here what do I get coefficient  of x square yz is given by n is 4 so 4 factorial"
+    },
+    {
+      "start": "13:48",
+      "end": "13:57",
+      "text": "by 2 factorial into 1 factorial into 1 factorial  which gives me on simplification 12 as the answer."
+    },
+    {
+      "start": "13:57",
+      "end": "14:09",
+      "text": "The last question. What is the coefficient of  x1 square x cube x4 whole cube into x5 in the"
+    },
+    {
+      "start": "14:09",
+      "end": "14:18",
+      "text": "expansion of x1 plus x2 plus x3 plus x4 plus  x5 whole to the 7? So this is a huge term and"
+    },
+    {
+      "start": "14:18",
+      "end": "14:24",
+      "text": "we have to apply multinomial theorem here. So  on the similar lines as the previous problem"
+    },
+    {
+      "start": "14:25",
+      "end": "14:34",
+      "text": "the coefficient of x1 square we don't have x2  here into x3 into x4 cube into x5 gives me n is"
+    },
+    {
+      "start": "14:34",
+      "end": "14:48",
+      "text": "7 here so we have 7 factorial by 2 factorial into  1 factorial into so there was no x2 term and hence"
+    },
+    {
+      "start": "14:48",
+      "end": "14:55",
+      "text": "it was x to power 0 so I am not writing a zero  factorial here. I'm directly going to x3 so x3 is"
+    },
+    {
+      "start": "14:55",
+      "end": "15:02",
+      "text": "power is 1 and therefore it has 1 factorial into 3  factorial into 1 factorial. I hope this was clear"
+    },
+    {
+      "start": "15:02",
+      "end": "15:12",
+      "text": "and on simplification this gives me 7 factorial  by 2 factorial into 3 factorial which is 420."
+    },
+    {
+      "start": "15:14",
+      "end": "15:19",
+      "text": "Okay. So these were some of the problems  on binomial coefficients and multinomial"
+    },
+    {
+      "start": "15:19",
+      "end": "15:24",
+      "text": "coefficients. So far we have seen what  is binomial theorem, multinomial theorem,"
+    },
+    {
+      "start": "15:24",
+      "end": "15:31",
+      "text": "the coefficients, how to find a particular  term here a specific rth term or a Kth term,"
+    },
+    {
+      "start": "15:31",
+      "end": "15:36",
+      "text": "how to find the middle term and  we have solved several problems."
+    },
+    {
+      "start": "15:36",
+      "end": "15:40",
+      "text": "So now we'll be moving on to the  next concept in the next video."
+    },
+    {
+      "start": "15:40",
+      "end": "15:45",
+      "text": "If you have any doubts please  post it on the discussion forum."
+    }
+  ],
+  "timestamped": true
+}

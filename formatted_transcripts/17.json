@@ -1,0 +1,438 @@
+{
+  "title": "Problems on Permutations",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:06",
+      "text": "So far we have seen what is meant by n factorial,"
+    },
+    {
+      "start": "0:07",
+      "end": "0:11",
+      "text": "what is meant by permutations.  We have seen a video on it."
+    },
+    {
+      "start": "0:13",
+      "end": "0:20",
+      "text": "We have seen that the formula goes like  this nPr means picking r items out of n"
+    },
+    {
+      "start": "0:20",
+      "end": "0:29",
+      "text": "items with the order respected and this is equal  to n factorial by n minus r factorial. So this"
+    },
+    {
+      "start": "0:29",
+      "end": "0:33",
+      "text": "is the formula of permutations. Now let us solve some problems."
+    },
+    {
+      "start": "0:36",
+      "end": "0:39",
+      "text": "The first one. How many three-letter words"
+    },
+    {
+      "start": "0:39",
+      "end": "0:47",
+      "text": "with or without meaning can be formed out  of the letters of LOGARITHMS if repetition"
+    },
+    {
+      "start": "0:47",
+      "end": "0:55",
+      "text": "is not allowed? So the word given to  us this LOGARITHMS. You see LOGARITHMS"
+    },
+    {
+      "start": "0:55",
+      "end": "1:04",
+      "text": "has 10 different letters; L-O-G-A-R-I-T-H-M-S.  So we have to form three-letter words"
+    },
+    {
+      "start": "1:05",
+      "end": "1:11",
+      "text": "which can or not have meaning and how many  ways can we do this? This is the question."
+    },
+    {
+      "start": "1:13",
+      "end": "1:26",
+      "text": "So let me enumerate some of the three-letter  words. LOG, OGA, ARI, ART, ARH, and so on."
+    },
+    {
+      "start": "1:27",
+      "end": "1:36",
+      "text": "So in how many ways can we do this? So we have 10  letters and we have to form three letter words."
+    },
+    {
+      "start": "1:36",
+      "end": "1:46",
+      "text": "So it is the problem of picking 3 letters out  of 10 letters. So it is 10P3 which is equal to"
+    },
+    {
+      "start": "1:48",
+      "end": "1:54",
+      "text": "as the formula says 10 factorial  by 10 minus 3 factorial"
+    },
+    {
+      "start": "1:54",
+      "end": "2:02",
+      "text": "which is same as 10 factorial by 7 factorial and  after computation this gives 720 as the answer."
+    },
+    {
+      "start": "2:05",
+      "end": "2:09",
+      "text": "So in 720 ways we can form three-letter words"
+    },
+    {
+      "start": "2:10",
+      "end": "2:16",
+      "text": "which need not necessarily have  meaning out of this word LOGARITHMS."
+    },
+    {
+      "start": "2:19",
+      "end": "2:25",
+      "text": "The next question. In how many ways can  the letters of the word LEADER be arranged?"
+    },
+    {
+      "start": "2:26",
+      "end": "2:32",
+      "text": "So the word here is LEADER. It has six  letters but please note there are two"
+    },
+    {
+      "start": "2:32",
+      "end": "2:37",
+      "text": "E's here unlike in the last question  where all the letters were different."
+    },
+    {
+      "start": "2:38",
+      "end": "2:44",
+      "text": "So we have LE this is the first one,  ADER and this E is the second part."
+    },
+    {
+      "start": "2:46",
+      "end": "2:51",
+      "text": "And the question is in how many ways can  the letters of this word be arranged."
+    },
+    {
+      "start": "2:53",
+      "end": "2:59",
+      "text": "So we have six letters and two repetitions of  E here. So the number of ways to arrange our"
+    },
+    {
+      "start": "2:59",
+      "end": "3:10",
+      "text": "six factorial by 2 factorial. The six factorial  is 6 into 5 into 4 into 3 into 2 into 1"
+    },
+    {
+      "start": "3:11",
+      "end": "3:21",
+      "text": "divided by 2 factorial and this is 6 into 5 into  4 into 3 which comes up to 360. Now why did we"
+    },
+    {
+      "start": "3:21",
+      "end": "3:32",
+      "text": "divide by 2 factorial here? The word LEADER has  two E's. I will mention them as E1 and E2. When"
+    },
+    {
+      "start": "3:32",
+      "end": "3:40",
+      "text": "we arrange the letters of the world LEADER in  different ways in case I consider E1 and E2 as two"
+    },
+    {
+      "start": "3:40",
+      "end": "3:47",
+      "text": "different letters, if we treat them as distinct  letters then there are six factorial permutations"
+    },
+    {
+      "start": "3:49",
+      "end": "3:55",
+      "text": "but since the letters are the same if we don't  treat them as distinct we are over counting and"
+    },
+    {
+      "start": "3:55",
+      "end": "4:03",
+      "text": "hence we divide by two factorial. So the number of  ways to arrange the letters of this word are 360."
+    },
+    {
+      "start": "4:03",
+      "end": "4:10",
+      "text": "The next question. A company has 10 members  on its board of directors. In how many ways"
+    },
+    {
+      "start": "4:10",
+      "end": "4:15",
+      "text": "can it elect a president, a vice  president, a secretary and a treasurer."
+    },
+    {
+      "start": "4:16",
+      "end": "4:22",
+      "text": "So this company has 10 members in its board  of directors and four members are to be"
+    },
+    {
+      "start": "4:22",
+      "end": "4:31",
+      "text": "picked. So it's same as asking the question  picking four out of 10 and this goes by 10P4"
+    },
+    {
+      "start": "4:32",
+      "end": "4:39",
+      "text": "which is 10 factorial by 10 minus 4 factorial  which is 10 factorial by 6 factorial"
+    },
+    {
+      "start": "4:40",
+      "end": "4:50",
+      "text": "and this is the same as 10 into 9 into  8 into 7 and this comes up to 5040."
+    },
+    {
+      "start": "4:53",
+      "end": "5:00",
+      "text": "The next question. In how many ways can the  word HOLIDAY be arranged such that the letter"
+    },
+    {
+      "start": "5:00",
+      "end": "5:04",
+      "text": "I will always come to the left of the letter L?"
+    },
+    {
+      "start": "5:08",
+      "end": "5:11",
+      "text": "So the word HOLIDAY has all distinct letters"
+    },
+    {
+      "start": "5:12",
+      "end": "5:19",
+      "text": "and the number of letters are 7 and therefore  there are 7 factorial ways to arrange the letters."
+    },
+    {
+      "start": "5:21",
+      "end": "5:27",
+      "text": "Now there is a constraint here; the  number of ways such that I comes to"
+    },
+    {
+      "start": "5:27",
+      "end": "5:32",
+      "text": "the left of the letter L; we have to  compute how many times this happens."
+    },
+    {
+      "start": "5:34",
+      "end": "5:41",
+      "text": "So you see that either I should be to the left  of the letter L or to the right of the letter"
+    },
+    {
+      "start": "5:41",
+      "end": "5:51",
+      "text": "L. So in exactly half of the arrangements it  will happen. So in 7 factorial by 2 and these"
+    },
+    {
+      "start": "5:51",
+      "end": "6:01",
+      "text": "many number of arrangements letter I will always  come to the left of the letter L. So 7 factorial"
+    },
+    {
+      "start": "6:01",
+      "end": "6:14",
+      "text": "by 2 which comes up to be 7 into 6 into 5 into 4  into 3. So these many number of ways the letter"
+    },
+    {
+      "start": "6:14",
+      "end": "6:19",
+      "text": "I will come to the left of the letter L. Let us move on to the next question. Find"
+    },
+    {
+      "start": "6:19",
+      "end": "6:25",
+      "text": "the number of permutations of the letters  of the word CLIMATE such that the vowels"
+    },
+    {
+      "start": "6:25",
+      "end": "6:32",
+      "text": "always occur in odd places. So the word here  is CLIMATE and you see it has no repetitions"
+    },
+    {
+      "start": "6:33",
+      "end": "6:41",
+      "text": "but the condition given is the vowels should  always occur in odd places. Let us understand"
+    },
+    {
+      "start": "6:41",
+      "end": "6:51",
+      "text": "this. So we see that the word climate has four  consonants; C, L, M, and T and three vowels I,"
+    },
+    {
+      "start": "6:51",
+      "end": "7:01",
+      "text": "A and E. It has the total number of letters  are seven and we have seven slots like this and"
+    },
+    {
+      "start": "7:03",
+      "end": "7:13",
+      "text": "the words can occur here in these seven places.  So you see they are odd and even slots like this."
+    },
+    {
+      "start": "7:15",
+      "end": "7:24",
+      "text": "So there are four odd slots and three even slots.  We have three vowels and they should occur in the"
+    },
+    {
+      "start": "7:24",
+      "end": "7:32",
+      "text": "odd places. So in how many ways can we arrange  this? So total number of odd places are four and"
+    },
+    {
+      "start": "7:32",
+      "end": "7:40",
+      "text": "we have three vowels. So the number of ways three  vowels can occur in four odd places. The same as"
+    },
+    {
+      "start": "7:41",
+      "end": "7:49",
+      "text": "for 4P3 which is nothing but four factorial  by three factorial this is nothing but"
+    },
+    {
+      "start": "7:52",
+      "end": "8:00",
+      "text": "four factorial by four minus three  factorial and this is four factorial by"
+    },
+    {
+      "start": "8:00",
+      "end": "8:07",
+      "text": "one which is nothing but 24. So in 24 ways  the three vowels can occur in four odd slots."
+    },
+    {
+      "start": "8:09",
+      "end": "8:17",
+      "text": "You see there are only three vowels here  and four consonants. So we still have"
+    },
+    {
+      "start": "8:18",
+      "end": "8:21",
+      "text": "four places remaining after the  three vowels take three places."
+    },
+    {
+      "start": "8:23",
+      "end": "8:30",
+      "text": "So the four consonants can take rest of the  four places in how many ways? In 4P4 ways"
+    },
+    {
+      "start": "8:31",
+      "end": "8:38",
+      "text": "which again comes up to be four factorial  by 0 factorial which is nothing but 1"
+    },
+    {
+      "start": "8:38",
+      "end": "8:44",
+      "text": "and we have 24 here. So in 24 ways the  four consonants can take four slots."
+    },
+    {
+      "start": "8:47",
+      "end": "8:50",
+      "text": "So the total number of  permutations which are possible"
+    },
+    {
+      "start": "8:51",
+      "end": "8:59",
+      "text": "is 24 into 24 and this goes by the rule  of product because we even want that the"
+    },
+    {
+      "start": "8:59",
+      "end": "9:03",
+      "text": "vowels should take the odd places and the  consonants taking the rest of the places."
+    },
+    {
+      "start": "9:04",
+      "end": "9:09",
+      "text": "So both these events should occur and we  have 24 possibilities for each of them"
+    },
+    {
+      "start": "9:10",
+      "end": "9:18",
+      "text": "and hence the total number of permutations  are 24 into 24 which comes up to be 576."
+    },
+    {
+      "start": "9:19",
+      "end": "9:27",
+      "text": "In how many ways can MATHEMATICS be arranged  so that the vowels always come together?"
+    },
+    {
+      "start": "9:28",
+      "end": "9:31",
+      "text": "So the condition here is the  vowels must come together."
+    },
+    {
+      "start": "9:34",
+      "end": "9:45",
+      "text": "So the word is MATHEMATICS and the vowels here are  A, E, A, I and the consonants are M, T, H, M, T,"
+    },
+    {
+      "start": "9:45",
+      "end": "9:56",
+      "text": "C, S. Yes. So I'll do one thing. I'll consider  these vowels as one unit and these consonants"
+    },
+    {
+      "start": "9:57",
+      "end": "10:05",
+      "text": "there are eight letters here we see  that M appears twice and T also appears"
+    },
+    {
+      "start": "10:05",
+      "end": "10:10",
+      "text": "twice. Let us first compute in how many  ways we can arrange these consonants."
+    },
+    {
+      "start": "10:11",
+      "end": "10:19",
+      "text": "So there are eight letters and we have two letters  which repeat; M and T. So the number of ways of"
+    },
+    {
+      "start": "10:19",
+      "end": "10:30",
+      "text": "arranging M, T, H M, T, C, S is equal to 8  factorial because there are eight letters by"
+    },
+    {
+      "start": "10:30",
+      "end": "10:38",
+      "text": "2 factorial into 2 factorial. This is for M and  this is for T. So this goes for the consonants."
+    },
+    {
+      "start": "10:39",
+      "end": "10:46",
+      "text": "Now we saw that the vowels were A, E, A,  I. In how many ways can we arrange this?"
+    },
+    {
+      "start": "10:47",
+      "end": "10:53",
+      "text": "This is 4 factorial because there are 4  vowels and they say that A is repeating twice"
+    },
+    {
+      "start": "10:54",
+      "end": "11:02",
+      "text": "and hence we divide by 2 factorial which is  the number of ways of arranging these vowels."
+    },
+    {
+      "start": "11:04",
+      "end": "11:12",
+      "text": "So we have computed differently for consonants and  for vowels. So the total number of ways in which"
+    },
+    {
+      "start": "11:12",
+      "end": "11:19",
+      "text": "this entire world MATHEMATICS can be arranged  so that the vowels can always come together are"
+    },
+    {
+      "start": "11:19",
+      "end": "11:28",
+      "text": "8 factorial by 2 factorial into 2 factorial into  4 factorial by 2 factorial. Again by the rule of"
+    },
+    {
+      "start": "11:28",
+      "end": "11:36",
+      "text": "product. You see I treated this A, E, A, I as one  unit because they have to always come together and"
+    },
+    {
+      "start": "11:36",
+      "end": "11:45",
+      "text": "so these many number of ways the word MATHEMATICS  can be arranged so that the vowels come together."
+    }
+  ],
+  "timestamped": true
+}

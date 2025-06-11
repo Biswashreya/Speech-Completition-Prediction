@@ -1,0 +1,178 @@
+{
+  "title": "Rule of Sum and Rule of Product",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:03",
+      "end": "0:07",
+      "text": "Overall it is very unlikely that you solved this puzzle."
+    },
+    {
+      "start": "0:07",
+      "end": "0:11",
+      "text": "This is non-trivial concept and requires some thinking."
+    },
+    {
+      "start": "0:11",
+      "end": "0:17",
+      "text": "We will be seeing the solution of this very question at the fag end of this chapter."
+    },
+    {
+      "start": "0:17",
+      "end": "0:21",
+      "text": "So for now let us forget this question and move on."
+    },
+    {
+      "start": "0:21",
+      "end": "0:26",
+      "text": "Let us go ahead and learn a basic counting principle which happens to be the highlight"
+    },
+    {
+      "start": "0:26",
+      "end": "0:30",
+      "text": "of this chapter and is an important concept."
+    },
+    {
+      "start": "0:30",
+      "end": "0:32",
+      "text": "So please concentrate."
+    },
+    {
+      "start": "0:32",
+      "end": "0:39",
+      "text": "As you may walk into a restaurant, a restaurant that sells pizzas and burgers."
+    },
+    {
+      "start": "0:39",
+      "end": "0:44",
+      "text": "There are four different types of pizzas and three different types of burgers."
+    },
+    {
+      "start": "0:44",
+      "end": "0:52",
+      "text": "And I plan to eat one item only either pizza or burger."
+    },
+    {
+      "start": "0:52",
+      "end": "0:59",
+      "text": "So I have four items to choose from pizza or four varieties to choose from pizza and"
+    },
+    {
+      "start": "0:59",
+      "end": "1:01",
+      "text": "three varieties from burger."
+    },
+    {
+      "start": "1:01",
+      "end": "1:10",
+      "text": "So in total I can order one of these seven items."
+    },
+    {
+      "start": "1:10",
+      "end": "1:15",
+      "text": "One of these four plus three; seven items."
+    },
+    {
+      "start": "1:15",
+      "end": "1:19",
+      "text": "Let me now change this problem onto the following."
+    },
+    {
+      "start": "1:19",
+      "end": "1:28",
+      "text": "I enter the restaurant and I decide to buy myself one pizza and one burger."
+    },
+    {
+      "start": "1:28",
+      "end": "1:30",
+      "text": "Okay."
+    },
+    {
+      "start": "1:30",
+      "end": "1:35",
+      "text": "It's not just one item but two items but I am sure I will be buying one pizza and one"
+    },
+    {
+      "start": "1:35",
+      "end": "1:36",
+      "text": "burger."
+    },
+    {
+      "start": "1:36",
+      "end": "1:40",
+      "text": "In how many ways can I make my order?"
+    },
+    {
+      "start": "1:40",
+      "end": "1:48",
+      "text": "It is going to be the following, in the sense that first pizza, first burger and order."
+    },
+    {
+      "start": "1:48",
+      "end": "1:52",
+      "text": "First pizza, second burger, a possible second option."
+    },
+    {
+      "start": "1:52",
+      "end": "1:56",
+      "text": "First pizza and third burger, third option."
+    },
+    {
+      "start": "1:56",
+      "end": "1:58",
+      "text": "Second pizza, first burger."
+    },
+    {
+      "start": "1:58",
+      "end": "1:59",
+      "text": "Second pizza, second burger."
+    },
+    {
+      "start": "1:59",
+      "end": "2:02",
+      "text": "So on and so forth."
+    },
+    {
+      "start": "2:02",
+      "end": "2:05",
+      "text": "So in how many ways can I make my order?"
+    },
+    {
+      "start": "2:05",
+      "end": "2:09",
+      "text": "Clearly it is four times three."
+    },
+    {
+      "start": "2:09",
+      "end": "2:14",
+      "text": "Please remember the last time it was four plus three."
+    },
+    {
+      "start": "2:14",
+      "end": "2:18",
+      "text": "This time it is four into three."
+    },
+    {
+      "start": "2:18",
+      "end": "2:25",
+      "text": "So it's only commonsensical to know when to add and when to multiply."
+    },
+    {
+      "start": "2:25",
+      "end": "2:28",
+      "text": "Previous case was addition."
+    },
+    {
+      "start": "2:28",
+      "end": "2:31",
+      "text": "This case was multiplication."
+    },
+    {
+      "start": "2:31",
+      "end": "2:36",
+      "text": "This goes by the title the rule of sum and rule of products."
+    }
+  ],
+  "timestamped": true
+}

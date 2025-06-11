@@ -1,0 +1,163 @@
+{
+  "title": "Permutations - Part 3",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:12",
+      "text": "We asked a question in how many ways can  we pick three elements from five elements?"
+    },
+    {
+      "start": "0:12",
+      "end": "0:23",
+      "text": "Right. Three from five. There's a notation  for this for ease of usage, we call it 5P3"
+    },
+    {
+      "start": "0:24",
+      "end": "0:30",
+      "text": "in how many ways can you bring three elements  from five elements, right, where ordering is"
+    },
+    {
+      "start": "0:30",
+      "end": "0:39",
+      "text": "important. Three friends will stand in different  ways. Each way is considered different from the"
+    },
+    {
+      "start": "0:39",
+      "end": "0:45",
+      "text": "other right. There are three factorial ways with  three friends and we enumerated that the 60 ways"
+    },
+    {
+      "start": "0:45",
+      "end": "0:52",
+      "text": "that we got is basically the representation 5P3.  This is just a standard. One needn't worry much"
+    },
+    {
+      "start": "0:52",
+      "end": "0:59",
+      "text": "about it but whenever you see a symbol like  this in general nPr it means that this is the"
+    },
+    {
+      "start": "0:59",
+      "end": "1:04",
+      "text": "question of picking r people from n people  and these are people taking different photos"
+    },
+    {
+      "start": "1:04",
+      "end": "1:15",
+      "text": "of them and the total number of ways for this  to happen. So basically total ways to line up"
+    },
+    {
+      "start": "1:16",
+      "end": "1:28",
+      "text": "r objects out of n objects, and when we line up  the way we line up these objects, the order is"
+    },
+    {
+      "start": "1:28",
+      "end": "1:37",
+      "text": "important. If you take from five elements three  elements let's say ABC. ABC will be different"
+    },
+    {
+      "start": "1:37",
+      "end": "1:48",
+      "text": "from BAC and so on. We have discussed that. Now you saw that 5P3 is 60. What exactly do"
+    },
+    {
+      "start": "1:48",
+      "end": "1:56",
+      "text": "you think is 10P4? By that we mean ten  people you pick four people randomly,"
+    },
+    {
+      "start": "1:56",
+      "end": "2:02",
+      "text": "by randomly I mean you try all possible ways  in which you can pick four people and these"
+    },
+    {
+      "start": "2:02",
+      "end": "2:08",
+      "text": "four people should take all possible pictures.  What are the total possible pictures that you"
+    },
+    {
+      "start": "2:08",
+      "end": "2:16",
+      "text": "can think of? Total ways to line up four people  out of ten people. Let us answer this question."
+    },
+    {
+      "start": "2:16",
+      "end": "2:26",
+      "text": "So you see there are these ten people let's  say a1, a2 up to a10 it might help to imagine"
+    },
+    {
+      "start": "2:26",
+      "end": "2:33",
+      "text": "them in different colors and you have  4 slots for it and the first slot can"
+    },
+    {
+      "start": "2:33",
+      "end": "2:41",
+      "text": "have any of these 10 numbers and once you  put a fellow here from these 10 people you"
+    },
+    {
+      "start": "2:41",
+      "end": "2:48",
+      "text": "are left with 9 choices for the next one,  and once you put someone here another one"
+    },
+    {
+      "start": "2:48",
+      "end": "2:56",
+      "text": "here you are left with eight choices for this  one and as in always as you can see, ten here,"
+    },
+    {
+      "start": "2:56",
+      "end": "3:03",
+      "text": "one less means nine here. One less means  eight here and one less here means seven."
+    },
+    {
+      "start": "3:03",
+      "end": "3:11",
+      "text": "So you can put in ten ways a fellow here and  you will be left with nine more ways for this,"
+    },
+    {
+      "start": "3:11",
+      "end": "3:17",
+      "text": "eight more ways for this, seven more ways for  this you may want to pause here think about it."
+    },
+    {
+      "start": "3:17",
+      "end": "3:28",
+      "text": "Now we should take the product of these which  is 10 into 9 into 8 into 7 is the number of"
+    },
+    {
+      "start": "3:28",
+      "end": "3:38",
+      "text": "ways in which we can pick four objects from  ten objects and line them up and consider all"
+    },
+    {
+      "start": "3:38",
+      "end": "3:48",
+      "text": "possible orderings. So if it's not clear to you,  you probably should revise the rule of products."
+    },
+    {
+      "start": "3:48",
+      "end": "3:54",
+      "text": "So this concept isn't very straightforward.  Of course, there are easier ways of explaining"
+    },
+    {
+      "start": "3:54",
+      "end": "4:00",
+      "text": "this but I leave it to you for you to pause  and think about what exactly one means by"
+    },
+    {
+      "start": "4:00",
+      "end": "4:08",
+      "text": "nPr. It is indeed very difficult for one  to get it in the first attempt but as in"
+    },
+    {
+      "start": "4:08",
+      "end": "4:14",
+      "text": "when we encounter more examples it becomes  very clear to you what one means by nPr."
+    }
+  ],
+  "timestamped": true
+}
