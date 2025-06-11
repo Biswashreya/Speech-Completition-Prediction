@@ -1,0 +1,263 @@
+{
+  "title": "Applications of Binomial theorem",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:01",
+      "end": "0:08",
+      "text": "So we have seen what the binomial theorem states.  Let us now see some beautiful applications of it."
+    },
+    {
+      "start": "0:08",
+      "end": "0:16",
+      "text": "You all must have heard of 1 plus 1 by n whole  power n. When I apply binomial theorem on this"
+    },
+    {
+      "start": "0:16",
+      "end": "0:30",
+      "text": "let us see what the terms are; 1 plus 1 by n  whole to the n becomes nC0 1 power n into 1"
+    },
+    {
+      "start": "0:30",
+      "end": "0:42",
+      "text": "by n whole power 0 plus nC1 1 power n minus  1 into 1 by n whole power 1 plus nC2 1 power"
+    },
+    {
+      "start": "0:42",
+      "end": "0:53",
+      "text": "n minus 2 into 1 by n whole square plus nC3 1  power n minus 3 into 1 by n whole cube and so"
+    },
+    {
+      "start": "0:53",
+      "end": "1:08",
+      "text": "on when I expand this I will get nC0 to be 1,  1 power n is again 1 into 1 plus nC1 is 1 plus"
+    },
+    {
+      "start": "1:08",
+      "end": "1:19",
+      "text": "again 1 to the n minus 1 becomes 1 into 1 nC1  becomes n into 1 into 1 by n plus nC2 can be"
+    },
+    {
+      "start": "1:19",
+      "end": "1:29",
+      "text": "written as n into n minus 1 by 2. I have written  this by simplifying nC2 into 1 into 1 by n square"
+    },
+    {
+      "start": "1:29",
+      "end": "1:40",
+      "text": "plus nC3 can be written as n factorial by 3  factorial into n minus 3 factorial into 1 by"
+    },
+    {
+      "start": "1:40",
+      "end": "1:52",
+      "text": "n cube and so on. This becomes 1 plus 1 the ends  get canceled here plus I'll cancel 1n from the"
+    },
+    {
+      "start": "1:52",
+      "end": "2:02",
+      "text": "denominator and the numerator and what remains  is n minus 2 by 2 into n and now simplifying the"
+    },
+    {
+      "start": "2:02",
+      "end": "2:13",
+      "text": "next term we get n into n minus 1 into n minus  2 by 3 factorial into 1 by n cube plus so on."
+    },
+    {
+      "start": "2:13",
+      "end": "2:23",
+      "text": "Now this becomes 1 plus 1 plus let me take a n  common from the numerator here and this becomes"
+    },
+    {
+      "start": "2:23",
+      "end": "2:35",
+      "text": "n into 1 minus 1 by n by 2 into n plus we have  n here and n cube here so after simplification"
+    },
+    {
+      "start": "2:35",
+      "end": "2:45",
+      "text": "what remains is n minus 1 into n minus 2 by  n square into 3 factorial and so on. Now this"
+    },
+    {
+      "start": "2:45",
+      "end": "2:55",
+      "text": "one I'll write it as 0 factorial and this  I will write it as 1 by 1 factorial plus."
+    },
+    {
+      "start": "2:55",
+      "end": "3:04",
+      "text": "You will understand why I'm writing like this,  plus I cancel these ends here and I get 1 minus"
+    },
+    {
+      "start": "3:04",
+      "end": "3:13",
+      "text": "1 by n by 2 is same as 2 factorial and hence  I'll write this as 2 factorial plus again as I"
+    },
+    {
+      "start": "3:13",
+      "end": "3:19",
+      "text": "did earlier I'll take out ends common in these  two terms so I will get n into 1 minus 1 by n"
+    },
+    {
+      "start": "3:19",
+      "end": "3:29",
+      "text": "into n into n1 minus 2 by n. I hope the step was  clear, by n square into 3 factorial plus so on."
+    },
+    {
+      "start": "3:29",
+      "end": "3:39",
+      "text": "Now I'll cancel these ends with n square and what  remains is zero factorial as we have seen earlier"
+    },
+    {
+      "start": "3:39",
+      "end": "3:47",
+      "text": "is one so it does not make a difference if I  write 1 by 0 factorial plus 1 by 1 factorial"
+    },
+    {
+      "start": "3:47",
+      "end": "4:02",
+      "text": "plus 1 minus 2 by n by 2 factorial plus 1 minus  1 by n into 1 minus 2 by n by 3 factorial and"
+    },
+    {
+      "start": "4:02",
+      "end": "4:13",
+      "text": "so on. Now what happens to these terms when  n becomes sufficiently large? What I mean by"
+    },
+    {
+      "start": "4:13",
+      "end": "4:21",
+      "text": "sufficiently large is we have to choose n to be  a very large number. In case n happens to be a"
+    },
+    {
+      "start": "4:21",
+      "end": "4:34",
+      "text": "very large number then 1 by n or 2 by n or any  small number by n becomes very close to 0 and"
+    },
+    {
+      "start": "4:34",
+      "end": "4:46",
+      "text": "hence this term can be written as 1 by 0 factorial  plus 1 by 1 factorial plus I am approximating this"
+    },
+    {
+      "start": "4:46",
+      "end": "4:56",
+      "text": "2 by n to be a number very small very close  to 0 and hence this becomes 1 by 2 factorial."
+    },
+    {
+      "start": "4:57",
+      "end": "5:07",
+      "text": "I'm neglecting the terms which have denominator  as n and hence in all the further terms what will"
+    },
+    {
+      "start": "5:07",
+      "end": "5:16",
+      "text": "I get? It will become 1 by 3 factorial plus 1 by  4 factorial and so on. So this becomes summation"
+    },
+    {
+      "start": "5:16",
+      "end": "5:35",
+      "text": "1 by K factorial K from 0 to infinity. Now this  is called the famous Euler's number. I'm sure you"
+    },
+    {
+      "start": "5:35",
+      "end": "5:44",
+      "text": "must have heard of e and this we have arrived  at this by starting from expanding 1 plus 1 by"
+    },
+    {
+      "start": "5:44",
+      "end": "5:52",
+      "text": "n whole to the n by using binomial theorem. So  this was one application of binomial theorem."
+    },
+    {
+      "start": "5:52",
+      "end": "6:03",
+      "text": "Now let us see the next one. The derivative of X  to the n involves binomial theorem. Now derivative"
+    },
+    {
+      "start": "6:03",
+      "end": "6:09",
+      "text": "is a concept from calculus and I am talking of  binomial theorem. So how is it related? The proof"
+    },
+    {
+      "start": "6:09",
+      "end": "6:16",
+      "text": "involves certain technicalities from calculus and  I leave it to you guys to go and check it. I am"
+    },
+    {
+      "start": "6:16",
+      "end": "6:23",
+      "text": "not giving the proof of the derivative of X to the  n here but let me state it. The derivative of X to"
+    },
+    {
+      "start": "6:23",
+      "end": "6:32",
+      "text": "the n is n into X to the power n minus 1 and this  involves the usage of binomial theorem. Let us"
+    },
+    {
+      "start": "6:32",
+      "end": "6:39",
+      "text": "move on to the next one. We know that binomial  theorem states that x plus y whole to the n is"
+    },
+    {
+      "start": "6:39",
+      "end": "6:50",
+      "text": "summation K from 0 to n, nCK into x bar n minus  K in the y power K. What happens when I plug in"
+    },
+    {
+      "start": "6:50",
+      "end": "7:03",
+      "text": "x and y as 1? So it becomes 1 plus 1 whole power  n equals summation K from 0 to n nCK. So in place"
+    },
+    {
+      "start": "7:03",
+      "end": "7:11",
+      "text": "of x and you I am writing it as 1 and hence this  becomes 1 to the n minus K into 1 to the K. Now"
+    },
+    {
+      "start": "7:11",
+      "end": "7:17",
+      "text": "you must be wondering why I am doing this because  I'm just plugging in 1 for x and y but let me tell"
+    },
+    {
+      "start": "7:17",
+      "end": "7:30",
+      "text": "you this is 2 power n equals summation K from 0 to  n nCK. So did you observe what happened? We have"
+    },
+    {
+      "start": "7:30",
+      "end": "7:39",
+      "text": "as a summation only the binomial coefficients and  the sum of all these binomial coefficients turns"
+    },
+    {
+      "start": "7:39",
+      "end": "7:49",
+      "text": "out to be 2 power n. What does this actually mean?  If we have n objects each time we choose K objects"
+    },
+    {
+      "start": "7:49",
+      "end": "7:57",
+      "text": "from these n objects like I'm choosing 0 from n  objects, I'm choosing one object from n objects,"
+    },
+    {
+      "start": "7:57",
+      "end": "8:03",
+      "text": "two objects from n objects and so on and  I add up all this so what it becomes,"
+    },
+    {
+      "start": "8:03",
+      "end": "8:10",
+      "text": "it results in 2 power n. Did you see the  beautiful connection between binomial theorem"
+    },
+    {
+      "start": "8:10",
+      "end": "8:18",
+      "text": "and choosing objects from n objects and 2 power n. So these were a few applications of binomial"
+    },
+    {
+      "start": "8:18",
+      "end": "8:24",
+      "text": "theorem. Next we'll move on to the generalization  of binomial theorem and solve a lot of problems."
+    }
+  ],
+  "timestamped": true
+}

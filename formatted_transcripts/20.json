@@ -1,0 +1,63 @@
+{
+  "title": "Combinations - Part 3",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:02",
+      "end": "0:13",
+      "text": "Before solving a lot of problems on combinations,  let us see some nice results. nC0 is what is"
+    },
+    {
+      "start": "0:13",
+      "end": "0:22",
+      "text": "choosing 0 objects from n objects, but in how  many ways can we do this? As the formula goes"
+    },
+    {
+      "start": "0:22",
+      "end": "0:33",
+      "text": "it is n factorial by 0 factorial into n minus  0 factorial which is same as n factorial and we"
+    },
+    {
+      "start": "0:33",
+      "end": "0:39",
+      "text": "can cancel the n factorial in the denominator  and the numerator and we get 1 by 0 factorial"
+    },
+    {
+      "start": "0:39",
+      "end": "0:48",
+      "text": "and we know that 0 factorial is 1 hence nC0  is 1. So there is precisely one way in which"
+    },
+    {
+      "start": "0:48",
+      "end": "0:57",
+      "text": "you can choose 0 objects from n objects. The  statement choosing 0 objects from n objects"
+    },
+    {
+      "start": "0:57",
+      "end": "1:04",
+      "text": "might be a little very weird but whenever we  encounter with nC0 we generally write it as"
+    },
+    {
+      "start": "1:04",
+      "end": "1:12",
+      "text": "1. nCn is choosing n objects from n objects.  So in how many ways can we do this? With the"
+    },
+    {
+      "start": "1:12",
+      "end": "1:22",
+      "text": "formula it is n factorial by n factorial into n  minus n factorial which is same as n factorial"
+    },
+    {
+      "start": "1:22",
+      "end": "1:28",
+      "text": "by 0 factorial into n factorial and this is  again 1 as we have seen in the previous one."
+    },
+    {
+      "start": "1:28",
+      "end": "1:34",
+      "text": "So there is one way in which you can choose  all the n objects from the given n objects."
+    }
+  ],
+  "timestamped": true
+}

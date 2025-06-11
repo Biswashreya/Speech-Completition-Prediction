@@ -1,0 +1,298 @@
+{
+  "title": "Rubik's Cube Example",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:06",
+      "end": "0:07",
+      "text": "Hey Amit."
+    },
+    {
+      "start": "0:07",
+      "end": "0:08",
+      "text": "Hello."
+    },
+    {
+      "start": "0:08",
+      "end": "0:11",
+      "text": "Do you know how to solve a Rubik's cube?"
+    },
+    {
+      "start": "0:11",
+      "end": "0:12",
+      "text": "No."
+    },
+    {
+      "start": "0:12",
+      "end": "0:15",
+      "text": "So you are trying to exhaust all possible configurations, is it?"
+    },
+    {
+      "start": "0:15",
+      "end": "0:17",
+      "text": "Yes I think it's easy."
+    },
+    {
+      "start": "0:17",
+      "end": "0:19",
+      "text": "How hard it can be?"
+    },
+    {
+      "start": "0:19",
+      "end": "0:21",
+      "text": "How many configurations do you think a Rubik's cube has?"
+    },
+    {
+      "start": "0:21",
+      "end": "0:23",
+      "text": "It's very small."
+    },
+    {
+      "start": "0:23",
+      "end": "0:26",
+      "text": "I suppose a couple of hundred."
+    },
+    {
+      "start": "0:26",
+      "end": "0:27",
+      "text": "You see what just happened."
+    },
+    {
+      "start": "0:27",
+      "end": "0:34",
+      "text": "Two friends are discussing; how difficult it is to solve a Rubik's cube."
+    },
+    {
+      "start": "0:34",
+      "end": "0:35",
+      "text": "Look at Rubik's cube."
+    },
+    {
+      "start": "0:35",
+      "end": "0:37",
+      "text": "Such a small object."
+    },
+    {
+      "start": "0:37",
+      "end": "0:42",
+      "text": "You see you can rotate on one of these six sides at a time."
+    },
+    {
+      "start": "0:42",
+      "end": "0:48",
+      "text": "And then you should arrive at the right configuration which is every side should have the same color."
+    },
+    {
+      "start": "0:48",
+      "end": "0:50",
+      "text": "How tough is this?"
+    },
+    {
+      "start": "0:50",
+      "end": "0:57",
+      "text": "Let me try to simplify the question and ask you all is it easy to solve 2 X 2 X 2 Rubik's"
+    },
+    {
+      "start": "0:57",
+      "end": "1:00",
+      "text": "cube which looks like this."
+    },
+    {
+      "start": "1:00",
+      "end": "1:01",
+      "text": "How easy is it?"
+    },
+    {
+      "start": "1:01",
+      "end": "1:06",
+      "text": "What are total possible combinations that you can do with 2 X 2 X 2?"
+    },
+    {
+      "start": "1:06",
+      "end": "1:10",
+      "text": "How many possibilities for 3 X 3 X 3?, 4 X 4 X 4?"
+    },
+    {
+      "start": "1:10",
+      "end": "1:14",
+      "text": "Have you seen a Rubik's cube 4 X 4 X 4?"
+    },
+    {
+      "start": "1:14",
+      "end": "1:15",
+      "text": "I have."
+    },
+    {
+      "start": "1:15",
+      "end": "1:19",
+      "text": "I have seen 8 X 8 X 8 Rubik's cube."
+    },
+    {
+      "start": "1:19",
+      "end": "1:25",
+      "text": "It looks of course more complicated but can you guess the total number of ways in which"
+    },
+    {
+      "start": "1:25",
+      "end": "1:33",
+      "text": "you can switch, rotate, look at all possible configurations of a 2 X 2 X 2 Rubik's cube?"
+    },
+    {
+      "start": "1:33",
+      "end": "1:35",
+      "text": "Let me tell you people the exact answer."
+    },
+    {
+      "start": "1:35",
+      "end": "1:36",
+      "text": "Wait for me."
+    },
+    {
+      "start": "1:36",
+      "end": "1:43",
+      "text": "I have written down all the – all possible ways in which you can enumerate a Rubik's"
+    },
+    {
+      "start": "1:43",
+      "end": "1:44",
+      "text": "cube."
+    },
+    {
+      "start": "1:44",
+      "end": "1:56",
+      "text": "So a 2 X 2 X 2 Rubik's cube has 3674160 combinations which is roughly 36 lakhs."
+    },
+    {
+      "start": "1:56",
+      "end": "1:59",
+      "text": "What about 3 X 3 X 3?"
+    },
+    {
+      "start": "1:59",
+      "end": "2:01",
+      "text": "It goes like this."
+    },
+    {
+      "start": "2:01",
+      "end": "2:06",
+      "text": "It has so many combinations."
+    },
+    {
+      "start": "2:06",
+      "end": "2:10",
+      "text": "43252003274489856000."
+    },
+    {
+      "start": "2:10",
+      "end": "2:13",
+      "text": "It's a huge number."
+    },
+    {
+      "start": "2:13",
+      "end": "2:15",
+      "text": "How many digits I can't count."
+    },
+    {
+      "start": "2:15",
+      "end": "2:16",
+      "text": "Maybe you can count."
+    },
+    {
+      "start": "2:16",
+      "end": "2:23",
+      "text": "So these many combinations and these many seconds is more than the age of the universe"
+    },
+    {
+      "start": "2:23",
+      "end": "2:25",
+      "text": "as we have been talking."
+    },
+    {
+      "start": "2:25",
+      "end": "2:27",
+      "text": "Look at the next one."
+    },
+    {
+      "start": "2:27",
+      "end": "2:30",
+      "text": "If you were to take a 4 X 4 X 4 Rubik's cube."
+    },
+    {
+      "start": "2:30",
+      "end": "2:36",
+      "text": "So just for fun let me tell you how many combinations this will entail to."
+    },
+    {
+      "start": "2:36",
+      "end": "2:47",
+      "text": "So it is going to be 74 – I don't even know the unit here."
+    },
+    {
+      "start": "2:47",
+      "end": "2:50",
+      "text": "So I am just going to enumerate. 740119684156490186987409397449857433600000000."
+    },
+    {
+      "start": "2:50",
+      "end": "2:59",
+      "text": "My  challenge would be to enumerate this pronounce"
+    },
+    {
+      "start": "2:59",
+      "end": "3:01",
+      "text": "this in a single breath."
+    },
+    {
+      "start": "3:01",
+      "end": "3:10",
+      "text": "So the point is you increase the Rubik's cube one dimension you see a humongous change in"
+    },
+    {
+      "start": "3:10",
+      "end": "3:12",
+      "text": "the number of configurations."
+    },
+    {
+      "start": "3:12",
+      "end": "3:18",
+      "text": "So people are now wondering how to solve a 3 X 3 X 3 Rubik's cube fast that itself is"
+    },
+    {
+      "start": "3:18",
+      "end": "3:19",
+      "text": "a huge question."
+    },
+    {
+      "start": "3:19",
+      "end": "3:23",
+      "text": "4 X 4 X 4 is actually out of question."
+    },
+    {
+      "start": "3:23",
+      "end": "3:29",
+      "text": "In fact you can see a whole lot of YouTube videos on speed cubing how people solve Rubik's"
+    },
+    {
+      "start": "3:29",
+      "end": "3:34",
+      "text": "cube in matter of a few seconds but the point is it requires enormous amount of practice"
+    },
+    {
+      "start": "3:34",
+      "end": "3:41",
+      "text": "if the number of sides of – if the configuration keeps increasing let us say 8 X 8 X 8 is humanly"
+    },
+    {
+      "start": "3:41",
+      "end": "3:42",
+      "text": "impossible to solve."
+    },
+    {
+      "start": "3:42",
+      "end": "3:44",
+      "text": "It has so many configurations."
+    }
+  ],
+  "timestamped": true
+}

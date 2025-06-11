@@ -1,0 +1,163 @@
+{
+  "title": "Combination with Repetition - Part 2",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:12",
+      "text": "So the solution is actually very short and sweet.  Let me explain it properly. Look at this vanilla"
+    },
+    {
+      "start": "0:12",
+      "end": "0:19",
+      "text": "chocolate and mango are the three flavors. A  possibility is two vanilla, three chocolate"
+    },
+    {
+      "start": "0:19",
+      "end": "0:29",
+      "text": "so four chocolates and four mango amounting  to ten, correct. Or let's say one vanilla,"
+    },
+    {
+      "start": "0:29",
+      "end": "0:43",
+      "text": "one chocolate and eight mangoes right or maybe all  vanillas. No chocolate and no mangoes. All these"
+    },
+    {
+      "start": "0:43",
+      "end": "0:49",
+      "text": "are valid ways of selling ten chocolates three  flavors. Now what I will do is I will visualize"
+    },
+    {
+      "start": "0:49",
+      "end": "0:58",
+      "text": "this very thing in a particular way that makes my  counting easy. What do I do? I will take one, two,"
+    },
+    {
+      "start": "0:58",
+      "end": "1:06",
+      "text": "three, four, five, six, seven, eight, nine,  ten, eleven, twelve, slots and two sticks. I"
+    },
+    {
+      "start": "1:06",
+      "end": "1:15",
+      "text": "put a stick here and maybe here which denotes  that always the first cell denotes vanilla ice"
+    },
+    {
+      "start": "1:15",
+      "end": "1:22",
+      "text": "cream zone. Second cell is the total number  of chocolate ice-cream that he sells and the"
+    },
+    {
+      "start": "1:22",
+      "end": "1:27",
+      "text": "last one denotes the total number of mango  flavored ice-cream that the shopkeeper sells."
+    },
+    {
+      "start": "1:27",
+      "end": "1:39",
+      "text": "So here in this instance two plus four plus four,  right? is basically the same as putting a stick"
+    },
+    {
+      "start": "1:39",
+      "end": "1:49",
+      "text": "in the third slot and eighth slot, correct? So  that corresponds to my first possibility. Second"
+    },
+    {
+      "start": "1:49",
+      "end": "1:58",
+      "text": "possibility is putting a stick in the second slot  and fourth slot and finally this last thing where"
+    },
+    {
+      "start": "1:58",
+      "end": "2:05",
+      "text": "he sells all vanilla is putting the sticks in  the last two slots denoting that between the"
+    },
+    {
+      "start": "2:05",
+      "end": "2:10",
+      "text": "first stick and the second stick there is nothing  which means he doesn't sell any chocolate flavored"
+    },
+    {
+      "start": "2:10",
+      "end": "2:16",
+      "text": "ice-creams and after the last stick there  is empty space which means he doesn't sell"
+    },
+    {
+      "start": "2:16",
+      "end": "2:25",
+      "text": "any mango flavored ice-creams and so the total  number of ways in which the shopkeeper can sell"
+    },
+    {
+      "start": "2:25",
+      "end": "2:34",
+      "text": "10 ice-creams of three different flavors is simply  the same question can be converted the question of"
+    },
+    {
+      "start": "2:34",
+      "end": "2:45",
+      "text": "in how many ways can you put two sticks in twelve  containers separating ten containers into three"
+    },
+    {
+      "start": "2:45",
+      "end": "2:51",
+      "text": "different categories. Correct? You have to observe  this deeply to understand what I am saying. This"
+    },
+    {
+      "start": "2:51",
+      "end": "2:58",
+      "text": "is one very important problem and it appears in  different forms in different places. You should"
+    },
+    {
+      "start": "2:58",
+      "end": "3:03",
+      "text": "quickly recognize the question and you should  also know the answer. So what's the answer?"
+    },
+    {
+      "start": "3:03",
+      "end": "3:14",
+      "text": "The answer is 10 ice-creams plus three flavors  resulting two separators. So it is three minus"
+    },
+    {
+      "start": "3:14",
+      "end": "3:20",
+      "text": "one. You see what happened here three minus one,  observe carefully, you had three ice-cream flavors"
+    },
+    {
+      "start": "3:20",
+      "end": "3:27",
+      "text": "and hence you should put two sticks so that you  get three categories. If there were to be five"
+    },
+    {
+      "start": "3:27",
+      "end": "3:33",
+      "text": "ice-cream flavors you should put four sticks. So  it is ten plus three minus one and from that you"
+    },
+    {
+      "start": "3:33",
+      "end": "3:44",
+      "text": "should choose two placeholders where you can put  the stick. So the answer is 12C2 the question and"
+    },
+    {
+      "start": "3:44",
+      "end": "3:55",
+      "text": "in general if you were to sell r ice-cream flavors  okay and then if you need to sell it to n kids"
+    },
+    {
+      "start": "3:55",
+      "end": "4:02",
+      "text": "namely n ice-creams and the number of flavors is  r the total number of ways in which you can sell"
+    },
+    {
+      "start": "4:02",
+      "end": "4:13",
+      "text": "this happens to be n plus r minus 1 C r minus  1. This concept goes by the name combinations"
+    },
+    {
+      "start": "4:13",
+      "end": "4:20",
+      "text": "with repetition. A very important one. We'll  see more examples of this in the next video."
+    }
+  ],
+  "timestamped": true
+}

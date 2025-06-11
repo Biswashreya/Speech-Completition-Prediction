@@ -1,0 +1,103 @@
+{
+  "title": "Factorial Example",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:13",
+      "text": "A last example. Let us watch this video clip. In how many ways can our friends take their"
+    },
+    {
+      "start": "0:13",
+      "end": "0:20",
+      "text": "picture? One is of course this way and the  other way is with their positions swapped."
+    },
+    {
+      "start": "0:20",
+      "end": "0:27",
+      "text": "So there are precisely two ways in which they  can take their picture. With three people the"
+    },
+    {
+      "start": "0:27",
+      "end": "0:34",
+      "text": "possibilities are precisely six and that is  because three times two times one is six."
+    },
+    {
+      "start": "0:34",
+      "end": "0:46",
+      "text": "Let us now see all the six possibilities. You see with four people the possibilities"
+    },
+    {
+      "start": "0:46",
+      "end": "0:52",
+      "text": "are simply four into three into two into one  which happens to be twenty four. So what's"
+    },
+    {
+      "start": "0:52",
+      "end": "0:59",
+      "text": "the possibility for five people? As you saw  one person has just one possibility and two"
+    },
+    {
+      "start": "0:59",
+      "end": "1:07",
+      "text": "had two possibilities. Three was six and four  was twenty four but as you can see five turns"
+    },
+    {
+      "start": "1:07",
+      "end": "1:17",
+      "text": "out to be 120. 120 isn't all that big. What  if there were six people? What if there were"
+    },
+    {
+      "start": "1:17",
+      "end": "1:24",
+      "text": "ten? What if there were fifteen, and what if  there were twenty? On average as you can see"
+    },
+    {
+      "start": "1:24",
+      "end": "1:32",
+      "text": "they are roughly taking one second per shuffle.  How many seconds will it take for them to go"
+    },
+    {
+      "start": "1:32",
+      "end": "1:39",
+      "text": "ahead with all possible pictures? 120 seconds.  That's right but what is there were more people."
+    },
+    {
+      "start": "2:11",
+      "end": "2:21",
+      "text": "So we saw that one person can take a photo  in one way. Two people in two ways. Three in"
+    },
+    {
+      "start": "2:21",
+      "end": "2:28",
+      "text": "six ways. Four in twenty four ways. Five  in 120 ways and ten was a big number. So"
+    },
+    {
+      "start": "2:28",
+      "end": "2:38",
+      "text": "was fifteen people and twenty was so big that  if you were to take a picture every second of"
+    },
+    {
+      "start": "2:38",
+      "end": "2:45",
+      "text": "these twenty people it would take the age of  the universe. Yes the point we are trying to"
+    },
+    {
+      "start": "2:45",
+      "end": "2:51",
+      "text": "make here is that certain things can be very  complicated although the first few cases looks"
+    },
+    {
+      "start": "2:51",
+      "end": "3:00",
+      "text": "very simple. So one has to be very careful  on the number of objects in a system and why"
+    },
+    {
+      "start": "3:00",
+      "end": "3:08",
+      "text": "are we talking about this. We are talking in the  sense of computing. Let's see how and what of it."
+    }
+  ],
+  "timestamped": true
+}

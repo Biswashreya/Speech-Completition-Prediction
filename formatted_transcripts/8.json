@@ -1,0 +1,353 @@
+{
+  "title": "Problems on Rule of Sum and Rule of Product",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+  "transcript": [
+    {
+      "start": "0:04",
+      "end": "0:13",
+      "text": "The professor has introduced rule of sum and rule  of product. Let us see more examples now. Alice"
+    },
+    {
+      "start": "0:13",
+      "end": "0:21",
+      "text": "goes to the library to read a book and the library  has books of different genres. Alice goes to the"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "shelf where there are seven science fictions, five  mystery books, and two journals but Alice wants to"
+    },
+    {
+      "start": "0:29",
+      "end": "0:39",
+      "text": "read precisely one book. Now the question here is  how many choices does Alice have? So you see Alice"
+    },
+    {
+      "start": "0:39",
+      "end": "0:47",
+      "text": "wants to read precisely one book that is very  important. So she has seven science fictions in"
+    },
+    {
+      "start": "0:47",
+      "end": "0:56",
+      "text": "her choices, five mystery books, and two journals.  So among all these she can choose precisely one."
+    },
+    {
+      "start": "0:56",
+      "end": "1:09",
+      "text": "So the number of choices sums up to be seven plus  five plus two. It is very obvious to see why we do"
+    },
+    {
+      "start": "1:09",
+      "end": "1:17",
+      "text": "a plus here because she wants to read precisely  one book. So Alice has fourteen choices to make."
+    },
+    {
+      "start": "1:17",
+      "end": "1:29",
+      "text": "Let us see another example. In the town of Germany  there are eight daily newspapers and four weekly"
+    },
+    {
+      "start": "1:29",
+      "end": "1:38",
+      "text": "magazines printed. Peter wants to subscribe to  exactly one newspaper and one magazine. How many"
+    },
+    {
+      "start": "1:38",
+      "end": "1:48",
+      "text": "choices does he have? So Peter wants a newspaper  and a magazine. I am stressing upon the word and"
+    },
+    {
+      "start": "1:48",
+      "end": "1:57",
+      "text": "here because he wants a newspaper and a magazine.  So he has eight newspapers and four magazines"
+    },
+    {
+      "start": "1:57",
+      "end": "2:05",
+      "text": "to choose from. And therefore, it is eight  multiplied with four which is thirty two choices"
+    },
+    {
+      "start": "2:05",
+      "end": "2:12",
+      "text": "and out of these thirty two choices he is  going to pick a newspaper and a magazine."
+    },
+    {
+      "start": "2:12",
+      "end": "2:21",
+      "text": "Let me just change the question here slightly.  Suppose Peter wants a newspaper or a magazine."
+    },
+    {
+      "start": "2:21",
+      "end": "2:32",
+      "text": "You see the word and became or. Here he would  have eight plus four choices which is twelve."
+    },
+    {
+      "start": "2:34",
+      "end": "2:43",
+      "text": "Let us move on to another example where in  a society there are eight men and six women"
+    },
+    {
+      "start": "2:43",
+      "end": "2:55",
+      "text": "contesting in an election. How many ways can the  people choose a leader out of these. So there are"
+    },
+    {
+      "start": "2:55",
+      "end": "3:03",
+      "text": "eight men and six women. So the people have eight  plus six that is fourteen ways to choose from"
+    },
+    {
+      "start": "3:03",
+      "end": "3:11",
+      "text": "because they wanted just one leader and hence  it is a plus operation here. What if the people"
+    },
+    {
+      "start": "3:11",
+      "end": "3:19",
+      "text": "wanted two leaders, a man and a women? I hope  it would be very obvious to see that it would"
+    },
+    {
+      "start": "3:19",
+      "end": "3:27",
+      "text": "be eight into six which is forty eight choices.  If they want precisely one leader then it is"
+    },
+    {
+      "start": "3:27",
+      "end": "3:33",
+      "text": "fourteen choices and if they want two leaders a  man and a women then it is forty eight choices."
+    },
+    {
+      "start": "3:33",
+      "end": "3:42",
+      "text": "Let us move on to another question. How many  positive divisors does two thousand have?"
+    },
+    {
+      "start": "3:42",
+      "end": "3:52",
+      "text": "Before going to the answer let me make it very  clear what is a divisor. A divisor is an integer"
+    },
+    {
+      "start": "3:52",
+      "end": "4:00",
+      "text": "which divides another number. With examples it  will be more clear. Consider the number four;"
+    },
+    {
+      "start": "4:00",
+      "end": "4:11",
+      "text": "two divides four, one divides four, three does  not divide four, and four also divides four."
+    },
+    {
+      "start": "4:11",
+      "end": "4:21",
+      "text": "So you see these numbers one, two & four  are the divisors of four and three is not"
+    },
+    {
+      "start": "4:21",
+      "end": "4:29",
+      "text": "a divisor of four because it does not divide  four. Five divides ten, hence it is a divisor"
+    },
+    {
+      "start": "4:29",
+      "end": "4:40",
+      "text": "of ten. Divisors are also called as factors. So let us get back to the question. How many"
+    },
+    {
+      "start": "4:40",
+      "end": "4:46",
+      "text": "positive divisors does two thousand have? Let  me write two thousand as a product of its prime"
+    },
+    {
+      "start": "4:46",
+      "end": "4:56",
+      "text": "factors. So two thousand is equal to two into  two into two into two into five into five into"
+    },
+    {
+      "start": "4:56",
+      "end": "5:06",
+      "text": "five. Yes. So this is equal to two to the four  into five cube. So this is same as two thousand."
+    },
+    {
+      "start": "5:06",
+      "end": "5:17",
+      "text": "So we see that divisor of two thousand must be of  the form two to the a into five to the b. Now you"
+    },
+    {
+      "start": "5:17",
+      "end": "5:28",
+      "text": "see these a and b they must be integers where a  lies between zero to four and b lies between zero"
+    },
+    {
+      "start": "5:28",
+      "end": "5:39",
+      "text": "to three. So a and b lie in a particular range. Now how many divisors do we get? We can answer"
+    },
+    {
+      "start": "5:39",
+      "end": "5:47",
+      "text": "this question by checking the possibilities for a  and b. So you see that a has five possibilities;"
+    },
+    {
+      "start": "5:47",
+      "end": "5:54",
+      "text": "zero, one, two, three, and four and b  has four possibilities that is zero,"
+    },
+    {
+      "start": "5:54",
+      "end": "6:01",
+      "text": "one, two, and three. Supposing a takes the  value zero so two to the zero will be one,"
+    },
+    {
+      "start": "6:01",
+      "end": "6:14",
+      "text": "then b can take any value from zero to three,  five, twenty five, one twenty five and also"
+    },
+    {
+      "start": "6:14",
+      "end": "6:26",
+      "text": "zero. So all these are factors of a divisor of two  thousand and if b is zero then this becomes one"
+    },
+    {
+      "start": "6:26",
+      "end": "6:40",
+      "text": "and a can take the values between zero to four.  Let me just write some divisors two thousand. one,"
+    },
+    {
+      "start": "6:40",
+      "end": "6:50",
+      "text": "two, ten, twenty five, one twenty five, and so on. So we have one twenty five possibilities for a"
+    },
+    {
+      "start": "6:50",
+      "end": "6:58",
+      "text": "and four possibilities for b. So how many  possibilities are there for a and b? It"
+    },
+    {
+      "start": "6:58",
+      "end": "7:07",
+      "text": "is precisely one twenty five into four which is  twenty and this answers the question that there"
+    },
+    {
+      "start": "7:07",
+      "end": "7:15",
+      "text": "are twenty positive divisors for two thousand. Let us now see another example. Charlie visits an"
+    },
+    {
+      "start": "7:15",
+      "end": "7:23",
+      "text": "ice cream parlor to buy one and he sees that there  are three types of cones, four flavors of ice"
+    },
+    {
+      "start": "7:23",
+      "end": "7:32",
+      "text": "creams and two toppings. So how many choices does  Charlie have to buy an ice cream? Let me enumerate"
+    },
+    {
+      "start": "7:32",
+      "end": "7:41",
+      "text": "all of them. So let this represent Charlie. So he  wants to buy an ice cream. He has three choices"
+    },
+    {
+      "start": "7:41",
+      "end": "7:50",
+      "text": "of cones and I'll write them as C1, C2 and C3.  So for each cone he has four choices for the ice"
+    },
+    {
+      "start": "7:50",
+      "end": "8:01",
+      "text": "cream flavors like this and for each flavor there  can be two toppings. So this represents toppings"
+    },
+    {
+      "start": "8:01",
+      "end": "8:11",
+      "text": "and this represents flavors. So for this cone  he can choose this scoop and this topping and"
+    },
+    {
+      "start": "8:11",
+      "end": "8:18",
+      "text": "so on. It continues for the others as well. So how many choices does Charlie have? He"
+    },
+    {
+      "start": "8:18",
+      "end": "8:28",
+      "text": "can choose between three cones, four flavors  and two toppings. So you see he must choose"
+    },
+    {
+      "start": "8:28",
+      "end": "8:35",
+      "text": "one each among the three. So we have by the  rule of product as three into four into two"
+    },
+    {
+      "start": "8:35",
+      "end": "8:42",
+      "text": "which is twenty four choices. So he has twenty  four possibilities of choosing an ice cream."
+    },
+    {
+      "start": "8:42",
+      "end": "8:50",
+      "text": "Let's move on to the question. In how many  ways can we draw a face card from a deck. As"
+    },
+    {
+      "start": "8:50",
+      "end": "8:58",
+      "text": "we all know in a deck of fifty two cards there  are four suits; the clubs, diamonds, hearts,"
+    },
+    {
+      "start": "8:58",
+      "end": "9:12",
+      "text": "and the spades. And the three face cards are J,  Q, and K. So for each of them we have four like"
+    },
+    {
+      "start": "9:12",
+      "end": "9:20",
+      "text": "this. So these are four. These are four, and these  are four. And we want to draw just one face card"
+    },
+    {
+      "start": "9:20",
+      "end": "9:28",
+      "text": "among all of these and so there are four plus four  plus four choices which comes up to twelve. So in"
+    },
+    {
+      "start": "9:28",
+      "end": "9:35",
+      "text": "twelve ways we can choose a face card from a deck. So let me now sum up what we were discussing all"
+    },
+    {
+      "start": "9:35",
+      "end": "9:43",
+      "text": "these while that is the rule of sum and the rule  of product. Rule of sum goes like this if there"
+    },
+    {
+      "start": "9:43",
+      "end": "9:49",
+      "text": "are n choices for one event and m choices for  another event and both cannot be done at the"
+    },
+    {
+      "start": "9:49",
+      "end": "9:58",
+      "text": "same time then there are n plus m choices for  one event. And rule of product goes like this,"
+    },
+    {
+      "start": "9:58",
+      "end": "10:05",
+      "text": "if there are n choices of one event and m  choices of another event then there are n"
+    },
+    {
+      "start": "10:05",
+      "end": "10:13",
+      "text": "into m choices for both these events to occur. In the previous case when we were discussing"
+    },
+    {
+      "start": "10:13",
+      "end": "10:23",
+      "text": "the sum only one event can occur and hence it is a  plus. In the second one we want both of the events"
+    },
+    {
+      "start": "10:23",
+      "end": "10:29",
+      "text": "to occur and hence it's the product. So this goes  with the rule of sum and the rule of product."
+    }
+  ],
+  "timestamped": true
+}
