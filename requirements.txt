@@ -5,4 +5,4 @@ scikit-learn
 hdbscan
 tqdm
 umap
-nltk
+spacy
