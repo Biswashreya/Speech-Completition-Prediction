@@ -6,3 +6,4 @@ hdbscan
 tqdm
 umap
 spacy
+gensim
