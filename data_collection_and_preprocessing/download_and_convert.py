@@ -7,7 +7,7 @@ import time
 VIDEO_LINKS_FILE = "video_links.txt"
 TITLES_FILE = "titles.txt"
 OUTPUT_DIR = "formatted_transcripts"
-START_INDEX = 163
+START_INDEX = 210 
 MAX_RETRIES = 1
 BASE_WAIT = 1
 
@@ -32,7 +32,7 @@ def convert_vtt_to_json(vtt_path, output_path, title):
     result = {
         "title": title,
         "source": "NPTEL",
-        "course": "Discrete Mathematics by Prof Sudarshan Iyengar",
+        "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
         "transcript": transcript,
         "timestamped": True,
     }

@@ -1,0 +1,3868 @@
+{
+  "title": "Lec 22: Natural numbers, divisors",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "welcome to the NP tell MOOC on discrete"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "welcome to the NP tell MOOC on discrete mathematics this is the first lecture on"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "mathematics this is the first lecture on"
+    },
+    {
+      "start": "0:34",
+      "end": "0:38",
+      "text": "mathematics this is the first lecture on number theory in number theory we study"
+    },
+    {
+      "start": "0:38",
+      "end": "0:38",
+      "text": "number theory in number theory we study"
+    },
+    {
+      "start": "0:38",
+      "end": "0:43",
+      "text": "number theory in number theory we study the theory on integers integers along"
+    },
+    {
+      "start": "0:43",
+      "end": "0:43",
+      "text": "the theory on integers integers along"
+    },
+    {
+      "start": "0:43",
+      "end": "0:45",
+      "text": "the theory on integers integers along with the two operators multiplication"
+    },
+    {
+      "start": "0:45",
+      "end": "0:45",
+      "text": "with the two operators multiplication"
+    },
+    {
+      "start": "0:45",
+      "end": "0:48",
+      "text": "with the two operators multiplication and addition and the two constant 0 and"
+    },
+    {
+      "start": "0:48",
+      "end": "0:48",
+      "text": "and addition and the two constant 0 and"
+    },
+    {
+      "start": "0:48",
+      "end": "0:52",
+      "text": "and addition and the two constant 0 and 1 you would see in the module on"
+    },
+    {
+      "start": "0:52",
+      "end": "0:52",
+      "text": "1 you would see in the module on"
+    },
+    {
+      "start": "0:52",
+      "end": "0:56",
+      "text": "1 you would see in the module on algebraic structures that forms what is"
+    },
+    {
+      "start": "0:56",
+      "end": "0:56",
+      "text": "algebraic structures that forms what is"
+    },
+    {
+      "start": "0:56",
+      "end": "0:59",
+      "text": "algebraic structures that forms what is called an integral domain so number"
+    },
+    {
+      "start": "0:59",
+      "end": "0:59",
+      "text": "called an integral domain so number"
+    },
+    {
+      "start": "0:59",
+      "end": "1:00",
+      "text": "called an integral domain so number theory is the study of this integral"
+    },
+    {
+      "start": "1:00",
+      "end": "1:00",
+      "text": "theory is the study of this integral"
+    },
+    {
+      "start": "1:00",
+      "end": "1:10",
+      "text": "theory is the study of this integral domain so in number theory we deal with"
+    },
+    {
+      "start": "1:10",
+      "end": "1:10",
+      "text": "domain so in number theory we deal with"
+    },
+    {
+      "start": "1:10",
+      "end": "1:19",
+      "text": "domain so in number theory we deal with a set of integers"
+    },
+    {
+      "start": "1:22",
+      "end": "1:22",
+      "text": "and operators multiplication in"
+    },
+    {
+      "start": "1:22",
+      "end": "1:25",
+      "text": "and operators multiplication in tradition along with zero and one"
+    },
+    {
+      "start": "1:25",
+      "end": "1:25",
+      "text": "tradition along with zero and one"
+    },
+    {
+      "start": "1:25",
+      "end": "1:35",
+      "text": "tradition along with zero and one together these form an integral domain"
+    },
+    {
+      "start": "1:44",
+      "end": "1:44",
+      "text": "for two integers a and B where is not"
+    },
+    {
+      "start": "1:44",
+      "end": "1:59",
+      "text": "for two integers a and B where is not equal to zero we say that a divides B if"
+    },
+    {
+      "start": "1:59",
+      "end": "1:59",
+      "text": "equal to zero we say that a divides B if"
+    },
+    {
+      "start": "1:59",
+      "end": "2:07",
+      "text": "equal to zero we say that a divides B if there exists an integer X so that B"
+    },
+    {
+      "start": "2:07",
+      "end": "2:07",
+      "text": "there exists an integer X so that B"
+    },
+    {
+      "start": "2:07",
+      "end": "2:11",
+      "text": "there exists an integer X so that B equals a X that is a board multiplying a"
+    },
+    {
+      "start": "2:11",
+      "end": "2:11",
+      "text": "equals a X that is a board multiplying a"
+    },
+    {
+      "start": "2:11",
+      "end": "2:14",
+      "text": "equals a X that is a board multiplying a with some integer X we would get B that"
+    },
+    {
+      "start": "2:14",
+      "end": "2:14",
+      "text": "with some integer X we would get B that"
+    },
+    {
+      "start": "2:14",
+      "end": "2:16",
+      "text": "with some integer X we would get B that is when we said that a divides B and"
+    },
+    {
+      "start": "2:16",
+      "end": "2:16",
+      "text": "is when we said that a divides B and"
+    },
+    {
+      "start": "2:16",
+      "end": "2:20",
+      "text": "is when we said that a divides B and this was denoted in this fashion using a"
+    },
+    {
+      "start": "2:20",
+      "end": "2:20",
+      "text": "this was denoted in this fashion using a"
+    },
+    {
+      "start": "2:20",
+      "end": "2:24",
+      "text": "this was denoted in this fashion using a vertical bar this notation asserts that"
+    },
+    {
+      "start": "2:24",
+      "end": "2:24",
+      "text": "vertical bar this notation asserts that"
+    },
+    {
+      "start": "2:24",
+      "end": "2:29",
+      "text": "vertical bar this notation asserts that a divides B the negation of this that is"
+    },
+    {
+      "start": "2:29",
+      "end": "2:29",
+      "text": "a divides B the negation of this that is"
+    },
+    {
+      "start": "2:29",
+      "end": "2:33",
+      "text": "a divides B the negation of this that is the negation of a divides B this often"
+    },
+    {
+      "start": "2:33",
+      "end": "2:33",
+      "text": "the negation of a divides B this often"
+    },
+    {
+      "start": "2:33",
+      "end": "2:38",
+      "text": "the negation of a divides B this often written like this across across the"
+    },
+    {
+      "start": "2:38",
+      "end": "2:38",
+      "text": "written like this across across the"
+    },
+    {
+      "start": "2:38",
+      "end": "2:40",
+      "text": "written like this across across the vertical bar to indicate that a does not"
+    },
+    {
+      "start": "2:40",
+      "end": "2:40",
+      "text": "vertical bar to indicate that a does not"
+    },
+    {
+      "start": "2:40",
+      "end": "2:44",
+      "text": "vertical bar to indicate that a does not divide B so let us see some results"
+    },
+    {
+      "start": "2:44",
+      "end": "2:44",
+      "text": "divide B so let us see some results"
+    },
+    {
+      "start": "2:44",
+      "end": "2:49",
+      "text": "divide B so let us see some results related to division if a divides B then"
+    },
+    {
+      "start": "2:49",
+      "end": "2:49",
+      "text": "related to division if a divides B then"
+    },
+    {
+      "start": "2:49",
+      "end": "2:54",
+      "text": "related to division if a divides B then for every C which is an integer it is"
+    },
+    {
+      "start": "2:54",
+      "end": "2:54",
+      "text": "for every C which is an integer it is"
+    },
+    {
+      "start": "2:54",
+      "end": "2:59",
+      "text": "for every C which is an integer it is the case that a divides B see this is"
+    },
+    {
+      "start": "2:59",
+      "end": "2:59",
+      "text": "the case that a divides B see this is"
+    },
+    {
+      "start": "2:59",
+      "end": "3:02",
+      "text": "the case that a divides B see this is easy to show if a divides B then be"
+    },
+    {
+      "start": "3:02",
+      "end": "3:02",
+      "text": "easy to show if a divides B then be"
+    },
+    {
+      "start": "3:02",
+      "end": "3:11",
+      "text": "easy to show if a divides B then be equal to X for some integer X"
+    },
+    {
+      "start": "3:20",
+      "end": "3:20",
+      "text": "then for NEC we have B equal to a X"
+    },
+    {
+      "start": "3:20",
+      "end": "3:26",
+      "text": "then for NEC we have B equal to a X therefore BC equal to ax and OC which by"
+    },
+    {
+      "start": "3:26",
+      "end": "3:26",
+      "text": "therefore BC equal to ax and OC which by"
+    },
+    {
+      "start": "3:26",
+      "end": "3:29",
+      "text": "therefore BC equal to ax and OC which by associativity of multiplication can be"
+    },
+    {
+      "start": "3:29",
+      "end": "3:29",
+      "text": "associativity of multiplication can be"
+    },
+    {
+      "start": "3:29",
+      "end": "3:35",
+      "text": "associativity of multiplication can be written as X C times a thus implies that"
+    },
+    {
+      "start": "3:35",
+      "end": "3:35",
+      "text": "written as X C times a thus implies that"
+    },
+    {
+      "start": "3:35",
+      "end": "3:40",
+      "text": "written as X C times a thus implies that a divides B C so that was easy to show"
+    },
+    {
+      "start": "3:40",
+      "end": "3:40",
+      "text": "a divides B C so that was easy to show"
+    },
+    {
+      "start": "3:40",
+      "end": "3:44",
+      "text": "a divides B C so that was easy to show another tussle does this if a divides B"
+    },
+    {
+      "start": "3:44",
+      "end": "3:44",
+      "text": "another tussle does this if a divides B"
+    },
+    {
+      "start": "3:44",
+      "end": "3:54",
+      "text": "another tussle does this if a divides B &amp; B divides C then a divides C in other"
+    },
+    {
+      "start": "3:54",
+      "end": "3:54",
+      "text": "&amp; B divides C then a divides C in other"
+    },
+    {
+      "start": "3:54",
+      "end": "4:09",
+      "text": "&amp; B divides C then a divides C in other words the divides relation is transitive"
+    },
+    {
+      "start": "4:13",
+      "end": "4:13",
+      "text": "this is also easy to show a divides B"
+    },
+    {
+      "start": "4:13",
+      "end": "4:19",
+      "text": "this is also easy to show a divides B implies that for some integer X be equal"
+    },
+    {
+      "start": "4:19",
+      "end": "4:19",
+      "text": "implies that for some integer X be equal"
+    },
+    {
+      "start": "4:19",
+      "end": "4:25",
+      "text": "implies that for some integer X be equal to ax similarly B divides C implies that"
+    },
+    {
+      "start": "4:25",
+      "end": "4:25",
+      "text": "to ax similarly B divides C implies that"
+    },
+    {
+      "start": "4:25",
+      "end": "4:33",
+      "text": "to ax similarly B divides C implies that for some integer Y C equal to B Y"
+    },
+    {
+      "start": "4:33",
+      "end": "4:33",
+      "text": "for some integer Y C equal to B Y"
+    },
+    {
+      "start": "4:33",
+      "end": "4:44",
+      "text": "for some integer Y C equal to B Y therefore C can be written as the"
+    },
+    {
+      "start": "4:44",
+      "end": "4:44",
+      "text": "therefore C can be written as the"
+    },
+    {
+      "start": "4:44",
+      "end": "4:48",
+      "text": "therefore C can be written as the product of X Y and a which means there"
+    },
+    {
+      "start": "4:48",
+      "end": "4:48",
+      "text": "product of X Y and a which means there"
+    },
+    {
+      "start": "4:48",
+      "end": "4:50",
+      "text": "product of X Y and a which means there is an integer so that a into that"
+    },
+    {
+      "start": "4:50",
+      "end": "4:50",
+      "text": "is an integer so that a into that"
+    },
+    {
+      "start": "4:50",
+      "end": "4:53",
+      "text": "is an integer so that a into that integer is C so that implies that it"
+    },
+    {
+      "start": "4:53",
+      "end": "4:53",
+      "text": "integer is C so that implies that it"
+    },
+    {
+      "start": "4:53",
+      "end": "4:59",
+      "text": "integer is C so that implies that it divides C the third result is this if a"
+    },
+    {
+      "start": "4:59",
+      "end": "4:59",
+      "text": "divides C the third result is this if a"
+    },
+    {
+      "start": "4:59",
+      "end": "5:10",
+      "text": "divides C the third result is this if a divides B and a divides C then"
+    },
+    {
+      "start": "5:18",
+      "end": "5:18",
+      "text": "for any pqube that are integers it"
+    },
+    {
+      "start": "5:18",
+      "end": "5:21",
+      "text": "for any pqube that are integers it divides bp+"
+    },
+    {
+      "start": "5:21",
+      "end": "5:21",
+      "text": "divides bp+"
+    },
+    {
+      "start": "5:21",
+      "end": "5:25",
+      "text": "divides bp+ seeker that is if a divides B and a"
+    },
+    {
+      "start": "5:25",
+      "end": "5:25",
+      "text": "seeker that is if a divides B and a"
+    },
+    {
+      "start": "5:25",
+      "end": "5:29",
+      "text": "seeker that is if a divides B and a Dwight C then it will divide any linear"
+    },
+    {
+      "start": "5:29",
+      "end": "5:29",
+      "text": "Dwight C then it will divide any linear"
+    },
+    {
+      "start": "5:29",
+      "end": "5:31",
+      "text": "Dwight C then it will divide any linear combination of B and C where the linear"
+    },
+    {
+      "start": "5:31",
+      "end": "5:31",
+      "text": "combination of B and C where the linear"
+    },
+    {
+      "start": "5:31",
+      "end": "5:35",
+      "text": "combination of B and C where the linear combination has integer coefficients P"
+    },
+    {
+      "start": "5:35",
+      "end": "5:35",
+      "text": "combination has integer coefficients P"
+    },
+    {
+      "start": "5:35",
+      "end": "5:36",
+      "text": "combination has integer coefficients P and Q are the coefficients of the linear"
+    },
+    {
+      "start": "5:36",
+      "end": "5:36",
+      "text": "and Q are the coefficients of the linear"
+    },
+    {
+      "start": "5:36",
+      "end": "5:42",
+      "text": "and Q are the coefficients of the linear combination these are integers so any"
+    },
+    {
+      "start": "5:42",
+      "end": "5:42",
+      "text": "combination these are integers so any"
+    },
+    {
+      "start": "5:42",
+      "end": "5:44",
+      "text": "combination these are integers so any such linear combination of B and C will"
+    },
+    {
+      "start": "5:44",
+      "end": "5:44",
+      "text": "such linear combination of B and C will"
+    },
+    {
+      "start": "5:44",
+      "end": "5:47",
+      "text": "such linear combination of B and C will be divided by a how do we show this"
+    },
+    {
+      "start": "5:47",
+      "end": "5:47",
+      "text": "be divided by a how do we show this"
+    },
+    {
+      "start": "5:47",
+      "end": "5:51",
+      "text": "be divided by a how do we show this what's given as this a divides B and a"
+    },
+    {
+      "start": "5:51",
+      "end": "5:51",
+      "text": "what's given as this a divides B and a"
+    },
+    {
+      "start": "5:51",
+      "end": "5:57",
+      "text": "what's given as this a divides B and a divides C if this is the case then by"
+    },
+    {
+      "start": "5:57",
+      "end": "5:57",
+      "text": "divides C if this is the case then by"
+    },
+    {
+      "start": "5:57",
+      "end": "5:58",
+      "text": "divides C if this is the case then by the definition we know that there are"
+    },
+    {
+      "start": "5:58",
+      "end": "5:58",
+      "text": "the definition we know that there are"
+    },
+    {
+      "start": "5:58",
+      "end": "6:06",
+      "text": "the definition we know that there are integers x and y so that B equal to a X"
+    },
+    {
+      "start": "6:06",
+      "end": "6:06",
+      "text": "integers x and y so that B equal to a X"
+    },
+    {
+      "start": "6:06",
+      "end": "6:14",
+      "text": "integers x and y so that B equal to a X and C equal to a by B is a multiple of a"
+    },
+    {
+      "start": "6:14",
+      "end": "6:14",
+      "text": "and C equal to a by B is a multiple of a"
+    },
+    {
+      "start": "6:14",
+      "end": "6:18",
+      "text": "and C equal to a by B is a multiple of a and C is also a multiple of a in that"
+    },
+    {
+      "start": "6:18",
+      "end": "6:18",
+      "text": "and C is also a multiple of a in that"
+    },
+    {
+      "start": "6:18",
+      "end": "6:26",
+      "text": "and C is also a multiple of a in that case for any X Y we can say for every PQ"
+    },
+    {
+      "start": "6:26",
+      "end": "6:26",
+      "text": "case for any X Y we can say for every PQ"
+    },
+    {
+      "start": "6:26",
+      "end": "6:35",
+      "text": "case for any X Y we can say for every PQ which are also integers BP + CQ this a"
+    },
+    {
+      "start": "6:35",
+      "end": "6:35",
+      "text": "which are also integers BP + CQ this a"
+    },
+    {
+      "start": "6:35",
+      "end": "6:46",
+      "text": "which are also integers BP + CQ this a into px + y q"
+    },
+    {
+      "start": "6:49",
+      "end": "6:49",
+      "text": "for any pair of integers P and Q we can"
+    },
+    {
+      "start": "6:49",
+      "end": "6:55",
+      "text": "for any pair of integers P and Q we can write B P plus EQ as Sun AP X plus iy q"
+    },
+    {
+      "start": "6:55",
+      "end": "6:55",
+      "text": "write B P plus EQ as Sun AP X plus iy q"
+    },
+    {
+      "start": "6:55",
+      "end": "7:03",
+      "text": "write B P plus EQ as Sun AP X plus iy q because b is ax and CS a y which implies"
+    },
+    {
+      "start": "7:03",
+      "end": "7:03",
+      "text": "because b is ax and CS a y which implies"
+    },
+    {
+      "start": "7:03",
+      "end": "7:10",
+      "text": "because b is ax and CS a y which implies that for all integers P and Q their exes"
+    },
+    {
+      "start": "7:10",
+      "end": "7:10",
+      "text": "that for all integers P and Q their exes"
+    },
+    {
+      "start": "7:10",
+      "end": "7:16",
+      "text": "that for all integers P and Q their exes x and y such that B P plus C Q Wells a"
+    },
+    {
+      "start": "7:16",
+      "end": "7:16",
+      "text": "x and y such that B P plus C Q Wells a"
+    },
+    {
+      "start": "7:16",
+      "end": "7:24",
+      "text": "x and y such that B P plus C Q Wells a into xB plus y that's because this"
+    },
+    {
+      "start": "7:24",
+      "end": "7:24",
+      "text": "into xB plus y that's because this"
+    },
+    {
+      "start": "7:24",
+      "end": "7:27",
+      "text": "into xB plus y that's because this statement is a weakest treatment in"
+    },
+    {
+      "start": "7:27",
+      "end": "7:27",
+      "text": "statement is a weakest treatment in"
+    },
+    {
+      "start": "7:27",
+      "end": "7:32",
+      "text": "statement is a weakest treatment in comparison to the one above or in other"
+    },
+    {
+      "start": "7:32",
+      "end": "7:32",
+      "text": "comparison to the one above or in other"
+    },
+    {
+      "start": "7:32",
+      "end": "7:36",
+      "text": "comparison to the one above or in other words for every pair of integers P and Q"
+    },
+    {
+      "start": "7:36",
+      "end": "7:36",
+      "text": "words for every pair of integers P and Q"
+    },
+    {
+      "start": "7:36",
+      "end": "7:45",
+      "text": "words for every pair of integers P and Q be p + CQ this is said for some integer"
+    },
+    {
+      "start": "7:45",
+      "end": "7:45",
+      "text": "be p + CQ this is said for some integer"
+    },
+    {
+      "start": "7:45",
+      "end": "7:54",
+      "text": "be p + CQ this is said for some integer set in other words for all P Q which are"
+    },
+    {
+      "start": "7:54",
+      "end": "7:54",
+      "text": "set in other words for all P Q which are"
+    },
+    {
+      "start": "7:54",
+      "end": "7:59",
+      "text": "set in other words for all P Q which are integers the B + C Q is a multiple of a"
+    },
+    {
+      "start": "7:59",
+      "end": "7:59",
+      "text": "integers the B + C Q is a multiple of a"
+    },
+    {
+      "start": "7:59",
+      "end": "8:05",
+      "text": "integers the B + C Q is a multiple of a or a divides B + C Q and that is"
+    },
+    {
+      "start": "8:05",
+      "end": "8:05",
+      "text": "or a divides B + C Q and that is"
+    },
+    {
+      "start": "8:05",
+      "end": "8:08",
+      "text": "or a divides B + C Q and that is precisely what we wanted to show for any"
+    },
+    {
+      "start": "8:08",
+      "end": "8:08",
+      "text": "precisely what we wanted to show for any"
+    },
+    {
+      "start": "8:08",
+      "end": "8:11",
+      "text": "precisely what we wanted to show for any pair of integers P and Q the linear"
+    },
+    {
+      "start": "8:11",
+      "end": "8:11",
+      "text": "pair of integers P and Q the linear"
+    },
+    {
+      "start": "8:11",
+      "end": "8:15",
+      "text": "pair of integers P and Q the linear combination of B and C is a multiple of"
+    },
+    {
+      "start": "8:15",
+      "end": "8:15",
+      "text": "combination of B and C is a multiple of"
+    },
+    {
+      "start": "8:15",
+      "end": "8:20",
+      "text": "combination of B and C is a multiple of a our fourth statement is this if a"
+    },
+    {
+      "start": "8:20",
+      "end": "8:20",
+      "text": "a our fourth statement is this if a"
+    },
+    {
+      "start": "8:20",
+      "end": "8:29",
+      "text": "a our fourth statement is this if a divides B &amp; B divides a then equals plus"
+    },
+    {
+      "start": "8:29",
+      "end": "8:29",
+      "text": "divides B &amp; B divides a then equals plus"
+    },
+    {
+      "start": "8:29",
+      "end": "8:34",
+      "text": "divides B &amp; B divides a then equals plus or minus P if a divides B then a into"
+    },
+    {
+      "start": "8:34",
+      "end": "8:34",
+      "text": "or minus P if a divides B then a into"
+    },
+    {
+      "start": "8:34",
+      "end": "8:36",
+      "text": "or minus P if a divides B then a into axis B for some X which is an integer"
+    },
+    {
+      "start": "8:36",
+      "end": "8:36",
+      "text": "axis B for some X which is an integer"
+    },
+    {
+      "start": "8:36",
+      "end": "8:43",
+      "text": "axis B for some X which is an integer and if B divides a then B Y is a for"
+    },
+    {
+      "start": "8:43",
+      "end": "8:43",
+      "text": "and if B divides a then B Y is a for"
+    },
+    {
+      "start": "8:43",
+      "end": "8:51",
+      "text": "and if B divides a then B Y is a for some integer Y then a X Y is B Y which"
+    },
+    {
+      "start": "8:51",
+      "end": "8:51",
+      "text": "some integer Y then a X Y is B Y which"
+    },
+    {
+      "start": "8:51",
+      "end": "8:56",
+      "text": "some integer Y then a X Y is B Y which is 8 where both x and y are integers so"
+    },
+    {
+      "start": "8:56",
+      "end": "8:56",
+      "text": "is 8 where both x and y are integers so"
+    },
+    {
+      "start": "8:56",
+      "end": "8:58",
+      "text": "is 8 where both x and y are integers so there exist integers x and y so that a"
+    },
+    {
+      "start": "8:58",
+      "end": "8:58",
+      "text": "there exist integers x and y so that a"
+    },
+    {
+      "start": "8:58",
+      "end": "9:00",
+      "text": "there exist integers x and y so that a XY equal to a"
+    },
+    {
+      "start": "9:00",
+      "end": "9:00",
+      "text": "XY equal to a"
+    },
+    {
+      "start": "9:00",
+      "end": "9:05",
+      "text": "XY equal to a or in other words X y equals one if for"
+    },
+    {
+      "start": "9:05",
+      "end": "9:05",
+      "text": "or in other words X y equals one if for"
+    },
+    {
+      "start": "9:05",
+      "end": "9:09",
+      "text": "or in other words X y equals one if for integers X and y X into I happens to be"
+    },
+    {
+      "start": "9:09",
+      "end": "9:09",
+      "text": "integers X and y X into I happens to be"
+    },
+    {
+      "start": "9:09",
+      "end": "9:12",
+      "text": "integers X and y X into I happens to be one then we have only two possibilities"
+    },
+    {
+      "start": "9:12",
+      "end": "9:12",
+      "text": "one then we have only two possibilities"
+    },
+    {
+      "start": "9:12",
+      "end": "9:16",
+      "text": "one then we have only two possibilities either X equal to 1 and y equal to 1 or"
+    },
+    {
+      "start": "9:16",
+      "end": "9:16",
+      "text": "either X equal to 1 and y equal to 1 or"
+    },
+    {
+      "start": "9:16",
+      "end": "9:20",
+      "text": "either X equal to 1 and y equal to 1 or X equal to minus 1 and y equal to minus"
+    },
+    {
+      "start": "9:20",
+      "end": "9:20",
+      "text": "X equal to minus 1 and y equal to minus"
+    },
+    {
+      "start": "9:20",
+      "end": "9:24",
+      "text": "X equal to minus 1 and y equal to minus 1 in the first case we have a equal to B"
+    },
+    {
+      "start": "9:24",
+      "end": "9:24",
+      "text": "1 in the first case we have a equal to B"
+    },
+    {
+      "start": "9:24",
+      "end": "9:27",
+      "text": "1 in the first case we have a equal to B in the second case we have a equal to"
+    },
+    {
+      "start": "9:27",
+      "end": "9:27",
+      "text": "in the second case we have a equal to"
+    },
+    {
+      "start": "9:27",
+      "end": "9:31",
+      "text": "in the second case we have a equal to minus B so combining these two we can"
+    },
+    {
+      "start": "9:31",
+      "end": "9:31",
+      "text": "minus B so combining these two we can"
+    },
+    {
+      "start": "9:31",
+      "end": "9:37",
+      "text": "minus B so combining these two we can assert that is plus or minus B if a"
+    },
+    {
+      "start": "9:37",
+      "end": "9:37",
+      "text": "assert that is plus or minus B if a"
+    },
+    {
+      "start": "9:37",
+      "end": "9:50",
+      "text": "assert that is plus or minus B if a divides B for positive a and B then a"
+    },
+    {
+      "start": "9:50",
+      "end": "9:50",
+      "text": "divides B for positive a and B then a"
+    },
+    {
+      "start": "9:50",
+      "end": "9:54",
+      "text": "divides B for positive a and B then a less than or equal to B prove this"
+    },
+    {
+      "start": "9:54",
+      "end": "9:54",
+      "text": "less than or equal to B prove this"
+    },
+    {
+      "start": "9:54",
+      "end": "10:02",
+      "text": "less than or equal to B prove this yourself and another property of the"
+    },
+    {
+      "start": "10:02",
+      "end": "10:02",
+      "text": "yourself and another property of the"
+    },
+    {
+      "start": "10:02",
+      "end": "10:10",
+      "text": "yourself and another property of the device relation is this if an integer X"
+    },
+    {
+      "start": "10:17",
+      "end": "10:17",
+      "text": "that is nonzero is given and a divides B"
+    },
+    {
+      "start": "10:17",
+      "end": "10:26",
+      "text": "that is nonzero is given and a divides B then X a divides X B this also you can"
+    },
+    {
+      "start": "10:26",
+      "end": "10:26",
+      "text": "then X a divides X B this also you can"
+    },
+    {
+      "start": "10:26",
+      "end": "10:29",
+      "text": "then X a divides X B this also you can try out"
+    },
+    {
+      "start": "10:33",
+      "end": "10:33",
+      "text": "so those were some results about their"
+    },
+    {
+      "start": "10:33",
+      "end": "10:35",
+      "text": "so those were some results about their divisibility relation now let us see"
+    },
+    {
+      "start": "10:35",
+      "end": "10:35",
+      "text": "divisibility relation now let us see"
+    },
+    {
+      "start": "10:35",
+      "end": "10:50",
+      "text": "divisibility relation now let us see what is called the division algorithm"
+    },
+    {
+      "start": "10:52",
+      "end": "10:52",
+      "text": "at the heart of this algorithm we have"
+    },
+    {
+      "start": "10:52",
+      "end": "11:00",
+      "text": "at the heart of this algorithm we have this theorem for any two integers a and"
+    },
+    {
+      "start": "11:00",
+      "end": "11:00",
+      "text": "this theorem for any two integers a and"
+    },
+    {
+      "start": "11:00",
+      "end": "11:06",
+      "text": "this theorem for any two integers a and B where a is greater than zero B need"
+    },
+    {
+      "start": "11:06",
+      "end": "11:06",
+      "text": "B where a is greater than zero B need"
+    },
+    {
+      "start": "11:06",
+      "end": "11:14",
+      "text": "B where a is greater than zero B need not be greater than 0 there exist unique"
+    },
+    {
+      "start": "11:14",
+      "end": "11:14",
+      "text": "not be greater than 0 there exist unique"
+    },
+    {
+      "start": "11:14",
+      "end": "11:26",
+      "text": "not be greater than 0 there exist unique integers given R such that B is QA plus"
+    },
+    {
+      "start": "11:26",
+      "end": "11:26",
+      "text": "integers given R such that B is QA plus"
+    },
+    {
+      "start": "11:26",
+      "end": "11:34",
+      "text": "integers given R such that B is QA plus R where 0 is less than or equal to R"
+    },
+    {
+      "start": "11:34",
+      "end": "11:34",
+      "text": "R where 0 is less than or equal to R"
+    },
+    {
+      "start": "11:34",
+      "end": "11:39",
+      "text": "R where 0 is less than or equal to R which is less than a so when you find"
+    },
+    {
+      "start": "11:39",
+      "end": "11:39",
+      "text": "which is less than a so when you find"
+    },
+    {
+      "start": "11:39",
+      "end": "11:42",
+      "text": "which is less than a so when you find such a unique ordered pair Q R 2 is"
+    },
+    {
+      "start": "11:42",
+      "end": "11:42",
+      "text": "such a unique ordered pair Q R 2 is"
+    },
+    {
+      "start": "11:42",
+      "end": "11:44",
+      "text": "such a unique ordered pair Q R 2 is called the quotient and R is called the"
+    },
+    {
+      "start": "11:44",
+      "end": "11:44",
+      "text": "called the quotient and R is called the"
+    },
+    {
+      "start": "11:44",
+      "end": "11:47",
+      "text": "called the quotient and R is called the remainder so how do we prove that"
+    },
+    {
+      "start": "11:47",
+      "end": "11:47",
+      "text": "remainder so how do we prove that"
+    },
+    {
+      "start": "11:47",
+      "end": "11:58",
+      "text": "remainder so how do we prove that directs us such a unique pair Q R"
+    },
+    {
+      "start": "12:01",
+      "end": "12:01",
+      "text": "that is what we want we consider the"
+    },
+    {
+      "start": "12:01",
+      "end": "12:07",
+      "text": "that is what we want we consider the real line on this real line consider"
+    },
+    {
+      "start": "12:07",
+      "end": "12:07",
+      "text": "real line on this real line consider"
+    },
+    {
+      "start": "12:07",
+      "end": "12:11",
+      "text": "real line on this real line consider point B B is an integer it may be"
+    },
+    {
+      "start": "12:11",
+      "end": "12:11",
+      "text": "point B B is an integer it may be"
+    },
+    {
+      "start": "12:11",
+      "end": "12:15",
+      "text": "point B B is an integer it may be positive or negative and we have a which"
+    },
+    {
+      "start": "12:15",
+      "end": "12:15",
+      "text": "positive or negative and we have a which"
+    },
+    {
+      "start": "12:15",
+      "end": "12:23",
+      "text": "positive or negative and we have a which is greater than zero from B let us start"
+    },
+    {
+      "start": "12:23",
+      "end": "12:23",
+      "text": "is greater than zero from B let us start"
+    },
+    {
+      "start": "12:23",
+      "end": "12:27",
+      "text": "is greater than zero from B let us start marking points that are at distance a so"
+    },
+    {
+      "start": "12:27",
+      "end": "12:27",
+      "text": "marking points that are at distance a so"
+    },
+    {
+      "start": "12:27",
+      "end": "12:29",
+      "text": "marking points that are at distance a so we get an arithmetic progression B plus"
+    },
+    {
+      "start": "12:29",
+      "end": "12:29",
+      "text": "we get an arithmetic progression B plus"
+    },
+    {
+      "start": "12:29",
+      "end": "12:32",
+      "text": "we get an arithmetic progression B plus a is the next point B plus 2 a is the"
+    },
+    {
+      "start": "12:32",
+      "end": "12:32",
+      "text": "a is the next point B plus 2 a is the"
+    },
+    {
+      "start": "12:32",
+      "end": "12:33",
+      "text": "a is the next point B plus 2 a is the one after that"
+    },
+    {
+      "start": "12:33",
+      "end": "12:33",
+      "text": "one after that"
+    },
+    {
+      "start": "12:33",
+      "end": "12:36",
+      "text": "one after that B plus 3 is 4 the one after that and so"
+    },
+    {
+      "start": "12:36",
+      "end": "12:36",
+      "text": "B plus 3 is 4 the one after that and so"
+    },
+    {
+      "start": "12:36",
+      "end": "12:41",
+      "text": "B plus 3 is 4 the one after that and so on let us go into the right side if you"
+    },
+    {
+      "start": "12:41",
+      "end": "12:41",
+      "text": "on let us go into the right side if you"
+    },
+    {
+      "start": "12:41",
+      "end": "12:45",
+      "text": "on let us go into the right side if you go to the left side we have B minus a B"
+    },
+    {
+      "start": "12:45",
+      "end": "12:45",
+      "text": "go to the left side we have B minus a B"
+    },
+    {
+      "start": "12:45",
+      "end": "12:56",
+      "text": "go to the left side we have B minus a B minus 2 a B minus 3 a and so on"
+    },
+    {
+      "start": "12:59",
+      "end": "12:59",
+      "text": "so starting from B we are going to the"
+    },
+    {
+      "start": "12:59",
+      "end": "13:05",
+      "text": "so starting from B we are going to the right jumping at a distance of a every"
+    },
+    {
+      "start": "13:05",
+      "end": "13:05",
+      "text": "right jumping at a distance of a every"
+    },
+    {
+      "start": "13:05",
+      "end": "13:11",
+      "text": "right jumping at a distance of a every time similarly we can also move to the"
+    },
+    {
+      "start": "13:11",
+      "end": "13:11",
+      "text": "time similarly we can also move to the"
+    },
+    {
+      "start": "13:11",
+      "end": "13:11",
+      "text": "time similarly we can also move to the left"
+    },
+    {
+      "start": "13:11",
+      "end": "13:11",
+      "text": "left"
+    },
+    {
+      "start": "13:11",
+      "end": "13:19",
+      "text": "left jumping intra distance of a every time"
+    },
+    {
+      "start": "13:23",
+      "end": "13:23",
+      "text": "now on this real line zero is somewhere"
+    },
+    {
+      "start": "13:23",
+      "end": "13:27",
+      "text": "now on this real line zero is somewhere let us say this is where zero is in that"
+    },
+    {
+      "start": "13:27",
+      "end": "13:27",
+      "text": "let us say this is where zero is in that"
+    },
+    {
+      "start": "13:27",
+      "end": "13:31",
+      "text": "let us say this is where zero is in that case a will be here at a distance of a"
+    },
+    {
+      "start": "13:31",
+      "end": "13:31",
+      "text": "case a will be here at a distance of a"
+    },
+    {
+      "start": "13:31",
+      "end": "13:35",
+      "text": "case a will be here at a distance of a from zero to the right so let us"
+    },
+    {
+      "start": "13:35",
+      "end": "13:35",
+      "text": "from zero to the right so let us"
+    },
+    {
+      "start": "13:35",
+      "end": "13:37",
+      "text": "from zero to the right so let us consider this interval the interval from"
+    },
+    {
+      "start": "13:37",
+      "end": "13:37",
+      "text": "consider this interval the interval from"
+    },
+    {
+      "start": "13:37",
+      "end": "13:45",
+      "text": "consider this interval the interval from zero to a you start from B and start"
+    },
+    {
+      "start": "13:45",
+      "end": "13:45",
+      "text": "zero to a you start from B and start"
+    },
+    {
+      "start": "13:45",
+      "end": "13:47",
+      "text": "zero to a you start from B and start jumping at a distance of a either to"
+    },
+    {
+      "start": "13:47",
+      "end": "13:47",
+      "text": "jumping at a distance of a either to"
+    },
+    {
+      "start": "13:47",
+      "end": "13:51",
+      "text": "jumping at a distance of a either to left or to the right in one of the"
+    },
+    {
+      "start": "13:51",
+      "end": "13:51",
+      "text": "left or to the right in one of the"
+    },
+    {
+      "start": "13:51",
+      "end": "13:55",
+      "text": "left or to the right in one of the directions you would jump into this"
+    },
+    {
+      "start": "13:55",
+      "end": "13:55",
+      "text": "directions you would jump into this"
+    },
+    {
+      "start": "13:55",
+      "end": "13:59",
+      "text": "directions you would jump into this interval exactly once that is there will"
+    },
+    {
+      "start": "13:59",
+      "end": "13:59",
+      "text": "interval exactly once that is there will"
+    },
+    {
+      "start": "13:59",
+      "end": "14:02",
+      "text": "interval exactly once that is there will be exactly one point falling in this"
+    },
+    {
+      "start": "14:02",
+      "end": "14:02",
+      "text": "be exactly one point falling in this"
+    },
+    {
+      "start": "14:02",
+      "end": "14:04",
+      "text": "be exactly one point falling in this interval which is within this arithmetic"
+    },
+    {
+      "start": "14:04",
+      "end": "14:04",
+      "text": "interval which is within this arithmetic"
+    },
+    {
+      "start": "14:04",
+      "end": "14:12",
+      "text": "interval which is within this arithmetic progression this interval has exactly"
+    },
+    {
+      "start": "14:12",
+      "end": "14:12",
+      "text": "progression this interval has exactly"
+    },
+    {
+      "start": "14:12",
+      "end": "14:18",
+      "text": "progression this interval has exactly one point of the earth"
+    },
+    {
+      "start": "14:20",
+      "end": "14:20",
+      "text": "in particular what we need to know is"
+    },
+    {
+      "start": "14:20",
+      "end": "14:24",
+      "text": "in particular what we need to know is that there is one point suppose that one"
+    },
+    {
+      "start": "14:24",
+      "end": "14:24",
+      "text": "that there is one point suppose that one"
+    },
+    {
+      "start": "14:24",
+      "end": "14:43",
+      "text": "that there is one point suppose that one point corresponds to two"
+    },
+    {
+      "start": "14:45",
+      "end": "14:45",
+      "text": "ordered pair QR corresponds to the one"
+    },
+    {
+      "start": "14:45",
+      "end": "14:49",
+      "text": "ordered pair QR corresponds to the one point that we find then at this point we"
+    },
+    {
+      "start": "14:49",
+      "end": "14:49",
+      "text": "point that we find then at this point we"
+    },
+    {
+      "start": "14:49",
+      "end": "14:56",
+      "text": "point that we find then at this point we have B minus QA equal to R or B equals"
+    },
+    {
+      "start": "14:56",
+      "end": "14:56",
+      "text": "have B minus QA equal to R or B equals"
+    },
+    {
+      "start": "14:56",
+      "end": "15:03",
+      "text": "have B minus QA equal to R or B equals QA plus 4 and here zero less than or"
+    },
+    {
+      "start": "15:03",
+      "end": "15:03",
+      "text": "QA plus 4 and here zero less than or"
+    },
+    {
+      "start": "15:03",
+      "end": "15:08",
+      "text": "QA plus 4 and here zero less than or equal to R less than a now we have to"
+    },
+    {
+      "start": "15:08",
+      "end": "15:08",
+      "text": "equal to R less than a now we have to"
+    },
+    {
+      "start": "15:08",
+      "end": "15:13",
+      "text": "equal to R less than a now we have to argue that this ordered pair is unique"
+    },
+    {
+      "start": "15:13",
+      "end": "15:13",
+      "text": "argue that this ordered pair is unique"
+    },
+    {
+      "start": "15:13",
+      "end": "15:21",
+      "text": "argue that this ordered pair is unique suppose otherwise suppose Q prime R"
+    },
+    {
+      "start": "15:21",
+      "end": "15:21",
+      "text": "suppose otherwise suppose Q prime R"
+    },
+    {
+      "start": "15:21",
+      "end": "15:28",
+      "text": "suppose otherwise suppose Q prime R prime is another such ordered pair"
+    },
+    {
+      "start": "15:31",
+      "end": "15:31",
+      "text": "clearly R prime is not equal to R"
+    },
+    {
+      "start": "15:31",
+      "end": "15:37",
+      "text": "clearly R prime is not equal to R because otherwise Q prime is the same as"
+    },
+    {
+      "start": "15:37",
+      "end": "15:37",
+      "text": "because otherwise Q prime is the same as"
+    },
+    {
+      "start": "15:37",
+      "end": "15:40",
+      "text": "because otherwise Q prime is the same as Q and therefore this ordered pair would"
+    },
+    {
+      "start": "15:40",
+      "end": "15:40",
+      "text": "Q and therefore this ordered pair would"
+    },
+    {
+      "start": "15:40",
+      "end": "15:44",
+      "text": "Q and therefore this ordered pair would not be distinct from the earlier one so"
+    },
+    {
+      "start": "15:44",
+      "end": "15:44",
+      "text": "not be distinct from the earlier one so"
+    },
+    {
+      "start": "15:44",
+      "end": "15:49",
+      "text": "not be distinct from the earlier one so R prime is not equal to R and R prime is"
+    },
+    {
+      "start": "15:49",
+      "end": "15:49",
+      "text": "R prime is not equal to R and R prime is"
+    },
+    {
+      "start": "15:49",
+      "end": "15:54",
+      "text": "R prime is not equal to R and R prime is B minus Q prime a that's because Q prime"
+    },
+    {
+      "start": "15:54",
+      "end": "15:54",
+      "text": "B minus Q prime a that's because Q prime"
+    },
+    {
+      "start": "15:54",
+      "end": "15:55",
+      "text": "B minus Q prime a that's because Q prime R prime is an ordered pair which"
+    },
+    {
+      "start": "15:55",
+      "end": "15:55",
+      "text": "R prime is an ordered pair which"
+    },
+    {
+      "start": "15:55",
+      "end": "16:06",
+      "text": "R prime is an ordered pair which satisfies our requirement so R prime is"
+    },
+    {
+      "start": "16:17",
+      "end": "16:17",
+      "text": "a nonnegative member of the ape that is"
+    },
+    {
+      "start": "16:17",
+      "end": "16:19",
+      "text": "a nonnegative member of the ape that is because we assume that 0 less than or"
+    },
+    {
+      "start": "16:19",
+      "end": "16:19",
+      "text": "because we assume that 0 less than or"
+    },
+    {
+      "start": "16:19",
+      "end": "16:24",
+      "text": "because we assume that 0 less than or equal to are trying Q prime R prime is"
+    },
+    {
+      "start": "16:24",
+      "end": "16:24",
+      "text": "equal to are trying Q prime R prime is"
+    },
+    {
+      "start": "16:24",
+      "end": "16:26",
+      "text": "equal to are trying Q prime R prime is another ordered pair where R prime is"
+    },
+    {
+      "start": "16:26",
+      "end": "16:26",
+      "text": "another ordered pair where R prime is"
+    },
+    {
+      "start": "16:26",
+      "end": "16:31",
+      "text": "another ordered pair where R prime is greater than or equal to 0 but then R is"
+    },
+    {
+      "start": "16:31",
+      "end": "16:31",
+      "text": "greater than or equal to 0 but then R is"
+    },
+    {
+      "start": "16:31",
+      "end": "16:45",
+      "text": "greater than or equal to 0 but then R is the least non-negative member of the ape"
+    },
+    {
+      "start": "16:48",
+      "end": "16:48",
+      "text": "so our prime is greater than or equal to"
+    },
+    {
+      "start": "16:48",
+      "end": "16:53",
+      "text": "so our prime is greater than or equal to R plus a but what is R plus a this is B"
+    },
+    {
+      "start": "16:53",
+      "end": "16:53",
+      "text": "R plus a but what is R plus a this is B"
+    },
+    {
+      "start": "16:53",
+      "end": "16:59",
+      "text": "R plus a but what is R plus a this is B minus QA plus a but this is then greater"
+    },
+    {
+      "start": "16:59",
+      "end": "16:59",
+      "text": "minus QA plus a but this is then greater"
+    },
+    {
+      "start": "16:59",
+      "end": "17:03",
+      "text": "minus QA plus a but this is then greater than or equal to a and therefore our"
+    },
+    {
+      "start": "17:03",
+      "end": "17:03",
+      "text": "than or equal to a and therefore our"
+    },
+    {
+      "start": "17:03",
+      "end": "17:06",
+      "text": "than or equal to a and therefore our prime will not qualify because we want"
+    },
+    {
+      "start": "17:06",
+      "end": "17:06",
+      "text": "prime will not qualify because we want"
+    },
+    {
+      "start": "17:06",
+      "end": "17:13",
+      "text": "prime will not qualify because we want like Q prime R prime such that B is Q"
+    },
+    {
+      "start": "17:13",
+      "end": "17:13",
+      "text": "like Q prime R prime such that B is Q"
+    },
+    {
+      "start": "17:13",
+      "end": "17:18",
+      "text": "like Q prime R prime such that B is Q prime a plus R Prime and 0 less than or"
+    },
+    {
+      "start": "17:18",
+      "end": "17:18",
+      "text": "prime a plus R Prime and 0 less than or"
+    },
+    {
+      "start": "17:18",
+      "end": "17:22",
+      "text": "prime a plus R Prime and 0 less than or equal to R prime less than a this is"
+    },
+    {
+      "start": "17:22",
+      "end": "17:22",
+      "text": "equal to R prime less than a this is"
+    },
+    {
+      "start": "17:22",
+      "end": "17:28",
+      "text": "equal to R prime less than a this is violated here therefore there cannot be"
+    },
+    {
+      "start": "17:28",
+      "end": "17:28",
+      "text": "violated here therefore there cannot be"
+    },
+    {
+      "start": "17:28",
+      "end": "17:34",
+      "text": "violated here therefore there cannot be another ordered pair Q prime R prime so"
+    },
+    {
+      "start": "17:34",
+      "end": "17:34",
+      "text": "another ordered pair Q prime R prime so"
+    },
+    {
+      "start": "17:34",
+      "end": "17:44",
+      "text": "another ordered pair Q prime R prime so QR s unique hence our claim"
+    },
+    {
+      "start": "17:54",
+      "end": "17:54",
+      "text": "if it does not divide B then 0 less than"
+    },
+    {
+      "start": "17:54",
+      "end": "18:01",
+      "text": "if it does not divide B then 0 less than or less than e in that case none of the"
+    },
+    {
+      "start": "18:01",
+      "end": "18:01",
+      "text": "or less than e in that case none of the"
+    },
+    {
+      "start": "18:01",
+      "end": "18:03",
+      "text": "or less than e in that case none of the points in the arithmetic progression"
+    },
+    {
+      "start": "18:03",
+      "end": "18:03",
+      "text": "points in the arithmetic progression"
+    },
+    {
+      "start": "18:03",
+      "end": "18:06",
+      "text": "points in the arithmetic progression will be devices of a therefore R will be"
+    },
+    {
+      "start": "18:06",
+      "end": "18:06",
+      "text": "will be devices of a therefore R will be"
+    },
+    {
+      "start": "18:06",
+      "end": "18:13",
+      "text": "will be devices of a therefore R will be strictly greater than 0 now it is easy"
+    },
+    {
+      "start": "18:13",
+      "end": "18:13",
+      "text": "strictly greater than 0 now it is easy"
+    },
+    {
+      "start": "18:13",
+      "end": "18:19",
+      "text": "strictly greater than 0 now it is easy to show this theorem for any two"
+    },
+    {
+      "start": "18:19",
+      "end": "18:19",
+      "text": "to show this theorem for any two"
+    },
+    {
+      "start": "18:19",
+      "end": "18:27",
+      "text": "to show this theorem for any two integers a and B where is not equal to 0"
+    },
+    {
+      "start": "18:47",
+      "end": "18:47",
+      "text": "such that B is QA plus R and 0 less than"
+    },
+    {
+      "start": "18:47",
+      "end": "18:51",
+      "text": "such that B is QA plus R and 0 less than or equal to R less than more a see here"
+    },
+    {
+      "start": "18:51",
+      "end": "18:51",
+      "text": "or equal to R less than more a see here"
+    },
+    {
+      "start": "18:51",
+      "end": "18:52",
+      "text": "or equal to R less than more a see here we only say that a is not equal to 0 we"
+    },
+    {
+      "start": "18:52",
+      "end": "18:52",
+      "text": "we only say that a is not equal to 0 we"
+    },
+    {
+      "start": "18:52",
+      "end": "18:54",
+      "text": "we only say that a is not equal to 0 we do not assume that a greater than or"
+    },
+    {
+      "start": "18:54",
+      "end": "18:54",
+      "text": "do not assume that a greater than or"
+    },
+    {
+      "start": "18:54",
+      "end": "18:59",
+      "text": "do not assume that a greater than or equal to 0 so you can prove this theorem"
+    },
+    {
+      "start": "18:59",
+      "end": "18:59",
+      "text": "equal to 0 so you can prove this theorem"
+    },
+    {
+      "start": "18:59",
+      "end": "19:04",
+      "text": "equal to 0 so you can prove this theorem yourself we say that a is a common"
+    },
+    {
+      "start": "19:04",
+      "end": "19:04",
+      "text": "yourself we say that a is a common"
+    },
+    {
+      "start": "19:04",
+      "end": "19:18",
+      "text": "yourself we say that a is a common divisor of B and C if a divides B and a"
+    },
+    {
+      "start": "19:18",
+      "end": "19:18",
+      "text": "divisor of B and C if a divides B and a"
+    },
+    {
+      "start": "19:18",
+      "end": "19:26",
+      "text": "divisor of B and C if a divides B and a divides C where a B C are all integers"
+    },
+    {
+      "start": "19:29",
+      "end": "19:29",
+      "text": "so a pair of numbers B and C can have"
+    },
+    {
+      "start": "19:29",
+      "end": "19:35",
+      "text": "so a pair of numbers B and C can have multiple common devices every nonzero"
+    },
+    {
+      "start": "19:35",
+      "end": "19:35",
+      "text": "multiple common devices every nonzero"
+    },
+    {
+      "start": "19:35",
+      "end": "19:43",
+      "text": "multiple common devices every nonzero integer has only a finite number of"
+    },
+    {
+      "start": "19:43",
+      "end": "19:43",
+      "text": "integer has only a finite number of"
+    },
+    {
+      "start": "19:43",
+      "end": "19:55",
+      "text": "integer has only a finite number of devices"
+    },
+    {
+      "start": "19:57",
+      "end": "19:57",
+      "text": "therefore the common devices of two"
+    },
+    {
+      "start": "19:57",
+      "end": "20:11",
+      "text": "therefore the common devices of two numbers B and C which are integers form"
+    },
+    {
+      "start": "20:11",
+      "end": "20:11",
+      "text": "numbers B and C which are integers form"
+    },
+    {
+      "start": "20:11",
+      "end": "20:17",
+      "text": "numbers B and C which are integers form a finite set therefore we can talk about"
+    },
+    {
+      "start": "20:17",
+      "end": "20:17",
+      "text": "a finite set therefore we can talk about"
+    },
+    {
+      "start": "20:17",
+      "end": "20:26",
+      "text": "a finite set therefore we can talk about the greatest of them"
+    },
+    {
+      "start": "20:29",
+      "end": "20:29",
+      "text": "the greatest common devisor happens to"
+    },
+    {
+      "start": "20:29",
+      "end": "20:40",
+      "text": "the greatest common devisor happens to be the largest of this finite set"
+    },
+    {
+      "start": "20:45",
+      "end": "20:45",
+      "text": "so we'll denote this by GCD of B and C"
+    },
+    {
+      "start": "20:45",
+      "end": "20:52",
+      "text": "so we'll denote this by GCD of B and C if B not equal to 0 or C not equal to 0"
+    },
+    {
+      "start": "20:52",
+      "end": "20:52",
+      "text": "if B not equal to 0 or C not equal to 0"
+    },
+    {
+      "start": "20:52",
+      "end": "20:57",
+      "text": "if B not equal to 0 or C not equal to 0 we can extend this notion to multiple"
+    },
+    {
+      "start": "20:57",
+      "end": "20:57",
+      "text": "we can extend this notion to multiple"
+    },
+    {
+      "start": "20:57",
+      "end": "21:04",
+      "text": "we can extend this notion to multiple integers we can talk about GCD of BC D"
+    },
+    {
+      "start": "21:04",
+      "end": "21:04",
+      "text": "integers we can talk about GCD of BC D"
+    },
+    {
+      "start": "21:04",
+      "end": "21:12",
+      "text": "integers we can talk about GCD of BC D which is the GCD of GCD of B and C and D"
+    },
+    {
+      "start": "21:12",
+      "end": "21:12",
+      "text": "which is the GCD of GCD of B and C and D"
+    },
+    {
+      "start": "21:12",
+      "end": "21:17",
+      "text": "which is the GCD of GCD of B and C and D a special C now we shall study an"
+    },
+    {
+      "start": "21:17",
+      "end": "21:17",
+      "text": "a special C now we shall study an"
+    },
+    {
+      "start": "21:17",
+      "end": "21:22",
+      "text": "a special C now we shall study an interesting theorem which says that if G"
+    },
+    {
+      "start": "21:22",
+      "end": "21:22",
+      "text": "interesting theorem which says that if G"
+    },
+    {
+      "start": "21:22",
+      "end": "21:29",
+      "text": "interesting theorem which says that if G is the GCD of two numbers B and C then"
+    },
+    {
+      "start": "21:29",
+      "end": "21:29",
+      "text": "is the GCD of two numbers B and C then"
+    },
+    {
+      "start": "21:29",
+      "end": "21:34",
+      "text": "is the GCD of two numbers B and C then there exist integers X naught and Y"
+    },
+    {
+      "start": "21:34",
+      "end": "21:34",
+      "text": "there exist integers X naught and Y"
+    },
+    {
+      "start": "21:34",
+      "end": "21:44",
+      "text": "there exist integers X naught and Y naught such that"
+    },
+    {
+      "start": "21:49",
+      "end": "21:49",
+      "text": "jeez BX naught plus C why not in other"
+    },
+    {
+      "start": "21:49",
+      "end": "21:51",
+      "text": "jeez BX naught plus C why not in other words if G is the GCD of B and C then G"
+    },
+    {
+      "start": "21:51",
+      "end": "21:51",
+      "text": "words if G is the GCD of B and C then G"
+    },
+    {
+      "start": "21:51",
+      "end": "21:53",
+      "text": "words if G is the GCD of B and C then G can be expressed as a linear combination"
+    },
+    {
+      "start": "21:53",
+      "end": "21:53",
+      "text": "can be expressed as a linear combination"
+    },
+    {
+      "start": "21:53",
+      "end": "21:58",
+      "text": "can be expressed as a linear combination of B and C with integer coefficients so"
+    },
+    {
+      "start": "21:58",
+      "end": "21:58",
+      "text": "of B and C with integer coefficients so"
+    },
+    {
+      "start": "21:58",
+      "end": "22:02",
+      "text": "of B and C with integer coefficients so let us see how to do this in particular"
+    },
+    {
+      "start": "22:02",
+      "end": "22:02",
+      "text": "let us see how to do this in particular"
+    },
+    {
+      "start": "22:02",
+      "end": "22:05",
+      "text": "let us see how to do this in particular consider two numbers let us say B equal"
+    },
+    {
+      "start": "22:05",
+      "end": "22:05",
+      "text": "consider two numbers let us say B equal"
+    },
+    {
+      "start": "22:05",
+      "end": "22:12",
+      "text": "consider two numbers let us say B equal to 3 and C equal to 7 then we want to"
+    },
+    {
+      "start": "22:12",
+      "end": "22:12",
+      "text": "to 3 and C equal to 7 then we want to"
+    },
+    {
+      "start": "22:12",
+      "end": "22:17",
+      "text": "to 3 and C equal to 7 then we want to express the GCD of these two which we"
+    },
+    {
+      "start": "22:17",
+      "end": "22:17",
+      "text": "express the GCD of these two which we"
+    },
+    {
+      "start": "22:17",
+      "end": "22:25",
+      "text": "express the GCD of these two which we know is 1 GCD of 3 and 7 is 1 we want to"
+    },
+    {
+      "start": "22:25",
+      "end": "22:25",
+      "text": "know is 1 GCD of 3 and 7 is 1 we want to"
+    },
+    {
+      "start": "22:25",
+      "end": "22:29",
+      "text": "know is 1 GCD of 3 and 7 is 1 we want to express 1 as a linear combination of 3"
+    },
+    {
+      "start": "22:29",
+      "end": "22:29",
+      "text": "express 1 as a linear combination of 3"
+    },
+    {
+      "start": "22:29",
+      "end": "22:31",
+      "text": "express 1 as a linear combination of 3 and 7 so we could write this as 3x plus"
+    },
+    {
+      "start": "22:31",
+      "end": "22:31",
+      "text": "and 7 so we could write this as 3x plus"
+    },
+    {
+      "start": "22:31",
+      "end": "22:34",
+      "text": "and 7 so we could write this as 3x plus 7 y we have to find x and y so that 1 is"
+    },
+    {
+      "start": "22:34",
+      "end": "22:35",
+      "text": "7 y we have to find x and y so that 1 is"
+    },
+    {
+      "start": "22:35",
+      "end": "22:37",
+      "text": "7 y we have to find x and y so that 1 is equal to 3x plus 7y that is precisely"
+    },
+    {
+      "start": "22:37",
+      "end": "22:37",
+      "text": "equal to 3x plus 7y that is precisely"
+    },
+    {
+      "start": "22:37",
+      "end": "22:39",
+      "text": "equal to 3x plus 7y that is precisely what the theorem says the GCD of two"
+    },
+    {
+      "start": "22:39",
+      "end": "22:39",
+      "text": "what the theorem says the GCD of two"
+    },
+    {
+      "start": "22:39",
+      "end": "22:41",
+      "text": "what the theorem says the GCD of two numbers can be expressed as a linear"
+    },
+    {
+      "start": "22:41",
+      "end": "22:41",
+      "text": "numbers can be expressed as a linear"
+    },
+    {
+      "start": "22:41",
+      "end": "22:43",
+      "text": "numbers can be expressed as a linear combination of those two numbers with"
+    },
+    {
+      "start": "22:43",
+      "end": "22:43",
+      "text": "combination of those two numbers with"
+    },
+    {
+      "start": "22:43",
+      "end": "22:48",
+      "text": "combination of those two numbers with India coefficients x and y so let us"
+    },
+    {
+      "start": "22:48",
+      "end": "22:48",
+      "text": "India coefficients x and y so let us"
+    },
+    {
+      "start": "22:48",
+      "end": "22:50",
+      "text": "India coefficients x and y so let us consider the various possible values of"
+    },
+    {
+      "start": "22:50",
+      "end": "22:50",
+      "text": "consider the various possible values of"
+    },
+    {
+      "start": "22:50",
+      "end": "23:03",
+      "text": "consider the various possible values of x and radius possible values of Y"
+    },
+    {
+      "start": "23:07",
+      "end": "23:08",
+      "text": "when X equal to 0 y equal to 0 we have"
+    },
+    {
+      "start": "23:08",
+      "end": "23:11",
+      "text": "when X equal to 0 y equal to 0 we have the linear combination evaluating to 0"
+    },
+    {
+      "start": "23:11",
+      "end": "23:11",
+      "text": "the linear combination evaluating to 0"
+    },
+    {
+      "start": "23:11",
+      "end": "23:15",
+      "text": "the linear combination evaluating to 0 when X is 1 and Y is 0 we have 3 when X"
+    },
+    {
+      "start": "23:15",
+      "end": "23:15",
+      "text": "when X is 1 and Y is 0 we have 3 when X"
+    },
+    {
+      "start": "23:15",
+      "end": "23:19",
+      "text": "when X is 1 and Y is 0 we have 3 when X is 2 y is 0 we have 6 on the negative"
+    },
+    {
+      "start": "23:19",
+      "end": "23:19",
+      "text": "is 2 y is 0 we have 6 on the negative"
+    },
+    {
+      "start": "23:19",
+      "end": "23:24",
+      "text": "is 2 y is 0 we have 6 on the negative side we have minus 3 minus 6 when y is 0"
+    },
+    {
+      "start": "23:24",
+      "end": "23:24",
+      "text": "side we have minus 3 minus 6 when y is 0"
+    },
+    {
+      "start": "23:24",
+      "end": "23:31",
+      "text": "side we have minus 3 minus 6 when y is 0 and X is 1 when x is 0 and Y is 1 we"
+    },
+    {
+      "start": "23:31",
+      "end": "23:31",
+      "text": "and X is 1 when x is 0 and Y is 1 we"
+    },
+    {
+      "start": "23:31",
+      "end": "23:38",
+      "text": "and X is 1 when x is 0 and Y is 1 we have 7 when x is 0 Y is 2 we have 14 on"
+    },
+    {
+      "start": "23:38",
+      "end": "23:38",
+      "text": "have 7 when x is 0 Y is 2 we have 14 on"
+    },
+    {
+      "start": "23:38",
+      "end": "23:40",
+      "text": "have 7 when x is 0 Y is 2 we have 14 on the other direction we have minus 7 and"
+    },
+    {
+      "start": "23:40",
+      "end": "23:40",
+      "text": "the other direction we have minus 7 and"
+    },
+    {
+      "start": "23:40",
+      "end": "24:09",
+      "text": "the other direction we have minus 7 and minus 14 here we have 10 and 17"
+    },
+    {
+      "start": "24:13",
+      "end": "24:13",
+      "text": "this is how the values would look like"
+    },
+    {
+      "start": "24:13",
+      "end": "24:15",
+      "text": "this is how the values would look like for various integral values of x and y"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "for various integral values of x and y"
+    },
+    {
+      "start": "24:15",
+      "end": "24:19",
+      "text": "for various integral values of x and y the linear combination 3x plus 7y would"
+    },
+    {
+      "start": "24:19",
+      "end": "24:19",
+      "text": "the linear combination 3x plus 7y would"
+    },
+    {
+      "start": "24:19",
+      "end": "24:21",
+      "text": "the linear combination 3x plus 7y would have these values so you find that"
+    },
+    {
+      "start": "24:21",
+      "end": "24:21",
+      "text": "have these values so you find that"
+    },
+    {
+      "start": "24:21",
+      "end": "24:25",
+      "text": "have these values so you find that indeed there is one particular choice of"
+    },
+    {
+      "start": "24:25",
+      "end": "24:25",
+      "text": "indeed there is one particular choice of"
+    },
+    {
+      "start": "24:25",
+      "end": "24:28",
+      "text": "indeed there is one particular choice of x and y for which the linear combination"
+    },
+    {
+      "start": "24:28",
+      "end": "24:28",
+      "text": "x and y for which the linear combination"
+    },
+    {
+      "start": "24:28",
+      "end": "24:31",
+      "text": "x and y for which the linear combination of value weights to 1 when X equal to"
+    },
+    {
+      "start": "24:31",
+      "end": "24:31",
+      "text": "of value weights to 1 when X equal to"
+    },
+    {
+      "start": "24:31",
+      "end": "24:37",
+      "text": "of value weights to 1 when X equal to minus 2 and y equal to 1 we have 3x plus"
+    },
+    {
+      "start": "24:37",
+      "end": "24:37",
+      "text": "minus 2 and y equal to 1 we have 3x plus"
+    },
+    {
+      "start": "24:37",
+      "end": "24:42",
+      "text": "minus 2 and y equal to 1 we have 3x plus 7y evaluating 2 minus 6 plus 7 which is"
+    },
+    {
+      "start": "24:42",
+      "end": "24:42",
+      "text": "7y evaluating 2 minus 6 plus 7 which is"
+    },
+    {
+      "start": "24:42",
+      "end": "24:46",
+      "text": "7y evaluating 2 minus 6 plus 7 which is 1 so there is a choice of x and y for"
+    },
+    {
+      "start": "24:46",
+      "end": "24:46",
+      "text": "1 so there is a choice of x and y for"
+    },
+    {
+      "start": "24:46",
+      "end": "24:47",
+      "text": "1 so there is a choice of x and y for which the linear combination evaluates"
+    },
+    {
+      "start": "24:47",
+      "end": "24:47",
+      "text": "which the linear combination evaluates"
+    },
+    {
+      "start": "24:47",
+      "end": "24:51",
+      "text": "which the linear combination evaluates to 1 so how do we generalize this we"
+    },
+    {
+      "start": "24:51",
+      "end": "24:51",
+      "text": "to 1 so how do we generalize this we"
+    },
+    {
+      "start": "24:51",
+      "end": "24:53",
+      "text": "to 1 so how do we generalize this we want to bring the assertion for every"
+    },
+    {
+      "start": "24:53",
+      "end": "24:53",
+      "text": "want to bring the assertion for every"
+    },
+    {
+      "start": "24:53",
+      "end": "24:58",
+      "text": "want to bring the assertion for every pair of integers b and c so we have this"
+    },
+    {
+      "start": "24:58",
+      "end": "24:58",
+      "text": "pair of integers b and c so we have this"
+    },
+    {
+      "start": "24:58",
+      "end": "25:02",
+      "text": "pair of integers b and c so we have this pair of integers b and c let us define"
+    },
+    {
+      "start": "25:02",
+      "end": "25:02",
+      "text": "pair of integers b and c let us define"
+    },
+    {
+      "start": "25:02",
+      "end": "25:10",
+      "text": "pair of integers b and c let us define the set s as the set of all integers BX"
+    },
+    {
+      "start": "25:10",
+      "end": "25:10",
+      "text": "the set s as the set of all integers BX"
+    },
+    {
+      "start": "25:10",
+      "end": "25:18",
+      "text": "the set s as the set of all integers BX plus C y where x and y are integers so"
+    },
+    {
+      "start": "25:18",
+      "end": "25:18",
+      "text": "plus C y where x and y are integers so"
+    },
+    {
+      "start": "25:18",
+      "end": "25:20",
+      "text": "plus C y where x and y are integers so it is precisely this set that we"
+    },
+    {
+      "start": "25:20",
+      "end": "25:20",
+      "text": "it is precisely this set that we"
+    },
+    {
+      "start": "25:20",
+      "end": "25:24",
+      "text": "it is precisely this set that we depicted here for integers 3 &amp; 7 so this"
+    },
+    {
+      "start": "25:24",
+      "end": "25:24",
+      "text": "depicted here for integers 3 &amp; 7 so this"
+    },
+    {
+      "start": "25:24",
+      "end": "25:34",
+      "text": "depicted here for integers 3 &amp; 7 so this is clearly an infinite set let D be the"
+    },
+    {
+      "start": "25:47",
+      "end": "25:47",
+      "text": "depending on the radius choices for x"
+    },
+    {
+      "start": "25:47",
+      "end": "25:51",
+      "text": "depending on the radius choices for x and y we have different values in s we"
+    },
+    {
+      "start": "25:51",
+      "end": "25:51",
+      "text": "and y we have different values in s we"
+    },
+    {
+      "start": "25:51",
+      "end": "25:53",
+      "text": "and y we have different values in s we are picking out the least positive"
+    },
+    {
+      "start": "25:53",
+      "end": "25:53",
+      "text": "are picking out the least positive"
+    },
+    {
+      "start": "25:53",
+      "end": "25:57",
+      "text": "are picking out the least positive member of s we call it deep"
+    },
+    {
+      "start": "26:03",
+      "end": "26:03",
+      "text": "Sadie is BX naught plus CY not every"
+    },
+    {
+      "start": "26:03",
+      "end": "26:05",
+      "text": "Sadie is BX naught plus CY not every member of s is a linear combination of B"
+    },
+    {
+      "start": "26:05",
+      "end": "26:05",
+      "text": "member of s is a linear combination of B"
+    },
+    {
+      "start": "26:05",
+      "end": "26:08",
+      "text": "member of s is a linear combination of B and C for some choice of x and y so d is"
+    },
+    {
+      "start": "26:08",
+      "end": "26:08",
+      "text": "and C for some choice of x and y so d is"
+    },
+    {
+      "start": "26:08",
+      "end": "26:12",
+      "text": "and C for some choice of x and y so d is also the same so there is a choice of x"
+    },
+    {
+      "start": "26:12",
+      "end": "26:12",
+      "text": "also the same so there is a choice of x"
+    },
+    {
+      "start": "26:12",
+      "end": "26:15",
+      "text": "also the same so there is a choice of x and y namely X naught and y naught for"
+    },
+    {
+      "start": "26:15",
+      "end": "26:15",
+      "text": "and y namely X naught and y naught for"
+    },
+    {
+      "start": "26:15",
+      "end": "26:20",
+      "text": "and y namely X naught and y naught for which D is V X naught plus CY naught if"
+    },
+    {
+      "start": "26:20",
+      "end": "26:20",
+      "text": "which D is V X naught plus CY naught if"
+    },
+    {
+      "start": "26:20",
+      "end": "26:31",
+      "text": "which D is V X naught plus CY naught if D does not divide B then there exist"
+    },
+    {
+      "start": "26:42",
+      "end": "26:42",
+      "text": "unique R and Q such that B is QD + R"
+    },
+    {
+      "start": "26:42",
+      "end": "26:57",
+      "text": "unique R and Q such that B is QD + R where R is strictly between 0 and D so"
+    },
+    {
+      "start": "26:57",
+      "end": "26:57",
+      "text": "where R is strictly between 0 and D so"
+    },
+    {
+      "start": "26:57",
+      "end": "27:05",
+      "text": "where R is strictly between 0 and D so we have RS be minus QD which is B minus"
+    },
+    {
+      "start": "27:05",
+      "end": "27:05",
+      "text": "we have RS be minus QD which is B minus"
+    },
+    {
+      "start": "27:05",
+      "end": "27:12",
+      "text": "we have RS be minus QD which is B minus Q into D X naught plus cy naught"
+    },
+    {
+      "start": "27:16",
+      "end": "27:16",
+      "text": "rearranging we get that this is B into 1"
+    },
+    {
+      "start": "27:16",
+      "end": "27:30",
+      "text": "rearranging we get that this is B into 1 minus Q X naught minus C into Qi not or"
+    },
+    {
+      "start": "27:30",
+      "end": "27:30",
+      "text": "minus Q X naught minus C into Qi not or"
+    },
+    {
+      "start": "27:30",
+      "end": "27:33",
+      "text": "minus Q X naught minus C into Qi not or I can the plus here and both the"
+    },
+    {
+      "start": "27:33",
+      "end": "27:33",
+      "text": "I can the plus here and both the"
+    },
+    {
+      "start": "27:33",
+      "end": "27:35",
+      "text": "I can the plus here and both the negative sign here so we have two"
+    },
+    {
+      "start": "27:35",
+      "end": "27:35",
+      "text": "negative sign here so we have two"
+    },
+    {
+      "start": "27:35",
+      "end": "27:37",
+      "text": "negative sign here so we have two integers 1 minus Q X naught and minus Q"
+    },
+    {
+      "start": "27:37",
+      "end": "27:37",
+      "text": "integers 1 minus Q X naught and minus Q"
+    },
+    {
+      "start": "27:37",
+      "end": "27:40",
+      "text": "integers 1 minus Q X naught and minus Q Y naught so that our is a linear"
+    },
+    {
+      "start": "27:40",
+      "end": "27:40",
+      "text": "Y naught so that our is a linear"
+    },
+    {
+      "start": "27:40",
+      "end": "27:43",
+      "text": "Y naught so that our is a linear combination of B and C with these as the"
+    },
+    {
+      "start": "27:43",
+      "end": "27:43",
+      "text": "combination of B and C with these as the"
+    },
+    {
+      "start": "27:43",
+      "end": "27:46",
+      "text": "combination of B and C with these as the coefficients but we know that r is"
+    },
+    {
+      "start": "27:46",
+      "end": "27:46",
+      "text": "coefficients but we know that r is"
+    },
+    {
+      "start": "27:46",
+      "end": "27:50",
+      "text": "coefficients but we know that r is strictly between 0 and B therefore what"
+    },
+    {
+      "start": "27:50",
+      "end": "27:50",
+      "text": "strictly between 0 and B therefore what"
+    },
+    {
+      "start": "27:50",
+      "end": "27:52",
+      "text": "strictly between 0 and B therefore what we have found is that our belongs to s"
+    },
+    {
+      "start": "27:52",
+      "end": "27:52",
+      "text": "we have found is that our belongs to s"
+    },
+    {
+      "start": "27:52",
+      "end": "27:57",
+      "text": "we have found is that our belongs to s and R is positive but we had put D as"
+    },
+    {
+      "start": "27:57",
+      "end": "27:57",
+      "text": "and R is positive but we had put D as"
+    },
+    {
+      "start": "27:57",
+      "end": "28:00",
+      "text": "and R is positive but we had put D as the least positive member of s and here"
+    },
+    {
+      "start": "28:00",
+      "end": "28:00",
+      "text": "the least positive member of s and here"
+    },
+    {
+      "start": "28:00",
+      "end": "28:04",
+      "text": "the least positive member of s and here we find R which is a positive is a"
+    },
+    {
+      "start": "28:04",
+      "end": "28:04",
+      "text": "we find R which is a positive is a"
+    },
+    {
+      "start": "28:04",
+      "end": "28:07",
+      "text": "we find R which is a positive is a member of s but is less than D therefore"
+    },
+    {
+      "start": "28:07",
+      "end": "28:07",
+      "text": "member of s but is less than D therefore"
+    },
+    {
+      "start": "28:07",
+      "end": "28:13",
+      "text": "member of s but is less than D therefore we have a contradiction"
+    },
+    {
+      "start": "28:15",
+      "end": "28:15",
+      "text": "and from what did we derive this"
+    },
+    {
+      "start": "28:15",
+      "end": "28:19",
+      "text": "and from what did we derive this contradiction we assume that D does not"
+    },
+    {
+      "start": "28:19",
+      "end": "28:19",
+      "text": "contradiction we assume that D does not"
+    },
+    {
+      "start": "28:19",
+      "end": "28:21",
+      "text": "contradiction we assume that D does not divide B and then got this contradiction"
+    },
+    {
+      "start": "28:21",
+      "end": "28:21",
+      "text": "divide B and then got this contradiction"
+    },
+    {
+      "start": "28:21",
+      "end": "28:26",
+      "text": "divide B and then got this contradiction therefore it must be that D divides B"
+    },
+    {
+      "start": "28:29",
+      "end": "28:29",
+      "text": "similarly we can also argue that D"
+    },
+    {
+      "start": "28:29",
+      "end": "28:34",
+      "text": "similarly we can also argue that D divides C so if D divides B and D"
+    },
+    {
+      "start": "28:34",
+      "end": "28:34",
+      "text": "divides C so if D divides B and D"
+    },
+    {
+      "start": "28:34",
+      "end": "28:41",
+      "text": "divides C so if D divides B and D divides C then D is a common divisor of"
+    },
+    {
+      "start": "28:41",
+      "end": "28:41",
+      "text": "divides C then D is a common divisor of"
+    },
+    {
+      "start": "28:41",
+      "end": "28:50",
+      "text": "divides C then D is a common divisor of B and C"
+    },
+    {
+      "start": "28:55",
+      "end": "28:55",
+      "text": "now consider the GCD of B and C let G be"
+    },
+    {
+      "start": "28:55",
+      "end": "29:03",
+      "text": "now consider the GCD of B and C let G be the GCD of B and C since D is BX naught"
+    },
+    {
+      "start": "29:03",
+      "end": "29:03",
+      "text": "the GCD of B and C since D is BX naught"
+    },
+    {
+      "start": "29:03",
+      "end": "29:08",
+      "text": "the GCD of B and C since D is BX naught plus cy naught we have that G divides D"
+    },
+    {
+      "start": "29:08",
+      "end": "29:08",
+      "text": "plus cy naught we have that G divides D"
+    },
+    {
+      "start": "29:08",
+      "end": "29:11",
+      "text": "plus cy naught we have that G divides D G divides B and G divides C so G divides"
+    },
+    {
+      "start": "29:11",
+      "end": "29:11",
+      "text": "G divides B and G divides C so G divides"
+    },
+    {
+      "start": "29:11",
+      "end": "29:14",
+      "text": "G divides B and G divides C so G divides B X naught plus C Y naught as per the"
+    },
+    {
+      "start": "29:14",
+      "end": "29:14",
+      "text": "B X naught plus C Y naught as per the"
+    },
+    {
+      "start": "29:14",
+      "end": "29:18",
+      "text": "B X naught plus C Y naught as per the theorem we saw earlier so G divides D G"
+    },
+    {
+      "start": "29:18",
+      "end": "29:18",
+      "text": "theorem we saw earlier so G divides D G"
+    },
+    {
+      "start": "29:18",
+      "end": "29:26",
+      "text": "theorem we saw earlier so G divides D G and D are both positive so since G"
+    },
+    {
+      "start": "29:26",
+      "end": "29:26",
+      "text": "and D are both positive so since G"
+    },
+    {
+      "start": "29:26",
+      "end": "29:32",
+      "text": "and D are both positive so since G divides D G is less than or equal to D"
+    },
+    {
+      "start": "29:40",
+      "end": "29:40",
+      "text": "but then G is the GCD of B and C and D"
+    },
+    {
+      "start": "29:40",
+      "end": "29:46",
+      "text": "but then G is the GCD of B and C and D is a CD a common device G is the"
+    },
+    {
+      "start": "29:46",
+      "end": "29:46",
+      "text": "is a CD a common device G is the"
+    },
+    {
+      "start": "29:46",
+      "end": "29:48",
+      "text": "is a CD a common device G is the greatest common divisor therefore"
+    },
+    {
+      "start": "29:48",
+      "end": "29:48",
+      "text": "greatest common divisor therefore"
+    },
+    {
+      "start": "29:48",
+      "end": "29:53",
+      "text": "greatest common divisor therefore clearly G is greater than or equal to D"
+    },
+    {
+      "start": "30:00",
+      "end": "30:00",
+      "text": "in other words G is equal to D in other"
+    },
+    {
+      "start": "30:00",
+      "end": "30:08",
+      "text": "in other words G is equal to D in other words the GCD of B and C"
+    },
+    {
+      "start": "30:32",
+      "end": "30:32",
+      "text": "a linear combination of B and C with"
+    },
+    {
+      "start": "30:32",
+      "end": "30:41",
+      "text": "a linear combination of B and C with integer coefficients now another theorem"
+    },
+    {
+      "start": "30:41",
+      "end": "30:41",
+      "text": "integer coefficients now another theorem"
+    },
+    {
+      "start": "30:41",
+      "end": "30:53",
+      "text": "integer coefficients now another theorem for any two integers B and C"
+    },
+    {
+      "start": "31:07",
+      "end": "31:07",
+      "text": "the GCD is the positive common divisor"
+    },
+    {
+      "start": "31:07",
+      "end": "31:15",
+      "text": "the GCD is the positive common divisor that is a multiple of every common"
+    },
+    {
+      "start": "31:15",
+      "end": "31:15",
+      "text": "that is a multiple of every common"
+    },
+    {
+      "start": "31:15",
+      "end": "31:24",
+      "text": "that is a multiple of every common device for any pair of integers BNC not"
+    },
+    {
+      "start": "31:24",
+      "end": "31:24",
+      "text": "device for any pair of integers BNC not"
+    },
+    {
+      "start": "31:24",
+      "end": "31:26",
+      "text": "device for any pair of integers BNC not both zero the greatest common divisor"
+    },
+    {
+      "start": "31:26",
+      "end": "31:26",
+      "text": "both zero the greatest common divisor"
+    },
+    {
+      "start": "31:26",
+      "end": "31:28",
+      "text": "both zero the greatest common divisor happens to be the positive common"
+    },
+    {
+      "start": "31:28",
+      "end": "31:28",
+      "text": "happens to be the positive common"
+    },
+    {
+      "start": "31:28",
+      "end": "31:29",
+      "text": "happens to be the positive common devices that is a multiple of every"
+    },
+    {
+      "start": "31:29",
+      "end": "31:29",
+      "text": "devices that is a multiple of every"
+    },
+    {
+      "start": "31:29",
+      "end": "31:35",
+      "text": "devices that is a multiple of every common divisor to prove this suppose D"
+    },
+    {
+      "start": "31:35",
+      "end": "31:35",
+      "text": "common divisor to prove this suppose D"
+    },
+    {
+      "start": "31:35",
+      "end": "31:44",
+      "text": "common divisor to prove this suppose D is a common divisor of B and C then D"
+    },
+    {
+      "start": "31:44",
+      "end": "31:44",
+      "text": "is a common divisor of B and C then D"
+    },
+    {
+      "start": "31:44",
+      "end": "32:01",
+      "text": "is a common divisor of B and C then D divides every linear combination of BNC"
+    },
+    {
+      "start": "32:04",
+      "end": "32:04",
+      "text": "if D divides B and D divides C then D"
+    },
+    {
+      "start": "32:04",
+      "end": "32:06",
+      "text": "if D divides B and D divides C then D divides BX plus C y for any pair of"
+    },
+    {
+      "start": "32:06",
+      "end": "32:06",
+      "text": "divides BX plus C y for any pair of"
+    },
+    {
+      "start": "32:06",
+      "end": "32:10",
+      "text": "divides BX plus C y for any pair of integers x and y so d divides every"
+    },
+    {
+      "start": "32:10",
+      "end": "32:10",
+      "text": "integers x and y so d divides every"
+    },
+    {
+      "start": "32:10",
+      "end": "32:13",
+      "text": "integers x and y so d divides every member of the set in particular d"
+    },
+    {
+      "start": "32:13",
+      "end": "32:13",
+      "text": "member of the set in particular d"
+    },
+    {
+      "start": "32:13",
+      "end": "32:15",
+      "text": "member of the set in particular d divides the least positive member of the"
+    },
+    {
+      "start": "32:15",
+      "end": "32:15",
+      "text": "divides the least positive member of the"
+    },
+    {
+      "start": "32:15",
+      "end": "32:25",
+      "text": "divides the least positive member of the set"
+    },
+    {
+      "start": "32:29",
+      "end": "32:29",
+      "text": "this is what we call s but then what is"
+    },
+    {
+      "start": "32:29",
+      "end": "32:32",
+      "text": "this is what we call s but then what is the least positive member of s that"
+    },
+    {
+      "start": "32:32",
+      "end": "32:32",
+      "text": "the least positive member of s that"
+    },
+    {
+      "start": "32:32",
+      "end": "32:38",
+      "text": "the least positive member of s that happens to be the GCD FB and C so if D"
+    },
+    {
+      "start": "32:38",
+      "end": "32:38",
+      "text": "happens to be the GCD FB and C so if D"
+    },
+    {
+      "start": "32:38",
+      "end": "32:41",
+      "text": "happens to be the GCD FB and C so if D is a common divisor of B and C then D"
+    },
+    {
+      "start": "32:41",
+      "end": "32:41",
+      "text": "is a common divisor of B and C then D"
+    },
+    {
+      "start": "32:41",
+      "end": "32:47",
+      "text": "is a common divisor of B and C then D divides G so every common divisor of B"
+    },
+    {
+      "start": "32:47",
+      "end": "32:47",
+      "text": "divides G so every common divisor of B"
+    },
+    {
+      "start": "32:47",
+      "end": "32:58",
+      "text": "divides G so every common divisor of B and C divides G if G and G prime are"
+    },
+    {
+      "start": "32:58",
+      "end": "32:58",
+      "text": "and C divides G if G and G prime are"
+    },
+    {
+      "start": "32:58",
+      "end": "33:07",
+      "text": "and C divides G if G and G prime are both positive common devices that are"
+    },
+    {
+      "start": "33:07",
+      "end": "33:07",
+      "text": "both positive common devices that are"
+    },
+    {
+      "start": "33:07",
+      "end": "33:20",
+      "text": "both positive common devices that are divided by every common divisors"
+    },
+    {
+      "start": "33:25",
+      "end": "33:25",
+      "text": "then G and G prime of themselves common"
+    },
+    {
+      "start": "33:25",
+      "end": "33:28",
+      "text": "then G and G prime of themselves common devices then we have G divides G Prime"
+    },
+    {
+      "start": "33:28",
+      "end": "33:28",
+      "text": "devices then we have G divides G Prime"
+    },
+    {
+      "start": "33:28",
+      "end": "33:33",
+      "text": "devices then we have G divides G Prime and G prime divides G which implies the"
+    },
+    {
+      "start": "33:33",
+      "end": "33:33",
+      "text": "and G prime divides G which implies the"
+    },
+    {
+      "start": "33:33",
+      "end": "33:36",
+      "text": "and G prime divides G which implies the G equal to G prime but in other words G"
+    },
+    {
+      "start": "33:36",
+      "end": "33:36",
+      "text": "G equal to G prime but in other words G"
+    },
+    {
+      "start": "33:36",
+      "end": "33:39",
+      "text": "G equal to G prime but in other words G is the only common divisor with this"
+    },
+    {
+      "start": "33:39",
+      "end": "33:39",
+      "text": "is the only common divisor with this"
+    },
+    {
+      "start": "33:39",
+      "end": "33:42",
+      "text": "is the only common divisor with this property the only common divisor that is"
+    },
+    {
+      "start": "33:42",
+      "end": "33:42",
+      "text": "property the only common divisor that is"
+    },
+    {
+      "start": "33:42",
+      "end": "33:44",
+      "text": "property the only common divisor that is divided by every common divisor of B and"
+    },
+    {
+      "start": "33:44",
+      "end": "33:44",
+      "text": "divided by every common divisor of B and"
+    },
+    {
+      "start": "33:44",
+      "end": "33:48",
+      "text": "divided by every common divisor of B and C in other words the only common divisor"
+    },
+    {
+      "start": "33:48",
+      "end": "33:48",
+      "text": "C in other words the only common divisor"
+    },
+    {
+      "start": "33:48",
+      "end": "33:51",
+      "text": "C in other words the only common divisor of B and C which is divided by every"
+    },
+    {
+      "start": "33:51",
+      "end": "33:51",
+      "text": "of B and C which is divided by every"
+    },
+    {
+      "start": "33:51",
+      "end": "33:54",
+      "text": "of B and C which is divided by every common divisor of B and C is the GCD of"
+    },
+    {
+      "start": "33:54",
+      "end": "33:54",
+      "text": "common divisor of B and C is the GCD of"
+    },
+    {
+      "start": "33:54",
+      "end": "34:03",
+      "text": "common divisor of B and C is the GCD of B and C another theorem regarding G"
+    },
+    {
+      "start": "34:03",
+      "end": "34:03",
+      "text": "B and C another theorem regarding G"
+    },
+    {
+      "start": "34:03",
+      "end": "34:15",
+      "text": "B and C another theorem regarding G series for every positive integer D"
+    },
+    {
+      "start": "34:27",
+      "end": "34:27",
+      "text": "we have that GCD of BD CD equals GCD of"
+    },
+    {
+      "start": "34:27",
+      "end": "34:34",
+      "text": "we have that GCD of BD CD equals GCD of BC multiplied by D what is the GCD of BD"
+    },
+    {
+      "start": "34:34",
+      "end": "34:34",
+      "text": "BC multiplied by D what is the GCD of BD"
+    },
+    {
+      "start": "34:34",
+      "end": "34:44",
+      "text": "BC multiplied by D what is the GCD of BD and CD this happens to be the least"
+    },
+    {
+      "start": "34:44",
+      "end": "34:44",
+      "text": "and CD this happens to be the least"
+    },
+    {
+      "start": "34:44",
+      "end": "34:53",
+      "text": "and CD this happens to be the least positive member of the set BD x plus c"
+    },
+    {
+      "start": "34:53",
+      "end": "34:53",
+      "text": "positive member of the set BD x plus c"
+    },
+    {
+      "start": "34:53",
+      "end": "35:05",
+      "text": "positive member of the set BD x plus c dy where x and y are in deters which is"
+    },
+    {
+      "start": "35:11",
+      "end": "35:11",
+      "text": "d times the least positive member of 4"
+    },
+    {
+      "start": "35:11",
+      "end": "35:19",
+      "text": "d times the least positive member of 4 bx plus c y where x and y are integers"
+    },
+    {
+      "start": "35:19",
+      "end": "35:19",
+      "text": "bx plus c y where x and y are integers"
+    },
+    {
+      "start": "35:19",
+      "end": "35:22",
+      "text": "bx plus c y where x and y are integers this is the case when d is a positive"
+    },
+    {
+      "start": "35:22",
+      "end": "35:22",
+      "text": "this is the case when d is a positive"
+    },
+    {
+      "start": "35:22",
+      "end": "35:24",
+      "text": "this is the case when d is a positive integer which is indeed the case here"
+    },
+    {
+      "start": "35:24",
+      "end": "35:24",
+      "text": "integer which is indeed the case here"
+    },
+    {
+      "start": "35:24",
+      "end": "35:33",
+      "text": "integer which is indeed the case here but this is the GCD of B and C that is"
+    },
+    {
+      "start": "35:33",
+      "end": "35:33",
+      "text": "but this is the GCD of B and C that is"
+    },
+    {
+      "start": "35:33",
+      "end": "35:37",
+      "text": "but this is the GCD of B and C that is precisely what we wanted to show so you"
+    },
+    {
+      "start": "35:37",
+      "end": "35:37",
+      "text": "precisely what we wanted to show so you"
+    },
+    {
+      "start": "35:37",
+      "end": "35:40",
+      "text": "precisely what we wanted to show so you can remove common factors from a B D and"
+    },
+    {
+      "start": "35:40",
+      "end": "35:40",
+      "text": "can remove common factors from a B D and"
+    },
+    {
+      "start": "35:40",
+      "end": "35:44",
+      "text": "can remove common factors from a B D and C D D is a common factor of B D and C D"
+    },
+    {
+      "start": "35:44",
+      "end": "35:44",
+      "text": "C D D is a common factor of B D and C D"
+    },
+    {
+      "start": "35:44",
+      "end": "35:47",
+      "text": "C D D is a common factor of B D and C D and then find the common GCD of the"
+    },
+    {
+      "start": "35:47",
+      "end": "35:47",
+      "text": "and then find the common GCD of the"
+    },
+    {
+      "start": "35:47",
+      "end": "35:53",
+      "text": "and then find the common GCD of the remnants related theorem is this for"
+    },
+    {
+      "start": "35:53",
+      "end": "35:53",
+      "text": "remnants related theorem is this for"
+    },
+    {
+      "start": "35:53",
+      "end": "36:01",
+      "text": "remnants related theorem is this for every positive common divisor"
+    },
+    {
+      "start": "36:15",
+      "end": "36:15",
+      "text": "EF b and c GCD of B by D C by D this GCD"
+    },
+    {
+      "start": "36:15",
+      "end": "36:23",
+      "text": "EF b and c GCD of B by D C by D this GCD of B and C divided by D how do we prove"
+    },
+    {
+      "start": "36:23",
+      "end": "36:23",
+      "text": "of B and C divided by D how do we prove"
+    },
+    {
+      "start": "36:23",
+      "end": "36:28",
+      "text": "of B and C divided by D how do we prove this in the previous theorem you put D"
+    },
+    {
+      "start": "36:28",
+      "end": "36:28",
+      "text": "this in the previous theorem you put D"
+    },
+    {
+      "start": "36:28",
+      "end": "36:39",
+      "text": "this in the previous theorem you put D SD B by D s B and C by D as C if you"
+    },
+    {
+      "start": "36:39",
+      "end": "36:39",
+      "text": "SD B by D s B and C by D as C if you"
+    },
+    {
+      "start": "36:39",
+      "end": "36:43",
+      "text": "SD B by D s B and C by D as C if you substitute thus in this theorem we get"
+    },
+    {
+      "start": "36:43",
+      "end": "36:43",
+      "text": "substitute thus in this theorem we get"
+    },
+    {
+      "start": "36:43",
+      "end": "36:48",
+      "text": "substitute thus in this theorem we get the new theorem as a corollary yet"
+    },
+    {
+      "start": "36:48",
+      "end": "36:48",
+      "text": "the new theorem as a corollary yet"
+    },
+    {
+      "start": "36:48",
+      "end": "36:58",
+      "text": "the new theorem as a corollary yet another theorem if GCD of a and D is 1"
+    },
+    {
+      "start": "36:58",
+      "end": "36:58",
+      "text": "another theorem if GCD of a and D is 1"
+    },
+    {
+      "start": "36:58",
+      "end": "37:11",
+      "text": "another theorem if GCD of a and D is 1 and GCD of B and D is 1 then GCD of a D"
+    },
+    {
+      "start": "37:11",
+      "end": "37:11",
+      "text": "and GCD of B and D is 1 then GCD of a D"
+    },
+    {
+      "start": "37:11",
+      "end": "37:19",
+      "text": "and GCD of B and D is 1 then GCD of a D and a B and D this one as well"
+    },
+    {
+      "start": "37:23",
+      "end": "37:23",
+      "text": "in other words look at the fraction a by"
+    },
+    {
+      "start": "37:23",
+      "end": "37:25",
+      "text": "in other words look at the fraction a by D you cannot reduce this fraction"
+    },
+    {
+      "start": "37:25",
+      "end": "37:25",
+      "text": "D you cannot reduce this fraction"
+    },
+    {
+      "start": "37:25",
+      "end": "37:28",
+      "text": "D you cannot reduce this fraction anymore a and D do not cancel similarly"
+    },
+    {
+      "start": "37:28",
+      "end": "37:28",
+      "text": "anymore a and D do not cancel similarly"
+    },
+    {
+      "start": "37:28",
+      "end": "37:33",
+      "text": "anymore a and D do not cancel similarly B and D also do not cancel we only do"
+    },
+    {
+      "start": "37:33",
+      "end": "37:33",
+      "text": "B and D also do not cancel we only do"
+    },
+    {
+      "start": "37:33",
+      "end": "37:35",
+      "text": "B and D also do not cancel we only do not have common factors other than 1"
+    },
+    {
+      "start": "37:35",
+      "end": "37:35",
+      "text": "not have common factors other than 1"
+    },
+    {
+      "start": "37:35",
+      "end": "37:38",
+      "text": "not have common factors other than 1 therefore if you consider a B by D then"
+    },
+    {
+      "start": "37:38",
+      "end": "37:38",
+      "text": "therefore if you consider a B by D then"
+    },
+    {
+      "start": "37:38",
+      "end": "37:42",
+      "text": "therefore if you consider a B by D then D cannot cancel against a B D and E do"
+    },
+    {
+      "start": "37:42",
+      "end": "37:43",
+      "text": "D cannot cancel against a B D and E do"
+    },
+    {
+      "start": "37:43",
+      "end": "37:44",
+      "text": "D cannot cancel against a B D and E do not have common factors D and B do not"
+    },
+    {
+      "start": "37:44",
+      "end": "37:44",
+      "text": "not have common factors D and B do not"
+    },
+    {
+      "start": "37:44",
+      "end": "37:46",
+      "text": "not have common factors D and B do not have common factors other than 1"
+    },
+    {
+      "start": "37:46",
+      "end": "37:46",
+      "text": "have common factors other than 1"
+    },
+    {
+      "start": "37:46",
+      "end": "37:49",
+      "text": "have common factors other than 1 therefore D and a B also will not have"
+    },
+    {
+      "start": "37:49",
+      "end": "37:49",
+      "text": "therefore D and a B also will not have"
+    },
+    {
+      "start": "37:49",
+      "end": "37:52",
+      "text": "therefore D and a B also will not have common factors other than 1"
+    },
+    {
+      "start": "37:52",
+      "end": "37:52",
+      "text": "common factors other than 1"
+    },
+    {
+      "start": "37:52",
+      "end": "37:54",
+      "text": "common factors other than 1 of course intuitively clear to you but"
+    },
+    {
+      "start": "37:54",
+      "end": "37:54",
+      "text": "of course intuitively clear to you but"
+    },
+    {
+      "start": "37:54",
+      "end": "38:01",
+      "text": "of course intuitively clear to you but how do you prove it"
+    },
+    {
+      "start": "38:08",
+      "end": "38:08",
+      "text": "we know that GCD of a comma D equal to 1"
+    },
+    {
+      "start": "38:08",
+      "end": "38:13",
+      "text": "we know that GCD of a comma D equal to 1 GCD of B and D is also equal to 1"
+    },
+    {
+      "start": "38:13",
+      "end": "38:13",
+      "text": "GCD of B and D is also equal to 1"
+    },
+    {
+      "start": "38:13",
+      "end": "38:16",
+      "text": "GCD of B and D is also equal to 1 therefore we have integers X not Y not X"
+    },
+    {
+      "start": "38:16",
+      "end": "38:16",
+      "text": "therefore we have integers X not Y not X"
+    },
+    {
+      "start": "38:16",
+      "end": "38:22",
+      "text": "therefore we have integers X not Y not X 1 Y 1 so that one is a X not plus B why"
+    },
+    {
+      "start": "38:22",
+      "end": "38:22",
+      "text": "1 Y 1 so that one is a X not plus B why"
+    },
+    {
+      "start": "38:22",
+      "end": "38:32",
+      "text": "1 Y 1 so that one is a X not plus B why not and one is BX 1 so the D here and dy"
+    },
+    {
+      "start": "38:32",
+      "end": "38:32",
+      "text": "not and one is BX 1 so the D here and dy"
+    },
+    {
+      "start": "38:32",
+      "end": "38:40",
+      "text": "not and one is BX 1 so the D here and dy 1 so there exists X not Y not X 1 y 1"
+    },
+    {
+      "start": "38:40",
+      "end": "38:40",
+      "text": "1 so there exists X not Y not X 1 y 1"
+    },
+    {
+      "start": "38:40",
+      "end": "38:50",
+      "text": "1 so there exists X not Y not X 1 y 1 all integers so that this is satisfied"
+    },
+    {
+      "start": "38:58",
+      "end": "38:58",
+      "text": "let us define Z 1 as dy naught y 1 minus"
+    },
+    {
+      "start": "38:58",
+      "end": "39:05",
+      "text": "let us define Z 1 as dy naught y 1 minus y naught minus y 1 and is it not as X"
+    },
+    {
+      "start": "39:05",
+      "end": "39:05",
+      "text": "y naught minus y 1 and is it not as X"
+    },
+    {
+      "start": "39:05",
+      "end": "39:12",
+      "text": "y naught minus y 1 and is it not as X naught X 1 if this is the case then we"
+    },
+    {
+      "start": "39:12",
+      "end": "39:12",
+      "text": "naught X 1 if this is the case then we"
+    },
+    {
+      "start": "39:12",
+      "end": "39:19",
+      "text": "naught X 1 if this is the case then we readily find that a B into Z naught is 1"
+    },
+    {
+      "start": "39:19",
+      "end": "39:19",
+      "text": "readily find that a B into Z naught is 1"
+    },
+    {
+      "start": "39:19",
+      "end": "39:26",
+      "text": "readily find that a B into Z naught is 1 minus dy not 4 minus dy 1 replacing X"
+    },
+    {
+      "start": "39:26",
+      "end": "39:26",
+      "text": "minus dy not 4 minus dy 1 replacing X"
+    },
+    {
+      "start": "39:26",
+      "end": "39:28",
+      "text": "minus dy not 4 minus dy 1 replacing X naught and X 1 with 1 minus d y naught"
+    },
+    {
+      "start": "39:28",
+      "end": "39:28",
+      "text": "naught and X 1 with 1 minus d y naught"
+    },
+    {
+      "start": "39:28",
+      "end": "39:31",
+      "text": "naught and X 1 with 1 minus d y naught and 1 minus dy 1 we find that a B into Z"
+    },
+    {
+      "start": "39:31",
+      "end": "39:32",
+      "text": "and 1 minus dy 1 we find that a B into Z"
+    },
+    {
+      "start": "39:32",
+      "end": "39:41",
+      "text": "and 1 minus dy 1 we find that a B into Z naught is this which is 1 plus d set 1"
+    },
+    {
+      "start": "39:41",
+      "end": "39:41",
+      "text": "naught is this which is 1 plus d set 1"
+    },
+    {
+      "start": "39:41",
+      "end": "39:48",
+      "text": "naught is this which is 1 plus d set 1 that is a B into Z naught plus D into"
+    },
+    {
+      "start": "39:48",
+      "end": "39:48",
+      "text": "that is a B into Z naught plus D into"
+    },
+    {
+      "start": "39:48",
+      "end": "39:55",
+      "text": "that is a B into Z naught plus D into minus Z 1 equal to 1 therefore if you"
+    },
+    {
+      "start": "39:55",
+      "end": "39:55",
+      "text": "minus Z 1 equal to 1 therefore if you"
+    },
+    {
+      "start": "39:55",
+      "end": "39:57",
+      "text": "minus Z 1 equal to 1 therefore if you consider the linear combinations of a b"
+    },
+    {
+      "start": "39:57",
+      "end": "39:57",
+      "text": "consider the linear combinations of a b"
+    },
+    {
+      "start": "39:57",
+      "end": "40:01",
+      "text": "consider the linear combinations of a b and b with integer coefficients the"
+    },
+    {
+      "start": "40:01",
+      "end": "40:01",
+      "text": "and b with integer coefficients the"
+    },
+    {
+      "start": "40:01",
+      "end": "40:03",
+      "text": "and b with integer coefficients the least positive member of that set is"
+    },
+    {
+      "start": "40:03",
+      "end": "40:03",
+      "text": "least positive member of that set is"
+    },
+    {
+      "start": "40:03",
+      "end": "40:06",
+      "text": "least positive member of that set is going to be 1 if 1 is present in that"
+    },
+    {
+      "start": "40:06",
+      "end": "40:06",
+      "text": "going to be 1 if 1 is present in that"
+    },
+    {
+      "start": "40:06",
+      "end": "40:08",
+      "text": "going to be 1 if 1 is present in that set certainly one has to be the least"
+    },
+    {
+      "start": "40:08",
+      "end": "40:08",
+      "text": "set certainly one has to be the least"
+    },
+    {
+      "start": "40:08",
+      "end": "40:13",
+      "text": "set certainly one has to be the least among them in other words GCD of a b and"
+    },
+    {
+      "start": "40:13",
+      "end": "40:13",
+      "text": "among them in other words GCD of a b and"
+    },
+    {
+      "start": "40:13",
+      "end": "40:20",
+      "text": "among them in other words GCD of a b and b will have to be 1 that is it from this"
+    },
+    {
+      "start": "40:20",
+      "end": "40:20",
+      "text": "b will have to be 1 that is it from this"
+    },
+    {
+      "start": "40:20",
+      "end": "40:22",
+      "text": "b will have to be 1 that is it from this lecture we will see more properties of G"
+    },
+    {
+      "start": "40:22",
+      "end": "40:22",
+      "text": "lecture we will see more properties of G"
+    },
+    {
+      "start": "40:22",
+      "end": "40:24",
+      "text": "lecture we will see more properties of G series in the next class hope to see you"
+    },
+    {
+      "start": "40:24",
+      "end": "40:24",
+      "text": "series in the next class hope to see you"
+    },
+    {
+      "start": "40:24",
+      "end": "40:33",
+      "text": "series in the next class hope to see you in the next thank you"
+    }
+  ],
+  "timestamped": true
+}

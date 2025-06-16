@@ -1,0 +1,4358 @@
+{
+  "title": "Lec 18: Counting Spanning Trees in Complete Graphs",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:27",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:30",
+      "end": "0:30",
+      "text": "in today's lecture we will learn about"
+    },
+    {
+      "start": "0:30",
+      "end": "0:32",
+      "text": "in today's lecture we will learn about counting the spanning trees of the"
+    },
+    {
+      "start": "0:32",
+      "end": "0:32",
+      "text": "counting the spanning trees of the"
+    },
+    {
+      "start": "0:32",
+      "end": "0:35",
+      "text": "counting the spanning trees of the complete graph so let's understand what"
+    },
+    {
+      "start": "0:35",
+      "end": "0:35",
+      "text": "complete graph so let's understand what"
+    },
+    {
+      "start": "0:35",
+      "end": "0:39",
+      "text": "complete graph so let's understand what this means so we have talked about"
+    },
+    {
+      "start": "0:39",
+      "end": "0:39",
+      "text": "this means so we have talked about"
+    },
+    {
+      "start": "0:39",
+      "end": "0:48",
+      "text": "this means so we have talked about spanning trees before so suppose G is a"
+    },
+    {
+      "start": "0:48",
+      "end": "0:48",
+      "text": "spanning trees before so suppose G is a"
+    },
+    {
+      "start": "0:48",
+      "end": "1:03",
+      "text": "spanning trees before so suppose G is a graph spanning tree T"
+    },
+    {
+      "start": "1:07",
+      "end": "1:07",
+      "text": "should satisfy two conditions the first"
+    },
+    {
+      "start": "1:07",
+      "end": "1:15",
+      "text": "should satisfy two conditions the first condition being T should be connected"
+    },
+    {
+      "start": "1:20",
+      "end": "1:20",
+      "text": "and the second condition is T should be"
+    },
+    {
+      "start": "1:20",
+      "end": "1:28",
+      "text": "and the second condition is T should be slightly free okay so it is basically a"
+    },
+    {
+      "start": "1:28",
+      "end": "1:28",
+      "text": "slightly free okay so it is basically a"
+    },
+    {
+      "start": "1:28",
+      "end": "1:32",
+      "text": "slightly free okay so it is basically a tree such that every vertex there is a"
+    },
+    {
+      "start": "1:32",
+      "end": "1:32",
+      "text": "tree such that every vertex there is a"
+    },
+    {
+      "start": "1:32",
+      "end": "1:34",
+      "text": "tree such that every vertex there is a path from every vertex to every other"
+    },
+    {
+      "start": "1:34",
+      "end": "1:34",
+      "text": "path from every vertex to every other"
+    },
+    {
+      "start": "1:34",
+      "end": "1:36",
+      "text": "path from every vertex to every other vertex so you can say that it is the"
+    },
+    {
+      "start": "1:36",
+      "end": "1:36",
+      "text": "vertex so you can say that it is the"
+    },
+    {
+      "start": "1:36",
+      "end": "1:41",
+      "text": "vertex so you can say that it is the minimal such graph minimal in the sense"
+    },
+    {
+      "start": "1:41",
+      "end": "1:41",
+      "text": "minimal such graph minimal in the sense"
+    },
+    {
+      "start": "1:41",
+      "end": "1:45",
+      "text": "minimal such graph minimal in the sense of number of edges required so this is a"
+    },
+    {
+      "start": "1:45",
+      "end": "1:45",
+      "text": "of number of edges required so this is a"
+    },
+    {
+      "start": "1:45",
+      "end": "1:48",
+      "text": "of number of edges required so this is a definition of a spanning tree and we are"
+    },
+    {
+      "start": "1:48",
+      "end": "1:48",
+      "text": "definition of a spanning tree and we are"
+    },
+    {
+      "start": "1:48",
+      "end": "1:49",
+      "text": "definition of a spanning tree and we are looking at the complete graph on n"
+    },
+    {
+      "start": "1:49",
+      "end": "1:49",
+      "text": "looking at the complete graph on n"
+    },
+    {
+      "start": "1:49",
+      "end": "1:52",
+      "text": "looking at the complete graph on n vertices so let us say if we had taken"
+    },
+    {
+      "start": "1:52",
+      "end": "1:52",
+      "text": "vertices so let us say if we had taken"
+    },
+    {
+      "start": "1:52",
+      "end": "1:56",
+      "text": "vertices so let us say if we had taken three vertices this would be the"
+    },
+    {
+      "start": "1:56",
+      "end": "1:56",
+      "text": "three vertices this would be the"
+    },
+    {
+      "start": "1:56",
+      "end": "1:57",
+      "text": "three vertices this would be the complete graph on three vertices which"
+    },
+    {
+      "start": "1:57",
+      "end": "1:57",
+      "text": "complete graph on three vertices which"
+    },
+    {
+      "start": "1:57",
+      "end": "2:01",
+      "text": "complete graph on three vertices which we represent by k3 and if we number the"
+    },
+    {
+      "start": "2:01",
+      "end": "2:01",
+      "text": "we represent by k3 and if we number the"
+    },
+    {
+      "start": "2:01",
+      "end": "2:06",
+      "text": "we represent by k3 and if we number the vertices as 1 2 3 this graph has many"
+    },
+    {
+      "start": "2:06",
+      "end": "2:06",
+      "text": "vertices as 1 2 3 this graph has many"
+    },
+    {
+      "start": "2:06",
+      "end": "2:09",
+      "text": "vertices as 1 2 3 this graph has many spanning trees in particular if we just"
+    },
+    {
+      "start": "2:09",
+      "end": "2:09",
+      "text": "spanning trees in particular if we just"
+    },
+    {
+      "start": "2:09",
+      "end": "2:13",
+      "text": "spanning trees in particular if we just try to draw every spanning tree of this"
+    },
+    {
+      "start": "2:13",
+      "end": "2:13",
+      "text": "try to draw every spanning tree of this"
+    },
+    {
+      "start": "2:13",
+      "end": "2:17",
+      "text": "try to draw every spanning tree of this graph will have exactly two edges so 1 2"
+    },
+    {
+      "start": "2:17",
+      "end": "2:17",
+      "text": "graph will have exactly two edges so 1 2"
+    },
+    {
+      "start": "2:17",
+      "end": "2:26",
+      "text": "graph will have exactly two edges so 1 2 2 3 is one possibility so this is T 1 1"
+    },
+    {
+      "start": "2:26",
+      "end": "2:26",
+      "text": "2 3 is one possibility so this is T 1 1"
+    },
+    {
+      "start": "2:26",
+      "end": "2:30",
+      "text": "2 3 is one possibility so this is T 1 1 3 2 3 will be the second spanning tree"
+    },
+    {
+      "start": "2:30",
+      "end": "2:30",
+      "text": "3 2 3 will be the second spanning tree"
+    },
+    {
+      "start": "2:30",
+      "end": "2:32",
+      "text": "3 2 3 will be the second spanning tree and that is yet another spanning tree"
+    },
+    {
+      "start": "2:32",
+      "end": "2:32",
+      "text": "and that is yet another spanning tree"
+    },
+    {
+      "start": "2:32",
+      "end": "2:38",
+      "text": "and that is yet another spanning tree which is 1 2 which consists of the edges"
+    },
+    {
+      "start": "2:38",
+      "end": "2:38",
+      "text": "which is 1 2 which consists of the edges"
+    },
+    {
+      "start": "2:38",
+      "end": "2:43",
+      "text": "which is 1 2 which consists of the edges 1 2 &amp; 1 3 so you can verify that these"
+    },
+    {
+      "start": "2:43",
+      "end": "2:43",
+      "text": "1 2 &amp; 1 3 so you can verify that these"
+    },
+    {
+      "start": "2:43",
+      "end": "2:46",
+      "text": "1 2 &amp; 1 3 so you can verify that these are the only spanning trees for K 3 so"
+    },
+    {
+      "start": "2:46",
+      "end": "2:46",
+      "text": "are the only spanning trees for K 3 so"
+    },
+    {
+      "start": "2:46",
+      "end": "2:55",
+      "text": "are the only spanning trees for K 3 so when K equals 3 the number will be 3 if"
+    },
+    {
+      "start": "2:55",
+      "end": "2:55",
+      "text": "when K equals 3 the number will be 3 if"
+    },
+    {
+      "start": "2:55",
+      "end": "2:58",
+      "text": "when K equals 3 the number will be 3 if we had looked at the simpler example of"
+    },
+    {
+      "start": "2:58",
+      "end": "2:58",
+      "text": "we had looked at the simpler example of"
+    },
+    {
+      "start": "2:58",
+      "end": "3:06",
+      "text": "we had looked at the simpler example of K 2 which is precisely 1 spanning tree"
+    },
+    {
+      "start": "3:07",
+      "end": "3:07",
+      "text": "so you can say for n equals two the"
+    },
+    {
+      "start": "3:07",
+      "end": "3:13",
+      "text": "so you can say for n equals two the values one for N equals three let's see"
+    },
+    {
+      "start": "3:13",
+      "end": "3:13",
+      "text": "values one for N equals three let's see"
+    },
+    {
+      "start": "3:13",
+      "end": "3:15",
+      "text": "values one for N equals three let's see what is the case when n is equal to four"
+    },
+    {
+      "start": "3:15",
+      "end": "3:15",
+      "text": "what is the case when n is equal to four"
+    },
+    {
+      "start": "3:15",
+      "end": "3:16",
+      "text": "what is the case when n is equal to four so we're looking at this particular"
+    },
+    {
+      "start": "3:16",
+      "end": "3:16",
+      "text": "so we're looking at this particular"
+    },
+    {
+      "start": "3:16",
+      "end": "3:22",
+      "text": "so we're looking at this particular graph the complete graph and for what is"
+    },
+    {
+      "start": "3:22",
+      "end": "3:22",
+      "text": "graph the complete graph and for what is"
+    },
+    {
+      "start": "3:22",
+      "end": "3:27",
+      "text": "graph the complete graph and for what is this how many spanning trees does this"
+    },
+    {
+      "start": "3:27",
+      "end": "3:27",
+      "text": "this how many spanning trees does this"
+    },
+    {
+      "start": "3:27",
+      "end": "3:31",
+      "text": "this how many spanning trees does this particular graph so we can enumerate"
+    },
+    {
+      "start": "3:31",
+      "end": "3:31",
+      "text": "particular graph so we can enumerate"
+    },
+    {
+      "start": "3:31",
+      "end": "3:36",
+      "text": "particular graph so we can enumerate them so one would be of this kind where"
+    },
+    {
+      "start": "3:36",
+      "end": "3:36",
+      "text": "them so one would be of this kind where"
+    },
+    {
+      "start": "3:36",
+      "end": "3:39",
+      "text": "them so one would be of this kind where so all the spanning trees of KFOR"
+    },
+    {
+      "start": "3:39",
+      "end": "3:39",
+      "text": "so all the spanning trees of KFOR"
+    },
+    {
+      "start": "3:39",
+      "end": "3:43",
+      "text": "so all the spanning trees of KFOR will have precisely three edges so the"
+    },
+    {
+      "start": "3:43",
+      "end": "3:43",
+      "text": "will have precisely three edges so the"
+    },
+    {
+      "start": "3:43",
+      "end": "3:46",
+      "text": "will have precisely three edges so the ones which consists of the boundaries is"
+    },
+    {
+      "start": "3:46",
+      "end": "3:46",
+      "text": "ones which consists of the boundaries is"
+    },
+    {
+      "start": "3:46",
+      "end": "3:48",
+      "text": "ones which consists of the boundaries is a square there will be three of them so"
+    },
+    {
+      "start": "3:48",
+      "end": "3:48",
+      "text": "a square there will be three of them so"
+    },
+    {
+      "start": "3:48",
+      "end": "3:52",
+      "text": "a square there will be three of them so there is a missing edge here and there"
+    },
+    {
+      "start": "3:52",
+      "end": "3:52",
+      "text": "there is a missing edge here and there"
+    },
+    {
+      "start": "3:52",
+      "end": "3:54",
+      "text": "there is a missing edge here and there are four ways you could choose them so"
+    },
+    {
+      "start": "3:54",
+      "end": "3:54",
+      "text": "are four ways you could choose them so"
+    },
+    {
+      "start": "3:54",
+      "end": "3:59",
+      "text": "are four ways you could choose them so there are four trees of this kind and if"
+    },
+    {
+      "start": "3:59",
+      "end": "3:59",
+      "text": "there are four trees of this kind and if"
+    },
+    {
+      "start": "3:59",
+      "end": "4:04",
+      "text": "there are four trees of this kind and if you include the diagonal okay so you can"
+    },
+    {
+      "start": "4:04",
+      "end": "4:04",
+      "text": "you include the diagonal okay so you can"
+    },
+    {
+      "start": "4:04",
+      "end": "4:07",
+      "text": "you include the diagonal okay so you can include like both diagonal okay so these"
+    },
+    {
+      "start": "4:07",
+      "end": "4:07",
+      "text": "include like both diagonal okay so these"
+    },
+    {
+      "start": "4:07",
+      "end": "4:11",
+      "text": "include like both diagonal okay so these four are without including diagonal now"
+    },
+    {
+      "start": "4:11",
+      "end": "4:11",
+      "text": "four are without including diagonal now"
+    },
+    {
+      "start": "4:11",
+      "end": "4:13",
+      "text": "four are without including diagonal now the choice becomes do you include two"
+    },
+    {
+      "start": "4:13",
+      "end": "4:13",
+      "text": "the choice becomes do you include two"
+    },
+    {
+      "start": "4:13",
+      "end": "4:15",
+      "text": "the choice becomes do you include two diagonals that include only one diagonal"
+    },
+    {
+      "start": "4:15",
+      "end": "4:15",
+      "text": "diagonals that include only one diagonal"
+    },
+    {
+      "start": "4:15",
+      "end": "4:18",
+      "text": "diagonals that include only one diagonal okay so let's just look at including two"
+    },
+    {
+      "start": "4:18",
+      "end": "4:18",
+      "text": "okay so let's just look at including two"
+    },
+    {
+      "start": "4:18",
+      "end": "4:21",
+      "text": "okay so let's just look at including two diagonals so these are the two edges and"
+    },
+    {
+      "start": "4:21",
+      "end": "4:21",
+      "text": "diagonals so these are the two edges and"
+    },
+    {
+      "start": "4:21",
+      "end": "4:24",
+      "text": "diagonals so these are the two edges and the third edge that you want to add"
+    },
+    {
+      "start": "4:24",
+      "end": "4:24",
+      "text": "the third edge that you want to add"
+    },
+    {
+      "start": "4:24",
+      "end": "4:28",
+      "text": "the third edge that you want to add could be any of the other four okay"
+    },
+    {
+      "start": "4:28",
+      "end": "4:28",
+      "text": "could be any of the other four okay"
+    },
+    {
+      "start": "4:28",
+      "end": "4:31",
+      "text": "could be any of the other four okay because each of them so if you had taken"
+    },
+    {
+      "start": "4:31",
+      "end": "4:31",
+      "text": "because each of them so if you had taken"
+    },
+    {
+      "start": "4:31",
+      "end": "4:33",
+      "text": "because each of them so if you had taken this that will give you a spanning tree"
+    },
+    {
+      "start": "4:33",
+      "end": "4:33",
+      "text": "this that will give you a spanning tree"
+    },
+    {
+      "start": "4:33",
+      "end": "4:35",
+      "text": "this that will give you a spanning tree and so all those four choices would give"
+    },
+    {
+      "start": "4:35",
+      "end": "4:35",
+      "text": "and so all those four choices would give"
+    },
+    {
+      "start": "4:35",
+      "end": "4:37",
+      "text": "and so all those four choices would give you valid spanning trees so there are"
+    },
+    {
+      "start": "4:37",
+      "end": "4:37",
+      "text": "you valid spanning trees so there are"
+    },
+    {
+      "start": "4:37",
+      "end": "4:40",
+      "text": "you valid spanning trees so there are four trees of that kind and if you"
+    },
+    {
+      "start": "4:40",
+      "end": "4:40",
+      "text": "four trees of that kind and if you"
+    },
+    {
+      "start": "4:40",
+      "end": "4:44",
+      "text": "four trees of that kind and if you choose to include just one diagonal okay"
+    },
+    {
+      "start": "4:44",
+      "end": "4:44",
+      "text": "choose to include just one diagonal okay"
+    },
+    {
+      "start": "4:44",
+      "end": "4:46",
+      "text": "choose to include just one diagonal okay so let us say if we are using the one"
+    },
+    {
+      "start": "4:46",
+      "end": "4:46",
+      "text": "so let us say if we are using the one"
+    },
+    {
+      "start": "4:46",
+      "end": "4:48",
+      "text": "so let us say if we are using the one for diagonal the other case would be"
+    },
+    {
+      "start": "4:48",
+      "end": "4:48",
+      "text": "for diagonal the other case would be"
+    },
+    {
+      "start": "4:48",
+      "end": "4:56",
+      "text": "for diagonal the other case would be symmetric now we can choose either these"
+    },
+    {
+      "start": "4:56",
+      "end": "4:56",
+      "text": "symmetric now we can choose either these"
+    },
+    {
+      "start": "4:56",
+      "end": "5:07",
+      "text": "symmetric now we can choose either these two this is yet another case"
+    },
+    {
+      "start": "5:10",
+      "end": "5:10",
+      "text": "so these are the four spanning trees"
+    },
+    {
+      "start": "5:10",
+      "end": "5:12",
+      "text": "so these are the four spanning trees that we will get if we choose to add the"
+    },
+    {
+      "start": "5:12",
+      "end": "5:12",
+      "text": "that we will get if we choose to add the"
+    },
+    {
+      "start": "5:12",
+      "end": "5:15",
+      "text": "that we will get if we choose to add the 1/4 edge if we insist on having the 1/4"
+    },
+    {
+      "start": "5:15",
+      "end": "5:15",
+      "text": "1/4 edge if we insist on having the 1/4"
+    },
+    {
+      "start": "5:15",
+      "end": "5:20",
+      "text": "1/4 edge if we insist on having the 1/4 edge you could add to what the degree of"
+    },
+    {
+      "start": "5:20",
+      "end": "5:20",
+      "text": "edge you could add to what the degree of"
+    },
+    {
+      "start": "5:20",
+      "end": "5:22",
+      "text": "edge you could add to what the degree of this particular vertex one could be to"
+    },
+    {
+      "start": "5:22",
+      "end": "5:22",
+      "text": "this particular vertex one could be to"
+    },
+    {
+      "start": "5:22",
+      "end": "5:25",
+      "text": "this particular vertex one could be to in which case the only possibility is"
+    },
+    {
+      "start": "5:25",
+      "end": "5:25",
+      "text": "in which case the only possibility is"
+    },
+    {
+      "start": "5:25",
+      "end": "5:29",
+      "text": "in which case the only possibility is this the degree could be 0"
+    },
+    {
+      "start": "5:29",
+      "end": "5:29",
+      "text": "this the degree could be 0"
+    },
+    {
+      "start": "5:29",
+      "end": "5:31",
+      "text": "this the degree could be 0 in which case this is the only"
+    },
+    {
+      "start": "5:31",
+      "end": "5:31",
+      "text": "in which case this is the only"
+    },
+    {
+      "start": "5:31",
+      "end": "5:34",
+      "text": "in which case this is the only possibility the degree is 1 there are 2"
+    },
+    {
+      "start": "5:34",
+      "end": "5:34",
+      "text": "possibility the degree is 1 there are 2"
+    },
+    {
+      "start": "5:34",
+      "end": "5:37",
+      "text": "possibility the degree is 1 there are 2 possibilities namely the these two so"
+    },
+    {
+      "start": "5:37",
+      "end": "5:37",
+      "text": "possibilities namely the these two so"
+    },
+    {
+      "start": "5:37",
+      "end": "5:39",
+      "text": "possibilities namely the these two so there are 4 trees when you choose to"
+    },
+    {
+      "start": "5:39",
+      "end": "5:39",
+      "text": "there are 4 trees when you choose to"
+    },
+    {
+      "start": "5:39",
+      "end": "5:42",
+      "text": "there are 4 trees when you choose to include 1/4 diagonal and the symmetric"
+    },
+    {
+      "start": "5:42",
+      "end": "5:42",
+      "text": "include 1/4 diagonal and the symmetric"
+    },
+    {
+      "start": "5:42",
+      "end": "5:43",
+      "text": "include 1/4 diagonal and the symmetric case would be when you include the 2 3"
+    },
+    {
+      "start": "5:43",
+      "end": "5:43",
+      "text": "case would be when you include the 2 3"
+    },
+    {
+      "start": "5:43",
+      "end": "5:46",
+      "text": "case would be when you include the 2 3 diagonals that are again 4 more so the"
+    },
+    {
+      "start": "5:46",
+      "end": "5:46",
+      "text": "diagonals that are again 4 more so the"
+    },
+    {
+      "start": "5:46",
+      "end": "5:49",
+      "text": "diagonals that are again 4 more so the case where n is equal to 4 the number of"
+    },
+    {
+      "start": "5:49",
+      "end": "5:49",
+      "text": "case where n is equal to 4 the number of"
+    },
+    {
+      "start": "5:49",
+      "end": "5:53",
+      "text": "case where n is equal to 4 the number of spanning trees is going to be 16 you can"
+    },
+    {
+      "start": "5:53",
+      "end": "5:53",
+      "text": "spanning trees is going to be 16 you can"
+    },
+    {
+      "start": "5:53",
+      "end": "5:57",
+      "text": "spanning trees is going to be 16 you can imagine that it's going to be extremely"
+    },
+    {
+      "start": "5:57",
+      "end": "5:57",
+      "text": "imagine that it's going to be extremely"
+    },
+    {
+      "start": "5:57",
+      "end": "5:59",
+      "text": "imagine that it's going to be extremely time-consuming if we were trying to do"
+    },
+    {
+      "start": "5:59",
+      "end": "5:59",
+      "text": "time-consuming if we were trying to do"
+    },
+    {
+      "start": "5:59",
+      "end": "6:03",
+      "text": "time-consuming if we were trying to do the same thing for n is equal to 5 so"
+    },
+    {
+      "start": "6:03",
+      "end": "6:03",
+      "text": "the same thing for n is equal to 5 so"
+    },
+    {
+      "start": "6:03",
+      "end": "6:04",
+      "text": "the same thing for n is equal to 5 so what will be the number when n is equal"
+    },
+    {
+      "start": "6:04",
+      "end": "6:04",
+      "text": "what will be the number when n is equal"
+    },
+    {
+      "start": "6:04",
+      "end": "6:08",
+      "text": "what will be the number when n is equal to 5 and so on so this is what we need"
+    },
+    {
+      "start": "6:08",
+      "end": "6:08",
+      "text": "to 5 and so on so this is what we need"
+    },
+    {
+      "start": "6:08",
+      "end": "6:11",
+      "text": "to 5 and so on so this is what we need to understand we need to count the"
+    },
+    {
+      "start": "6:11",
+      "end": "6:11",
+      "text": "to understand we need to count the"
+    },
+    {
+      "start": "6:11",
+      "end": "6:13",
+      "text": "to understand we need to count the number of spanning trees of the complete"
+    },
+    {
+      "start": "6:13",
+      "end": "6:13",
+      "text": "number of spanning trees of the complete"
+    },
+    {
+      "start": "6:13",
+      "end": "6:19",
+      "text": "number of spanning trees of the complete graph on n vertices and we will do it"
+    },
+    {
+      "start": "6:19",
+      "end": "6:19",
+      "text": "graph on n vertices and we will do it"
+    },
+    {
+      "start": "6:19",
+      "end": "6:21",
+      "text": "graph on n vertices and we will do it why are a method known as proof or"
+    },
+    {
+      "start": "6:21",
+      "end": "6:21",
+      "text": "why are a method known as proof or"
+    },
+    {
+      "start": "6:21",
+      "end": "6:29",
+      "text": "why are a method known as proof or coding so you can look at these numbers"
+    },
+    {
+      "start": "6:29",
+      "end": "6:29",
+      "text": "coding so you can look at these numbers"
+    },
+    {
+      "start": "6:29",
+      "end": "6:32",
+      "text": "coding so you can look at these numbers and see if you can detect a pattern"
+    },
+    {
+      "start": "6:32",
+      "end": "6:32",
+      "text": "and see if you can detect a pattern"
+    },
+    {
+      "start": "6:32",
+      "end": "6:33",
+      "text": "and see if you can detect a pattern there"
+    },
+    {
+      "start": "6:33",
+      "end": "6:33",
+      "text": "there"
+    },
+    {
+      "start": "6:33",
+      "end": "6:36",
+      "text": "there in any case from proof or coding what we"
+    },
+    {
+      "start": "6:36",
+      "end": "6:36",
+      "text": "in any case from proof or coding what we"
+    },
+    {
+      "start": "6:36",
+      "end": "6:46",
+      "text": "in any case from proof or coding what we know is the number of spanning trees of"
+    },
+    {
+      "start": "6:46",
+      "end": "6:46",
+      "text": "know is the number of spanning trees of"
+    },
+    {
+      "start": "6:46",
+      "end": "6:49",
+      "text": "know is the number of spanning trees of K n so we are looking at labeling K n"
+    },
+    {
+      "start": "6:49",
+      "end": "6:49",
+      "text": "K n so we are looking at labeling K n"
+    },
+    {
+      "start": "6:49",
+      "end": "6:51",
+      "text": "K n so we are looking at labeling K n okay so these are and after we have"
+    },
+    {
+      "start": "6:51",
+      "end": "6:51",
+      "text": "okay so these are and after we have"
+    },
+    {
+      "start": "6:51",
+      "end": "6:53",
+      "text": "okay so these are and after we have obtained the label in how many distinct"
+    },
+    {
+      "start": "6:53",
+      "end": "6:53",
+      "text": "obtained the label in how many distinct"
+    },
+    {
+      "start": "6:53",
+      "end": "6:54",
+      "text": "obtained the label in how many distinct spanning trees are there that's what we"
+    },
+    {
+      "start": "6:54",
+      "end": "6:54",
+      "text": "spanning trees are there that's what we"
+    },
+    {
+      "start": "6:54",
+      "end": "6:57",
+      "text": "spanning trees are there that's what we want to count the number of spanning"
+    },
+    {
+      "start": "6:57",
+      "end": "6:57",
+      "text": "want to count the number of spanning"
+    },
+    {
+      "start": "6:57",
+      "end": "7:07",
+      "text": "want to count the number of spanning trees of K n is equal to n raise to n"
+    },
+    {
+      "start": "7:07",
+      "end": "7:07",
+      "text": "trees of K n is equal to n raise to n"
+    },
+    {
+      "start": "7:07",
+      "end": "7:09",
+      "text": "trees of K n is equal to n raise to n minus 2 this is the theorem that we"
+    },
+    {
+      "start": "7:09",
+      "end": "7:09",
+      "text": "minus 2 this is the theorem that we"
+    },
+    {
+      "start": "7:09",
+      "end": "7:11",
+      "text": "minus 2 this is the theorem that we would prove so our counters n raise to n"
+    },
+    {
+      "start": "7:11",
+      "end": "7:11",
+      "text": "would prove so our counters n raise to n"
+    },
+    {
+      "start": "7:11",
+      "end": "7:16",
+      "text": "would prove so our counters n raise to n minus 2 we can verify that when"
+    },
+    {
+      "start": "7:16",
+      "end": "7:16",
+      "text": "minus 2 we can verify that when"
+    },
+    {
+      "start": "7:16",
+      "end": "7:19",
+      "text": "minus 2 we can verify that when and this two three and four so to raise"
+    },
+    {
+      "start": "7:19",
+      "end": "7:19",
+      "text": "and this two three and four so to raise"
+    },
+    {
+      "start": "7:19",
+      "end": "7:23",
+      "text": "and this two three and four so to raise to two minus two that's going to be 1 3"
+    },
+    {
+      "start": "7:23",
+      "end": "7:23",
+      "text": "to two minus two that's going to be 1 3"
+    },
+    {
+      "start": "7:23",
+      "end": "7:27",
+      "text": "to two minus two that's going to be 1 3 raise to 3 minus 2 is going to be 3 4"
+    },
+    {
+      "start": "7:27",
+      "end": "7:27",
+      "text": "raise to 3 minus 2 is going to be 3 4"
+    },
+    {
+      "start": "7:27",
+      "end": "7:30",
+      "text": "raise to 3 minus 2 is going to be 3 4 raise to 4 minus 2 is going to be 16"
+    },
+    {
+      "start": "7:30",
+      "end": "7:30",
+      "text": "raise to 4 minus 2 is going to be 16"
+    },
+    {
+      "start": "7:30",
+      "end": "7:33",
+      "text": "raise to 4 minus 2 is going to be 16 okay so all those cases we have verified"
+    },
+    {
+      "start": "7:33",
+      "end": "7:33",
+      "text": "okay so all those cases we have verified"
+    },
+    {
+      "start": "7:33",
+      "end": "7:35",
+      "text": "okay so all those cases we have verified we need to prove this in the general"
+    },
+    {
+      "start": "7:35",
+      "end": "7:35",
+      "text": "we need to prove this in the general"
+    },
+    {
+      "start": "7:35",
+      "end": "7:38",
+      "text": "we need to prove this in the general case and while proving this we will use"
+    },
+    {
+      "start": "7:38",
+      "end": "7:38",
+      "text": "case and while proving this we will use"
+    },
+    {
+      "start": "7:38",
+      "end": "7:41",
+      "text": "case and while proving this we will use an interesting technique we will"
+    },
+    {
+      "start": "7:41",
+      "end": "7:41",
+      "text": "an interesting technique we will"
+    },
+    {
+      "start": "7:41",
+      "end": "7:43",
+      "text": "an interesting technique we will basically set up an isomorphism between"
+    },
+    {
+      "start": "7:43",
+      "end": "7:43",
+      "text": "basically set up an isomorphism between"
+    },
+    {
+      "start": "7:43",
+      "end": "7:49",
+      "text": "basically set up an isomorphism between two sets so let's look at this problem"
+    },
+    {
+      "start": "7:49",
+      "end": "7:49",
+      "text": "two sets so let's look at this problem"
+    },
+    {
+      "start": "7:49",
+      "end": "7:52",
+      "text": "two sets so let's look at this problem you've given a particular set s and you"
+    },
+    {
+      "start": "7:52",
+      "end": "7:52",
+      "text": "you've given a particular set s and you"
+    },
+    {
+      "start": "7:52",
+      "end": "7:54",
+      "text": "you've given a particular set s and you want to count the number of elements in"
+    },
+    {
+      "start": "7:54",
+      "end": "7:54",
+      "text": "want to count the number of elements in"
+    },
+    {
+      "start": "7:54",
+      "end": "7:57",
+      "text": "want to count the number of elements in it one way to count is to explicitly"
+    },
+    {
+      "start": "7:57",
+      "end": "7:57",
+      "text": "it one way to count is to explicitly"
+    },
+    {
+      "start": "7:57",
+      "end": "7:59",
+      "text": "it one way to count is to explicitly count the number of I mean enumerate the"
+    },
+    {
+      "start": "7:59",
+      "end": "7:59",
+      "text": "count the number of I mean enumerate the"
+    },
+    {
+      "start": "7:59",
+      "end": "8:02",
+      "text": "count the number of I mean enumerate the elements in s and then see what is its"
+    },
+    {
+      "start": "8:02",
+      "end": "8:02",
+      "text": "elements in s and then see what is its"
+    },
+    {
+      "start": "8:02",
+      "end": "8:06",
+      "text": "elements in s and then see what is its count another way could be to set up a"
+    },
+    {
+      "start": "8:06",
+      "end": "8:06",
+      "text": "count another way could be to set up a"
+    },
+    {
+      "start": "8:06",
+      "end": "8:12",
+      "text": "count another way could be to set up a correspondence ok so you can set up a"
+    },
+    {
+      "start": "8:12",
+      "end": "8:12",
+      "text": "correspondence ok so you can set up a"
+    },
+    {
+      "start": "8:12",
+      "end": "8:15",
+      "text": "correspondence ok so you can set up a correspondence with another set which is"
+    },
+    {
+      "start": "8:15",
+      "end": "8:15",
+      "text": "correspondence with another set which is"
+    },
+    {
+      "start": "8:15",
+      "end": "8:17",
+      "text": "correspondence with another set which is easier to count ok so this we can think"
+    },
+    {
+      "start": "8:17",
+      "end": "8:18",
+      "text": "easier to count ok so this we can think"
+    },
+    {
+      "start": "8:18",
+      "end": "8:22",
+      "text": "easier to count ok so this we can think of us and easier to count set if we can"
+    },
+    {
+      "start": "8:22",
+      "end": "8:22",
+      "text": "of us and easier to count set if we can"
+    },
+    {
+      "start": "8:22",
+      "end": "8:25",
+      "text": "of us and easier to count set if we can find an isomorphism which maps every"
+    },
+    {
+      "start": "8:25",
+      "end": "8:25",
+      "text": "find an isomorphism which maps every"
+    },
+    {
+      "start": "8:25",
+      "end": "8:28",
+      "text": "find an isomorphism which maps every element to a unique element in the other"
+    },
+    {
+      "start": "8:28",
+      "end": "8:28",
+      "text": "element to a unique element in the other"
+    },
+    {
+      "start": "8:28",
+      "end": "8:31",
+      "text": "element to a unique element in the other collection ok in such a way that every"
+    },
+    {
+      "start": "8:31",
+      "end": "8:31",
+      "text": "collection ok in such a way that every"
+    },
+    {
+      "start": "8:31",
+      "end": "8:34",
+      "text": "collection ok in such a way that every element of the other set is occurring as"
+    },
+    {
+      "start": "8:34",
+      "end": "8:34",
+      "text": "element of the other set is occurring as"
+    },
+    {
+      "start": "8:34",
+      "end": "8:36",
+      "text": "element of the other set is occurring as the image of at least one of the"
+    },
+    {
+      "start": "8:36",
+      "end": "8:36",
+      "text": "the image of at least one of the"
+    },
+    {
+      "start": "8:36",
+      "end": "8:38",
+      "text": "the image of at least one of the elements if we can set up a bijection"
+    },
+    {
+      "start": "8:38",
+      "end": "8:38",
+      "text": "elements if we can set up a bijection"
+    },
+    {
+      "start": "8:38",
+      "end": "8:43",
+      "text": "elements if we can set up a bijection between these two sets then we know that"
+    },
+    {
+      "start": "8:43",
+      "end": "8:43",
+      "text": "between these two sets then we know that"
+    },
+    {
+      "start": "8:43",
+      "end": "8:45",
+      "text": "between these two sets then we know that the counts are going to agree so there"
+    },
+    {
+      "start": "8:45",
+      "end": "8:45",
+      "text": "the counts are going to agree so there"
+    },
+    {
+      "start": "8:45",
+      "end": "8:49",
+      "text": "the counts are going to agree so there are many natural objects whose count is"
+    },
+    {
+      "start": "8:49",
+      "end": "8:49",
+      "text": "are many natural objects whose count is"
+    },
+    {
+      "start": "8:49",
+      "end": "8:52",
+      "text": "are many natural objects whose count is n raise to n minus 2 we will show that"
+    },
+    {
+      "start": "8:52",
+      "end": "8:52",
+      "text": "n raise to n minus 2 we will show that"
+    },
+    {
+      "start": "8:52",
+      "end": "8:56",
+      "text": "n raise to n minus 2 we will show that the spanning trees can be put in by"
+    },
+    {
+      "start": "8:56",
+      "end": "8:56",
+      "text": "the spanning trees can be put in by"
+    },
+    {
+      "start": "8:56",
+      "end": "8:59",
+      "text": "the spanning trees can be put in by diction to one of those sets so one"
+    },
+    {
+      "start": "8:59",
+      "end": "8:59",
+      "text": "diction to one of those sets so one"
+    },
+    {
+      "start": "8:59",
+      "end": "9:03",
+      "text": "diction to one of those sets so one natural candidate for a set having n"
+    },
+    {
+      "start": "9:03",
+      "end": "9:03",
+      "text": "natural candidate for a set having n"
+    },
+    {
+      "start": "9:03",
+      "end": "9:05",
+      "text": "natural candidate for a set having n raise to n minus two elements would be"
+    },
+    {
+      "start": "9:05",
+      "end": "9:05",
+      "text": "raise to n minus two elements would be"
+    },
+    {
+      "start": "9:05",
+      "end": "9:16",
+      "text": "raise to n minus two elements would be if you consider lists we'll think of"
+    },
+    {
+      "start": "9:16",
+      "end": "9:16",
+      "text": "if you consider lists we'll think of"
+    },
+    {
+      "start": "9:16",
+      "end": "9:23",
+      "text": "if you consider lists we'll think of this as an ordered lists of size n minus"
+    },
+    {
+      "start": "9:23",
+      "end": "9:23",
+      "text": "this as an ordered lists of size n minus"
+    },
+    {
+      "start": "9:23",
+      "end": "9:26",
+      "text": "this as an ordered lists of size n minus 2"
+    },
+    {
+      "start": "9:26",
+      "end": "9:26",
+      "text": "2"
+    },
+    {
+      "start": "9:26",
+      "end": "9:40",
+      "text": "2 from said s consisting of n objects okay"
+    },
+    {
+      "start": "9:40",
+      "end": "9:40",
+      "text": "from said s consisting of n objects okay"
+    },
+    {
+      "start": "9:40",
+      "end": "9:44",
+      "text": "from said s consisting of n objects okay so we have a set let us call this set as"
+    },
+    {
+      "start": "9:44",
+      "end": "9:44",
+      "text": "so we have a set let us call this set as"
+    },
+    {
+      "start": "9:44",
+      "end": "9:51",
+      "text": "so we have a set let us call this set as s now this set has n objects and we are"
+    },
+    {
+      "start": "9:51",
+      "end": "9:51",
+      "text": "s now this set has n objects and we are"
+    },
+    {
+      "start": "9:51",
+      "end": "9:55",
+      "text": "s now this set has n objects and we are allowed to form lists of these and the"
+    },
+    {
+      "start": "9:55",
+      "end": "9:55",
+      "text": "allowed to form lists of these and the"
+    },
+    {
+      "start": "9:55",
+      "end": "9:58",
+      "text": "allowed to form lists of these and the length of these lists is n minus 2 the"
+    },
+    {
+      "start": "9:58",
+      "end": "9:58",
+      "text": "length of these lists is n minus 2 the"
+    },
+    {
+      "start": "9:58",
+      "end": "9:59",
+      "text": "length of these lists is n minus 2 the first element of course can be chosen in"
+    },
+    {
+      "start": "9:59",
+      "end": "10:00",
+      "text": "first element of course can be chosen in"
+    },
+    {
+      "start": "10:00",
+      "end": "10:03",
+      "text": "first element of course can be chosen in n ways and we are allowing repetitions"
+    },
+    {
+      "start": "10:03",
+      "end": "10:03",
+      "text": "n ways and we are allowing repetitions"
+    },
+    {
+      "start": "10:03",
+      "end": "10:04",
+      "text": "n ways and we are allowing repetitions the second element also as n"
+    },
+    {
+      "start": "10:04",
+      "end": "10:04",
+      "text": "the second element also as n"
+    },
+    {
+      "start": "10:04",
+      "end": "10:09",
+      "text": "the second element also as n possibilities the N minus 2 element can"
+    },
+    {
+      "start": "10:09",
+      "end": "10:09",
+      "text": "possibilities the N minus 2 element can"
+    },
+    {
+      "start": "10:09",
+      "end": "10:11",
+      "text": "possibilities the N minus 2 element can also have n possibility so they multiply"
+    },
+    {
+      "start": "10:11",
+      "end": "10:11",
+      "text": "also have n possibility so they multiply"
+    },
+    {
+      "start": "10:11",
+      "end": "10:14",
+      "text": "also have n possibility so they multiply and therefore the total number of ways"
+    },
+    {
+      "start": "10:14",
+      "end": "10:14",
+      "text": "and therefore the total number of ways"
+    },
+    {
+      "start": "10:14",
+      "end": "10:17",
+      "text": "and therefore the total number of ways of having these lists clearly is n raise"
+    },
+    {
+      "start": "10:17",
+      "end": "10:17",
+      "text": "of having these lists clearly is n raise"
+    },
+    {
+      "start": "10:17",
+      "end": "10:20",
+      "text": "of having these lists clearly is n raise to n minus 2 so this is one of the"
+    },
+    {
+      "start": "10:20",
+      "end": "10:20",
+      "text": "to n minus 2 so this is one of the"
+    },
+    {
+      "start": "10:20",
+      "end": "10:24",
+      "text": "to n minus 2 so this is one of the quantities that we have now we have this"
+    },
+    {
+      "start": "10:24",
+      "end": "10:24",
+      "text": "quantities that we have now we have this"
+    },
+    {
+      "start": "10:24",
+      "end": "10:27",
+      "text": "quantities that we have now we have this collection of the set our main set that"
+    },
+    {
+      "start": "10:27",
+      "end": "10:27",
+      "text": "collection of the set our main set that"
+    },
+    {
+      "start": "10:27",
+      "end": "10:30",
+      "text": "collection of the set our main set that we are interested in let's call it as T"
+    },
+    {
+      "start": "10:30",
+      "end": "10:30",
+      "text": "we are interested in let's call it as T"
+    },
+    {
+      "start": "10:30",
+      "end": "10:33",
+      "text": "we are interested in let's call it as T T consists of all the spanning trees of"
+    },
+    {
+      "start": "10:33",
+      "end": "10:33",
+      "text": "T consists of all the spanning trees of"
+    },
+    {
+      "start": "10:33",
+      "end": "10:36",
+      "text": "T consists of all the spanning trees of K n okay so if you are able to find a"
+    },
+    {
+      "start": "10:36",
+      "end": "10:36",
+      "text": "K n okay so if you are able to find a"
+    },
+    {
+      "start": "10:36",
+      "end": "10:40",
+      "text": "K n okay so if you are able to find a bisection such that each such list"
+    },
+    {
+      "start": "10:40",
+      "end": "10:40",
+      "text": "bisection such that each such list"
+    },
+    {
+      "start": "10:40",
+      "end": "10:44",
+      "text": "bisection such that each such list corresponds to one unique element of the"
+    },
+    {
+      "start": "10:44",
+      "end": "10:44",
+      "text": "corresponds to one unique element of the"
+    },
+    {
+      "start": "10:44",
+      "end": "10:46",
+      "text": "corresponds to one unique element of the set of spanning trees then what we know"
+    },
+    {
+      "start": "10:46",
+      "end": "10:46",
+      "text": "set of spanning trees then what we know"
+    },
+    {
+      "start": "10:46",
+      "end": "10:50",
+      "text": "set of spanning trees then what we know is that the counts match and this by"
+    },
+    {
+      "start": "10:50",
+      "end": "10:50",
+      "text": "is that the counts match and this by"
+    },
+    {
+      "start": "10:50",
+      "end": "10:52",
+      "text": "is that the counts match and this by diction is basically known as the"
+    },
+    {
+      "start": "10:52",
+      "end": "10:52",
+      "text": "diction is basically known as the"
+    },
+    {
+      "start": "10:52",
+      "end": "10:56",
+      "text": "diction is basically known as the proofer coding so let us see what is"
+    },
+    {
+      "start": "10:56",
+      "end": "10:56",
+      "text": "proofer coding so let us see what is"
+    },
+    {
+      "start": "10:56",
+      "end": "10:57",
+      "text": "proofer coding so let us see what is this by direction the by diction will be"
+    },
+    {
+      "start": "10:57",
+      "end": "10:57",
+      "text": "this by direction the by diction will be"
+    },
+    {
+      "start": "10:57",
+      "end": "11:08",
+      "text": "this by direction the by diction will be given by our means of an algorithm"
+    },
+    {
+      "start": "11:11",
+      "end": "11:11",
+      "text": "so we will assume that we are given a"
+    },
+    {
+      "start": "11:11",
+      "end": "11:19",
+      "text": "so we will assume that we are given a tree so input is a tree whose vertices"
+    },
+    {
+      "start": "11:19",
+      "end": "11:19",
+      "text": "tree so input is a tree whose vertices"
+    },
+    {
+      "start": "11:19",
+      "end": "11:28",
+      "text": "tree so input is a tree whose vertices are from the set s and we are going to"
+    },
+    {
+      "start": "11:28",
+      "end": "11:28",
+      "text": "are from the set s and we are going to"
+    },
+    {
+      "start": "11:28",
+      "end": "11:31",
+      "text": "are from the set s and we are going to assume that the set s is an ordered set"
+    },
+    {
+      "start": "11:31",
+      "end": "11:31",
+      "text": "assume that the set s is an ordered set"
+    },
+    {
+      "start": "11:31",
+      "end": "11:34",
+      "text": "assume that the set s is an ordered set in this in the sense given two elements"
+    },
+    {
+      "start": "11:34",
+      "end": "11:34",
+      "text": "in this in the sense given two elements"
+    },
+    {
+      "start": "11:34",
+      "end": "11:35",
+      "text": "in this in the sense given two elements will set we can say which is the larger"
+    },
+    {
+      "start": "11:35",
+      "end": "11:35",
+      "text": "will set we can say which is the larger"
+    },
+    {
+      "start": "11:35",
+      "end": "11:37",
+      "text": "will set we can say which is the larger element which is a smaller element and"
+    },
+    {
+      "start": "11:37",
+      "end": "11:37",
+      "text": "element which is a smaller element and"
+    },
+    {
+      "start": "11:37",
+      "end": "11:38",
+      "text": "element which is a smaller element and so on okay"
+    },
+    {
+      "start": "11:38",
+      "end": "11:38",
+      "text": "so on okay"
+    },
+    {
+      "start": "11:38",
+      "end": "11:39",
+      "text": "so on okay so we'll assume that there is a total"
+    },
+    {
+      "start": "11:39",
+      "end": "11:39",
+      "text": "so we'll assume that there is a total"
+    },
+    {
+      "start": "11:39",
+      "end": "11:45",
+      "text": "so we'll assume that there is a total order on the set s and the output will"
+    },
+    {
+      "start": "11:45",
+      "end": "11:45",
+      "text": "order on the set s and the output will"
+    },
+    {
+      "start": "11:45",
+      "end": "11:58",
+      "text": "order on the set s and the output will be a sequence of length n minus 2 or a"
+    },
+    {
+      "start": "11:58",
+      "end": "11:58",
+      "text": "be a sequence of length n minus 2 or a"
+    },
+    {
+      "start": "11:58",
+      "end": "12:10",
+      "text": "be a sequence of length n minus 2 or a list of n minus 2 elements"
+    },
+    {
+      "start": "12:13",
+      "end": "12:13",
+      "text": "so proofer coding basically when given"
+    },
+    {
+      "start": "12:13",
+      "end": "12:16",
+      "text": "so proofer coding basically when given an input tree it will produce an output"
+    },
+    {
+      "start": "12:16",
+      "end": "12:16",
+      "text": "an input tree it will produce an output"
+    },
+    {
+      "start": "12:16",
+      "end": "12:18",
+      "text": "an input tree it will produce an output sequence what we will need to show is"
+    },
+    {
+      "start": "12:18",
+      "end": "12:18",
+      "text": "sequence what we will need to show is"
+    },
+    {
+      "start": "12:18",
+      "end": "12:23",
+      "text": "sequence what we will need to show is that every sequence will be generated by"
+    },
+    {
+      "start": "12:23",
+      "end": "12:23",
+      "text": "that every sequence will be generated by"
+    },
+    {
+      "start": "12:23",
+      "end": "12:26",
+      "text": "that every sequence will be generated by precisely one tree when we look at this"
+    },
+    {
+      "start": "12:26",
+      "end": "12:26",
+      "text": "precisely one tree when we look at this"
+    },
+    {
+      "start": "12:26",
+      "end": "12:28",
+      "text": "precisely one tree when we look at this encoding when we look at the algorithm"
+    },
+    {
+      "start": "12:28",
+      "end": "12:28",
+      "text": "encoding when we look at the algorithm"
+    },
+    {
+      "start": "12:28",
+      "end": "12:30",
+      "text": "encoding when we look at the algorithm for encoding we can see that if you are"
+    },
+    {
+      "start": "12:30",
+      "end": "12:30",
+      "text": "for encoding we can see that if you are"
+    },
+    {
+      "start": "12:30",
+      "end": "12:32",
+      "text": "for encoding we can see that if you are given a tree there's only a unique"
+    },
+    {
+      "start": "12:32",
+      "end": "12:32",
+      "text": "given a tree there's only a unique"
+    },
+    {
+      "start": "12:32",
+      "end": "12:34",
+      "text": "given a tree there's only a unique sequence that can be produced the"
+    },
+    {
+      "start": "12:34",
+      "end": "12:34",
+      "text": "sequence that can be produced the"
+    },
+    {
+      "start": "12:34",
+      "end": "12:36",
+      "text": "sequence that can be produced the sequence produce will be unique but what"
+    },
+    {
+      "start": "12:36",
+      "end": "12:36",
+      "text": "sequence produce will be unique but what"
+    },
+    {
+      "start": "12:36",
+      "end": "12:40",
+      "text": "sequence produce will be unique but what we will argue is that for every sequence"
+    },
+    {
+      "start": "12:40",
+      "end": "12:40",
+      "text": "we will argue is that for every sequence"
+    },
+    {
+      "start": "12:40",
+      "end": "12:42",
+      "text": "we will argue is that for every sequence there is a tree which generates that as"
+    },
+    {
+      "start": "12:42",
+      "end": "12:42",
+      "text": "there is a tree which generates that as"
+    },
+    {
+      "start": "12:42",
+      "end": "12:45",
+      "text": "there is a tree which generates that as well and there is precisely one tree"
+    },
+    {
+      "start": "12:45",
+      "end": "12:45",
+      "text": "well and there is precisely one tree"
+    },
+    {
+      "start": "12:45",
+      "end": "12:48",
+      "text": "well and there is precisely one tree which will generate that so let's see"
+    },
+    {
+      "start": "12:48",
+      "end": "12:48",
+      "text": "which will generate that so let's see"
+    },
+    {
+      "start": "12:48",
+      "end": "12:51",
+      "text": "which will generate that so let's see what encoding is so the proof for code"
+    },
+    {
+      "start": "12:51",
+      "end": "12:51",
+      "text": "what encoding is so the proof for code"
+    },
+    {
+      "start": "12:51",
+      "end": "12:52",
+      "text": "what encoding is so the proof for code is generated in an algorithmic fashion"
+    },
+    {
+      "start": "12:52",
+      "end": "12:52",
+      "text": "is generated in an algorithmic fashion"
+    },
+    {
+      "start": "12:52",
+      "end": "12:59",
+      "text": "is generated in an algorithmic fashion so this is the iterative step okay so we"
+    },
+    {
+      "start": "12:59",
+      "end": "12:59",
+      "text": "so this is the iterative step okay so we"
+    },
+    {
+      "start": "12:59",
+      "end": "13:01",
+      "text": "so this is the iterative step okay so we will repeatedly do this iterative step"
+    },
+    {
+      "start": "13:01",
+      "end": "13:01",
+      "text": "will repeatedly do this iterative step"
+    },
+    {
+      "start": "13:01",
+      "end": "13:07",
+      "text": "will repeatedly do this iterative step for n minus 2 steps what we do is pick"
+    },
+    {
+      "start": "13:07",
+      "end": "13:07",
+      "text": "for n minus 2 steps what we do is pick"
+    },
+    {
+      "start": "13:07",
+      "end": "13:18",
+      "text": "for n minus 2 steps what we do is pick the least valued leaf node so you've"
+    },
+    {
+      "start": "13:18",
+      "end": "13:18",
+      "text": "the least valued leaf node so you've"
+    },
+    {
+      "start": "13:18",
+      "end": "13:20",
+      "text": "the least valued leaf node so you've given a tree so the tree must surely"
+    },
+    {
+      "start": "13:20",
+      "end": "13:20",
+      "text": "given a tree so the tree must surely"
+    },
+    {
+      "start": "13:20",
+      "end": "13:22",
+      "text": "given a tree so the tree must surely have some leaf nodes amongst the leaf"
+    },
+    {
+      "start": "13:22",
+      "end": "13:22",
+      "text": "have some leaf nodes amongst the leaf"
+    },
+    {
+      "start": "13:22",
+      "end": "13:25",
+      "text": "have some leaf nodes amongst the leaf node find the smallest value dilip node"
+    },
+    {
+      "start": "13:25",
+      "end": "13:25",
+      "text": "node find the smallest value dilip node"
+    },
+    {
+      "start": "13:25",
+      "end": "13:28",
+      "text": "node find the smallest value dilip node delete that node along with the edge"
+    },
+    {
+      "start": "13:28",
+      "end": "13:29",
+      "text": "delete that node along with the edge"
+    },
+    {
+      "start": "13:29",
+      "end": "13:32",
+      "text": "delete that node along with the edge that it is along with the so since it's"
+    },
+    {
+      "start": "13:32",
+      "end": "13:32",
+      "text": "that it is along with the so since it's"
+    },
+    {
+      "start": "13:32",
+      "end": "13:34",
+      "text": "that it is along with the so since it's a leaf node it's connected to one node"
+    },
+    {
+      "start": "13:34",
+      "end": "13:34",
+      "text": "a leaf node it's connected to one node"
+    },
+    {
+      "start": "13:34",
+      "end": "13:46",
+      "text": "a leaf node it's connected to one node delete that particular edge"
+    },
+    {
+      "start": "13:55",
+      "end": "13:55",
+      "text": "and output the neighbor of the deleted"
+    },
+    {
+      "start": "13:55",
+      "end": "13:58",
+      "text": "and output the neighbor of the deleted node okay since it is a leaf node its"
+    },
+    {
+      "start": "13:58",
+      "end": "13:58",
+      "text": "node okay since it is a leaf node its"
+    },
+    {
+      "start": "13:58",
+      "end": "14:00",
+      "text": "node okay since it is a leaf node its neighbor is unique it is precisely one"
+    },
+    {
+      "start": "14:00",
+      "end": "14:00",
+      "text": "neighbor is unique it is precisely one"
+    },
+    {
+      "start": "14:00",
+      "end": "14:03",
+      "text": "neighbor is unique it is precisely one neighbor so that neighbor we will output"
+    },
+    {
+      "start": "14:03",
+      "end": "14:03",
+      "text": "neighbor so that neighbor we will output"
+    },
+    {
+      "start": "14:03",
+      "end": "14:05",
+      "text": "neighbor so that neighbor we will output and we repeatedly do this for n minus"
+    },
+    {
+      "start": "14:05",
+      "end": "14:05",
+      "text": "and we repeatedly do this for n minus"
+    },
+    {
+      "start": "14:05",
+      "end": "14:08",
+      "text": "and we repeatedly do this for n minus two steps we get a sequence of n minus"
+    },
+    {
+      "start": "14:08",
+      "end": "14:08",
+      "text": "two steps we get a sequence of n minus"
+    },
+    {
+      "start": "14:08",
+      "end": "14:13",
+      "text": "two steps we get a sequence of n minus two elements so the easy factors every"
+    },
+    {
+      "start": "14:13",
+      "end": "14:13",
+      "text": "two elements so the easy factors every"
+    },
+    {
+      "start": "14:13",
+      "end": "14:25",
+      "text": "two elements so the easy factors every three produces a unique list of n minus"
+    },
+    {
+      "start": "14:25",
+      "end": "14:25",
+      "text": "three produces a unique list of n minus"
+    },
+    {
+      "start": "14:25",
+      "end": "14:28",
+      "text": "three produces a unique list of n minus two elements okay"
+    },
+    {
+      "start": "14:28",
+      "end": "14:28",
+      "text": "two elements okay"
+    },
+    {
+      "start": "14:28",
+      "end": "14:31",
+      "text": "two elements okay so there if you give a tree the answer"
+    },
+    {
+      "start": "14:31",
+      "end": "14:31",
+      "text": "so there if you give a tree the answer"
+    },
+    {
+      "start": "14:31",
+      "end": "14:34",
+      "text": "so there if you give a tree the answer is unique but it could happen that two"
+    },
+    {
+      "start": "14:34",
+      "end": "14:34",
+      "text": "is unique but it could happen that two"
+    },
+    {
+      "start": "14:34",
+      "end": "14:37",
+      "text": "is unique but it could happen that two trees could give rise to the same list"
+    },
+    {
+      "start": "14:37",
+      "end": "14:37",
+      "text": "trees could give rise to the same list"
+    },
+    {
+      "start": "14:37",
+      "end": "14:40",
+      "text": "trees could give rise to the same list it could also happen that certain lists"
+    },
+    {
+      "start": "14:40",
+      "end": "14:40",
+      "text": "it could also happen that certain lists"
+    },
+    {
+      "start": "14:40",
+      "end": "14:43",
+      "text": "it could also happen that certain lists cannot be produced by any tree we will"
+    },
+    {
+      "start": "14:43",
+      "end": "14:43",
+      "text": "cannot be produced by any tree we will"
+    },
+    {
+      "start": "14:43",
+      "end": "14:46",
+      "text": "cannot be produced by any tree we will rule out both these cases this factors"
+    },
+    {
+      "start": "14:46",
+      "end": "14:46",
+      "text": "rule out both these cases this factors"
+    },
+    {
+      "start": "14:46",
+      "end": "14:49",
+      "text": "rule out both these cases this factors obvious the the fact that every tree"
+    },
+    {
+      "start": "14:49",
+      "end": "14:49",
+      "text": "obvious the the fact that every tree"
+    },
+    {
+      "start": "14:49",
+      "end": "14:50",
+      "text": "obvious the the fact that every tree produces a unique list is obvious"
+    },
+    {
+      "start": "14:50",
+      "end": "14:50",
+      "text": "produces a unique list is obvious"
+    },
+    {
+      "start": "14:50",
+      "end": "14:53",
+      "text": "produces a unique list is obvious because the algorithm has no randomness"
+    },
+    {
+      "start": "14:53",
+      "end": "14:53",
+      "text": "because the algorithm has no randomness"
+    },
+    {
+      "start": "14:53",
+      "end": "14:57",
+      "text": "because the algorithm has no randomness and I mean at each step since the least"
+    },
+    {
+      "start": "14:57",
+      "end": "14:57",
+      "text": "and I mean at each step since the least"
+    },
+    {
+      "start": "14:57",
+      "end": "14:59",
+      "text": "and I mean at each step since the least valued leaf node is pick that is unique"
+    },
+    {
+      "start": "14:59",
+      "end": "14:59",
+      "text": "valued leaf node is pick that is unique"
+    },
+    {
+      "start": "14:59",
+      "end": "15:01",
+      "text": "valued leaf node is pick that is unique and its neighbor is also unique and"
+    },
+    {
+      "start": "15:01",
+      "end": "15:01",
+      "text": "and its neighbor is also unique and"
+    },
+    {
+      "start": "15:01",
+      "end": "15:05",
+      "text": "and its neighbor is also unique and therefore if you give a particular tree"
+    },
+    {
+      "start": "15:05",
+      "end": "15:05",
+      "text": "therefore if you give a particular tree"
+    },
+    {
+      "start": "15:05",
+      "end": "15:09",
+      "text": "therefore if you give a particular tree the output list is automatically fixed"
+    },
+    {
+      "start": "15:09",
+      "end": "15:09",
+      "text": "the output list is automatically fixed"
+    },
+    {
+      "start": "15:09",
+      "end": "15:34",
+      "text": "the output list is automatically fixed let's work this out for an example"
+    },
+    {
+      "start": "15:37",
+      "end": "15:37",
+      "text": "okay so suppose we look at this"
+    },
+    {
+      "start": "15:37",
+      "end": "15:41",
+      "text": "okay so suppose we look at this particular tree the leaf nodes are nodes"
+    },
+    {
+      "start": "15:41",
+      "end": "15:41",
+      "text": "particular tree the leaf nodes are nodes"
+    },
+    {
+      "start": "15:41",
+      "end": "15:48",
+      "text": "particular tree the leaf nodes are nodes 1 7 5 &amp; 6 and the least valued leaf node"
+    },
+    {
+      "start": "15:48",
+      "end": "15:48",
+      "text": "1 7 5 &amp; 6 and the least valued leaf node"
+    },
+    {
+      "start": "15:48",
+      "end": "15:51",
+      "text": "1 7 5 &amp; 6 and the least valued leaf node is 1 so we will delete that and its"
+    },
+    {
+      "start": "15:51",
+      "end": "15:51",
+      "text": "is 1 so we will delete that and its"
+    },
+    {
+      "start": "15:51",
+      "end": "15:54",
+      "text": "is 1 so we will delete that and its neighbor as 2 so that's what we will"
+    },
+    {
+      "start": "15:54",
+      "end": "15:54",
+      "text": "neighbor as 2 so that's what we will"
+    },
+    {
+      "start": "15:54",
+      "end": "15:58",
+      "text": "neighbor as 2 so that's what we will first note ok and now if you look at the"
+    },
+    {
+      "start": "15:58",
+      "end": "15:58",
+      "text": "first note ok and now if you look at the"
+    },
+    {
+      "start": "15:58",
+      "end": "16:02",
+      "text": "first note ok and now if you look at the remaining tree the least valued leaf"
+    },
+    {
+      "start": "16:02",
+      "end": "16:02",
+      "text": "remaining tree the least valued leaf"
+    },
+    {
+      "start": "16:02",
+      "end": "16:05",
+      "text": "remaining tree the least valued leaf node is the node number 2 or the vertex"
+    },
+    {
+      "start": "16:05",
+      "end": "16:05",
+      "text": "node is the node number 2 or the vertex"
+    },
+    {
+      "start": "16:05",
+      "end": "16:08",
+      "text": "node is the node number 2 or the vertex number 2 and its neighbor is 4 so we"
+    },
+    {
+      "start": "16:08",
+      "end": "16:08",
+      "text": "number 2 and its neighbor is 4 so we"
+    },
+    {
+      "start": "16:08",
+      "end": "16:10",
+      "text": "number 2 and its neighbor is 4 so we will remove this and we will write out"
+    },
+    {
+      "start": "16:10",
+      "end": "16:10",
+      "text": "will remove this and we will write out"
+    },
+    {
+      "start": "16:10",
+      "end": "16:14",
+      "text": "will remove this and we will write out the number 4 now amongst the remaining"
+    },
+    {
+      "start": "16:14",
+      "end": "16:14",
+      "text": "the number 4 now amongst the remaining"
+    },
+    {
+      "start": "16:14",
+      "end": "16:19",
+      "text": "the number 4 now amongst the remaining nodes the leaf are 5 6 7 &amp; 8"
+    },
+    {
+      "start": "16:19",
+      "end": "16:19",
+      "text": "nodes the leaf are 5 6 7 &amp; 8"
+    },
+    {
+      "start": "16:19",
+      "end": "16:22",
+      "text": "nodes the leaf are 5 6 7 &amp; 8 the leaves being 5 and its neighbor is 3"
+    },
+    {
+      "start": "16:22",
+      "end": "16:22",
+      "text": "the leaves being 5 and its neighbor is 3"
+    },
+    {
+      "start": "16:22",
+      "end": "16:26",
+      "text": "the leaves being 5 and its neighbor is 3 so we will basically remove five and"
+    },
+    {
+      "start": "16:26",
+      "end": "16:26",
+      "text": "so we will basically remove five and"
+    },
+    {
+      "start": "16:26",
+      "end": "16:32",
+      "text": "so we will basically remove five and after that we will remove 6 7 then after"
+    },
+    {
+      "start": "16:32",
+      "end": "16:32",
+      "text": "after that we will remove 6 7 then after"
+    },
+    {
+      "start": "16:32",
+      "end": "16:34",
+      "text": "after that we will remove 6 7 then after we remove 6 &amp; 7"
+    },
+    {
+      "start": "16:34",
+      "end": "16:34",
+      "text": "we remove 6 &amp; 7"
+    },
+    {
+      "start": "16:34",
+      "end": "16:36",
+      "text": "we remove 6 &amp; 7 and both their neighbors with 3 so when"
+    },
+    {
+      "start": "16:36",
+      "end": "16:36",
+      "text": "and both their neighbors with 3 so when"
+    },
+    {
+      "start": "16:36",
+      "end": "16:39",
+      "text": "and both their neighbors with 3 so when 6 is removed we get a 3 &amp; 7 is removed"
+    },
+    {
+      "start": "16:39",
+      "end": "16:39",
+      "text": "6 is removed we get a 3 &amp; 7 is removed"
+    },
+    {
+      "start": "16:39",
+      "end": "16:42",
+      "text": "6 is removed we get a 3 &amp; 7 is removed we again get a 3 and at this point the"
+    },
+    {
+      "start": "16:42",
+      "end": "16:42",
+      "text": "we again get a 3 and at this point the"
+    },
+    {
+      "start": "16:42",
+      "end": "16:49",
+      "text": "we again get a 3 and at this point the tree consists of 3 4 &amp; 8 and if we look"
+    },
+    {
+      "start": "16:49",
+      "end": "16:49",
+      "text": "tree consists of 3 4 &amp; 8 and if we look"
+    },
+    {
+      "start": "16:49",
+      "end": "16:51",
+      "text": "tree consists of 3 4 &amp; 8 and if we look at the leaves that are precisely 2"
+    },
+    {
+      "start": "16:51",
+      "end": "16:51",
+      "text": "at the leaves that are precisely 2"
+    },
+    {
+      "start": "16:51",
+      "end": "16:55",
+      "text": "at the leaves that are precisely 2 leaves 3 &amp; 8 the least valued one is 3"
+    },
+    {
+      "start": "16:55",
+      "end": "16:55",
+      "text": "leaves 3 &amp; 8 the least valued one is 3"
+    },
+    {
+      "start": "16:55",
+      "end": "16:56",
+      "text": "leaves 3 &amp; 8 the least valued one is 3 and its neighbors"
+    },
+    {
+      "start": "16:56",
+      "end": "16:56",
+      "text": "and its neighbors"
+    },
+    {
+      "start": "16:56",
+      "end": "17:01",
+      "text": "and its neighbors 4 okay so this is the sequence that we"
+    },
+    {
+      "start": "17:01",
+      "end": "17:01",
+      "text": "4 okay so this is the sequence that we"
+    },
+    {
+      "start": "17:01",
+      "end": "17:07",
+      "text": "4 okay so this is the sequence that we get okay now what we will Sheamus if we"
+    },
+    {
+      "start": "17:07",
+      "end": "17:07",
+      "text": "get okay now what we will Sheamus if we"
+    },
+    {
+      "start": "17:07",
+      "end": "17:10",
+      "text": "get okay now what we will Sheamus if we know the underlying vertex set from that"
+    },
+    {
+      "start": "17:10",
+      "end": "17:10",
+      "text": "know the underlying vertex set from that"
+    },
+    {
+      "start": "17:10",
+      "end": "17:15",
+      "text": "know the underlying vertex set from that information and from this numbers 2 3 4"
+    },
+    {
+      "start": "17:15",
+      "end": "17:15",
+      "text": "information and from this numbers 2 3 4"
+    },
+    {
+      "start": "17:15",
+      "end": "17:22",
+      "text": "information and from this numbers 2 3 4 3 3 4 we can recover back the tree so I"
+    },
+    {
+      "start": "17:22",
+      "end": "17:22",
+      "text": "3 3 4 we can recover back the tree so I"
+    },
+    {
+      "start": "17:22",
+      "end": "17:25",
+      "text": "3 3 4 we can recover back the tree so I hope this process is clear we can just"
+    },
+    {
+      "start": "17:25",
+      "end": "17:25",
+      "text": "hope this process is clear we can just"
+    },
+    {
+      "start": "17:25",
+      "end": "17:28",
+      "text": "hope this process is clear we can just the interative step is at each stage but"
+    },
+    {
+      "start": "17:28",
+      "end": "17:28",
+      "text": "the interative step is at each stage but"
+    },
+    {
+      "start": "17:28",
+      "end": "17:30",
+      "text": "the interative step is at each stage but the least valued leaf node delete the"
+    },
+    {
+      "start": "17:30",
+      "end": "17:30",
+      "text": "the least valued leaf node delete the"
+    },
+    {
+      "start": "17:30",
+      "end": "17:32",
+      "text": "the least valued leaf node delete the edge corresponding to it and we note the"
+    },
+    {
+      "start": "17:32",
+      "end": "17:32",
+      "text": "edge corresponding to it and we note the"
+    },
+    {
+      "start": "17:32",
+      "end": "17:35",
+      "text": "edge corresponding to it and we note the neighbor of the deleted node okay so"
+    },
+    {
+      "start": "17:35",
+      "end": "17:35",
+      "text": "neighbor of the deleted node okay so"
+    },
+    {
+      "start": "17:35",
+      "end": "17:37",
+      "text": "neighbor of the deleted node okay so let's just look at this sequence 2 3 4 3"
+    },
+    {
+      "start": "17:37",
+      "end": "17:37",
+      "text": "let's just look at this sequence 2 3 4 3"
+    },
+    {
+      "start": "17:37",
+      "end": "17:44",
+      "text": "let's just look at this sequence 2 3 4 3 3 4 and try and generate the tree back"
+    },
+    {
+      "start": "17:47",
+      "end": "17:47",
+      "text": "suppose we know just this information"
+    },
+    {
+      "start": "17:47",
+      "end": "17:49",
+      "text": "suppose we know just this information and we don't have access to what was the"
+    },
+    {
+      "start": "17:49",
+      "end": "17:49",
+      "text": "and we don't have access to what was the"
+    },
+    {
+      "start": "17:49",
+      "end": "17:52",
+      "text": "and we don't have access to what was the original tree from this can be recovered"
+    },
+    {
+      "start": "17:52",
+      "end": "17:52",
+      "text": "original tree from this can be recovered"
+    },
+    {
+      "start": "17:52",
+      "end": "17:56",
+      "text": "original tree from this can be recovered back the tree if you look at the"
+    },
+    {
+      "start": "17:56",
+      "end": "17:56",
+      "text": "back the tree if you look at the"
+    },
+    {
+      "start": "17:56",
+      "end": "17:59",
+      "text": "back the tree if you look at the sequence one thing that we know is there"
+    },
+    {
+      "start": "17:59",
+      "end": "17:59",
+      "text": "sequence one thing that we know is there"
+    },
+    {
+      "start": "17:59",
+      "end": "18:07",
+      "text": "sequence one thing that we know is there are two facts that we can know every"
+    },
+    {
+      "start": "18:16",
+      "end": "18:16",
+      "text": "leaf node will be absent from the"
+    },
+    {
+      "start": "18:16",
+      "end": "18:24",
+      "text": "leaf node will be absent from the proofer code and the second aspect is"
+    },
+    {
+      "start": "18:24",
+      "end": "18:24",
+      "text": "proofer code and the second aspect is"
+    },
+    {
+      "start": "18:24",
+      "end": "18:35",
+      "text": "proofer code and the second aspect is every internal node will be present in"
+    },
+    {
+      "start": "18:35",
+      "end": "18:35",
+      "text": "every internal node will be present in"
+    },
+    {
+      "start": "18:35",
+      "end": "18:40",
+      "text": "every internal node will be present in the proofer code why is this so the leaf"
+    },
+    {
+      "start": "18:40",
+      "end": "18:40",
+      "text": "the proofer code why is this so the leaf"
+    },
+    {
+      "start": "18:40",
+      "end": "18:42",
+      "text": "the proofer code why is this so the leaf node the only numbers which appear in"
+    },
+    {
+      "start": "18:42",
+      "end": "18:42",
+      "text": "node the only numbers which appear in"
+    },
+    {
+      "start": "18:42",
+      "end": "18:45",
+      "text": "node the only numbers which appear in this till are internal nodes that's"
+    },
+    {
+      "start": "18:45",
+      "end": "18:45",
+      "text": "this till are internal nodes that's"
+    },
+    {
+      "start": "18:45",
+      "end": "18:47",
+      "text": "this till are internal nodes that's because the leaf node is a node that you"
+    },
+    {
+      "start": "18:47",
+      "end": "18:47",
+      "text": "because the leaf node is a node that you"
+    },
+    {
+      "start": "18:47",
+      "end": "18:51",
+      "text": "because the leaf node is a node that you would remove and when it is removed the"
+    },
+    {
+      "start": "18:51",
+      "end": "18:51",
+      "text": "would remove and when it is removed the"
+    },
+    {
+      "start": "18:51",
+      "end": "18:53",
+      "text": "would remove and when it is removed the node itself was never written but its"
+    },
+    {
+      "start": "18:53",
+      "end": "18:53",
+      "text": "node itself was never written but its"
+    },
+    {
+      "start": "18:53",
+      "end": "18:55",
+      "text": "node itself was never written but its neighbor is written so anything which"
+    },
+    {
+      "start": "18:55",
+      "end": "18:55",
+      "text": "neighbor is written so anything which"
+    },
+    {
+      "start": "18:55",
+      "end": "18:58",
+      "text": "neighbor is written so anything which appear in the proofer code at some time"
+    },
+    {
+      "start": "18:58",
+      "end": "18:58",
+      "text": "appear in the proofer code at some time"
+    },
+    {
+      "start": "18:58",
+      "end": "19:01",
+      "text": "appear in the proofer code at some time it will have to be an internal node so"
+    },
+    {
+      "start": "19:01",
+      "end": "19:01",
+      "text": "it will have to be an internal node so"
+    },
+    {
+      "start": "19:01",
+      "end": "19:03",
+      "text": "it will have to be an internal node so we can clearly see that the leaf nodes"
+    },
+    {
+      "start": "19:03",
+      "end": "19:03",
+      "text": "we can clearly see that the leaf nodes"
+    },
+    {
+      "start": "19:03",
+      "end": "19:05",
+      "text": "we can clearly see that the leaf nodes will be surely absent from the proofer"
+    },
+    {
+      "start": "19:05",
+      "end": "19:05",
+      "text": "will be surely absent from the proofer"
+    },
+    {
+      "start": "19:05",
+      "end": "19:07",
+      "text": "will be surely absent from the proofer code if you look at the process of"
+    },
+    {
+      "start": "19:07",
+      "end": "19:07",
+      "text": "code if you look at the process of"
+    },
+    {
+      "start": "19:07",
+      "end": "19:09",
+      "text": "code if you look at the process of generating the proofer code we starting"
+    },
+    {
+      "start": "19:09",
+      "end": "19:09",
+      "text": "generating the proofer code we starting"
+    },
+    {
+      "start": "19:09",
+      "end": "19:11",
+      "text": "generating the proofer code we starting at a tree and we are systematically"
+    },
+    {
+      "start": "19:11",
+      "end": "19:11",
+      "text": "at a tree and we are systematically"
+    },
+    {
+      "start": "19:11",
+      "end": "19:13",
+      "text": "at a tree and we are systematically removing the edges so there will be a"
+    },
+    {
+      "start": "19:13",
+      "end": "19:13",
+      "text": "removing the edges so there will be a"
+    },
+    {
+      "start": "19:13",
+      "end": "19:17",
+      "text": "removing the edges so there will be a point at which any node it's degree will"
+    },
+    {
+      "start": "19:17",
+      "end": "19:17",
+      "text": "point at which any node it's degree will"
+    },
+    {
+      "start": "19:17",
+      "end": "19:19",
+      "text": "point at which any node it's degree will keep on decreasing and there will be a"
+    },
+    {
+      "start": "19:19",
+      "end": "19:19",
+      "text": "keep on decreasing and there will be a"
+    },
+    {
+      "start": "19:19",
+      "end": "19:21",
+      "text": "keep on decreasing and there will be a point when it is a it becomes either 0"
+    },
+    {
+      "start": "19:21",
+      "end": "19:21",
+      "text": "point when it is a it becomes either 0"
+    },
+    {
+      "start": "19:21",
+      "end": "19:24",
+      "text": "point when it is a it becomes either 0 or 1 in the process of generating the"
+    },
+    {
+      "start": "19:24",
+      "end": "19:24",
+      "text": "or 1 in the process of generating the"
+    },
+    {
+      "start": "19:24",
+      "end": "19:27",
+      "text": "or 1 in the process of generating the proofer code we took a tree and we were"
+    },
+    {
+      "start": "19:27",
+      "end": "19:27",
+      "text": "proofer code we took a tree and we were"
+    },
+    {
+      "start": "19:27",
+      "end": "19:29",
+      "text": "proofer code we took a tree and we were removing the edges one after other if"
+    },
+    {
+      "start": "19:29",
+      "end": "19:29",
+      "text": "removing the edges one after other if"
+    },
+    {
+      "start": "19:29",
+      "end": "19:32",
+      "text": "removing the edges one after other if you look at the initial tree the process"
+    },
+    {
+      "start": "19:32",
+      "end": "19:32",
+      "text": "you look at the initial tree the process"
+    },
+    {
+      "start": "19:32",
+      "end": "19:34",
+      "text": "you look at the initial tree the process of generating the proofer code basically"
+    },
+    {
+      "start": "19:34",
+      "end": "19:34",
+      "text": "of generating the proofer code basically"
+    },
+    {
+      "start": "19:34",
+      "end": "19:37",
+      "text": "of generating the proofer code basically removes an edge from the tree"
+    },
+    {
+      "start": "19:37",
+      "end": "19:37",
+      "text": "removes an edge from the tree"
+    },
+    {
+      "start": "19:37",
+      "end": "19:40",
+      "text": "removes an edge from the tree one edge at a time so every internal"
+    },
+    {
+      "start": "19:40",
+      "end": "19:40",
+      "text": "one edge at a time so every internal"
+    },
+    {
+      "start": "19:40",
+      "end": "19:43",
+      "text": "one edge at a time so every internal node is going to lose some of the edges"
+    },
+    {
+      "start": "19:43",
+      "end": "19:43",
+      "text": "node is going to lose some of the edges"
+    },
+    {
+      "start": "19:43",
+      "end": "19:45",
+      "text": "node is going to lose some of the edges corresponding to it and when this"
+    },
+    {
+      "start": "19:45",
+      "end": "19:45",
+      "text": "corresponding to it and when this"
+    },
+    {
+      "start": "19:45",
+      "end": "19:49",
+      "text": "corresponding to it and when this happens that node is going to appear in"
+    },
+    {
+      "start": "19:49",
+      "end": "19:49",
+      "text": "happens that node is going to appear in"
+    },
+    {
+      "start": "19:49",
+      "end": "19:51",
+      "text": "happens that node is going to appear in the proofer code and therefore we can"
+    },
+    {
+      "start": "19:51",
+      "end": "19:51",
+      "text": "the proofer code and therefore we can"
+    },
+    {
+      "start": "19:51",
+      "end": "19:53",
+      "text": "the proofer code and therefore we can argue that every internal node will be"
+    },
+    {
+      "start": "19:53",
+      "end": "19:53",
+      "text": "argue that every internal node will be"
+    },
+    {
+      "start": "19:53",
+      "end": "19:56",
+      "text": "argue that every internal node will be present in the proofer code ok if you"
+    },
+    {
+      "start": "19:56",
+      "end": "19:56",
+      "text": "present in the proofer code ok if you"
+    },
+    {
+      "start": "19:56",
+      "end": "19:58",
+      "text": "present in the proofer code ok if you note these things"
+    },
+    {
+      "start": "19:58",
+      "end": "19:58",
+      "text": "note these things"
+    },
+    {
+      "start": "19:58",
+      "end": "20:00",
+      "text": "note these things we know by looking at the prefer quote"
+    },
+    {
+      "start": "20:00",
+      "end": "20:00",
+      "text": "we know by looking at the prefer quote"
+    },
+    {
+      "start": "20:00",
+      "end": "20:03",
+      "text": "we know by looking at the prefer quote two four three three three four that the"
+    },
+    {
+      "start": "20:03",
+      "end": "20:03",
+      "text": "two four three three three four that the"
+    },
+    {
+      "start": "20:03",
+      "end": "20:07",
+      "text": "two four three three three four that the leaf nodes essentially had to be the"
+    },
+    {
+      "start": "20:07",
+      "end": "20:07",
+      "text": "leaf nodes essentially had to be the"
+    },
+    {
+      "start": "20:07",
+      "end": "20:09",
+      "text": "leaf nodes essentially had to be the missing numbers so this is a sequence of"
+    },
+    {
+      "start": "20:09",
+      "end": "20:09",
+      "text": "missing numbers so this is a sequence of"
+    },
+    {
+      "start": "20:09",
+      "end": "20:12",
+      "text": "missing numbers so this is a sequence of length the length is six and if the"
+    },
+    {
+      "start": "20:12",
+      "end": "20:12",
+      "text": "length the length is six and if the"
+    },
+    {
+      "start": "20:12",
+      "end": "20:14",
+      "text": "length the length is six and if the vertices were numbered one to eight the"
+    },
+    {
+      "start": "20:14",
+      "end": "20:14",
+      "text": "vertices were numbered one to eight the"
+    },
+    {
+      "start": "20:14",
+      "end": "20:19",
+      "text": "vertices were numbered one to eight the leaf nodes would have been one five six"
+    },
+    {
+      "start": "20:19",
+      "end": "20:19",
+      "text": "leaf nodes would have been one five six"
+    },
+    {
+      "start": "20:19",
+      "end": "20:22",
+      "text": "leaf nodes would have been one five six seven eight okay we can look at the"
+    },
+    {
+      "start": "20:22",
+      "end": "20:22",
+      "text": "seven eight okay we can look at the"
+    },
+    {
+      "start": "20:22",
+      "end": "20:24",
+      "text": "seven eight okay we can look at the diagram and see that this is indeed the"
+    },
+    {
+      "start": "20:24",
+      "end": "20:24",
+      "text": "diagram and see that this is indeed the"
+    },
+    {
+      "start": "20:24",
+      "end": "20:29",
+      "text": "diagram and see that this is indeed the case one five six seven and eight and"
+    },
+    {
+      "start": "20:29",
+      "end": "20:29",
+      "text": "case one five six seven and eight and"
+    },
+    {
+      "start": "20:29",
+      "end": "20:32",
+      "text": "case one five six seven and eight and amongst these the first one to be"
+    },
+    {
+      "start": "20:32",
+      "end": "20:32",
+      "text": "amongst these the first one to be"
+    },
+    {
+      "start": "20:32",
+      "end": "20:33",
+      "text": "amongst these the first one to be removed would have been one and that"
+    },
+    {
+      "start": "20:33",
+      "end": "20:33",
+      "text": "removed would have been one and that"
+    },
+    {
+      "start": "20:33",
+      "end": "20:35",
+      "text": "removed would have been one and that should have been connected to two so 1 2"
+    },
+    {
+      "start": "20:35",
+      "end": "20:35",
+      "text": "should have been connected to two so 1 2"
+    },
+    {
+      "start": "20:35",
+      "end": "20:38",
+      "text": "should have been connected to two so 1 2 would have been an edge and if you look"
+    },
+    {
+      "start": "20:38",
+      "end": "20:38",
+      "text": "would have been an edge and if you look"
+    },
+    {
+      "start": "20:38",
+      "end": "20:41",
+      "text": "would have been an edge and if you look at the remaining sequence now 4 3 3 3 4"
+    },
+    {
+      "start": "20:41",
+      "end": "20:42",
+      "text": "at the remaining sequence now 4 3 3 3 4"
+    },
+    {
+      "start": "20:42",
+      "end": "20:48",
+      "text": "at the remaining sequence now 4 3 3 3 4 2 is missing and therefore - must have"
+    },
+    {
+      "start": "20:48",
+      "end": "20:48",
+      "text": "2 is missing and therefore - must have"
+    },
+    {
+      "start": "20:48",
+      "end": "20:49",
+      "text": "2 is missing and therefore - must have been a leaf node for that particular"
+    },
+    {
+      "start": "20:49",
+      "end": "20:49",
+      "text": "been a leaf node for that particular"
+    },
+    {
+      "start": "20:49",
+      "end": "20:53",
+      "text": "been a leaf node for that particular tree so we can say that two must have"
+    },
+    {
+      "start": "20:53",
+      "end": "20:53",
+      "text": "tree so we can say that two must have"
+    },
+    {
+      "start": "20:53",
+      "end": "20:56",
+      "text": "tree so we can say that two must have been connected to four ok 4 is still"
+    },
+    {
+      "start": "20:56",
+      "end": "20:56",
+      "text": "been connected to four ok 4 is still"
+    },
+    {
+      "start": "20:56",
+      "end": "20:58",
+      "text": "been connected to four ok 4 is still present and amongst the numbers that are"
+    },
+    {
+      "start": "20:58",
+      "end": "20:58",
+      "text": "present and amongst the numbers that are"
+    },
+    {
+      "start": "20:58",
+      "end": "21:02",
+      "text": "present and amongst the numbers that are not present the least one is 5 and 5"
+    },
+    {
+      "start": "21:02",
+      "end": "21:03",
+      "text": "not present the least one is 5 and 5"
+    },
+    {
+      "start": "21:03",
+      "end": "21:07",
+      "text": "not present the least one is 5 and 5 lists to be connected to 3 the next"
+    },
+    {
+      "start": "21:07",
+      "end": "21:07",
+      "text": "lists to be connected to 3 the next"
+    },
+    {
+      "start": "21:07",
+      "end": "21:11",
+      "text": "lists to be connected to 3 the next missing number is 6 so 6 is also"
+    },
+    {
+      "start": "21:11",
+      "end": "21:11",
+      "text": "missing number is 6 so 6 is also"
+    },
+    {
+      "start": "21:11",
+      "end": "21:14",
+      "text": "missing number is 6 so 6 is also connected to 3 and then you have 7 7 is"
+    },
+    {
+      "start": "21:14",
+      "end": "21:14",
+      "text": "connected to 3 and then you have 7 7 is"
+    },
+    {
+      "start": "21:14",
+      "end": "21:19",
+      "text": "connected to 3 and then you have 7 7 is also connected to 3 and after this point"
+    },
+    {
+      "start": "21:19",
+      "end": "21:19",
+      "text": "also connected to 3 and after this point"
+    },
+    {
+      "start": "21:19",
+      "end": "21:21",
+      "text": "also connected to 3 and after this point 3 is no longer going to be present and"
+    },
+    {
+      "start": "21:21",
+      "end": "21:21",
+      "text": "3 is no longer going to be present and"
+    },
+    {
+      "start": "21:21",
+      "end": "21:23",
+      "text": "3 is no longer going to be present and therefore 3 must have been connected to"
+    },
+    {
+      "start": "21:23",
+      "end": "21:23",
+      "text": "therefore 3 must have been connected to"
+    },
+    {
+      "start": "21:23",
+      "end": "21:27",
+      "text": "therefore 3 must have been connected to 4 and then at this point there's only"
+    },
+    {
+      "start": "21:27",
+      "end": "21:27",
+      "text": "4 and then at this point there's only"
+    },
+    {
+      "start": "21:27",
+      "end": "21:32",
+      "text": "4 and then at this point there's only one node that is remaining that is 8 and"
+    },
+    {
+      "start": "21:32",
+      "end": "21:32",
+      "text": "one node that is remaining that is 8 and"
+    },
+    {
+      "start": "21:32",
+      "end": "21:35",
+      "text": "one node that is remaining that is 8 and that must have been connected to 4"
+    },
+    {
+      "start": "21:35",
+      "end": "21:35",
+      "text": "that must have been connected to 4"
+    },
+    {
+      "start": "21:35",
+      "end": "21:39",
+      "text": "that must have been connected to 4 so from this number we could in some"
+    },
+    {
+      "start": "21:39",
+      "end": "21:39",
+      "text": "so from this number we could in some"
+    },
+    {
+      "start": "21:39",
+      "end": "21:42",
+      "text": "so from this number we could in some sense generate the tree we have been"
+    },
+    {
+      "start": "21:42",
+      "end": "21:42",
+      "text": "sense generate the tree we have been"
+    },
+    {
+      "start": "21:42",
+      "end": "21:44",
+      "text": "sense generate the tree we have been given a formal proof we will do that"
+    },
+    {
+      "start": "21:44",
+      "end": "21:44",
+      "text": "given a formal proof we will do that"
+    },
+    {
+      "start": "21:44",
+      "end": "21:47",
+      "text": "given a formal proof we will do that shortly vertex 3 is connected to 5 6 7"
+    },
+    {
+      "start": "21:47",
+      "end": "21:47",
+      "text": "shortly vertex 3 is connected to 5 6 7"
+    },
+    {
+      "start": "21:47",
+      "end": "21:51",
+      "text": "shortly vertex 3 is connected to 5 6 7 and vertex 4 is connected to 8 into and"
+    },
+    {
+      "start": "21:51",
+      "end": "21:51",
+      "text": "and vertex 4 is connected to 8 into and"
+    },
+    {
+      "start": "21:51",
+      "end": "21:54",
+      "text": "and vertex 4 is connected to 8 into and vertex 1 is connected to 2 that was all"
+    },
+    {
+      "start": "21:54",
+      "end": "21:54",
+      "text": "vertex 1 is connected to 2 that was all"
+    },
+    {
+      "start": "21:54",
+      "end": "21:57",
+      "text": "vertex 1 is connected to 2 that was all the so at least in this case we have"
+    },
+    {
+      "start": "21:57",
+      "end": "21:57",
+      "text": "the so at least in this case we have"
+    },
+    {
+      "start": "21:57",
+      "end": "22:00",
+      "text": "the so at least in this case we have verified that things work I see"
+    },
+    {
+      "start": "22:00",
+      "end": "22:00",
+      "text": "verified that things work I see"
+    },
+    {
+      "start": "22:00",
+      "end": "22:03",
+      "text": "verified that things work I see so let's formally prove the theorem the"
+    },
+    {
+      "start": "22:03",
+      "end": "22:03",
+      "text": "so let's formally prove the theorem the"
+    },
+    {
+      "start": "22:03",
+      "end": "22:08",
+      "text": "so let's formally prove the theorem the number of spanning"
+    },
+    {
+      "start": "22:18",
+      "end": "22:19",
+      "text": "trees for KN is equal to n raise to n"
+    },
+    {
+      "start": "22:19",
+      "end": "22:26",
+      "text": "trees for KN is equal to n raise to n minus 2 so let us assume that the"
+    },
+    {
+      "start": "22:26",
+      "end": "22:26",
+      "text": "minus 2 so let us assume that the"
+    },
+    {
+      "start": "22:26",
+      "end": "22:34",
+      "text": "minus 2 so let us assume that the vertices are from a set s which we will"
+    },
+    {
+      "start": "22:34",
+      "end": "22:34",
+      "text": "vertices are from a set s which we will"
+    },
+    {
+      "start": "22:34",
+      "end": "22:46",
+      "text": "vertices are from a set s which we will assume to be an ordered set and let T"
+    },
+    {
+      "start": "22:46",
+      "end": "22:46",
+      "text": "assume to be an ordered set and let T"
+    },
+    {
+      "start": "22:46",
+      "end": "22:57",
+      "text": "assume to be an ordered set and let T denote the set of spanning trees"
+    },
+    {
+      "start": "23:07",
+      "end": "23:07",
+      "text": "and I'll denote the set of lists of size"
+    },
+    {
+      "start": "23:07",
+      "end": "23:12",
+      "text": "and I'll denote the set of lists of size n minus 2 where we will assume the"
+    },
+    {
+      "start": "23:12",
+      "end": "23:12",
+      "text": "n minus 2 where we will assume the"
+    },
+    {
+      "start": "23:12",
+      "end": "23:15",
+      "text": "n minus 2 where we will assume the choice of s is equal to n so let's of"
+    },
+    {
+      "start": "23:15",
+      "end": "23:15",
+      "text": "choice of s is equal to n so let's of"
+    },
+    {
+      "start": "23:15",
+      "end": "23:21",
+      "text": "choice of s is equal to n so let's of size n minus 2 over s ok what we will"
+    },
+    {
+      "start": "23:21",
+      "end": "23:21",
+      "text": "size n minus 2 over s ok what we will"
+    },
+    {
+      "start": "23:21",
+      "end": "23:27",
+      "text": "size n minus 2 over s ok what we will prove us there exists a bijection"
+    },
+    {
+      "start": "23:27",
+      "end": "23:27",
+      "text": "prove us there exists a bijection"
+    },
+    {
+      "start": "23:27",
+      "end": "23:34",
+      "text": "prove us there exists a bijection between T and L so we will prove this by"
+    },
+    {
+      "start": "23:34",
+      "end": "23:34",
+      "text": "between T and L so we will prove this by"
+    },
+    {
+      "start": "23:34",
+      "end": "23:39",
+      "text": "between T and L so we will prove this by induction base cases we had already"
+    },
+    {
+      "start": "23:39",
+      "end": "23:39",
+      "text": "induction base cases we had already"
+    },
+    {
+      "start": "23:39",
+      "end": "23:43",
+      "text": "induction base cases we had already checked when n is equal to let's say 3"
+    },
+    {
+      "start": "23:43",
+      "end": "23:43",
+      "text": "checked when n is equal to let's say 3"
+    },
+    {
+      "start": "23:43",
+      "end": "23:47",
+      "text": "checked when n is equal to let's say 3 we had verified that T contains if you"
+    },
+    {
+      "start": "23:47",
+      "end": "23:47",
+      "text": "we had verified that T contains if you"
+    },
+    {
+      "start": "23:47",
+      "end": "23:52",
+      "text": "we had verified that T contains if you call this as TN TN contains 3 elements"
+    },
+    {
+      "start": "23:52",
+      "end": "23:52",
+      "text": "call this as TN TN contains 3 elements"
+    },
+    {
+      "start": "23:52",
+      "end": "23:57",
+      "text": "call this as TN TN contains 3 elements and the list also contains 3 elements so"
+    },
+    {
+      "start": "23:57",
+      "end": "23:57",
+      "text": "and the list also contains 3 elements so"
+    },
+    {
+      "start": "23:57",
+      "end": "24:00",
+      "text": "and the list also contains 3 elements so because what you are looking at is list"
+    },
+    {
+      "start": "24:00",
+      "end": "24:00",
+      "text": "because what you are looking at is list"
+    },
+    {
+      "start": "24:00",
+      "end": "24:04",
+      "text": "because what you are looking at is list of size 3 minus 2 so that is list of"
+    },
+    {
+      "start": "24:04",
+      "end": "24:04",
+      "text": "of size 3 minus 2 so that is list of"
+    },
+    {
+      "start": "24:04",
+      "end": "24:07",
+      "text": "of size 3 minus 2 so that is list of size 1 over s and there are precisely 3"
+    },
+    {
+      "start": "24:07",
+      "end": "24:07",
+      "text": "size 1 over s and there are precisely 3"
+    },
+    {
+      "start": "24:07",
+      "end": "24:09",
+      "text": "size 1 over s and there are precisely 3 elements in s so the lists of size 1 are"
+    },
+    {
+      "start": "24:09",
+      "end": "24:09",
+      "text": "elements in s so the lists of size 1 are"
+    },
+    {
+      "start": "24:09",
+      "end": "24:12",
+      "text": "elements in s so the lists of size 1 are precisely 3 so the base case can be"
+    },
+    {
+      "start": "24:12",
+      "end": "24:12",
+      "text": "precisely 3 so the base case can be"
+    },
+    {
+      "start": "24:12",
+      "end": "24:15",
+      "text": "precisely 3 so the base case can be easily checked now let's assume that the"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "easily checked now let's assume that the"
+    },
+    {
+      "start": "24:15",
+      "end": "24:17",
+      "text": "easily checked now let's assume that the induction hypothesis holds for all"
+    },
+    {
+      "start": "24:17",
+      "end": "24:17",
+      "text": "induction hypothesis holds for all"
+    },
+    {
+      "start": "24:17",
+      "end": "24:22",
+      "text": "induction hypothesis holds for all values up to M minus 1 okay now we want"
+    },
+    {
+      "start": "24:22",
+      "end": "24:22",
+      "text": "values up to M minus 1 okay now we want"
+    },
+    {
+      "start": "24:22",
+      "end": "24:26",
+      "text": "values up to M minus 1 okay now we want to show that for M also the statement is"
+    },
+    {
+      "start": "24:26",
+      "end": "24:26",
+      "text": "to show that for M also the statement is"
+    },
+    {
+      "start": "24:26",
+      "end": "24:30",
+      "text": "to show that for M also the statement is true ok so let us look at particular"
+    },
+    {
+      "start": "24:30",
+      "end": "24:30",
+      "text": "true ok so let us look at particular"
+    },
+    {
+      "start": "24:30",
+      "end": "24:43",
+      "text": "true ok so let us look at particular sequence so every sequence on s of size"
+    },
+    {
+      "start": "24:43",
+      "end": "24:43",
+      "text": "sequence so every sequence on s of size"
+    },
+    {
+      "start": "24:43",
+      "end": "24:55",
+      "text": "sequence so every sequence on s of size n minus 2 corresponds to a unique"
+    },
+    {
+      "start": "25:01",
+      "end": "25:01",
+      "text": "spanning tree so let's look at a"
+    },
+    {
+      "start": "25:01",
+      "end": "25:03",
+      "text": "spanning tree so let's look at a particular sequence so if we call the"
+    },
+    {
+      "start": "25:03",
+      "end": "25:03",
+      "text": "particular sequence so if we call the"
+    },
+    {
+      "start": "25:03",
+      "end": "25:05",
+      "text": "particular sequence so if we call the sequence by a and that's equal to a 1 a"
+    },
+    {
+      "start": "25:05",
+      "end": "25:05",
+      "text": "sequence by a and that's equal to a 1 a"
+    },
+    {
+      "start": "25:05",
+      "end": "25:10",
+      "text": "sequence by a and that's equal to a 1 a 2 a n minus 2 we will exhibit a"
+    },
+    {
+      "start": "25:10",
+      "end": "25:10",
+      "text": "2 a n minus 2 we will exhibit a"
+    },
+    {
+      "start": "25:10",
+      "end": "25:13",
+      "text": "2 a n minus 2 we will exhibit a corresponding to this and we will argue"
+    },
+    {
+      "start": "25:13",
+      "end": "25:13",
+      "text": "corresponding to this and we will argue"
+    },
+    {
+      "start": "25:13",
+      "end": "25:17",
+      "text": "corresponding to this and we will argue that that tree is a unique tree now if"
+    },
+    {
+      "start": "25:17",
+      "end": "25:17",
+      "text": "that that tree is a unique tree now if"
+    },
+    {
+      "start": "25:17",
+      "end": "25:21",
+      "text": "that that tree is a unique tree now if you look at let us say a 2 2 a n minus 2"
+    },
+    {
+      "start": "25:21",
+      "end": "25:21",
+      "text": "you look at let us say a 2 2 a n minus 2"
+    },
+    {
+      "start": "25:21",
+      "end": "25:26",
+      "text": "you look at let us say a 2 2 a n minus 2 that again as a sequence of length n"
+    },
+    {
+      "start": "25:26",
+      "end": "25:26",
+      "text": "that again as a sequence of length n"
+    },
+    {
+      "start": "25:26",
+      "end": "25:31",
+      "text": "that again as a sequence of length n minus 3 it's a subsequence and if we"
+    },
+    {
+      "start": "25:31",
+      "end": "25:31",
+      "text": "minus 3 it's a subsequence and if we"
+    },
+    {
+      "start": "25:31",
+      "end": "25:32",
+      "text": "minus 3 it's a subsequence and if we knew which are the vertices that are"
+    },
+    {
+      "start": "25:32",
+      "end": "25:32",
+      "text": "knew which are the vertices that are"
+    },
+    {
+      "start": "25:32",
+      "end": "25:35",
+      "text": "knew which are the vertices that are under consideration here we will"
+    },
+    {
+      "start": "25:35",
+      "end": "25:35",
+      "text": "under consideration here we will"
+    },
+    {
+      "start": "25:35",
+      "end": "25:38",
+      "text": "under consideration here we will inductively argue that a unique spanning"
+    },
+    {
+      "start": "25:38",
+      "end": "25:38",
+      "text": "inductively argue that a unique spanning"
+    },
+    {
+      "start": "25:38",
+      "end": "25:40",
+      "text": "inductively argue that a unique spanning tree can be constructed corresponding to"
+    },
+    {
+      "start": "25:40",
+      "end": "25:40",
+      "text": "tree can be constructed corresponding to"
+    },
+    {
+      "start": "25:40",
+      "end": "25:42",
+      "text": "tree can be constructed corresponding to that to that spanning tree we add a"
+    },
+    {
+      "start": "25:42",
+      "end": "25:42",
+      "text": "that to that spanning tree we add a"
+    },
+    {
+      "start": "25:42",
+      "end": "25:44",
+      "text": "that to that spanning tree we add a particular edge and we will get this"
+    },
+    {
+      "start": "25:44",
+      "end": "25:44",
+      "text": "particular edge and we will get this"
+    },
+    {
+      "start": "25:44",
+      "end": "25:47",
+      "text": "particular edge and we will get this tree that we are interested in so let's"
+    },
+    {
+      "start": "25:47",
+      "end": "25:47",
+      "text": "tree that we are interested in so let's"
+    },
+    {
+      "start": "25:47",
+      "end": "25:50",
+      "text": "tree that we are interested in so let's our line of attack so let's look at it"
+    },
+    {
+      "start": "25:50",
+      "end": "25:50",
+      "text": "our line of attack so let's look at it"
+    },
+    {
+      "start": "25:50",
+      "end": "26:00",
+      "text": "our line of attack so let's look at it more carefully so look at the smallest"
+    },
+    {
+      "start": "26:00",
+      "end": "26:00",
+      "text": "more carefully so look at the smallest"
+    },
+    {
+      "start": "26:00",
+      "end": "26:12",
+      "text": "more carefully so look at the smallest number that is not present in a ok let's"
+    },
+    {
+      "start": "26:12",
+      "end": "26:12",
+      "text": "number that is not present in a ok let's"
+    },
+    {
+      "start": "26:12",
+      "end": "26:15",
+      "text": "number that is not present in a ok let's call it as X we had argued earlier that"
+    },
+    {
+      "start": "26:15",
+      "end": "26:15",
+      "text": "call it as X we had argued earlier that"
+    },
+    {
+      "start": "26:15",
+      "end": "26:17",
+      "text": "call it as X we had argued earlier that the numbers that are missing in a 1 a 2"
+    },
+    {
+      "start": "26:17",
+      "end": "26:17",
+      "text": "the numbers that are missing in a 1 a 2"
+    },
+    {
+      "start": "26:17",
+      "end": "26:20",
+      "text": "the numbers that are missing in a 1 a 2 up to a n minus 2 has to be clearly"
+    },
+    {
+      "start": "26:20",
+      "end": "26:20",
+      "text": "up to a n minus 2 has to be clearly"
+    },
+    {
+      "start": "26:20",
+      "end": "26:23",
+      "text": "up to a n minus 2 has to be clearly leaves and the smallest of them would"
+    },
+    {
+      "start": "26:23",
+      "end": "26:23",
+      "text": "leaves and the smallest of them would"
+    },
+    {
+      "start": "26:23",
+      "end": "26:26",
+      "text": "leaves and the smallest of them would have been the first node that would have"
+    },
+    {
+      "start": "26:26",
+      "end": "26:26",
+      "text": "have been the first node that would have"
+    },
+    {
+      "start": "26:26",
+      "end": "26:28",
+      "text": "have been the first node that would have been removed when we were constructing"
+    },
+    {
+      "start": "26:28",
+      "end": "26:28",
+      "text": "been removed when we were constructing"
+    },
+    {
+      "start": "26:28",
+      "end": "26:30",
+      "text": "been removed when we were constructing the spanning tree so if we look at that"
+    },
+    {
+      "start": "26:30",
+      "end": "26:30",
+      "text": "the spanning tree so if we look at that"
+    },
+    {
+      "start": "26:30",
+      "end": "26:34",
+      "text": "the spanning tree so if we look at that node and call it as X clearly X is the"
+    },
+    {
+      "start": "26:34",
+      "end": "26:34",
+      "text": "node and call it as X clearly X is the"
+    },
+    {
+      "start": "26:34",
+      "end": "26:36",
+      "text": "node and call it as X clearly X is the node is a leaf node that was removed"
+    },
+    {
+      "start": "26:36",
+      "end": "26:36",
+      "text": "node is a leaf node that was removed"
+    },
+    {
+      "start": "26:36",
+      "end": "26:39",
+      "text": "node is a leaf node that was removed initially and X would have been"
+    },
+    {
+      "start": "26:39",
+      "end": "26:39",
+      "text": "initially and X would have been"
+    },
+    {
+      "start": "26:39",
+      "end": "26:45",
+      "text": "initially and X would have been connected to a 1 now if we look at this"
+    },
+    {
+      "start": "26:45",
+      "end": "26:45",
+      "text": "connected to a 1 now if we look at this"
+    },
+    {
+      "start": "26:45",
+      "end": "26:50",
+      "text": "connected to a 1 now if we look at this set s minus X this is a set of size n"
+    },
+    {
+      "start": "26:50",
+      "end": "26:50",
+      "text": "set s minus X this is a set of size n"
+    },
+    {
+      "start": "26:50",
+      "end": "26:56",
+      "text": "set s minus X this is a set of size n minus 1 and if you look at the"
+    },
+    {
+      "start": "26:56",
+      "end": "26:56",
+      "text": "minus 1 and if you look at the"
+    },
+    {
+      "start": "26:56",
+      "end": "27:01",
+      "text": "minus 1 and if you look at the subsequence a 2 to a and minus 2 this"
+    },
+    {
+      "start": "27:01",
+      "end": "27:01",
+      "text": "subsequence a 2 to a and minus 2 this"
+    },
+    {
+      "start": "27:01",
+      "end": "27:07",
+      "text": "subsequence a 2 to a and minus 2 this sequence cannot contain X in it this"
+    },
+    {
+      "start": "27:07",
+      "end": "27:07",
+      "text": "sequence cannot contain X in it this"
+    },
+    {
+      "start": "27:07",
+      "end": "27:10",
+      "text": "sequence cannot contain X in it this does not contain X in it because the"
+    },
+    {
+      "start": "27:10",
+      "end": "27:10",
+      "text": "does not contain X in it because the"
+    },
+    {
+      "start": "27:10",
+      "end": "27:12",
+      "text": "does not contain X in it because the original sequence itself didn't contain"
+    },
+    {
+      "start": "27:12",
+      "end": "27:12",
+      "text": "original sequence itself didn't contain"
+    },
+    {
+      "start": "27:12",
+      "end": "27:14",
+      "text": "original sequence itself didn't contain X so a subsequence surely cannot contain"
+    },
+    {
+      "start": "27:14",
+      "end": "27:14",
+      "text": "X so a subsequence surely cannot contain"
+    },
+    {
+      "start": "27:14",
+      "end": "27:19",
+      "text": "X so a subsequence surely cannot contain X and by our induction hypothesis this"
+    },
+    {
+      "start": "27:19",
+      "end": "27:19",
+      "text": "X and by our induction hypothesis this"
+    },
+    {
+      "start": "27:19",
+      "end": "27:22",
+      "text": "X and by our induction hypothesis this part a 2 2 a + -2 is going to correspond"
+    },
+    {
+      "start": "27:22",
+      "end": "27:22",
+      "text": "part a 2 2 a + -2 is going to correspond"
+    },
+    {
+      "start": "27:22",
+      "end": "27:26",
+      "text": "part a 2 2 a + -2 is going to correspond to a unique 3 T Prime"
+    },
+    {
+      "start": "27:34",
+      "end": "27:34",
+      "text": "now that 3 with the edge X a 1 will"
+    },
+    {
+      "start": "27:34",
+      "end": "27:36",
+      "text": "now that 3 with the edge X a 1 will correspond to this particular sequence"
+    },
+    {
+      "start": "27:36",
+      "end": "27:36",
+      "text": "correspond to this particular sequence"
+    },
+    {
+      "start": "27:36",
+      "end": "27:44",
+      "text": "correspond to this particular sequence so T Union the edge X a 1 T prime Union"
+    },
+    {
+      "start": "27:44",
+      "end": "27:44",
+      "text": "so T Union the edge X a 1 T prime Union"
+    },
+    {
+      "start": "27:44",
+      "end": "27:52",
+      "text": "so T Union the edge X a 1 T prime Union X a 1 if we call this as T T is spanning"
+    },
+    {
+      "start": "27:52",
+      "end": "27:52",
+      "text": "X a 1 if we call this as T T is spanning"
+    },
+    {
+      "start": "27:52",
+      "end": "28:06",
+      "text": "X a 1 if we call this as T T is spanning tree whose proof or code is a why is"
+    },
+    {
+      "start": "28:06",
+      "end": "28:06",
+      "text": "tree whose proof or code is a why is"
+    },
+    {
+      "start": "28:06",
+      "end": "28:12",
+      "text": "tree whose proof or code is a why is this so well clearly if you add X a 1 to"
+    },
+    {
+      "start": "28:12",
+      "end": "28:12",
+      "text": "this so well clearly if you add X a 1 to"
+    },
+    {
+      "start": "28:12",
+      "end": "28:14",
+      "text": "this so well clearly if you add X a 1 to T Prime it does not create a nice cycle"
+    },
+    {
+      "start": "28:14",
+      "end": "28:14",
+      "text": "T Prime it does not create a nice cycle"
+    },
+    {
+      "start": "28:14",
+      "end": "28:19",
+      "text": "T Prime it does not create a nice cycle because we assumed that X is not present"
+    },
+    {
+      "start": "28:19",
+      "end": "28:19",
+      "text": "because we assumed that X is not present"
+    },
+    {
+      "start": "28:19",
+      "end": "28:22",
+      "text": "because we assumed that X is not present here so that would make X a leaf and if"
+    },
+    {
+      "start": "28:22",
+      "end": "28:22",
+      "text": "here so that would make X a leaf and if"
+    },
+    {
+      "start": "28:22",
+      "end": "28:23",
+      "text": "here so that would make X a leaf and if you attach a leaf to some other node"
+    },
+    {
+      "start": "28:23",
+      "end": "28:23",
+      "text": "you attach a leaf to some other node"
+    },
+    {
+      "start": "28:23",
+      "end": "28:25",
+      "text": "you attach a leaf to some other node that's not going to create a cycle so"
+    },
+    {
+      "start": "28:25",
+      "end": "28:25",
+      "text": "that's not going to create a cycle so"
+    },
+    {
+      "start": "28:25",
+      "end": "28:28",
+      "text": "that's not going to create a cycle so the newer the graph that you get is"
+    },
+    {
+      "start": "28:28",
+      "end": "28:28",
+      "text": "the newer the graph that you get is"
+    },
+    {
+      "start": "28:28",
+      "end": "28:30",
+      "text": "the newer the graph that you get is indeed going to be a tree and if you"
+    },
+    {
+      "start": "28:30",
+      "end": "28:30",
+      "text": "indeed going to be a tree and if you"
+    },
+    {
+      "start": "28:30",
+      "end": "28:32",
+      "text": "indeed going to be a tree and if you look at the proof or code of that that's"
+    },
+    {
+      "start": "28:32",
+      "end": "28:32",
+      "text": "look at the proof or code of that that's"
+    },
+    {
+      "start": "28:32",
+      "end": "28:34",
+      "text": "look at the proof or code of that that's precisely going to be a 1 a 2 a n minus"
+    },
+    {
+      "start": "28:34",
+      "end": "28:34",
+      "text": "precisely going to be a 1 a 2 a n minus"
+    },
+    {
+      "start": "28:34",
+      "end": "28:38",
+      "text": "precisely going to be a 1 a 2 a n minus 2 okay so this is basically the proof"
+    },
+    {
+      "start": "28:38",
+      "end": "28:38",
+      "text": "2 okay so this is basically the proof"
+    },
+    {
+      "start": "28:38",
+      "end": "28:41",
+      "text": "2 okay so this is basically the proof this says that corresponding to every"
+    },
+    {
+      "start": "28:41",
+      "end": "28:41",
+      "text": "this says that corresponding to every"
+    },
+    {
+      "start": "28:41",
+      "end": "28:44",
+      "text": "this says that corresponding to every sequence you can get a unique spanning"
+    },
+    {
+      "start": "28:44",
+      "end": "28:44",
+      "text": "sequence you can get a unique spanning"
+    },
+    {
+      "start": "28:44",
+      "end": "28:46",
+      "text": "sequence you can get a unique spanning tree the uniqueness comes out because a"
+    },
+    {
+      "start": "28:46",
+      "end": "28:46",
+      "text": "tree the uniqueness comes out because a"
+    },
+    {
+      "start": "28:46",
+      "end": "28:49",
+      "text": "tree the uniqueness comes out because a 2 to n minus 2 by induction hypothesis"
+    },
+    {
+      "start": "28:49",
+      "end": "28:49",
+      "text": "2 to n minus 2 by induction hypothesis"
+    },
+    {
+      "start": "28:49",
+      "end": "28:52",
+      "text": "2 to n minus 2 by induction hypothesis has a unique T Prime and the only tree"
+    },
+    {
+      "start": "28:52",
+      "end": "28:52",
+      "text": "has a unique T Prime and the only tree"
+    },
+    {
+      "start": "28:52",
+      "end": "28:55",
+      "text": "has a unique T Prime and the only tree that is going to be obtained is by"
+    },
+    {
+      "start": "28:55",
+      "end": "28:55",
+      "text": "that is going to be obtained is by"
+    },
+    {
+      "start": "28:55",
+      "end": "28:59",
+      "text": "that is going to be obtained is by adding XA 1 to T so the only tree that"
+    },
+    {
+      "start": "28:59",
+      "end": "28:59",
+      "text": "adding XA 1 to T so the only tree that"
+    },
+    {
+      "start": "28:59",
+      "end": "29:02",
+      "text": "adding XA 1 to T so the only tree that could possibly correspond to this"
+    },
+    {
+      "start": "29:02",
+      "end": "29:02",
+      "text": "could possibly correspond to this"
+    },
+    {
+      "start": "29:02",
+      "end": "29:03",
+      "text": "could possibly correspond to this sequence the only graph that could"
+    },
+    {
+      "start": "29:03",
+      "end": "29:03",
+      "text": "sequence the only graph that could"
+    },
+    {
+      "start": "29:03",
+      "end": "29:05",
+      "text": "sequence the only graph that could possibly corresponding to correspond to"
+    },
+    {
+      "start": "29:05",
+      "end": "29:05",
+      "text": "possibly corresponding to correspond to"
+    },
+    {
+      "start": "29:05",
+      "end": "29:07",
+      "text": "possibly corresponding to correspond to this particular proof or sequence or"
+    },
+    {
+      "start": "29:07",
+      "end": "29:07",
+      "text": "this particular proof or sequence or"
+    },
+    {
+      "start": "29:07",
+      "end": "29:10",
+      "text": "this particular proof or sequence or this particular code is going to be T"
+    },
+    {
+      "start": "29:10",
+      "end": "29:10",
+      "text": "this particular code is going to be T"
+    },
+    {
+      "start": "29:10",
+      "end": "29:14",
+      "text": "this particular code is going to be T that is obtained by adding the X a 1 X 2"
+    },
+    {
+      "start": "29:14",
+      "end": "29:14",
+      "text": "that is obtained by adding the X a 1 X 2"
+    },
+    {
+      "start": "29:14",
+      "end": "29:18",
+      "text": "that is obtained by adding the X a 1 X 2 a 2 a n minus 2 so that concludes the"
+    },
+    {
+      "start": "29:18",
+      "end": "29:18",
+      "text": "a 2 a n minus 2 so that concludes the"
+    },
+    {
+      "start": "29:18",
+      "end": "29:21",
+      "text": "a 2 a n minus 2 so that concludes the proof and the lecture"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,2878 @@
+{
+  "title": "Lec 26: Congruences",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "welcome to the NPL makanda"
+    },
+    {
+      "start": "0:31",
+      "end": "0:33",
+      "text": "welcome to the NPL makanda mathematics this is the fourth lecture"
+    },
+    {
+      "start": "0:33",
+      "end": "0:33",
+      "text": "mathematics this is the fourth lecture"
+    },
+    {
+      "start": "0:33",
+      "end": "0:36",
+      "text": "mathematics this is the fourth lecture on number theory in the last class we"
+    },
+    {
+      "start": "0:36",
+      "end": "0:36",
+      "text": "on number theory in the last class we"
+    },
+    {
+      "start": "0:36",
+      "end": "0:44",
+      "text": "on number theory in the last class we were discussing congruence --is"
+    },
+    {
+      "start": "0:51",
+      "end": "0:51",
+      "text": "we say that for integer m not equal to"
+    },
+    {
+      "start": "0:51",
+      "end": "0:59",
+      "text": "we say that for integer m not equal to zero and integers a and B if M divides a"
+    },
+    {
+      "start": "0:59",
+      "end": "0:59",
+      "text": "zero and integers a and B if M divides a"
+    },
+    {
+      "start": "0:59",
+      "end": "1:04",
+      "text": "zero and integers a and B if M divides a minus B then we say that a is congruent"
+    },
+    {
+      "start": "1:04",
+      "end": "1:04",
+      "text": "minus B then we say that a is congruent"
+    },
+    {
+      "start": "1:04",
+      "end": "1:12",
+      "text": "minus B then we say that a is congruent to B mod M we were looking at some"
+    },
+    {
+      "start": "1:12",
+      "end": "1:12",
+      "text": "to B mod M we were looking at some"
+    },
+    {
+      "start": "1:12",
+      "end": "1:15",
+      "text": "to B mod M we were looking at some properties of congruence as' so we will"
+    },
+    {
+      "start": "1:15",
+      "end": "1:15",
+      "text": "properties of congruence as' so we will"
+    },
+    {
+      "start": "1:15",
+      "end": "1:24",
+      "text": "properties of congruence as' so we will see some more properties"
+    },
+    {
+      "start": "1:30",
+      "end": "1:30",
+      "text": "one property is that if is congruent to"
+    },
+    {
+      "start": "1:30",
+      "end": "1:41",
+      "text": "one property is that if is congruent to B modem and C is congruent to B modem"
+    },
+    {
+      "start": "1:49",
+      "end": "1:49",
+      "text": "then X plus C Y is congruent to B X plus"
+    },
+    {
+      "start": "1:49",
+      "end": "2:05",
+      "text": "then X plus C Y is congruent to B X plus D Y modem for integers X and one"
+    },
+    {
+      "start": "2:09",
+      "end": "2:09",
+      "text": "so to produce we start with our"
+    },
+    {
+      "start": "2:09",
+      "end": "2:14",
+      "text": "so to produce we start with our assumptions is congruent to be modem and"
+    },
+    {
+      "start": "2:14",
+      "end": "2:14",
+      "text": "assumptions is congruent to be modem and"
+    },
+    {
+      "start": "2:14",
+      "end": "2:23",
+      "text": "assumptions is congruent to be modem and C is congruent to de modem which means a"
+    },
+    {
+      "start": "2:23",
+      "end": "2:23",
+      "text": "C is congruent to de modem which means a"
+    },
+    {
+      "start": "2:23",
+      "end": "2:28",
+      "text": "C is congruent to de modem which means a minus B is m'kay for some integer K and"
+    },
+    {
+      "start": "2:28",
+      "end": "2:28",
+      "text": "minus B is m'kay for some integer K and"
+    },
+    {
+      "start": "2:28",
+      "end": "2:35",
+      "text": "minus B is m'kay for some integer K and C minus D is MJ for some integer J"
+    },
+    {
+      "start": "2:35",
+      "end": "2:35",
+      "text": "C minus D is MJ for some integer J"
+    },
+    {
+      "start": "2:35",
+      "end": "2:43",
+      "text": "C minus D is MJ for some integer J therefore X plus CY minus BX minus D Y"
+    },
+    {
+      "start": "2:43",
+      "end": "2:43",
+      "text": "therefore X plus CY minus BX minus D Y"
+    },
+    {
+      "start": "2:43",
+      "end": "2:52",
+      "text": "therefore X plus CY minus BX minus D Y would be M into KX plus D by D X plus jy"
+    },
+    {
+      "start": "2:52",
+      "end": "2:52",
+      "text": "would be M into KX plus D by D X plus jy"
+    },
+    {
+      "start": "2:52",
+      "end": "2:58",
+      "text": "would be M into KX plus D by D X plus jy is an integer therefore M divides X plus"
+    },
+    {
+      "start": "2:58",
+      "end": "2:58",
+      "text": "is an integer therefore M divides X plus"
+    },
+    {
+      "start": "2:58",
+      "end": "3:06",
+      "text": "is an integer therefore M divides X plus CY minus BX minus divide"
+    },
+    {
+      "start": "3:14",
+      "end": "3:14",
+      "text": "or in other words ax plus CY yes DX plus"
+    },
+    {
+      "start": "3:14",
+      "end": "3:18",
+      "text": "or in other words ax plus CY yes DX plus dy modem which is precisely what we seek"
+    },
+    {
+      "start": "3:18",
+      "end": "3:18",
+      "text": "dy modem which is precisely what we seek"
+    },
+    {
+      "start": "3:18",
+      "end": "3:24",
+      "text": "dy modem which is precisely what we seek to prove another result is that if equal"
+    },
+    {
+      "start": "3:24",
+      "end": "3:24",
+      "text": "to prove another result is that if equal"
+    },
+    {
+      "start": "3:24",
+      "end": "3:36",
+      "text": "to prove another result is that if equal to B modem and sequel to D modem then AC"
+    },
+    {
+      "start": "3:36",
+      "end": "3:36",
+      "text": "to B modem and sequel to D modem then AC"
+    },
+    {
+      "start": "3:36",
+      "end": "3:42",
+      "text": "to B modem and sequel to D modem then AC equal to BD modem"
+    },
+    {
+      "start": "3:47",
+      "end": "3:47",
+      "text": "if equal to me be modem then let us say"
+    },
+    {
+      "start": "3:47",
+      "end": "3:52",
+      "text": "if equal to me be modem then let us say a is Q 1 M plus R 1 R 1 is the remainder"
+    },
+    {
+      "start": "3:52",
+      "end": "3:52",
+      "text": "a is Q 1 M plus R 1 R 1 is the remainder"
+    },
+    {
+      "start": "3:52",
+      "end": "3:56",
+      "text": "a is Q 1 M plus R 1 R 1 is the remainder in that case B will also produce the"
+    },
+    {
+      "start": "3:56",
+      "end": "3:56",
+      "text": "in that case B will also produce the"
+    },
+    {
+      "start": "3:56",
+      "end": "3:59",
+      "text": "in that case B will also produce the same remainder B would be some Q 2 M"
+    },
+    {
+      "start": "3:59",
+      "end": "3:59",
+      "text": "same remainder B would be some Q 2 M"
+    },
+    {
+      "start": "3:59",
+      "end": "4:11",
+      "text": "same remainder B would be some Q 2 M plus R 1 let us say C is Q 3 M plus R 2"
+    },
+    {
+      "start": "4:11",
+      "end": "4:11",
+      "text": "plus R 1 let us say C is Q 3 M plus R 2"
+    },
+    {
+      "start": "4:11",
+      "end": "4:17",
+      "text": "plus R 1 let us say C is Q 3 M plus R 2 and D is q 4m plus again up to that's"
+    },
+    {
+      "start": "4:17",
+      "end": "4:17",
+      "text": "and D is q 4m plus again up to that's"
+    },
+    {
+      "start": "4:17",
+      "end": "4:20",
+      "text": "and D is q 4m plus again up to that's because C and D are congruent modem both"
+    },
+    {
+      "start": "4:20",
+      "end": "4:20",
+      "text": "because C and D are congruent modem both"
+    },
+    {
+      "start": "4:20",
+      "end": "4:23",
+      "text": "because C and D are congruent modem both of them will produce the same remainder"
+    },
+    {
+      "start": "4:23",
+      "end": "4:23",
+      "text": "of them will produce the same remainder"
+    },
+    {
+      "start": "4:23",
+      "end": "4:30",
+      "text": "of them will produce the same remainder therefore if you take AC you find that"
+    },
+    {
+      "start": "4:30",
+      "end": "4:30",
+      "text": "therefore if you take AC you find that"
+    },
+    {
+      "start": "4:30",
+      "end": "4:39",
+      "text": "therefore if you take AC you find that AC would be R 1 R 2 modem similarly BD"
+    },
+    {
+      "start": "4:39",
+      "end": "4:39",
+      "text": "AC would be R 1 R 2 modem similarly BD"
+    },
+    {
+      "start": "4:39",
+      "end": "4:45",
+      "text": "AC would be R 1 R 2 modem similarly BD is also R 1 R 2 model every other term"
+    },
+    {
+      "start": "4:45",
+      "end": "4:45",
+      "text": "is also R 1 R 2 model every other term"
+    },
+    {
+      "start": "4:45",
+      "end": "4:48",
+      "text": "is also R 1 R 2 model every other term of the product would be a multiple of M"
+    },
+    {
+      "start": "4:48",
+      "end": "4:48",
+      "text": "of the product would be a multiple of M"
+    },
+    {
+      "start": "4:48",
+      "end": "4:56",
+      "text": "of the product would be a multiple of M therefore AC is congruent to BD modem as"
+    },
+    {
+      "start": "4:56",
+      "end": "4:56",
+      "text": "therefore AC is congruent to BD modem as"
+    },
+    {
+      "start": "4:56",
+      "end": "5:04",
+      "text": "therefore AC is congruent to BD modem as required"
+    },
+    {
+      "start": "5:08",
+      "end": "5:08",
+      "text": "the third statement is not if is be"
+    },
+    {
+      "start": "5:08",
+      "end": "5:18",
+      "text": "the third statement is not if is be modem and D divides M and D greater than"
+    },
+    {
+      "start": "5:18",
+      "end": "5:18",
+      "text": "modem and D divides M and D greater than"
+    },
+    {
+      "start": "5:18",
+      "end": "5:29",
+      "text": "modem and D divides M and D greater than zero then equal to be more deep"
+    },
+    {
+      "start": "5:37",
+      "end": "5:37",
+      "text": "if D divides M and M divides a minus B"
+    },
+    {
+      "start": "5:37",
+      "end": "5:38",
+      "text": "if D divides M and M divides a minus B which will be the case if a is congruent"
+    },
+    {
+      "start": "5:38",
+      "end": "5:38",
+      "text": "which will be the case if a is congruent"
+    },
+    {
+      "start": "5:38",
+      "end": "5:44",
+      "text": "which will be the case if a is congruent to B modem then by transitivity of"
+    },
+    {
+      "start": "5:44",
+      "end": "5:44",
+      "text": "to B modem then by transitivity of"
+    },
+    {
+      "start": "5:44",
+      "end": "5:49",
+      "text": "to B modem then by transitivity of divisibility D divides a minus B which"
+    },
+    {
+      "start": "5:49",
+      "end": "5:49",
+      "text": "divisibility D divides a minus B which"
+    },
+    {
+      "start": "5:49",
+      "end": "5:53",
+      "text": "divisibility D divides a minus B which means a is congruent to B more D as a"
+    },
+    {
+      "start": "5:53",
+      "end": "5:53",
+      "text": "means a is congruent to B more D as a"
+    },
+    {
+      "start": "5:53",
+      "end": "6:07",
+      "text": "means a is congruent to B more D as a wire if is congruent to B mod M then AC"
+    },
+    {
+      "start": "6:07",
+      "end": "6:07",
+      "text": "wire if is congruent to B mod M then AC"
+    },
+    {
+      "start": "6:07",
+      "end": "6:14",
+      "text": "wire if is congruent to B mod M then AC is congruent to BC modem for any C"
+    },
+    {
+      "start": "6:14",
+      "end": "6:14",
+      "text": "is congruent to BC modem for any C"
+    },
+    {
+      "start": "6:14",
+      "end": "6:20",
+      "text": "is congruent to BC modem for any C greater than 0"
+    },
+    {
+      "start": "6:27",
+      "end": "6:27",
+      "text": "so say a is Q M plus R and B is Q prime"
+    },
+    {
+      "start": "6:27",
+      "end": "6:30",
+      "text": "so say a is Q M plus R and B is Q prime M plus R they do produce the same"
+    },
+    {
+      "start": "6:30",
+      "end": "6:30",
+      "text": "M plus R they do produce the same"
+    },
+    {
+      "start": "6:30",
+      "end": "6:32",
+      "text": "M plus R they do produce the same remainder that's why they are congruent"
+    },
+    {
+      "start": "6:32",
+      "end": "6:32",
+      "text": "remainder that's why they are congruent"
+    },
+    {
+      "start": "6:32",
+      "end": "6:43",
+      "text": "remainder that's why they are congruent to each of the modem so here"
+    },
+    {
+      "start": "6:45",
+      "end": "6:45",
+      "text": "zero less than or equal to or less than"
+    },
+    {
+      "start": "6:45",
+      "end": "6:57",
+      "text": "zero less than or equal to or less than M then AC is qmc plus RC + BC is Q prime"
+    },
+    {
+      "start": "6:57",
+      "end": "6:57",
+      "text": "M then AC is qmc plus RC + BC is Q prime"
+    },
+    {
+      "start": "6:57",
+      "end": "7:03",
+      "text": "M then AC is qmc plus RC + BC is Q prime MC + OC"
+    },
+    {
+      "start": "7:09",
+      "end": "7:09",
+      "text": "which means AC is congruent to BC modem"
+    },
+    {
+      "start": "7:09",
+      "end": "7:11",
+      "text": "which means AC is congruent to BC modem both of them produce the same remainder"
+    },
+    {
+      "start": "7:11",
+      "end": "7:11",
+      "text": "both of them produce the same remainder"
+    },
+    {
+      "start": "7:11",
+      "end": "7:19",
+      "text": "both of them produce the same remainder RC we have that 0 less than or equal to"
+    },
+    {
+      "start": "7:19",
+      "end": "7:19",
+      "text": "RC we have that 0 less than or equal to"
+    },
+    {
+      "start": "7:19",
+      "end": "7:23",
+      "text": "RC we have that 0 less than or equal to RC less than M C if C greater than zero"
+    },
+    {
+      "start": "7:23",
+      "end": "7:23",
+      "text": "RC less than M C if C greater than zero"
+    },
+    {
+      "start": "7:23",
+      "end": "7:26",
+      "text": "RC less than M C if C greater than zero so if C greater than zero we do have the"
+    },
+    {
+      "start": "7:26",
+      "end": "7:26",
+      "text": "so if C greater than zero we do have the"
+    },
+    {
+      "start": "7:26",
+      "end": "7:37",
+      "text": "so if C greater than zero we do have the result that we want"
+    },
+    {
+      "start": "7:40",
+      "end": "7:40",
+      "text": "the next theorem says this if f is a"
+    },
+    {
+      "start": "7:40",
+      "end": "8:00",
+      "text": "the next theorem says this if f is a polynomial with integer coefficients"
+    },
+    {
+      "start": "8:31",
+      "end": "8:31",
+      "text": "if is congruent to be modem then f of a"
+    },
+    {
+      "start": "8:31",
+      "end": "8:39",
+      "text": "if is congruent to be modem then f of a is congruent to F of B this follows from"
+    },
+    {
+      "start": "8:39",
+      "end": "8:39",
+      "text": "is congruent to F of B this follows from"
+    },
+    {
+      "start": "8:39",
+      "end": "8:45",
+      "text": "is congruent to F of B this follows from the previous theorems let us say f of X"
+    },
+    {
+      "start": "8:45",
+      "end": "8:45",
+      "text": "the previous theorems let us say f of X"
+    },
+    {
+      "start": "8:45",
+      "end": "8:51",
+      "text": "the previous theorems let us say f of X is C 0 X power n plus C 1 X power n"
+    },
+    {
+      "start": "8:51",
+      "end": "8:51",
+      "text": "is C 0 X power n plus C 1 X power n"
+    },
+    {
+      "start": "8:51",
+      "end": "8:58",
+      "text": "is C 0 X power n plus C 1 X power n minus 1 so on up to CN C 0 C 1 C 2 it"
+    },
+    {
+      "start": "8:58",
+      "end": "8:58",
+      "text": "minus 1 so on up to CN C 0 C 1 C 2 it"
+    },
+    {
+      "start": "8:58",
+      "end": "9:03",
+      "text": "minus 1 so on up to CN C 0 C 1 C 2 it will accept are all integers if a"
+    },
+    {
+      "start": "9:03",
+      "end": "9:03",
+      "text": "will accept are all integers if a"
+    },
+    {
+      "start": "9:03",
+      "end": "9:10",
+      "text": "will accept are all integers if a congruent to B modem then from the"
+    },
+    {
+      "start": "9:10",
+      "end": "9:10",
+      "text": "congruent to B modem then from the"
+    },
+    {
+      "start": "9:10",
+      "end": "9:12",
+      "text": "congruent to B modem then from the previous theorem we know that a squared"
+    },
+    {
+      "start": "9:12",
+      "end": "9:12",
+      "text": "previous theorem we know that a squared"
+    },
+    {
+      "start": "9:12",
+      "end": "9:19",
+      "text": "previous theorem we know that a squared is congruent to B squared modem a cubed"
+    },
+    {
+      "start": "9:19",
+      "end": "9:19",
+      "text": "is congruent to B squared modem a cubed"
+    },
+    {
+      "start": "9:19",
+      "end": "9:25",
+      "text": "is congruent to B squared modem a cubed is congruent to B cube modem and so on a"
+    },
+    {
+      "start": "9:25",
+      "end": "9:25",
+      "text": "is congruent to B cube modem and so on a"
+    },
+    {
+      "start": "9:25",
+      "end": "9:32",
+      "text": "is congruent to B cube modem and so on a power n congruent to B power n modem"
+    },
+    {
+      "start": "9:38",
+      "end": "9:38",
+      "text": "then see power and - one a is congruent"
+    },
+    {
+      "start": "9:38",
+      "end": "9:46",
+      "text": "then see power and - one a is congruent to see power n minus 1 B modem since c c"
+    },
+    {
+      "start": "9:46",
+      "end": "9:46",
+      "text": "to see power n minus 1 B modem since c c"
+    },
+    {
+      "start": "9:46",
+      "end": "9:49",
+      "text": "to see power n minus 1 B modem since c c n minus 1 is a constant c n minus 1 a is"
+    },
+    {
+      "start": "9:49",
+      "end": "9:49",
+      "text": "n minus 1 is a constant c n minus 1 a is"
+    },
+    {
+      "start": "9:49",
+      "end": "9:56",
+      "text": "n minus 1 is a constant c n minus 1 a is congruent to CN minus 1 b CN minus 2 s"
+    },
+    {
+      "start": "9:56",
+      "end": "9:56",
+      "text": "congruent to CN minus 1 b CN minus 2 s"
+    },
+    {
+      "start": "9:56",
+      "end": "9:59",
+      "text": "congruent to CN minus 1 b CN minus 2 s squared is congruent to CN minus 2 B"
+    },
+    {
+      "start": "9:59",
+      "end": "9:59",
+      "text": "squared is congruent to CN minus 2 B"
+    },
+    {
+      "start": "9:59",
+      "end": "10:03",
+      "text": "squared is congruent to CN minus 2 B Squad since C n minus 2 is an integer"
+    },
+    {
+      "start": "10:03",
+      "end": "10:03",
+      "text": "Squad since C n minus 2 is an integer"
+    },
+    {
+      "start": "10:03",
+      "end": "10:16",
+      "text": "Squad since C n minus 2 is an integer and so on"
+    },
+    {
+      "start": "10:19",
+      "end": "10:19",
+      "text": "therefore adding all of them together we"
+    },
+    {
+      "start": "10:19",
+      "end": "10:27",
+      "text": "therefore adding all of them together we have F of a is congruent to FF b model"
+    },
+    {
+      "start": "10:49",
+      "end": "10:49",
+      "text": "for integers a M X &amp; Y ax is congruent"
+    },
+    {
+      "start": "10:49",
+      "end": "10:59",
+      "text": "for integers a M X &amp; Y ax is congruent to a Y mod M if and only if X is"
+    },
+    {
+      "start": "10:59",
+      "end": "10:59",
+      "text": "to a Y mod M if and only if X is"
+    },
+    {
+      "start": "10:59",
+      "end": "11:03",
+      "text": "to a Y mod M if and only if X is congruent to Y modem by mode M divided"
+    },
+    {
+      "start": "11:03",
+      "end": "11:03",
+      "text": "congruent to Y modem by mode M divided"
+    },
+    {
+      "start": "11:03",
+      "end": "11:12",
+      "text": "congruent to Y modem by mode M divided by GCD of M that is if you choose to"
+    },
+    {
+      "start": "11:12",
+      "end": "11:12",
+      "text": "by GCD of M that is if you choose to"
+    },
+    {
+      "start": "11:12",
+      "end": "11:15",
+      "text": "by GCD of M that is if you choose to cancel a from either side of a"
+    },
+    {
+      "start": "11:15",
+      "end": "11:15",
+      "text": "cancel a from either side of a"
+    },
+    {
+      "start": "11:15",
+      "end": "11:18",
+      "text": "cancel a from either side of a congruence then M will have to be"
+    },
+    {
+      "start": "11:18",
+      "end": "11:18",
+      "text": "congruence then M will have to be"
+    },
+    {
+      "start": "11:18",
+      "end": "11:27",
+      "text": "congruence then M will have to be divided by the GCD of a in M for example"
+    },
+    {
+      "start": "11:38",
+      "end": "11:38",
+      "text": "so if you divide both sides by 10 we"
+    },
+    {
+      "start": "11:38",
+      "end": "11:47",
+      "text": "so if you divide both sides by 10 we have 15 congruent to 8 but then 14 will"
+    },
+    {
+      "start": "11:47",
+      "end": "11:47",
+      "text": "have 15 congruent to 8 but then 14 will"
+    },
+    {
+      "start": "11:47",
+      "end": "11:54",
+      "text": "have 15 congruent to 8 but then 14 will have to be replaced by GCD of 10 and 14"
+    },
+    {
+      "start": "11:54",
+      "end": "11:54",
+      "text": "have to be replaced by GCD of 10 and 14"
+    },
+    {
+      "start": "11:54",
+      "end": "11:57",
+      "text": "have to be replaced by GCD of 10 and 14 the number with the that we are seeking"
+    },
+    {
+      "start": "11:57",
+      "end": "11:57",
+      "text": "the number with the that we are seeking"
+    },
+    {
+      "start": "11:57",
+      "end": "12:00",
+      "text": "the number with the that we are seeking to cancel but GCD of 10 and 4 is 14 is"
+    },
+    {
+      "start": "12:00",
+      "end": "12:00",
+      "text": "to cancel but GCD of 10 and 4 is 14 is"
+    },
+    {
+      "start": "12:00",
+      "end": "12:05",
+      "text": "to cancel but GCD of 10 and 4 is 14 is so 2 therefore we will have to replace"
+    },
+    {
+      "start": "12:05",
+      "end": "12:05",
+      "text": "so 2 therefore we will have to replace"
+    },
+    {
+      "start": "12:05",
+      "end": "12:14",
+      "text": "so 2 therefore we will have to replace this with 7 we just indeed the case so"
+    },
+    {
+      "start": "12:14",
+      "end": "12:14",
+      "text": "this with 7 we just indeed the case so"
+    },
+    {
+      "start": "12:14",
+      "end": "12:18",
+      "text": "this with 7 we just indeed the case so how do we prove the theorem let us say"
+    },
+    {
+      "start": "12:18",
+      "end": "12:18",
+      "text": "how do we prove the theorem let us say"
+    },
+    {
+      "start": "12:18",
+      "end": "12:25",
+      "text": "how do we prove the theorem let us say ax is congruent to a y4m but this is if"
+    },
+    {
+      "start": "12:25",
+      "end": "12:25",
+      "text": "ax is congruent to a y4m but this is if"
+    },
+    {
+      "start": "12:25",
+      "end": "12:36",
+      "text": "ax is congruent to a y4m but this is if and only if a y minus ax is M into Z for"
+    },
+    {
+      "start": "12:36",
+      "end": "12:36",
+      "text": "and only if a y minus ax is M into Z for"
+    },
+    {
+      "start": "12:36",
+      "end": "12:44",
+      "text": "and only if a y minus ax is M into Z for some integers it"
+    },
+    {
+      "start": "12:47",
+      "end": "12:47",
+      "text": "then both sides of the equation can be"
+    },
+    {
+      "start": "12:47",
+      "end": "13:15",
+      "text": "then both sides of the equation can be divided with GCD of a.m."
+    },
+    {
+      "start": "13:26",
+      "end": "13:26",
+      "text": "this is if and only if M / GCD of a M"
+    },
+    {
+      "start": "13:26",
+      "end": "13:31",
+      "text": "this is if and only if M / GCD of a M divides the left-hand side which is a"
+    },
+    {
+      "start": "13:31",
+      "end": "13:31",
+      "text": "divides the left-hand side which is a"
+    },
+    {
+      "start": "13:31",
+      "end": "13:35",
+      "text": "divides the left-hand side which is a divides GCD of a M multiplied by Y minus"
+    },
+    {
+      "start": "13:35",
+      "end": "13:35",
+      "text": "divides GCD of a M multiplied by Y minus"
+    },
+    {
+      "start": "13:35",
+      "end": "13:43",
+      "text": "divides GCD of a M multiplied by Y minus X now M PI GCD of a.m. and a by GCD of"
+    },
+    {
+      "start": "13:43",
+      "end": "13:43",
+      "text": "X now M PI GCD of a.m. and a by GCD of"
+    },
+    {
+      "start": "13:43",
+      "end": "13:46",
+      "text": "X now M PI GCD of a.m. and a by GCD of a.m. are relatively prime the GCD being"
+    },
+    {
+      "start": "13:46",
+      "end": "13:46",
+      "text": "a.m. are relatively prime the GCD being"
+    },
+    {
+      "start": "13:46",
+      "end": "13:49",
+      "text": "a.m. are relatively prime the GCD being one therefore since M does not divide"
+    },
+    {
+      "start": "13:49",
+      "end": "13:49",
+      "text": "one therefore since M does not divide"
+    },
+    {
+      "start": "13:49",
+      "end": "13:53",
+      "text": "one therefore since M does not divide the first factor here it should divide"
+    },
+    {
+      "start": "13:53",
+      "end": "13:53",
+      "text": "the first factor here it should divide"
+    },
+    {
+      "start": "13:53",
+      "end": "13:56",
+      "text": "the first factor here it should divide the second factor therefore this is if"
+    },
+    {
+      "start": "13:56",
+      "end": "13:56",
+      "text": "the second factor therefore this is if"
+    },
+    {
+      "start": "13:56",
+      "end": "14:07",
+      "text": "the second factor therefore this is if and only if M divided by G C D F a M"
+    },
+    {
+      "start": "14:12",
+      "end": "14:12",
+      "text": "divides by minus X but this is precisely"
+    },
+    {
+      "start": "14:12",
+      "end": "14:16",
+      "text": "divides by minus X but this is precisely the condition for X being congruent to"
+    },
+    {
+      "start": "14:16",
+      "end": "14:16",
+      "text": "the condition for X being congruent to"
+    },
+    {
+      "start": "14:16",
+      "end": "14:25",
+      "text": "the condition for X being congruent to ye mod M divided by GCD of a as required"
+    },
+    {
+      "start": "14:25",
+      "end": "14:25",
+      "text": "ye mod M divided by GCD of a as required"
+    },
+    {
+      "start": "14:25",
+      "end": "14:37",
+      "text": "ye mod M divided by GCD of a as required in the theorem and the theorem"
+    },
+    {
+      "start": "14:44",
+      "end": "14:44",
+      "text": "as a corollary we find that if am XY are"
+    },
+    {
+      "start": "14:44",
+      "end": "14:55",
+      "text": "as a corollary we find that if am XY are integers such that"
+    },
+    {
+      "start": "15:02",
+      "end": "15:02",
+      "text": "GCD of M is 1 in M a relatively prime"
+    },
+    {
+      "start": "15:02",
+      "end": "15:11",
+      "text": "GCD of M is 1 in M a relatively prime then X is congruent to a Y modem if and"
+    },
+    {
+      "start": "15:11",
+      "end": "15:11",
+      "text": "then X is congruent to a Y modem if and"
+    },
+    {
+      "start": "15:11",
+      "end": "15:18",
+      "text": "then X is congruent to a Y modem if and only if X is congruent to Y modem so"
+    },
+    {
+      "start": "15:18",
+      "end": "15:18",
+      "text": "only if X is congruent to Y modem so"
+    },
+    {
+      "start": "15:18",
+      "end": "15:22",
+      "text": "only if X is congruent to Y modem so this is when a can be canceled from each"
+    },
+    {
+      "start": "15:22",
+      "end": "15:22",
+      "text": "this is when a can be canceled from each"
+    },
+    {
+      "start": "15:22",
+      "end": "15:24",
+      "text": "this is when a can be canceled from each side of the congruence without affecting"
+    },
+    {
+      "start": "15:24",
+      "end": "15:24",
+      "text": "side of the congruence without affecting"
+    },
+    {
+      "start": "15:24",
+      "end": "15:27",
+      "text": "side of the congruence without affecting the modulus the cancelled number should"
+    },
+    {
+      "start": "15:27",
+      "end": "15:27",
+      "text": "the modulus the cancelled number should"
+    },
+    {
+      "start": "15:27",
+      "end": "15:41",
+      "text": "the modulus the cancelled number should be relatively prime to the modulus"
+    },
+    {
+      "start": "15:58",
+      "end": "15:58",
+      "text": "X Y M 1 through m R if X is congruent to"
+    },
+    {
+      "start": "15:58",
+      "end": "16:09",
+      "text": "X Y M 1 through m R if X is congruent to Y mod M I for every I"
+    },
+    {
+      "start": "16:18",
+      "end": "16:18",
+      "text": "from 1 to our this is if and only if X"
+    },
+    {
+      "start": "16:18",
+      "end": "16:33",
+      "text": "from 1 to our this is if and only if X is congruent to Y mode LCM of M 1 to M"
+    },
+    {
+      "start": "16:38",
+      "end": "16:38",
+      "text": "and went to mr of integers X is"
+    },
+    {
+      "start": "16:38",
+      "end": "16:42",
+      "text": "and went to mr of integers X is congruent to Y modulus each of them then"
+    },
+    {
+      "start": "16:42",
+      "end": "16:42",
+      "text": "congruent to Y modulus each of them then"
+    },
+    {
+      "start": "16:42",
+      "end": "16:45",
+      "text": "congruent to Y modulus each of them then X is congruent to Y modulo the LCM of"
+    },
+    {
+      "start": "16:45",
+      "end": "16:45",
+      "text": "X is congruent to Y modulo the LCM of"
+    },
+    {
+      "start": "16:45",
+      "end": "16:55",
+      "text": "X is congruent to Y modulo the LCM of these numbers to prove this we know that"
+    },
+    {
+      "start": "16:55",
+      "end": "16:55",
+      "text": "these numbers to prove this we know that"
+    },
+    {
+      "start": "16:55",
+      "end": "16:59",
+      "text": "these numbers to prove this we know that X is congruent to Y modulo M I for each"
+    },
+    {
+      "start": "16:59",
+      "end": "16:59",
+      "text": "X is congruent to Y modulo M I for each"
+    },
+    {
+      "start": "16:59",
+      "end": "17:09",
+      "text": "X is congruent to Y modulo M I for each am I then mi divides Y minus X for each"
+    },
+    {
+      "start": "17:09",
+      "end": "17:09",
+      "text": "am I then mi divides Y minus X for each"
+    },
+    {
+      "start": "17:09",
+      "end": "17:17",
+      "text": "am I then mi divides Y minus X for each I that means Y minus X is a common"
+    },
+    {
+      "start": "17:17",
+      "end": "17:17",
+      "text": "I that means Y minus X is a common"
+    },
+    {
+      "start": "17:17",
+      "end": "17:26",
+      "text": "I that means Y minus X is a common multiple"
+    },
+    {
+      "start": "17:37",
+      "end": "17:37",
+      "text": "that is else 'i'm of a man through Emma"
+    },
+    {
+      "start": "17:37",
+      "end": "17:40",
+      "text": "that is else 'i'm of a man through Emma which then must divide every common"
+    },
+    {
+      "start": "17:40",
+      "end": "17:40",
+      "text": "which then must divide every common"
+    },
+    {
+      "start": "17:40",
+      "end": "17:45",
+      "text": "which then must divide every common multiple of M 1 to M are divides Y minus"
+    },
+    {
+      "start": "17:45",
+      "end": "17:45",
+      "text": "multiple of M 1 to M are divides Y minus"
+    },
+    {
+      "start": "17:45",
+      "end": "17:54",
+      "text": "multiple of M 1 to M are divides Y minus X that is X is congruent to ye more else"
+    },
+    {
+      "start": "17:54",
+      "end": "17:54",
+      "text": "X that is X is congruent to ye more else"
+    },
+    {
+      "start": "17:54",
+      "end": "18:04",
+      "text": "X that is X is congruent to ye more else 'i'm of m12 amount is required"
+    },
+    {
+      "start": "18:32",
+      "end": "18:32",
+      "text": "then X is congruent why more mi that's"
+    },
+    {
+      "start": "18:32",
+      "end": "18:42",
+      "text": "then X is congruent why more mi that's because mi divides the LCM hence the"
+    },
+    {
+      "start": "18:42",
+      "end": "18:42",
+      "text": "because mi divides the LCM hence the"
+    },
+    {
+      "start": "18:42",
+      "end": "18:53",
+      "text": "because mi divides the LCM hence the tier if X is congruent y or low M then"
+    },
+    {
+      "start": "18:53",
+      "end": "18:53",
+      "text": "tier if X is congruent y or low M then"
+    },
+    {
+      "start": "18:53",
+      "end": "19:08",
+      "text": "tier if X is congruent y or low M then we say X is a residue of Y modulo M"
+    },
+    {
+      "start": "19:16",
+      "end": "19:16",
+      "text": "for example 1:13 3143 are all residues"
+    },
+    {
+      "start": "19:16",
+      "end": "19:25",
+      "text": "for example 1:13 3143 are all residues modulo 3 of 10"
+    },
+    {
+      "start": "19:30",
+      "end": "19:30",
+      "text": "that is because one is 10-9 a multiple"
+    },
+    {
+      "start": "19:30",
+      "end": "19:36",
+      "text": "that is because one is 10-9 a multiple of 313 is ten plus three a multiple of"
+    },
+    {
+      "start": "19:39",
+      "end": "19:39",
+      "text": "331 is ten plus a multiple of three"
+    },
+    {
+      "start": "19:39",
+      "end": "19:45",
+      "text": "331 is ten plus a multiple of three namely 21:43 is ten plus 33 again a"
+    },
+    {
+      "start": "19:45",
+      "end": "19:45",
+      "text": "namely 21:43 is ten plus 33 again a"
+    },
+    {
+      "start": "19:45",
+      "end": "19:47",
+      "text": "namely 21:43 is ten plus 33 again a multiple of three"
+    },
+    {
+      "start": "19:47",
+      "end": "19:47",
+      "text": "multiple of three"
+    },
+    {
+      "start": "19:47",
+      "end": "19:51",
+      "text": "multiple of three so these are all residues more three"
+    },
+    {
+      "start": "19:51",
+      "end": "19:51",
+      "text": "so these are all residues more three"
+    },
+    {
+      "start": "19:51",
+      "end": "20:01",
+      "text": "so these are all residues more three often a set of integers"
+    },
+    {
+      "start": "20:27",
+      "end": "20:27",
+      "text": "modulo M if for every integer ye the Rex"
+    },
+    {
+      "start": "20:27",
+      "end": "20:35",
+      "text": "modulo M if for every integer ye the Rex is a unique X I so that X is congruent"
+    },
+    {
+      "start": "20:35",
+      "end": "20:35",
+      "text": "is a unique X I so that X is congruent"
+    },
+    {
+      "start": "20:35",
+      "end": "20:42",
+      "text": "is a unique X I so that X is congruent to Y modulo M so here the set of"
+    },
+    {
+      "start": "20:42",
+      "end": "20:42",
+      "text": "to Y modulo M so here the set of"
+    },
+    {
+      "start": "20:42",
+      "end": "20:45",
+      "text": "to Y modulo M so here the set of integers considered as x1 through xn so"
+    },
+    {
+      "start": "20:45",
+      "end": "20:45",
+      "text": "integers considered as x1 through xn so"
+    },
+    {
+      "start": "20:45",
+      "end": "20:47",
+      "text": "integers considered as x1 through xn so a set of integers X 1 through xn is"
+    },
+    {
+      "start": "20:47",
+      "end": "20:47",
+      "text": "a set of integers X 1 through xn is"
+    },
+    {
+      "start": "20:47",
+      "end": "20:49",
+      "text": "a set of integers X 1 through xn is called a complete residue system modulo"
+    },
+    {
+      "start": "20:49",
+      "end": "20:49",
+      "text": "called a complete residue system modulo"
+    },
+    {
+      "start": "20:49",
+      "end": "20:52",
+      "text": "called a complete residue system modulo M if for every integer Y there is a"
+    },
+    {
+      "start": "20:52",
+      "end": "20:52",
+      "text": "M if for every integer Y there is a"
+    },
+    {
+      "start": "20:52",
+      "end": "20:55",
+      "text": "M if for every integer Y there is a unique X I in the set such that X I is"
+    },
+    {
+      "start": "20:55",
+      "end": "20:55",
+      "text": "unique X I in the set such that X I is"
+    },
+    {
+      "start": "20:55",
+      "end": "20:57",
+      "text": "unique X I in the set such that X I is why more n so for every single end"
+    },
+    {
+      "start": "20:57",
+      "end": "20:57",
+      "text": "why more n so for every single end"
+    },
+    {
+      "start": "20:57",
+      "end": "20:59",
+      "text": "why more n so for every single end integer you will find residue within the"
+    },
+    {
+      "start": "20:59",
+      "end": "20:59",
+      "text": "integer you will find residue within the"
+    },
+    {
+      "start": "20:59",
+      "end": "21:01",
+      "text": "integer you will find residue within the system in that case it is called a"
+    },
+    {
+      "start": "21:01",
+      "end": "21:01",
+      "text": "system in that case it is called a"
+    },
+    {
+      "start": "21:01",
+      "end": "21:06",
+      "text": "system in that case it is called a complete residue system"
+    },
+    {
+      "start": "21:10",
+      "end": "21:10",
+      "text": "0 1 2 is a complete residue system"
+    },
+    {
+      "start": "21:10",
+      "end": "21:19",
+      "text": "0 1 2 is a complete residue system modulo 3 take any integer that will be"
+    },
+    {
+      "start": "21:19",
+      "end": "21:19",
+      "text": "modulo 3 take any integer that will be"
+    },
+    {
+      "start": "21:19",
+      "end": "21:25",
+      "text": "modulo 3 take any integer that will be one of these 3 modulo 3 equivalently to"
+    },
+    {
+      "start": "21:25",
+      "end": "21:25",
+      "text": "one of these 3 modulo 3 equivalently to"
+    },
+    {
+      "start": "21:25",
+      "end": "21:30",
+      "text": "one of these 3 modulo 3 equivalently to 1510 it's also a complete residue system"
+    },
+    {
+      "start": "21:30",
+      "end": "21:30",
+      "text": "1510 it's also a complete residue system"
+    },
+    {
+      "start": "21:30",
+      "end": "21:36",
+      "text": "1510 it's also a complete residue system or 3 the mapping goes like this 2 is 2"
+    },
+    {
+      "start": "21:36",
+      "end": "21:36",
+      "text": "or 3 the mapping goes like this 2 is 2"
+    },
+    {
+      "start": "21:36",
+      "end": "21:42",
+      "text": "or 3 the mapping goes like this 2 is 2 more 315 is 0 1 3 10 is one more 3 so we"
+    },
+    {
+      "start": "21:42",
+      "end": "21:42",
+      "text": "more 315 is 0 1 3 10 is one more 3 so we"
+    },
+    {
+      "start": "21:42",
+      "end": "21:44",
+      "text": "more 315 is 0 1 3 10 is one more 3 so we essentially have the same integers"
+    },
+    {
+      "start": "21:44",
+      "end": "21:44",
+      "text": "essentially have the same integers"
+    },
+    {
+      "start": "21:44",
+      "end": "21:55",
+      "text": "essentially have the same integers modulo 3 similarly 100 101 and 102 102"
+    },
+    {
+      "start": "21:55",
+      "end": "21:55",
+      "text": "modulo 3 similarly 100 101 and 102 102"
+    },
+    {
+      "start": "21:55",
+      "end": "22:04",
+      "text": "modulo 3 similarly 100 101 and 102 102 is 0 mod 3 101 is"
+    },
+    {
+      "start": "22:08",
+      "end": "22:08",
+      "text": "two more three and hundred us one more"
+    },
+    {
+      "start": "22:08",
+      "end": "22:13",
+      "text": "two more three and hundred us one more three therefore this is also a complete"
+    },
+    {
+      "start": "22:13",
+      "end": "22:13",
+      "text": "three therefore this is also a complete"
+    },
+    {
+      "start": "22:13",
+      "end": "22:21",
+      "text": "three therefore this is also a complete residue system more three"
+    },
+    {
+      "start": "22:41",
+      "end": "22:41",
+      "text": "let's call it RR s modulo M is a set of"
+    },
+    {
+      "start": "22:41",
+      "end": "22:53",
+      "text": "let's call it RR s modulo M is a set of integers"
+    },
+    {
+      "start": "23:01",
+      "end": "23:01",
+      "text": "r1 to RN where RI is not equal to RJ"
+    },
+    {
+      "start": "23:01",
+      "end": "23:13",
+      "text": "r1 to RN where RI is not equal to RJ modem when RI when I is not equal to J"
+    },
+    {
+      "start": "23:18",
+      "end": "23:18",
+      "text": "that is no two members are congruent mod"
+    },
+    {
+      "start": "23:18",
+      "end": "23:26",
+      "text": "that is no two members are congruent mod M and for any integer relatively prime"
+    },
+    {
+      "start": "23:26",
+      "end": "23:26",
+      "text": "M and for any integer relatively prime"
+    },
+    {
+      "start": "23:26",
+      "end": "23:42",
+      "text": "M and for any integer relatively prime to m there is a unique RJ"
+    },
+    {
+      "start": "23:54",
+      "end": "23:54",
+      "text": "if you take the CRS that is a complete"
+    },
+    {
+      "start": "23:54",
+      "end": "24:01",
+      "text": "if you take the CRS that is a complete residue system delete from it are"
+    },
+    {
+      "start": "24:01",
+      "end": "24:01",
+      "text": "residue system delete from it are"
+    },
+    {
+      "start": "24:01",
+      "end": "24:15",
+      "text": "residue system delete from it are members not relatively prime to em we"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "members not relatively prime to em we"
+    },
+    {
+      "start": "24:15",
+      "end": "24:27",
+      "text": "members not relatively prime to em we get a reduced residue system"
+    },
+    {
+      "start": "24:56",
+      "end": "24:56",
+      "text": "this is denoted as Phi of M this is"
+    },
+    {
+      "start": "24:56",
+      "end": "25:06",
+      "text": "this is denoted as Phi of M this is called Euler's Phi function or totient"
+    },
+    {
+      "start": "25:06",
+      "end": "25:06",
+      "text": "called Euler's Phi function or totient"
+    },
+    {
+      "start": "25:06",
+      "end": "25:13",
+      "text": "called Euler's Phi function or totient of"
+    },
+    {
+      "start": "25:19",
+      "end": "25:19",
+      "text": "in other words five m is the number of"
+    },
+    {
+      "start": "25:19",
+      "end": "25:28",
+      "text": "in other words five m is the number of positive integers"
+    },
+    {
+      "start": "25:44",
+      "end": "25:44",
+      "text": "let us consider reduces new systems for"
+    },
+    {
+      "start": "25:44",
+      "end": "25:58",
+      "text": "let us consider reduces new systems for various values to find phi1"
+    },
+    {
+      "start": "26:01",
+      "end": "26:01",
+      "text": "the singleton one is the reducer is a"
+    },
+    {
+      "start": "26:01",
+      "end": "26:03",
+      "text": "the singleton one is the reducer is a new system for one therefore Phi 1 equal"
+    },
+    {
+      "start": "26:03",
+      "end": "26:03",
+      "text": "new system for one therefore Phi 1 equal"
+    },
+    {
+      "start": "26:03",
+      "end": "26:09",
+      "text": "new system for one therefore Phi 1 equal to 1 the reduced residue system mode"
+    },
+    {
+      "start": "26:09",
+      "end": "26:09",
+      "text": "to 1 the reduced residue system mode"
+    },
+    {
+      "start": "26:09",
+      "end": "26:20",
+      "text": "to 1 the reduced residue system mode load to this again the simpleton 1/5 of"
+    },
+    {
+      "start": "26:20",
+      "end": "26:20",
+      "text": "load to this again the simpleton 1/5 of"
+    },
+    {
+      "start": "26:20",
+      "end": "26:25",
+      "text": "load to this again the simpleton 1/5 of 1 is defined as 1 by default and Phi of"
+    },
+    {
+      "start": "26:25",
+      "end": "26:25",
+      "text": "1 is defined as 1 by default and Phi of"
+    },
+    {
+      "start": "26:25",
+      "end": "26:30",
+      "text": "1 is defined as 1 by default and Phi of 3 that is residue system would be"
+    },
+    {
+      "start": "26:30",
+      "end": "26:30",
+      "text": "3 that is residue system would be"
+    },
+    {
+      "start": "26:30",
+      "end": "26:39",
+      "text": "3 that is residue system would be obtained from 0 1 and 2 and then the"
+    },
+    {
+      "start": "26:39",
+      "end": "26:39",
+      "text": "obtained from 0 1 and 2 and then the"
+    },
+    {
+      "start": "26:39",
+      "end": "26:42",
+      "text": "obtained from 0 1 and 2 and then the numbers which are relatively prime with"
+    },
+    {
+      "start": "26:42",
+      "end": "26:42",
+      "text": "numbers which are relatively prime with"
+    },
+    {
+      "start": "26:42",
+      "end": "26:44",
+      "text": "numbers which are relatively prime with 3 are deleted"
+    },
+    {
+      "start": "26:44",
+      "end": "26:44",
+      "text": "3 are deleted"
+    },
+    {
+      "start": "26:44",
+      "end": "26:47",
+      "text": "3 are deleted so what remain are 1 &amp; 2 therefore Phi"
+    },
+    {
+      "start": "26:47",
+      "end": "26:47",
+      "text": "so what remain are 1 &amp; 2 therefore Phi"
+    },
+    {
+      "start": "26:47",
+      "end": "26:50",
+      "text": "so what remain are 1 &amp; 2 therefore Phi of 3 is 2 they reduces a new system"
+    },
+    {
+      "start": "26:50",
+      "end": "26:50",
+      "text": "of 3 is 2 they reduces a new system"
+    },
+    {
+      "start": "26:50",
+      "end": "26:53",
+      "text": "of 3 is 2 they reduces a new system would consist of just one and two to"
+    },
+    {
+      "start": "26:53",
+      "end": "26:53",
+      "text": "would consist of just one and two to"
+    },
+    {
+      "start": "26:53",
+      "end": "26:56",
+      "text": "would consist of just one and two to find Firefall we consider the complete"
+    },
+    {
+      "start": "26:56",
+      "end": "26:56",
+      "text": "find Firefall we consider the complete"
+    },
+    {
+      "start": "26:56",
+      "end": "26:59",
+      "text": "find Firefall we consider the complete residue system which would contain 0 1 2"
+    },
+    {
+      "start": "26:59",
+      "end": "26:59",
+      "text": "residue system which would contain 0 1 2"
+    },
+    {
+      "start": "26:59",
+      "end": "27:06",
+      "text": "residue system which would contain 0 1 2 &amp; 3 of this 0 &amp; 2 are not relatively"
+    },
+    {
+      "start": "27:06",
+      "end": "27:06",
+      "text": "&amp; 3 of this 0 &amp; 2 are not relatively"
+    },
+    {
+      "start": "27:06",
+      "end": "27:10",
+      "text": "&amp; 3 of this 0 &amp; 2 are not relatively prime with 4 therefore they are deleted"
+    },
+    {
+      "start": "27:10",
+      "end": "27:10",
+      "text": "prime with 4 therefore they are deleted"
+    },
+    {
+      "start": "27:10",
+      "end": "27:13",
+      "text": "prime with 4 therefore they are deleted what remain are 1 &amp; 3 therefore Phi of 4"
+    },
+    {
+      "start": "27:13",
+      "end": "27:13",
+      "text": "what remain are 1 &amp; 3 therefore Phi of 4"
+    },
+    {
+      "start": "27:13",
+      "end": "27:18",
+      "text": "what remain are 1 &amp; 3 therefore Phi of 4 is 2"
+    },
+    {
+      "start": "27:20",
+      "end": "27:20",
+      "text": "coming to 5 we consider the complete"
+    },
+    {
+      "start": "27:20",
+      "end": "27:29",
+      "text": "coming to 5 we consider the complete residue system 0 1 2 3 &amp; 4 of this 0 is"
+    },
+    {
+      "start": "27:29",
+      "end": "27:29",
+      "text": "residue system 0 1 2 3 &amp; 4 of this 0 is"
+    },
+    {
+      "start": "27:29",
+      "end": "27:32",
+      "text": "residue system 0 1 2 3 &amp; 4 of this 0 is not relatively prime with 5 so that is"
+    },
+    {
+      "start": "27:32",
+      "end": "27:32",
+      "text": "not relatively prime with 5 so that is"
+    },
+    {
+      "start": "27:32",
+      "end": "27:42",
+      "text": "not relatively prime with 5 so that is removed therefore 5 5 is 4"
+    },
+    {
+      "start": "27:57",
+      "end": "27:57",
+      "text": "delete all numbers which are not"
+    },
+    {
+      "start": "27:57",
+      "end": "28:00",
+      "text": "delete all numbers which are not relatively prime but six what I mean are"
+    },
+    {
+      "start": "28:00",
+      "end": "28:00",
+      "text": "relatively prime but six what I mean are"
+    },
+    {
+      "start": "28:00",
+      "end": "28:07",
+      "text": "relatively prime but six what I mean are one and five so five sixes two and we"
+    },
+    {
+      "start": "28:07",
+      "end": "28:07",
+      "text": "one and five so five sixes two and we"
+    },
+    {
+      "start": "28:07",
+      "end": "28:18",
+      "text": "one and five so five sixes two and we come to seven we have"
+    },
+    {
+      "start": "28:20",
+      "end": "28:20",
+      "text": "six remaining seven is relatively prime"
+    },
+    {
+      "start": "28:20",
+      "end": "28:22",
+      "text": "six remaining seven is relatively prime that all of these therefore five seven"
+    },
+    {
+      "start": "28:22",
+      "end": "28:22",
+      "text": "that all of these therefore five seven"
+    },
+    {
+      "start": "28:22",
+      "end": "28:38",
+      "text": "that all of these therefore five seven is six coming to eat we have"
+    },
+    {
+      "start": "28:43",
+      "end": "28:43",
+      "text": "we find that every even number is not"
+    },
+    {
+      "start": "28:43",
+      "end": "28:45",
+      "text": "we find that every even number is not relatively prime with eight so deleting"
+    },
+    {
+      "start": "28:45",
+      "end": "28:45",
+      "text": "relatively prime with eight so deleting"
+    },
+    {
+      "start": "28:45",
+      "end": "28:48",
+      "text": "relatively prime with eight so deleting them we have four elements remaining so"
+    },
+    {
+      "start": "28:48",
+      "end": "28:48",
+      "text": "them we have four elements remaining so"
+    },
+    {
+      "start": "28:48",
+      "end": "28:59",
+      "text": "them we have four elements remaining so Phi of 8 is 4"
+    },
+    {
+      "start": "29:13",
+      "end": "29:13",
+      "text": "if GCD of a M is 1 and r1 through RN is"
+    },
+    {
+      "start": "29:13",
+      "end": "29:24",
+      "text": "if GCD of a M is 1 and r1 through RN is a complete residue system modulo M then"
+    },
+    {
+      "start": "29:24",
+      "end": "29:24",
+      "text": "a complete residue system modulo M then"
+    },
+    {
+      "start": "29:24",
+      "end": "29:36",
+      "text": "a complete residue system modulo M then a r1 through RN"
+    },
+    {
+      "start": "29:39",
+      "end": "29:39",
+      "text": "this a complete the residue system modem"
+    },
+    {
+      "start": "29:39",
+      "end": "29:44",
+      "text": "this a complete the residue system modem as well"
+    },
+    {
+      "start": "29:47",
+      "end": "29:47",
+      "text": "this is the case when GCD of a.m. is one"
+    },
+    {
+      "start": "29:47",
+      "end": "29:49",
+      "text": "this is the case when GCD of a.m. is one that is a and M are relatively prime to"
+    },
+    {
+      "start": "29:49",
+      "end": "29:49",
+      "text": "that is a and M are relatively prime to"
+    },
+    {
+      "start": "29:49",
+      "end": "30:03",
+      "text": "that is a and M are relatively prime to prove this suppose SS r1 through RN then"
+    },
+    {
+      "start": "30:03",
+      "end": "30:03",
+      "text": "prove this suppose SS r1 through RN then"
+    },
+    {
+      "start": "30:03",
+      "end": "30:12",
+      "text": "prove this suppose SS r1 through RN then P is a r1 through a R by the way this"
+    },
+    {
+      "start": "30:12",
+      "end": "30:12",
+      "text": "P is a r1 through a R by the way this"
+    },
+    {
+      "start": "30:12",
+      "end": "30:15",
+      "text": "P is a r1 through a R by the way this theorem will hold even if CRS rip is"
+    },
+    {
+      "start": "30:15",
+      "end": "30:15",
+      "text": "theorem will hold even if CRS rip is"
+    },
+    {
+      "start": "30:15",
+      "end": "30:17",
+      "text": "theorem will hold even if CRS rip is replaced with Horace that is even if we"
+    },
+    {
+      "start": "30:17",
+      "end": "30:17",
+      "text": "replaced with Horace that is even if we"
+    },
+    {
+      "start": "30:17",
+      "end": "30:22",
+      "text": "replaced with Horace that is even if we are considering a reduced residue system"
+    },
+    {
+      "start": "30:26",
+      "end": "30:26",
+      "text": "r1 through RN then a r1 through RN would"
+    },
+    {
+      "start": "30:26",
+      "end": "30:29",
+      "text": "r1 through RN then a r1 through RN would be a reduced residue system mode M when"
+    },
+    {
+      "start": "30:29",
+      "end": "30:29",
+      "text": "be a reduced residue system mode M when"
+    },
+    {
+      "start": "30:29",
+      "end": "30:35",
+      "text": "be a reduced residue system mode M when in M are relatively prime the teacher so"
+    },
+    {
+      "start": "30:35",
+      "end": "30:35",
+      "text": "in M are relatively prime the teacher so"
+    },
+    {
+      "start": "30:35",
+      "end": "30:38",
+      "text": "in M are relatively prime the teacher so let s be r1 through RN and T be a r1"
+    },
+    {
+      "start": "30:38",
+      "end": "30:38",
+      "text": "let s be r1 through RN and T be a r1"
+    },
+    {
+      "start": "30:38",
+      "end": "30:43",
+      "text": "let s be r1 through RN and T be a r1 through RN if s is either a CRS or an R"
+    },
+    {
+      "start": "30:43",
+      "end": "30:43",
+      "text": "through RN if s is either a CRS or an R"
+    },
+    {
+      "start": "30:43",
+      "end": "30:49",
+      "text": "through RN if s is either a CRS or an R RS modulo M we have that RI is not"
+    },
+    {
+      "start": "30:49",
+      "end": "30:49",
+      "text": "RS modulo M we have that RI is not"
+    },
+    {
+      "start": "30:49",
+      "end": "30:55",
+      "text": "RS modulo M we have that RI is not congruent to our J mod M when I not"
+    },
+    {
+      "start": "30:55",
+      "end": "30:55",
+      "text": "congruent to our J mod M when I not"
+    },
+    {
+      "start": "30:55",
+      "end": "31:02",
+      "text": "congruent to our J mod M when I not equal to J"
+    },
+    {
+      "start": "31:13",
+      "end": "31:13",
+      "text": "assume there is one such pair within t"
+    },
+    {
+      "start": "31:13",
+      "end": "31:16",
+      "text": "assume there is one such pair within t one such pair IJ so that a RI is"
+    },
+    {
+      "start": "31:16",
+      "end": "31:16",
+      "text": "one such pair IJ so that a RI is"
+    },
+    {
+      "start": "31:16",
+      "end": "31:19",
+      "text": "one such pair IJ so that a RI is congruent to a RJ even when i not equal"
+    },
+    {
+      "start": "31:19",
+      "end": "31:19",
+      "text": "congruent to a RJ even when i not equal"
+    },
+    {
+      "start": "31:19",
+      "end": "31:27",
+      "text": "congruent to a RJ even when i not equal to j then since GCD of a and m is 1 we"
+    },
+    {
+      "start": "31:27",
+      "end": "31:27",
+      "text": "to j then since GCD of a and m is 1 we"
+    },
+    {
+      "start": "31:27",
+      "end": "31:31",
+      "text": "to j then since GCD of a and m is 1 we can cancel a from both sides and we"
+    },
+    {
+      "start": "31:31",
+      "end": "31:31",
+      "text": "can cancel a from both sides and we"
+    },
+    {
+      "start": "31:31",
+      "end": "31:35",
+      "text": "can cancel a from both sides and we would have RI congruent to rj mode ever"
+    },
+    {
+      "start": "31:35",
+      "end": "31:35",
+      "text": "would have RI congruent to rj mode ever"
+    },
+    {
+      "start": "31:35",
+      "end": "31:42",
+      "text": "would have RI congruent to rj mode ever since GCD of a and m is 1 the modulus"
+    },
+    {
+      "start": "31:42",
+      "end": "31:42",
+      "text": "since GCD of a and m is 1 the modulus"
+    },
+    {
+      "start": "31:42",
+      "end": "31:50",
+      "text": "since GCD of a and m is 1 the modulus doesn't change which is the"
+    },
+    {
+      "start": "31:50",
+      "end": "31:50",
+      "text": "doesn't change which is the"
+    },
+    {
+      "start": "31:50",
+      "end": "31:55",
+      "text": "doesn't change which is the contradiction therefore a RI is not"
+    },
+    {
+      "start": "31:55",
+      "end": "31:55",
+      "text": "contradiction therefore a RI is not"
+    },
+    {
+      "start": "31:55",
+      "end": "32:02",
+      "text": "contradiction therefore a RI is not congruent to a r.j. modem when i not"
+    },
+    {
+      "start": "32:02",
+      "end": "32:02",
+      "text": "congruent to a r.j. modem when i not"
+    },
+    {
+      "start": "32:02",
+      "end": "32:09",
+      "text": "congruent to a r.j. modem when i not equal to j"
+    },
+    {
+      "start": "32:17",
+      "end": "32:17",
+      "text": "hence t is also a set of distinct"
+    },
+    {
+      "start": "32:17",
+      "end": "32:27",
+      "text": "hence t is also a set of distinct residues"
+    },
+    {
+      "start": "32:39",
+      "end": "32:39",
+      "text": "exactly the way s s if s is a CR s then"
+    },
+    {
+      "start": "32:39",
+      "end": "32:44",
+      "text": "exactly the way s s if s is a CR s then T is a see arrows as well as has the"
+    },
+    {
+      "start": "32:44",
+      "end": "32:44",
+      "text": "T is a see arrows as well as has the"
+    },
+    {
+      "start": "32:44",
+      "end": "32:49",
+      "text": "T is a see arrows as well as has the size of M then D also has a size of M on"
+    },
+    {
+      "start": "32:49",
+      "end": "32:49",
+      "text": "size of M then D also has a size of M on"
+    },
+    {
+      "start": "32:49",
+      "end": "32:56",
+      "text": "size of M then D also has a size of M on the other hand if s is and are ours"
+    },
+    {
+      "start": "33:10",
+      "end": "33:10",
+      "text": "then each RI is co-prime with em we"
+    },
+    {
+      "start": "33:10",
+      "end": "33:13",
+      "text": "then each RI is co-prime with em we obtain an R RS by picking a CRS and"
+    },
+    {
+      "start": "33:13",
+      "end": "33:13",
+      "text": "obtain an R RS by picking a CRS and"
+    },
+    {
+      "start": "33:13",
+      "end": "33:15",
+      "text": "obtain an R RS by picking a CRS and cancelling out every RI which is not"
+    },
+    {
+      "start": "33:15",
+      "end": "33:15",
+      "text": "cancelling out every RI which is not"
+    },
+    {
+      "start": "33:15",
+      "end": "33:18",
+      "text": "cancelling out every RI which is not co-prime with M so whatever that remains"
+    },
+    {
+      "start": "33:18",
+      "end": "33:18",
+      "text": "co-prime with M so whatever that remains"
+    },
+    {
+      "start": "33:18",
+      "end": "33:23",
+      "text": "co-prime with M so whatever that remains would be co-prime dat M so if s s and R"
+    },
+    {
+      "start": "33:23",
+      "end": "33:23",
+      "text": "would be co-prime dat M so if s s and R"
+    },
+    {
+      "start": "33:23",
+      "end": "33:26",
+      "text": "would be co-prime dat M so if s s and R RS then each RI is co-prime with M"
+    },
+    {
+      "start": "33:26",
+      "end": "33:26",
+      "text": "RS then each RI is co-prime with M"
+    },
+    {
+      "start": "33:26",
+      "end": "33:37",
+      "text": "RS then each RI is co-prime with M therefore a RI is co-prime with em"
+    },
+    {
+      "start": "33:39",
+      "end": "33:39",
+      "text": "that's because is co-prime with M and"
+    },
+    {
+      "start": "33:39",
+      "end": "33:42",
+      "text": "that's because is co-prime with M and now RI is also primed with M so a RI is"
+    },
+    {
+      "start": "33:42",
+      "end": "33:42",
+      "text": "now RI is also primed with M so a RI is"
+    },
+    {
+      "start": "33:42",
+      "end": "33:49",
+      "text": "now RI is also primed with M so a RI is co-prime with M therefore he is also a"
+    },
+    {
+      "start": "33:49",
+      "end": "33:49",
+      "text": "co-prime with M therefore he is also a"
+    },
+    {
+      "start": "33:49",
+      "end": "33:52",
+      "text": "co-prime with M therefore he is also a novice"
+    },
+    {
+      "start": "33:58",
+      "end": "33:58",
+      "text": "hence the theorem the next theorem is"
+    },
+    {
+      "start": "33:58",
+      "end": "34:04",
+      "text": "hence the theorem the next theorem is famous as formats theorem which says"
+    },
+    {
+      "start": "34:04",
+      "end": "34:04",
+      "text": "famous as formats theorem which says"
+    },
+    {
+      "start": "34:04",
+      "end": "34:18",
+      "text": "famous as formats theorem which says that for any prime P and integer a"
+    },
+    {
+      "start": "34:24",
+      "end": "34:24",
+      "text": "if P does not divide a then a power P"
+    },
+    {
+      "start": "34:24",
+      "end": "34:31",
+      "text": "if P does not divide a then a power P minus 1 is congruent to 1 modulo P for"
+    },
+    {
+      "start": "34:31",
+      "end": "34:31",
+      "text": "minus 1 is congruent to 1 modulo P for"
+    },
+    {
+      "start": "34:31",
+      "end": "34:34",
+      "text": "minus 1 is congruent to 1 modulo P for any prime P and an integer a if P does"
+    },
+    {
+      "start": "34:34",
+      "end": "34:34",
+      "text": "any prime P and an integer a if P does"
+    },
+    {
+      "start": "34:34",
+      "end": "34:38",
+      "text": "any prime P and an integer a if P does not divide a then a power P minus 1 is"
+    },
+    {
+      "start": "34:38",
+      "end": "34:38",
+      "text": "not divide a then a power P minus 1 is"
+    },
+    {
+      "start": "34:38",
+      "end": "34:42",
+      "text": "not divide a then a power P minus 1 is congruent to 1 modulo P we will prove a"
+    },
+    {
+      "start": "34:42",
+      "end": "34:42",
+      "text": "congruent to 1 modulo P we will prove a"
+    },
+    {
+      "start": "34:42",
+      "end": "34:49",
+      "text": "congruent to 1 modulo P we will prove a generalization of this which is called"
+    },
+    {
+      "start": "34:49",
+      "end": "34:49",
+      "text": "generalization of this which is called"
+    },
+    {
+      "start": "34:49",
+      "end": "35:06",
+      "text": "generalization of this which is called Euclid's so requires generalization of"
+    },
+    {
+      "start": "35:11",
+      "end": "35:11",
+      "text": "formats their format lived in the 16th"
+    },
+    {
+      "start": "35:11",
+      "end": "35:14",
+      "text": "formats their format lived in the 16th century boiler lived almost a century"
+    },
+    {
+      "start": "35:14",
+      "end": "35:14",
+      "text": "century boiler lived almost a century"
+    },
+    {
+      "start": "35:14",
+      "end": "35:15",
+      "text": "century boiler lived almost a century later"
+    },
+    {
+      "start": "35:15",
+      "end": "35:15",
+      "text": "later"
+    },
+    {
+      "start": "35:15",
+      "end": "35:16",
+      "text": "later so Euler Hydra generalization of"
+    },
+    {
+      "start": "35:16",
+      "end": "35:16",
+      "text": "so Euler Hydra generalization of"
+    },
+    {
+      "start": "35:16",
+      "end": "35:20",
+      "text": "so Euler Hydra generalization of Fermat's theorem Euler's generalization"
+    },
+    {
+      "start": "35:20",
+      "end": "35:20",
+      "text": "Fermat's theorem Euler's generalization"
+    },
+    {
+      "start": "35:20",
+      "end": "35:34",
+      "text": "Fermat's theorem Euler's generalization states this for any two integers"
+    },
+    {
+      "start": "35:40",
+      "end": "35:40",
+      "text": "a and M that are relatively prime with"
+    },
+    {
+      "start": "35:40",
+      "end": "35:48",
+      "text": "a and M that are relatively prime with each other so the GCD is one then a"
+    },
+    {
+      "start": "35:48",
+      "end": "35:48",
+      "text": "each other so the GCD is one then a"
+    },
+    {
+      "start": "35:48",
+      "end": "35:55",
+      "text": "each other so the GCD is one then a power Phi M is one model so Phi M is the"
+    },
+    {
+      "start": "35:55",
+      "end": "35:55",
+      "text": "power Phi M is one model so Phi M is the"
+    },
+    {
+      "start": "35:55",
+      "end": "35:58",
+      "text": "power Phi M is one model so Phi M is the size of the reduced residue system"
+    },
+    {
+      "start": "35:58",
+      "end": "35:58",
+      "text": "size of the reduced residue system"
+    },
+    {
+      "start": "35:58",
+      "end": "36:06",
+      "text": "size of the reduced residue system modulo M so we prove it this way suppose"
+    },
+    {
+      "start": "36:06",
+      "end": "36:06",
+      "text": "modulo M so we prove it this way suppose"
+    },
+    {
+      "start": "36:06",
+      "end": "36:12",
+      "text": "modulo M so we prove it this way suppose s which is denoted as R 1 through R Phi"
+    },
+    {
+      "start": "36:12",
+      "end": "36:12",
+      "text": "s which is denoted as R 1 through R Phi"
+    },
+    {
+      "start": "36:12",
+      "end": "36:19",
+      "text": "s which is denoted as R 1 through R Phi M is an R RS reduce the to do system"
+    },
+    {
+      "start": "36:19",
+      "end": "36:19",
+      "text": "M is an R RS reduce the to do system"
+    },
+    {
+      "start": "36:19",
+      "end": "36:35",
+      "text": "M is an R RS reduce the to do system modulo M then so is a R 1 through a rpm"
+    },
+    {
+      "start": "36:49",
+      "end": "36:49",
+      "text": "where I is from any integer between one"
+    },
+    {
+      "start": "36:49",
+      "end": "37:01",
+      "text": "where I is from any integer between one and five M directs us a unique J in the"
+    },
+    {
+      "start": "37:01",
+      "end": "37:01",
+      "text": "and five M directs us a unique J in the"
+    },
+    {
+      "start": "37:01",
+      "end": "37:08",
+      "text": "and five M directs us a unique J in the range 1 to 5 m so that RI equals a rj"
+    },
+    {
+      "start": "37:08",
+      "end": "37:08",
+      "text": "range 1 to 5 m so that RI equals a rj"
+    },
+    {
+      "start": "37:08",
+      "end": "37:14",
+      "text": "range 1 to 5 m so that RI equals a rj model"
+    },
+    {
+      "start": "37:22",
+      "end": "37:22",
+      "text": "hence a parfait M multiplied by the"
+    },
+    {
+      "start": "37:22",
+      "end": "37:29",
+      "text": "hence a parfait M multiplied by the product of our J for J varying from 1 to"
+    },
+    {
+      "start": "37:29",
+      "end": "37:29",
+      "text": "product of our J for J varying from 1 to"
+    },
+    {
+      "start": "37:29",
+      "end": "37:35",
+      "text": "product of our J for J varying from 1 to 5 m let us compute this product taking a"
+    },
+    {
+      "start": "37:35",
+      "end": "37:35",
+      "text": "5 m let us compute this product taking a"
+    },
+    {
+      "start": "37:35",
+      "end": "37:39",
+      "text": "5 m let us compute this product taking a path I am inside we can write this as"
+    },
+    {
+      "start": "37:39",
+      "end": "37:39",
+      "text": "path I am inside we can write this as"
+    },
+    {
+      "start": "37:39",
+      "end": "37:43",
+      "text": "path I am inside we can write this as the product with J waiting from 1 to Phi"
+    },
+    {
+      "start": "37:43",
+      "end": "37:43",
+      "text": "the product with J waiting from 1 to Phi"
+    },
+    {
+      "start": "37:43",
+      "end": "38:00",
+      "text": "the product with J waiting from 1 to Phi of M of arg but this is congruent to"
+    },
+    {
+      "start": "38:07",
+      "end": "38:07",
+      "text": "the product with I varying from 1 to 5 m"
+    },
+    {
+      "start": "38:07",
+      "end": "38:12",
+      "text": "the product with I varying from 1 to 5 m of our eye that's because for every J"
+    },
+    {
+      "start": "38:12",
+      "end": "38:12",
+      "text": "of our eye that's because for every J"
+    },
+    {
+      "start": "38:12",
+      "end": "38:15",
+      "text": "of our eye that's because for every J there is an eye so that AR j is"
+    },
+    {
+      "start": "38:15",
+      "end": "38:15",
+      "text": "there is an eye so that AR j is"
+    },
+    {
+      "start": "38:15",
+      "end": "38:18",
+      "text": "there is an eye so that AR j is congruent to our eye model"
+    },
+    {
+      "start": "38:18",
+      "end": "38:18",
+      "text": "congruent to our eye model"
+    },
+    {
+      "start": "38:18",
+      "end": "38:25",
+      "text": "congruent to our eye model so those congruence is smaller but our"
+    },
+    {
+      "start": "38:25",
+      "end": "38:25",
+      "text": "so those congruence is smaller but our"
+    },
+    {
+      "start": "38:25",
+      "end": "38:35",
+      "text": "so those congruence is smaller but our eye is co-prime with M for every eye"
+    },
+    {
+      "start": "38:39",
+      "end": "38:39",
+      "text": "therefore the product of our eyes is"
+    },
+    {
+      "start": "38:39",
+      "end": "38:47",
+      "text": "therefore the product of our eyes is also co-prime with M"
+    },
+    {
+      "start": "39:00",
+      "end": "39:00",
+      "text": "so you can cancel this from both sides"
+    },
+    {
+      "start": "39:00",
+      "end": "39:02",
+      "text": "so you can cancel this from both sides of the equation"
+    },
+    {
+      "start": "39:02",
+      "end": "39:02",
+      "text": "of the equation"
+    },
+    {
+      "start": "39:02",
+      "end": "39:05",
+      "text": "of the equation since the canceling quantity is"
+    },
+    {
+      "start": "39:05",
+      "end": "39:05",
+      "text": "since the canceling quantity is"
+    },
+    {
+      "start": "39:05",
+      "end": "39:09",
+      "text": "since the canceling quantity is relatively prime with M the modulus"
+    },
+    {
+      "start": "39:09",
+      "end": "39:09",
+      "text": "relatively prime with M the modulus"
+    },
+    {
+      "start": "39:09",
+      "end": "39:12",
+      "text": "relatively prime with M the modulus doesn't change when we cancel therefore"
+    },
+    {
+      "start": "39:12",
+      "end": "39:12",
+      "text": "doesn't change when we cancel therefore"
+    },
+    {
+      "start": "39:12",
+      "end": "39:16",
+      "text": "doesn't change when we cancel therefore what I have is this a power Phi F M is"
+    },
+    {
+      "start": "39:16",
+      "end": "39:16",
+      "text": "what I have is this a power Phi F M is"
+    },
+    {
+      "start": "39:16",
+      "end": "39:23",
+      "text": "what I have is this a power Phi F M is congruent to one model as the theorem"
+    },
+    {
+      "start": "39:23",
+      "end": "39:23",
+      "text": "congruent to one model as the theorem"
+    },
+    {
+      "start": "39:23",
+      "end": "39:27",
+      "text": "congruent to one model as the theorem claims so that proves the generalization"
+    },
+    {
+      "start": "39:27",
+      "end": "39:27",
+      "text": "claims so that proves the generalization"
+    },
+    {
+      "start": "39:27",
+      "end": "39:34",
+      "text": "claims so that proves the generalization of Euler's four form at zero now coming"
+    },
+    {
+      "start": "39:34",
+      "end": "39:34",
+      "text": "of Euler's four form at zero now coming"
+    },
+    {
+      "start": "39:34",
+      "end": "39:46",
+      "text": "of Euler's four form at zero now coming to Fermat's theorem suppose P is a prime"
+    },
+    {
+      "start": "39:55",
+      "end": "39:55",
+      "text": "and a is an integer such that P does not"
+    },
+    {
+      "start": "39:55",
+      "end": "40:06",
+      "text": "and a is an integer such that P does not divide a then GCD of a P equal to one so"
+    },
+    {
+      "start": "40:06",
+      "end": "40:06",
+      "text": "divide a then GCD of a P equal to one so"
+    },
+    {
+      "start": "40:06",
+      "end": "40:10",
+      "text": "divide a then GCD of a P equal to one so P is a prime and is an integer so that P"
+    },
+    {
+      "start": "40:10",
+      "end": "40:10",
+      "text": "P is a prime and is an integer so that P"
+    },
+    {
+      "start": "40:10",
+      "end": "40:13",
+      "text": "P is a prime and is an integer so that P does not divide a so GCD of a P is 1 now"
+    },
+    {
+      "start": "40:13",
+      "end": "40:13",
+      "text": "does not divide a so GCD of a P is 1 now"
+    },
+    {
+      "start": "40:13",
+      "end": "40:19",
+      "text": "does not divide a so GCD of a P is 1 now consider the complete residue system"
+    },
+    {
+      "start": "40:27",
+      "end": "40:27",
+      "text": "modulo P this will contain these numbers"
+    },
+    {
+      "start": "40:27",
+      "end": "40:33",
+      "text": "modulo P this will contain these numbers of this 0 is not relatively prime with P"
+    },
+    {
+      "start": "40:33",
+      "end": "40:33",
+      "text": "of this 0 is not relatively prime with P"
+    },
+    {
+      "start": "40:33",
+      "end": "40:39",
+      "text": "of this 0 is not relatively prime with P therefore what remains are these this"
+    },
+    {
+      "start": "40:39",
+      "end": "40:39",
+      "text": "therefore what remains are these this"
+    },
+    {
+      "start": "40:39",
+      "end": "40:45",
+      "text": "therefore what remains are these this would then be the Phi value of P Phi FP"
+    },
+    {
+      "start": "40:45",
+      "end": "40:45",
+      "text": "would then be the Phi value of P Phi FP"
+    },
+    {
+      "start": "40:45",
+      "end": "40:47",
+      "text": "would then be the Phi value of P Phi FP would be the cardinality of this which"
+    },
+    {
+      "start": "40:47",
+      "end": "40:47",
+      "text": "would be the cardinality of this which"
+    },
+    {
+      "start": "40:47",
+      "end": "40:54",
+      "text": "would be the cardinality of this which is P minus 1 therefore plugging this in"
+    },
+    {
+      "start": "40:54",
+      "end": "40:54",
+      "text": "is P minus 1 therefore plugging this in"
+    },
+    {
+      "start": "40:54",
+      "end": "40:57",
+      "text": "is P minus 1 therefore plugging this in Euler's generalization we find that a"
+    },
+    {
+      "start": "40:57",
+      "end": "40:57",
+      "text": "Euler's generalization we find that a"
+    },
+    {
+      "start": "40:57",
+      "end": "41:08",
+      "text": "Euler's generalization we find that a power P minus 1 is 1 mod p"
+    },
+    {
+      "start": "41:11",
+      "end": "41:11",
+      "text": "this is precisely what for maps theorem"
+    },
+    {
+      "start": "41:11",
+      "end": "41:17",
+      "text": "this is precisely what for maps theorem says so for match theorem can be"
+    },
+    {
+      "start": "41:17",
+      "end": "41:17",
+      "text": "says so for match theorem can be"
+    },
+    {
+      "start": "41:17",
+      "end": "41:20",
+      "text": "says so for match theorem can be obtained as a corollary of euler's"
+    },
+    {
+      "start": "41:20",
+      "end": "41:20",
+      "text": "obtained as a corollary of euler's"
+    },
+    {
+      "start": "41:20",
+      "end": "41:24",
+      "text": "obtained as a corollary of euler's theorem so that is it from this lecture"
+    },
+    {
+      "start": "41:24",
+      "end": "41:24",
+      "text": "theorem so that is it from this lecture"
+    },
+    {
+      "start": "41:24",
+      "end": "41:30",
+      "text": "theorem so that is it from this lecture hope to see you in the next thank you"
+    }
+  ],
+  "timestamped": true
+}

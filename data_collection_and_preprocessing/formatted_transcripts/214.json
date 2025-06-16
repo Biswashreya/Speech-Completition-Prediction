@@ -1,0 +1,3638 @@
+{
+  "title": "Lec 15: Planar Graphs",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "so in this lecture we will learn about"
+    },
+    {
+      "start": "0:31",
+      "end": "0:35",
+      "text": "so in this lecture we will learn about planar graph we'll start with the puzzle"
+    },
+    {
+      "start": "0:35",
+      "end": "0:35",
+      "text": "planar graph we'll start with the puzzle"
+    },
+    {
+      "start": "0:35",
+      "end": "0:38",
+      "text": "planar graph we'll start with the puzzle so imagine that there are three houses"
+    },
+    {
+      "start": "0:38",
+      "end": "0:38",
+      "text": "so imagine that there are three houses"
+    },
+    {
+      "start": "0:38",
+      "end": "0:42",
+      "text": "so imagine that there are three houses let's just say a B and C and there are"
+    },
+    {
+      "start": "0:42",
+      "end": "0:42",
+      "text": "let's just say a B and C and there are"
+    },
+    {
+      "start": "0:42",
+      "end": "0:54",
+      "text": "let's just say a B and C and there are three Wells w1 w2 and w3 what we want is"
+    },
+    {
+      "start": "0:54",
+      "end": "0:54",
+      "text": "three Wells w1 w2 and w3 what we want is"
+    },
+    {
+      "start": "0:54",
+      "end": "0:58",
+      "text": "three Wells w1 w2 and w3 what we want is to construct parts from each house to"
+    },
+    {
+      "start": "0:58",
+      "end": "0:58",
+      "text": "to construct parts from each house to"
+    },
+    {
+      "start": "0:58",
+      "end": "1:03",
+      "text": "to construct parts from each house to each well but these people a B and C do"
+    },
+    {
+      "start": "1:03",
+      "end": "1:03",
+      "text": "each well but these people a B and C do"
+    },
+    {
+      "start": "1:03",
+      "end": "1:06",
+      "text": "each well but these people a B and C do not get along well with each other they"
+    },
+    {
+      "start": "1:06",
+      "end": "1:06",
+      "text": "not get along well with each other they"
+    },
+    {
+      "start": "1:06",
+      "end": "1:08",
+      "text": "not get along well with each other they don't get along with each other so they"
+    },
+    {
+      "start": "1:08",
+      "end": "1:08",
+      "text": "don't get along with each other so they"
+    },
+    {
+      "start": "1:08",
+      "end": "1:12",
+      "text": "don't get along with each other so they want their own individual paths they"
+    },
+    {
+      "start": "1:12",
+      "end": "1:12",
+      "text": "want their own individual paths they"
+    },
+    {
+      "start": "1:12",
+      "end": "1:15",
+      "text": "want their own individual paths they don't want their paths to ever cross"
+    },
+    {
+      "start": "1:15",
+      "end": "1:15",
+      "text": "don't want their paths to ever cross"
+    },
+    {
+      "start": "1:15",
+      "end": "1:18",
+      "text": "don't want their paths to ever cross okay so maybe for a1 we can draw it like"
+    },
+    {
+      "start": "1:18",
+      "end": "1:18",
+      "text": "okay so maybe for a1 we can draw it like"
+    },
+    {
+      "start": "1:18",
+      "end": "1:23",
+      "text": "okay so maybe for a1 we can draw it like this so we can have parts of this kind a"
+    },
+    {
+      "start": "1:23",
+      "end": "1:23",
+      "text": "this so we can have parts of this kind a"
+    },
+    {
+      "start": "1:23",
+      "end": "1:28",
+      "text": "this so we can have parts of this kind a to W 1 a 2 W 2 and a 2 W 3 and similarly"
+    },
+    {
+      "start": "1:28",
+      "end": "1:28",
+      "text": "to W 1 a 2 W 2 and a 2 W 3 and similarly"
+    },
+    {
+      "start": "1:28",
+      "end": "1:36",
+      "text": "to W 1 a 2 W 2 and a 2 W 3 and similarly we can draw a path from B to W 1 B 2 W 2"
+    },
+    {
+      "start": "1:36",
+      "end": "1:36",
+      "text": "we can draw a path from B to W 1 B 2 W 2"
+    },
+    {
+      "start": "1:36",
+      "end": "1:45",
+      "text": "we can draw a path from B to W 1 B 2 W 2 and B 2 W 3 and C 2 W 3 C 2 W 2 but once"
+    },
+    {
+      "start": "1:45",
+      "end": "1:45",
+      "text": "and B 2 W 3 and C 2 W 3 C 2 W 2 but once"
+    },
+    {
+      "start": "1:45",
+      "end": "1:47",
+      "text": "and B 2 W 3 and C 2 W 3 C 2 W 2 but once this has been drawn somehow at least in"
+    },
+    {
+      "start": "1:47",
+      "end": "1:47",
+      "text": "this has been drawn somehow at least in"
+    },
+    {
+      "start": "1:47",
+      "end": "1:53",
+      "text": "this has been drawn somehow at least in this drawing W 1 is inside a region and"
+    },
+    {
+      "start": "1:53",
+      "end": "1:53",
+      "text": "this drawing W 1 is inside a region and"
+    },
+    {
+      "start": "1:53",
+      "end": "1:56",
+      "text": "this drawing W 1 is inside a region and there is no way we can go from C to W 1"
+    },
+    {
+      "start": "1:56",
+      "end": "1:56",
+      "text": "there is no way we can go from C to W 1"
+    },
+    {
+      "start": "1:56",
+      "end": "1:58",
+      "text": "there is no way we can go from C to W 1 without intersecting one of the already"
+    },
+    {
+      "start": "1:58",
+      "end": "1:58",
+      "text": "without intersecting one of the already"
+    },
+    {
+      "start": "1:58",
+      "end": "2:02",
+      "text": "without intersecting one of the already existing paths now is this an artifact"
+    },
+    {
+      "start": "2:02",
+      "end": "2:02",
+      "text": "existing paths now is this an artifact"
+    },
+    {
+      "start": "2:02",
+      "end": "2:05",
+      "text": "existing paths now is this an artifact of our drawing did it happen because we"
+    },
+    {
+      "start": "2:05",
+      "end": "2:05",
+      "text": "of our drawing did it happen because we"
+    },
+    {
+      "start": "2:05",
+      "end": "2:07",
+      "text": "of our drawing did it happen because we drew it in a certain kind or is it the"
+    },
+    {
+      "start": "2:07",
+      "end": "2:07",
+      "text": "drew it in a certain kind or is it the"
+    },
+    {
+      "start": "2:07",
+      "end": "2:09",
+      "text": "drew it in a certain kind or is it the case that no matter how complicated we"
+    },
+    {
+      "start": "2:09",
+      "end": "2:09",
+      "text": "case that no matter how complicated we"
+    },
+    {
+      "start": "2:09",
+      "end": "2:13",
+      "text": "case that no matter how complicated we draw the paths we still cannot manage to"
+    },
+    {
+      "start": "2:13",
+      "end": "2:13",
+      "text": "draw the paths we still cannot manage to"
+    },
+    {
+      "start": "2:13",
+      "end": "2:17",
+      "text": "draw the paths we still cannot manage to get non intersecting paths okay so in"
+    },
+    {
+      "start": "2:17",
+      "end": "2:17",
+      "text": "get non intersecting paths okay so in"
+    },
+    {
+      "start": "2:17",
+      "end": "2:20",
+      "text": "get non intersecting paths okay so in that case so we want to answer this"
+    },
+    {
+      "start": "2:20",
+      "end": "2:20",
+      "text": "that case so we want to answer this"
+    },
+    {
+      "start": "2:20",
+      "end": "2:24",
+      "text": "that case so we want to answer this question so we can reformulate this in a"
+    },
+    {
+      "start": "2:24",
+      "end": "2:24",
+      "text": "question so we can reformulate this in a"
+    },
+    {
+      "start": "2:24",
+      "end": "2:28",
+      "text": "question so we can reformulate this in a graph theoretic fashion by asking the"
+    },
+    {
+      "start": "2:28",
+      "end": "2:28",
+      "text": "graph theoretic fashion by asking the"
+    },
+    {
+      "start": "2:28",
+      "end": "2:32",
+      "text": "graph theoretic fashion by asking the following graph is planar or non planar"
+    },
+    {
+      "start": "2:32",
+      "end": "2:32",
+      "text": "following graph is planar or non planar"
+    },
+    {
+      "start": "2:32",
+      "end": "2:38",
+      "text": "following graph is planar or non planar we could think of this is a B and C W 1"
+    },
+    {
+      "start": "2:38",
+      "end": "2:38",
+      "text": "we could think of this is a B and C W 1"
+    },
+    {
+      "start": "2:38",
+      "end": "2:41",
+      "text": "we could think of this is a B and C W 1 W 2 W 3 and we have the following graph"
+    },
+    {
+      "start": "2:41",
+      "end": "2:41",
+      "text": "W 2 W 3 and we have the following graph"
+    },
+    {
+      "start": "2:41",
+      "end": "2:48",
+      "text": "W 2 W 3 and we have the following graph with all these edges present we are"
+    },
+    {
+      "start": "2:48",
+      "end": "2:48",
+      "text": "with all these edges present we are"
+    },
+    {
+      "start": "2:48",
+      "end": "2:51",
+      "text": "with all these edges present we are interested in knowing whether this graph"
+    },
+    {
+      "start": "2:51",
+      "end": "2:51",
+      "text": "interested in knowing whether this graph"
+    },
+    {
+      "start": "2:51",
+      "end": "2:55",
+      "text": "interested in knowing whether this graph can be embedded on the plane so we can"
+    },
+    {
+      "start": "2:55",
+      "end": "2:55",
+      "text": "can be embedded on the plane so we can"
+    },
+    {
+      "start": "2:55",
+      "end": "2:57",
+      "text": "can be embedded on the plane so we can talk about what is called as a graph"
+    },
+    {
+      "start": "2:57",
+      "end": "2:57",
+      "text": "talk about what is called as a graph"
+    },
+    {
+      "start": "2:57",
+      "end": "3:05",
+      "text": "talk about what is called as a graph drawing a graph drawing we mean we have"
+    },
+    {
+      "start": "3:05",
+      "end": "3:05",
+      "text": "drawing a graph drawing we mean we have"
+    },
+    {
+      "start": "3:05",
+      "end": "3:14",
+      "text": "drawing a graph drawing we mean we have to find so position the vertices in the"
+    },
+    {
+      "start": "3:14",
+      "end": "3:14",
+      "text": "to find so position the vertices in the"
+    },
+    {
+      "start": "3:14",
+      "end": "3:22",
+      "text": "to find so position the vertices in the plane and and if a comma B is an edge"
+    },
+    {
+      "start": "3:22",
+      "end": "3:22",
+      "text": "plane and and if a comma B is an edge"
+    },
+    {
+      "start": "3:22",
+      "end": "3:34",
+      "text": "plane and and if a comma B is an edge then connect them by a simple curve okay"
+    },
+    {
+      "start": "3:34",
+      "end": "3:34",
+      "text": "then connect them by a simple curve okay"
+    },
+    {
+      "start": "3:34",
+      "end": "3:37",
+      "text": "then connect them by a simple curve okay and if we can find a graph drawing in"
+    },
+    {
+      "start": "3:37",
+      "end": "3:37",
+      "text": "and if we can find a graph drawing in"
+    },
+    {
+      "start": "3:37",
+      "end": "3:40",
+      "text": "and if we can find a graph drawing in such a way that the edges the curves"
+    },
+    {
+      "start": "3:40",
+      "end": "3:40",
+      "text": "such a way that the edges the curves"
+    },
+    {
+      "start": "3:40",
+      "end": "3:42",
+      "text": "such a way that the edges the curves corresponding to the edges do not"
+    },
+    {
+      "start": "3:42",
+      "end": "3:42",
+      "text": "corresponding to the edges do not"
+    },
+    {
+      "start": "3:42",
+      "end": "3:45",
+      "text": "corresponding to the edges do not intersect then we say that the graph is"
+    },
+    {
+      "start": "3:45",
+      "end": "3:45",
+      "text": "intersect then we say that the graph is"
+    },
+    {
+      "start": "3:45",
+      "end": "3:58",
+      "text": "intersect then we say that the graph is planar if we can find a graph drawing"
+    },
+    {
+      "start": "4:18",
+      "end": "4:18",
+      "text": "the graph is planar so now the puzzle"
+    },
+    {
+      "start": "4:18",
+      "end": "4:24",
+      "text": "the graph is planar so now the puzzle can be reformulated s is k33 that's the"
+    },
+    {
+      "start": "4:24",
+      "end": "4:24",
+      "text": "can be reformulated s is k33 that's the"
+    },
+    {
+      "start": "4:24",
+      "end": "4:26",
+      "text": "can be reformulated s is k33 that's the graph that we are interested in is it"
+    },
+    {
+      "start": "4:26",
+      "end": "4:26",
+      "text": "graph that we are interested in is it"
+    },
+    {
+      "start": "4:26",
+      "end": "4:27",
+      "text": "graph that we are interested in is it planar"
+    },
+    {
+      "start": "4:27",
+      "end": "4:27",
+      "text": "planar"
+    },
+    {
+      "start": "4:27",
+      "end": "4:31",
+      "text": "planar okay so we will develop some tools by"
+    },
+    {
+      "start": "4:31",
+      "end": "4:31",
+      "text": "okay so we will develop some tools by"
+    },
+    {
+      "start": "4:31",
+      "end": "4:35",
+      "text": "okay so we will develop some tools by which we can answer this question we"
+    },
+    {
+      "start": "4:35",
+      "end": "4:35",
+      "text": "which we can answer this question we"
+    },
+    {
+      "start": "4:35",
+      "end": "4:37",
+      "text": "which we can answer this question we will what we will show is that K 3 3 is"
+    },
+    {
+      "start": "4:37",
+      "end": "4:37",
+      "text": "will what we will show is that K 3 3 is"
+    },
+    {
+      "start": "4:37",
+      "end": "4:41",
+      "text": "will what we will show is that K 3 3 is not planar and what will help us do that"
+    },
+    {
+      "start": "4:41",
+      "end": "4:41",
+      "text": "not planar and what will help us do that"
+    },
+    {
+      "start": "4:41",
+      "end": "4:44",
+      "text": "not planar and what will help us do that is something known as the euler's"
+    },
+    {
+      "start": "4:44",
+      "end": "4:44",
+      "text": "is something known as the euler's"
+    },
+    {
+      "start": "4:44",
+      "end": "4:49",
+      "text": "is something known as the euler's theorem let's see one more example of"
+    },
+    {
+      "start": "4:49",
+      "end": "4:49",
+      "text": "theorem let's see one more example of"
+    },
+    {
+      "start": "4:49",
+      "end": "4:52",
+      "text": "theorem let's see one more example of planarity so let us say we look at this"
+    },
+    {
+      "start": "4:52",
+      "end": "4:52",
+      "text": "planarity so let us say we look at this"
+    },
+    {
+      "start": "4:52",
+      "end": "5:05",
+      "text": "planarity so let us say we look at this particular graph on 5 vertices"
+    },
+    {
+      "start": "5:12",
+      "end": "5:12",
+      "text": "okay so this is five vertices and nine"
+    },
+    {
+      "start": "5:12",
+      "end": "5:15",
+      "text": "okay so this is five vertices and nine edges it's the complete graph from which"
+    },
+    {
+      "start": "5:15",
+      "end": "5:15",
+      "text": "edges it's the complete graph from which"
+    },
+    {
+      "start": "5:15",
+      "end": "5:18",
+      "text": "edges it's the complete graph from which exactly one edge has been removed okay"
+    },
+    {
+      "start": "5:18",
+      "end": "5:18",
+      "text": "exactly one edge has been removed okay"
+    },
+    {
+      "start": "5:18",
+      "end": "5:22",
+      "text": "exactly one edge has been removed okay so we can write this is k5 minus one"
+    },
+    {
+      "start": "5:22",
+      "end": "5:22",
+      "text": "so we can write this is k5 minus one"
+    },
+    {
+      "start": "5:22",
+      "end": "5:24",
+      "text": "so we can write this is k5 minus one particular edge let's say if we call"
+    },
+    {
+      "start": "5:24",
+      "end": "5:24",
+      "text": "particular edge let's say if we call"
+    },
+    {
+      "start": "5:24",
+      "end": "5:31",
+      "text": "particular edge let's say if we call that edges a B that's the graph that"
+    },
+    {
+      "start": "5:31",
+      "end": "5:31",
+      "text": "that edges a B that's the graph that"
+    },
+    {
+      "start": "5:31",
+      "end": "5:33",
+      "text": "that edges a B that's the graph that we're looking at is this a planar graph"
+    },
+    {
+      "start": "5:33",
+      "end": "5:33",
+      "text": "we're looking at is this a planar graph"
+    },
+    {
+      "start": "5:33",
+      "end": "5:35",
+      "text": "we're looking at is this a planar graph now if you look at it there are a lot of"
+    },
+    {
+      "start": "5:35",
+      "end": "5:35",
+      "text": "now if you look at it there are a lot of"
+    },
+    {
+      "start": "5:35",
+      "end": "5:38",
+      "text": "now if you look at it there are a lot of crossings in this as well so here there"
+    },
+    {
+      "start": "5:38",
+      "end": "5:38",
+      "text": "crossings in this as well so here there"
+    },
+    {
+      "start": "5:38",
+      "end": "5:41",
+      "text": "crossings in this as well so here there is a crossing this is another crossing"
+    },
+    {
+      "start": "5:41",
+      "end": "5:41",
+      "text": "is a crossing this is another crossing"
+    },
+    {
+      "start": "5:41",
+      "end": "5:43",
+      "text": "is a crossing this is another crossing so there are lots of crossings in this"
+    },
+    {
+      "start": "5:43",
+      "end": "5:43",
+      "text": "so there are lots of crossings in this"
+    },
+    {
+      "start": "5:43",
+      "end": "5:47",
+      "text": "so there are lots of crossings in this graph okay but can we redraw it in such"
+    },
+    {
+      "start": "5:47",
+      "end": "5:47",
+      "text": "graph okay but can we redraw it in such"
+    },
+    {
+      "start": "5:47",
+      "end": "5:51",
+      "text": "graph okay but can we redraw it in such a way that all the crossings can be"
+    },
+    {
+      "start": "5:51",
+      "end": "5:51",
+      "text": "a way that all the crossings can be"
+    },
+    {
+      "start": "5:51",
+      "end": "5:54",
+      "text": "a way that all the crossings can be avoided in fact so what what I'm trying"
+    },
+    {
+      "start": "5:54",
+      "end": "5:54",
+      "text": "avoided in fact so what what I'm trying"
+    },
+    {
+      "start": "5:54",
+      "end": "5:59",
+      "text": "avoided in fact so what what I'm trying to emphasize is that if one drawing"
+    },
+    {
+      "start": "5:59",
+      "end": "5:59",
+      "text": "to emphasize is that if one drawing"
+    },
+    {
+      "start": "5:59",
+      "end": "6:01",
+      "text": "to emphasize is that if one drawing involves lot of crossing that doesn't"
+    },
+    {
+      "start": "6:01",
+      "end": "6:01",
+      "text": "involves lot of crossing that doesn't"
+    },
+    {
+      "start": "6:01",
+      "end": "6:05",
+      "text": "involves lot of crossing that doesn't mean that we cannot redraw it to get"
+    },
+    {
+      "start": "6:05",
+      "end": "6:05",
+      "text": "mean that we cannot redraw it to get"
+    },
+    {
+      "start": "6:05",
+      "end": "6:07",
+      "text": "mean that we cannot redraw it to get another drawing where there are no"
+    },
+    {
+      "start": "6:07",
+      "end": "6:07",
+      "text": "another drawing where there are no"
+    },
+    {
+      "start": "6:07",
+      "end": "6:11",
+      "text": "another drawing where there are no crossing in this case we can do that and"
+    },
+    {
+      "start": "6:11",
+      "end": "6:11",
+      "text": "crossing in this case we can do that and"
+    },
+    {
+      "start": "6:11",
+      "end": "6:14",
+      "text": "crossing in this case we can do that and that can be seen in as follows so"
+    },
+    {
+      "start": "6:14",
+      "end": "6:14",
+      "text": "that can be seen in as follows so"
+    },
+    {
+      "start": "6:14",
+      "end": "6:17",
+      "text": "that can be seen in as follows so there's an inner star which we can think"
+    },
+    {
+      "start": "6:17",
+      "end": "6:17",
+      "text": "there's an inner star which we can think"
+    },
+    {
+      "start": "6:17",
+      "end": "6:20",
+      "text": "there's an inner star which we can think of it as a Pentagon so a is connected to"
+    },
+    {
+      "start": "6:20",
+      "end": "6:20",
+      "text": "of it as a Pentagon so a is connected to"
+    },
+    {
+      "start": "6:20",
+      "end": "6:25",
+      "text": "of it as a Pentagon so a is connected to C is connected to E and E is connected"
+    },
+    {
+      "start": "6:25",
+      "end": "6:25",
+      "text": "C is connected to E and E is connected"
+    },
+    {
+      "start": "6:25",
+      "end": "6:33",
+      "text": "C is connected to E and E is connected to B B is connected to D and D is"
+    },
+    {
+      "start": "6:33",
+      "end": "6:33",
+      "text": "to B B is connected to D and D is"
+    },
+    {
+      "start": "6:33",
+      "end": "6:36",
+      "text": "to B B is connected to D and D is connected to a so that takes care of the"
+    },
+    {
+      "start": "6:36",
+      "end": "6:36",
+      "text": "connected to a so that takes care of the"
+    },
+    {
+      "start": "6:36",
+      "end": "6:38",
+      "text": "connected to a so that takes care of the inner Pentagon so fiber just taken care"
+    },
+    {
+      "start": "6:38",
+      "end": "6:38",
+      "text": "inner Pentagon so fiber just taken care"
+    },
+    {
+      "start": "6:38",
+      "end": "6:40",
+      "text": "inner Pentagon so fiber just taken care of the other edges that are missing as"
+    },
+    {
+      "start": "6:40",
+      "end": "6:40",
+      "text": "of the other edges that are missing as"
+    },
+    {
+      "start": "6:40",
+      "end": "6:44",
+      "text": "of the other edges that are missing as BC CD de and ei so those also we can"
+    },
+    {
+      "start": "6:44",
+      "end": "6:44",
+      "text": "BC CD de and ei so those also we can"
+    },
+    {
+      "start": "6:44",
+      "end": "6:50",
+      "text": "BC CD de and ei so those also we can draw BC is an edge and CD is an edge and"
+    },
+    {
+      "start": "6:50",
+      "end": "6:50",
+      "text": "draw BC is an edge and CD is an edge and"
+    },
+    {
+      "start": "6:50",
+      "end": "6:55",
+      "text": "draw BC is an edge and CD is an edge and de is an edge draw it in this way and EA"
+    },
+    {
+      "start": "6:55",
+      "end": "6:55",
+      "text": "de is an edge draw it in this way and EA"
+    },
+    {
+      "start": "6:55",
+      "end": "7:01",
+      "text": "de is an edge draw it in this way and EA is an edge okay so this is an this is a"
+    },
+    {
+      "start": "7:01",
+      "end": "7:01",
+      "text": "is an edge okay so this is an this is a"
+    },
+    {
+      "start": "7:01",
+      "end": "7:04",
+      "text": "is an edge okay so this is an this is a redrawing of the same graph in such a"
+    },
+    {
+      "start": "7:04",
+      "end": "7:04",
+      "text": "redrawing of the same graph in such a"
+    },
+    {
+      "start": "7:04",
+      "end": "7:07",
+      "text": "redrawing of the same graph in such a way that there are no crossings and once"
+    },
+    {
+      "start": "7:07",
+      "end": "7:07",
+      "text": "way that there are no crossings and once"
+    },
+    {
+      "start": "7:07",
+      "end": "7:10",
+      "text": "way that there are no crossings and once we draw a graph that in this particular"
+    },
+    {
+      "start": "7:10",
+      "end": "7:10",
+      "text": "we draw a graph that in this particular"
+    },
+    {
+      "start": "7:10",
+      "end": "7:12",
+      "text": "we draw a graph that in this particular fashion that's called as a planar"
+    },
+    {
+      "start": "7:12",
+      "end": "7:12",
+      "text": "fashion that's called as a planar"
+    },
+    {
+      "start": "7:12",
+      "end": "7:14",
+      "text": "fashion that's called as a planar embedding so what we see here is a"
+    },
+    {
+      "start": "7:14",
+      "end": "7:14",
+      "text": "embedding so what we see here is a"
+    },
+    {
+      "start": "7:14",
+      "end": "7:21",
+      "text": "embedding so what we see here is a planar embedding of the graph G"
+    },
+    {
+      "start": "7:25",
+      "end": "7:25",
+      "text": "now once we have a planar embedding let"
+    },
+    {
+      "start": "7:25",
+      "end": "7:27",
+      "text": "now once we have a planar embedding let us imagine then so we have the entire"
+    },
+    {
+      "start": "7:27",
+      "end": "7:27",
+      "text": "us imagine then so we have the entire"
+    },
+    {
+      "start": "7:27",
+      "end": "7:29",
+      "text": "us imagine then so we have the entire plane and we have the these particular"
+    },
+    {
+      "start": "7:29",
+      "end": "7:29",
+      "text": "plane and we have the these particular"
+    },
+    {
+      "start": "7:29",
+      "end": "7:32",
+      "text": "plane and we have the these particular embedding and if you just remove the"
+    },
+    {
+      "start": "7:32",
+      "end": "7:32",
+      "text": "embedding and if you just remove the"
+    },
+    {
+      "start": "7:32",
+      "end": "7:35",
+      "text": "embedding and if you just remove the edges and the vertices from this picture"
+    },
+    {
+      "start": "7:35",
+      "end": "7:35",
+      "text": "edges and the vertices from this picture"
+    },
+    {
+      "start": "7:35",
+      "end": "7:42",
+      "text": "edges and the vertices from this picture okay what happens is the plane may get"
+    },
+    {
+      "start": "7:42",
+      "end": "7:42",
+      "text": "okay what happens is the plane may get"
+    },
+    {
+      "start": "7:42",
+      "end": "7:45",
+      "text": "okay what happens is the plane may get split into disjoint portions so"
+    },
+    {
+      "start": "7:45",
+      "end": "7:45",
+      "text": "split into disjoint portions so"
+    },
+    {
+      "start": "7:45",
+      "end": "7:48",
+      "text": "split into disjoint portions so basically you can think of this I see we"
+    },
+    {
+      "start": "7:48",
+      "end": "7:48",
+      "text": "basically you can think of this I see we"
+    },
+    {
+      "start": "7:48",
+      "end": "7:52",
+      "text": "basically you can think of this I see we are removing this particular region and"
+    },
+    {
+      "start": "7:52",
+      "end": "7:52",
+      "text": "are removing this particular region and"
+    },
+    {
+      "start": "7:52",
+      "end": "7:54",
+      "text": "are removing this particular region and we could ask this question how many"
+    },
+    {
+      "start": "7:54",
+      "end": "7:54",
+      "text": "we could ask this question how many"
+    },
+    {
+      "start": "7:54",
+      "end": "7:57",
+      "text": "we could ask this question how many geographically connected regions would"
+    },
+    {
+      "start": "7:57",
+      "end": "7:57",
+      "text": "geographically connected regions would"
+    },
+    {
+      "start": "7:57",
+      "end": "7:59",
+      "text": "geographically connected regions would remain okay so we will give a name to"
+    },
+    {
+      "start": "7:59",
+      "end": "7:59",
+      "text": "remain okay so we will give a name to"
+    },
+    {
+      "start": "7:59",
+      "end": "8:01",
+      "text": "remain okay so we will give a name to those regions that will basically be"
+    },
+    {
+      "start": "8:01",
+      "end": "8:01",
+      "text": "those regions that will basically be"
+    },
+    {
+      "start": "8:01",
+      "end": "8:05",
+      "text": "those regions that will basically be called as a face okay so here in this"
+    },
+    {
+      "start": "8:05",
+      "end": "8:05",
+      "text": "called as a face okay so here in this"
+    },
+    {
+      "start": "8:05",
+      "end": "8:09",
+      "text": "called as a face okay so here in this diagram there are going to be this is"
+    },
+    {
+      "start": "8:09",
+      "end": "8:09",
+      "text": "diagram there are going to be this is"
+    },
+    {
+      "start": "8:09",
+      "end": "8:16",
+      "text": "diagram there are going to be this is one face and the green colored region is"
+    },
+    {
+      "start": "8:16",
+      "end": "8:16",
+      "text": "one face and the green colored region is"
+    },
+    {
+      "start": "8:16",
+      "end": "8:22",
+      "text": "one face and the green colored region is another face pink is going to be another"
+    },
+    {
+      "start": "8:22",
+      "end": "8:22",
+      "text": "another face pink is going to be another"
+    },
+    {
+      "start": "8:22",
+      "end": "8:31",
+      "text": "another face pink is going to be another face this is yet another face"
+    },
+    {
+      "start": "8:33",
+      "end": "8:33",
+      "text": "okay so in all you can see that there"
+    },
+    {
+      "start": "8:33",
+      "end": "8:36",
+      "text": "okay so in all you can see that there are going to be one two three four five"
+    },
+    {
+      "start": "8:36",
+      "end": "8:36",
+      "text": "are going to be one two three four five"
+    },
+    {
+      "start": "8:36",
+      "end": "8:40",
+      "text": "are going to be one two three four five six phases the outside is also going to"
+    },
+    {
+      "start": "8:40",
+      "end": "8:40",
+      "text": "six phases the outside is also going to"
+    },
+    {
+      "start": "8:40",
+      "end": "8:47",
+      "text": "six phases the outside is also going to be a face okay the outer region the"
+    },
+    {
+      "start": "8:47",
+      "end": "8:47",
+      "text": "be a face okay the outer region the"
+    },
+    {
+      "start": "8:47",
+      "end": "8:49",
+      "text": "be a face okay the outer region the entire outer region that's going to be"
+    },
+    {
+      "start": "8:49",
+      "end": "8:49",
+      "text": "entire outer region that's going to be"
+    },
+    {
+      "start": "8:49",
+      "end": "8:50",
+      "text": "entire outer region that's going to be an infinite region that's going to be"
+    },
+    {
+      "start": "8:50",
+      "end": "8:50",
+      "text": "an infinite region that's going to be"
+    },
+    {
+      "start": "8:50",
+      "end": "8:55",
+      "text": "an infinite region that's going to be the sixth face okay so Oilers theorem"
+    },
+    {
+      "start": "8:55",
+      "end": "8:55",
+      "text": "the sixth face okay so Oilers theorem"
+    },
+    {
+      "start": "8:55",
+      "end": "8:58",
+      "text": "the sixth face okay so Oilers theorem basically relates the number of faces"
+    },
+    {
+      "start": "8:58",
+      "end": "8:58",
+      "text": "basically relates the number of faces"
+    },
+    {
+      "start": "8:58",
+      "end": "9:00",
+      "text": "basically relates the number of faces the number of edges and the number of"
+    },
+    {
+      "start": "9:00",
+      "end": "9:00",
+      "text": "the number of edges and the number of"
+    },
+    {
+      "start": "9:00",
+      "end": "9:04",
+      "text": "the number of edges and the number of vertices okay so let us state euler's"
+    },
+    {
+      "start": "9:04",
+      "end": "9:04",
+      "text": "vertices okay so let us state euler's"
+    },
+    {
+      "start": "9:04",
+      "end": "9:07",
+      "text": "vertices okay so let us state euler's theorem before that let's write down the"
+    },
+    {
+      "start": "9:07",
+      "end": "9:07",
+      "text": "theorem before that let's write down the"
+    },
+    {
+      "start": "9:07",
+      "end": "9:13",
+      "text": "theorem before that let's write down the definition of a face so we will"
+    },
+    {
+      "start": "9:13",
+      "end": "9:13",
+      "text": "definition of a face so we will"
+    },
+    {
+      "start": "9:13",
+      "end": "9:18",
+      "text": "definition of a face so we will informally think of it as the connected"
+    },
+    {
+      "start": "9:18",
+      "end": "9:18",
+      "text": "informally think of it as the connected"
+    },
+    {
+      "start": "9:18",
+      "end": "9:27",
+      "text": "informally think of it as the connected regions in planar graph drawing this is"
+    },
+    {
+      "start": "9:27",
+      "end": "9:27",
+      "text": "regions in planar graph drawing this is"
+    },
+    {
+      "start": "9:27",
+      "end": "9:31",
+      "text": "regions in planar graph drawing this is called a face so now we are in a"
+    },
+    {
+      "start": "9:31",
+      "end": "9:31",
+      "text": "called a face so now we are in a"
+    },
+    {
+      "start": "9:31",
+      "end": "9:34",
+      "text": "called a face so now we are in a position to state the Euler's planarity"
+    },
+    {
+      "start": "9:34",
+      "end": "9:34",
+      "text": "position to state the Euler's planarity"
+    },
+    {
+      "start": "9:34",
+      "end": "9:40",
+      "text": "position to state the Euler's planarity theorem so this says that the number of"
+    },
+    {
+      "start": "9:40",
+      "end": "9:40",
+      "text": "theorem so this says that the number of"
+    },
+    {
+      "start": "9:40",
+      "end": "9:43",
+      "text": "theorem so this says that the number of vertices so if V is the number of"
+    },
+    {
+      "start": "9:43",
+      "end": "9:43",
+      "text": "vertices so if V is the number of"
+    },
+    {
+      "start": "9:43",
+      "end": "9:45",
+      "text": "vertices so if V is the number of vertices and E is the number of edges"
+    },
+    {
+      "start": "9:45",
+      "end": "9:45",
+      "text": "vertices and E is the number of edges"
+    },
+    {
+      "start": "9:45",
+      "end": "9:48",
+      "text": "vertices and E is the number of edges and F is the number of faces and V minus"
+    },
+    {
+      "start": "9:48",
+      "end": "9:48",
+      "text": "and F is the number of faces and V minus"
+    },
+    {
+      "start": "9:48",
+      "end": "10:08",
+      "text": "and F is the number of faces and V minus E Plus F will be equal to two"
+    },
+    {
+      "start": "10:12",
+      "end": "10:12",
+      "text": "because how do we prove this statement"
+    },
+    {
+      "start": "10:12",
+      "end": "10:15",
+      "text": "because how do we prove this statement the proof is fairly simple we can use an"
+    },
+    {
+      "start": "10:15",
+      "end": "10:15",
+      "text": "the proof is fairly simple we can use an"
+    },
+    {
+      "start": "10:15",
+      "end": "10:26",
+      "text": "the proof is fairly simple we can use an induction on the number of edges"
+    },
+    {
+      "start": "10:28",
+      "end": "10:28",
+      "text": "so this will be true for connected"
+    },
+    {
+      "start": "10:28",
+      "end": "10:36",
+      "text": "so this will be true for connected graphs so take a connected graph it can"
+    },
+    {
+      "start": "10:36",
+      "end": "10:36",
+      "text": "graphs so take a connected graph it can"
+    },
+    {
+      "start": "10:36",
+      "end": "10:39",
+      "text": "graphs so take a connected graph it can either be a cycle-free graph or it could"
+    },
+    {
+      "start": "10:39",
+      "end": "10:39",
+      "text": "either be a cycle-free graph or it could"
+    },
+    {
+      "start": "10:39",
+      "end": "10:43",
+      "text": "either be a cycle-free graph or it could contain cycles so we will split the"
+    },
+    {
+      "start": "10:43",
+      "end": "10:43",
+      "text": "contain cycles so we will split the"
+    },
+    {
+      "start": "10:43",
+      "end": "10:48",
+      "text": "contain cycles so we will split the proof into two parts so k is 1 let's say"
+    },
+    {
+      "start": "10:48",
+      "end": "10:48",
+      "text": "proof into two parts so k is 1 let's say"
+    },
+    {
+      "start": "10:48",
+      "end": "10:56",
+      "text": "proof into two parts so k is 1 let's say G is our graph the only other cases when"
+    },
+    {
+      "start": "10:56",
+      "end": "10:56",
+      "text": "G is our graph the only other cases when"
+    },
+    {
+      "start": "10:56",
+      "end": "10:58",
+      "text": "G is our graph the only other cases when G doesn't contain cycle so the connected"
+    },
+    {
+      "start": "10:58",
+      "end": "10:58",
+      "text": "G doesn't contain cycle so the connected"
+    },
+    {
+      "start": "10:58",
+      "end": "11:00",
+      "text": "G doesn't contain cycle so the connected graph without cycles that's called as a"
+    },
+    {
+      "start": "11:00",
+      "end": "11:00",
+      "text": "graph without cycles that's called as a"
+    },
+    {
+      "start": "11:00",
+      "end": "11:03",
+      "text": "graph without cycles that's called as a tree so G is a tree now when you have a"
+    },
+    {
+      "start": "11:03",
+      "end": "11:03",
+      "text": "tree so G is a tree now when you have a"
+    },
+    {
+      "start": "11:03",
+      "end": "11:06",
+      "text": "tree so G is a tree now when you have a tree and if you embed the tree into the"
+    },
+    {
+      "start": "11:06",
+      "end": "11:06",
+      "text": "tree and if you embed the tree into the"
+    },
+    {
+      "start": "11:06",
+      "end": "11:09",
+      "text": "tree and if you embed the tree into the plane then the rest it does not create"
+    },
+    {
+      "start": "11:09",
+      "end": "11:09",
+      "text": "plane then the rest it does not create"
+    },
+    {
+      "start": "11:09",
+      "end": "11:12",
+      "text": "plane then the rest it does not create any regions and therefore the number of"
+    },
+    {
+      "start": "11:12",
+      "end": "11:12",
+      "text": "any regions and therefore the number of"
+    },
+    {
+      "start": "11:12",
+      "end": "11:17",
+      "text": "any regions and therefore the number of phases will be 1 so case 2 proof is easy"
+    },
+    {
+      "start": "11:17",
+      "end": "11:17",
+      "text": "phases will be 1 so case 2 proof is easy"
+    },
+    {
+      "start": "11:17",
+      "end": "11:21",
+      "text": "phases will be 1 so case 2 proof is easy V will be equal to number of vertices if"
+    },
+    {
+      "start": "11:21",
+      "end": "11:21",
+      "text": "V will be equal to number of vertices if"
+    },
+    {
+      "start": "11:21",
+      "end": "11:24",
+      "text": "V will be equal to number of vertices if we call it as N and E will be equal to n"
+    },
+    {
+      "start": "11:24",
+      "end": "11:24",
+      "text": "we call it as N and E will be equal to n"
+    },
+    {
+      "start": "11:24",
+      "end": "11:33",
+      "text": "we call it as N and E will be equal to n minus 1 and F will be equal to 1 so V"
+    },
+    {
+      "start": "11:33",
+      "end": "11:33",
+      "text": "minus 1 and F will be equal to 1 so V"
+    },
+    {
+      "start": "11:33",
+      "end": "11:39",
+      "text": "minus 1 and F will be equal to 1 so V minus E Plus F will be n minus n minus 1"
+    },
+    {
+      "start": "11:39",
+      "end": "11:39",
+      "text": "minus E Plus F will be n minus n minus 1"
+    },
+    {
+      "start": "11:39",
+      "end": "11:41",
+      "text": "minus E Plus F will be n minus n minus 1 plus 1 and that's going to be equal to 2"
+    },
+    {
+      "start": "11:41",
+      "end": "11:41",
+      "text": "plus 1 and that's going to be equal to 2"
+    },
+    {
+      "start": "11:41",
+      "end": "11:44",
+      "text": "plus 1 and that's going to be equal to 2 that's the easy case another case is"
+    },
+    {
+      "start": "11:44",
+      "end": "11:44",
+      "text": "that's the easy case another case is"
+    },
+    {
+      "start": "11:44",
+      "end": "11:47",
+      "text": "that's the easy case another case is also fairly easy so if you have cycles"
+    },
+    {
+      "start": "11:47",
+      "end": "11:47",
+      "text": "also fairly easy so if you have cycles"
+    },
+    {
+      "start": "11:47",
+      "end": "11:55",
+      "text": "also fairly easy so if you have cycles then one edge that is at least so if you"
+    },
+    {
+      "start": "11:55",
+      "end": "11:55",
+      "text": "then one edge that is at least so if you"
+    },
+    {
+      "start": "11:55",
+      "end": "11:57",
+      "text": "then one edge that is at least so if you have cycles and if you embed it you're"
+    },
+    {
+      "start": "11:57",
+      "end": "11:57",
+      "text": "have cycles and if you embed it you're"
+    },
+    {
+      "start": "11:57",
+      "end": "12:01",
+      "text": "have cycles and if you embed it you're going to get some particular region"
+    },
+    {
+      "start": "12:01",
+      "end": "12:01",
+      "text": "going to get some particular region"
+    },
+    {
+      "start": "12:01",
+      "end": "12:03",
+      "text": "going to get some particular region which is a phase it could have any"
+    },
+    {
+      "start": "12:03",
+      "end": "12:03",
+      "text": "which is a phase it could have any"
+    },
+    {
+      "start": "12:03",
+      "end": "12:06",
+      "text": "which is a phase it could have any number of edges we don't bother about"
+    },
+    {
+      "start": "12:06",
+      "end": "12:06",
+      "text": "number of edges we don't bother about"
+    },
+    {
+      "start": "12:06",
+      "end": "12:09",
+      "text": "number of edges we don't bother about how many edges are there in a particular"
+    },
+    {
+      "start": "12:09",
+      "end": "12:09",
+      "text": "how many edges are there in a particular"
+    },
+    {
+      "start": "12:09",
+      "end": "12:11",
+      "text": "how many edges are there in a particular phase but of course what we can conclude"
+    },
+    {
+      "start": "12:11",
+      "end": "12:11",
+      "text": "phase but of course what we can conclude"
+    },
+    {
+      "start": "12:11",
+      "end": "12:15",
+      "text": "phase but of course what we can conclude is that there is going to be some"
+    },
+    {
+      "start": "12:15",
+      "end": "12:15",
+      "text": "is that there is going to be some"
+    },
+    {
+      "start": "12:15",
+      "end": "12:18",
+      "text": "is that there is going to be some particular edge which is part of some"
+    },
+    {
+      "start": "12:18",
+      "end": "12:18",
+      "text": "particular edge which is part of some"
+    },
+    {
+      "start": "12:18",
+      "end": "12:23",
+      "text": "particular edge which is part of some cycle and there are two phases on the"
+    },
+    {
+      "start": "12:23",
+      "end": "12:23",
+      "text": "cycle and there are two phases on the"
+    },
+    {
+      "start": "12:23",
+      "end": "12:25",
+      "text": "cycle and there are two phases on the other side of this edge so let's say"
+    },
+    {
+      "start": "12:25",
+      "end": "12:25",
+      "text": "other side of this edge so let's say"
+    },
+    {
+      "start": "12:25",
+      "end": "12:27",
+      "text": "other side of this edge so let's say that that's F 1 and F 2 if you remove"
+    },
+    {
+      "start": "12:27",
+      "end": "12:27",
+      "text": "that that's F 1 and F 2 if you remove"
+    },
+    {
+      "start": "12:27",
+      "end": "12:31",
+      "text": "that that's F 1 and F 2 if you remove this particular edge from the graph you"
+    },
+    {
+      "start": "12:31",
+      "end": "12:31",
+      "text": "this particular edge from the graph you"
+    },
+    {
+      "start": "12:31",
+      "end": "12:33",
+      "text": "this particular edge from the graph you will get a smaller graph and in that"
+    },
+    {
+      "start": "12:33",
+      "end": "12:33",
+      "text": "will get a smaller graph and in that"
+    },
+    {
+      "start": "12:33",
+      "end": "12:36",
+      "text": "will get a smaller graph and in that smaller graph what we can say is the"
+    },
+    {
+      "start": "12:36",
+      "end": "12:36",
+      "text": "smaller graph what we can say is the"
+    },
+    {
+      "start": "12:36",
+      "end": "12:38",
+      "text": "smaller graph what we can say is the number of vertices do not change number"
+    },
+    {
+      "start": "12:38",
+      "end": "12:38",
+      "text": "number of vertices do not change number"
+    },
+    {
+      "start": "12:38",
+      "end": "12:40",
+      "text": "number of vertices do not change number of edges have reduced by one"
+    },
+    {
+      "start": "12:40",
+      "end": "12:40",
+      "text": "of edges have reduced by one"
+    },
+    {
+      "start": "12:40",
+      "end": "12:44",
+      "text": "of edges have reduced by one the faces f1 and f2 is going to coil as"
+    },
+    {
+      "start": "12:44",
+      "end": "12:44",
+      "text": "the faces f1 and f2 is going to coil as"
+    },
+    {
+      "start": "12:44",
+      "end": "12:47",
+      "text": "the faces f1 and f2 is going to coil as interesting single-phase so we will now"
+    },
+    {
+      "start": "12:47",
+      "end": "12:47",
+      "text": "interesting single-phase so we will now"
+    },
+    {
+      "start": "12:47",
+      "end": "12:52",
+      "text": "interesting single-phase so we will now be N and E will be let us say me Prime"
+    },
+    {
+      "start": "12:52",
+      "end": "12:52",
+      "text": "be N and E will be let us say me Prime"
+    },
+    {
+      "start": "12:52",
+      "end": "12:55",
+      "text": "be N and E will be let us say me Prime so if you think of this as a reduced"
+    },
+    {
+      "start": "12:55",
+      "end": "12:55",
+      "text": "so if you think of this as a reduced"
+    },
+    {
+      "start": "12:55",
+      "end": "12:57",
+      "text": "so if you think of this as a reduced graph the number of vertices in the"
+    },
+    {
+      "start": "12:57",
+      "end": "12:57",
+      "text": "graph the number of vertices in the"
+    },
+    {
+      "start": "12:57",
+      "end": "12:59",
+      "text": "graph the number of vertices in the reduced graph is the same as the"
+    },
+    {
+      "start": "12:59",
+      "end": "12:59",
+      "text": "reduced graph is the same as the"
+    },
+    {
+      "start": "12:59",
+      "end": "13:00",
+      "text": "reduced graph is the same as the original one and E prime will be equal"
+    },
+    {
+      "start": "13:00",
+      "end": "13:00",
+      "text": "original one and E prime will be equal"
+    },
+    {
+      "start": "13:00",
+      "end": "13:06",
+      "text": "original one and E prime will be equal to e minus 1 and F prime will be F minus"
+    },
+    {
+      "start": "13:06",
+      "end": "13:06",
+      "text": "to e minus 1 and F prime will be F minus"
+    },
+    {
+      "start": "13:06",
+      "end": "13:09",
+      "text": "to e minus 1 and F prime will be F minus 1 and by induction hypothesis we can say"
+    },
+    {
+      "start": "13:09",
+      "end": "13:09",
+      "text": "1 and by induction hypothesis we can say"
+    },
+    {
+      "start": "13:09",
+      "end": "13:17",
+      "text": "1 and by induction hypothesis we can say that V prime minus e prime plus F must"
+    },
+    {
+      "start": "13:17",
+      "end": "13:17",
+      "text": "that V prime minus e prime plus F must"
+    },
+    {
+      "start": "13:17",
+      "end": "13:18",
+      "text": "that V prime minus e prime plus F must be equal to plus F prime must be equal"
+    },
+    {
+      "start": "13:18",
+      "end": "13:18",
+      "text": "be equal to plus F prime must be equal"
+    },
+    {
+      "start": "13:18",
+      "end": "13:25",
+      "text": "be equal to plus F prime must be equal to 2 so this is equal to V and this is"
+    },
+    {
+      "start": "13:25",
+      "end": "13:25",
+      "text": "to 2 so this is equal to V and this is"
+    },
+    {
+      "start": "13:25",
+      "end": "13:28",
+      "text": "to 2 so this is equal to V and this is equal to e minus 1 and this is equal to"
+    },
+    {
+      "start": "13:28",
+      "end": "13:28",
+      "text": "equal to e minus 1 and this is equal to"
+    },
+    {
+      "start": "13:28",
+      "end": "13:32",
+      "text": "equal to e minus 1 and this is equal to F minus 1 ok so that can be rewritten as"
+    },
+    {
+      "start": "13:32",
+      "end": "13:32",
+      "text": "F minus 1 ok so that can be rewritten as"
+    },
+    {
+      "start": "13:32",
+      "end": "13:37",
+      "text": "F minus 1 ok so that can be rewritten as V minus E Plus F is equal to 2 ok so"
+    },
+    {
+      "start": "13:37",
+      "end": "13:37",
+      "text": "V minus E Plus F is equal to 2 ok so"
+    },
+    {
+      "start": "13:37",
+      "end": "13:38",
+      "text": "V minus E Plus F is equal to 2 ok so that's a straightforward proof of"
+    },
+    {
+      "start": "13:38",
+      "end": "13:38",
+      "text": "that's a straightforward proof of"
+    },
+    {
+      "start": "13:38",
+      "end": "13:43",
+      "text": "that's a straightforward proof of Euler's planarity theorem let's try and"
+    },
+    {
+      "start": "13:43",
+      "end": "13:43",
+      "text": "Euler's planarity theorem let's try and"
+    },
+    {
+      "start": "13:43",
+      "end": "13:49",
+      "text": "Euler's planarity theorem let's try and show that K 3 3 is not planar this is"
+    },
+    {
+      "start": "13:49",
+      "end": "13:49",
+      "text": "show that K 3 3 is not planar this is"
+    },
+    {
+      "start": "13:49",
+      "end": "13:52",
+      "text": "show that K 3 3 is not planar this is what we had this is our main objective"
+    },
+    {
+      "start": "13:52",
+      "end": "13:52",
+      "text": "what we had this is our main objective"
+    },
+    {
+      "start": "13:52",
+      "end": "13:55",
+      "text": "what we had this is our main objective let's try and prove this in order to do"
+    },
+    {
+      "start": "13:55",
+      "end": "13:55",
+      "text": "let's try and prove this in order to do"
+    },
+    {
+      "start": "13:55",
+      "end": "13:58",
+      "text": "let's try and prove this in order to do that what we will we will try and derive"
+    },
+    {
+      "start": "13:58",
+      "end": "13:58",
+      "text": "that what we will we will try and derive"
+    },
+    {
+      "start": "13:58",
+      "end": "14:01",
+      "text": "that what we will we will try and derive a corollary of Euler's penality theorem"
+    },
+    {
+      "start": "14:01",
+      "end": "14:01",
+      "text": "a corollary of Euler's penality theorem"
+    },
+    {
+      "start": "14:01",
+      "end": "14:04",
+      "text": "a corollary of Euler's penality theorem so now if we look at simple graphs that"
+    },
+    {
+      "start": "14:04",
+      "end": "14:04",
+      "text": "so now if we look at simple graphs that"
+    },
+    {
+      "start": "14:04",
+      "end": "14:06",
+      "text": "so now if we look at simple graphs that is graphs without self loops or parallel"
+    },
+    {
+      "start": "14:06",
+      "end": "14:06",
+      "text": "is graphs without self loops or parallel"
+    },
+    {
+      "start": "14:06",
+      "end": "14:11",
+      "text": "is graphs without self loops or parallel edges so let us look at any planar graph"
+    },
+    {
+      "start": "14:11",
+      "end": "14:11",
+      "text": "edges so let us look at any planar graph"
+    },
+    {
+      "start": "14:11",
+      "end": "14:14",
+      "text": "edges so let us look at any planar graph and any planar graph will have drawing"
+    },
+    {
+      "start": "14:14",
+      "end": "14:14",
+      "text": "and any planar graph will have drawing"
+    },
+    {
+      "start": "14:14",
+      "end": "14:17",
+      "text": "and any planar graph will have drawing or an embedding in the plane now if you"
+    },
+    {
+      "start": "14:17",
+      "end": "14:17",
+      "text": "or an embedding in the plane now if you"
+    },
+    {
+      "start": "14:17",
+      "end": "14:22",
+      "text": "or an embedding in the plane now if you look at a particular edge any edge is"
+    },
+    {
+      "start": "14:22",
+      "end": "14:22",
+      "text": "look at a particular edge any edge is"
+    },
+    {
+      "start": "14:22",
+      "end": "14:25",
+      "text": "look at a particular edge any edge is shared by at most two faces so let's"
+    },
+    {
+      "start": "14:25",
+      "end": "14:25",
+      "text": "shared by at most two faces so let's"
+    },
+    {
+      "start": "14:25",
+      "end": "14:30",
+      "text": "shared by at most two faces so let's look at a face and if you look at any"
+    },
+    {
+      "start": "14:30",
+      "end": "14:30",
+      "text": "look at a face and if you look at any"
+    },
+    {
+      "start": "14:30",
+      "end": "14:33",
+      "text": "look at a face and if you look at any face there are some number of edges that"
+    },
+    {
+      "start": "14:33",
+      "end": "14:33",
+      "text": "face there are some number of edges that"
+    },
+    {
+      "start": "14:33",
+      "end": "14:36",
+      "text": "face there are some number of edges that is bounding this particular face ok so"
+    },
+    {
+      "start": "14:36",
+      "end": "14:36",
+      "text": "is bounding this particular face ok so"
+    },
+    {
+      "start": "14:36",
+      "end": "14:41",
+      "text": "is bounding this particular face ok so if this is a planar embedding of a graph"
+    },
+    {
+      "start": "14:41",
+      "end": "14:41",
+      "text": "if this is a planar embedding of a graph"
+    },
+    {
+      "start": "14:41",
+      "end": "14:46",
+      "text": "if this is a planar embedding of a graph the number of faces here are let say"
+    },
+    {
+      "start": "14:46",
+      "end": "14:46",
+      "text": "the number of faces here are let say"
+    },
+    {
+      "start": "14:46",
+      "end": "14:51",
+      "text": "the number of faces here are let say this is f1 this is f2 left 3 and the"
+    },
+    {
+      "start": "14:51",
+      "end": "14:51",
+      "text": "this is f1 this is f2 left 3 and the"
+    },
+    {
+      "start": "14:51",
+      "end": "14:53",
+      "text": "this is f1 this is f2 left 3 and the outer face is f4"
+    },
+    {
+      "start": "14:53",
+      "end": "14:53",
+      "text": "outer face is f4"
+    },
+    {
+      "start": "14:53",
+      "end": "15:00",
+      "text": "outer face is f4 now if we look at f1 these edges e1 e2"
+    },
+    {
+      "start": "15:00",
+      "end": "15:00",
+      "text": "now if we look at f1 these edges e1 e2"
+    },
+    {
+      "start": "15:00",
+      "end": "15:06",
+      "text": "now if we look at f1 these edges e1 e2 e3 e4 e5 and e6 are the boundary edges"
+    },
+    {
+      "start": "15:06",
+      "end": "15:06",
+      "text": "e3 e4 e5 and e6 are the boundary edges"
+    },
+    {
+      "start": "15:06",
+      "end": "15:09",
+      "text": "e3 e4 e5 and e6 are the boundary edges and you can do this for each particular"
+    },
+    {
+      "start": "15:09",
+      "end": "15:09",
+      "text": "and you can do this for each particular"
+    },
+    {
+      "start": "15:09",
+      "end": "15:18",
+      "text": "and you can do this for each particular face for f3 the boundary edges are going"
+    },
+    {
+      "start": "15:18",
+      "end": "15:18",
+      "text": "face for f3 the boundary edges are going"
+    },
+    {
+      "start": "15:18",
+      "end": "15:24",
+      "text": "face for f3 the boundary edges are going to be e 5e 1011 d2 note that any edge"
+    },
+    {
+      "start": "15:24",
+      "end": "15:24",
+      "text": "to be e 5e 1011 d2 note that any edge"
+    },
+    {
+      "start": "15:24",
+      "end": "15:28",
+      "text": "to be e 5e 1011 d2 note that any edge can act or serve as the boundary edge"
+    },
+    {
+      "start": "15:28",
+      "end": "15:28",
+      "text": "can act or serve as the boundary edge"
+    },
+    {
+      "start": "15:28",
+      "end": "15:32",
+      "text": "can act or serve as the boundary edge for at most two faces okay so so"
+    },
+    {
+      "start": "15:32",
+      "end": "15:32",
+      "text": "for at most two faces okay so so"
+    },
+    {
+      "start": "15:32",
+      "end": "15:36",
+      "text": "for at most two faces okay so so associated with each face we can have"
+    },
+    {
+      "start": "15:36",
+      "end": "15:36",
+      "text": "associated with each face we can have"
+    },
+    {
+      "start": "15:36",
+      "end": "15:40",
+      "text": "associated with each face we can have this number F I this denotes the number"
+    },
+    {
+      "start": "15:40",
+      "end": "15:40",
+      "text": "this number F I this denotes the number"
+    },
+    {
+      "start": "15:40",
+      "end": "15:49",
+      "text": "this number F I this denotes the number of boundary edges so if you sum up these"
+    },
+    {
+      "start": "15:49",
+      "end": "15:49",
+      "text": "of boundary edges so if you sum up these"
+    },
+    {
+      "start": "15:49",
+      "end": "15:53",
+      "text": "of boundary edges so if you sum up these FIS over all the faces what you will get"
+    },
+    {
+      "start": "15:53",
+      "end": "15:53",
+      "text": "FIS over all the faces what you will get"
+    },
+    {
+      "start": "15:53",
+      "end": "15:58",
+      "text": "FIS over all the faces what you will get is 2 times the number of edges okay now"
+    },
+    {
+      "start": "15:58",
+      "end": "15:58",
+      "text": "is 2 times the number of edges okay now"
+    },
+    {
+      "start": "15:58",
+      "end": "16:02",
+      "text": "is 2 times the number of edges okay now if you take a simple graph each phase is"
+    },
+    {
+      "start": "16:02",
+      "end": "16:02",
+      "text": "if you take a simple graph each phase is"
+    },
+    {
+      "start": "16:02",
+      "end": "16:05",
+      "text": "if you take a simple graph each phase is going to have a boundary with at least"
+    },
+    {
+      "start": "16:05",
+      "end": "16:05",
+      "text": "going to have a boundary with at least"
+    },
+    {
+      "start": "16:05",
+      "end": "16:15",
+      "text": "going to have a boundary with at least three edges for a simple graph"
+    },
+    {
+      "start": "16:28",
+      "end": "16:28",
+      "text": "every face will have at least three"
+    },
+    {
+      "start": "16:28",
+      "end": "16:33",
+      "text": "every face will have at least three edges okay so here in this we are"
+    },
+    {
+      "start": "16:33",
+      "end": "16:33",
+      "text": "edges okay so here in this we are"
+    },
+    {
+      "start": "16:33",
+      "end": "16:35",
+      "text": "edges okay so here in this we are assuming that every edges mean while"
+    },
+    {
+      "start": "16:35",
+      "end": "16:35",
+      "text": "assuming that every edges mean while"
+    },
+    {
+      "start": "16:35",
+      "end": "16:38",
+      "text": "assuming that every edges mean while writing this particular formula we are"
+    },
+    {
+      "start": "16:38",
+      "end": "16:38",
+      "text": "writing this particular formula we are"
+    },
+    {
+      "start": "16:38",
+      "end": "16:41",
+      "text": "writing this particular formula we are assuming that there are no vertices of"
+    },
+    {
+      "start": "16:41",
+      "end": "16:41",
+      "text": "assuming that there are no vertices of"
+    },
+    {
+      "start": "16:41",
+      "end": "16:44",
+      "text": "assuming that there are no vertices of degree one we can we can argue that"
+    },
+    {
+      "start": "16:44",
+      "end": "16:44",
+      "text": "degree one we can we can argue that"
+    },
+    {
+      "start": "16:44",
+      "end": "16:47",
+      "text": "degree one we can we can argue that summation F is two times the number of"
+    },
+    {
+      "start": "16:47",
+      "end": "16:47",
+      "text": "summation F is two times the number of"
+    },
+    {
+      "start": "16:47",
+      "end": "16:51",
+      "text": "summation F is two times the number of edges because if you have vertices with"
+    },
+    {
+      "start": "16:51",
+      "end": "16:51",
+      "text": "edges because if you have vertices with"
+    },
+    {
+      "start": "16:51",
+      "end": "16:53",
+      "text": "edges because if you have vertices with degree 1 the edge corresponding to that"
+    },
+    {
+      "start": "16:53",
+      "end": "16:53",
+      "text": "degree 1 the edge corresponding to that"
+    },
+    {
+      "start": "16:53",
+      "end": "16:57",
+      "text": "degree 1 the edge corresponding to that is part of only one phase so the two"
+    },
+    {
+      "start": "16:57",
+      "end": "16:57",
+      "text": "is part of only one phase so the two"
+    },
+    {
+      "start": "16:57",
+      "end": "17:01",
+      "text": "is part of only one phase so the two term does not come okay our objective is"
+    },
+    {
+      "start": "17:01",
+      "end": "17:01",
+      "text": "term does not come okay our objective is"
+    },
+    {
+      "start": "17:01",
+      "end": "17:13",
+      "text": "term does not come okay our objective is to show that K 3 3 is not planar in"
+    },
+    {
+      "start": "17:13",
+      "end": "17:13",
+      "text": "to show that K 3 3 is not planar in"
+    },
+    {
+      "start": "17:13",
+      "end": "17:15",
+      "text": "to show that K 3 3 is not planar in order to do this we will obtain a"
+    },
+    {
+      "start": "17:15",
+      "end": "17:15",
+      "text": "order to do this we will obtain a"
+    },
+    {
+      "start": "17:15",
+      "end": "17:19",
+      "text": "order to do this we will obtain a corollary of the Euler's planarity"
+    },
+    {
+      "start": "17:19",
+      "end": "17:19",
+      "text": "corollary of the Euler's planarity"
+    },
+    {
+      "start": "17:19",
+      "end": "17:29",
+      "text": "corollary of the Euler's planarity theorem now let G be any graph with"
+    },
+    {
+      "start": "17:32",
+      "end": "17:32",
+      "text": "so concept of a connected graph without"
+    },
+    {
+      "start": "17:32",
+      "end": "17:39",
+      "text": "so concept of a connected graph without any vertices of degree one okay so this"
+    },
+    {
+      "start": "17:39",
+      "end": "17:39",
+      "text": "any vertices of degree one okay so this"
+    },
+    {
+      "start": "17:39",
+      "end": "17:42",
+      "text": "any vertices of degree one okay so this would mean that every vertex is part of"
+    },
+    {
+      "start": "17:42",
+      "end": "17:42",
+      "text": "would mean that every vertex is part of"
+    },
+    {
+      "start": "17:42",
+      "end": "17:45",
+      "text": "would mean that every vertex is part of some particular cycle okay now if we"
+    },
+    {
+      "start": "17:45",
+      "end": "17:45",
+      "text": "some particular cycle okay now if we"
+    },
+    {
+      "start": "17:45",
+      "end": "17:47",
+      "text": "some particular cycle okay now if we further assume that this is a planar"
+    },
+    {
+      "start": "17:47",
+      "end": "17:47",
+      "text": "further assume that this is a planar"
+    },
+    {
+      "start": "17:47",
+      "end": "17:50",
+      "text": "further assume that this is a planar graph it is an embedding okay so"
+    },
+    {
+      "start": "17:50",
+      "end": "17:50",
+      "text": "graph it is an embedding okay so"
+    },
+    {
+      "start": "17:50",
+      "end": "17:52",
+      "text": "graph it is an embedding okay so consider a particular embedding on the"
+    },
+    {
+      "start": "17:52",
+      "end": "17:52",
+      "text": "consider a particular embedding on the"
+    },
+    {
+      "start": "17:52",
+      "end": "18:00",
+      "text": "consider a particular embedding on the graph and if you look at the faces if we"
+    },
+    {
+      "start": "18:00",
+      "end": "18:00",
+      "text": "graph and if you look at the faces if we"
+    },
+    {
+      "start": "18:00",
+      "end": "18:06",
+      "text": "graph and if you look at the faces if we denote them by f1 f2 f3 f4 and and so on"
+    },
+    {
+      "start": "18:06",
+      "end": "18:06",
+      "text": "denote them by f1 f2 f3 f4 and and so on"
+    },
+    {
+      "start": "18:06",
+      "end": "18:10",
+      "text": "denote them by f1 f2 f3 f4 and and so on we can associate with each phase its"
+    },
+    {
+      "start": "18:10",
+      "end": "18:10",
+      "text": "we can associate with each phase its"
+    },
+    {
+      "start": "18:10",
+      "end": "18:15",
+      "text": "we can associate with each phase its boundary edges for example these red"
+    },
+    {
+      "start": "18:15",
+      "end": "18:15",
+      "text": "boundary edges for example these red"
+    },
+    {
+      "start": "18:15",
+      "end": "18:18",
+      "text": "boundary edges for example these red edges are the boundary edges of the face"
+    },
+    {
+      "start": "18:18",
+      "end": "18:18",
+      "text": "edges are the boundary edges of the face"
+    },
+    {
+      "start": "18:18",
+      "end": "18:31",
+      "text": "edges are the boundary edges of the face f4 now let small fi denote the number of"
+    },
+    {
+      "start": "18:31",
+      "end": "18:31",
+      "text": "f4 now let small fi denote the number of"
+    },
+    {
+      "start": "18:31",
+      "end": "18:42",
+      "text": "f4 now let small fi denote the number of boundary edges for the face if I so note"
+    },
+    {
+      "start": "18:42",
+      "end": "18:42",
+      "text": "boundary edges for the face if I so note"
+    },
+    {
+      "start": "18:42",
+      "end": "18:46",
+      "text": "boundary edges for the face if I so note that every edge is part of precisely two"
+    },
+    {
+      "start": "18:46",
+      "end": "18:46",
+      "text": "that every edge is part of precisely two"
+    },
+    {
+      "start": "18:46",
+      "end": "18:49",
+      "text": "that every edge is part of precisely two faces for example if you look at this"
+    },
+    {
+      "start": "18:49",
+      "end": "18:49",
+      "text": "faces for example if you look at this"
+    },
+    {
+      "start": "18:49",
+      "end": "18:53",
+      "text": "faces for example if you look at this blue edge that is a boundary edge of f3"
+    },
+    {
+      "start": "18:53",
+      "end": "18:53",
+      "text": "blue edge that is a boundary edge of f3"
+    },
+    {
+      "start": "18:53",
+      "end": "18:57",
+      "text": "blue edge that is a boundary edge of f3 + f1 okay and therefore we can conclude"
+    },
+    {
+      "start": "18:57",
+      "end": "18:57",
+      "text": "+ f1 okay and therefore we can conclude"
+    },
+    {
+      "start": "18:57",
+      "end": "19:03",
+      "text": "+ f1 okay and therefore we can conclude that summation fi over all the faces"
+    },
+    {
+      "start": "19:03",
+      "end": "19:03",
+      "text": "that summation fi over all the faces"
+    },
+    {
+      "start": "19:03",
+      "end": "19:06",
+      "text": "that summation fi over all the faces that is going to be equal to twice the"
+    },
+    {
+      "start": "19:06",
+      "end": "19:06",
+      "text": "that is going to be equal to twice the"
+    },
+    {
+      "start": "19:06",
+      "end": "19:10",
+      "text": "that is going to be equal to twice the number of edges because each boundary"
+    },
+    {
+      "start": "19:10",
+      "end": "19:10",
+      "text": "number of edges because each boundary"
+    },
+    {
+      "start": "19:10",
+      "end": "19:14",
+      "text": "number of edges because each boundary edge is being counted twice once for"
+    },
+    {
+      "start": "19:14",
+      "end": "19:14",
+      "text": "edge is being counted twice once for"
+    },
+    {
+      "start": "19:14",
+      "end": "19:18",
+      "text": "edge is being counted twice once for each of the phase that it belongs to so"
+    },
+    {
+      "start": "19:18",
+      "end": "19:18",
+      "text": "each of the phase that it belongs to so"
+    },
+    {
+      "start": "19:18",
+      "end": "19:21",
+      "text": "each of the phase that it belongs to so now if you take a simple connected graph"
+    },
+    {
+      "start": "19:21",
+      "end": "19:21",
+      "text": "now if you take a simple connected graph"
+    },
+    {
+      "start": "19:21",
+      "end": "19:25",
+      "text": "now if you take a simple connected graph we can argue that every phase will have"
+    },
+    {
+      "start": "19:25",
+      "end": "19:25",
+      "text": "we can argue that every phase will have"
+    },
+    {
+      "start": "19:25",
+      "end": "19:38",
+      "text": "we can argue that every phase will have at least three boundary edges"
+    },
+    {
+      "start": "19:42",
+      "end": "19:42",
+      "text": "three boundary edges then efi is greater"
+    },
+    {
+      "start": "19:42",
+      "end": "19:46",
+      "text": "three boundary edges then efi is greater than or equal to three therefore if F"
+    },
+    {
+      "start": "19:46",
+      "end": "19:46",
+      "text": "than or equal to three therefore if F"
+    },
+    {
+      "start": "19:46",
+      "end": "19:49",
+      "text": "than or equal to three therefore if F was the total number of faces three F is"
+    },
+    {
+      "start": "19:49",
+      "end": "19:49",
+      "text": "was the total number of faces three F is"
+    },
+    {
+      "start": "19:49",
+      "end": "19:54",
+      "text": "was the total number of faces three F is going to be definitely so summation F I"
+    },
+    {
+      "start": "19:54",
+      "end": "19:54",
+      "text": "going to be definitely so summation F I"
+    },
+    {
+      "start": "19:54",
+      "end": "19:59",
+      "text": "going to be definitely so summation F I is at least three F this is equal to 2e"
+    },
+    {
+      "start": "19:59",
+      "end": "19:59",
+      "text": "is at least three F this is equal to 2e"
+    },
+    {
+      "start": "19:59",
+      "end": "20:06",
+      "text": "is at least three F this is equal to 2e so we can conclude that F is less than 2"
+    },
+    {
+      "start": "20:06",
+      "end": "20:06",
+      "text": "so we can conclude that F is less than 2"
+    },
+    {
+      "start": "20:06",
+      "end": "20:10",
+      "text": "so we can conclude that F is less than 2 e by 3 okay now if we substitute this in"
+    },
+    {
+      "start": "20:10",
+      "end": "20:10",
+      "text": "e by 3 okay now if we substitute this in"
+    },
+    {
+      "start": "20:10",
+      "end": "20:17",
+      "text": "e by 3 okay now if we substitute this in the Euler's formula V minus E Plus F is"
+    },
+    {
+      "start": "20:17",
+      "end": "20:17",
+      "text": "the Euler's formula V minus E Plus F is"
+    },
+    {
+      "start": "20:17",
+      "end": "20:21",
+      "text": "the Euler's formula V minus E Plus F is equal to 2 what we get is e is equal to"
+    },
+    {
+      "start": "20:21",
+      "end": "20:21",
+      "text": "equal to 2 what we get is e is equal to"
+    },
+    {
+      "start": "20:21",
+      "end": "20:25",
+      "text": "equal to 2 what we get is e is equal to V plus F minus 2 and that's going to be"
+    },
+    {
+      "start": "20:25",
+      "end": "20:25",
+      "text": "V plus F minus 2 and that's going to be"
+    },
+    {
+      "start": "20:25",
+      "end": "20:31",
+      "text": "V plus F minus 2 and that's going to be less than V plus 2 e by 3 minus 2"
+    },
+    {
+      "start": "20:31",
+      "end": "20:31",
+      "text": "less than V plus 2 e by 3 minus 2"
+    },
+    {
+      "start": "20:31",
+      "end": "20:37",
+      "text": "less than V plus 2 e by 3 minus 2 therefore E is less than 3 week - 6 so"
+    },
+    {
+      "start": "20:37",
+      "end": "20:37",
+      "text": "therefore E is less than 3 week - 6 so"
+    },
+    {
+      "start": "20:37",
+      "end": "20:40",
+      "text": "therefore E is less than 3 week - 6 so this is a corollary that we can use and"
+    },
+    {
+      "start": "20:40",
+      "end": "20:40",
+      "text": "this is a corollary that we can use and"
+    },
+    {
+      "start": "20:40",
+      "end": "20:43",
+      "text": "this is a corollary that we can use and if we assume that graph doesn't have any"
+    },
+    {
+      "start": "20:43",
+      "end": "20:43",
+      "text": "if we assume that graph doesn't have any"
+    },
+    {
+      "start": "20:43",
+      "end": "20:47",
+      "text": "if we assume that graph doesn't have any cycles of length greater than length"
+    },
+    {
+      "start": "20:47",
+      "end": "20:47",
+      "text": "cycles of length greater than length"
+    },
+    {
+      "start": "20:47",
+      "end": "20:52",
+      "text": "cycles of length greater than length less than 3 so then we can conclude that"
+    },
+    {
+      "start": "20:52",
+      "end": "20:52",
+      "text": "less than 3 so then we can conclude that"
+    },
+    {
+      "start": "20:52",
+      "end": "20:54",
+      "text": "less than 3 so then we can conclude that every phase is at least four boundary"
+    },
+    {
+      "start": "20:54",
+      "end": "20:54",
+      "text": "every phase is at least four boundary"
+    },
+    {
+      "start": "20:54",
+      "end": "21:03",
+      "text": "every phase is at least four boundary edges so if the graph is triangle free"
+    },
+    {
+      "start": "21:07",
+      "end": "21:07",
+      "text": "then what we have is every face must"
+    },
+    {
+      "start": "21:07",
+      "end": "21:11",
+      "text": "then what we have is every face must contain at least four edges so for F"
+    },
+    {
+      "start": "21:11",
+      "end": "21:11",
+      "text": "contain at least four edges so for F"
+    },
+    {
+      "start": "21:11",
+      "end": "21:18",
+      "text": "contain at least four edges so for F will be less than summation fi over all"
+    },
+    {
+      "start": "21:18",
+      "end": "21:18",
+      "text": "will be less than summation fi over all"
+    },
+    {
+      "start": "21:18",
+      "end": "21:21",
+      "text": "will be less than summation fi over all the phases and this is equal to 2e so f"
+    },
+    {
+      "start": "21:21",
+      "end": "21:21",
+      "text": "the phases and this is equal to 2e so f"
+    },
+    {
+      "start": "21:21",
+      "end": "21:25",
+      "text": "the phases and this is equal to 2e so f is less than e by 2 and in that case if"
+    },
+    {
+      "start": "21:25",
+      "end": "21:25",
+      "text": "is less than e by 2 and in that case if"
+    },
+    {
+      "start": "21:25",
+      "end": "21:26",
+      "text": "is less than e by 2 and in that case if we substitute in the formula is equal to"
+    },
+    {
+      "start": "21:26",
+      "end": "21:26",
+      "text": "we substitute in the formula is equal to"
+    },
+    {
+      "start": "21:26",
+      "end": "21:30",
+      "text": "we substitute in the formula is equal to V Plus F minus 2 we will get E is less"
+    },
+    {
+      "start": "21:30",
+      "end": "21:30",
+      "text": "V Plus F minus 2 we will get E is less"
+    },
+    {
+      "start": "21:30",
+      "end": "21:36",
+      "text": "V Plus F minus 2 we will get E is less than or equal to V + e by 2 minus 2 so"
+    },
+    {
+      "start": "21:36",
+      "end": "21:36",
+      "text": "than or equal to V + e by 2 minus 2 so"
+    },
+    {
+      "start": "21:36",
+      "end": "21:38",
+      "text": "than or equal to V + e by 2 minus 2 so there we can conclude that E is going to"
+    },
+    {
+      "start": "21:38",
+      "end": "21:38",
+      "text": "there we can conclude that E is going to"
+    },
+    {
+      "start": "21:38",
+      "end": "21:43",
+      "text": "there we can conclude that E is going to be less than 2 V minus 4 so these are"
+    },
+    {
+      "start": "21:43",
+      "end": "21:43",
+      "text": "be less than 2 V minus 4 so these are"
+    },
+    {
+      "start": "21:43",
+      "end": "21:46",
+      "text": "be less than 2 V minus 4 so these are the two things that we can use in order"
+    },
+    {
+      "start": "21:46",
+      "end": "21:46",
+      "text": "the two things that we can use in order"
+    },
+    {
+      "start": "21:46",
+      "end": "21:49",
+      "text": "the two things that we can use in order to show that various graphs are non"
+    },
+    {
+      "start": "21:49",
+      "end": "21:49",
+      "text": "to show that various graphs are non"
+    },
+    {
+      "start": "21:49",
+      "end": "21:50",
+      "text": "to show that various graphs are non planar"
+    },
+    {
+      "start": "21:50",
+      "end": "21:50",
+      "text": "planar"
+    },
+    {
+      "start": "21:50",
+      "end": "21:55",
+      "text": "planar so let's do that so the first thing we"
+    },
+    {
+      "start": "21:55",
+      "end": "21:55",
+      "text": "so let's do that so the first thing we"
+    },
+    {
+      "start": "21:55",
+      "end": "22:02",
+      "text": "so let's do that so the first thing we will show is k33 is non planar so this"
+    },
+    {
+      "start": "22:02",
+      "end": "22:02",
+      "text": "will show is k33 is non planar so this"
+    },
+    {
+      "start": "22:02",
+      "end": "22:13",
+      "text": "will show is k33 is non planar so this is six vertices and nine edges okay if"
+    },
+    {
+      "start": "22:13",
+      "end": "22:13",
+      "text": "is six vertices and nine edges okay if"
+    },
+    {
+      "start": "22:13",
+      "end": "22:16",
+      "text": "is six vertices and nine edges okay if we substitute in E is less than 2 V"
+    },
+    {
+      "start": "22:16",
+      "end": "22:16",
+      "text": "we substitute in E is less than 2 V"
+    },
+    {
+      "start": "22:16",
+      "end": "22:22",
+      "text": "we substitute in E is less than 2 V minus 4 E is equal to 9 and should be"
+    },
+    {
+      "start": "22:22",
+      "end": "22:22",
+      "text": "minus 4 E is equal to 9 and should be"
+    },
+    {
+      "start": "22:22",
+      "end": "22:25",
+      "text": "minus 4 E is equal to 9 and should be less than or equal to 2 times V that is"
+    },
+    {
+      "start": "22:25",
+      "end": "22:25",
+      "text": "less than or equal to 2 times V that is"
+    },
+    {
+      "start": "22:25",
+      "end": "22:31",
+      "text": "less than or equal to 2 times V that is 2 into 6 minus 4 that's equal to 8 so 9"
+    },
+    {
+      "start": "22:31",
+      "end": "22:31",
+      "text": "2 into 6 minus 4 that's equal to 8 so 9"
+    },
+    {
+      "start": "22:31",
+      "end": "22:34",
+      "text": "2 into 6 minus 4 that's equal to 8 so 9 must be less than 8 K 33 was planar it"
+    },
+    {
+      "start": "22:34",
+      "end": "22:34",
+      "text": "must be less than 8 K 33 was planar it"
+    },
+    {
+      "start": "22:34",
+      "end": "22:36",
+      "text": "must be less than 8 K 33 was planar it must satisfy this particular relation"
+    },
+    {
+      "start": "22:36",
+      "end": "22:36",
+      "text": "must satisfy this particular relation"
+    },
+    {
+      "start": "22:36",
+      "end": "22:39",
+      "text": "must satisfy this particular relation because K 33 is a bipartite graph it is"
+    },
+    {
+      "start": "22:39",
+      "end": "22:39",
+      "text": "because K 33 is a bipartite graph it is"
+    },
+    {
+      "start": "22:39",
+      "end": "22:42",
+      "text": "because K 33 is a bipartite graph it is triangle free and therefore this"
+    },
+    {
+      "start": "22:42",
+      "end": "22:42",
+      "text": "triangle free and therefore this"
+    },
+    {
+      "start": "22:42",
+      "end": "22:45",
+      "text": "triangle free and therefore this condition applies and if it applies the"
+    },
+    {
+      "start": "22:45",
+      "end": "22:45",
+      "text": "condition applies and if it applies the"
+    },
+    {
+      "start": "22:45",
+      "end": "22:47",
+      "text": "condition applies and if it applies the 9 should be less than 8 and that's not"
+    },
+    {
+      "start": "22:47",
+      "end": "22:47",
+      "text": "9 should be less than 8 and that's not"
+    },
+    {
+      "start": "22:47",
+      "end": "22:51",
+      "text": "9 should be less than 8 and that's not the case so we have our contradiction if"
+    },
+    {
+      "start": "22:51",
+      "end": "22:51",
+      "text": "the case so we have our contradiction if"
+    },
+    {
+      "start": "22:51",
+      "end": "22:55",
+      "text": "the case so we have our contradiction if we look at K 5 that's another graph that"
+    },
+    {
+      "start": "22:55",
+      "end": "22:55",
+      "text": "we look at K 5 that's another graph that"
+    },
+    {
+      "start": "22:55",
+      "end": "22:58",
+      "text": "we look at K 5 that's another graph that we can show to be non planar we showed"
+    },
+    {
+      "start": "22:58",
+      "end": "22:58",
+      "text": "we can show to be non planar we showed"
+    },
+    {
+      "start": "22:58",
+      "end": "23:01",
+      "text": "we can show to be non planar we showed that particular graph obtained by"
+    },
+    {
+      "start": "23:01",
+      "end": "23:02",
+      "text": "that particular graph obtained by"
+    },
+    {
+      "start": "23:02",
+      "end": "23:03",
+      "text": "that particular graph obtained by removing this one edge from K 5 was"
+    },
+    {
+      "start": "23:03",
+      "end": "23:03",
+      "text": "removing this one edge from K 5 was"
+    },
+    {
+      "start": "23:03",
+      "end": "23:06",
+      "text": "removing this one edge from K 5 was planar but if we include that edge into"
+    },
+    {
+      "start": "23:06",
+      "end": "23:06",
+      "text": "planar but if we include that edge into"
+    },
+    {
+      "start": "23:06",
+      "end": "23:11",
+      "text": "planar but if we include that edge into it we have K 5 and K 5 we will show as a"
+    },
+    {
+      "start": "23:11",
+      "end": "23:11",
+      "text": "it we have K 5 and K 5 we will show as a"
+    },
+    {
+      "start": "23:11",
+      "end": "23:28",
+      "text": "it we have K 5 and K 5 we will show as a non planar graph"
+    },
+    {
+      "start": "23:30",
+      "end": "23:30",
+      "text": "okay again it's simple application of"
+    },
+    {
+      "start": "23:30",
+      "end": "23:32",
+      "text": "okay again it's simple application of this particular corollary number of"
+    },
+    {
+      "start": "23:32",
+      "end": "23:32",
+      "text": "this particular corollary number of"
+    },
+    {
+      "start": "23:32",
+      "end": "23:36",
+      "text": "this particular corollary number of edges in k5 is 10 because there were two"
+    },
+    {
+      "start": "23:36",
+      "end": "23:36",
+      "text": "edges in k5 is 10 because there were two"
+    },
+    {
+      "start": "23:36",
+      "end": "23:42",
+      "text": "edges in k5 is 10 because there were two Pentagon's and 10 should be less than 3"
+    },
+    {
+      "start": "23:42",
+      "end": "23:42",
+      "text": "Pentagon's and 10 should be less than 3"
+    },
+    {
+      "start": "23:42",
+      "end": "23:45",
+      "text": "Pentagon's and 10 should be less than 3 times the number of vertices the number"
+    },
+    {
+      "start": "23:45",
+      "end": "23:45",
+      "text": "times the number of vertices the number"
+    },
+    {
+      "start": "23:45",
+      "end": "23:49",
+      "text": "times the number of vertices the number of vertices was 5 minus 6 so this is 15"
+    },
+    {
+      "start": "23:49",
+      "end": "23:49",
+      "text": "of vertices was 5 minus 6 so this is 15"
+    },
+    {
+      "start": "23:49",
+      "end": "23:52",
+      "text": "of vertices was 5 minus 6 so this is 15 minus 6 the 10 should be less than 9"
+    },
+    {
+      "start": "23:52",
+      "end": "23:52",
+      "text": "minus 6 the 10 should be less than 9"
+    },
+    {
+      "start": "23:52",
+      "end": "23:56",
+      "text": "minus 6 the 10 should be less than 9 if k5 we're planar so that is a proof of"
+    },
+    {
+      "start": "23:56",
+      "end": "23:56",
+      "text": "if k5 we're planar so that is a proof of"
+    },
+    {
+      "start": "23:56",
+      "end": "23:59",
+      "text": "if k5 we're planar so that is a proof of non-linearity of k5 look at a slightly"
+    },
+    {
+      "start": "23:59",
+      "end": "23:59",
+      "text": "non-linearity of k5 look at a slightly"
+    },
+    {
+      "start": "23:59",
+      "end": "24:02",
+      "text": "non-linearity of k5 look at a slightly more complicated example but essentially"
+    },
+    {
+      "start": "24:02",
+      "end": "24:02",
+      "text": "more complicated example but essentially"
+    },
+    {
+      "start": "24:02",
+      "end": "24:04",
+      "text": "more complicated example but essentially the same principle if we look at our"
+    },
+    {
+      "start": "24:04",
+      "end": "24:04",
+      "text": "the same principle if we look at our"
+    },
+    {
+      "start": "24:04",
+      "end": "24:15",
+      "text": "the same principle if we look at our Peterson graph this is a graph with 10"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "Peterson graph this is a graph with 10"
+    },
+    {
+      "start": "24:15",
+      "end": "24:20",
+      "text": "Peterson graph this is a graph with 10 vertices so V is 10 and number of edges"
+    },
+    {
+      "start": "24:20",
+      "end": "24:20",
+      "text": "vertices so V is 10 and number of edges"
+    },
+    {
+      "start": "24:20",
+      "end": "24:26",
+      "text": "vertices so V is 10 and number of edges is 15 okay and we can show that this I"
+    },
+    {
+      "start": "24:26",
+      "end": "24:26",
+      "text": "is 15 okay and we can show that this I"
+    },
+    {
+      "start": "24:26",
+      "end": "24:29",
+      "text": "is 15 okay and we can show that this I mean this is certainly not a bipartite"
+    },
+    {
+      "start": "24:29",
+      "end": "24:29",
+      "text": "mean this is certainly not a bipartite"
+    },
+    {
+      "start": "24:29",
+      "end": "24:32",
+      "text": "mean this is certainly not a bipartite graph because it is an odd cycle so the"
+    },
+    {
+      "start": "24:32",
+      "end": "24:32",
+      "text": "graph because it is an odd cycle so the"
+    },
+    {
+      "start": "24:32",
+      "end": "24:34",
+      "text": "graph because it is an odd cycle so the only condition that we can hope to apply"
+    },
+    {
+      "start": "24:34",
+      "end": "24:34",
+      "text": "only condition that we can hope to apply"
+    },
+    {
+      "start": "24:34",
+      "end": "24:37",
+      "text": "only condition that we can hope to apply from the car all the two corollary said"
+    },
+    {
+      "start": "24:37",
+      "end": "24:37",
+      "text": "from the car all the two corollary said"
+    },
+    {
+      "start": "24:37",
+      "end": "24:45",
+      "text": "from the car all the two corollary said we had drawn us E is less than 3 V minus"
+    },
+    {
+      "start": "24:45",
+      "end": "24:45",
+      "text": "we had drawn us E is less than 3 V minus"
+    },
+    {
+      "start": "24:45",
+      "end": "24:50",
+      "text": "we had drawn us E is less than 3 V minus 6 but that condition unfortunately it"
+    },
+    {
+      "start": "24:50",
+      "end": "24:50",
+      "text": "6 but that condition unfortunately it"
+    },
+    {
+      "start": "24:50",
+      "end": "24:52",
+      "text": "6 but that condition unfortunately it doesn't lead to a contradiction because"
+    },
+    {
+      "start": "24:52",
+      "end": "24:52",
+      "text": "doesn't lead to a contradiction because"
+    },
+    {
+      "start": "24:52",
+      "end": "24:56",
+      "text": "doesn't lead to a contradiction because E is 15 and 3 V is 30 minus 6 so the"
+    },
+    {
+      "start": "24:56",
+      "end": "24:56",
+      "text": "E is 15 and 3 V is 30 minus 6 so the"
+    },
+    {
+      "start": "24:56",
+      "end": "24:58",
+      "text": "E is 15 and 3 V is 30 minus 6 so the condition holds but the condition holds"
+    },
+    {
+      "start": "24:58",
+      "end": "24:58",
+      "text": "condition holds but the condition holds"
+    },
+    {
+      "start": "24:58",
+      "end": "25:00",
+      "text": "condition holds but the condition holds doesn't necessarily mean that the graph"
+    },
+    {
+      "start": "25:00",
+      "end": "25:00",
+      "text": "doesn't necessarily mean that the graph"
+    },
+    {
+      "start": "25:00",
+      "end": "25:04",
+      "text": "doesn't necessarily mean that the graph is planar but here what we can do is we"
+    },
+    {
+      "start": "25:04",
+      "end": "25:04",
+      "text": "is planar but here what we can do is we"
+    },
+    {
+      "start": "25:04",
+      "end": "25:07",
+      "text": "is planar but here what we can do is we can look at the original condition that"
+    },
+    {
+      "start": "25:07",
+      "end": "25:07",
+      "text": "can look at the original condition that"
+    },
+    {
+      "start": "25:07",
+      "end": "25:10",
+      "text": "can look at the original condition that says summation F over all phases is"
+    },
+    {
+      "start": "25:10",
+      "end": "25:10",
+      "text": "says summation F over all phases is"
+    },
+    {
+      "start": "25:10",
+      "end": "25:15",
+      "text": "says summation F over all phases is equal to 2 e so here I mean there are no"
+    },
+    {
+      "start": "25:15",
+      "end": "25:15",
+      "text": "equal to 2 e so here I mean there are no"
+    },
+    {
+      "start": "25:15",
+      "end": "25:18",
+      "text": "equal to 2 e so here I mean there are no 4 cycles or 3 cycles"
+    },
+    {
+      "start": "25:18",
+      "end": "25:18",
+      "text": "4 cycles or 3 cycles"
+    },
+    {
+      "start": "25:18",
+      "end": "25:26",
+      "text": "4 cycles or 3 cycles ok so if you so Peter Zenger graph"
+    },
+    {
+      "start": "25:32",
+      "end": "25:32",
+      "text": "doesn't have three cycles or four cycles"
+    },
+    {
+      "start": "25:32",
+      "end": "25:34",
+      "text": "doesn't have three cycles or four cycles there's something that you can easily"
+    },
+    {
+      "start": "25:34",
+      "end": "25:34",
+      "text": "there's something that you can easily"
+    },
+    {
+      "start": "25:34",
+      "end": "25:37",
+      "text": "there's something that you can easily check and because of this every face"
+    },
+    {
+      "start": "25:37",
+      "end": "25:37",
+      "text": "check and because of this every face"
+    },
+    {
+      "start": "25:37",
+      "end": "25:43",
+      "text": "check and because of this every face must contain at least five edges so five"
+    },
+    {
+      "start": "25:43",
+      "end": "25:43",
+      "text": "must contain at least five edges so five"
+    },
+    {
+      "start": "25:43",
+      "end": "25:47",
+      "text": "must contain at least five edges so five times F is going to be less than"
+    },
+    {
+      "start": "25:47",
+      "end": "25:47",
+      "text": "times F is going to be less than"
+    },
+    {
+      "start": "25:47",
+      "end": "25:50",
+      "text": "times F is going to be less than summation fi that's equal to 2e so we"
+    },
+    {
+      "start": "25:50",
+      "end": "25:50",
+      "text": "summation fi that's equal to 2e so we"
+    },
+    {
+      "start": "25:50",
+      "end": "25:53",
+      "text": "summation fi that's equal to 2e so we can conclude from this that F is less"
+    },
+    {
+      "start": "25:53",
+      "end": "25:53",
+      "text": "can conclude from this that F is less"
+    },
+    {
+      "start": "25:53",
+      "end": "25:57",
+      "text": "can conclude from this that F is less than 2 e by 5 now if we look at E is"
+    },
+    {
+      "start": "25:57",
+      "end": "25:57",
+      "text": "than 2 e by 5 now if we look at E is"
+    },
+    {
+      "start": "25:57",
+      "end": "26:03",
+      "text": "than 2 e by 5 now if we look at E is equal to V Plus F minus 2 we can"
+    },
+    {
+      "start": "26:03",
+      "end": "26:03",
+      "text": "equal to V Plus F minus 2 we can"
+    },
+    {
+      "start": "26:03",
+      "end": "26:04",
+      "text": "equal to V Plus F minus 2 we can conclude that you should be less than"
+    },
+    {
+      "start": "26:04",
+      "end": "26:04",
+      "text": "conclude that you should be less than"
+    },
+    {
+      "start": "26:04",
+      "end": "26:06",
+      "text": "conclude that you should be less than and if it were planar then e must be"
+    },
+    {
+      "start": "26:06",
+      "end": "26:06",
+      "text": "and if it were planar then e must be"
+    },
+    {
+      "start": "26:06",
+      "end": "26:08",
+      "text": "and if it were planar then e must be equal to V Plus F minus 2 and these"
+    },
+    {
+      "start": "26:08",
+      "end": "26:08",
+      "text": "equal to V Plus F minus 2 and these"
+    },
+    {
+      "start": "26:08",
+      "end": "26:12",
+      "text": "equal to V Plus F minus 2 and these should be less than or equal to V Plus 2"
+    },
+    {
+      "start": "26:12",
+      "end": "26:12",
+      "text": "should be less than or equal to V Plus 2"
+    },
+    {
+      "start": "26:12",
+      "end": "26:19",
+      "text": "should be less than or equal to V Plus 2 e by v minus 2 so 3 times e by v should"
+    },
+    {
+      "start": "26:19",
+      "end": "26:19",
+      "text": "e by v minus 2 so 3 times e by v should"
+    },
+    {
+      "start": "26:19",
+      "end": "26:22",
+      "text": "e by v minus 2 so 3 times e by v should be less than V minus 2 or in other words"
+    },
+    {
+      "start": "26:22",
+      "end": "26:22",
+      "text": "be less than V minus 2 or in other words"
+    },
+    {
+      "start": "26:22",
+      "end": "26:26",
+      "text": "be less than V minus 2 or in other words you should be less than 5 V minus 10 by"
+    },
+    {
+      "start": "26:26",
+      "end": "26:26",
+      "text": "you should be less than 5 V minus 10 by"
+    },
+    {
+      "start": "26:26",
+      "end": "26:30",
+      "text": "you should be less than 5 V minus 10 by 3 now if you substitute the values in"
+    },
+    {
+      "start": "26:30",
+      "end": "26:30",
+      "text": "3 now if you substitute the values in"
+    },
+    {
+      "start": "26:30",
+      "end": "26:32",
+      "text": "3 now if you substitute the values in case of Peterson graphs a is equal to 15"
+    },
+    {
+      "start": "26:32",
+      "end": "26:32",
+      "text": "case of Peterson graphs a is equal to 15"
+    },
+    {
+      "start": "26:32",
+      "end": "26:36",
+      "text": "case of Peterson graphs a is equal to 15 and that is less than 50 because V is 10"
+    },
+    {
+      "start": "26:36",
+      "end": "26:36",
+      "text": "and that is less than 50 because V is 10"
+    },
+    {
+      "start": "26:36",
+      "end": "26:41",
+      "text": "and that is less than 50 because V is 10 minus 10 by 3 you get 15 is less than 40"
+    },
+    {
+      "start": "26:41",
+      "end": "26:41",
+      "text": "minus 10 by 3 you get 15 is less than 40"
+    },
+    {
+      "start": "26:41",
+      "end": "26:45",
+      "text": "minus 10 by 3 you get 15 is less than 40 by 3 that's clearly a contradiction okay"
+    },
+    {
+      "start": "26:45",
+      "end": "26:45",
+      "text": "by 3 that's clearly a contradiction okay"
+    },
+    {
+      "start": "26:45",
+      "end": "26:48",
+      "text": "by 3 that's clearly a contradiction okay so it's seen planarity and we had seen"
+    },
+    {
+      "start": "26:48",
+      "end": "26:48",
+      "text": "so it's seen planarity and we had seen"
+    },
+    {
+      "start": "26:48",
+      "end": "26:51",
+      "text": "so it's seen planarity and we had seen multiple multiple applications of"
+    },
+    {
+      "start": "26:51",
+      "end": "26:51",
+      "text": "multiple multiple applications of"
+    },
+    {
+      "start": "26:51",
+      "end": "26:54",
+      "text": "multiple multiple applications of euler's parity theorem to prove that"
+    },
+    {
+      "start": "26:54",
+      "end": "26:54",
+      "text": "euler's parity theorem to prove that"
+    },
+    {
+      "start": "26:54",
+      "end": "26:58",
+      "text": "euler's parity theorem to prove that various graphs are not planar to prove"
+    },
+    {
+      "start": "26:58",
+      "end": "26:58",
+      "text": "various graphs are not planar to prove"
+    },
+    {
+      "start": "26:58",
+      "end": "27:00",
+      "text": "various graphs are not planar to prove the non-linearity of various graphs"
+    },
+    {
+      "start": "27:00",
+      "end": "27:00",
+      "text": "the non-linearity of various graphs"
+    },
+    {
+      "start": "27:00",
+      "end": "27:06",
+      "text": "the non-linearity of various graphs we'll stop here"
+    }
+  ],
+  "timestamped": true
+}

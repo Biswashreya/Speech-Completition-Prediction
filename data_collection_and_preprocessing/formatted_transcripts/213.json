@@ -1,0 +1,6368 @@
+{
+  "title": "Lec 14: Bipartitie Graphs; Edge Coloring and Matching",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:09",
+      "end": "0:09",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:09",
+      "end": "0:12",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "in this lecture we will learn more about"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "in this lecture we will learn more about bipartite graphs so first we will look"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "bipartite graphs so first we will look"
+    },
+    {
+      "start": "0:34",
+      "end": "0:40",
+      "text": "bipartite graphs so first we will look at some notion known as edge coloring"
+    },
+    {
+      "start": "0:44",
+      "end": "0:44",
+      "text": "and then we will look at something"
+    },
+    {
+      "start": "0:44",
+      "end": "0:49",
+      "text": "and then we will look at something called as matching we will look at these"
+    },
+    {
+      "start": "0:49",
+      "end": "0:49",
+      "text": "called as matching we will look at these"
+    },
+    {
+      "start": "0:49",
+      "end": "0:52",
+      "text": "called as matching we will look at these properties with respect to bipartite"
+    },
+    {
+      "start": "0:52",
+      "end": "0:52",
+      "text": "properties with respect to bipartite"
+    },
+    {
+      "start": "0:52",
+      "end": "0:55",
+      "text": "properties with respect to bipartite graphs okay so let us see what is edge"
+    },
+    {
+      "start": "0:55",
+      "end": "0:55",
+      "text": "graphs okay so let us see what is edge"
+    },
+    {
+      "start": "0:55",
+      "end": "0:58",
+      "text": "graphs okay so let us see what is edge coloring in a graph so let's take an"
+    },
+    {
+      "start": "0:58",
+      "end": "0:58",
+      "text": "coloring in a graph so let's take an"
+    },
+    {
+      "start": "0:58",
+      "end": "1:10",
+      "text": "coloring in a graph so let's take an example this is a graph on five vertices"
+    },
+    {
+      "start": "1:22",
+      "end": "1:22",
+      "text": "the objective is to color the edges let"
+    },
+    {
+      "start": "1:22",
+      "end": "1:25",
+      "text": "the objective is to color the edges let us give each edge some color the"
+    },
+    {
+      "start": "1:25",
+      "end": "1:25",
+      "text": "us give each edge some color the"
+    },
+    {
+      "start": "1:25",
+      "end": "1:28",
+      "text": "us give each edge some color the restriction is adjacent edges should"
+    },
+    {
+      "start": "1:28",
+      "end": "1:28",
+      "text": "restriction is adjacent edges should"
+    },
+    {
+      "start": "1:28",
+      "end": "1:33",
+      "text": "restriction is adjacent edges should have different colors so write it in the"
+    },
+    {
+      "start": "1:33",
+      "end": "1:33",
+      "text": "have different colors so write it in the"
+    },
+    {
+      "start": "1:33",
+      "end": "1:39",
+      "text": "have different colors so write it in the following way"
+    },
+    {
+      "start": "1:45",
+      "end": "1:45",
+      "text": "so we require two things first color"
+    },
+    {
+      "start": "1:45",
+      "end": "1:55",
+      "text": "so we require two things first color every edge and second edges sharing a"
+    },
+    {
+      "start": "1:55",
+      "end": "1:55",
+      "text": "every edge and second edges sharing a"
+    },
+    {
+      "start": "1:55",
+      "end": "2:01",
+      "text": "every edge and second edges sharing a vertex"
+    },
+    {
+      "start": "2:14",
+      "end": "2:14",
+      "text": "so any such coloring will be called as a"
+    },
+    {
+      "start": "2:14",
+      "end": "2:18",
+      "text": "so any such coloring will be called as a valid edge coloring we want to find an"
+    },
+    {
+      "start": "2:18",
+      "end": "2:18",
+      "text": "valid edge coloring we want to find an"
+    },
+    {
+      "start": "2:18",
+      "end": "2:21",
+      "text": "valid edge coloring we want to find an edge coloring which minimizes the number"
+    },
+    {
+      "start": "2:21",
+      "end": "2:21",
+      "text": "edge coloring which minimizes the number"
+    },
+    {
+      "start": "2:21",
+      "end": "2:24",
+      "text": "edge coloring which minimizes the number of colors used we could of course give"
+    },
+    {
+      "start": "2:24",
+      "end": "2:24",
+      "text": "of colors used we could of course give"
+    },
+    {
+      "start": "2:24",
+      "end": "2:26",
+      "text": "of colors used we could of course give different colors distinct colors to each"
+    },
+    {
+      "start": "2:26",
+      "end": "2:26",
+      "text": "different colors distinct colors to each"
+    },
+    {
+      "start": "2:26",
+      "end": "2:28",
+      "text": "different colors distinct colors to each edge and surely all the properties would"
+    },
+    {
+      "start": "2:28",
+      "end": "2:28",
+      "text": "edge and surely all the properties would"
+    },
+    {
+      "start": "2:28",
+      "end": "2:31",
+      "text": "edge and surely all the properties would be met but that does not minimize the"
+    },
+    {
+      "start": "2:31",
+      "end": "2:31",
+      "text": "be met but that does not minimize the"
+    },
+    {
+      "start": "2:31",
+      "end": "2:35",
+      "text": "be met but that does not minimize the number of colors used one thing that we"
+    },
+    {
+      "start": "2:35",
+      "end": "2:35",
+      "text": "number of colors used one thing that we"
+    },
+    {
+      "start": "2:35",
+      "end": "2:39",
+      "text": "number of colors used one thing that we can see is for this particular graph we"
+    },
+    {
+      "start": "2:39",
+      "end": "2:39",
+      "text": "can see is for this particular graph we"
+    },
+    {
+      "start": "2:39",
+      "end": "2:41",
+      "text": "can see is for this particular graph we would require at least three colors"
+    },
+    {
+      "start": "2:41",
+      "end": "2:41",
+      "text": "would require at least three colors"
+    },
+    {
+      "start": "2:41",
+      "end": "2:44",
+      "text": "would require at least three colors because there are some vertices whose"
+    },
+    {
+      "start": "2:44",
+      "end": "2:44",
+      "text": "because there are some vertices whose"
+    },
+    {
+      "start": "2:44",
+      "end": "2:49",
+      "text": "because there are some vertices whose degree is 3 now the question is can we"
+    },
+    {
+      "start": "2:49",
+      "end": "2:49",
+      "text": "degree is 3 now the question is can we"
+    },
+    {
+      "start": "2:49",
+      "end": "2:52",
+      "text": "degree is 3 now the question is can we do it in exactly three to is impossible"
+    },
+    {
+      "start": "2:52",
+      "end": "2:52",
+      "text": "do it in exactly three to is impossible"
+    },
+    {
+      "start": "2:52",
+      "end": "2:54",
+      "text": "do it in exactly three to is impossible because since there is a vertex of"
+    },
+    {
+      "start": "2:54",
+      "end": "2:54",
+      "text": "because since there is a vertex of"
+    },
+    {
+      "start": "2:54",
+      "end": "2:57",
+      "text": "because since there is a vertex of degree three all the three edges should"
+    },
+    {
+      "start": "2:57",
+      "end": "2:57",
+      "text": "degree three all the three edges should"
+    },
+    {
+      "start": "2:57",
+      "end": "2:59",
+      "text": "degree three all the three edges should get distinct colors so let's see if we"
+    },
+    {
+      "start": "2:59",
+      "end": "2:59",
+      "text": "get distinct colors so let's see if we"
+    },
+    {
+      "start": "2:59",
+      "end": "3:02",
+      "text": "get distinct colors so let's see if we can do that so this is red let's say"
+    },
+    {
+      "start": "3:02",
+      "end": "3:02",
+      "text": "can do that so this is red let's say"
+    },
+    {
+      "start": "3:02",
+      "end": "3:06",
+      "text": "can do that so this is red let's say this is given blue color and the third"
+    },
+    {
+      "start": "3:06",
+      "end": "3:06",
+      "text": "this is given blue color and the third"
+    },
+    {
+      "start": "3:06",
+      "end": "3:11",
+      "text": "this is given blue color and the third is given green color now the one"
+    },
+    {
+      "start": "3:11",
+      "end": "3:11",
+      "text": "is given green color now the one"
+    },
+    {
+      "start": "3:11",
+      "end": "3:16",
+      "text": "is given green color now the one forehead could be given green color and"
+    },
+    {
+      "start": "3:16",
+      "end": "3:17",
+      "text": "forehead could be given green color and"
+    },
+    {
+      "start": "3:17",
+      "end": "3:21",
+      "text": "forehead could be given green color and 4/5 could now be given it's a red color"
+    },
+    {
+      "start": "3:21",
+      "end": "3:21",
+      "text": "4/5 could now be given it's a red color"
+    },
+    {
+      "start": "3:21",
+      "end": "3:29",
+      "text": "4/5 could now be given it's a red color and 4:3 must be given blue color"
+    },
+    {
+      "start": "3:34",
+      "end": "3:34",
+      "text": "okay and now if you look at vertex three"
+    },
+    {
+      "start": "3:34",
+      "end": "3:37",
+      "text": "okay and now if you look at vertex three there are two colors already being used"
+    },
+    {
+      "start": "3:37",
+      "end": "3:37",
+      "text": "there are two colors already being used"
+    },
+    {
+      "start": "3:37",
+      "end": "3:38",
+      "text": "there are two colors already being used there blue and green"
+    },
+    {
+      "start": "3:38",
+      "end": "3:38",
+      "text": "there blue and green"
+    },
+    {
+      "start": "3:38",
+      "end": "3:42",
+      "text": "there blue and green so the 3/5 which cannot be blue or green"
+    },
+    {
+      "start": "3:42",
+      "end": "3:42",
+      "text": "so the 3/5 which cannot be blue or green"
+    },
+    {
+      "start": "3:42",
+      "end": "3:45",
+      "text": "so the 3/5 which cannot be blue or green and because the 4/5 edge is using red"
+    },
+    {
+      "start": "3:45",
+      "end": "3:45",
+      "text": "and because the 4/5 edge is using red"
+    },
+    {
+      "start": "3:45",
+      "end": "3:48",
+      "text": "and because the 4/5 edge is using red color this cannot be read either so"
+    },
+    {
+      "start": "3:48",
+      "end": "3:48",
+      "text": "color this cannot be read either so"
+    },
+    {
+      "start": "3:48",
+      "end": "3:49",
+      "text": "color this cannot be read either so maybe we will have to use a different"
+    },
+    {
+      "start": "3:49",
+      "end": "3:49",
+      "text": "maybe we will have to use a different"
+    },
+    {
+      "start": "3:49",
+      "end": "3:54",
+      "text": "maybe we will have to use a different color let's say if we use a pink color"
+    },
+    {
+      "start": "3:54",
+      "end": "3:54",
+      "text": "color let's say if we use a pink color"
+    },
+    {
+      "start": "3:54",
+      "end": "3:57",
+      "text": "color let's say if we use a pink color and this is a valid coloring so here we"
+    },
+    {
+      "start": "3:57",
+      "end": "3:57",
+      "text": "and this is a valid coloring so here we"
+    },
+    {
+      "start": "3:57",
+      "end": "4:00",
+      "text": "and this is a valid coloring so here we are required for but as for really"
+    },
+    {
+      "start": "4:00",
+      "end": "4:00",
+      "text": "are required for but as for really"
+    },
+    {
+      "start": "4:00",
+      "end": "4:03",
+      "text": "are required for but as for really required there was four colors used can"
+    },
+    {
+      "start": "4:03",
+      "end": "4:03",
+      "text": "required there was four colors used can"
+    },
+    {
+      "start": "4:03",
+      "end": "4:05",
+      "text": "required there was four colors used can we do with three colors is a question"
+    },
+    {
+      "start": "4:05",
+      "end": "4:05",
+      "text": "we do with three colors is a question"
+    },
+    {
+      "start": "4:05",
+      "end": "4:09",
+      "text": "we do with three colors is a question and we want to answer this question for"
+    },
+    {
+      "start": "4:09",
+      "end": "4:09",
+      "text": "and we want to answer this question for"
+    },
+    {
+      "start": "4:09",
+      "end": "4:13",
+      "text": "and we want to answer this question for bipartite graph so the specific question"
+    },
+    {
+      "start": "4:13",
+      "end": "4:13",
+      "text": "bipartite graph so the specific question"
+    },
+    {
+      "start": "4:13",
+      "end": "4:17",
+      "text": "bipartite graph so the specific question that we will look at us is the number of"
+    },
+    {
+      "start": "4:17",
+      "end": "4:17",
+      "text": "that we will look at us is the number of"
+    },
+    {
+      "start": "4:17",
+      "end": "4:21",
+      "text": "that we will look at us is the number of colors required to each color a graph"
+    },
+    {
+      "start": "4:21",
+      "end": "4:21",
+      "text": "colors required to each color a graph"
+    },
+    {
+      "start": "4:21",
+      "end": "4:25",
+      "text": "colors required to each color a graph equal to its maximum"
+    },
+    {
+      "start": "4:25",
+      "end": "4:25",
+      "text": "equal to its maximum"
+    },
+    {
+      "start": "4:25",
+      "end": "4:28",
+      "text": "equal to its maximum degree so every graph will have a"
+    },
+    {
+      "start": "4:28",
+      "end": "4:28",
+      "text": "degree so every graph will have a"
+    },
+    {
+      "start": "4:28",
+      "end": "4:31",
+      "text": "degree so every graph will have a maximum degree and will the number of"
+    },
+    {
+      "start": "4:31",
+      "end": "4:31",
+      "text": "maximum degree and will the number of"
+    },
+    {
+      "start": "4:31",
+      "end": "4:34",
+      "text": "maximum degree and will the number of colors required to each color be equal"
+    },
+    {
+      "start": "4:34",
+      "end": "4:34",
+      "text": "colors required to each color be equal"
+    },
+    {
+      "start": "4:34",
+      "end": "4:36",
+      "text": "colors required to each color be equal to the max degree clearly in general"
+    },
+    {
+      "start": "4:36",
+      "end": "4:36",
+      "text": "to the max degree clearly in general"
+    },
+    {
+      "start": "4:36",
+      "end": "4:39",
+      "text": "to the max degree clearly in general graphs this is not the case for example"
+    },
+    {
+      "start": "4:39",
+      "end": "4:39",
+      "text": "graphs this is not the case for example"
+    },
+    {
+      "start": "4:39",
+      "end": "4:41",
+      "text": "graphs this is not the case for example we could take just the five cycle so in"
+    },
+    {
+      "start": "4:41",
+      "end": "4:41",
+      "text": "we could take just the five cycle so in"
+    },
+    {
+      "start": "4:41",
+      "end": "4:43",
+      "text": "we could take just the five cycle so in this example that we had considered it's"
+    },
+    {
+      "start": "4:43",
+      "end": "4:43",
+      "text": "this example that we had considered it's"
+    },
+    {
+      "start": "4:43",
+      "end": "4:47",
+      "text": "this example that we had considered it's not clear that we require four maybe"
+    },
+    {
+      "start": "4:47",
+      "end": "4:47",
+      "text": "not clear that we require four maybe"
+    },
+    {
+      "start": "4:47",
+      "end": "4:49",
+      "text": "not clear that we require four maybe there is a coloring which requires s3"
+    },
+    {
+      "start": "4:49",
+      "end": "4:49",
+      "text": "there is a coloring which requires s3"
+    },
+    {
+      "start": "4:49",
+      "end": "4:51",
+      "text": "there is a coloring which requires s3 you can think about that but we can"
+    },
+    {
+      "start": "4:51",
+      "end": "4:51",
+      "text": "you can think about that but we can"
+    },
+    {
+      "start": "4:51",
+      "end": "4:55",
+      "text": "you can think about that but we can construct examples where the max degree"
+    },
+    {
+      "start": "4:55",
+      "end": "4:55",
+      "text": "construct examples where the max degree"
+    },
+    {
+      "start": "4:55",
+      "end": "4:59",
+      "text": "construct examples where the max degree of the vertex is not sufficient for"
+    },
+    {
+      "start": "4:59",
+      "end": "4:59",
+      "text": "of the vertex is not sufficient for"
+    },
+    {
+      "start": "4:59",
+      "end": "5:04",
+      "text": "of the vertex is not sufficient for example if we took this particular graph"
+    },
+    {
+      "start": "5:12",
+      "end": "5:12",
+      "text": "this is the five cycle the degree of any"
+    },
+    {
+      "start": "5:12",
+      "end": "5:15",
+      "text": "this is the five cycle the degree of any vertex is only two but we can argue that"
+    },
+    {
+      "start": "5:15",
+      "end": "5:15",
+      "text": "vertex is only two but we can argue that"
+    },
+    {
+      "start": "5:15",
+      "end": "5:18",
+      "text": "vertex is only two but we can argue that two colors will not suffice to Edd's"
+    },
+    {
+      "start": "5:18",
+      "end": "5:18",
+      "text": "two colors will not suffice to Edd's"
+    },
+    {
+      "start": "5:18",
+      "end": "5:21",
+      "text": "two colors will not suffice to Edd's color this graph because we can without"
+    },
+    {
+      "start": "5:21",
+      "end": "5:21",
+      "text": "color this graph because we can without"
+    },
+    {
+      "start": "5:21",
+      "end": "5:26",
+      "text": "color this graph because we can without loss of generality assume that if that"
+    },
+    {
+      "start": "5:26",
+      "end": "5:26",
+      "text": "loss of generality assume that if that"
+    },
+    {
+      "start": "5:26",
+      "end": "5:30",
+      "text": "loss of generality assume that if that one of the edges is colored blue and"
+    },
+    {
+      "start": "5:33",
+      "end": "5:33",
+      "text": "then its neighboring edges have to be"
+    },
+    {
+      "start": "5:33",
+      "end": "5:36",
+      "text": "then its neighboring edges have to be colored using a different color so let's"
+    },
+    {
+      "start": "5:36",
+      "end": "5:36",
+      "text": "colored using a different color so let's"
+    },
+    {
+      "start": "5:36",
+      "end": "5:42",
+      "text": "colored using a different color so let's say that is red and its neighboring has"
+    },
+    {
+      "start": "5:42",
+      "end": "5:42",
+      "text": "say that is red and its neighboring has"
+    },
+    {
+      "start": "5:42",
+      "end": "5:45",
+      "text": "say that is red and its neighboring has to be colored using blue if you use any"
+    },
+    {
+      "start": "5:45",
+      "end": "5:45",
+      "text": "to be colored using blue if you use any"
+    },
+    {
+      "start": "5:45",
+      "end": "5:47",
+      "text": "to be colored using blue if you use any other color you're exceeding the number"
+    },
+    {
+      "start": "5:47",
+      "end": "5:47",
+      "text": "other color you're exceeding the number"
+    },
+    {
+      "start": "5:47",
+      "end": "5:49",
+      "text": "other color you're exceeding the number of colors but there are two neighbors"
+    },
+    {
+      "start": "5:49",
+      "end": "5:49",
+      "text": "of colors but there are two neighbors"
+    },
+    {
+      "start": "5:49",
+      "end": "5:52",
+      "text": "of colors but there are two neighbors and both of them cannot be given blue"
+    },
+    {
+      "start": "5:52",
+      "end": "5:52",
+      "text": "and both of them cannot be given blue"
+    },
+    {
+      "start": "5:52",
+      "end": "5:54",
+      "text": "and both of them cannot be given blue color because of the construction of"
+    },
+    {
+      "start": "5:54",
+      "end": "5:54",
+      "text": "color because of the construction of"
+    },
+    {
+      "start": "5:54",
+      "end": "5:55",
+      "text": "color because of the construction of this graph"
+    },
+    {
+      "start": "5:55",
+      "end": "5:55",
+      "text": "this graph"
+    },
+    {
+      "start": "5:55",
+      "end": "5:59",
+      "text": "this graph so in general graph there you can"
+    },
+    {
+      "start": "5:59",
+      "end": "5:59",
+      "text": "so in general graph there you can"
+    },
+    {
+      "start": "5:59",
+      "end": "6:02",
+      "text": "so in general graph there you can construct examples where max degree is"
+    },
+    {
+      "start": "6:02",
+      "end": "6:02",
+      "text": "construct examples where max degree is"
+    },
+    {
+      "start": "6:02",
+      "end": "6:04",
+      "text": "construct examples where max degree is not equal to the number of colors"
+    },
+    {
+      "start": "6:04",
+      "end": "6:04",
+      "text": "not equal to the number of colors"
+    },
+    {
+      "start": "6:04",
+      "end": "6:07",
+      "text": "not equal to the number of colors required to each color so we can"
+    },
+    {
+      "start": "6:07",
+      "end": "6:07",
+      "text": "required to each color so we can"
+    },
+    {
+      "start": "6:07",
+      "end": "6:16",
+      "text": "required to each color so we can summarize that the following way"
+    },
+    {
+      "start": "6:30",
+      "end": "6:30",
+      "text": "max degree can be less than the number"
+    },
+    {
+      "start": "6:30",
+      "end": "6:40",
+      "text": "max degree can be less than the number of colors required to edge color okay in"
+    },
+    {
+      "start": "6:40",
+      "end": "6:40",
+      "text": "of colors required to edge color okay in"
+    },
+    {
+      "start": "6:40",
+      "end": "6:42",
+      "text": "of colors required to edge color okay in the general graph this could be the case"
+    },
+    {
+      "start": "6:42",
+      "end": "6:42",
+      "text": "the general graph this could be the case"
+    },
+    {
+      "start": "6:42",
+      "end": "6:45",
+      "text": "the general graph this could be the case the c5 or any odd cycle is an example"
+    },
+    {
+      "start": "6:45",
+      "end": "6:45",
+      "text": "the c5 or any odd cycle is an example"
+    },
+    {
+      "start": "6:45",
+      "end": "6:47",
+      "text": "the c5 or any odd cycle is an example where this max degree is less than the"
+    },
+    {
+      "start": "6:47",
+      "end": "6:47",
+      "text": "where this max degree is less than the"
+    },
+    {
+      "start": "6:47",
+      "end": "6:51",
+      "text": "where this max degree is less than the number of colors required to H color now"
+    },
+    {
+      "start": "6:51",
+      "end": "6:51",
+      "text": "number of colors required to H color now"
+    },
+    {
+      "start": "6:51",
+      "end": "6:55",
+      "text": "number of colors required to H color now let's focus on just bipartite graph if"
+    },
+    {
+      "start": "6:55",
+      "end": "6:55",
+      "text": "let's focus on just bipartite graph if"
+    },
+    {
+      "start": "6:55",
+      "end": "6:57",
+      "text": "let's focus on just bipartite graph if we restrict our attention to bipartite"
+    },
+    {
+      "start": "6:57",
+      "end": "6:57",
+      "text": "we restrict our attention to bipartite"
+    },
+    {
+      "start": "6:57",
+      "end": "7:01",
+      "text": "we restrict our attention to bipartite graph can every bipartite graph be"
+    },
+    {
+      "start": "7:01",
+      "end": "7:01",
+      "text": "graph can every bipartite graph be"
+    },
+    {
+      "start": "7:01",
+      "end": "7:07",
+      "text": "graph can every bipartite graph be colored with number of colors which is"
+    },
+    {
+      "start": "7:07",
+      "end": "7:07",
+      "text": "colored with number of colors which is"
+    },
+    {
+      "start": "7:07",
+      "end": "7:09",
+      "text": "colored with number of colors which is equal to the max degree we will show"
+    },
+    {
+      "start": "7:09",
+      "end": "7:09",
+      "text": "equal to the max degree we will show"
+    },
+    {
+      "start": "7:09",
+      "end": "7:11",
+      "text": "equal to the max degree we will show that this will show that this is the"
+    },
+    {
+      "start": "7:11",
+      "end": "7:11",
+      "text": "that this will show that this is the"
+    },
+    {
+      "start": "7:11",
+      "end": "7:15",
+      "text": "that this will show that this is the case okay so this is a theorem that we"
+    },
+    {
+      "start": "7:15",
+      "end": "7:15",
+      "text": "case okay so this is a theorem that we"
+    },
+    {
+      "start": "7:15",
+      "end": "7:22",
+      "text": "case okay so this is a theorem that we will prove so let G be a bipartite graph"
+    },
+    {
+      "start": "7:32",
+      "end": "7:32",
+      "text": "number of colors required to each color"
+    },
+    {
+      "start": "7:32",
+      "end": "7:43",
+      "text": "number of colors required to each color G is equal to max degree of G why is"
+    },
+    {
+      "start": "7:43",
+      "end": "7:44",
+      "text": "G is equal to max degree of G why is"
+    },
+    {
+      "start": "7:44",
+      "end": "7:48",
+      "text": "G is equal to max degree of G why is this so what's the proof"
+    },
+    {
+      "start": "7:51",
+      "end": "7:51",
+      "text": "okay so first of all what is a bipartite"
+    },
+    {
+      "start": "7:51",
+      "end": "7:54",
+      "text": "okay so first of all what is a bipartite graph you can split the vertices into"
+    },
+    {
+      "start": "7:54",
+      "end": "7:54",
+      "text": "graph you can split the vertices into"
+    },
+    {
+      "start": "7:54",
+      "end": "7:59",
+      "text": "graph you can split the vertices into two parts let's say x and y okay so if"
+    },
+    {
+      "start": "7:59",
+      "end": "7:59",
+      "text": "two parts let's say x and y okay so if"
+    },
+    {
+      "start": "7:59",
+      "end": "8:03",
+      "text": "two parts let's say x and y okay so if you think of GS V comma E where V is the"
+    },
+    {
+      "start": "8:03",
+      "end": "8:03",
+      "text": "you think of GS V comma E where V is the"
+    },
+    {
+      "start": "8:03",
+      "end": "8:05",
+      "text": "you think of GS V comma E where V is the set of vertices and the e is the set of"
+    },
+    {
+      "start": "8:05",
+      "end": "8:05",
+      "text": "set of vertices and the e is the set of"
+    },
+    {
+      "start": "8:05",
+      "end": "8:09",
+      "text": "set of vertices and the e is the set of edges we can be written as X Union Y so"
+    },
+    {
+      "start": "8:09",
+      "end": "8:09",
+      "text": "edges we can be written as X Union Y so"
+    },
+    {
+      "start": "8:09",
+      "end": "8:17",
+      "text": "edges we can be written as X Union Y so this is a disjoint Union because they"
+    },
+    {
+      "start": "8:17",
+      "end": "8:17",
+      "text": "this is a disjoint Union because they"
+    },
+    {
+      "start": "8:17",
+      "end": "8:20",
+      "text": "this is a disjoint Union because they don't share any vertices so V can be the"
+    },
+    {
+      "start": "8:20",
+      "end": "8:20",
+      "text": "don't share any vertices so V can be the"
+    },
+    {
+      "start": "8:20",
+      "end": "8:23",
+      "text": "don't share any vertices so V can be the vertex set can be split as X Union Y"
+    },
+    {
+      "start": "8:23",
+      "end": "8:23",
+      "text": "vertex set can be split as X Union Y"
+    },
+    {
+      "start": "8:23",
+      "end": "8:31",
+      "text": "vertex set can be split as X Union Y such that all edges are between x and y"
+    },
+    {
+      "start": "8:34",
+      "end": "8:34",
+      "text": "okay so you cannot have an edge of this"
+    },
+    {
+      "start": "8:34",
+      "end": "8:37",
+      "text": "okay so you cannot have an edge of this kind from X to itself so this is"
+    },
+    {
+      "start": "8:37",
+      "end": "8:37",
+      "text": "kind from X to itself so this is"
+    },
+    {
+      "start": "8:37",
+      "end": "8:39",
+      "text": "kind from X to itself so this is forbidden and you cannot have an edge"
+    },
+    {
+      "start": "8:39",
+      "end": "8:39",
+      "text": "forbidden and you cannot have an edge"
+    },
+    {
+      "start": "8:39",
+      "end": "8:41",
+      "text": "forbidden and you cannot have an edge from Y to itself this is also forbidden"
+    },
+    {
+      "start": "8:41",
+      "end": "8:41",
+      "text": "from Y to itself this is also forbidden"
+    },
+    {
+      "start": "8:41",
+      "end": "8:45",
+      "text": "from Y to itself this is also forbidden so all the edges go from X to Y that's"
+    },
+    {
+      "start": "8:45",
+      "end": "8:45",
+      "text": "so all the edges go from X to Y that's"
+    },
+    {
+      "start": "8:45",
+      "end": "8:48",
+      "text": "so all the edges go from X to Y that's the definition of a bipartite graph so"
+    },
+    {
+      "start": "8:48",
+      "end": "8:48",
+      "text": "the definition of a bipartite graph so"
+    },
+    {
+      "start": "8:48",
+      "end": "8:50",
+      "text": "the definition of a bipartite graph so if we look at a bipartite graph we want"
+    },
+    {
+      "start": "8:50",
+      "end": "8:50",
+      "text": "if we look at a bipartite graph we want"
+    },
+    {
+      "start": "8:50",
+      "end": "8:54",
+      "text": "if we look at a bipartite graph we want to show that the max degree is equal to"
+    },
+    {
+      "start": "8:54",
+      "end": "8:54",
+      "text": "to show that the max degree is equal to"
+    },
+    {
+      "start": "8:54",
+      "end": "8:55",
+      "text": "to show that the max degree is equal to the number of colors required to edge"
+    },
+    {
+      "start": "8:55",
+      "end": "8:55",
+      "text": "the number of colors required to edge"
+    },
+    {
+      "start": "8:55",
+      "end": "8:59",
+      "text": "the number of colors required to edge color the graph okay so clearly we can"
+    },
+    {
+      "start": "8:59",
+      "end": "8:59",
+      "text": "color the graph okay so clearly we can"
+    },
+    {
+      "start": "8:59",
+      "end": "9:02",
+      "text": "color the graph okay so clearly we can see one one direction that does you"
+    },
+    {
+      "start": "9:02",
+      "end": "9:02",
+      "text": "see one one direction that does you"
+    },
+    {
+      "start": "9:02",
+      "end": "9:07",
+      "text": "see one one direction that does you require at least those many colors so"
+    },
+    {
+      "start": "9:07",
+      "end": "9:07",
+      "text": "require at least those many colors so"
+    },
+    {
+      "start": "9:07",
+      "end": "9:17",
+      "text": "require at least those many colors so let Delta be the max degree number of"
+    },
+    {
+      "start": "9:17",
+      "end": "9:17",
+      "text": "let Delta be the max degree number of"
+    },
+    {
+      "start": "9:17",
+      "end": "9:23",
+      "text": "let Delta be the max degree number of colors required is going to be greater"
+    },
+    {
+      "start": "9:23",
+      "end": "9:23",
+      "text": "colors required is going to be greater"
+    },
+    {
+      "start": "9:23",
+      "end": "9:26",
+      "text": "colors required is going to be greater than or equal to Delta because at least"
+    },
+    {
+      "start": "9:26",
+      "end": "9:26",
+      "text": "than or equal to Delta because at least"
+    },
+    {
+      "start": "9:26",
+      "end": "9:28",
+      "text": "than or equal to Delta because at least Delta is required this is because look"
+    },
+    {
+      "start": "9:28",
+      "end": "9:28",
+      "text": "Delta is required this is because look"
+    },
+    {
+      "start": "9:28",
+      "end": "9:30",
+      "text": "Delta is required this is because look at that particular vertex with degree"
+    },
+    {
+      "start": "9:30",
+      "end": "9:30",
+      "text": "at that particular vertex with degree"
+    },
+    {
+      "start": "9:30",
+      "end": "9:35",
+      "text": "at that particular vertex with degree Delta each of these edges must get"
+    },
+    {
+      "start": "9:35",
+      "end": "9:35",
+      "text": "Delta each of these edges must get"
+    },
+    {
+      "start": "9:35",
+      "end": "9:37",
+      "text": "Delta each of these edges must get distinct colors so number of colors"
+    },
+    {
+      "start": "9:37",
+      "end": "9:37",
+      "text": "distinct colors so number of colors"
+    },
+    {
+      "start": "9:37",
+      "end": "9:39",
+      "text": "distinct colors so number of colors required definitely is greater than or"
+    },
+    {
+      "start": "9:39",
+      "end": "9:39",
+      "text": "required definitely is greater than or"
+    },
+    {
+      "start": "9:39",
+      "end": "9:41",
+      "text": "required definitely is greater than or equal to Delta now if we can show that"
+    },
+    {
+      "start": "9:41",
+      "end": "9:41",
+      "text": "equal to Delta now if we can show that"
+    },
+    {
+      "start": "9:41",
+      "end": "9:45",
+      "text": "equal to Delta now if we can show that there exists a coloring which uses no"
+    },
+    {
+      "start": "9:45",
+      "end": "9:45",
+      "text": "there exists a coloring which uses no"
+    },
+    {
+      "start": "9:45",
+      "end": "9:48",
+      "text": "there exists a coloring which uses no more than Delta colors then it means"
+    },
+    {
+      "start": "9:48",
+      "end": "9:48",
+      "text": "more than Delta colors then it means"
+    },
+    {
+      "start": "9:48",
+      "end": "9:50",
+      "text": "more than Delta colors then it means that the minimum number so this is the"
+    },
+    {
+      "start": "9:50",
+      "end": "9:50",
+      "text": "that the minimum number so this is the"
+    },
+    {
+      "start": "9:50",
+      "end": "9:53",
+      "text": "that the minimum number so this is the mean number of colors required so that's"
+    },
+    {
+      "start": "9:53",
+      "end": "9:53",
+      "text": "mean number of colors required so that's"
+    },
+    {
+      "start": "9:53",
+      "end": "9:57",
+      "text": "mean number of colors required so that's going to be equal to Delta okay so how"
+    },
+    {
+      "start": "9:57",
+      "end": "9:57",
+      "text": "going to be equal to Delta okay so how"
+    },
+    {
+      "start": "9:57",
+      "end": "10:01",
+      "text": "going to be equal to Delta okay so how do we show that that's the case"
+    },
+    {
+      "start": "10:01",
+      "end": "10:01",
+      "text": "do we show that that's the case"
+    },
+    {
+      "start": "10:01",
+      "end": "10:10",
+      "text": "do we show that that's the case okay so proof will be by induction we"
+    },
+    {
+      "start": "10:12",
+      "end": "10:12",
+      "text": "will induct on the number of edges in"
+    },
+    {
+      "start": "10:12",
+      "end": "10:21",
+      "text": "will induct on the number of edges in the graph"
+    },
+    {
+      "start": "10:24",
+      "end": "10:24",
+      "text": "okay suppose we denote the number of"
+    },
+    {
+      "start": "10:24",
+      "end": "10:29",
+      "text": "okay suppose we denote the number of edges by M when M is equal to one so"
+    },
+    {
+      "start": "10:29",
+      "end": "10:29",
+      "text": "edges by M when M is equal to one so"
+    },
+    {
+      "start": "10:29",
+      "end": "10:35",
+      "text": "edges by M when M is equal to one so this is the base case M equals one would"
+    },
+    {
+      "start": "10:35",
+      "end": "10:35",
+      "text": "this is the base case M equals one would"
+    },
+    {
+      "start": "10:35",
+      "end": "10:36",
+      "text": "this is the base case M equals one would mean that this is a bipartite graph"
+    },
+    {
+      "start": "10:36",
+      "end": "10:36",
+      "text": "mean that this is a bipartite graph"
+    },
+    {
+      "start": "10:36",
+      "end": "10:39",
+      "text": "mean that this is a bipartite graph would sing with a single edge and you"
+    },
+    {
+      "start": "10:39",
+      "end": "10:39",
+      "text": "would sing with a single edge and you"
+    },
+    {
+      "start": "10:39",
+      "end": "10:42",
+      "text": "would sing with a single edge and you require only one color okay so you can"
+    },
+    {
+      "start": "10:42",
+      "end": "10:42",
+      "text": "require only one color okay so you can"
+    },
+    {
+      "start": "10:42",
+      "end": "10:45",
+      "text": "require only one color okay so you can think of that as a trivial case to cover"
+    },
+    {
+      "start": "10:45",
+      "end": "10:45",
+      "text": "think of that as a trivial case to cover"
+    },
+    {
+      "start": "10:45",
+      "end": "10:48",
+      "text": "think of that as a trivial case to cover it requires just one color so we will"
+    },
+    {
+      "start": "10:48",
+      "end": "10:48",
+      "text": "it requires just one color so we will"
+    },
+    {
+      "start": "10:48",
+      "end": "10:50",
+      "text": "it requires just one color so we will assume that the statement is true for"
+    },
+    {
+      "start": "10:50",
+      "end": "10:50",
+      "text": "assume that the statement is true for"
+    },
+    {
+      "start": "10:50",
+      "end": "10:53",
+      "text": "assume that the statement is true for all graphs or bipartite graphs with at"
+    },
+    {
+      "start": "10:53",
+      "end": "10:53",
+      "text": "all graphs or bipartite graphs with at"
+    },
+    {
+      "start": "10:53",
+      "end": "11:16",
+      "text": "all graphs or bipartite graphs with at most M edges"
+    },
+    {
+      "start": "11:20",
+      "end": "11:20",
+      "text": "now we will look at a graph with n plus"
+    },
+    {
+      "start": "11:20",
+      "end": "11:23",
+      "text": "now we will look at a graph with n plus 1 edges and show that it can be colored"
+    },
+    {
+      "start": "11:23",
+      "end": "11:23",
+      "text": "1 edges and show that it can be colored"
+    },
+    {
+      "start": "11:23",
+      "end": "11:28",
+      "text": "1 edges and show that it can be colored using Delta colors ok so let G be a"
+    },
+    {
+      "start": "11:28",
+      "end": "11:28",
+      "text": "using Delta colors ok so let G be a"
+    },
+    {
+      "start": "11:28",
+      "end": "11:41",
+      "text": "using Delta colors ok so let G be a graph on M plus 1 edges ok so now this"
+    },
+    {
+      "start": "11:41",
+      "end": "11:41",
+      "text": "graph on M plus 1 edges ok so now this"
+    },
+    {
+      "start": "11:41",
+      "end": "11:43",
+      "text": "graph on M plus 1 edges ok so now this is some bipartite graph we can just"
+    },
+    {
+      "start": "11:43",
+      "end": "11:43",
+      "text": "is some bipartite graph we can just"
+    },
+    {
+      "start": "11:43",
+      "end": "11:46",
+      "text": "is some bipartite graph we can just remove one edge from G so to remove a"
+    },
+    {
+      "start": "11:46",
+      "end": "11:46",
+      "text": "remove one edge from G so to remove a"
+    },
+    {
+      "start": "11:46",
+      "end": "11:52",
+      "text": "remove one edge from G so to remove a particular edge any arbitrary age so let"
+    },
+    {
+      "start": "11:52",
+      "end": "11:52",
+      "text": "particular edge any arbitrary age so let"
+    },
+    {
+      "start": "11:52",
+      "end": "11:56",
+      "text": "particular edge any arbitrary age so let us call that as the edge X comma Y from"
+    },
+    {
+      "start": "11:56",
+      "end": "11:56",
+      "text": "us call that as the edge X comma Y from"
+    },
+    {
+      "start": "11:56",
+      "end": "12:02",
+      "text": "us call that as the edge X comma Y from G to obtain G Prime so we just removed"
+    },
+    {
+      "start": "12:02",
+      "end": "12:02",
+      "text": "G to obtain G Prime so we just removed"
+    },
+    {
+      "start": "12:02",
+      "end": "12:03",
+      "text": "G to obtain G Prime so we just removed one particular edge some arbitrary edge"
+    },
+    {
+      "start": "12:03",
+      "end": "12:03",
+      "text": "one particular edge some arbitrary edge"
+    },
+    {
+      "start": "12:03",
+      "end": "12:06",
+      "text": "one particular edge some arbitrary edge and we will get a smaller graph clearly"
+    },
+    {
+      "start": "12:06",
+      "end": "12:06",
+      "text": "and we will get a smaller graph clearly"
+    },
+    {
+      "start": "12:06",
+      "end": "12:09",
+      "text": "and we will get a smaller graph clearly by our induction hypothesis on the"
+    },
+    {
+      "start": "12:09",
+      "end": "12:09",
+      "text": "by our induction hypothesis on the"
+    },
+    {
+      "start": "12:09",
+      "end": "12:12",
+      "text": "by our induction hypothesis on the smaller graph G Prime you can color it"
+    },
+    {
+      "start": "12:12",
+      "end": "12:12",
+      "text": "smaller graph G Prime you can color it"
+    },
+    {
+      "start": "12:12",
+      "end": "12:19",
+      "text": "smaller graph G Prime you can color it with Delta colors ok so Delta is the max"
+    },
+    {
+      "start": "12:19",
+      "end": "12:19",
+      "text": "with Delta colors ok so Delta is the max"
+    },
+    {
+      "start": "12:19",
+      "end": "12:28",
+      "text": "with Delta colors ok so Delta is the max degree in G ok so clearly we can obtain"
+    },
+    {
+      "start": "12:28",
+      "end": "12:28",
+      "text": "degree in G ok so clearly we can obtain"
+    },
+    {
+      "start": "12:28",
+      "end": "12:33",
+      "text": "degree in G ok so clearly we can obtain a coloring of G prime which uses no more"
+    },
+    {
+      "start": "12:33",
+      "end": "12:33",
+      "text": "a coloring of G prime which uses no more"
+    },
+    {
+      "start": "12:33",
+      "end": "12:40",
+      "text": "a coloring of G prime which uses no more than Delta colors G prime can be colored"
+    },
+    {
+      "start": "12:40",
+      "end": "12:40",
+      "text": "than Delta colors G prime can be colored"
+    },
+    {
+      "start": "12:40",
+      "end": "12:47",
+      "text": "than Delta colors G prime can be colored using Delta colors now let's look at"
+    },
+    {
+      "start": "12:47",
+      "end": "12:47",
+      "text": "using Delta colors now let's look at"
+    },
+    {
+      "start": "12:47",
+      "end": "12:49",
+      "text": "using Delta colors now let's look at these vertices X &amp; Y that's"
+    },
+    {
+      "start": "12:49",
+      "end": "12:49",
+      "text": "these vertices X &amp; Y that's"
+    },
+    {
+      "start": "12:49",
+      "end": "12:50",
+      "text": "these vertices X &amp; Y that's corresponding to the edges that we have"
+    },
+    {
+      "start": "12:50",
+      "end": "12:51",
+      "text": "corresponding to the edges that we have"
+    },
+    {
+      "start": "12:51",
+      "end": "12:53",
+      "text": "corresponding to the edges that we have removed this is an edge that has not"
+    },
+    {
+      "start": "12:53",
+      "end": "12:53",
+      "text": "removed this is an edge that has not"
+    },
+    {
+      "start": "12:53",
+      "end": "12:58",
+      "text": "removed this is an edge that has not been colored so G is the main graph and"
+    },
+    {
+      "start": "12:58",
+      "end": "12:58",
+      "text": "been colored so G is the main graph and"
+    },
+    {
+      "start": "12:58",
+      "end": "13:02",
+      "text": "been colored so G is the main graph and G prime is a residual graph and if we"
+    },
+    {
+      "start": "13:02",
+      "end": "13:02",
+      "text": "G prime is a residual graph and if we"
+    },
+    {
+      "start": "13:02",
+      "end": "13:05",
+      "text": "G prime is a residual graph and if we add this edge XY we will get this is the"
+    },
+    {
+      "start": "13:05",
+      "end": "13:05",
+      "text": "add this edge XY we will get this is the"
+    },
+    {
+      "start": "13:05",
+      "end": "13:10",
+      "text": "add this edge XY we will get this is the complete graph G now we need to color"
+    },
+    {
+      "start": "13:10",
+      "end": "13:10",
+      "text": "complete graph G now we need to color"
+    },
+    {
+      "start": "13:10",
+      "end": "13:11",
+      "text": "complete graph G now we need to color this and if we manage to color it"
+    },
+    {
+      "start": "13:11",
+      "end": "13:11",
+      "text": "this and if we manage to color it"
+    },
+    {
+      "start": "13:11",
+      "end": "13:13",
+      "text": "this and if we manage to color it without using any additional color then"
+    },
+    {
+      "start": "13:13",
+      "end": "13:13",
+      "text": "without using any additional color then"
+    },
+    {
+      "start": "13:13",
+      "end": "13:15",
+      "text": "without using any additional color then we are done we will see how that can be"
+    },
+    {
+      "start": "13:15",
+      "end": "13:15",
+      "text": "we are done we will see how that can be"
+    },
+    {
+      "start": "13:15",
+      "end": "13:21",
+      "text": "we are done we will see how that can be done now look at the vertex X its"
+    },
+    {
+      "start": "13:21",
+      "end": "13:21",
+      "text": "done now look at the vertex X its"
+    },
+    {
+      "start": "13:21",
+      "end": "13:26",
+      "text": "done now look at the vertex X its degrees at most Delta in the original"
+    },
+    {
+      "start": "13:26",
+      "end": "13:26",
+      "text": "degrees at most Delta in the original"
+    },
+    {
+      "start": "13:26",
+      "end": "13:27",
+      "text": "degrees at most Delta in the original graph"
+    },
+    {
+      "start": "13:27",
+      "end": "13:27",
+      "text": "graph"
+    },
+    {
+      "start": "13:27",
+      "end": "13:32",
+      "text": "graph since one edge has been removed the"
+    },
+    {
+      "start": "13:32",
+      "end": "13:32",
+      "text": "since one edge has been removed the"
+    },
+    {
+      "start": "13:32",
+      "end": "13:37",
+      "text": "since one edge has been removed the degree of X in G prime is at most Delta"
+    },
+    {
+      "start": "13:37",
+      "end": "13:37",
+      "text": "degree of X in G prime is at most Delta"
+    },
+    {
+      "start": "13:37",
+      "end": "13:49",
+      "text": "degree of X in G prime is at most Delta minus one degree of both x and y so"
+    },
+    {
+      "start": "13:49",
+      "end": "13:49",
+      "text": "minus one degree of both x and y so"
+    },
+    {
+      "start": "13:49",
+      "end": "13:52",
+      "text": "minus one degree of both x and y so there is an unused color left at x and y"
+    },
+    {
+      "start": "13:52",
+      "end": "13:52",
+      "text": "there is an unused color left at x and y"
+    },
+    {
+      "start": "13:52",
+      "end": "13:56",
+      "text": "there is an unused color left at x and y so if you look at the vertex x and y in"
+    },
+    {
+      "start": "13:56",
+      "end": "13:56",
+      "text": "so if you look at the vertex x and y in"
+    },
+    {
+      "start": "13:56",
+      "end": "13:59",
+      "text": "so if you look at the vertex x and y in the graph G Prime there is some color"
+    },
+    {
+      "start": "13:59",
+      "end": "13:59",
+      "text": "the graph G Prime there is some color"
+    },
+    {
+      "start": "13:59",
+      "end": "14:03",
+      "text": "the graph G Prime there is some color that is unused okay so let alpha be the"
+    },
+    {
+      "start": "14:03",
+      "end": "14:03",
+      "text": "that is unused okay so let alpha be the"
+    },
+    {
+      "start": "14:03",
+      "end": "14:16",
+      "text": "that is unused okay so let alpha be the unused color at vertex X and beta be the"
+    },
+    {
+      "start": "14:16",
+      "end": "14:16",
+      "text": "unused color at vertex X and beta be the"
+    },
+    {
+      "start": "14:16",
+      "end": "14:19",
+      "text": "unused color at vertex X and beta be the anews color at vertex y ok so whatever"
+    },
+    {
+      "start": "14:19",
+      "end": "14:19",
+      "text": "anews color at vertex y ok so whatever"
+    },
+    {
+      "start": "14:19",
+      "end": "14:22",
+      "text": "anews color at vertex y ok so whatever or those canoes colors there should be"
+    },
+    {
+      "start": "14:22",
+      "end": "14:22",
+      "text": "or those canoes colors there should be"
+    },
+    {
+      "start": "14:22",
+      "end": "14:24",
+      "text": "or those canoes colors there should be at least one because degree of X is at"
+    },
+    {
+      "start": "14:24",
+      "end": "14:24",
+      "text": "at least one because degree of X is at"
+    },
+    {
+      "start": "14:24",
+      "end": "14:30",
+      "text": "at least one because degree of X is at most Delta and since we are removing one"
+    },
+    {
+      "start": "14:30",
+      "end": "14:30",
+      "text": "most Delta and since we are removing one"
+    },
+    {
+      "start": "14:30",
+      "end": "14:35",
+      "text": "most Delta and since we are removing one edge at X we would have used only Delta"
+    },
+    {
+      "start": "14:35",
+      "end": "14:35",
+      "text": "edge at X we would have used only Delta"
+    },
+    {
+      "start": "14:35",
+      "end": "14:37",
+      "text": "edge at X we would have used only Delta minus 1 colors I mean the maximum of"
+    },
+    {
+      "start": "14:37",
+      "end": "14:37",
+      "text": "minus 1 colors I mean the maximum of"
+    },
+    {
+      "start": "14:37",
+      "end": "14:39",
+      "text": "minus 1 colors I mean the maximum of Delta minus 1 colors the left-behind"
+    },
+    {
+      "start": "14:39",
+      "end": "14:40",
+      "text": "Delta minus 1 colors the left-behind"
+    },
+    {
+      "start": "14:40",
+      "end": "14:43",
+      "text": "Delta minus 1 colors the left-behind color is what we will call as alpha now"
+    },
+    {
+      "start": "14:43",
+      "end": "14:43",
+      "text": "color is what we will call as alpha now"
+    },
+    {
+      "start": "14:43",
+      "end": "14:45",
+      "text": "color is what we will call as alpha now the simple cases when there is alpha and"
+    },
+    {
+      "start": "14:45",
+      "end": "14:45",
+      "text": "the simple cases when there is alpha and"
+    },
+    {
+      "start": "14:45",
+      "end": "14:47",
+      "text": "the simple cases when there is alpha and beta are the same if alpha and beta"
+    },
+    {
+      "start": "14:47",
+      "end": "14:47",
+      "text": "beta are the same if alpha and beta"
+    },
+    {
+      "start": "14:47",
+      "end": "14:54",
+      "text": "beta are the same if alpha and beta where both let's say equal then we can"
+    },
+    {
+      "start": "14:54",
+      "end": "14:54",
+      "text": "where both let's say equal then we can"
+    },
+    {
+      "start": "14:54",
+      "end": "14:57",
+      "text": "where both let's say equal then we can simply use that color to color the edge"
+    },
+    {
+      "start": "14:57",
+      "end": "14:57",
+      "text": "simply use that color to color the edge"
+    },
+    {
+      "start": "14:57",
+      "end": "15:07",
+      "text": "simply use that color to color the edge XY"
+    },
+    {
+      "start": "15:12",
+      "end": "15:12",
+      "text": "so XY there is an unused color we can"
+    },
+    {
+      "start": "15:12",
+      "end": "15:14",
+      "text": "so XY there is an unused color we can just give that a newest color to that"
+    },
+    {
+      "start": "15:14",
+      "end": "15:14",
+      "text": "just give that a newest color to that"
+    },
+    {
+      "start": "15:14",
+      "end": "15:17",
+      "text": "just give that a newest color to that particular edge but when alpha and beta"
+    },
+    {
+      "start": "15:17",
+      "end": "15:17",
+      "text": "particular edge but when alpha and beta"
+    },
+    {
+      "start": "15:17",
+      "end": "15:19",
+      "text": "particular edge but when alpha and beta are different we are in a little bit of"
+    },
+    {
+      "start": "15:19",
+      "end": "15:19",
+      "text": "are different we are in a little bit of"
+    },
+    {
+      "start": "15:19",
+      "end": "15:20",
+      "text": "are different we are in a little bit of trouble but we will see that that case"
+    },
+    {
+      "start": "15:20",
+      "end": "15:21",
+      "text": "trouble but we will see that that case"
+    },
+    {
+      "start": "15:21",
+      "end": "15:23",
+      "text": "trouble but we will see that that case can also be dealt with what we will do"
+    },
+    {
+      "start": "15:23",
+      "end": "15:23",
+      "text": "can also be dealt with what we will do"
+    },
+    {
+      "start": "15:23",
+      "end": "15:26",
+      "text": "can also be dealt with what we will do is we will look at the coloring given by"
+    },
+    {
+      "start": "15:26",
+      "end": "15:26",
+      "text": "is we will look at the coloring given by"
+    },
+    {
+      "start": "15:26",
+      "end": "15:29",
+      "text": "is we will look at the coloring given by G prime G prime was a smaller graph"
+    },
+    {
+      "start": "15:29",
+      "end": "15:29",
+      "text": "G prime G prime was a smaller graph"
+    },
+    {
+      "start": "15:29",
+      "end": "15:32",
+      "text": "G prime G prime was a smaller graph which we assumed I mean which by our"
+    },
+    {
+      "start": "15:32",
+      "end": "15:32",
+      "text": "which we assumed I mean which by our"
+    },
+    {
+      "start": "15:32",
+      "end": "15:34",
+      "text": "which we assumed I mean which by our assumption can be coloured because G"
+    },
+    {
+      "start": "15:34",
+      "end": "15:34",
+      "text": "assumption can be coloured because G"
+    },
+    {
+      "start": "15:34",
+      "end": "15:38",
+      "text": "assumption can be coloured because G prime has at most M adjacent okay so now"
+    },
+    {
+      "start": "15:38",
+      "end": "15:38",
+      "text": "prime has at most M adjacent okay so now"
+    },
+    {
+      "start": "15:38",
+      "end": "15:41",
+      "text": "prime has at most M adjacent okay so now let's look at this vertex so x and y up"
+    },
+    {
+      "start": "15:41",
+      "end": "15:41",
+      "text": "let's look at this vertex so x and y up"
+    },
+    {
+      "start": "15:41",
+      "end": "15:45",
+      "text": "let's look at this vertex so x and y up to vertices the color that was unused at"
+    },
+    {
+      "start": "15:45",
+      "end": "15:45",
+      "text": "to vertices the color that was unused at"
+    },
+    {
+      "start": "15:45",
+      "end": "15:47",
+      "text": "to vertices the color that was unused at X was alpha and the color that was"
+    },
+    {
+      "start": "15:47",
+      "end": "15:47",
+      "text": "X was alpha and the color that was"
+    },
+    {
+      "start": "15:47",
+      "end": "15:51",
+      "text": "X was alpha and the color that was unused at Y was betta no so alpha we"
+    },
+    {
+      "start": "15:51",
+      "end": "15:51",
+      "text": "unused at Y was betta no so alpha we"
+    },
+    {
+      "start": "15:51",
+      "end": "15:57",
+      "text": "unused at Y was betta no so alpha we will just denote it by red and beta we"
+    },
+    {
+      "start": "15:57",
+      "end": "15:57",
+      "text": "will just denote it by red and beta we"
+    },
+    {
+      "start": "15:57",
+      "end": "16:04",
+      "text": "will just denote it by red and beta we will denote by blue now the red color"
+    },
+    {
+      "start": "16:04",
+      "end": "16:04",
+      "text": "will denote by blue now the red color"
+    },
+    {
+      "start": "16:04",
+      "end": "16:09",
+      "text": "will denote by blue now the red color was not used at X and blue color should"
+    },
+    {
+      "start": "16:09",
+      "end": "16:09",
+      "text": "was not used at X and blue color should"
+    },
+    {
+      "start": "16:09",
+      "end": "16:11",
+      "text": "was not used at X and blue color should have been used at X so let's look at the"
+    },
+    {
+      "start": "16:11",
+      "end": "16:11",
+      "text": "have been used at X so let's look at the"
+    },
+    {
+      "start": "16:11",
+      "end": "16:13",
+      "text": "have been used at X so let's look at the blue colored edge from X to the other"
+    },
+    {
+      "start": "16:13",
+      "end": "16:13",
+      "text": "blue colored edge from X to the other"
+    },
+    {
+      "start": "16:13",
+      "end": "16:17",
+      "text": "blue colored edge from X to the other side so that will go to some particular"
+    },
+    {
+      "start": "16:17",
+      "end": "16:17",
+      "text": "side so that will go to some particular"
+    },
+    {
+      "start": "16:17",
+      "end": "16:24",
+      "text": "side so that will go to some particular vertex which we will call as y1 okay now"
+    },
+    {
+      "start": "16:24",
+      "end": "16:24",
+      "text": "vertex which we will call as y1 okay now"
+    },
+    {
+      "start": "16:24",
+      "end": "16:31",
+      "text": "vertex which we will call as y1 okay now if you look at vertex y1 there are two"
+    },
+    {
+      "start": "16:31",
+      "end": "16:31",
+      "text": "if you look at vertex y1 there are two"
+    },
+    {
+      "start": "16:31",
+      "end": "16:34",
+      "text": "if you look at vertex y1 there are two situation that is either a red edge"
+    },
+    {
+      "start": "16:34",
+      "end": "16:34",
+      "text": "situation that is either a red edge"
+    },
+    {
+      "start": "16:34",
+      "end": "16:38",
+      "text": "situation that is either a red edge black to the other side or the red edges"
+    },
+    {
+      "start": "16:38",
+      "end": "16:38",
+      "text": "black to the other side or the red edges"
+    },
+    {
+      "start": "16:38",
+      "end": "16:42",
+      "text": "black to the other side or the red edges not used if the red edge is not used"
+    },
+    {
+      "start": "16:42",
+      "end": "16:42",
+      "text": "not used if the red edge is not used"
+    },
+    {
+      "start": "16:42",
+      "end": "16:46",
+      "text": "not used if the red edge is not used then we will stop okay if the red edge"
+    },
+    {
+      "start": "16:46",
+      "end": "16:46",
+      "text": "then we will stop okay if the red edge"
+    },
+    {
+      "start": "16:46",
+      "end": "16:49",
+      "text": "then we will stop okay if the red edge is used we will take the red edge okay"
+    },
+    {
+      "start": "16:49",
+      "end": "16:49",
+      "text": "is used we will take the red edge okay"
+    },
+    {
+      "start": "16:49",
+      "end": "16:51",
+      "text": "is used we will take the red edge okay so the red edge goes to some other place"
+    },
+    {
+      "start": "16:51",
+      "end": "16:51",
+      "text": "so the red edge goes to some other place"
+    },
+    {
+      "start": "16:51",
+      "end": "16:54",
+      "text": "so the red edge goes to some other place some of the vertex let's call that as x1"
+    },
+    {
+      "start": "16:54",
+      "end": "16:54",
+      "text": "some of the vertex let's call that as x1"
+    },
+    {
+      "start": "16:54",
+      "end": "16:58",
+      "text": "some of the vertex let's call that as x1 and then from here you will go back why"
+    },
+    {
+      "start": "16:58",
+      "end": "16:58",
+      "text": "and then from here you will go back why"
+    },
+    {
+      "start": "16:58",
+      "end": "17:01",
+      "text": "and then from here you will go back why are blue edge and we will continue this"
+    },
+    {
+      "start": "17:01",
+      "end": "17:01",
+      "text": "are blue edge and we will continue this"
+    },
+    {
+      "start": "17:01",
+      "end": "17:06",
+      "text": "are blue edge and we will continue this process"
+    },
+    {
+      "start": "17:08",
+      "end": "17:08",
+      "text": "okay so all that we are doing us will"
+    },
+    {
+      "start": "17:08",
+      "end": "17:10",
+      "text": "okay so all that we are doing us will the followings"
+    },
+    {
+      "start": "17:10",
+      "end": "17:10",
+      "text": "the followings"
+    },
+    {
+      "start": "17:10",
+      "end": "17:13",
+      "text": "the followings start at the vertex X and you go to the"
+    },
+    {
+      "start": "17:13",
+      "end": "17:13",
+      "text": "start at the vertex X and you go to the"
+    },
+    {
+      "start": "17:13",
+      "end": "17:16",
+      "text": "start at the vertex X and you go to the other side via the blue edge if there is"
+    },
+    {
+      "start": "17:16",
+      "end": "17:16",
+      "text": "other side via the blue edge if there is"
+    },
+    {
+      "start": "17:16",
+      "end": "17:20",
+      "text": "other side via the blue edge if there is no blue edge then we will stop and when"
+    },
+    {
+      "start": "17:20",
+      "end": "17:20",
+      "text": "no blue edge then we will stop and when"
+    },
+    {
+      "start": "17:20",
+      "end": "17:21",
+      "text": "no blue edge then we will stop and when you go to the other side you will come"
+    },
+    {
+      "start": "17:21",
+      "end": "17:21",
+      "text": "you go to the other side you will come"
+    },
+    {
+      "start": "17:21",
+      "end": "17:24",
+      "text": "you go to the other side you will come back why are they read it if you cannot"
+    },
+    {
+      "start": "17:24",
+      "end": "17:24",
+      "text": "back why are they read it if you cannot"
+    },
+    {
+      "start": "17:24",
+      "end": "17:27",
+      "text": "back why are they read it if you cannot find the red edge you will stop okay so"
+    },
+    {
+      "start": "17:27",
+      "end": "17:27",
+      "text": "find the red edge you will stop okay so"
+    },
+    {
+      "start": "17:27",
+      "end": "17:29",
+      "text": "find the red edge you will stop okay so you will get an alternate path of red"
+    },
+    {
+      "start": "17:29",
+      "end": "17:29",
+      "text": "you will get an alternate path of red"
+    },
+    {
+      "start": "17:29",
+      "end": "17:30",
+      "text": "you will get an alternate path of red and blue edges"
+    },
+    {
+      "start": "17:30",
+      "end": "17:30",
+      "text": "and blue edges"
+    },
+    {
+      "start": "17:30",
+      "end": "17:35",
+      "text": "and blue edges the claim is this process has to stop at"
+    },
+    {
+      "start": "17:35",
+      "end": "17:35",
+      "text": "the claim is this process has to stop at"
+    },
+    {
+      "start": "17:35",
+      "end": "17:37",
+      "text": "the claim is this process has to stop at some point and once this process stops"
+    },
+    {
+      "start": "17:37",
+      "end": "17:37",
+      "text": "some point and once this process stops"
+    },
+    {
+      "start": "17:37",
+      "end": "17:41",
+      "text": "some point and once this process stops we can recolor this particular path"
+    },
+    {
+      "start": "17:41",
+      "end": "17:41",
+      "text": "we can recolor this particular path"
+    },
+    {
+      "start": "17:41",
+      "end": "17:45",
+      "text": "we can recolor this particular path without requiring additional colors so"
+    },
+    {
+      "start": "17:45",
+      "end": "17:45",
+      "text": "without requiring additional colors so"
+    },
+    {
+      "start": "17:45",
+      "end": "17:53",
+      "text": "without requiring additional colors so let's see how that can be done at any"
+    },
+    {
+      "start": "17:53",
+      "end": "17:53",
+      "text": "let's see how that can be done at any"
+    },
+    {
+      "start": "17:53",
+      "end": "17:56",
+      "text": "let's see how that can be done at any point when we stop it means there is no"
+    },
+    {
+      "start": "17:56",
+      "end": "17:56",
+      "text": "point when we stop it means there is no"
+    },
+    {
+      "start": "17:56",
+      "end": "18:00",
+      "text": "point when we stop it means there is no ads to be taken for the other color okay"
+    },
+    {
+      "start": "18:00",
+      "end": "18:00",
+      "text": "ads to be taken for the other color okay"
+    },
+    {
+      "start": "18:00",
+      "end": "18:04",
+      "text": "ads to be taken for the other color okay so what it means is if we could have"
+    },
+    {
+      "start": "18:04",
+      "end": "18:04",
+      "text": "so what it means is if we could have"
+    },
+    {
+      "start": "18:04",
+      "end": "18:06",
+      "text": "so what it means is if we could have changed the blues to red and the Reds to"
+    },
+    {
+      "start": "18:06",
+      "end": "18:06",
+      "text": "changed the blues to red and the Reds to"
+    },
+    {
+      "start": "18:06",
+      "end": "18:09",
+      "text": "changed the blues to red and the Reds to blue and still things would work fine"
+    },
+    {
+      "start": "18:09",
+      "end": "18:09",
+      "text": "blue and still things would work fine"
+    },
+    {
+      "start": "18:09",
+      "end": "18:12",
+      "text": "blue and still things would work fine okay is that so so let's say this is yn"
+    },
+    {
+      "start": "18:12",
+      "end": "18:12",
+      "text": "okay is that so so let's say this is yn"
+    },
+    {
+      "start": "18:12",
+      "end": "18:18",
+      "text": "okay is that so so let's say this is yn and xn okay the process stopped at yn"
+    },
+    {
+      "start": "18:18",
+      "end": "18:18",
+      "text": "and xn okay the process stopped at yn"
+    },
+    {
+      "start": "18:18",
+      "end": "18:21",
+      "text": "and xn okay the process stopped at yn because there was no Reds to take to go"
+    },
+    {
+      "start": "18:21",
+      "end": "18:21",
+      "text": "because there was no Reds to take to go"
+    },
+    {
+      "start": "18:21",
+      "end": "18:24",
+      "text": "because there was no Reds to take to go to the other side that is guaranteed"
+    },
+    {
+      "start": "18:24",
+      "end": "18:24",
+      "text": "to the other side that is guaranteed"
+    },
+    {
+      "start": "18:24",
+      "end": "18:27",
+      "text": "to the other side that is guaranteed because this is a bipartite graph and"
+    },
+    {
+      "start": "18:27",
+      "end": "18:27",
+      "text": "because this is a bipartite graph and"
+    },
+    {
+      "start": "18:27",
+      "end": "18:29",
+      "text": "because this is a bipartite graph and because all the edges go to the other"
+    },
+    {
+      "start": "18:29",
+      "end": "18:29",
+      "text": "because all the edges go to the other"
+    },
+    {
+      "start": "18:29",
+      "end": "18:35",
+      "text": "because all the edges go to the other side so you can change this back to red"
+    },
+    {
+      "start": "18:35",
+      "end": "18:35",
+      "text": "side so you can change this back to red"
+    },
+    {
+      "start": "18:35",
+      "end": "18:38",
+      "text": "side so you can change this back to red but if you change that back to red there"
+    },
+    {
+      "start": "18:38",
+      "end": "18:38",
+      "text": "but if you change that back to red there"
+    },
+    {
+      "start": "18:38",
+      "end": "18:40",
+      "text": "but if you change that back to red there is a violation at xn but we can change"
+    },
+    {
+      "start": "18:40",
+      "end": "18:40",
+      "text": "is a violation at xn but we can change"
+    },
+    {
+      "start": "18:40",
+      "end": "18:43",
+      "text": "is a violation at xn but we can change that black to blue okay so we can"
+    },
+    {
+      "start": "18:43",
+      "end": "18:43",
+      "text": "that black to blue okay so we can"
+    },
+    {
+      "start": "18:43",
+      "end": "18:46",
+      "text": "that black to blue okay so we can alternate in this particular manner and"
+    },
+    {
+      "start": "18:46",
+      "end": "18:46",
+      "text": "alternate in this particular manner and"
+    },
+    {
+      "start": "18:46",
+      "end": "18:51",
+      "text": "alternate in this particular manner and get another valid coloring okay so now"
+    },
+    {
+      "start": "18:51",
+      "end": "18:51",
+      "text": "get another valid coloring okay so now"
+    },
+    {
+      "start": "18:51",
+      "end": "18:55",
+      "text": "get another valid coloring okay so now what happens is initially the color that"
+    },
+    {
+      "start": "18:55",
+      "end": "18:55",
+      "text": "what happens is initially the color that"
+    },
+    {
+      "start": "18:55",
+      "end": "19:00",
+      "text": "what happens is initially the color that was used at vertex X was blue and now"
+    },
+    {
+      "start": "19:00",
+      "end": "19:00",
+      "text": "was used at vertex X was blue and now"
+    },
+    {
+      "start": "19:00",
+      "end": "19:05",
+      "text": "was used at vertex X was blue and now that blue has changed to red and since"
+    },
+    {
+      "start": "19:05",
+      "end": "19:05",
+      "text": "that blue has changed to red and since"
+    },
+    {
+      "start": "19:05",
+      "end": "19:07",
+      "text": "that blue has changed to red and since we initially assumed that red color was"
+    },
+    {
+      "start": "19:07",
+      "end": "19:07",
+      "text": "we initially assumed that red color was"
+    },
+    {
+      "start": "19:07",
+      "end": "19:10",
+      "text": "we initially assumed that red color was not used and the blue is now a free"
+    },
+    {
+      "start": "19:10",
+      "end": "19:10",
+      "text": "not used and the blue is now a free"
+    },
+    {
+      "start": "19:10",
+      "end": "19:12",
+      "text": "not used and the blue is now a free color so when blue is a free color"
+    },
+    {
+      "start": "19:12",
+      "end": "19:12",
+      "text": "color so when blue is a free color"
+    },
+    {
+      "start": "19:12",
+      "end": "19:15",
+      "text": "color so when blue is a free color that's the same color that is free for"
+    },
+    {
+      "start": "19:15",
+      "end": "19:15",
+      "text": "that's the same color that is free for"
+    },
+    {
+      "start": "19:15",
+      "end": "19:18",
+      "text": "that's the same color that is free for vertex Y and therefore we can color the"
+    },
+    {
+      "start": "19:18",
+      "end": "19:18",
+      "text": "vertex Y and therefore we can color the"
+    },
+    {
+      "start": "19:18",
+      "end": "19:20",
+      "text": "vertex Y and therefore we can color the edge X Y using the blue color"
+    },
+    {
+      "start": "19:20",
+      "end": "19:20",
+      "text": "edge X Y using the blue color"
+    },
+    {
+      "start": "19:20",
+      "end": "19:24",
+      "text": "edge X Y using the blue color okay so that is the that's a proof so"
+    },
+    {
+      "start": "19:24",
+      "end": "19:24",
+      "text": "okay so that is the that's a proof so"
+    },
+    {
+      "start": "19:24",
+      "end": "19:27",
+      "text": "okay so that is the that's a proof so let's just quickly recap the proof we"
+    },
+    {
+      "start": "19:27",
+      "end": "19:27",
+      "text": "let's just quickly recap the proof we"
+    },
+    {
+      "start": "19:27",
+      "end": "19:30",
+      "text": "let's just quickly recap the proof we looked at the graph and we removed one"
+    },
+    {
+      "start": "19:30",
+      "end": "19:30",
+      "text": "looked at the graph and we removed one"
+    },
+    {
+      "start": "19:30",
+      "end": "19:33",
+      "text": "looked at the graph and we removed one particular edge this smaller graph can"
+    },
+    {
+      "start": "19:33",
+      "end": "19:33",
+      "text": "particular edge this smaller graph can"
+    },
+    {
+      "start": "19:33",
+      "end": "19:37",
+      "text": "particular edge this smaller graph can be colored using Delta colors now the"
+    },
+    {
+      "start": "19:37",
+      "end": "19:37",
+      "text": "be colored using Delta colors now the"
+    },
+    {
+      "start": "19:37",
+      "end": "19:39",
+      "text": "be colored using Delta colors now the larger graph that you get by introducing"
+    },
+    {
+      "start": "19:39",
+      "end": "19:39",
+      "text": "larger graph that you get by introducing"
+    },
+    {
+      "start": "19:39",
+      "end": "19:42",
+      "text": "larger graph that you get by introducing XY into the graph into the residual"
+    },
+    {
+      "start": "19:42",
+      "end": "19:42",
+      "text": "XY into the graph into the residual"
+    },
+    {
+      "start": "19:42",
+      "end": "19:46",
+      "text": "XY into the graph into the residual graph can also be colored using Delta"
+    },
+    {
+      "start": "19:46",
+      "end": "19:46",
+      "text": "graph can also be colored using Delta"
+    },
+    {
+      "start": "19:46",
+      "end": "19:48",
+      "text": "graph can also be colored using Delta colors because we could start at the"
+    },
+    {
+      "start": "19:48",
+      "end": "19:48",
+      "text": "colors because we could start at the"
+    },
+    {
+      "start": "19:48",
+      "end": "19:52",
+      "text": "colors because we could start at the vertex X and keep on alternating using"
+    },
+    {
+      "start": "19:52",
+      "end": "19:52",
+      "text": "vertex X and keep on alternating using"
+    },
+    {
+      "start": "19:52",
+      "end": "19:54",
+      "text": "vertex X and keep on alternating using the two colors that were left unused at"
+    },
+    {
+      "start": "19:54",
+      "end": "19:54",
+      "text": "the two colors that were left unused at"
+    },
+    {
+      "start": "19:54",
+      "end": "19:57",
+      "text": "the two colors that were left unused at the vertices x and y and once you get"
+    },
+    {
+      "start": "19:57",
+      "end": "19:57",
+      "text": "the vertices x and y and once you get"
+    },
+    {
+      "start": "19:57",
+      "end": "20:01",
+      "text": "the vertices x and y and once you get this alternating path of colors you can"
+    },
+    {
+      "start": "20:01",
+      "end": "20:01",
+      "text": "this alternating path of colors you can"
+    },
+    {
+      "start": "20:01",
+      "end": "20:03",
+      "text": "this alternating path of colors you can swap the colors on the path to recolor"
+    },
+    {
+      "start": "20:03",
+      "end": "20:03",
+      "text": "swap the colors on the path to recolor"
+    },
+    {
+      "start": "20:03",
+      "end": "20:05",
+      "text": "swap the colors on the path to recolor the edges once you have we colored the"
+    },
+    {
+      "start": "20:05",
+      "end": "20:05",
+      "text": "the edges once you have we colored the"
+    },
+    {
+      "start": "20:05",
+      "end": "20:10",
+      "text": "the edges once you have we colored the edges the vertices x and y both will"
+    },
+    {
+      "start": "20:10",
+      "end": "20:10",
+      "text": "edges the vertices x and y both will"
+    },
+    {
+      "start": "20:10",
+      "end": "20:12",
+      "text": "edges the vertices x and y both will have the same unused color and that"
+    },
+    {
+      "start": "20:12",
+      "end": "20:12",
+      "text": "have the same unused color and that"
+    },
+    {
+      "start": "20:12",
+      "end": "20:14",
+      "text": "have the same unused color and that color can be used for coloring the edge"
+    },
+    {
+      "start": "20:14",
+      "end": "20:14",
+      "text": "color can be used for coloring the edge"
+    },
+    {
+      "start": "20:14",
+      "end": "20:20",
+      "text": "color can be used for coloring the edge XY so we will now move on we look at"
+    },
+    {
+      "start": "20:20",
+      "end": "20:20",
+      "text": "XY so we will now move on we look at"
+    },
+    {
+      "start": "20:20",
+      "end": "20:39",
+      "text": "XY so we will now move on we look at another property known as matching"
+    },
+    {
+      "start": "20:42",
+      "end": "20:42",
+      "text": "so matching is mean you can find"
+    },
+    {
+      "start": "20:42",
+      "end": "20:44",
+      "text": "so matching is mean you can find matching it's in general graph but here"
+    },
+    {
+      "start": "20:44",
+      "end": "20:44",
+      "text": "matching it's in general graph but here"
+    },
+    {
+      "start": "20:44",
+      "end": "20:47",
+      "text": "matching it's in general graph but here we're going to restrict our attention to"
+    },
+    {
+      "start": "20:47",
+      "end": "20:47",
+      "text": "we're going to restrict our attention to"
+    },
+    {
+      "start": "20:47",
+      "end": "20:49",
+      "text": "we're going to restrict our attention to bipartite graphs so let's understand"
+    },
+    {
+      "start": "20:49",
+      "end": "20:49",
+      "text": "bipartite graphs so let's understand"
+    },
+    {
+      "start": "20:49",
+      "end": "20:51",
+      "text": "bipartite graphs so let's understand what is a matching we'll start with the"
+    },
+    {
+      "start": "20:51",
+      "end": "20:51",
+      "text": "what is a matching we'll start with the"
+    },
+    {
+      "start": "20:51",
+      "end": "20:57",
+      "text": "what is a matching we'll start with the jungle graphs itself so this is a graph"
+    },
+    {
+      "start": "20:57",
+      "end": "20:57",
+      "text": "jungle graphs itself so this is a graph"
+    },
+    {
+      "start": "20:57",
+      "end": "21:09",
+      "text": "jungle graphs itself so this is a graph on 5 vertices let's say 7 volt is this a"
+    },
+    {
+      "start": "21:29",
+      "end": "21:29",
+      "text": "such that you do not share a vertex so"
+    },
+    {
+      "start": "21:29",
+      "end": "21:32",
+      "text": "such that you do not share a vertex so the red colored edges will basically"
+    },
+    {
+      "start": "21:32",
+      "end": "21:32",
+      "text": "the red colored edges will basically"
+    },
+    {
+      "start": "21:32",
+      "end": "21:34",
+      "text": "the red colored edges will basically form a matching that's an example of a"
+    },
+    {
+      "start": "21:34",
+      "end": "21:34",
+      "text": "form a matching that's an example of a"
+    },
+    {
+      "start": "21:34",
+      "end": "21:44",
+      "text": "form a matching that's an example of a matching okay so I have drawn three red"
+    },
+    {
+      "start": "21:44",
+      "end": "21:44",
+      "text": "matching okay so I have drawn three red"
+    },
+    {
+      "start": "21:44",
+      "end": "21:47",
+      "text": "matching okay so I have drawn three red edges in this graph and this forms a"
+    },
+    {
+      "start": "21:47",
+      "end": "21:47",
+      "text": "edges in this graph and this forms a"
+    },
+    {
+      "start": "21:47",
+      "end": "22:03",
+      "text": "edges in this graph and this forms a matching if you number the vertices"
+    },
+    {
+      "start": "22:06",
+      "end": "22:06",
+      "text": "if you number the vertices as one to"
+    },
+    {
+      "start": "22:06",
+      "end": "22:09",
+      "text": "if you number the vertices as one to seven the matching will consist of the"
+    },
+    {
+      "start": "22:09",
+      "end": "22:09",
+      "text": "seven the matching will consist of the"
+    },
+    {
+      "start": "22:09",
+      "end": "22:10",
+      "text": "seven the matching will consist of the following add the matching will be"
+    },
+    {
+      "start": "22:10",
+      "end": "22:10",
+      "text": "following add the matching will be"
+    },
+    {
+      "start": "22:10",
+      "end": "22:13",
+      "text": "following add the matching will be described here using the red edges will"
+    },
+    {
+      "start": "22:13",
+      "end": "22:13",
+      "text": "described here using the red edges will"
+    },
+    {
+      "start": "22:13",
+      "end": "22:15",
+      "text": "described here using the red edges will consist of the following edges one two"
+    },
+    {
+      "start": "22:15",
+      "end": "22:15",
+      "text": "consist of the following edges one two"
+    },
+    {
+      "start": "22:15",
+      "end": "22:19",
+      "text": "consist of the following edges one two four six and five seven look at any two"
+    },
+    {
+      "start": "22:19",
+      "end": "22:19",
+      "text": "four six and five seven look at any two"
+    },
+    {
+      "start": "22:19",
+      "end": "22:21",
+      "text": "four six and five seven look at any two pair of edges inside this collection"
+    },
+    {
+      "start": "22:21",
+      "end": "22:21",
+      "text": "pair of edges inside this collection"
+    },
+    {
+      "start": "22:21",
+      "end": "22:25",
+      "text": "pair of edges inside this collection they do not share a vertex this is also"
+    },
+    {
+      "start": "22:25",
+      "end": "22:25",
+      "text": "they do not share a vertex this is also"
+    },
+    {
+      "start": "22:25",
+      "end": "22:29",
+      "text": "they do not share a vertex this is also a maximal matching in the sense this"
+    },
+    {
+      "start": "22:29",
+      "end": "22:29",
+      "text": "a maximal matching in the sense this"
+    },
+    {
+      "start": "22:29",
+      "end": "22:35",
+      "text": "a maximal matching in the sense this particular graph G if you call this"
+    },
+    {
+      "start": "22:35",
+      "end": "22:35",
+      "text": "particular graph G if you call this"
+    },
+    {
+      "start": "22:35",
+      "end": "22:38",
+      "text": "particular graph G if you call this graph G this graph G cannot have a"
+    },
+    {
+      "start": "22:38",
+      "end": "22:38",
+      "text": "graph G this graph G cannot have a"
+    },
+    {
+      "start": "22:38",
+      "end": "22:44",
+      "text": "graph G this graph G cannot have a matching of size greater than 3 it has"
+    },
+    {
+      "start": "22:44",
+      "end": "22:44",
+      "text": "matching of size greater than 3 it has"
+    },
+    {
+      "start": "22:44",
+      "end": "22:47",
+      "text": "matching of size greater than 3 it has only seven vertices and each matching"
+    },
+    {
+      "start": "22:47",
+      "end": "22:47",
+      "text": "only seven vertices and each matching"
+    },
+    {
+      "start": "22:47",
+      "end": "22:51",
+      "text": "only seven vertices and each matching edge will take two vertices with it so"
+    },
+    {
+      "start": "22:51",
+      "end": "22:51",
+      "text": "edge will take two vertices with it so"
+    },
+    {
+      "start": "22:51",
+      "end": "22:53",
+      "text": "edge will take two vertices with it so the maximum number of such pairs that"
+    },
+    {
+      "start": "22:53",
+      "end": "22:53",
+      "text": "the maximum number of such pairs that"
+    },
+    {
+      "start": "22:53",
+      "end": "22:56",
+      "text": "the maximum number of such pairs that you can obtain as certainly less than or"
+    },
+    {
+      "start": "22:56",
+      "end": "22:56",
+      "text": "you can obtain as certainly less than or"
+    },
+    {
+      "start": "22:56",
+      "end": "23:00",
+      "text": "you can obtain as certainly less than or equal to 7 by 2 and 3.5 being a non"
+    },
+    {
+      "start": "23:00",
+      "end": "23:00",
+      "text": "equal to 7 by 2 and 3.5 being a non"
+    },
+    {
+      "start": "23:00",
+      "end": "23:03",
+      "text": "equal to 7 by 2 and 3.5 being a non integer the maximum possible is only 3"
+    },
+    {
+      "start": "23:03",
+      "end": "23:03",
+      "text": "integer the maximum possible is only 3"
+    },
+    {
+      "start": "23:03",
+      "end": "23:06",
+      "text": "integer the maximum possible is only 3 so 3 is the maximal matching as well as"
+    },
+    {
+      "start": "23:06",
+      "end": "23:06",
+      "text": "so 3 is the maximal matching as well as"
+    },
+    {
+      "start": "23:06",
+      "end": "23:08",
+      "text": "so 3 is the maximal matching as well as the maximum matching so let's see few"
+    },
+    {
+      "start": "23:08",
+      "end": "23:08",
+      "text": "the maximum matching so let's see few"
+    },
+    {
+      "start": "23:08",
+      "end": "23:13",
+      "text": "the maximum matching so let's see few other examples so we will look at these"
+    },
+    {
+      "start": "23:13",
+      "end": "23:13",
+      "text": "other examples so we will look at these"
+    },
+    {
+      "start": "23:13",
+      "end": "23:24",
+      "text": "other examples so we will look at these concepts more carefully maximal matching"
+    },
+    {
+      "start": "23:40",
+      "end": "23:40",
+      "text": "complete matching or perfect matchings"
+    },
+    {
+      "start": "23:40",
+      "end": "23:44",
+      "text": "complete matching or perfect matchings so maximal means there is no additional"
+    },
+    {
+      "start": "23:44",
+      "end": "23:44",
+      "text": "so maximal means there is no additional"
+    },
+    {
+      "start": "23:44",
+      "end": "23:46",
+      "text": "so maximal means there is no additional edge that one can add to this collection"
+    },
+    {
+      "start": "23:46",
+      "end": "23:46",
+      "text": "edge that one can add to this collection"
+    },
+    {
+      "start": "23:46",
+      "end": "23:50",
+      "text": "edge that one can add to this collection that is given to you to get a matching"
+    },
+    {
+      "start": "23:50",
+      "end": "23:50",
+      "text": "that is given to you to get a matching"
+    },
+    {
+      "start": "23:50",
+      "end": "24:03",
+      "text": "that is given to you to get a matching so let's see an example"
+    },
+    {
+      "start": "24:05",
+      "end": "24:05",
+      "text": "so if you look at this particular graph"
+    },
+    {
+      "start": "24:05",
+      "end": "24:17",
+      "text": "so if you look at this particular graph G and if you just look at the red edge"
+    },
+    {
+      "start": "24:21",
+      "end": "24:21",
+      "text": "if you look at the red edge that forms a"
+    },
+    {
+      "start": "24:21",
+      "end": "24:24",
+      "text": "if you look at the red edge that forms a maximal matching because you cannot add"
+    },
+    {
+      "start": "24:24",
+      "end": "24:24",
+      "text": "maximal matching because you cannot add"
+    },
+    {
+      "start": "24:24",
+      "end": "24:27",
+      "text": "maximal matching because you cannot add any more edges to this collection"
+    },
+    {
+      "start": "24:27",
+      "end": "24:27",
+      "text": "any more edges to this collection"
+    },
+    {
+      "start": "24:27",
+      "end": "24:33",
+      "text": "any more edges to this collection without violating the matching property"
+    },
+    {
+      "start": "24:39",
+      "end": "24:39",
+      "text": "because all the other edges must share a"
+    },
+    {
+      "start": "24:39",
+      "end": "24:45",
+      "text": "because all the other edges must share a vertex with either vertex 1 or vertex 2"
+    },
+    {
+      "start": "24:45",
+      "end": "24:45",
+      "text": "vertex with either vertex 1 or vertex 2"
+    },
+    {
+      "start": "24:45",
+      "end": "24:49",
+      "text": "vertex with either vertex 1 or vertex 2 but this is clearly not the maximum"
+    },
+    {
+      "start": "24:49",
+      "end": "24:49",
+      "text": "but this is clearly not the maximum"
+    },
+    {
+      "start": "24:49",
+      "end": "24:52",
+      "text": "but this is clearly not the maximum matching in the sense there are larger"
+    },
+    {
+      "start": "24:52",
+      "end": "24:52",
+      "text": "matching in the sense there are larger"
+    },
+    {
+      "start": "24:52",
+      "end": "24:54",
+      "text": "matching in the sense there are larger matchings that can be obtained for"
+    },
+    {
+      "start": "24:54",
+      "end": "24:54",
+      "text": "matchings that can be obtained for"
+    },
+    {
+      "start": "24:54",
+      "end": "24:56",
+      "text": "matchings that can be obtained for example if you look at the blue colored"
+    },
+    {
+      "start": "24:56",
+      "end": "24:56",
+      "text": "example if you look at the blue colored"
+    },
+    {
+      "start": "24:56",
+      "end": "25:04",
+      "text": "example if you look at the blue colored edges that's an example of a maximum"
+    },
+    {
+      "start": "25:04",
+      "end": "25:04",
+      "text": "edges that's an example of a maximum"
+    },
+    {
+      "start": "25:04",
+      "end": "25:06",
+      "text": "edges that's an example of a maximum matching and the sense this cannot be"
+    },
+    {
+      "start": "25:06",
+      "end": "25:06",
+      "text": "matching and the sense this cannot be"
+    },
+    {
+      "start": "25:06",
+      "end": "25:10",
+      "text": "matching and the sense this cannot be further extended and but there is not"
+    },
+    {
+      "start": "25:10",
+      "end": "25:10",
+      "text": "further extended and but there is not"
+    },
+    {
+      "start": "25:10",
+      "end": "25:13",
+      "text": "further extended and but there is not the unique maximum matching the pink"
+    },
+    {
+      "start": "25:13",
+      "end": "25:13",
+      "text": "the unique maximum matching the pink"
+    },
+    {
+      "start": "25:13",
+      "end": "25:17",
+      "text": "the unique maximum matching the pink edges will also form a maximum matching"
+    },
+    {
+      "start": "25:17",
+      "end": "25:17",
+      "text": "edges will also form a maximum matching"
+    },
+    {
+      "start": "25:17",
+      "end": "25:20",
+      "text": "edges will also form a maximum matching in this case this is also a complete"
+    },
+    {
+      "start": "25:20",
+      "end": "25:20",
+      "text": "in this case this is also a complete"
+    },
+    {
+      "start": "25:20",
+      "end": "25:22",
+      "text": "in this case this is also a complete matching or a perfect matching because"
+    },
+    {
+      "start": "25:22",
+      "end": "25:22",
+      "text": "matching or a perfect matching because"
+    },
+    {
+      "start": "25:22",
+      "end": "25:29",
+      "text": "matching or a perfect matching because all the vertices have been matched if we"
+    },
+    {
+      "start": "25:29",
+      "end": "25:29",
+      "text": "all the vertices have been matched if we"
+    },
+    {
+      "start": "25:29",
+      "end": "25:38",
+      "text": "all the vertices have been matched if we had looked at a different graph namely"
+    },
+    {
+      "start": "25:38",
+      "end": "25:38",
+      "text": "had looked at a different graph namely"
+    },
+    {
+      "start": "25:38",
+      "end": "25:45",
+      "text": "had looked at a different graph namely the triangle the maximal matching as"
+    },
+    {
+      "start": "25:45",
+      "end": "25:45",
+      "text": "the triangle the maximal matching as"
+    },
+    {
+      "start": "25:45",
+      "end": "25:46",
+      "text": "the triangle the maximal matching as well as the maximum matching will"
+    },
+    {
+      "start": "25:46",
+      "end": "25:46",
+      "text": "well as the maximum matching will"
+    },
+    {
+      "start": "25:46",
+      "end": "25:52",
+      "text": "well as the maximum matching will consist of precisely one edge if you"
+    },
+    {
+      "start": "25:52",
+      "end": "25:52",
+      "text": "consist of precisely one edge if you"
+    },
+    {
+      "start": "25:52",
+      "end": "25:54",
+      "text": "consist of precisely one edge if you take any particular edge that's going to"
+    },
+    {
+      "start": "25:54",
+      "end": "25:54",
+      "text": "take any particular edge that's going to"
+    },
+    {
+      "start": "25:54",
+      "end": "25:55",
+      "text": "take any particular edge that's going to be a maximum matching you cannot further"
+    },
+    {
+      "start": "25:55",
+      "end": "25:55",
+      "text": "be a maximum matching you cannot further"
+    },
+    {
+      "start": "25:55",
+      "end": "25:59",
+      "text": "be a maximum matching you cannot further extend it okay so you cannot get a"
+    },
+    {
+      "start": "25:59",
+      "end": "25:59",
+      "text": "extend it okay so you cannot get a"
+    },
+    {
+      "start": "25:59",
+      "end": "26:03",
+      "text": "extend it okay so you cannot get a matching which covers all the vertices"
+    },
+    {
+      "start": "26:03",
+      "end": "26:03",
+      "text": "matching which covers all the vertices"
+    },
+    {
+      "start": "26:03",
+      "end": "26:06",
+      "text": "matching which covers all the vertices so there is no there are no complete"
+    },
+    {
+      "start": "26:06",
+      "end": "26:06",
+      "text": "so there is no there are no complete"
+    },
+    {
+      "start": "26:06",
+      "end": "26:08",
+      "text": "so there is no there are no complete matchings in this particular graph what"
+    },
+    {
+      "start": "26:08",
+      "end": "26:08",
+      "text": "matchings in this particular graph what"
+    },
+    {
+      "start": "26:08",
+      "end": "26:10",
+      "text": "matchings in this particular graph what we will see in the remainder of this"
+    },
+    {
+      "start": "26:10",
+      "end": "26:10",
+      "text": "we will see in the remainder of this"
+    },
+    {
+      "start": "26:10",
+      "end": "26:15",
+      "text": "we will see in the remainder of this lecture is a characterization for when a"
+    },
+    {
+      "start": "26:15",
+      "end": "26:15",
+      "text": "lecture is a characterization for when a"
+    },
+    {
+      "start": "26:15",
+      "end": "26:19",
+      "text": "lecture is a characterization for when a bipartite graph has a complete matching"
+    },
+    {
+      "start": "26:19",
+      "end": "26:19",
+      "text": "bipartite graph has a complete matching"
+    },
+    {
+      "start": "26:19",
+      "end": "26:21",
+      "text": "bipartite graph has a complete matching okay so this is the question that we"
+    },
+    {
+      "start": "26:21",
+      "end": "26:21",
+      "text": "okay so this is the question that we"
+    },
+    {
+      "start": "26:21",
+      "end": "26:28",
+      "text": "okay so this is the question that we will answer then there's"
+    },
+    {
+      "start": "26:28",
+      "end": "26:28",
+      "text": "will answer then there's"
+    },
+    {
+      "start": "26:28",
+      "end": "26:40",
+      "text": "will answer then there's bipartite graph have a perfect matching"
+    },
+    {
+      "start": "26:44",
+      "end": "26:44",
+      "text": "okay so we will focus our written we"
+    },
+    {
+      "start": "26:44",
+      "end": "26:46",
+      "text": "okay so we will focus our written we will restrict our attention to bipartite"
+    },
+    {
+      "start": "26:46",
+      "end": "26:46",
+      "text": "will restrict our attention to bipartite"
+    },
+    {
+      "start": "26:46",
+      "end": "26:50",
+      "text": "will restrict our attention to bipartite graphs which have equal number of"
+    },
+    {
+      "start": "26:50",
+      "end": "26:50",
+      "text": "graphs which have equal number of"
+    },
+    {
+      "start": "26:50",
+      "end": "26:52",
+      "text": "graphs which have equal number of vertices when we talk about perfect"
+    },
+    {
+      "start": "26:52",
+      "end": "26:52",
+      "text": "vertices when we talk about perfect"
+    },
+    {
+      "start": "26:52",
+      "end": "26:55",
+      "text": "vertices when we talk about perfect matchings because if one side had let us"
+    },
+    {
+      "start": "26:55",
+      "end": "26:55",
+      "text": "matchings because if one side had let us"
+    },
+    {
+      "start": "26:55",
+      "end": "26:57",
+      "text": "matchings because if one side had let us say seven vertices and the other side"
+    },
+    {
+      "start": "26:57",
+      "end": "26:57",
+      "text": "say seven vertices and the other side"
+    },
+    {
+      "start": "26:57",
+      "end": "27:01",
+      "text": "say seven vertices and the other side had ten vertices we cannot clearly match"
+    },
+    {
+      "start": "27:01",
+      "end": "27:01",
+      "text": "had ten vertices we cannot clearly match"
+    },
+    {
+      "start": "27:01",
+      "end": "27:07",
+      "text": "had ten vertices we cannot clearly match all the all the vertices but we can hope"
+    },
+    {
+      "start": "27:07",
+      "end": "27:07",
+      "text": "all the all the vertices but we can hope"
+    },
+    {
+      "start": "27:07",
+      "end": "27:11",
+      "text": "all the all the vertices but we can hope to match seven of them okay so if we"
+    },
+    {
+      "start": "27:11",
+      "end": "27:11",
+      "text": "to match seven of them okay so if we"
+    },
+    {
+      "start": "27:11",
+      "end": "27:13",
+      "text": "to match seven of them okay so if we match seven of them we could still call"
+    },
+    {
+      "start": "27:13",
+      "end": "27:13",
+      "text": "match seven of them we could still call"
+    },
+    {
+      "start": "27:13",
+      "end": "27:15",
+      "text": "match seven of them we could still call that as a complete matching although"
+    },
+    {
+      "start": "27:15",
+      "end": "27:15",
+      "text": "that as a complete matching although"
+    },
+    {
+      "start": "27:15",
+      "end": "27:18",
+      "text": "that as a complete matching although it's not a perfect matching so we will"
+    },
+    {
+      "start": "27:18",
+      "end": "27:18",
+      "text": "it's not a perfect matching so we will"
+    },
+    {
+      "start": "27:18",
+      "end": "27:22",
+      "text": "it's not a perfect matching so we will look at one side of the graph and we"
+    },
+    {
+      "start": "27:22",
+      "end": "27:22",
+      "text": "look at one side of the graph and we"
+    },
+    {
+      "start": "27:22",
+      "end": "27:25",
+      "text": "look at one side of the graph and we will try and figure out when can all the"
+    },
+    {
+      "start": "27:25",
+      "end": "27:25",
+      "text": "will try and figure out when can all the"
+    },
+    {
+      "start": "27:25",
+      "end": "27:27",
+      "text": "will try and figure out when can all the vertices on one side be completely"
+    },
+    {
+      "start": "27:27",
+      "end": "27:27",
+      "text": "vertices on one side be completely"
+    },
+    {
+      "start": "27:27",
+      "end": "27:30",
+      "text": "vertices on one side be completely matched we will call that as a complete"
+    },
+    {
+      "start": "27:30",
+      "end": "27:30",
+      "text": "matched we will call that as a complete"
+    },
+    {
+      "start": "27:30",
+      "end": "27:32",
+      "text": "matched we will call that as a complete matching the perfect matching case can"
+    },
+    {
+      "start": "27:32",
+      "end": "27:32",
+      "text": "matching the perfect matching case can"
+    },
+    {
+      "start": "27:32",
+      "end": "27:34",
+      "text": "matching the perfect matching case can be handled by this because all that you"
+    },
+    {
+      "start": "27:34",
+      "end": "27:34",
+      "text": "be handled by this because all that you"
+    },
+    {
+      "start": "27:34",
+      "end": "27:36",
+      "text": "be handled by this because all that you have to check is the other side should"
+    },
+    {
+      "start": "27:36",
+      "end": "27:36",
+      "text": "have to check is the other side should"
+    },
+    {
+      "start": "27:36",
+      "end": "27:40",
+      "text": "have to check is the other side should contain an equal number of vertices so"
+    },
+    {
+      "start": "27:40",
+      "end": "27:40",
+      "text": "contain an equal number of vertices so"
+    },
+    {
+      "start": "27:40",
+      "end": "27:42",
+      "text": "contain an equal number of vertices so if the other side contains seven"
+    },
+    {
+      "start": "27:42",
+      "end": "27:42",
+      "text": "if the other side contains seven"
+    },
+    {
+      "start": "27:42",
+      "end": "27:46",
+      "text": "if the other side contains seven vertices our our criterion will"
+    },
+    {
+      "start": "27:46",
+      "end": "27:46",
+      "text": "vertices our our criterion will"
+    },
+    {
+      "start": "27:46",
+      "end": "27:47",
+      "text": "vertices our our criterion will basically help us figure out whether it"
+    },
+    {
+      "start": "27:47",
+      "end": "27:47",
+      "text": "basically help us figure out whether it"
+    },
+    {
+      "start": "27:47",
+      "end": "27:51",
+      "text": "basically help us figure out whether it has a perfect matching or not so the"
+    },
+    {
+      "start": "27:51",
+      "end": "27:51",
+      "text": "has a perfect matching or not so the"
+    },
+    {
+      "start": "27:51",
+      "end": "27:54",
+      "text": "has a perfect matching or not so the condition is given by halls theorem this"
+    },
+    {
+      "start": "27:54",
+      "end": "27:54",
+      "text": "condition is given by halls theorem this"
+    },
+    {
+      "start": "27:54",
+      "end": "27:58",
+      "text": "condition is given by halls theorem this is known as halls condition it will"
+    },
+    {
+      "start": "27:58",
+      "end": "27:58",
+      "text": "is known as halls condition it will"
+    },
+    {
+      "start": "27:58",
+      "end": "28:00",
+      "text": "is known as halls condition it will require the notion of what is the"
+    },
+    {
+      "start": "28:00",
+      "end": "28:00",
+      "text": "require the notion of what is the"
+    },
+    {
+      "start": "28:00",
+      "end": "28:03",
+      "text": "require the notion of what is the neighbors of a vertex vertex to state"
+    },
+    {
+      "start": "28:03",
+      "end": "28:03",
+      "text": "neighbors of a vertex vertex to state"
+    },
+    {
+      "start": "28:03",
+      "end": "28:11",
+      "text": "neighbors of a vertex vertex to state this condition so you look at one"
+    },
+    {
+      "start": "28:11",
+      "end": "28:11",
+      "text": "this condition so you look at one"
+    },
+    {
+      "start": "28:11",
+      "end": "28:16",
+      "text": "this condition so you look at one particular vertex it's connected to many"
+    },
+    {
+      "start": "28:16",
+      "end": "28:16",
+      "text": "particular vertex it's connected to many"
+    },
+    {
+      "start": "28:16",
+      "end": "28:20",
+      "text": "particular vertex it's connected to many other vertices these vertices would be"
+    },
+    {
+      "start": "28:20",
+      "end": "28:20",
+      "text": "other vertices these vertices would be"
+    },
+    {
+      "start": "28:20",
+      "end": "28:22",
+      "text": "other vertices these vertices would be called as the neighbors of X and we will"
+    },
+    {
+      "start": "28:22",
+      "end": "28:22",
+      "text": "called as the neighbors of X and we will"
+    },
+    {
+      "start": "28:22",
+      "end": "28:26",
+      "text": "called as the neighbors of X and we will denote it by n X okay so here X is a"
+    },
+    {
+      "start": "28:26",
+      "end": "28:26",
+      "text": "denote it by n X okay so here X is a"
+    },
+    {
+      "start": "28:26",
+      "end": "28:30",
+      "text": "denote it by n X okay so here X is a vertex and n X is a set of neighbors of"
+    },
+    {
+      "start": "28:30",
+      "end": "28:30",
+      "text": "vertex and n X is a set of neighbors of"
+    },
+    {
+      "start": "28:30",
+      "end": "28:35",
+      "text": "vertex and n X is a set of neighbors of X if instead of vertex is a set of"
+    },
+    {
+      "start": "28:35",
+      "end": "28:35",
+      "text": "X if instead of vertex is a set of"
+    },
+    {
+      "start": "28:35",
+      "end": "28:38",
+      "text": "X if instead of vertex is a set of vertices so let's say s so this is a set"
+    },
+    {
+      "start": "28:38",
+      "end": "28:38",
+      "text": "vertices so let's say s so this is a set"
+    },
+    {
+      "start": "28:38",
+      "end": "28:41",
+      "text": "vertices so let's say s so this is a set of vertices which"
+    },
+    {
+      "start": "28:41",
+      "end": "28:41",
+      "text": "of vertices which"
+    },
+    {
+      "start": "28:41",
+      "end": "28:43",
+      "text": "of vertices which we'll assume was non-empty and nests"
+    },
+    {
+      "start": "28:43",
+      "end": "28:43",
+      "text": "we'll assume was non-empty and nests"
+    },
+    {
+      "start": "28:43",
+      "end": "28:47",
+      "text": "we'll assume was non-empty and nests would be basically union of X belonging"
+    },
+    {
+      "start": "28:47",
+      "end": "28:47",
+      "text": "would be basically union of X belonging"
+    },
+    {
+      "start": "28:47",
+      "end": "28:53",
+      "text": "would be basically union of X belonging to s and X so this is your set s and all"
+    },
+    {
+      "start": "28:53",
+      "end": "28:53",
+      "text": "to s and X so this is your set s and all"
+    },
+    {
+      "start": "28:53",
+      "end": "28:57",
+      "text": "to s and X so this is your set s and all the neighbors of this together would be"
+    },
+    {
+      "start": "28:57",
+      "end": "28:57",
+      "text": "the neighbors of this together would be"
+    },
+    {
+      "start": "28:57",
+      "end": "29:03",
+      "text": "the neighbors of this together would be called s and s so clearly one can"
+    },
+    {
+      "start": "29:03",
+      "end": "29:03",
+      "text": "called s and s so clearly one can"
+    },
+    {
+      "start": "29:03",
+      "end": "29:07",
+      "text": "called s and s so clearly one can imagine that the number of neighbors is"
+    },
+    {
+      "start": "29:07",
+      "end": "29:07",
+      "text": "imagine that the number of neighbors is"
+    },
+    {
+      "start": "29:07",
+      "end": "29:10",
+      "text": "imagine that the number of neighbors is strictly less than the number of"
+    },
+    {
+      "start": "29:10",
+      "end": "29:10",
+      "text": "strictly less than the number of"
+    },
+    {
+      "start": "29:10",
+      "end": "29:15",
+      "text": "strictly less than the number of elements in a set then there is no"
+    },
+    {
+      "start": "29:15",
+      "end": "29:15",
+      "text": "elements in a set then there is no"
+    },
+    {
+      "start": "29:15",
+      "end": "29:17",
+      "text": "elements in a set then there is no possibility of a complete matching"
+    },
+    {
+      "start": "29:17",
+      "end": "29:17",
+      "text": "possibility of a complete matching"
+    },
+    {
+      "start": "29:17",
+      "end": "29:19",
+      "text": "possibility of a complete matching because those vertices cannot be matched"
+    },
+    {
+      "start": "29:19",
+      "end": "29:19",
+      "text": "because those vertices cannot be matched"
+    },
+    {
+      "start": "29:19",
+      "end": "29:21",
+      "text": "because those vertices cannot be matched it does not have enough number of"
+    },
+    {
+      "start": "29:21",
+      "end": "29:21",
+      "text": "it does not have enough number of"
+    },
+    {
+      "start": "29:21",
+      "end": "29:23",
+      "text": "it does not have enough number of counterparts on the other side if this"
+    },
+    {
+      "start": "29:23",
+      "end": "29:23",
+      "text": "counterparts on the other side if this"
+    },
+    {
+      "start": "29:23",
+      "end": "29:28",
+      "text": "counterparts on the other side if this condition is met for every subset then"
+    },
+    {
+      "start": "29:28",
+      "end": "29:28",
+      "text": "condition is met for every subset then"
+    },
+    {
+      "start": "29:28",
+      "end": "29:30",
+      "text": "condition is met for every subset then there is a perfect matching that's what"
+    },
+    {
+      "start": "29:30",
+      "end": "29:30",
+      "text": "there is a perfect matching that's what"
+    },
+    {
+      "start": "29:30",
+      "end": "29:32",
+      "text": "there is a perfect matching that's what halls condition says so let's write it"
+    },
+    {
+      "start": "29:32",
+      "end": "29:32",
+      "text": "halls condition says so let's write it"
+    },
+    {
+      "start": "29:32",
+      "end": "29:38",
+      "text": "halls condition says so let's write it down firmly so let G is equal to X Union"
+    },
+    {
+      "start": "29:38",
+      "end": "29:38",
+      "text": "down firmly so let G is equal to X Union"
+    },
+    {
+      "start": "29:38",
+      "end": "29:40",
+      "text": "down firmly so let G is equal to X Union Y so the vertex set I'm just writing it"
+    },
+    {
+      "start": "29:40",
+      "end": "29:40",
+      "text": "Y so the vertex set I'm just writing it"
+    },
+    {
+      "start": "29:40",
+      "end": "29:42",
+      "text": "Y so the vertex set I'm just writing it as X Union Y where X is one side and Y"
+    },
+    {
+      "start": "29:42",
+      "end": "29:42",
+      "text": "as X Union Y where X is one side and Y"
+    },
+    {
+      "start": "29:42",
+      "end": "29:52",
+      "text": "as X Union Y where X is one side and Y is the other side e be a bipartite graph"
+    },
+    {
+      "start": "30:01",
+      "end": "30:01",
+      "text": "such that the size of neighbors of s if"
+    },
+    {
+      "start": "30:01",
+      "end": "30:03",
+      "text": "such that the size of neighbors of s if you look at the size of this that's"
+    },
+    {
+      "start": "30:03",
+      "end": "30:03",
+      "text": "you look at the size of this that's"
+    },
+    {
+      "start": "30:03",
+      "end": "30:07",
+      "text": "you look at the size of this that's greater than or equal to size of s for"
+    },
+    {
+      "start": "30:07",
+      "end": "30:07",
+      "text": "greater than or equal to size of s for"
+    },
+    {
+      "start": "30:07",
+      "end": "30:16",
+      "text": "greater than or equal to size of s for all s subsets of X"
+    },
+    {
+      "start": "30:28",
+      "end": "30:28",
+      "text": "then G has a matching that matches all"
+    },
+    {
+      "start": "30:28",
+      "end": "30:35",
+      "text": "then G has a matching that matches all the vertices in X so everything in X can"
+    },
+    {
+      "start": "30:35",
+      "end": "30:35",
+      "text": "the vertices in X so everything in X can"
+    },
+    {
+      "start": "30:35",
+      "end": "30:37",
+      "text": "the vertices in X so everything in X can be matched and if the number of vertices"
+    },
+    {
+      "start": "30:37",
+      "end": "30:37",
+      "text": "be matched and if the number of vertices"
+    },
+    {
+      "start": "30:37",
+      "end": "30:39",
+      "text": "be matched and if the number of vertices on the other side is equal to the size"
+    },
+    {
+      "start": "30:39",
+      "end": "30:39",
+      "text": "on the other side is equal to the size"
+    },
+    {
+      "start": "30:39",
+      "end": "30:42",
+      "text": "on the other side is equal to the size of X then we know that it is a perfect"
+    },
+    {
+      "start": "30:42",
+      "end": "30:42",
+      "text": "of X then we know that it is a perfect"
+    },
+    {
+      "start": "30:42",
+      "end": "30:44",
+      "text": "of X then we know that it is a perfect matching okay so let's look at the"
+    },
+    {
+      "start": "30:44",
+      "end": "30:44",
+      "text": "matching okay so let's look at the"
+    },
+    {
+      "start": "30:44",
+      "end": "30:47",
+      "text": "matching okay so let's look at the condition carefully the number it"
+    },
+    {
+      "start": "30:47",
+      "end": "30:47",
+      "text": "condition carefully the number it"
+    },
+    {
+      "start": "30:47",
+      "end": "30:49",
+      "text": "condition carefully the number it denotes the set of neighbors of s and"
+    },
+    {
+      "start": "30:49",
+      "end": "30:49",
+      "text": "denotes the set of neighbors of s and"
+    },
+    {
+      "start": "30:49",
+      "end": "30:52",
+      "text": "denotes the set of neighbors of s and the size of that should be greater than"
+    },
+    {
+      "start": "30:52",
+      "end": "30:52",
+      "text": "the size of that should be greater than"
+    },
+    {
+      "start": "30:52",
+      "end": "30:57",
+      "text": "the size of that should be greater than the size of s for every subset of X if"
+    },
+    {
+      "start": "30:57",
+      "end": "30:57",
+      "text": "the size of s for every subset of X if"
+    },
+    {
+      "start": "30:57",
+      "end": "30:59",
+      "text": "the size of s for every subset of X if this condition is met this theorem or"
+    },
+    {
+      "start": "30:59",
+      "end": "30:59",
+      "text": "this condition is met this theorem or"
+    },
+    {
+      "start": "30:59",
+      "end": "31:01",
+      "text": "this condition is met this theorem or halls theorem guarantees that there will"
+    },
+    {
+      "start": "31:01",
+      "end": "31:01",
+      "text": "halls theorem guarantees that there will"
+    },
+    {
+      "start": "31:01",
+      "end": "31:03",
+      "text": "halls theorem guarantees that there will be a perfect matching in the bipartite"
+    },
+    {
+      "start": "31:03",
+      "end": "31:03",
+      "text": "be a perfect matching in the bipartite"
+    },
+    {
+      "start": "31:03",
+      "end": "31:07",
+      "text": "be a perfect matching in the bipartite graph G but One Direction is very easy"
+    },
+    {
+      "start": "31:07",
+      "end": "31:07",
+      "text": "graph G but One Direction is very easy"
+    },
+    {
+      "start": "31:07",
+      "end": "31:13",
+      "text": "graph G but One Direction is very easy if for some set s if size of that set is"
+    },
+    {
+      "start": "31:13",
+      "end": "31:13",
+      "text": "if for some set s if size of that set is"
+    },
+    {
+      "start": "31:13",
+      "end": "31:15",
+      "text": "if for some set s if size of that set is greater than the number of neighbors"
+    },
+    {
+      "start": "31:15",
+      "end": "31:15",
+      "text": "greater than the number of neighbors"
+    },
+    {
+      "start": "31:15",
+      "end": "31:19",
+      "text": "greater than the number of neighbors then clearly that set at least cannot be"
+    },
+    {
+      "start": "31:19",
+      "end": "31:19",
+      "text": "then clearly that set at least cannot be"
+    },
+    {
+      "start": "31:19",
+      "end": "31:25",
+      "text": "then clearly that set at least cannot be matched so what we will prove purse when"
+    },
+    {
+      "start": "31:25",
+      "end": "31:25",
+      "text": "matched so what we will prove purse when"
+    },
+    {
+      "start": "31:25",
+      "end": "31:26",
+      "text": "matched so what we will prove purse when n s is going to be greater than or equal"
+    },
+    {
+      "start": "31:26",
+      "end": "31:26",
+      "text": "n s is going to be greater than or equal"
+    },
+    {
+      "start": "31:26",
+      "end": "31:31",
+      "text": "n s is going to be greater than or equal to s for every subset s G will contain a"
+    },
+    {
+      "start": "31:31",
+      "end": "31:31",
+      "text": "to s for every subset s G will contain a"
+    },
+    {
+      "start": "31:31",
+      "end": "31:36",
+      "text": "to s for every subset s G will contain a perfect matching okay so this is what we"
+    },
+    {
+      "start": "31:36",
+      "end": "31:36",
+      "text": "perfect matching okay so this is what we"
+    },
+    {
+      "start": "31:36",
+      "end": "31:45",
+      "text": "perfect matching okay so this is what we have to prove we will assume neighbors"
+    },
+    {
+      "start": "31:45",
+      "end": "31:45",
+      "text": "have to prove we will assume neighbors"
+    },
+    {
+      "start": "31:45",
+      "end": "31:51",
+      "text": "have to prove we will assume neighbors of s is a set of size larger than the"
+    },
+    {
+      "start": "31:51",
+      "end": "31:51",
+      "text": "of s is a set of size larger than the"
+    },
+    {
+      "start": "31:51",
+      "end": "31:57",
+      "text": "of s is a set of size larger than the size of s for all s subsets of X so with"
+    },
+    {
+      "start": "31:57",
+      "end": "31:57",
+      "text": "size of s for all s subsets of X so with"
+    },
+    {
+      "start": "31:57",
+      "end": "32:03",
+      "text": "size of s for all s subsets of X so with this assumption show that G has a"
+    },
+    {
+      "start": "32:03",
+      "end": "32:03",
+      "text": "this assumption show that G has a"
+    },
+    {
+      "start": "32:03",
+      "end": "32:11",
+      "text": "this assumption show that G has a matching of size X"
+    },
+    {
+      "start": "32:15",
+      "end": "32:15",
+      "text": "so we'll split the proof into two cases"
+    },
+    {
+      "start": "32:15",
+      "end": "32:16",
+      "text": "so we'll split the proof into two cases and we will do the proof based on"
+    },
+    {
+      "start": "32:16",
+      "end": "32:16",
+      "text": "and we will do the proof based on"
+    },
+    {
+      "start": "32:16",
+      "end": "32:17",
+      "text": "and we will do the proof based on induction"
+    },
+    {
+      "start": "32:17",
+      "end": "32:17",
+      "text": "induction"
+    },
+    {
+      "start": "32:17",
+      "end": "32:20",
+      "text": "induction okay so proof method is again using"
+    },
+    {
+      "start": "32:20",
+      "end": "32:20",
+      "text": "okay so proof method is again using"
+    },
+    {
+      "start": "32:20",
+      "end": "32:27",
+      "text": "okay so proof method is again using induction on the number of vertices in X"
+    },
+    {
+      "start": "32:27",
+      "end": "32:27",
+      "text": "induction on the number of vertices in X"
+    },
+    {
+      "start": "32:27",
+      "end": "32:40",
+      "text": "induction on the number of vertices in X if X had just one if X had just one"
+    },
+    {
+      "start": "32:40",
+      "end": "32:40",
+      "text": "if X had just one if X had just one"
+    },
+    {
+      "start": "32:40",
+      "end": "32:49",
+      "text": "if X had just one if X had just one vertex this is the trivial case because"
+    },
+    {
+      "start": "32:49",
+      "end": "32:49",
+      "text": "vertex this is the trivial case because"
+    },
+    {
+      "start": "32:49",
+      "end": "32:52",
+      "text": "vertex this is the trivial case because that one vertex should be connected to"
+    },
+    {
+      "start": "32:52",
+      "end": "32:52",
+      "text": "that one vertex should be connected to"
+    },
+    {
+      "start": "32:52",
+      "end": "32:55",
+      "text": "that one vertex should be connected to some other vertex in Y because otherwise"
+    },
+    {
+      "start": "32:55",
+      "end": "32:55",
+      "text": "some other vertex in Y because otherwise"
+    },
+    {
+      "start": "32:55",
+      "end": "32:58",
+      "text": "some other vertex in Y because otherwise the neighbors is not going to be greater"
+    },
+    {
+      "start": "32:58",
+      "end": "32:58",
+      "text": "the neighbors is not going to be greater"
+    },
+    {
+      "start": "32:58",
+      "end": "33:00",
+      "text": "the neighbors is not going to be greater than or equal to size of s if it has one"
+    },
+    {
+      "start": "33:00",
+      "end": "33:00",
+      "text": "than or equal to size of s if it has one"
+    },
+    {
+      "start": "33:00",
+      "end": "33:02",
+      "text": "than or equal to size of s if it has one neighbor then of course we can choose"
+    },
+    {
+      "start": "33:02",
+      "end": "33:02",
+      "text": "neighbor then of course we can choose"
+    },
+    {
+      "start": "33:02",
+      "end": "33:05",
+      "text": "neighbor then of course we can choose that particular edge and that will be a"
+    },
+    {
+      "start": "33:05",
+      "end": "33:05",
+      "text": "that particular edge and that will be a"
+    },
+    {
+      "start": "33:05",
+      "end": "33:08",
+      "text": "that particular edge and that will be a matching whose size is equal to the size"
+    },
+    {
+      "start": "33:08",
+      "end": "33:08",
+      "text": "matching whose size is equal to the size"
+    },
+    {
+      "start": "33:08",
+      "end": "33:14",
+      "text": "matching whose size is equal to the size of X now let's take a graph with mean we"
+    },
+    {
+      "start": "33:14",
+      "end": "33:14",
+      "text": "of X now let's take a graph with mean we"
+    },
+    {
+      "start": "33:14",
+      "end": "33:25",
+      "text": "of X now let's take a graph with mean we will assume that statement is true for"
+    },
+    {
+      "start": "33:35",
+      "end": "33:35",
+      "text": "for all graphs with M vertices on the x"
+    },
+    {
+      "start": "33:35",
+      "end": "33:46",
+      "text": "for all graphs with M vertices on the x side all bipartite graphs so there are"
+    },
+    {
+      "start": "33:46",
+      "end": "33:46",
+      "text": "side all bipartite graphs so there are"
+    },
+    {
+      "start": "33:46",
+      "end": "33:53",
+      "text": "side all bipartite graphs so there are two cases for all subsets of X non-empty"
+    },
+    {
+      "start": "33:53",
+      "end": "33:53",
+      "text": "two cases for all subsets of X non-empty"
+    },
+    {
+      "start": "33:53",
+      "end": "33:59",
+      "text": "two cases for all subsets of X non-empty subsets neighbors of s is greater than"
+    },
+    {
+      "start": "33:59",
+      "end": "33:59",
+      "text": "subsets neighbors of s is greater than"
+    },
+    {
+      "start": "33:59",
+      "end": "34:02",
+      "text": "subsets neighbors of s is greater than the size of this is greater than the"
+    },
+    {
+      "start": "34:02",
+      "end": "34:02",
+      "text": "the size of this is greater than the"
+    },
+    {
+      "start": "34:02",
+      "end": "34:07",
+      "text": "the size of this is greater than the size of s okay so now in this case we"
+    },
+    {
+      "start": "34:07",
+      "end": "34:07",
+      "text": "size of s okay so now in this case we"
+    },
+    {
+      "start": "34:07",
+      "end": "34:11",
+      "text": "size of s okay so now in this case we can just take any particular edge okay"
+    },
+    {
+      "start": "34:11",
+      "end": "34:11",
+      "text": "can just take any particular edge okay"
+    },
+    {
+      "start": "34:11",
+      "end": "34:13",
+      "text": "can just take any particular edge okay so let us say we choose one particular"
+    },
+    {
+      "start": "34:13",
+      "end": "34:13",
+      "text": "so let us say we choose one particular"
+    },
+    {
+      "start": "34:13",
+      "end": "34:22",
+      "text": "so let us say we choose one particular edge XY add it to the matching and now"
+    },
+    {
+      "start": "34:22",
+      "end": "34:22",
+      "text": "edge XY add it to the matching and now"
+    },
+    {
+      "start": "34:22",
+      "end": "34:24",
+      "text": "edge XY add it to the matching and now look at the remaining graph that is the"
+    },
+    {
+      "start": "34:24",
+      "end": "34:24",
+      "text": "look at the remaining graph that is the"
+    },
+    {
+      "start": "34:24",
+      "end": "34:26",
+      "text": "look at the remaining graph that is the graph obtained by removing vertex"
+    },
+    {
+      "start": "34:26",
+      "end": "34:26",
+      "text": "graph obtained by removing vertex"
+    },
+    {
+      "start": "34:26",
+      "end": "34:30",
+      "text": "graph obtained by removing vertex vertices x and y from the from the"
+    },
+    {
+      "start": "34:30",
+      "end": "34:30",
+      "text": "vertices x and y from the from the"
+    },
+    {
+      "start": "34:30",
+      "end": "34:32",
+      "text": "vertices x and y from the from the original graph okay so when you have"
+    },
+    {
+      "start": "34:32",
+      "end": "34:32",
+      "text": "original graph okay so when you have"
+    },
+    {
+      "start": "34:32",
+      "end": "34:37",
+      "text": "original graph okay so when you have removed this the degree is going to"
+    },
+    {
+      "start": "34:37",
+      "end": "34:37",
+      "text": "removed this the degree is going to"
+    },
+    {
+      "start": "34:37",
+      "end": "34:40",
+      "text": "removed this the degree is going to reduce by at most one we already had the"
+    },
+    {
+      "start": "34:40",
+      "end": "34:40",
+      "text": "reduce by at most one we already had the"
+    },
+    {
+      "start": "34:40",
+      "end": "34:43",
+      "text": "reduce by at most one we already had the condition that n s was greater than size"
+    },
+    {
+      "start": "34:43",
+      "end": "34:43",
+      "text": "condition that n s was greater than size"
+    },
+    {
+      "start": "34:43",
+      "end": "34:47",
+      "text": "condition that n s was greater than size of s for all s so now after removal of"
+    },
+    {
+      "start": "34:47",
+      "end": "34:47",
+      "text": "of s for all s so now after removal of"
+    },
+    {
+      "start": "34:47",
+      "end": "34:52",
+      "text": "of s for all s so now after removal of vertex X and vertex Y and AZ will be"
+    },
+    {
+      "start": "34:52",
+      "end": "34:52",
+      "text": "vertex X and vertex Y and AZ will be"
+    },
+    {
+      "start": "34:52",
+      "end": "34:54",
+      "text": "vertex X and vertex Y and AZ will be guaranteed to be greater than or equal"
+    },
+    {
+      "start": "34:54",
+      "end": "34:54",
+      "text": "guaranteed to be greater than or equal"
+    },
+    {
+      "start": "34:54",
+      "end": "35:02",
+      "text": "guaranteed to be greater than or equal to size of s"
+    },
+    {
+      "start": "35:07",
+      "end": "35:07",
+      "text": "as only one vertex is removed from Y we"
+    },
+    {
+      "start": "35:07",
+      "end": "35:11",
+      "text": "as only one vertex is removed from Y we know that for every set s the number of"
+    },
+    {
+      "start": "35:11",
+      "end": "35:11",
+      "text": "know that for every set s the number of"
+    },
+    {
+      "start": "35:11",
+      "end": "35:13",
+      "text": "know that for every set s the number of neighbors is greater than or equal to"
+    },
+    {
+      "start": "35:13",
+      "end": "35:13",
+      "text": "neighbors is greater than or equal to"
+    },
+    {
+      "start": "35:13",
+      "end": "35:19",
+      "text": "neighbors is greater than or equal to size of set so in case two there exists"
+    },
+    {
+      "start": "35:19",
+      "end": "35:19",
+      "text": "size of set so in case two there exists"
+    },
+    {
+      "start": "35:19",
+      "end": "35:23",
+      "text": "size of set so in case two there exists a set s such that neighbors of s its"
+    },
+    {
+      "start": "35:23",
+      "end": "35:23",
+      "text": "a set s such that neighbors of s its"
+    },
+    {
+      "start": "35:23",
+      "end": "35:29",
+      "text": "a set s such that neighbors of s its size is equal to the size of s okay this"
+    },
+    {
+      "start": "35:29",
+      "end": "35:29",
+      "text": "size is equal to the size of s okay this"
+    },
+    {
+      "start": "35:29",
+      "end": "35:31",
+      "text": "size is equal to the size of s okay this is a slightly tricky case be careful"
+    },
+    {
+      "start": "35:31",
+      "end": "35:31",
+      "text": "is a slightly tricky case be careful"
+    },
+    {
+      "start": "35:31",
+      "end": "35:34",
+      "text": "is a slightly tricky case be careful about this so let's say this is our set"
+    },
+    {
+      "start": "35:34",
+      "end": "35:34",
+      "text": "about this so let's say this is our set"
+    },
+    {
+      "start": "35:34",
+      "end": "35:37",
+      "text": "about this so let's say this is our set X and this is our set Y and we want to"
+    },
+    {
+      "start": "35:37",
+      "end": "35:37",
+      "text": "X and this is our set Y and we want to"
+    },
+    {
+      "start": "35:37",
+      "end": "35:38",
+      "text": "X and this is our set Y and we want to find a perfect matching between these"
+    },
+    {
+      "start": "35:38",
+      "end": "35:38",
+      "text": "find a perfect matching between these"
+    },
+    {
+      "start": "35:38",
+      "end": "35:43",
+      "text": "find a perfect matching between these and we have a set s here so let's say"
+    },
+    {
+      "start": "35:43",
+      "end": "35:43",
+      "text": "and we have a set s here so let's say"
+    },
+    {
+      "start": "35:43",
+      "end": "35:45",
+      "text": "and we have a set s here so let's say that's the top portion of this part X"
+    },
+    {
+      "start": "35:45",
+      "end": "35:45",
+      "text": "that's the top portion of this part X"
+    },
+    {
+      "start": "35:45",
+      "end": "35:49",
+      "text": "that's the top portion of this part X and the number of neighbors is exactly"
+    },
+    {
+      "start": "35:49",
+      "end": "35:49",
+      "text": "and the number of neighbors is exactly"
+    },
+    {
+      "start": "35:49",
+      "end": "35:51",
+      "text": "and the number of neighbors is exactly equal to the size of s so let's say this"
+    },
+    {
+      "start": "35:51",
+      "end": "35:51",
+      "text": "equal to the size of s so let's say this"
+    },
+    {
+      "start": "35:51",
+      "end": "35:54",
+      "text": "equal to the size of s so let's say this is mapped to this particular region"
+    },
+    {
+      "start": "35:54",
+      "end": "35:54",
+      "text": "is mapped to this particular region"
+    },
+    {
+      "start": "35:54",
+      "end": "35:58",
+      "text": "is mapped to this particular region because this is neighbors of s and we"
+    },
+    {
+      "start": "35:58",
+      "end": "35:58",
+      "text": "because this is neighbors of s and we"
+    },
+    {
+      "start": "35:58",
+      "end": "36:02",
+      "text": "because this is neighbors of s and we have size of s is equal to size of"
+    },
+    {
+      "start": "36:02",
+      "end": "36:02",
+      "text": "have size of s is equal to size of"
+    },
+    {
+      "start": "36:02",
+      "end": "36:07",
+      "text": "have size of s is equal to size of neighbors of s now if we look at so this"
+    },
+    {
+      "start": "36:07",
+      "end": "36:07",
+      "text": "neighbors of s now if we look at so this"
+    },
+    {
+      "start": "36:07",
+      "end": "36:09",
+      "text": "neighbors of s now if we look at so this subset should be there exist a proper"
+    },
+    {
+      "start": "36:09",
+      "end": "36:09",
+      "text": "subset should be there exist a proper"
+    },
+    {
+      "start": "36:09",
+      "end": "36:10",
+      "text": "subset should be there exist a proper subset we're going to assume that s is a"
+    },
+    {
+      "start": "36:10",
+      "end": "36:10",
+      "text": "subset we're going to assume that s is a"
+    },
+    {
+      "start": "36:10",
+      "end": "36:19",
+      "text": "subset we're going to assume that s is a proper subset"
+    },
+    {
+      "start": "36:23",
+      "end": "36:23",
+      "text": "so our earlier case was I mean for every"
+    },
+    {
+      "start": "36:23",
+      "end": "36:25",
+      "text": "so our earlier case was I mean for every subset NFS was strictly greater and now"
+    },
+    {
+      "start": "36:25",
+      "end": "36:25",
+      "text": "subset NFS was strictly greater and now"
+    },
+    {
+      "start": "36:25",
+      "end": "36:26",
+      "text": "subset NFS was strictly greater and now we are going to assume that there is a"
+    },
+    {
+      "start": "36:26",
+      "end": "36:26",
+      "text": "we are going to assume that there is a"
+    },
+    {
+      "start": "36:26",
+      "end": "36:28",
+      "text": "we are going to assume that there is a proper subset for which the size is"
+    },
+    {
+      "start": "36:28",
+      "end": "36:28",
+      "text": "proper subset for which the size is"
+    },
+    {
+      "start": "36:28",
+      "end": "36:32",
+      "text": "proper subset for which the size is exactly same now this is the case let us"
+    },
+    {
+      "start": "36:32",
+      "end": "36:32",
+      "text": "exactly same now this is the case let us"
+    },
+    {
+      "start": "36:32",
+      "end": "36:36",
+      "text": "exactly same now this is the case let us restrict our attention to this set s we"
+    },
+    {
+      "start": "36:36",
+      "end": "36:36",
+      "text": "restrict our attention to this set s we"
+    },
+    {
+      "start": "36:36",
+      "end": "36:39",
+      "text": "restrict our attention to this set s we can apply the induction hypothesis on"
+    },
+    {
+      "start": "36:39",
+      "end": "36:39",
+      "text": "can apply the induction hypothesis on"
+    },
+    {
+      "start": "36:39",
+      "end": "36:41",
+      "text": "can apply the induction hypothesis on this set s and get a perfect matching"
+    },
+    {
+      "start": "36:41",
+      "end": "36:41",
+      "text": "this set s and get a perfect matching"
+    },
+    {
+      "start": "36:41",
+      "end": "36:46",
+      "text": "this set s and get a perfect matching for s involving just neighbors of s so s"
+    },
+    {
+      "start": "36:46",
+      "end": "36:46",
+      "text": "for s involving just neighbors of s so s"
+    },
+    {
+      "start": "36:46",
+      "end": "36:51",
+      "text": "for s involving just neighbors of s so s and n s now since s is a proper subset"
+    },
+    {
+      "start": "36:51",
+      "end": "36:51",
+      "text": "and n s now since s is a proper subset"
+    },
+    {
+      "start": "36:51",
+      "end": "36:53",
+      "text": "and n s now since s is a proper subset we know that the number of elements in s"
+    },
+    {
+      "start": "36:53",
+      "end": "36:53",
+      "text": "we know that the number of elements in s"
+    },
+    {
+      "start": "36:53",
+      "end": "36:55",
+      "text": "we know that the number of elements in s is strictly less than the number of"
+    },
+    {
+      "start": "36:55",
+      "end": "36:55",
+      "text": "is strictly less than the number of"
+    },
+    {
+      "start": "36:55",
+      "end": "37:00",
+      "text": "is strictly less than the number of elements in X ok so si Dennis can be"
+    },
+    {
+      "start": "37:00",
+      "end": "37:00",
+      "text": "elements in X ok so si Dennis can be"
+    },
+    {
+      "start": "37:00",
+      "end": "37:10",
+      "text": "elements in X ok so si Dennis can be matched with our induction hypothesis"
+    },
+    {
+      "start": "37:14",
+      "end": "37:14",
+      "text": "why is this so look at s s a set I mean"
+    },
+    {
+      "start": "37:14",
+      "end": "37:16",
+      "text": "why is this so look at s s a set I mean so look at the news graph that you"
+    },
+    {
+      "start": "37:16",
+      "end": "37:16",
+      "text": "so look at the news graph that you"
+    },
+    {
+      "start": "37:16",
+      "end": "37:18",
+      "text": "so look at the news graph that you obtained by considering just the"
+    },
+    {
+      "start": "37:18",
+      "end": "37:18",
+      "text": "obtained by considering just the"
+    },
+    {
+      "start": "37:18",
+      "end": "37:21",
+      "text": "obtained by considering just the vertices in s now that induced graph"
+    },
+    {
+      "start": "37:21",
+      "end": "37:21",
+      "text": "vertices in s now that induced graph"
+    },
+    {
+      "start": "37:21",
+      "end": "37:23",
+      "text": "vertices in s now that induced graph that's also going to be a bipartite"
+    },
+    {
+      "start": "37:23",
+      "end": "37:23",
+      "text": "that's also going to be a bipartite"
+    },
+    {
+      "start": "37:23",
+      "end": "37:25",
+      "text": "that's also going to be a bipartite graph and that bipartite graph is going"
+    },
+    {
+      "start": "37:25",
+      "end": "37:25",
+      "text": "graph and that bipartite graph is going"
+    },
+    {
+      "start": "37:25",
+      "end": "37:28",
+      "text": "graph and that bipartite graph is going to be completely restricted to this"
+    },
+    {
+      "start": "37:28",
+      "end": "37:28",
+      "text": "to be completely restricted to this"
+    },
+    {
+      "start": "37:28",
+      "end": "37:30",
+      "text": "to be completely restricted to this portion because all the neighbors where"
+    },
+    {
+      "start": "37:30",
+      "end": "37:31",
+      "text": "portion because all the neighbors where"
+    },
+    {
+      "start": "37:31",
+      "end": "37:33",
+      "text": "portion because all the neighbors where in n s of course there could be edges"
+    },
+    {
+      "start": "37:33",
+      "end": "37:33",
+      "text": "in n s of course there could be edges"
+    },
+    {
+      "start": "37:33",
+      "end": "37:38",
+      "text": "in n s of course there could be edges which come from neighbors of s - the"
+    },
+    {
+      "start": "37:38",
+      "end": "37:38",
+      "text": "which come from neighbors of s - the"
+    },
+    {
+      "start": "37:38",
+      "end": "37:39",
+      "text": "which come from neighbors of s - the remaining portion but those edges we are"
+    },
+    {
+      "start": "37:39",
+      "end": "37:39",
+      "text": "remaining portion but those edges we are"
+    },
+    {
+      "start": "37:39",
+      "end": "37:46",
+      "text": "remaining portion but those edges we are ignoring by just looking at SN Dennis if"
+    },
+    {
+      "start": "37:46",
+      "end": "37:46",
+      "text": "ignoring by just looking at SN Dennis if"
+    },
+    {
+      "start": "37:46",
+      "end": "37:50",
+      "text": "ignoring by just looking at SN Dennis if you look at any subset of s its number"
+    },
+    {
+      "start": "37:50",
+      "end": "37:50",
+      "text": "you look at any subset of s its number"
+    },
+    {
+      "start": "37:50",
+      "end": "37:53",
+      "text": "you look at any subset of s its number of neighbors when all its neighbors are"
+    },
+    {
+      "start": "37:53",
+      "end": "37:53",
+      "text": "of neighbors when all its neighbors are"
+    },
+    {
+      "start": "37:53",
+      "end": "37:55",
+      "text": "of neighbors when all its neighbors are going to line in is n s because n s was"
+    },
+    {
+      "start": "37:55",
+      "end": "37:55",
+      "text": "going to line in is n s because n s was"
+    },
+    {
+      "start": "37:55",
+      "end": "37:59",
+      "text": "going to line in is n s because n s was the the neighbors of the entire set so"
+    },
+    {
+      "start": "37:59",
+      "end": "37:59",
+      "text": "the the neighbors of the entire set so"
+    },
+    {
+      "start": "37:59",
+      "end": "38:01",
+      "text": "the the neighbors of the entire set so any subsets neighbor should basically be"
+    },
+    {
+      "start": "38:01",
+      "end": "38:01",
+      "text": "any subsets neighbor should basically be"
+    },
+    {
+      "start": "38:01",
+      "end": "38:05",
+      "text": "any subsets neighbor should basically be in n s and because of our condition that"
+    },
+    {
+      "start": "38:05",
+      "end": "38:05",
+      "text": "in n s and because of our condition that"
+    },
+    {
+      "start": "38:05",
+      "end": "38:07",
+      "text": "in n s and because of our condition that every subset had at least as many"
+    },
+    {
+      "start": "38:07",
+      "end": "38:07",
+      "text": "every subset had at least as many"
+    },
+    {
+      "start": "38:07",
+      "end": "38:11",
+      "text": "every subset had at least as many neighbors as its size we know that every"
+    },
+    {
+      "start": "38:11",
+      "end": "38:11",
+      "text": "neighbors as its size we know that every"
+    },
+    {
+      "start": "38:11",
+      "end": "38:12",
+      "text": "neighbors as its size we know that every subset will also satisfy this property"
+    },
+    {
+      "start": "38:12",
+      "end": "38:13",
+      "text": "subset will also satisfy this property"
+    },
+    {
+      "start": "38:13",
+      "end": "38:17",
+      "text": "subset will also satisfy this property so if you look at a subset s prime"
+    },
+    {
+      "start": "38:17",
+      "end": "38:17",
+      "text": "so if you look at a subset s prime"
+    },
+    {
+      "start": "38:17",
+      "end": "38:21",
+      "text": "so if you look at a subset s prime neighbors of s prime that set size is"
+    },
+    {
+      "start": "38:21",
+      "end": "38:21",
+      "text": "neighbors of s prime that set size is"
+    },
+    {
+      "start": "38:21",
+      "end": "38:23",
+      "text": "neighbors of s prime that set size is going to be greater than or equal to"
+    },
+    {
+      "start": "38:23",
+      "end": "38:23",
+      "text": "going to be greater than or equal to"
+    },
+    {
+      "start": "38:23",
+      "end": "38:27",
+      "text": "going to be greater than or equal to size of s prime for every subset of s"
+    },
+    {
+      "start": "38:27",
+      "end": "38:27",
+      "text": "size of s prime for every subset of s"
+    },
+    {
+      "start": "38:27",
+      "end": "38:30",
+      "text": "size of s prime for every subset of s even while we are restricting to just"
+    },
+    {
+      "start": "38:30",
+      "end": "38:30",
+      "text": "even while we are restricting to just"
+    },
+    {
+      "start": "38:30",
+      "end": "38:32",
+      "text": "even while we are restricting to just the graph"
+    },
+    {
+      "start": "38:32",
+      "end": "38:32",
+      "text": "the graph"
+    },
+    {
+      "start": "38:32",
+      "end": "38:36",
+      "text": "the graph why vertices s and NS okay so this"
+    },
+    {
+      "start": "38:36",
+      "end": "38:36",
+      "text": "why vertices s and NS okay so this"
+    },
+    {
+      "start": "38:36",
+      "end": "38:38",
+      "text": "why vertices s and NS okay so this portion involving the top half of X"
+    },
+    {
+      "start": "38:38",
+      "end": "38:38",
+      "text": "portion involving the top half of X"
+    },
+    {
+      "start": "38:38",
+      "end": "38:41",
+      "text": "portion involving the top half of X involving s and NS they can be perfectly"
+    },
+    {
+      "start": "38:41",
+      "end": "38:41",
+      "text": "involving s and NS they can be perfectly"
+    },
+    {
+      "start": "38:41",
+      "end": "38:44",
+      "text": "involving s and NS they can be perfectly matched now what about the remaining"
+    },
+    {
+      "start": "38:44",
+      "end": "38:44",
+      "text": "matched now what about the remaining"
+    },
+    {
+      "start": "38:44",
+      "end": "38:48",
+      "text": "matched now what about the remaining portion can the remaining set X be match"
+    },
+    {
+      "start": "38:48",
+      "end": "38:48",
+      "text": "portion can the remaining set X be match"
+    },
+    {
+      "start": "38:48",
+      "end": "38:52",
+      "text": "portion can the remaining set X be match to Y the only problem is if we look at"
+    },
+    {
+      "start": "38:52",
+      "end": "38:52",
+      "text": "to Y the only problem is if we look at"
+    },
+    {
+      "start": "38:52",
+      "end": "38:55",
+      "text": "to Y the only problem is if we look at subsets inside X let's call it as X"
+    },
+    {
+      "start": "38:55",
+      "end": "38:55",
+      "text": "subsets inside X let's call it as X"
+    },
+    {
+      "start": "38:55",
+      "end": "38:58",
+      "text": "subsets inside X let's call it as X prime they might have certain neighbors"
+    },
+    {
+      "start": "38:58",
+      "end": "38:58",
+      "text": "prime they might have certain neighbors"
+    },
+    {
+      "start": "38:58",
+      "end": "39:01",
+      "text": "prime they might have certain neighbors but some of those neighbors could be in"
+    },
+    {
+      "start": "39:01",
+      "end": "39:01",
+      "text": "but some of those neighbors could be in"
+    },
+    {
+      "start": "39:01",
+      "end": "39:04",
+      "text": "but some of those neighbors could be in ns okay but we will show that that's"
+    },
+    {
+      "start": "39:04",
+      "end": "39:04",
+      "text": "ns okay but we will show that that's"
+    },
+    {
+      "start": "39:04",
+      "end": "39:07",
+      "text": "ns okay but we will show that that's even when some of the neighbors are in"
+    },
+    {
+      "start": "39:07",
+      "end": "39:07",
+      "text": "even when some of the neighbors are in"
+    },
+    {
+      "start": "39:07",
+      "end": "39:10",
+      "text": "even when some of the neighbors are in NS our condition that NS is greater than"
+    },
+    {
+      "start": "39:10",
+      "end": "39:10",
+      "text": "NS our condition that NS is greater than"
+    },
+    {
+      "start": "39:10",
+      "end": "39:14",
+      "text": "NS our condition that NS is greater than the neighbors of X prime is a set of"
+    },
+    {
+      "start": "39:14",
+      "end": "39:14",
+      "text": "the neighbors of X prime is a set of"
+    },
+    {
+      "start": "39:14",
+      "end": "39:16",
+      "text": "the neighbors of X prime is a set of size larger than the size of X prime"
+    },
+    {
+      "start": "39:16",
+      "end": "39:16",
+      "text": "size larger than the size of X prime"
+    },
+    {
+      "start": "39:16",
+      "end": "39:20",
+      "text": "size larger than the size of X prime will be a valid assumption okay so what"
+    },
+    {
+      "start": "39:20",
+      "end": "39:20",
+      "text": "will be a valid assumption okay so what"
+    },
+    {
+      "start": "39:20",
+      "end": "39:22",
+      "text": "will be a valid assumption okay so what we already what we have right now is s"
+    },
+    {
+      "start": "39:22",
+      "end": "39:22",
+      "text": "we already what we have right now is s"
+    },
+    {
+      "start": "39:22",
+      "end": "39:25",
+      "text": "we already what we have right now is s and NS can be matched ok and what we"
+    },
+    {
+      "start": "39:25",
+      "end": "39:25",
+      "text": "and NS can be matched ok and what we"
+    },
+    {
+      "start": "39:25",
+      "end": "39:38",
+      "text": "and NS can be matched ok and what we need to show is X Prime and n of X prime"
+    },
+    {
+      "start": "39:58",
+      "end": "39:58",
+      "text": "so this is a diagram X's s was matched"
+    },
+    {
+      "start": "39:58",
+      "end": "40:01",
+      "text": "so this is a diagram X's s was matched to neighbors of s and this portion if we"
+    },
+    {
+      "start": "40:01",
+      "end": "40:01",
+      "text": "to neighbors of s and this portion if we"
+    },
+    {
+      "start": "40:01",
+      "end": "40:05",
+      "text": "to neighbors of s and this portion if we call it as X prime okay so X prime is"
+    },
+    {
+      "start": "40:05",
+      "end": "40:05",
+      "text": "call it as X prime okay so X prime is"
+    },
+    {
+      "start": "40:05",
+      "end": "40:09",
+      "text": "call it as X prime okay so X prime is equal to X minus s and let's call the"
+    },
+    {
+      "start": "40:09",
+      "end": "40:09",
+      "text": "equal to X minus s and let's call the"
+    },
+    {
+      "start": "40:09",
+      "end": "40:12",
+      "text": "equal to X minus s and let's call the remaining portion as Y prime here so Y"
+    },
+    {
+      "start": "40:12",
+      "end": "40:13",
+      "text": "remaining portion as Y prime here so Y"
+    },
+    {
+      "start": "40:13",
+      "end": "40:19",
+      "text": "remaining portion as Y prime here so Y prime is equal to Y minus n s okay so we"
+    },
+    {
+      "start": "40:19",
+      "end": "40:19",
+      "text": "prime is equal to Y minus n s okay so we"
+    },
+    {
+      "start": "40:19",
+      "end": "40:22",
+      "text": "prime is equal to Y minus n s okay so we want to show that X prime and y prime"
+    },
+    {
+      "start": "40:22",
+      "end": "40:22",
+      "text": "want to show that X prime and y prime"
+    },
+    {
+      "start": "40:22",
+      "end": "40:27",
+      "text": "want to show that X prime and y prime can be matched"
+    },
+    {
+      "start": "40:31",
+      "end": "40:31",
+      "text": "so we can apply induction hypothesis"
+    },
+    {
+      "start": "40:31",
+      "end": "40:36",
+      "text": "so we can apply induction hypothesis provided we can show that for all"
+    },
+    {
+      "start": "40:36",
+      "end": "40:36",
+      "text": "provided we can show that for all"
+    },
+    {
+      "start": "40:36",
+      "end": "40:46",
+      "text": "provided we can show that for all subsets a of x-prime n of a is greater"
+    },
+    {
+      "start": "40:46",
+      "end": "40:46",
+      "text": "subsets a of x-prime n of a is greater"
+    },
+    {
+      "start": "40:46",
+      "end": "40:50",
+      "text": "subsets a of x-prime n of a is greater than or equal to size of a this"
+    },
+    {
+      "start": "40:50",
+      "end": "40:50",
+      "text": "than or equal to size of a this"
+    },
+    {
+      "start": "40:50",
+      "end": "40:53",
+      "text": "than or equal to size of a this condition was true earlier but at that"
+    },
+    {
+      "start": "40:53",
+      "end": "40:53",
+      "text": "condition was true earlier but at that"
+    },
+    {
+      "start": "40:53",
+      "end": "40:55",
+      "text": "condition was true earlier but at that time we would have been when we look at"
+    },
+    {
+      "start": "40:55",
+      "end": "40:55",
+      "text": "time we would have been when we look at"
+    },
+    {
+      "start": "40:55",
+      "end": "40:58",
+      "text": "time we would have been when we look at a subset of X Prime and when we count"
+    },
+    {
+      "start": "40:58",
+      "end": "40:58",
+      "text": "a subset of X Prime and when we count"
+    },
+    {
+      "start": "40:58",
+      "end": "41:00",
+      "text": "a subset of X Prime and when we count its neighbors some of those neighbors"
+    },
+    {
+      "start": "41:00",
+      "end": "41:00",
+      "text": "its neighbors some of those neighbors"
+    },
+    {
+      "start": "41:00",
+      "end": "41:02",
+      "text": "its neighbors some of those neighbors could be in ns but now we are allowed to"
+    },
+    {
+      "start": "41:02",
+      "end": "41:02",
+      "text": "could be in ns but now we are allowed to"
+    },
+    {
+      "start": "41:02",
+      "end": "41:05",
+      "text": "could be in ns but now we are allowed to count only those neighbors which belongs"
+    },
+    {
+      "start": "41:05",
+      "end": "41:05",
+      "text": "count only those neighbors which belongs"
+    },
+    {
+      "start": "41:05",
+      "end": "41:08",
+      "text": "count only those neighbors which belongs to Y prime okay but we will show that"
+    },
+    {
+      "start": "41:08",
+      "end": "41:08",
+      "text": "to Y prime okay but we will show that"
+    },
+    {
+      "start": "41:08",
+      "end": "41:11",
+      "text": "to Y prime okay but we will show that this condition is still true so why is"
+    },
+    {
+      "start": "41:11",
+      "end": "41:11",
+      "text": "this condition is still true so why is"
+    },
+    {
+      "start": "41:11",
+      "end": "41:14",
+      "text": "this condition is still true so why is that so so let's assume the contrary"
+    },
+    {
+      "start": "41:14",
+      "end": "41:14",
+      "text": "that so so let's assume the contrary"
+    },
+    {
+      "start": "41:14",
+      "end": "41:18",
+      "text": "that so so let's assume the contrary suppose there is a subset a of X prime"
+    },
+    {
+      "start": "41:18",
+      "end": "41:18",
+      "text": "suppose there is a subset a of X prime"
+    },
+    {
+      "start": "41:18",
+      "end": "41:21",
+      "text": "suppose there is a subset a of X prime such that this condition is violated"
+    },
+    {
+      "start": "41:21",
+      "end": "41:21",
+      "text": "such that this condition is violated"
+    },
+    {
+      "start": "41:21",
+      "end": "41:27",
+      "text": "such that this condition is violated okay suppose there exists a subset a of"
+    },
+    {
+      "start": "41:27",
+      "end": "41:27",
+      "text": "okay suppose there exists a subset a of"
+    },
+    {
+      "start": "41:27",
+      "end": "41:34",
+      "text": "okay suppose there exists a subset a of X prime such that n of a is strictly"
+    },
+    {
+      "start": "41:34",
+      "end": "41:34",
+      "text": "X prime such that n of a is strictly"
+    },
+    {
+      "start": "41:34",
+      "end": "41:37",
+      "text": "X prime such that n of a is strictly less than the size of n of a is strictly"
+    },
+    {
+      "start": "41:37",
+      "end": "41:37",
+      "text": "less than the size of n of a is strictly"
+    },
+    {
+      "start": "41:37",
+      "end": "41:41",
+      "text": "less than the size of n of a is strictly less than size of a then we will show"
+    },
+    {
+      "start": "41:41",
+      "end": "41:41",
+      "text": "less than size of a then we will show"
+    },
+    {
+      "start": "41:41",
+      "end": "41:45",
+      "text": "less than size of a then we will show that the Razr subset in the original"
+    },
+    {
+      "start": "41:45",
+      "end": "41:45",
+      "text": "that the Razr subset in the original"
+    },
+    {
+      "start": "41:45",
+      "end": "41:49",
+      "text": "that the Razr subset in the original graph where halls condition was not met"
+    },
+    {
+      "start": "41:49",
+      "end": "41:49",
+      "text": "graph where halls condition was not met"
+    },
+    {
+      "start": "41:49",
+      "end": "41:52",
+      "text": "graph where halls condition was not met okay so the particular subset is easy to"
+    },
+    {
+      "start": "41:52",
+      "end": "41:52",
+      "text": "okay so the particular subset is easy to"
+    },
+    {
+      "start": "41:52",
+      "end": "41:58",
+      "text": "okay so the particular subset is easy to construct let's look at a union s ok so"
+    },
+    {
+      "start": "41:58",
+      "end": "41:58",
+      "text": "construct let's look at a union s ok so"
+    },
+    {
+      "start": "41:58",
+      "end": "42:11",
+      "text": "construct let's look at a union s ok so a union s in G has how many neighbors"
+    },
+    {
+      "start": "42:16",
+      "end": "42:16",
+      "text": "okay bye a resumption a union S&amp;G had at"
+    },
+    {
+      "start": "42:16",
+      "end": "42:19",
+      "text": "okay bye a resumption a union S&amp;G had at least as many neighbors as the size of a"
+    },
+    {
+      "start": "42:19",
+      "end": "42:19",
+      "text": "least as many neighbors as the size of a"
+    },
+    {
+      "start": "42:19",
+      "end": "42:36",
+      "text": "least as many neighbors as the size of a unionist okay"
+    },
+    {
+      "start": "42:39",
+      "end": "42:39",
+      "text": "neighbors of a union s its size is"
+    },
+    {
+      "start": "42:39",
+      "end": "42:42",
+      "text": "neighbors of a union s its size is greater than size of a union this is our"
+    },
+    {
+      "start": "42:42",
+      "end": "42:42",
+      "text": "greater than size of a union this is our"
+    },
+    {
+      "start": "42:42",
+      "end": "42:43",
+      "text": "greater than size of a union this is our assumption we will show that that"
+    },
+    {
+      "start": "42:43",
+      "end": "42:43",
+      "text": "assumption we will show that that"
+    },
+    {
+      "start": "42:43",
+      "end": "42:46",
+      "text": "assumption we will show that that condition is now violated so here this"
+    },
+    {
+      "start": "42:46",
+      "end": "42:46",
+      "text": "condition is now violated so here this"
+    },
+    {
+      "start": "42:46",
+      "end": "42:50",
+      "text": "condition is now violated so here this when I say na this stands for neighbors"
+    },
+    {
+      "start": "42:50",
+      "end": "42:50",
+      "text": "when I say na this stands for neighbors"
+    },
+    {
+      "start": "42:50",
+      "end": "42:54",
+      "text": "when I say na this stands for neighbors in G prime so I'm abusing the notation n"
+    },
+    {
+      "start": "42:54",
+      "end": "42:54",
+      "text": "in G prime so I'm abusing the notation n"
+    },
+    {
+      "start": "42:54",
+      "end": "42:58",
+      "text": "in G prime so I'm abusing the notation n a little bit sometimes we use that to"
+    },
+    {
+      "start": "42:58",
+      "end": "42:58",
+      "text": "a little bit sometimes we use that to"
+    },
+    {
+      "start": "42:58",
+      "end": "43:00",
+      "text": "a little bit sometimes we use that to denote the neighbors in G sometimes we"
+    },
+    {
+      "start": "43:00",
+      "end": "43:00",
+      "text": "denote the neighbors in G sometimes we"
+    },
+    {
+      "start": "43:00",
+      "end": "43:02",
+      "text": "denote the neighbors in G sometimes we use it to denote the neighbors in G"
+    },
+    {
+      "start": "43:02",
+      "end": "43:02",
+      "text": "use it to denote the neighbors in G"
+    },
+    {
+      "start": "43:02",
+      "end": "43:05",
+      "text": "use it to denote the neighbors in G prime but the context makes it clear as"
+    },
+    {
+      "start": "43:05",
+      "end": "43:05",
+      "text": "prime but the context makes it clear as"
+    },
+    {
+      "start": "43:05",
+      "end": "43:08",
+      "text": "prime but the context makes it clear as to which is the meaning that we are"
+    },
+    {
+      "start": "43:08",
+      "end": "43:08",
+      "text": "to which is the meaning that we are"
+    },
+    {
+      "start": "43:08",
+      "end": "43:10",
+      "text": "to which is the meaning that we are giving to n and n of a okay so when you"
+    },
+    {
+      "start": "43:10",
+      "end": "43:10",
+      "text": "giving to n and n of a okay so when you"
+    },
+    {
+      "start": "43:10",
+      "end": "43:13",
+      "text": "giving to n and n of a okay so when you look at n of a a a is a subset of X"
+    },
+    {
+      "start": "43:13",
+      "end": "43:13",
+      "text": "look at n of a a a is a subset of X"
+    },
+    {
+      "start": "43:13",
+      "end": "43:15",
+      "text": "look at n of a a a is a subset of X Prime so we are looking at the neighbors"
+    },
+    {
+      "start": "43:15",
+      "end": "43:15",
+      "text": "Prime so we are looking at the neighbors"
+    },
+    {
+      "start": "43:15",
+      "end": "43:23",
+      "text": "Prime so we are looking at the neighbors in X Prime okay so size of n a union s"
+    },
+    {
+      "start": "43:23",
+      "end": "43:23",
+      "text": "in X Prime okay so size of n a union s"
+    },
+    {
+      "start": "43:23",
+      "end": "43:30",
+      "text": "in X Prime okay so size of n a union s this set is equal to neighbors of a"
+    },
+    {
+      "start": "43:30",
+      "end": "43:30",
+      "text": "this set is equal to neighbors of a"
+    },
+    {
+      "start": "43:30",
+      "end": "43:37",
+      "text": "this set is equal to neighbors of a Union neighbors of s okay and this is a"
+    },
+    {
+      "start": "43:37",
+      "end": "43:37",
+      "text": "Union neighbors of s okay and this is a"
+    },
+    {
+      "start": "43:37",
+      "end": "43:41",
+      "text": "Union neighbors of s okay and this is a disjoint Union okay so clearly every"
+    },
+    {
+      "start": "43:41",
+      "end": "43:41",
+      "text": "disjoint Union okay so clearly every"
+    },
+    {
+      "start": "43:41",
+      "end": "43:43",
+      "text": "disjoint Union okay so clearly every element of n of S has to be there in"
+    },
+    {
+      "start": "43:43",
+      "end": "43:43",
+      "text": "element of n of S has to be there in"
+    },
+    {
+      "start": "43:43",
+      "end": "43:46",
+      "text": "element of n of S has to be there in neighbors of a union s and clearly"
+    },
+    {
+      "start": "43:46",
+      "end": "43:46",
+      "text": "neighbors of a union s and clearly"
+    },
+    {
+      "start": "43:46",
+      "end": "43:49",
+      "text": "neighbors of a union s and clearly neighbor of a also has to be in this"
+    },
+    {
+      "start": "43:49",
+      "end": "43:49",
+      "text": "neighbor of a also has to be in this"
+    },
+    {
+      "start": "43:49",
+      "end": "43:51",
+      "text": "neighbor of a also has to be in this particular collection now neighbor of a"
+    },
+    {
+      "start": "43:51",
+      "end": "43:51",
+      "text": "particular collection now neighbor of a"
+    },
+    {
+      "start": "43:51",
+      "end": "43:55",
+      "text": "particular collection now neighbor of a is when it is restricted to Y prime okay"
+    },
+    {
+      "start": "43:55",
+      "end": "43:55",
+      "text": "is when it is restricted to Y prime okay"
+    },
+    {
+      "start": "43:55",
+      "end": "44:01",
+      "text": "is when it is restricted to Y prime okay so now n a union s its size n a union s"
+    },
+    {
+      "start": "44:01",
+      "end": "44:01",
+      "text": "so now n a union s its size n a union s"
+    },
+    {
+      "start": "44:01",
+      "end": "44:10",
+      "text": "so now n a union s its size n a union s it's equal to size of n a plus size of n"
+    },
+    {
+      "start": "44:10",
+      "end": "44:10",
+      "text": "it's equal to size of n a plus size of n"
+    },
+    {
+      "start": "44:10",
+      "end": "44:13",
+      "text": "it's equal to size of n a plus size of n s but size the Venice we had it to be"
+    },
+    {
+      "start": "44:13",
+      "end": "44:13",
+      "text": "s but size the Venice we had it to be"
+    },
+    {
+      "start": "44:13",
+      "end": "44:16",
+      "text": "s but size the Venice we had it to be equal to the size of s so this is equal"
+    },
+    {
+      "start": "44:16",
+      "end": "44:16",
+      "text": "equal to the size of s so this is equal"
+    },
+    {
+      "start": "44:16",
+      "end": "44:21",
+      "text": "equal to the size of s so this is equal to size of n a plus size of s and size"
+    },
+    {
+      "start": "44:21",
+      "end": "44:21",
+      "text": "to size of n a plus size of s and size"
+    },
+    {
+      "start": "44:21",
+      "end": "44:24",
+      "text": "to size of n a plus size of s and size of n a its size is less than size of a"
+    },
+    {
+      "start": "44:24",
+      "end": "44:24",
+      "text": "of n a its size is less than size of a"
+    },
+    {
+      "start": "44:24",
+      "end": "44:27",
+      "text": "of n a its size is less than size of a so this is going to be less than size of"
+    },
+    {
+      "start": "44:27",
+      "end": "44:27",
+      "text": "so this is going to be less than size of"
+    },
+    {
+      "start": "44:27",
+      "end": "44:31",
+      "text": "so this is going to be less than size of a plus size of s so what we have here is"
+    },
+    {
+      "start": "44:31",
+      "end": "44:31",
+      "text": "a plus size of s so what we have here is"
+    },
+    {
+      "start": "44:31",
+      "end": "44:36",
+      "text": "a plus size of s so what we have here is and size of a plus size of s that is a"
+    },
+    {
+      "start": "44:36",
+      "end": "44:36",
+      "text": "and size of a plus size of s that is a"
+    },
+    {
+      "start": "44:36",
+      "end": "44:38",
+      "text": "and size of a plus size of s that is a and s does not have any common element"
+    },
+    {
+      "start": "44:38",
+      "end": "44:38",
+      "text": "and s does not have any common element"
+    },
+    {
+      "start": "44:38",
+      "end": "44:46",
+      "text": "and s does not have any common element so that the size of a union s so here"
+    },
+    {
+      "start": "44:49",
+      "end": "44:49",
+      "text": "we have the following inequality na"
+    },
+    {
+      "start": "44:49",
+      "end": "44:53",
+      "text": "we have the following inequality na Union s this of size strictly smaller"
+    },
+    {
+      "start": "44:53",
+      "end": "44:53",
+      "text": "Union s this of size strictly smaller"
+    },
+    {
+      "start": "44:53",
+      "end": "44:58",
+      "text": "Union s this of size strictly smaller than a union s okay so that is the"
+    },
+    {
+      "start": "44:58",
+      "end": "44:58",
+      "text": "than a union s okay so that is the"
+    },
+    {
+      "start": "44:58",
+      "end": "45:00",
+      "text": "than a union s okay so that is the contradiction and therefore our"
+    },
+    {
+      "start": "45:00",
+      "end": "45:00",
+      "text": "contradiction and therefore our"
+    },
+    {
+      "start": "45:00",
+      "end": "45:02",
+      "text": "contradiction and therefore our assumption is wrong namely where we"
+    },
+    {
+      "start": "45:02",
+      "end": "45:02",
+      "text": "assumption is wrong namely where we"
+    },
+    {
+      "start": "45:02",
+      "end": "45:04",
+      "text": "assumption is wrong namely where we assume that n of a is less than a is a"
+    },
+    {
+      "start": "45:04",
+      "end": "45:04",
+      "text": "assume that n of a is less than a is a"
+    },
+    {
+      "start": "45:04",
+      "end": "45:13",
+      "text": "assume that n of a is less than a is a faulty assumption so that would mean n a"
+    },
+    {
+      "start": "45:13",
+      "end": "45:13",
+      "text": "faulty assumption so that would mean n a"
+    },
+    {
+      "start": "45:13",
+      "end": "45:15",
+      "text": "faulty assumption so that would mean n a is going to be greater than or equal to"
+    },
+    {
+      "start": "45:15",
+      "end": "45:15",
+      "text": "is going to be greater than or equal to"
+    },
+    {
+      "start": "45:15",
+      "end": "45:24",
+      "text": "is going to be greater than or equal to a and now we can apply halls theorem to"
+    },
+    {
+      "start": "45:24",
+      "end": "45:24",
+      "text": "a and now we can apply halls theorem to"
+    },
+    {
+      "start": "45:24",
+      "end": "45:27",
+      "text": "a and now we can apply halls theorem to the smaller set X Prime and we can get a"
+    },
+    {
+      "start": "45:27",
+      "end": "45:27",
+      "text": "the smaller set X Prime and we can get a"
+    },
+    {
+      "start": "45:27",
+      "end": "45:29",
+      "text": "the smaller set X Prime and we can get a perfect matching we can get a matching"
+    },
+    {
+      "start": "45:29",
+      "end": "45:29",
+      "text": "perfect matching we can get a matching"
+    },
+    {
+      "start": "45:29",
+      "end": "45:31",
+      "text": "perfect matching we can get a matching of size X Prime between X Prime and y"
+    },
+    {
+      "start": "45:31",
+      "end": "45:31",
+      "text": "of size X Prime between X Prime and y"
+    },
+    {
+      "start": "45:31",
+      "end": "45:34",
+      "text": "of size X Prime between X Prime and y prime combine these two matchings and"
+    },
+    {
+      "start": "45:34",
+      "end": "45:34",
+      "text": "prime combine these two matchings and"
+    },
+    {
+      "start": "45:34",
+      "end": "45:35",
+      "text": "prime combine these two matchings and you will get a matching in the whole"
+    },
+    {
+      "start": "45:35",
+      "end": "45:35",
+      "text": "you will get a matching in the whole"
+    },
+    {
+      "start": "45:35",
+      "end": "45:38",
+      "text": "you will get a matching in the whole graph so what we have accomplished is"
+    },
+    {
+      "start": "45:38",
+      "end": "45:38",
+      "text": "graph so what we have accomplished is"
+    },
+    {
+      "start": "45:38",
+      "end": "45:41",
+      "text": "graph so what we have accomplished is the following in any bipartite graph if"
+    },
+    {
+      "start": "45:41",
+      "end": "45:41",
+      "text": "the following in any bipartite graph if"
+    },
+    {
+      "start": "45:41",
+      "end": "45:44",
+      "text": "the following in any bipartite graph if the number of neighbors of s is greater"
+    },
+    {
+      "start": "45:44",
+      "end": "45:44",
+      "text": "the number of neighbors of s is greater"
+    },
+    {
+      "start": "45:44",
+      "end": "45:46",
+      "text": "the number of neighbors of s is greater than the number of elements in s for"
+    },
+    {
+      "start": "45:46",
+      "end": "45:46",
+      "text": "than the number of elements in s for"
+    },
+    {
+      "start": "45:46",
+      "end": "45:50",
+      "text": "than the number of elements in s for every subset of X where X is one side of"
+    },
+    {
+      "start": "45:50",
+      "end": "45:50",
+      "text": "every subset of X where X is one side of"
+    },
+    {
+      "start": "45:50",
+      "end": "45:54",
+      "text": "every subset of X where X is one side of the graph then the graph will definitely"
+    },
+    {
+      "start": "45:54",
+      "end": "45:54",
+      "text": "the graph then the graph will definitely"
+    },
+    {
+      "start": "45:54",
+      "end": "45:59",
+      "text": "the graph then the graph will definitely have a perfect matching stop you"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,3498 @@
+{
+  "title": "Lec 24: GCD, Euclid's Algorithm",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "welcome to the NPTEL MOOC on"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "welcome to the NPTEL MOOC on great mathematics this is the second"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "great mathematics this is the second"
+    },
+    {
+      "start": "0:34",
+      "end": "0:41",
+      "text": "great mathematics this is the second lecture on number theory when the GCD of"
+    },
+    {
+      "start": "0:41",
+      "end": "0:41",
+      "text": "lecture on number theory when the GCD of"
+    },
+    {
+      "start": "0:41",
+      "end": "0:45",
+      "text": "lecture on number theory when the GCD of two numbers two integers a and B this"
+    },
+    {
+      "start": "0:45",
+      "end": "0:45",
+      "text": "two numbers two integers a and B this"
+    },
+    {
+      "start": "0:45",
+      "end": "0:54",
+      "text": "two numbers two integers a and B this one we say that a and B are co-prime or"
+    },
+    {
+      "start": "0:54",
+      "end": "0:54",
+      "text": "one we say that a and B are co-prime or"
+    },
+    {
+      "start": "0:54",
+      "end": "1:03",
+      "text": "one we say that a and B are co-prime or that they are relatively prime let us"
+    },
+    {
+      "start": "1:03",
+      "end": "1:03",
+      "text": "that they are relatively prime let us"
+    },
+    {
+      "start": "1:03",
+      "end": "1:06",
+      "text": "that they are relatively prime let us see a theorem which we call theorem two"
+    },
+    {
+      "start": "1:06",
+      "end": "1:06",
+      "text": "see a theorem which we call theorem two"
+    },
+    {
+      "start": "1:06",
+      "end": "1:14",
+      "text": "see a theorem which we call theorem two one for integers a B and X GCD of a and"
+    },
+    {
+      "start": "1:14",
+      "end": "1:14",
+      "text": "one for integers a B and X GCD of a and"
+    },
+    {
+      "start": "1:14",
+      "end": "1:22",
+      "text": "one for integers a B and X GCD of a and B is the same as the GCD of a and B plus"
+    },
+    {
+      "start": "1:22",
+      "end": "1:22",
+      "text": "B is the same as the GCD of a and B plus"
+    },
+    {
+      "start": "1:22",
+      "end": "1:26",
+      "text": "B is the same as the GCD of a and B plus a that is an odd integer multiple of a"
+    },
+    {
+      "start": "1:26",
+      "end": "1:26",
+      "text": "a that is an odd integer multiple of a"
+    },
+    {
+      "start": "1:26",
+      "end": "1:30",
+      "text": "a that is an odd integer multiple of a added to B along with a will have the"
+    },
+    {
+      "start": "1:30",
+      "end": "1:30",
+      "text": "added to B along with a will have the"
+    },
+    {
+      "start": "1:30",
+      "end": "1:34",
+      "text": "added to B along with a will have the same GCD as a NP the proof goes like"
+    },
+    {
+      "start": "1:34",
+      "end": "1:34",
+      "text": "same GCD as a NP the proof goes like"
+    },
+    {
+      "start": "1:34",
+      "end": "1:44",
+      "text": "same GCD as a NP the proof goes like this GCD of a and B plus ax according to"
+    },
+    {
+      "start": "1:44",
+      "end": "1:44",
+      "text": "this GCD of a and B plus ax according to"
+    },
+    {
+      "start": "1:44",
+      "end": "1:47",
+      "text": "this GCD of a and B plus ax according to what we saw in the last class this is"
+    },
+    {
+      "start": "1:47",
+      "end": "1:47",
+      "text": "what we saw in the last class this is"
+    },
+    {
+      "start": "1:47",
+      "end": "1:57",
+      "text": "what we saw in the last class this is the least positive member"
+    },
+    {
+      "start": "2:16",
+      "end": "2:16",
+      "text": "the set of all linear combinations of a"
+    },
+    {
+      "start": "2:16",
+      "end": "2:22",
+      "text": "the set of all linear combinations of a and B plus X using integer coefficients"
+    },
+    {
+      "start": "2:22",
+      "end": "2:22",
+      "text": "and B plus X using integer coefficients"
+    },
+    {
+      "start": "2:22",
+      "end": "2:27",
+      "text": "and B plus X using integer coefficients so GCD of a and B plus ax is the least"
+    },
+    {
+      "start": "2:27",
+      "end": "2:27",
+      "text": "so GCD of a and B plus ax is the least"
+    },
+    {
+      "start": "2:27",
+      "end": "2:30",
+      "text": "so GCD of a and B plus ax is the least positive member of the set but then the"
+    },
+    {
+      "start": "2:30",
+      "end": "2:30",
+      "text": "positive member of the set but then the"
+    },
+    {
+      "start": "2:30",
+      "end": "2:33",
+      "text": "positive member of the set but then the set is identical to that as this"
+    },
+    {
+      "start": "2:33",
+      "end": "2:33",
+      "text": "set is identical to that as this"
+    },
+    {
+      "start": "2:33",
+      "end": "2:38",
+      "text": "set is identical to that as this definition can be rewritten as a in the"
+    },
+    {
+      "start": "2:38",
+      "end": "2:38",
+      "text": "definition can be rewritten as a in the"
+    },
+    {
+      "start": "2:38",
+      "end": "2:51",
+      "text": "definition can be rewritten as a in the Y plus XZ plus B said where y&amp;z are on"
+    },
+    {
+      "start": "2:54",
+      "end": "2:54",
+      "text": "the set of integers this can be written"
+    },
+    {
+      "start": "2:54",
+      "end": "3:06",
+      "text": "the set of integers this can be written as"
+    },
+    {
+      "start": "3:11",
+      "end": "3:11",
+      "text": "that is because given you and Z any"
+    },
+    {
+      "start": "3:11",
+      "end": "3:14",
+      "text": "that is because given you and Z any number a you plus visit can be returned"
+    },
+    {
+      "start": "3:14",
+      "end": "3:14",
+      "text": "number a you plus visit can be returned"
+    },
+    {
+      "start": "3:14",
+      "end": "3:17",
+      "text": "number a you plus visit can be returned as a into y plus X set plus be said for"
+    },
+    {
+      "start": "3:17",
+      "end": "3:17",
+      "text": "as a into y plus X set plus be said for"
+    },
+    {
+      "start": "3:17",
+      "end": "3:21",
+      "text": "as a into y plus X set plus be said for integers y&amp;z that is for every such you"
+    },
+    {
+      "start": "3:21",
+      "end": "3:21",
+      "text": "integers y&amp;z that is for every such you"
+    },
+    {
+      "start": "3:21",
+      "end": "3:25",
+      "text": "integers y&amp;z that is for every such you we can find such a while you will be y"
+    },
+    {
+      "start": "3:25",
+      "end": "3:25",
+      "text": "we can find such a while you will be y"
+    },
+    {
+      "start": "3:25",
+      "end": "3:28",
+      "text": "we can find such a while you will be y plus exit therefore ye will be u minus X"
+    },
+    {
+      "start": "3:28",
+      "end": "3:28",
+      "text": "plus exit therefore ye will be u minus X"
+    },
+    {
+      "start": "3:28",
+      "end": "3:30",
+      "text": "plus exit therefore ye will be u minus X third but the least positive member of"
+    },
+    {
+      "start": "3:30",
+      "end": "3:30",
+      "text": "third but the least positive member of"
+    },
+    {
+      "start": "3:30",
+      "end": "3:35",
+      "text": "third but the least positive member of this set in the final form we know is"
+    },
+    {
+      "start": "3:35",
+      "end": "3:35",
+      "text": "this set in the final form we know is"
+    },
+    {
+      "start": "3:35",
+      "end": "3:40",
+      "text": "this set in the final form we know is nothing but GCD of a and B therefore GCD"
+    },
+    {
+      "start": "3:40",
+      "end": "3:40",
+      "text": "nothing but GCD of a and B therefore GCD"
+    },
+    {
+      "start": "3:40",
+      "end": "3:46",
+      "text": "nothing but GCD of a and B therefore GCD of a and B plus ax is nothing but GCD of"
+    },
+    {
+      "start": "3:46",
+      "end": "3:46",
+      "text": "of a and B plus ax is nothing but GCD of"
+    },
+    {
+      "start": "3:46",
+      "end": "3:52",
+      "text": "of a and B plus ax is nothing but GCD of eight hence the theorem another theorem"
+    },
+    {
+      "start": "3:52",
+      "end": "3:52",
+      "text": "eight hence the theorem another theorem"
+    },
+    {
+      "start": "3:52",
+      "end": "3:59",
+      "text": "eight hence the theorem another theorem HP number two two states this if a and C"
+    },
+    {
+      "start": "3:59",
+      "end": "3:59",
+      "text": "HP number two two states this if a and C"
+    },
+    {
+      "start": "3:59",
+      "end": "4:05",
+      "text": "HP number two two states this if a and C are co-prime or relatively prime which"
+    },
+    {
+      "start": "4:05",
+      "end": "4:05",
+      "text": "are co-prime or relatively prime which"
+    },
+    {
+      "start": "4:05",
+      "end": "4:07",
+      "text": "are co-prime or relatively prime which means the GCD is 1 or they do not have a"
+    },
+    {
+      "start": "4:07",
+      "end": "4:07",
+      "text": "means the GCD is 1 or they do not have a"
+    },
+    {
+      "start": "4:07",
+      "end": "4:17",
+      "text": "means the GCD is 1 or they do not have a common factor and it divides BC then you"
+    },
+    {
+      "start": "4:17",
+      "end": "4:17",
+      "text": "common factor and it divides BC then you"
+    },
+    {
+      "start": "4:17",
+      "end": "4:22",
+      "text": "common factor and it divides BC then you divides B to prove this the consider GCD"
+    },
+    {
+      "start": "4:22",
+      "end": "4:22",
+      "text": "divides B to prove this the consider GCD"
+    },
+    {
+      "start": "4:22",
+      "end": "4:29",
+      "text": "divides B to prove this the consider GCD of a b and b c thus we know from the"
+    },
+    {
+      "start": "4:29",
+      "end": "4:29",
+      "text": "of a b and b c thus we know from the"
+    },
+    {
+      "start": "4:29",
+      "end": "4:32",
+      "text": "of a b and b c thus we know from the theorem proved in the last class is B"
+    },
+    {
+      "start": "4:32",
+      "end": "4:32",
+      "text": "theorem proved in the last class is B"
+    },
+    {
+      "start": "4:32",
+      "end": "4:40",
+      "text": "theorem proved in the last class is B times GCD of a and C but a and C are"
+    },
+    {
+      "start": "4:40",
+      "end": "4:40",
+      "text": "times GCD of a and C but a and C are"
+    },
+    {
+      "start": "4:40",
+      "end": "4:43",
+      "text": "times GCD of a and C but a and C are co-prime therefore GCD of a and C is 1"
+    },
+    {
+      "start": "4:43",
+      "end": "4:43",
+      "text": "co-prime therefore GCD of a and C is 1"
+    },
+    {
+      "start": "4:43",
+      "end": "4:48",
+      "text": "co-prime therefore GCD of a and C is 1 therefore this is B so GCD of a B and BC"
+    },
+    {
+      "start": "4:48",
+      "end": "4:48",
+      "text": "therefore this is B so GCD of a B and BC"
+    },
+    {
+      "start": "4:48",
+      "end": "4:55",
+      "text": "therefore this is B so GCD of a B and BC is B which means all common divisors of"
+    },
+    {
+      "start": "4:55",
+      "end": "4:55",
+      "text": "is B which means all common divisors of"
+    },
+    {
+      "start": "4:55",
+      "end": "5:00",
+      "text": "is B which means all common divisors of a b-and-b see"
+    },
+    {
+      "start": "5:24",
+      "end": "5:25",
+      "text": "therefore is a common divisor of BC and"
+    },
+    {
+      "start": "5:25",
+      "end": "5:31",
+      "text": "therefore is a common divisor of BC and a me"
+    },
+    {
+      "start": "5:36",
+      "end": "5:36",
+      "text": "a divides B C is given a B is a product"
+    },
+    {
+      "start": "5:36",
+      "end": "5:38",
+      "text": "a divides B C is given a B is a product of a and B therefore a divides a B"
+    },
+    {
+      "start": "5:38",
+      "end": "5:38",
+      "text": "of a and B therefore a divides a B"
+    },
+    {
+      "start": "5:38",
+      "end": "5:41",
+      "text": "of a and B therefore a divides a B therefore we know that is a common"
+    },
+    {
+      "start": "5:41",
+      "end": "5:41",
+      "text": "therefore we know that is a common"
+    },
+    {
+      "start": "5:41",
+      "end": "5:45",
+      "text": "therefore we know that is a common divisor of B C and a B which means a"
+    },
+    {
+      "start": "5:45",
+      "end": "5:45",
+      "text": "divisor of B C and a B which means a"
+    },
+    {
+      "start": "5:45",
+      "end": "5:48",
+      "text": "divisor of B C and a B which means a divides B we just ended the conclusion"
+    },
+    {
+      "start": "5:48",
+      "end": "5:49",
+      "text": "divides B we just ended the conclusion"
+    },
+    {
+      "start": "5:49",
+      "end": "5:50",
+      "text": "divides B we just ended the conclusion that we have been seeking"
+    },
+    {
+      "start": "5:50",
+      "end": "5:50",
+      "text": "that we have been seeking"
+    },
+    {
+      "start": "5:50",
+      "end": "5:56",
+      "text": "that we have been seeking hence the theorem the next theorem which"
+    },
+    {
+      "start": "5:56",
+      "end": "5:56",
+      "text": "hence the theorem the next theorem which"
+    },
+    {
+      "start": "5:56",
+      "end": "6:07",
+      "text": "hence the theorem the next theorem which we number theorem 2 3 is the one which"
+    },
+    {
+      "start": "6:13",
+      "end": "6:13",
+      "text": "talks about Euclid's algorithm what this"
+    },
+    {
+      "start": "6:13",
+      "end": "6:21",
+      "text": "talks about Euclid's algorithm what this theorem says is this for R 0 and R 1"
+    },
+    {
+      "start": "6:21",
+      "end": "6:21",
+      "text": "theorem says is this for R 0 and R 1"
+    },
+    {
+      "start": "6:21",
+      "end": "6:25",
+      "text": "theorem says is this for R 0 and R 1 greater than 0 both of which are"
+    },
+    {
+      "start": "6:25",
+      "end": "6:25",
+      "text": "greater than 0 both of which are"
+    },
+    {
+      "start": "6:25",
+      "end": "6:32",
+      "text": "greater than 0 both of which are integers if we apply the division"
+    },
+    {
+      "start": "6:32",
+      "end": "6:32",
+      "text": "integers if we apply the division"
+    },
+    {
+      "start": "6:32",
+      "end": "6:42",
+      "text": "integers if we apply the division algorithm repeatedly"
+    },
+    {
+      "start": "6:44",
+      "end": "6:44",
+      "text": "if you apply the division algorithm"
+    },
+    {
+      "start": "6:44",
+      "end": "6:47",
+      "text": "if you apply the division algorithm repeatedly as follows the division"
+    },
+    {
+      "start": "6:47",
+      "end": "6:47",
+      "text": "repeatedly as follows the division"
+    },
+    {
+      "start": "6:47",
+      "end": "6:48",
+      "text": "repeatedly as follows the division algorithm is applied like this we set"
+    },
+    {
+      "start": "6:48",
+      "end": "6:48",
+      "text": "algorithm is applied like this we set"
+    },
+    {
+      "start": "6:48",
+      "end": "6:52",
+      "text": "algorithm is applied like this we set variable I to 1 and then we have a do"
+    },
+    {
+      "start": "6:52",
+      "end": "6:52",
+      "text": "variable I to 1 and then we have a do"
+    },
+    {
+      "start": "6:52",
+      "end": "6:58",
+      "text": "variable I to 1 and then we have a do loop in which would reduce this we form"
+    },
+    {
+      "start": "6:58",
+      "end": "6:58",
+      "text": "loop in which would reduce this we form"
+    },
+    {
+      "start": "6:58",
+      "end": "7:04",
+      "text": "loop in which would reduce this we form ordered pair RI plus 1 Q I plus 1 using"
+    },
+    {
+      "start": "7:04",
+      "end": "7:04",
+      "text": "ordered pair RI plus 1 Q I plus 1 using"
+    },
+    {
+      "start": "7:04",
+      "end": "7:09",
+      "text": "ordered pair RI plus 1 Q I plus 1 using division algorithm applied on our I"
+    },
+    {
+      "start": "7:09",
+      "end": "7:09",
+      "text": "division algorithm applied on our I"
+    },
+    {
+      "start": "7:09",
+      "end": "7:14",
+      "text": "division algorithm applied on our I minus 1 and RI and then we increment"
+    },
+    {
+      "start": "7:14",
+      "end": "7:14",
+      "text": "minus 1 and RI and then we increment"
+    },
+    {
+      "start": "7:14",
+      "end": "7:22",
+      "text": "minus 1 and RI and then we increment right we do this while RI is not equal"
+    },
+    {
+      "start": "7:22",
+      "end": "7:22",
+      "text": "right we do this while RI is not equal"
+    },
+    {
+      "start": "7:22",
+      "end": "7:26",
+      "text": "right we do this while RI is not equal to 0 so we apply division algorithm in"
+    },
+    {
+      "start": "7:26",
+      "end": "7:26",
+      "text": "to 0 so we apply division algorithm in"
+    },
+    {
+      "start": "7:26",
+      "end": "7:29",
+      "text": "to 0 so we apply division algorithm in the sense first let me complete the"
+    },
+    {
+      "start": "7:29",
+      "end": "7:29",
+      "text": "the sense first let me complete the"
+    },
+    {
+      "start": "7:29",
+      "end": "7:31",
+      "text": "the sense first let me complete the statement of the theorem after that we"
+    },
+    {
+      "start": "7:31",
+      "end": "7:31",
+      "text": "statement of the theorem after that we"
+    },
+    {
+      "start": "7:31",
+      "end": "7:35",
+      "text": "statement of the theorem after that we will revisit the division algorithm then"
+    },
+    {
+      "start": "7:35",
+      "end": "7:35",
+      "text": "will revisit the division algorithm then"
+    },
+    {
+      "start": "7:35",
+      "end": "7:40",
+      "text": "will revisit the division algorithm then what the theorem says is this GCD of are"
+    },
+    {
+      "start": "7:40",
+      "end": "7:40",
+      "text": "what the theorem says is this GCD of are"
+    },
+    {
+      "start": "7:40",
+      "end": "7:47",
+      "text": "what the theorem says is this GCD of are not an r1 is our I minus 1 which is the"
+    },
+    {
+      "start": "7:47",
+      "end": "7:47",
+      "text": "not an r1 is our I minus 1 which is the"
+    },
+    {
+      "start": "7:47",
+      "end": "7:55",
+      "text": "not an r1 is our I minus 1 which is the last nonzero remainder of the process"
+    },
+    {
+      "start": "7:55",
+      "end": "7:55",
+      "text": "last nonzero remainder of the process"
+    },
+    {
+      "start": "7:55",
+      "end": "8:02",
+      "text": "last nonzero remainder of the process and in particular integers X naught and"
+    },
+    {
+      "start": "8:02",
+      "end": "8:02",
+      "text": "and in particular integers X naught and"
+    },
+    {
+      "start": "8:02",
+      "end": "8:09",
+      "text": "and in particular integers X naught and y naught such that"
+    },
+    {
+      "start": "8:14",
+      "end": "8:14",
+      "text": "the GCD that we find namely our I minus"
+    },
+    {
+      "start": "8:14",
+      "end": "8:19",
+      "text": "the GCD that we find namely our I minus 1 is a linear combination of R naught"
+    },
+    {
+      "start": "8:19",
+      "end": "8:19",
+      "text": "1 is a linear combination of R naught"
+    },
+    {
+      "start": "8:19",
+      "end": "8:24",
+      "text": "1 is a linear combination of R naught and R 1 with X naught and y naught as"
+    },
+    {
+      "start": "8:24",
+      "end": "8:24",
+      "text": "and R 1 with X naught and y naught as"
+    },
+    {
+      "start": "8:24",
+      "end": "8:33",
+      "text": "and R 1 with X naught and y naught as the coefficients can be obtained by"
+    },
+    {
+      "start": "8:33",
+      "end": "8:33",
+      "text": "the coefficients can be obtained by"
+    },
+    {
+      "start": "8:33",
+      "end": "8:43",
+      "text": "the coefficients can be obtained by writing each our J where J varies from"
+    },
+    {
+      "start": "8:43",
+      "end": "8:43",
+      "text": "writing each our J where J varies from"
+    },
+    {
+      "start": "8:43",
+      "end": "8:51",
+      "text": "writing each our J where J varies from two to I minus 1 that's a linear"
+    },
+    {
+      "start": "8:51",
+      "end": "8:51",
+      "text": "two to I minus 1 that's a linear"
+    },
+    {
+      "start": "8:51",
+      "end": "8:57",
+      "text": "two to I minus 1 that's a linear combination"
+    },
+    {
+      "start": "9:05",
+      "end": "9:05",
+      "text": "of our zero and our now let us take a"
+    },
+    {
+      "start": "9:05",
+      "end": "9:08",
+      "text": "of our zero and our now let us take a look at the division algorithm the"
+    },
+    {
+      "start": "9:08",
+      "end": "9:08",
+      "text": "look at the division algorithm the"
+    },
+    {
+      "start": "9:08",
+      "end": "9:12",
+      "text": "look at the division algorithm the algorithm begins with R 0 and R 1 and"
+    },
+    {
+      "start": "9:12",
+      "end": "9:12",
+      "text": "algorithm begins with R 0 and R 1 and"
+    },
+    {
+      "start": "9:12",
+      "end": "9:17",
+      "text": "algorithm begins with R 0 and R 1 and then we find our 2 in the sense we write"
+    },
+    {
+      "start": "9:17",
+      "end": "9:17",
+      "text": "then we find our 2 in the sense we write"
+    },
+    {
+      "start": "9:17",
+      "end": "9:28",
+      "text": "then we find our 2 in the sense we write R 0 as Q 1 R 1 plus R 2 Q 2 R 1 plus R 2"
+    },
+    {
+      "start": "9:28",
+      "end": "9:28",
+      "text": "R 0 as Q 1 R 1 plus R 2 Q 2 R 1 plus R 2"
+    },
+    {
+      "start": "9:28",
+      "end": "9:33",
+      "text": "R 0 as Q 1 R 1 plus R 2 Q 2 R 1 plus R 2 that is we find a unique ordered pair R"
+    },
+    {
+      "start": "9:33",
+      "end": "9:33",
+      "text": "that is we find a unique ordered pair R"
+    },
+    {
+      "start": "9:33",
+      "end": "9:36",
+      "text": "that is we find a unique ordered pair R 2 Q 2 so that when the division"
+    },
+    {
+      "start": "9:36",
+      "end": "9:36",
+      "text": "2 Q 2 so that when the division"
+    },
+    {
+      "start": "9:36",
+      "end": "9:40",
+      "text": "2 Q 2 so that when the division algorithm is applied on R 0 and R 1 this"
+    },
+    {
+      "start": "9:40",
+      "end": "9:40",
+      "text": "algorithm is applied on R 0 and R 1 this"
+    },
+    {
+      "start": "9:40",
+      "end": "9:43",
+      "text": "algorithm is applied on R 0 and R 1 this ordered pair is what we get then R 0"
+    },
+    {
+      "start": "9:43",
+      "end": "9:43",
+      "text": "ordered pair is what we get then R 0"
+    },
+    {
+      "start": "9:43",
+      "end": "9:47",
+      "text": "ordered pair is what we get then R 0 would be expressible in this form so we"
+    },
+    {
+      "start": "9:47",
+      "end": "9:47",
+      "text": "would be expressible in this form so we"
+    },
+    {
+      "start": "9:47",
+      "end": "9:53",
+      "text": "would be expressible in this form so we have now R 2 so R 2 is the remainder of"
+    },
+    {
+      "start": "9:53",
+      "end": "9:53",
+      "text": "have now R 2 so R 2 is the remainder of"
+    },
+    {
+      "start": "9:53",
+      "end": "9:58",
+      "text": "have now R 2 so R 2 is the remainder of the division of are not with R 1 so now"
+    },
+    {
+      "start": "9:58",
+      "end": "9:58",
+      "text": "the division of are not with R 1 so now"
+    },
+    {
+      "start": "9:58",
+      "end": "10:02",
+      "text": "the division of are not with R 1 so now we have R 1 and R 2 then what we do is"
+    },
+    {
+      "start": "10:02",
+      "end": "10:02",
+      "text": "we have R 1 and R 2 then what we do is"
+    },
+    {
+      "start": "10:02",
+      "end": "10:05",
+      "text": "we have R 1 and R 2 then what we do is to recurse with R 1 and R 2 the division"
+    },
+    {
+      "start": "10:05",
+      "end": "10:05",
+      "text": "to recurse with R 1 and R 2 the division"
+    },
+    {
+      "start": "10:05",
+      "end": "10:07",
+      "text": "to recurse with R 1 and R 2 the division algorithm is next invoked on R 1 and R 2"
+    },
+    {
+      "start": "10:07",
+      "end": "10:07",
+      "text": "algorithm is next invoked on R 1 and R 2"
+    },
+    {
+      "start": "10:07",
+      "end": "10:10",
+      "text": "algorithm is next invoked on R 1 and R 2 then we would get an order pair Q 3 and"
+    },
+    {
+      "start": "10:10",
+      "end": "10:10",
+      "text": "then we would get an order pair Q 3 and"
+    },
+    {
+      "start": "10:10",
+      "end": "10:16",
+      "text": "then we would get an order pair Q 3 and R 3 R 3 would be the new remainder then"
+    },
+    {
+      "start": "10:16",
+      "end": "10:16",
+      "text": "R 3 R 3 would be the new remainder then"
+    },
+    {
+      "start": "10:16",
+      "end": "10:19",
+      "text": "R 3 R 3 would be the new remainder then we would recur swith r2 and r3 so when"
+    },
+    {
+      "start": "10:19",
+      "end": "10:19",
+      "text": "we would recur swith r2 and r3 so when"
+    },
+    {
+      "start": "10:19",
+      "end": "10:22",
+      "text": "we would recur swith r2 and r3 so when you continue like this the remainders"
+    },
+    {
+      "start": "10:22",
+      "end": "10:22",
+      "text": "you continue like this the remainders"
+    },
+    {
+      "start": "10:22",
+      "end": "10:24",
+      "text": "you continue like this the remainders would keep decreasing in value as we go"
+    },
+    {
+      "start": "10:24",
+      "end": "10:24",
+      "text": "would keep decreasing in value as we go"
+    },
+    {
+      "start": "10:24",
+      "end": "10:27",
+      "text": "would keep decreasing in value as we go along in absolute value finally when we"
+    },
+    {
+      "start": "10:27",
+      "end": "10:27",
+      "text": "along in absolute value finally when we"
+    },
+    {
+      "start": "10:27",
+      "end": "10:31",
+      "text": "along in absolute value finally when we come to a stage where our I equal to 0"
+    },
+    {
+      "start": "10:31",
+      "end": "10:31",
+      "text": "come to a stage where our I equal to 0"
+    },
+    {
+      "start": "10:31",
+      "end": "10:34",
+      "text": "come to a stage where our I equal to 0 we come out of the loop at this point"
+    },
+    {
+      "start": "10:34",
+      "end": "10:34",
+      "text": "we come out of the loop at this point"
+    },
+    {
+      "start": "10:34",
+      "end": "10:36",
+      "text": "we come out of the loop at this point the last non-zero remainder that we had"
+    },
+    {
+      "start": "10:36",
+      "end": "10:36",
+      "text": "the last non-zero remainder that we had"
+    },
+    {
+      "start": "10:36",
+      "end": "10:43",
+      "text": "the last non-zero remainder that we had namely R I minus 1 that would be the GCD"
+    },
+    {
+      "start": "10:43",
+      "end": "10:44",
+      "text": "namely R I minus 1 that would be the GCD"
+    },
+    {
+      "start": "10:44",
+      "end": "10:46",
+      "text": "namely R I minus 1 that would be the GCD of the two given numbers or not an hour"
+    },
+    {
+      "start": "10:46",
+      "end": "10:46",
+      "text": "of the two given numbers or not an hour"
+    },
+    {
+      "start": "10:46",
+      "end": "10:48",
+      "text": "of the two given numbers or not an hour let us work out an example first and"
+    },
+    {
+      "start": "10:48",
+      "end": "10:48",
+      "text": "let us work out an example first and"
+    },
+    {
+      "start": "10:48",
+      "end": "10:55",
+      "text": "let us work out an example first and then we will prove the theorem in the"
+    },
+    {
+      "start": "10:55",
+      "end": "10:55",
+      "text": "then we will prove the theorem in the"
+    },
+    {
+      "start": "10:55",
+      "end": "10:58",
+      "text": "then we will prove the theorem in the example we took and consider two numbers"
+    },
+    {
+      "start": "10:58",
+      "end": "10:58",
+      "text": "example we took and consider two numbers"
+    },
+    {
+      "start": "10:58",
+      "end": "11:03",
+      "text": "example we took and consider two numbers 5 1 2 5 12 and 4 32 let us say we want"
+    },
+    {
+      "start": "11:03",
+      "end": "11:03",
+      "text": "5 1 2 5 12 and 4 32 let us say we want"
+    },
+    {
+      "start": "11:03",
+      "end": "11:09",
+      "text": "5 1 2 5 12 and 4 32 let us say we want to find the GCD of 5 12 and 4 30"
+    },
+    {
+      "start": "11:09",
+      "end": "11:09",
+      "text": "to find the GCD of 5 12 and 4 30"
+    },
+    {
+      "start": "11:09",
+      "end": "11:12",
+      "text": "to find the GCD of 5 12 and 4 30 what we do is this we find the remainder"
+    },
+    {
+      "start": "11:12",
+      "end": "11:12",
+      "text": "what we do is this we find the remainder"
+    },
+    {
+      "start": "11:12",
+      "end": "11:25",
+      "text": "what we do is this we find the remainder of 512 on division with authority Romain"
+    },
+    {
+      "start": "11:25",
+      "end": "11:25",
+      "text": "of 512 on division with authority Romain"
+    },
+    {
+      "start": "11:25",
+      "end": "11:28",
+      "text": "of 512 on division with authority Romain Duris it then we discard the largest"
+    },
+    {
+      "start": "11:28",
+      "end": "11:28",
+      "text": "Duris it then we discard the largest"
+    },
+    {
+      "start": "11:28",
+      "end": "11:31",
+      "text": "Duris it then we discard the largest number which is 512 and then the curse"
+    },
+    {
+      "start": "11:31",
+      "end": "11:31",
+      "text": "number which is 512 and then the curse"
+    },
+    {
+      "start": "11:31",
+      "end": "11:38",
+      "text": "number which is 512 and then the curse with 432 and it so now we want to find"
+    },
+    {
+      "start": "11:38",
+      "end": "11:38",
+      "text": "with 432 and it so now we want to find"
+    },
+    {
+      "start": "11:38",
+      "end": "11:44",
+      "text": "with 432 and it so now we want to find GCD of 432 and 8 that is to find the GCD"
+    },
+    {
+      "start": "11:44",
+      "end": "11:44",
+      "text": "GCD of 432 and 8 that is to find the GCD"
+    },
+    {
+      "start": "11:44",
+      "end": "11:46",
+      "text": "GCD of 432 and 8 that is to find the GCD of 512 and 432 it is enough to find the"
+    },
+    {
+      "start": "11:46",
+      "end": "11:46",
+      "text": "of 512 and 432 it is enough to find the"
+    },
+    {
+      "start": "11:46",
+      "end": "11:56",
+      "text": "of 512 and 432 it is enough to find the GCD of 432 and 8432 mod 80 is 32"
+    },
+    {
+      "start": "11:56",
+      "end": "11:56",
+      "text": "GCD of 432 and 8432 mod 80 is 32"
+    },
+    {
+      "start": "11:56",
+      "end": "12:00",
+      "text": "GCD of 432 and 8432 mod 80 is 32 therefore it's enough to find the GCD of"
+    },
+    {
+      "start": "12:00",
+      "end": "12:00",
+      "text": "therefore it's enough to find the GCD of"
+    },
+    {
+      "start": "12:00",
+      "end": "12:11",
+      "text": "therefore it's enough to find the GCD of 80 and 30 to 80 more 32 is 16 64 plus 16"
+    },
+    {
+      "start": "12:11",
+      "end": "12:11",
+      "text": "80 and 30 to 80 more 32 is 16 64 plus 16"
+    },
+    {
+      "start": "12:11",
+      "end": "12:15",
+      "text": "80 and 30 to 80 more 32 is 16 64 plus 16 is 80 to find the GCD of 512 and 432 it"
+    },
+    {
+      "start": "12:15",
+      "end": "12:15",
+      "text": "is 80 to find the GCD of 512 and 432 it"
+    },
+    {
+      "start": "12:15",
+      "end": "12:19",
+      "text": "is 80 to find the GCD of 512 and 432 it is enough to find the remainder of the"
+    },
+    {
+      "start": "12:19",
+      "end": "12:19",
+      "text": "is enough to find the remainder of the"
+    },
+    {
+      "start": "12:19",
+      "end": "12:22",
+      "text": "is enough to find the remainder of the division of 512 with 432 which is 80 so"
+    },
+    {
+      "start": "12:22",
+      "end": "12:22",
+      "text": "division of 512 with 432 which is 80 so"
+    },
+    {
+      "start": "12:22",
+      "end": "12:24",
+      "text": "division of 512 with 432 which is 80 so now we should wreck us with the smaller"
+    },
+    {
+      "start": "12:24",
+      "end": "12:24",
+      "text": "now we should wreck us with the smaller"
+    },
+    {
+      "start": "12:24",
+      "end": "12:26",
+      "text": "now we should wreck us with the smaller of the two original numbers namely 432"
+    },
+    {
+      "start": "12:26",
+      "end": "12:26",
+      "text": "of the two original numbers namely 432"
+    },
+    {
+      "start": "12:26",
+      "end": "12:30",
+      "text": "of the two original numbers namely 432 and the new remainder which is 80 so 512"
+    },
+    {
+      "start": "12:30",
+      "end": "12:30",
+      "text": "and the new remainder which is 80 so 512"
+    },
+    {
+      "start": "12:30",
+      "end": "12:32",
+      "text": "and the new remainder which is 80 so 512 the ordered pair 512 432 reduces to the"
+    },
+    {
+      "start": "12:32",
+      "end": "12:32",
+      "text": "the ordered pair 512 432 reduces to the"
+    },
+    {
+      "start": "12:32",
+      "end": "12:36",
+      "text": "the ordered pair 512 432 reduces to the ordered pair for 30 to 80 which then"
+    },
+    {
+      "start": "12:36",
+      "end": "12:36",
+      "text": "ordered pair for 30 to 80 which then"
+    },
+    {
+      "start": "12:36",
+      "end": "12:39",
+      "text": "ordered pair for 30 to 80 which then reduces to the ordered pair 1832 which"
+    },
+    {
+      "start": "12:39",
+      "end": "12:39",
+      "text": "reduces to the ordered pair 1832 which"
+    },
+    {
+      "start": "12:39",
+      "end": "12:43",
+      "text": "reduces to the ordered pair 1832 which then reduces to 32 16 and which reduces"
+    },
+    {
+      "start": "12:43",
+      "end": "12:43",
+      "text": "then reduces to 32 16 and which reduces"
+    },
+    {
+      "start": "12:43",
+      "end": "12:47",
+      "text": "then reduces to 32 16 and which reduces to 16 and 0 the GCD of 16 and 0 is 16"
+    },
+    {
+      "start": "12:47",
+      "end": "12:47",
+      "text": "to 16 and 0 the GCD of 16 and 0 is 16"
+    },
+    {
+      "start": "12:47",
+      "end": "12:50",
+      "text": "to 16 and 0 the GCD of 16 and 0 is 16 and this would be the GCD of the"
+    },
+    {
+      "start": "12:50",
+      "end": "12:50",
+      "text": "and this would be the GCD of the"
+    },
+    {
+      "start": "12:50",
+      "end": "12:53",
+      "text": "and this would be the GCD of the original pair of numbers the theorem"
+    },
+    {
+      "start": "12:53",
+      "end": "12:53",
+      "text": "original pair of numbers the theorem"
+    },
+    {
+      "start": "12:53",
+      "end": "13:00",
+      "text": "original pair of numbers the theorem also says how the GCD 16 can be"
+    },
+    {
+      "start": "13:00",
+      "end": "13:00",
+      "text": "also says how the GCD 16 can be"
+    },
+    {
+      "start": "13:00",
+      "end": "13:09",
+      "text": "also says how the GCD 16 can be expressed as a linear combination of"
+    },
+    {
+      "start": "13:27",
+      "end": "13:27",
+      "text": "if you go through the steps you find"
+    },
+    {
+      "start": "13:27",
+      "end": "13:30",
+      "text": "if you go through the steps you find that in the first step we take the"
+    },
+    {
+      "start": "13:30",
+      "end": "13:30",
+      "text": "that in the first step we take the"
+    },
+    {
+      "start": "13:30",
+      "end": "13:34",
+      "text": "that in the first step we take the modulus of the division of 512 with 432"
+    },
+    {
+      "start": "13:34",
+      "end": "13:34",
+      "text": "modulus of the division of 512 with 432"
+    },
+    {
+      "start": "13:34",
+      "end": "13:41",
+      "text": "modulus of the division of 512 with 432 therefore we have 512 is 1 into 4 32"
+    },
+    {
+      "start": "13:41",
+      "end": "13:41",
+      "text": "therefore we have 512 is 1 into 4 32"
+    },
+    {
+      "start": "13:41",
+      "end": "13:48",
+      "text": "therefore we have 512 is 1 into 4 32 plus eighty or eighty is 1 into 512"
+    },
+    {
+      "start": "13:48",
+      "end": "13:48",
+      "text": "plus eighty or eighty is 1 into 512"
+    },
+    {
+      "start": "13:48",
+      "end": "13:56",
+      "text": "plus eighty or eighty is 1 into 512 minus 1 into 432 let's call this"
+    },
+    {
+      "start": "13:56",
+      "end": "13:56",
+      "text": "minus 1 into 432 let's call this"
+    },
+    {
+      "start": "13:56",
+      "end": "14:00",
+      "text": "minus 1 into 432 let's call this equation 1 and then in the next step we"
+    },
+    {
+      "start": "14:00",
+      "end": "14:00",
+      "text": "equation 1 and then in the next step we"
+    },
+    {
+      "start": "14:00",
+      "end": "14:06",
+      "text": "equation 1 and then in the next step we have a division of 432 with 80 we find"
+    },
+    {
+      "start": "14:06",
+      "end": "14:06",
+      "text": "have a division of 432 with 80 we find"
+    },
+    {
+      "start": "14:06",
+      "end": "14:11",
+      "text": "have a division of 432 with 80 we find that 432 is 5 into 80 plus 32 which"
+    },
+    {
+      "start": "14:11",
+      "end": "14:11",
+      "text": "that 432 is 5 into 80 plus 32 which"
+    },
+    {
+      "start": "14:11",
+      "end": "14:21",
+      "text": "that 432 is 5 into 80 plus 32 which means 32 is 1 into 4 32 minus 5 into 8"
+    },
+    {
+      "start": "14:25",
+      "end": "14:25",
+      "text": "let's call this equation 2 the next step"
+    },
+    {
+      "start": "14:25",
+      "end": "14:37",
+      "text": "let's call this equation 2 the next step is on the ordered pair 80 and 30 to 80"
+    },
+    {
+      "start": "14:37",
+      "end": "14:37",
+      "text": "is on the ordered pair 80 and 30 to 80"
+    },
+    {
+      "start": "14:37",
+      "end": "14:42",
+      "text": "is on the ordered pair 80 and 30 to 80 is 2 into 32 plus 16 or in other words"
+    },
+    {
+      "start": "14:42",
+      "end": "14:42",
+      "text": "is 2 into 32 plus 16 or in other words"
+    },
+    {
+      "start": "14:42",
+      "end": "14:48",
+      "text": "is 2 into 32 plus 16 or in other words 16 is 1 into 80 minus 2 into 32 let us"
+    },
+    {
+      "start": "14:48",
+      "end": "14:48",
+      "text": "16 is 1 into 80 minus 2 into 32 let us"
+    },
+    {
+      "start": "14:48",
+      "end": "14:52",
+      "text": "16 is 1 into 80 minus 2 into 32 let us say this is equation 3"
+    },
+    {
+      "start": "14:55",
+      "end": "14:55",
+      "text": "so 16 can be expressed as a linear"
+    },
+    {
+      "start": "14:55",
+      "end": "14:57",
+      "text": "so 16 can be expressed as a linear combination of 80 and 32 with"
+    },
+    {
+      "start": "14:57",
+      "end": "14:57",
+      "text": "combination of 80 and 32 with"
+    },
+    {
+      "start": "14:57",
+      "end": "15:01",
+      "text": "combination of 80 and 32 with coefficients 1 and minus 2 respectively"
+    },
+    {
+      "start": "15:05",
+      "end": "15:05",
+      "text": "but then 32 can be expressed as a linear"
+    },
+    {
+      "start": "15:05",
+      "end": "15:08",
+      "text": "but then 32 can be expressed as a linear combination of 4 32 and 80 with 1 n"
+    },
+    {
+      "start": "15:08",
+      "end": "15:08",
+      "text": "combination of 4 32 and 80 with 1 n"
+    },
+    {
+      "start": "15:08",
+      "end": "15:14",
+      "text": "combination of 4 32 and 80 with 1 n minus 5 as the coefficients so 16 is 1"
+    },
+    {
+      "start": "15:14",
+      "end": "15:14",
+      "text": "minus 5 as the coefficients so 16 is 1"
+    },
+    {
+      "start": "15:14",
+      "end": "15:23",
+      "text": "minus 5 as the coefficients so 16 is 1 into 80 minus 2 into 30 but 32 in turn"
+    },
+    {
+      "start": "15:23",
+      "end": "15:23",
+      "text": "into 80 minus 2 into 30 but 32 in turn"
+    },
+    {
+      "start": "15:23",
+      "end": "15:33",
+      "text": "into 80 minus 2 into 30 but 32 in turn we find us"
+    },
+    {
+      "start": "15:36",
+      "end": "15:36",
+      "text": "expressible in this form which upon"
+    },
+    {
+      "start": "15:36",
+      "end": "15:41",
+      "text": "expressible in this form which upon simplification gives us 11 into 80 this"
+    },
+    {
+      "start": "15:41",
+      "end": "15:41",
+      "text": "simplification gives us 11 into 80 this"
+    },
+    {
+      "start": "15:41",
+      "end": "15:43",
+      "text": "simplification gives us 11 into 80 this is 1 into 80 and then minus 2 into minus"
+    },
+    {
+      "start": "15:43",
+      "end": "15:43",
+      "text": "is 1 into 80 and then minus 2 into minus"
+    },
+    {
+      "start": "15:43",
+      "end": "15:47",
+      "text": "is 1 into 80 and then minus 2 into minus 5 is 10 so 10 plus 1 xi minus 2 into 4"
+    },
+    {
+      "start": "15:47",
+      "end": "15:47",
+      "text": "5 is 10 so 10 plus 1 xi minus 2 into 4"
+    },
+    {
+      "start": "15:47",
+      "end": "15:50",
+      "text": "5 is 10 so 10 plus 1 xi minus 2 into 4 32 so 16 is expressible as a linear"
+    },
+    {
+      "start": "15:50",
+      "end": "15:50",
+      "text": "32 so 16 is expressible as a linear"
+    },
+    {
+      "start": "15:50",
+      "end": "15:53",
+      "text": "32 so 16 is expressible as a linear combination of 80 and 432 with 11 and"
+    },
+    {
+      "start": "15:53",
+      "end": "15:53",
+      "text": "combination of 80 and 432 with 11 and"
+    },
+    {
+      "start": "15:53",
+      "end": "15:56",
+      "text": "combination of 80 and 432 with 11 and minus 2 as the prospective coefficients"
+    },
+    {
+      "start": "15:56",
+      "end": "15:56",
+      "text": "minus 2 as the prospective coefficients"
+    },
+    {
+      "start": "15:56",
+      "end": "16:07",
+      "text": "minus 2 as the prospective coefficients and then 80 we know is 1 into 5 12 minus"
+    },
+    {
+      "start": "16:07",
+      "end": "16:07",
+      "text": "and then 80 we know is 1 into 5 12 minus"
+    },
+    {
+      "start": "16:07",
+      "end": "16:13",
+      "text": "and then 80 we know is 1 into 5 12 minus 1 into 4 30 from the first equation so"
+    },
+    {
+      "start": "16:13",
+      "end": "16:13",
+      "text": "1 into 4 30 from the first equation so"
+    },
+    {
+      "start": "16:13",
+      "end": "16:17",
+      "text": "1 into 4 30 from the first equation so substituting that here we find that 16"
+    },
+    {
+      "start": "16:17",
+      "end": "16:17",
+      "text": "substituting that here we find that 16"
+    },
+    {
+      "start": "16:17",
+      "end": "16:27",
+      "text": "substituting that here we find that 16 is 11 into 5 12 - 13 into 432 so now 16"
+    },
+    {
+      "start": "16:27",
+      "end": "16:27",
+      "text": "is 11 into 5 12 - 13 into 432 so now 16"
+    },
+    {
+      "start": "16:27",
+      "end": "16:29",
+      "text": "is 11 into 5 12 - 13 into 432 so now 16 has been expressed as a linear"
+    },
+    {
+      "start": "16:29",
+      "end": "16:29",
+      "text": "has been expressed as a linear"
+    },
+    {
+      "start": "16:29",
+      "end": "16:33",
+      "text": "has been expressed as a linear combination of 512 and 432 with 11 and -"
+    },
+    {
+      "start": "16:33",
+      "end": "16:33",
+      "text": "combination of 512 and 432 with 11 and -"
+    },
+    {
+      "start": "16:33",
+      "end": "16:37",
+      "text": "combination of 512 and 432 with 11 and - 13 as the coefficients so this is what"
+    },
+    {
+      "start": "16:37",
+      "end": "16:37",
+      "text": "13 as the coefficients so this is what"
+    },
+    {
+      "start": "16:37",
+      "end": "16:42",
+      "text": "13 as the coefficients so this is what the theorem talks about to prove the"
+    },
+    {
+      "start": "16:42",
+      "end": "16:42",
+      "text": "the theorem talks about to prove the"
+    },
+    {
+      "start": "16:42",
+      "end": "16:48",
+      "text": "the theorem talks about to prove the theorem"
+    },
+    {
+      "start": "16:51",
+      "end": "16:51",
+      "text": "what we do is this we know that by"
+    },
+    {
+      "start": "16:51",
+      "end": "17:02",
+      "text": "what we do is this we know that by theorem 2 1 GCD of R 0 R 1 is the same"
+    },
+    {
+      "start": "17:02",
+      "end": "17:02",
+      "text": "theorem 2 1 GCD of R 0 R 1 is the same"
+    },
+    {
+      "start": "17:02",
+      "end": "17:09",
+      "text": "theorem 2 1 GCD of R 0 R 1 is the same as GCD of R 1 and R naught minus R 1 Q 2"
+    },
+    {
+      "start": "17:15",
+      "end": "17:15",
+      "text": "we use integer minus Q 2 here which is"
+    },
+    {
+      "start": "17:15",
+      "end": "17:20",
+      "text": "we use integer minus Q 2 here which is GCD of R 1 and R 2 that's because the"
+    },
+    {
+      "start": "17:20",
+      "end": "17:20",
+      "text": "GCD of R 1 and R 2 that's because the"
+    },
+    {
+      "start": "17:20",
+      "end": "17:23",
+      "text": "GCD of R 1 and R 2 that's because the second term is nothing but R 2 or not"
+    },
+    {
+      "start": "17:23",
+      "end": "17:23",
+      "text": "second term is nothing but R 2 or not"
+    },
+    {
+      "start": "17:23",
+      "end": "17:27",
+      "text": "second term is nothing but R 2 or not minus R 1 Q 2 is the same as R 2 so GCD"
+    },
+    {
+      "start": "17:27",
+      "end": "17:27",
+      "text": "minus R 1 Q 2 is the same as R 2 so GCD"
+    },
+    {
+      "start": "17:27",
+      "end": "17:31",
+      "text": "minus R 1 Q 2 is the same as R 2 so GCD of R naught R 1 is indeed GCD of R 1 R 2"
+    },
+    {
+      "start": "17:31",
+      "end": "17:31",
+      "text": "of R naught R 1 is indeed GCD of R 1 R 2"
+    },
+    {
+      "start": "17:31",
+      "end": "17:34",
+      "text": "of R naught R 1 is indeed GCD of R 1 R 2 so if you continue like this you can"
+    },
+    {
+      "start": "17:34",
+      "end": "17:34",
+      "text": "so if you continue like this you can"
+    },
+    {
+      "start": "17:34",
+      "end": "17:36",
+      "text": "so if you continue like this you can show that this is the same as easily of"
+    },
+    {
+      "start": "17:36",
+      "end": "17:36",
+      "text": "show that this is the same as easily of"
+    },
+    {
+      "start": "17:36",
+      "end": "17:42",
+      "text": "show that this is the same as easily of 2 R 3 which is the same as GCD of 3 or 4"
+    },
+    {
+      "start": "17:42",
+      "end": "17:42",
+      "text": "2 R 3 which is the same as GCD of 3 or 4"
+    },
+    {
+      "start": "17:42",
+      "end": "17:49",
+      "text": "2 R 3 which is the same as GCD of 3 or 4 and so on until we come to GCD of our I"
+    },
+    {
+      "start": "17:49",
+      "end": "17:49",
+      "text": "and so on until we come to GCD of our I"
+    },
+    {
+      "start": "17:49",
+      "end": "17:56",
+      "text": "and so on until we come to GCD of our I minus 1 R 0 R I where RI is 0 but g ZD f"
+    },
+    {
+      "start": "17:56",
+      "end": "17:56",
+      "text": "minus 1 R 0 R I where RI is 0 but g ZD f"
+    },
+    {
+      "start": "17:56",
+      "end": "17:59",
+      "text": "minus 1 R 0 R I where RI is 0 but g ZD f RI minus 1 and 0 for non zero RI minus 1"
+    },
+    {
+      "start": "17:59",
+      "end": "17:59",
+      "text": "RI minus 1 and 0 for non zero RI minus 1"
+    },
+    {
+      "start": "17:59",
+      "end": "18:05",
+      "text": "RI minus 1 and 0 for non zero RI minus 1 is nothing but RI minus 1 so G C D F R"
+    },
+    {
+      "start": "18:05",
+      "end": "18:05",
+      "text": "is nothing but RI minus 1 so G C D F R"
+    },
+    {
+      "start": "18:05",
+      "end": "18:08",
+      "text": "is nothing but RI minus 1 so G C D F R naught R 1 is our I minus 1 as the"
+    },
+    {
+      "start": "18:08",
+      "end": "18:08",
+      "text": "naught R 1 is our I minus 1 as the"
+    },
+    {
+      "start": "18:08",
+      "end": "18:14",
+      "text": "naught R 1 is our I minus 1 as the theorem claims now do as an exercise the"
+    },
+    {
+      "start": "18:14",
+      "end": "18:14",
+      "text": "theorem claims now do as an exercise the"
+    },
+    {
+      "start": "18:14",
+      "end": "18:18",
+      "text": "theorem claims now do as an exercise the rest of the proof that isn't by"
+    },
+    {
+      "start": "18:18",
+      "end": "18:18",
+      "text": "rest of the proof that isn't by"
+    },
+    {
+      "start": "18:18",
+      "end": "18:19",
+      "text": "rest of the proof that isn't by induction"
+    },
+    {
+      "start": "18:19",
+      "end": "18:19",
+      "text": "induction"
+    },
+    {
+      "start": "18:19",
+      "end": "18:29",
+      "text": "induction so that RJ is a linear combination"
+    },
+    {
+      "start": "18:38",
+      "end": "18:38",
+      "text": "of our not an r1 for all J reading from"
+    },
+    {
+      "start": "18:38",
+      "end": "18:44",
+      "text": "of our not an r1 for all J reading from 2 to I minus 1 so in particular our I"
+    },
+    {
+      "start": "18:44",
+      "end": "18:44",
+      "text": "2 to I minus 1 so in particular our I"
+    },
+    {
+      "start": "18:44",
+      "end": "18:46",
+      "text": "2 to I minus 1 so in particular our I minus 1 which is the result of the"
+    },
+    {
+      "start": "18:46",
+      "end": "18:46",
+      "text": "minus 1 which is the result of the"
+    },
+    {
+      "start": "18:46",
+      "end": "18:48",
+      "text": "minus 1 which is the result of the algorithm which is the GCD fr not an r1"
+    },
+    {
+      "start": "18:48",
+      "end": "18:48",
+      "text": "algorithm which is the GCD fr not an r1"
+    },
+    {
+      "start": "18:48",
+      "end": "18:50",
+      "text": "algorithm which is the GCD fr not an r1 it's also a linear combination of or not"
+    },
+    {
+      "start": "18:50",
+      "end": "18:50",
+      "text": "it's also a linear combination of or not"
+    },
+    {
+      "start": "18:50",
+      "end": "18:55",
+      "text": "it's also a linear combination of or not an r1 so I leave this to you as an"
+    },
+    {
+      "start": "18:55",
+      "end": "18:55",
+      "text": "an r1 so I leave this to you as an"
+    },
+    {
+      "start": "18:55",
+      "end": "19:00",
+      "text": "an r1 so I leave this to you as an exercise so we have been talking about"
+    },
+    {
+      "start": "19:00",
+      "end": "19:00",
+      "text": "exercise so we have been talking about"
+    },
+    {
+      "start": "19:00",
+      "end": "19:02",
+      "text": "exercise so we have been talking about common devices and greatest common"
+    },
+    {
+      "start": "19:02",
+      "end": "19:02",
+      "text": "common devices and greatest common"
+    },
+    {
+      "start": "19:02",
+      "end": "19:05",
+      "text": "common devices and greatest common devices now let us talk about common"
+    },
+    {
+      "start": "19:05",
+      "end": "19:05",
+      "text": "devices now let us talk about common"
+    },
+    {
+      "start": "19:05",
+      "end": "19:14",
+      "text": "devices now let us talk about common multiples"
+    },
+    {
+      "start": "19:22",
+      "end": "19:22",
+      "text": "for integers a and B we know that a"
+    },
+    {
+      "start": "19:22",
+      "end": "19:30",
+      "text": "for integers a and B we know that a divides a B and P divides a bit so a B"
+    },
+    {
+      "start": "19:30",
+      "end": "19:30",
+      "text": "divides a B and P divides a bit so a B"
+    },
+    {
+      "start": "19:30",
+      "end": "19:33",
+      "text": "divides a B and P divides a bit so a B is a multiple of a and a B is a multiple"
+    },
+    {
+      "start": "19:33",
+      "end": "19:33",
+      "text": "is a multiple of a and a B is a multiple"
+    },
+    {
+      "start": "19:33",
+      "end": "19:39",
+      "text": "is a multiple of a and a B is a multiple of B which means a B is a common"
+    },
+    {
+      "start": "19:39",
+      "end": "19:39",
+      "text": "of B which means a B is a common"
+    },
+    {
+      "start": "19:39",
+      "end": "19:44",
+      "text": "of B which means a B is a common multiple of a and B so a and B do have"
+    },
+    {
+      "start": "19:44",
+      "end": "19:44",
+      "text": "multiple of a and B so a and B do have"
+    },
+    {
+      "start": "19:44",
+      "end": "19:56",
+      "text": "multiple of a and B so a and B do have common multiples the least positive of"
+    },
+    {
+      "start": "19:59",
+      "end": "19:59",
+      "text": "the common multiples of a and B is"
+    },
+    {
+      "start": "19:59",
+      "end": "20:12",
+      "text": "the common multiples of a and B is called the least common multiple"
+    },
+    {
+      "start": "20:20",
+      "end": "20:20",
+      "text": "or LCM of n so for any pair of integers"
+    },
+    {
+      "start": "20:20",
+      "end": "20:23",
+      "text": "or LCM of n so for any pair of integers a and B we can define the least common"
+    },
+    {
+      "start": "20:23",
+      "end": "20:23",
+      "text": "a and B we can define the least common"
+    },
+    {
+      "start": "20:23",
+      "end": "20:26",
+      "text": "a and B we can define the least common multiple of a n P so we have a theorem"
+    },
+    {
+      "start": "20:26",
+      "end": "20:26",
+      "text": "multiple of a n P so we have a theorem"
+    },
+    {
+      "start": "20:26",
+      "end": "20:32",
+      "text": "multiple of a n P so we have a theorem for this notion which we number two for"
+    },
+    {
+      "start": "20:42",
+      "end": "20:42",
+      "text": "let small L denote LCM of a B for"
+    },
+    {
+      "start": "20:42",
+      "end": "20:50",
+      "text": "let small L denote LCM of a B for integers and B"
+    },
+    {
+      "start": "21:07",
+      "end": "21:07",
+      "text": "then L divides C also zero plus or minus"
+    },
+    {
+      "start": "21:07",
+      "end": "21:11",
+      "text": "then L divides C also zero plus or minus L plus or minus 2l plus or minus three L"
+    },
+    {
+      "start": "21:11",
+      "end": "21:11",
+      "text": "L plus or minus 2l plus or minus three L"
+    },
+    {
+      "start": "21:11",
+      "end": "21:16",
+      "text": "L plus or minus 2l plus or minus three L etc that's the integer multiples of L"
+    },
+    {
+      "start": "21:16",
+      "end": "21:16",
+      "text": "etc that's the integer multiples of L"
+    },
+    {
+      "start": "21:16",
+      "end": "21:23",
+      "text": "etc that's the integer multiples of L are all the common multiples of n so"
+    },
+    {
+      "start": "21:23",
+      "end": "21:23",
+      "text": "are all the common multiples of n so"
+    },
+    {
+      "start": "21:23",
+      "end": "21:25",
+      "text": "are all the common multiples of n so these are the only common multiples of a"
+    },
+    {
+      "start": "21:25",
+      "end": "21:25",
+      "text": "these are the only common multiples of a"
+    },
+    {
+      "start": "21:25",
+      "end": "21:27",
+      "text": "these are the only common multiples of a and B and all of these are common"
+    },
+    {
+      "start": "21:27",
+      "end": "21:27",
+      "text": "and B and all of these are common"
+    },
+    {
+      "start": "21:27",
+      "end": "21:31",
+      "text": "and B and all of these are common multiples of a so what we assert here is"
+    },
+    {
+      "start": "21:31",
+      "end": "21:31",
+      "text": "multiples of a so what we assert here is"
+    },
+    {
+      "start": "21:31",
+      "end": "21:34",
+      "text": "multiples of a so what we assert here is this if L is the LCM of a and B and C is"
+    },
+    {
+      "start": "21:34",
+      "end": "21:34",
+      "text": "this if L is the LCM of a and B and C is"
+    },
+    {
+      "start": "21:34",
+      "end": "21:36",
+      "text": "this if L is the LCM of a and B and C is a common multiple of a and B then L"
+    },
+    {
+      "start": "21:36",
+      "end": "21:36",
+      "text": "a common multiple of a and B then L"
+    },
+    {
+      "start": "21:36",
+      "end": "21:40",
+      "text": "a common multiple of a and B then L divides C in other words the LCM divides"
+    },
+    {
+      "start": "21:40",
+      "end": "21:40",
+      "text": "divides C in other words the LCM divides"
+    },
+    {
+      "start": "21:40",
+      "end": "21:42",
+      "text": "divides C in other words the LCM divides every other common multiple so common"
+    },
+    {
+      "start": "21:42",
+      "end": "21:42",
+      "text": "every other common multiple so common"
+    },
+    {
+      "start": "21:42",
+      "end": "21:46",
+      "text": "every other common multiple so common multiples are all multiples of LCM so we"
+    },
+    {
+      "start": "21:46",
+      "end": "21:46",
+      "text": "multiples are all multiples of LCM so we"
+    },
+    {
+      "start": "21:46",
+      "end": "21:53",
+      "text": "multiples are all multiples of LCM so we prove as follows let C be a common"
+    },
+    {
+      "start": "21:53",
+      "end": "21:53",
+      "text": "prove as follows let C be a common"
+    },
+    {
+      "start": "21:53",
+      "end": "21:57",
+      "text": "prove as follows let C be a common multiple of a and B an arbitrary common"
+    },
+    {
+      "start": "21:57",
+      "end": "21:57",
+      "text": "multiple of a and B an arbitrary common"
+    },
+    {
+      "start": "21:57",
+      "end": "22:01",
+      "text": "multiple of a and B an arbitrary common multiple of a and B then by the division"
+    },
+    {
+      "start": "22:01",
+      "end": "22:01",
+      "text": "multiple of a and B then by the division"
+    },
+    {
+      "start": "22:01",
+      "end": "22:02",
+      "text": "multiple of a and B then by the division algorithm we know the directs is a"
+    },
+    {
+      "start": "22:02",
+      "end": "22:02",
+      "text": "algorithm we know the directs is a"
+    },
+    {
+      "start": "22:02",
+      "end": "22:06",
+      "text": "algorithm we know the directs is a unique pair RQ such that C equals QL"
+    },
+    {
+      "start": "22:06",
+      "end": "22:06",
+      "text": "unique pair RQ such that C equals QL"
+    },
+    {
+      "start": "22:06",
+      "end": "22:10",
+      "text": "unique pair RQ such that C equals QL plus r4 0 less than or equal to R less"
+    },
+    {
+      "start": "22:10",
+      "end": "22:10",
+      "text": "plus r4 0 less than or equal to R less"
+    },
+    {
+      "start": "22:10",
+      "end": "22:20",
+      "text": "plus r4 0 less than or equal to R less than L suppose this R is nonzero"
+    },
+    {
+      "start": "22:31",
+      "end": "22:31",
+      "text": "then he divides L a divides C a divides"
+    },
+    {
+      "start": "22:31",
+      "end": "22:34",
+      "text": "then he divides L a divides C a divides L because L is an LCM of a and B so L in"
+    },
+    {
+      "start": "22:34",
+      "end": "22:34",
+      "text": "L because L is an LCM of a and B so L in"
+    },
+    {
+      "start": "22:34",
+      "end": "22:37",
+      "text": "L because L is an LCM of a and B so L in particular is a common multiple of a and"
+    },
+    {
+      "start": "22:37",
+      "end": "22:37",
+      "text": "particular is a common multiple of a and"
+    },
+    {
+      "start": "22:37",
+      "end": "22:40",
+      "text": "particular is a common multiple of a and B so L divides L L divides C because by"
+    },
+    {
+      "start": "22:40",
+      "end": "22:40",
+      "text": "B so L divides L L divides C because by"
+    },
+    {
+      "start": "22:40",
+      "end": "22:42",
+      "text": "B so L divides L L divides C because by definition C is a common multiple of a"
+    },
+    {
+      "start": "22:42",
+      "end": "22:42",
+      "text": "definition C is a common multiple of a"
+    },
+    {
+      "start": "22:42",
+      "end": "22:46",
+      "text": "definition C is a common multiple of a and B similarly B divides L and B"
+    },
+    {
+      "start": "22:46",
+      "end": "22:46",
+      "text": "and B similarly B divides L and B"
+    },
+    {
+      "start": "22:46",
+      "end": "22:55",
+      "text": "and B similarly B divides L and B divides C if a divides L and a divides C"
+    },
+    {
+      "start": "22:55",
+      "end": "22:55",
+      "text": "divides C if a divides L and a divides C"
+    },
+    {
+      "start": "22:55",
+      "end": "22:58",
+      "text": "divides C if a divides L and a divides C then a must divide out as well because"
+    },
+    {
+      "start": "22:58",
+      "end": "22:58",
+      "text": "then a must divide out as well because"
+    },
+    {
+      "start": "22:58",
+      "end": "23:03",
+      "text": "then a must divide out as well because then our C minus QL then a divides our"
+    },
+    {
+      "start": "23:03",
+      "end": "23:03",
+      "text": "then our C minus QL then a divides our"
+    },
+    {
+      "start": "23:03",
+      "end": "23:08",
+      "text": "then our C minus QL then a divides our and similarly B divides out or in other"
+    },
+    {
+      "start": "23:08",
+      "end": "23:08",
+      "text": "and similarly B divides out or in other"
+    },
+    {
+      "start": "23:08",
+      "end": "23:10",
+      "text": "and similarly B divides out or in other words our as a common multiple of both a"
+    },
+    {
+      "start": "23:10",
+      "end": "23:11",
+      "text": "words our as a common multiple of both a"
+    },
+    {
+      "start": "23:11",
+      "end": "23:19",
+      "text": "words our as a common multiple of both a and B"
+    },
+    {
+      "start": "23:22",
+      "end": "23:22",
+      "text": "our s between 0 and L minus 1 inclusive"
+    },
+    {
+      "start": "23:22",
+      "end": "23:28",
+      "text": "our s between 0 and L minus 1 inclusive of both the limits therefore are less"
+    },
+    {
+      "start": "23:28",
+      "end": "23:28",
+      "text": "of both the limits therefore are less"
+    },
+    {
+      "start": "23:28",
+      "end": "23:38",
+      "text": "of both the limits therefore are less than L or in other words L is not the"
+    },
+    {
+      "start": "23:38",
+      "end": "23:38",
+      "text": "than L or in other words L is not the"
+    },
+    {
+      "start": "23:38",
+      "end": "23:45",
+      "text": "than L or in other words L is not the LCM of a and B as we assumed so this is"
+    },
+    {
+      "start": "23:45",
+      "end": "23:45",
+      "text": "LCM of a and B as we assumed so this is"
+    },
+    {
+      "start": "23:45",
+      "end": "23:48",
+      "text": "LCM of a and B as we assumed so this is the contradiction we started with the"
+    },
+    {
+      "start": "23:48",
+      "end": "23:48",
+      "text": "the contradiction we started with the"
+    },
+    {
+      "start": "23:48",
+      "end": "23:51",
+      "text": "the contradiction we started with the assumption that L is the LCM of a and B"
+    },
+    {
+      "start": "23:51",
+      "end": "23:51",
+      "text": "assumption that L is the LCM of a and B"
+    },
+    {
+      "start": "23:51",
+      "end": "23:54",
+      "text": "assumption that L is the LCM of a and B so we get a contradiction therefore it"
+    },
+    {
+      "start": "23:54",
+      "end": "23:54",
+      "text": "so we get a contradiction therefore it"
+    },
+    {
+      "start": "23:54",
+      "end": "23:57",
+      "text": "so we get a contradiction therefore it must be that the assumption we made"
+    },
+    {
+      "start": "23:57",
+      "end": "23:57",
+      "text": "must be that the assumption we made"
+    },
+    {
+      "start": "23:57",
+      "end": "23:59",
+      "text": "must be that the assumption we made namely that R is not equal to 0 must be"
+    },
+    {
+      "start": "23:59",
+      "end": "23:59",
+      "text": "namely that R is not equal to 0 must be"
+    },
+    {
+      "start": "23:59",
+      "end": "24:08",
+      "text": "namely that R is not equal to 0 must be false so we conclude that R equal to 0"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "but C is QL plus R which is now QL since"
+    },
+    {
+      "start": "24:15",
+      "end": "24:22",
+      "text": "but C is QL plus R which is now QL since R equal to 0 in other words L divides C"
+    },
+    {
+      "start": "24:28",
+      "end": "24:28",
+      "text": "so C is a multiple of the LCM so every"
+    },
+    {
+      "start": "24:28",
+      "end": "24:40",
+      "text": "so C is a multiple of the LCM so every common multiple of a and B is among"
+    },
+    {
+      "start": "24:54",
+      "end": "24:54",
+      "text": "another theorem a bottle sium for every"
+    },
+    {
+      "start": "24:54",
+      "end": "25:03",
+      "text": "another theorem a bottle sium for every positive integer"
+    },
+    {
+      "start": "25:17",
+      "end": "25:17",
+      "text": "d LCM of BD CD is LCM of B and C"
+    },
+    {
+      "start": "25:17",
+      "end": "25:26",
+      "text": "d LCM of BD CD is LCM of B and C multiplied by D so to produce let us"
+    },
+    {
+      "start": "25:26",
+      "end": "25:26",
+      "text": "multiplied by D so to produce let us"
+    },
+    {
+      "start": "25:26",
+      "end": "25:32",
+      "text": "multiplied by D so to produce let us define small L as the LCM of B and C and"
+    },
+    {
+      "start": "25:32",
+      "end": "25:32",
+      "text": "define small L as the LCM of B and C and"
+    },
+    {
+      "start": "25:32",
+      "end": "25:40",
+      "text": "define small L as the LCM of B and C and capital L as the LCM of BD n CD so we"
+    },
+    {
+      "start": "25:40",
+      "end": "25:40",
+      "text": "capital L as the LCM of BD n CD so we"
+    },
+    {
+      "start": "25:40",
+      "end": "25:41",
+      "text": "capital L as the LCM of BD n CD so we have these two numbers smaller than"
+    },
+    {
+      "start": "25:41",
+      "end": "25:41",
+      "text": "have these two numbers smaller than"
+    },
+    {
+      "start": "25:41",
+      "end": "25:55",
+      "text": "have these two numbers smaller than capital L then BD divided cell D and CD"
+    },
+    {
+      "start": "25:55",
+      "end": "25:55",
+      "text": "capital L then BD divided cell D and CD"
+    },
+    {
+      "start": "25:55",
+      "end": "26:00",
+      "text": "capital L then BD divided cell D and CD divided cell D Ellis LCM of B and C so"
+    },
+    {
+      "start": "26:00",
+      "end": "26:00",
+      "text": "divided cell D Ellis LCM of B and C so"
+    },
+    {
+      "start": "26:00",
+      "end": "26:02",
+      "text": "divided cell D Ellis LCM of B and C so in particular L is a multiple of B"
+    },
+    {
+      "start": "26:02",
+      "end": "26:02",
+      "text": "in particular L is a multiple of B"
+    },
+    {
+      "start": "26:02",
+      "end": "26:04",
+      "text": "in particular L is a multiple of B therefore LD is a multiple of B D"
+    },
+    {
+      "start": "26:04",
+      "end": "26:04",
+      "text": "therefore LD is a multiple of B D"
+    },
+    {
+      "start": "26:04",
+      "end": "26:06",
+      "text": "therefore LD is a multiple of B D similarly LD is a multiple of C D as"
+    },
+    {
+      "start": "26:06",
+      "end": "26:06",
+      "text": "similarly LD is a multiple of C D as"
+    },
+    {
+      "start": "26:06",
+      "end": "26:15",
+      "text": "similarly LD is a multiple of C D as well so LD is a common multiple of BD"
+    },
+    {
+      "start": "26:15",
+      "end": "26:15",
+      "text": "well so LD is a common multiple of BD"
+    },
+    {
+      "start": "26:15",
+      "end": "26:24",
+      "text": "well so LD is a common multiple of BD and LD be DN C D so L divides LD because"
+    },
+    {
+      "start": "26:24",
+      "end": "26:24",
+      "text": "and LD be DN C D so L divides LD because"
+    },
+    {
+      "start": "26:24",
+      "end": "26:26",
+      "text": "and LD be DN C D so L divides LD because we have just shown that the LCM divides"
+    },
+    {
+      "start": "26:26",
+      "end": "26:26",
+      "text": "we have just shown that the LCM divides"
+    },
+    {
+      "start": "26:26",
+      "end": "26:28",
+      "text": "we have just shown that the LCM divides every common multiple so capital L is"
+    },
+    {
+      "start": "26:28",
+      "end": "26:28",
+      "text": "every common multiple so capital L is"
+    },
+    {
+      "start": "26:28",
+      "end": "26:34",
+      "text": "every common multiple so capital L is the LCM of BD n CD therefore capital L"
+    },
+    {
+      "start": "26:34",
+      "end": "26:34",
+      "text": "the LCM of BD n CD therefore capital L"
+    },
+    {
+      "start": "26:34",
+      "end": "26:42",
+      "text": "the LCM of BD n CD therefore capital L divides small LD also B divides"
+    },
+    {
+      "start": "26:51",
+      "end": "26:51",
+      "text": "the number L by D and C divides L by D"
+    },
+    {
+      "start": "26:51",
+      "end": "26:54",
+      "text": "the number L by D and C divides L by D that's because the capital L is a"
+    },
+    {
+      "start": "26:54",
+      "end": "26:54",
+      "text": "that's because the capital L is a"
+    },
+    {
+      "start": "26:54",
+      "end": "26:55",
+      "text": "that's because the capital L is a multiple of B D and capital L is a"
+    },
+    {
+      "start": "26:55",
+      "end": "26:55",
+      "text": "multiple of B D and capital L is a"
+    },
+    {
+      "start": "26:55",
+      "end": "26:59",
+      "text": "multiple of B D and capital L is a multiple of C D therefore B divides the"
+    },
+    {
+      "start": "26:59",
+      "end": "26:59",
+      "text": "multiple of C D therefore B divides the"
+    },
+    {
+      "start": "26:59",
+      "end": "27:03",
+      "text": "multiple of C D therefore B divides the number L by D L by D is an integer so L"
+    },
+    {
+      "start": "27:03",
+      "end": "27:03",
+      "text": "number L by D L by D is an integer so L"
+    },
+    {
+      "start": "27:03",
+      "end": "27:12",
+      "text": "number L by D L by D is an integer so L by D is a common multiple of B and C in"
+    },
+    {
+      "start": "27:12",
+      "end": "27:12",
+      "text": "by D is a common multiple of B and C in"
+    },
+    {
+      "start": "27:12",
+      "end": "27:17",
+      "text": "by D is a common multiple of B and C in other words the LCM of B and C namely"
+    },
+    {
+      "start": "27:17",
+      "end": "27:17",
+      "text": "other words the LCM of B and C namely"
+    },
+    {
+      "start": "27:17",
+      "end": "27:23",
+      "text": "other words the LCM of B and C namely small L divides L by D which implies"
+    },
+    {
+      "start": "27:23",
+      "end": "27:23",
+      "text": "small L divides L by D which implies"
+    },
+    {
+      "start": "27:23",
+      "end": "27:29",
+      "text": "small L divides L by D which implies that small LD divides capital L so we"
+    },
+    {
+      "start": "27:29",
+      "end": "27:29",
+      "text": "that small LD divides capital L so we"
+    },
+    {
+      "start": "27:29",
+      "end": "27:31",
+      "text": "that small LD divides capital L so we have just shown that capital L divide"
+    },
+    {
+      "start": "27:31",
+      "end": "27:31",
+      "text": "have just shown that capital L divide"
+    },
+    {
+      "start": "27:31",
+      "end": "27:33",
+      "text": "have just shown that capital L divide small LD and small LD divides capital L"
+    },
+    {
+      "start": "27:33",
+      "end": "27:33",
+      "text": "small LD and small LD divides capital L"
+    },
+    {
+      "start": "27:33",
+      "end": "27:38",
+      "text": "small LD and small LD divides capital L therefore it must be that capital L is"
+    },
+    {
+      "start": "27:38",
+      "end": "27:38",
+      "text": "therefore it must be that capital L is"
+    },
+    {
+      "start": "27:38",
+      "end": "27:42",
+      "text": "therefore it must be that capital L is the same as small L D which is precisely"
+    },
+    {
+      "start": "27:42",
+      "end": "27:42",
+      "text": "the same as small L D which is precisely"
+    },
+    {
+      "start": "27:42",
+      "end": "27:44",
+      "text": "the same as small L D which is precisely what we want to show we wanted to claim"
+    },
+    {
+      "start": "27:44",
+      "end": "27:44",
+      "text": "what we want to show we wanted to claim"
+    },
+    {
+      "start": "27:44",
+      "end": "27:47",
+      "text": "what we want to show we wanted to claim that LCM of BD and CD which is capital L"
+    },
+    {
+      "start": "27:47",
+      "end": "27:47",
+      "text": "that LCM of BD and CD which is capital L"
+    },
+    {
+      "start": "27:47",
+      "end": "27:51",
+      "text": "that LCM of BD and CD which is capital L is the same as D times LCM of b and c"
+    },
+    {
+      "start": "27:51",
+      "end": "27:51",
+      "text": "is the same as D times LCM of b and c"
+    },
+    {
+      "start": "27:51",
+      "end": "27:54",
+      "text": "is the same as D times LCM of b and c which is d times smaller"
+    },
+    {
+      "start": "27:54",
+      "end": "27:54",
+      "text": "which is d times smaller"
+    },
+    {
+      "start": "27:54",
+      "end": "27:59",
+      "text": "which is d times smaller hence the tear"
+    },
+    {
+      "start": "28:02",
+      "end": "28:02",
+      "text": "another theorem dealing with GCD and LCM"
+    },
+    {
+      "start": "28:02",
+      "end": "28:06",
+      "text": "another theorem dealing with GCD and LCM which we name theorem 2 6 the search"
+    },
+    {
+      "start": "28:06",
+      "end": "28:06",
+      "text": "which we name theorem 2 6 the search"
+    },
+    {
+      "start": "28:06",
+      "end": "28:13",
+      "text": "which we name theorem 2 6 the search start for any pair of integers a and B"
+    },
+    {
+      "start": "28:13",
+      "end": "28:13",
+      "text": "start for any pair of integers a and B"
+    },
+    {
+      "start": "28:13",
+      "end": "28:19",
+      "text": "start for any pair of integers a and B the GCD of a and B multiplied by the LCM"
+    },
+    {
+      "start": "28:19",
+      "end": "28:19",
+      "text": "the GCD of a and B multiplied by the LCM"
+    },
+    {
+      "start": "28:19",
+      "end": "28:25",
+      "text": "the GCD of a and B multiplied by the LCM of a and B is the absolute value of a be"
+    },
+    {
+      "start": "28:25",
+      "end": "28:25",
+      "text": "of a and B is the absolute value of a be"
+    },
+    {
+      "start": "28:25",
+      "end": "28:34",
+      "text": "of a and B is the absolute value of a be the product of a and B to produce first"
+    },
+    {
+      "start": "28:34",
+      "end": "28:34",
+      "text": "the product of a and B to produce first"
+    },
+    {
+      "start": "28:34",
+      "end": "28:45",
+      "text": "the product of a and B to produce first we assume that both NB are positive"
+    },
+    {
+      "start": "28:50",
+      "end": "28:50",
+      "text": "so first let us assume a and B are"
+    },
+    {
+      "start": "28:50",
+      "end": "28:57",
+      "text": "so first let us assume a and B are co-prime we consider the case of a and B"
+    },
+    {
+      "start": "28:57",
+      "end": "28:57",
+      "text": "co-prime we consider the case of a and B"
+    },
+    {
+      "start": "28:57",
+      "end": "29:02",
+      "text": "co-prime we consider the case of a and B being co-prime first then G C D F a and"
+    },
+    {
+      "start": "29:02",
+      "end": "29:02",
+      "text": "being co-prime first then G C D F a and"
+    },
+    {
+      "start": "29:02",
+      "end": "29:04",
+      "text": "being co-prime first then G C D F a and B must be one they are relatively prime"
+    },
+    {
+      "start": "29:04",
+      "end": "29:04",
+      "text": "B must be one they are relatively prime"
+    },
+    {
+      "start": "29:04",
+      "end": "29:05",
+      "text": "B must be one they are relatively prime so they do not have a common factor"
+    },
+    {
+      "start": "29:05",
+      "end": "29:05",
+      "text": "so they do not have a common factor"
+    },
+    {
+      "start": "29:05",
+      "end": "29:16",
+      "text": "so they do not have a common factor other than one let the LCM of a and b BD"
+    },
+    {
+      "start": "29:16",
+      "end": "29:16",
+      "text": "other than one let the LCM of a and b BD"
+    },
+    {
+      "start": "29:16",
+      "end": "29:24",
+      "text": "other than one let the LCM of a and b BD times a for some d some integer d then B"
+    },
+    {
+      "start": "29:24",
+      "end": "29:24",
+      "text": "times a for some d some integer d then B"
+    },
+    {
+      "start": "29:24",
+      "end": "29:28",
+      "text": "times a for some d some integer d then B divides da da is the least common"
+    },
+    {
+      "start": "29:28",
+      "end": "29:28",
+      "text": "divides da da is the least common"
+    },
+    {
+      "start": "29:28",
+      "end": "29:30",
+      "text": "divides da da is the least common multiple of a and B so in particular da"
+    },
+    {
+      "start": "29:30",
+      "end": "29:30",
+      "text": "multiple of a and B so in particular da"
+    },
+    {
+      "start": "29:30",
+      "end": "29:32",
+      "text": "multiple of a and B so in particular da is a multiple of B or in other words B"
+    },
+    {
+      "start": "29:32",
+      "end": "29:32",
+      "text": "is a multiple of B or in other words B"
+    },
+    {
+      "start": "29:32",
+      "end": "29:39",
+      "text": "is a multiple of B or in other words B divides da but then B does not divide a"
+    },
+    {
+      "start": "29:39",
+      "end": "29:39",
+      "text": "divides da but then B does not divide a"
+    },
+    {
+      "start": "29:39",
+      "end": "29:42",
+      "text": "divides da but then B does not divide a B and a are co-prime so GCD FB and a is"
+    },
+    {
+      "start": "29:42",
+      "end": "29:42",
+      "text": "B and a are co-prime so GCD FB and a is"
+    },
+    {
+      "start": "29:42",
+      "end": "29:47",
+      "text": "B and a are co-prime so GCD FB and a is 1 therefore B does not divide a this"
+    },
+    {
+      "start": "29:47",
+      "end": "29:47",
+      "text": "1 therefore B does not divide a this"
+    },
+    {
+      "start": "29:47",
+      "end": "29:52",
+      "text": "1 therefore B does not divide a this therefore implies that B divides D so B"
+    },
+    {
+      "start": "29:52",
+      "end": "29:52",
+      "text": "therefore implies that B divides D so B"
+    },
+    {
+      "start": "29:52",
+      "end": "29:59",
+      "text": "therefore implies that B divides D so B is less than or equal to da but PA is"
+    },
+    {
+      "start": "29:59",
+      "end": "29:59",
+      "text": "is less than or equal to da but PA is"
+    },
+    {
+      "start": "29:59",
+      "end": "30:01",
+      "text": "is less than or equal to da but PA is greater than 0 that's because both a and"
+    },
+    {
+      "start": "30:01",
+      "end": "30:01",
+      "text": "greater than 0 that's because both a and"
+    },
+    {
+      "start": "30:01",
+      "end": "30:06",
+      "text": "greater than 0 that's because both a and B are positive so B is greater than 0"
+    },
+    {
+      "start": "30:11",
+      "end": "30:11",
+      "text": "this is a common multiple of a and B B"
+    },
+    {
+      "start": "30:11",
+      "end": "30:13",
+      "text": "this is a common multiple of a and B B is greater than 0 and is also a common"
+    },
+    {
+      "start": "30:13",
+      "end": "30:13",
+      "text": "is greater than 0 and is also a common"
+    },
+    {
+      "start": "30:13",
+      "end": "30:20",
+      "text": "is greater than 0 and is also a common multiple of a and B so B a is greater"
+    },
+    {
+      "start": "30:20",
+      "end": "30:20",
+      "text": "multiple of a and B so B a is greater"
+    },
+    {
+      "start": "30:20",
+      "end": "30:24",
+      "text": "multiple of a and B so B a is greater than or equal to D"
+    },
+    {
+      "start": "30:28",
+      "end": "30:28",
+      "text": "das the LCM of a and B as we assumed"
+    },
+    {
+      "start": "30:28",
+      "end": "30:30",
+      "text": "das the LCM of a and B as we assumed therefore ba must be greater than or"
+    },
+    {
+      "start": "30:30",
+      "end": "30:30",
+      "text": "therefore ba must be greater than or"
+    },
+    {
+      "start": "30:30",
+      "end": "30:34",
+      "text": "therefore ba must be greater than or equal to th so we have these two"
+    },
+    {
+      "start": "30:34",
+      "end": "30:34",
+      "text": "equal to th so we have these two"
+    },
+    {
+      "start": "30:34",
+      "end": "30:36",
+      "text": "equal to th so we have these two inequalities here B a is less than or"
+    },
+    {
+      "start": "30:36",
+      "end": "30:36",
+      "text": "inequalities here B a is less than or"
+    },
+    {
+      "start": "30:36",
+      "end": "30:38",
+      "text": "inequalities here B a is less than or equal to B a and similarly B a is"
+    },
+    {
+      "start": "30:38",
+      "end": "30:38",
+      "text": "equal to B a and similarly B a is"
+    },
+    {
+      "start": "30:38",
+      "end": "30:40",
+      "text": "equal to B a and similarly B a is greater than or equal to T combining"
+    },
+    {
+      "start": "30:40",
+      "end": "30:40",
+      "text": "greater than or equal to T combining"
+    },
+    {
+      "start": "30:40",
+      "end": "30:48",
+      "text": "greater than or equal to T combining these two we have da equal to BA which"
+    },
+    {
+      "start": "30:48",
+      "end": "30:48",
+      "text": "these two we have da equal to BA which"
+    },
+    {
+      "start": "30:48",
+      "end": "30:55",
+      "text": "these two we have da equal to BA which means the LCM of a and B is a into B"
+    },
+    {
+      "start": "30:55",
+      "end": "30:55",
+      "text": "means the LCM of a and B is a into B"
+    },
+    {
+      "start": "30:55",
+      "end": "31:01",
+      "text": "means the LCM of a and B is a into B which is the same as the magnitude of a"
+    },
+    {
+      "start": "31:01",
+      "end": "31:01",
+      "text": "which is the same as the magnitude of a"
+    },
+    {
+      "start": "31:01",
+      "end": "31:04",
+      "text": "which is the same as the magnitude of a B since a and B are both positive so"
+    },
+    {
+      "start": "31:04",
+      "end": "31:04",
+      "text": "B since a and B are both positive so"
+    },
+    {
+      "start": "31:04",
+      "end": "31:07",
+      "text": "B since a and B are both positive so this is the case where a and B are"
+    },
+    {
+      "start": "31:07",
+      "end": "31:07",
+      "text": "this is the case where a and B are"
+    },
+    {
+      "start": "31:07",
+      "end": "31:10",
+      "text": "this is the case where a and B are co-prime so now let us assume that a and"
+    },
+    {
+      "start": "31:10",
+      "end": "31:10",
+      "text": "co-prime so now let us assume that a and"
+    },
+    {
+      "start": "31:10",
+      "end": "31:19",
+      "text": "co-prime so now let us assume that a and B are not co-prime"
+    },
+    {
+      "start": "31:22",
+      "end": "31:22",
+      "text": "which means they do have a common"
+    },
+    {
+      "start": "31:22",
+      "end": "31:27",
+      "text": "which means they do have a common divisor"
+    },
+    {
+      "start": "31:30",
+      "end": "31:30",
+      "text": "which is greater than one let G be the"
+    },
+    {
+      "start": "31:30",
+      "end": "31:34",
+      "text": "which is greater than one let G be the GCD of a and B so G is greater than one"
+    },
+    {
+      "start": "31:34",
+      "end": "31:34",
+      "text": "GCD of a and B so G is greater than one"
+    },
+    {
+      "start": "31:34",
+      "end": "31:37",
+      "text": "GCD of a and B so G is greater than one therefore from the theorem that we saw"
+    },
+    {
+      "start": "31:37",
+      "end": "31:37",
+      "text": "therefore from the theorem that we saw"
+    },
+    {
+      "start": "31:37",
+      "end": "31:41",
+      "text": "therefore from the theorem that we saw in the last class we have the GCD of a"
+    },
+    {
+      "start": "31:41",
+      "end": "31:41",
+      "text": "in the last class we have the GCD of a"
+    },
+    {
+      "start": "31:41",
+      "end": "31:47",
+      "text": "in the last class we have the GCD of a by G and the GCD of B by G is one but we"
+    },
+    {
+      "start": "31:47",
+      "end": "31:47",
+      "text": "by G and the GCD of B by G is one but we"
+    },
+    {
+      "start": "31:47",
+      "end": "31:52",
+      "text": "by G and the GCD of B by G is one but we know that the GCD of a by G V by G"
+    },
+    {
+      "start": "31:52",
+      "end": "31:52",
+      "text": "know that the GCD of a by G V by G"
+    },
+    {
+      "start": "31:52",
+      "end": "31:59",
+      "text": "know that the GCD of a by G V by G multiplied by the LCM of a by G B by G"
+    },
+    {
+      "start": "32:05",
+      "end": "32:05",
+      "text": "is a by G into B by multiplying both"
+    },
+    {
+      "start": "32:05",
+      "end": "32:12",
+      "text": "is a by G into B by multiplying both sides by G squared we can write the"
+    },
+    {
+      "start": "32:12",
+      "end": "32:12",
+      "text": "sides by G squared we can write the"
+    },
+    {
+      "start": "32:12",
+      "end": "32:15",
+      "text": "sides by G squared we can write the equation in this manner G into GCD of a"
+    },
+    {
+      "start": "32:15",
+      "end": "32:15",
+      "text": "equation in this manner G into GCD of a"
+    },
+    {
+      "start": "32:15",
+      "end": "32:18",
+      "text": "equation in this manner G into GCD of a by G V by G multiplied by G into LCM of"
+    },
+    {
+      "start": "32:18",
+      "end": "32:18",
+      "text": "by G V by G multiplied by G into LCM of"
+    },
+    {
+      "start": "32:18",
+      "end": "32:23",
+      "text": "by G V by G multiplied by G into LCM of a by G B by G is a into B but this is"
+    },
+    {
+      "start": "32:23",
+      "end": "32:23",
+      "text": "a by G B by G is a into B but this is"
+    },
+    {
+      "start": "32:23",
+      "end": "32:29",
+      "text": "a by G B by G is a into B but this is nothing but GCD of a B and this is"
+    },
+    {
+      "start": "32:29",
+      "end": "32:29",
+      "text": "nothing but GCD of a B and this is"
+    },
+    {
+      "start": "32:29",
+      "end": "32:34",
+      "text": "nothing but GCD of a B and this is nothing but LCM of a B therefore the"
+    },
+    {
+      "start": "32:34",
+      "end": "32:34",
+      "text": "nothing but LCM of a B therefore the"
+    },
+    {
+      "start": "32:34",
+      "end": "32:38",
+      "text": "nothing but LCM of a B therefore the product of the two GCD of a B multiplied"
+    },
+    {
+      "start": "32:38",
+      "end": "32:38",
+      "text": "product of the two GCD of a B multiplied"
+    },
+    {
+      "start": "32:38",
+      "end": "32:42",
+      "text": "product of the two GCD of a B multiplied by LCM of a B is into B once again we"
+    },
+    {
+      "start": "32:42",
+      "end": "32:42",
+      "text": "by LCM of a B is into B once again we"
+    },
+    {
+      "start": "32:42",
+      "end": "32:43",
+      "text": "by LCM of a B is into B once again we assume that a and B are positive"
+    },
+    {
+      "start": "32:43",
+      "end": "32:43",
+      "text": "assume that a and B are positive"
+    },
+    {
+      "start": "32:43",
+      "end": "32:49",
+      "text": "assume that a and B are positive therefore this is the same as the"
+    },
+    {
+      "start": "32:49",
+      "end": "32:49",
+      "text": "therefore this is the same as the"
+    },
+    {
+      "start": "32:49",
+      "end": "32:53",
+      "text": "therefore this is the same as the magnitude of a B so the only remaining"
+    },
+    {
+      "start": "32:53",
+      "end": "32:53",
+      "text": "magnitude of a B so the only remaining"
+    },
+    {
+      "start": "32:53",
+      "end": "33:03",
+      "text": "magnitude of a B so the only remaining cases when a or B is negative when one"
+    },
+    {
+      "start": "33:03",
+      "end": "33:03",
+      "text": "cases when a or B is negative when one"
+    },
+    {
+      "start": "33:03",
+      "end": "33:12",
+      "text": "cases when a or B is negative when one of a or B is negative then GCD of a B is"
+    },
+    {
+      "start": "33:12",
+      "end": "33:12",
+      "text": "of a or B is negative then GCD of a B is"
+    },
+    {
+      "start": "33:12",
+      "end": "33:16",
+      "text": "of a or B is negative then GCD of a B is GCD of"
+    },
+    {
+      "start": "33:34",
+      "end": "33:34",
+      "text": "mode a mode B now mode a and mode B are"
+    },
+    {
+      "start": "33:34",
+      "end": "33:37",
+      "text": "mode a mode B now mode a and mode B are both positive integers therefore the"
+    },
+    {
+      "start": "33:37",
+      "end": "33:37",
+      "text": "both positive integers therefore the"
+    },
+    {
+      "start": "33:37",
+      "end": "33:40",
+      "text": "both positive integers therefore the product of G CDF mode a mode B and LCM"
+    },
+    {
+      "start": "33:40",
+      "end": "33:40",
+      "text": "product of G CDF mode a mode B and LCM"
+    },
+    {
+      "start": "33:40",
+      "end": "33:44",
+      "text": "product of G CDF mode a mode B and LCM of mod M would be would be mode of a in"
+    },
+    {
+      "start": "33:44",
+      "end": "33:44",
+      "text": "of mod M would be would be mode of a in"
+    },
+    {
+      "start": "33:44",
+      "end": "33:56",
+      "text": "of mod M would be would be mode of a in the mode of B which is the same as the"
+    },
+    {
+      "start": "33:56",
+      "end": "33:56",
+      "text": "the mode of B which is the same as the"
+    },
+    {
+      "start": "33:56",
+      "end": "34:02",
+      "text": "the mode of B which is the same as the magnitude of a B now the left-hand side"
+    },
+    {
+      "start": "34:02",
+      "end": "34:02",
+      "text": "magnitude of a B now the left-hand side"
+    },
+    {
+      "start": "34:02",
+      "end": "34:11",
+      "text": "magnitude of a B now the left-hand side here is GCD of a b x LCM of a B G C D"
+    },
+    {
+      "start": "34:11",
+      "end": "34:11",
+      "text": "here is GCD of a b x LCM of a B G C D"
+    },
+    {
+      "start": "34:11",
+      "end": "34:14",
+      "text": "here is GCD of a b x LCM of a B G C D and LCM of any pair of integers are"
+    },
+    {
+      "start": "34:14",
+      "end": "34:14",
+      "text": "and LCM of any pair of integers are"
+    },
+    {
+      "start": "34:14",
+      "end": "34:18",
+      "text": "and LCM of any pair of integers are positive therefore the left hand side is"
+    },
+    {
+      "start": "34:18",
+      "end": "34:18",
+      "text": "positive therefore the left hand side is"
+    },
+    {
+      "start": "34:18",
+      "end": "34:21",
+      "text": "positive therefore the left hand side is GCD fa b x LC mfab and the right-hand"
+    },
+    {
+      "start": "34:21",
+      "end": "34:21",
+      "text": "GCD fa b x LC mfab and the right-hand"
+    },
+    {
+      "start": "34:21",
+      "end": "34:24",
+      "text": "GCD fa b x LC mfab and the right-hand side is mode a be exactly what we wanted"
+    },
+    {
+      "start": "34:24",
+      "end": "34:24",
+      "text": "side is mode a be exactly what we wanted"
+    },
+    {
+      "start": "34:24",
+      "end": "34:27",
+      "text": "side is mode a be exactly what we wanted to prove so that is it from this lecture"
+    },
+    {
+      "start": "34:27",
+      "end": "34:27",
+      "text": "to prove so that is it from this lecture"
+    },
+    {
+      "start": "34:27",
+      "end": "34:31",
+      "text": "to prove so that is it from this lecture hope to see you in the next"
+    },
+    {
+      "start": "34:31",
+      "end": "34:31",
+      "text": "hope to see you in the next"
+    },
+    {
+      "start": "34:31",
+      "end": "34:54",
+      "text": "hope to see you in the next [Music]"
+    }
+  ],
+  "timestamped": true
+}

@@ -1,0 +1,4368 @@
+{
+  "title": "Lec 20: ZF Axiomatization of Set Theory",
+  "source": "NPTEL",
+  "course": "Discrete Mathematics by Prof Benny George and  Prof. Sajith Gopalan",
+  "transcript": [
+    {
+      "start": "0:21",
+      "end": "0:21",
+      "text": "[Music]"
+    },
+    {
+      "start": "0:21",
+      "end": "0:29",
+      "text": "[Music] you"
+    },
+    {
+      "start": "0:31",
+      "end": "0:31",
+      "text": "welcome to the NPTEL mooc on the"
+    },
+    {
+      "start": "0:31",
+      "end": "0:34",
+      "text": "welcome to the NPTEL mooc on the mathematics this is the fifth lecture on"
+    },
+    {
+      "start": "0:34",
+      "end": "0:34",
+      "text": "mathematics this is the fifth lecture on"
+    },
+    {
+      "start": "0:34",
+      "end": "0:37",
+      "text": "mathematics this is the fifth lecture on set theory in the previous lecture we"
+    },
+    {
+      "start": "0:37",
+      "end": "0:37",
+      "text": "set theory in the previous lecture we"
+    },
+    {
+      "start": "0:37",
+      "end": "0:40",
+      "text": "set theory in the previous lecture we saw that named set theory has problems"
+    },
+    {
+      "start": "0:40",
+      "end": "0:40",
+      "text": "saw that named set theory has problems"
+    },
+    {
+      "start": "0:40",
+      "end": "0:43",
+      "text": "saw that named set theory has problems with paradoxes"
+    },
+    {
+      "start": "0:43",
+      "end": "0:43",
+      "text": "with paradoxes"
+    },
+    {
+      "start": "0:43",
+      "end": "0:45",
+      "text": "with paradoxes for example Russell's paradox so when we"
+    },
+    {
+      "start": "0:45",
+      "end": "0:45",
+      "text": "for example Russell's paradox so when we"
+    },
+    {
+      "start": "0:45",
+      "end": "0:47",
+      "text": "for example Russell's paradox so when we axiom it is 9 set theory we have to pay"
+    },
+    {
+      "start": "0:47",
+      "end": "0:47",
+      "text": "axiom it is 9 set theory we have to pay"
+    },
+    {
+      "start": "0:47",
+      "end": "0:49",
+      "text": "axiom it is 9 set theory we have to pay a great deal of attention"
+    },
+    {
+      "start": "0:49",
+      "end": "0:49",
+      "text": "a great deal of attention"
+    },
+    {
+      "start": "0:49",
+      "end": "0:52",
+      "text": "a great deal of attention one such axiomatization is the one by"
+    },
+    {
+      "start": "0:52",
+      "end": "0:52",
+      "text": "one such axiomatization is the one by"
+    },
+    {
+      "start": "0:52",
+      "end": "0:55",
+      "text": "one such axiomatization is the one by user mellow and Frankel so we shall take"
+    },
+    {
+      "start": "0:55",
+      "end": "0:55",
+      "text": "user mellow and Frankel so we shall take"
+    },
+    {
+      "start": "0:55",
+      "end": "0:57",
+      "text": "user mellow and Frankel so we shall take a peek at the Zermelo Frankel"
+    },
+    {
+      "start": "0:57",
+      "end": "0:57",
+      "text": "a peek at the Zermelo Frankel"
+    },
+    {
+      "start": "0:57",
+      "end": "1:00",
+      "text": "a peek at the Zermelo Frankel axiomatization today long discussion"
+    },
+    {
+      "start": "1:00",
+      "end": "1:00",
+      "text": "axiomatization today long discussion"
+    },
+    {
+      "start": "1:00",
+      "end": "1:02",
+      "text": "axiomatization today long discussion about this is not within the scope of"
+    },
+    {
+      "start": "1:02",
+      "end": "1:02",
+      "text": "about this is not within the scope of"
+    },
+    {
+      "start": "1:02",
+      "end": "1:02",
+      "text": "about this is not within the scope of this course"
+    },
+    {
+      "start": "1:02",
+      "end": "1:02",
+      "text": "this course"
+    },
+    {
+      "start": "1:02",
+      "end": "1:04",
+      "text": "this course we may have vocation only to look at the"
+    },
+    {
+      "start": "1:04",
+      "end": "1:04",
+      "text": "we may have vocation only to look at the"
+    },
+    {
+      "start": "1:04",
+      "end": "1:20",
+      "text": "we may have vocation only to look at the axioms"
+    },
+    {
+      "start": "1:23",
+      "end": "1:23",
+      "text": "the first axiom is the axiom of"
+    },
+    {
+      "start": "1:23",
+      "end": "1:31",
+      "text": "the first axiom is the axiom of extensionality"
+    },
+    {
+      "start": "1:35",
+      "end": "1:35",
+      "text": "axiom of extensionality says that two"
+    },
+    {
+      "start": "1:35",
+      "end": "1:37",
+      "text": "axiom of extensionality says that two sets are equal if and only if they have"
+    },
+    {
+      "start": "1:37",
+      "end": "1:37",
+      "text": "sets are equal if and only if they have"
+    },
+    {
+      "start": "1:37",
+      "end": "1:43",
+      "text": "sets are equal if and only if they have the same extensions in other words two"
+    },
+    {
+      "start": "1:43",
+      "end": "1:43",
+      "text": "the same extensions in other words two"
+    },
+    {
+      "start": "1:43",
+      "end": "1:45",
+      "text": "the same extensions in other words two sets have exactly the same members if"
+    },
+    {
+      "start": "1:45",
+      "end": "1:45",
+      "text": "sets have exactly the same members if"
+    },
+    {
+      "start": "1:45",
+      "end": "1:49",
+      "text": "sets have exactly the same members if and only if they are equal formally for"
+    },
+    {
+      "start": "1:49",
+      "end": "1:49",
+      "text": "and only if they are equal formally for"
+    },
+    {
+      "start": "1:49",
+      "end": "1:55",
+      "text": "and only if they are equal formally for all X for all Y for all Z Z belongs to X"
+    },
+    {
+      "start": "1:55",
+      "end": "1:55",
+      "text": "all X for all Y for all Z Z belongs to X"
+    },
+    {
+      "start": "1:55",
+      "end": "2:01",
+      "text": "all X for all Y for all Z Z belongs to X if and only if Z belongs to Y implies"
+    },
+    {
+      "start": "2:01",
+      "end": "2:01",
+      "text": "if and only if Z belongs to Y implies"
+    },
+    {
+      "start": "2:01",
+      "end": "2:07",
+      "text": "if and only if Z belongs to Y implies that X equal Y for any two sets x and y"
+    },
+    {
+      "start": "2:07",
+      "end": "2:07",
+      "text": "that X equal Y for any two sets x and y"
+    },
+    {
+      "start": "2:07",
+      "end": "2:10",
+      "text": "that X equal Y for any two sets x and y x and y have exactly the same extensions"
+    },
+    {
+      "start": "2:10",
+      "end": "2:10",
+      "text": "x and y have exactly the same extensions"
+    },
+    {
+      "start": "2:10",
+      "end": "2:12",
+      "text": "x and y have exactly the same extensions that is the same set belongs to both of"
+    },
+    {
+      "start": "2:12",
+      "end": "2:12",
+      "text": "that is the same set belongs to both of"
+    },
+    {
+      "start": "2:12",
+      "end": "2:17",
+      "text": "that is the same set belongs to both of them for every Z in which case X is"
+    },
+    {
+      "start": "2:17",
+      "end": "2:17",
+      "text": "them for every Z in which case X is"
+    },
+    {
+      "start": "2:17",
+      "end": "2:25",
+      "text": "them for every Z in which case X is equal to Y this is the first axiom the"
+    },
+    {
+      "start": "2:41",
+      "end": "2:41",
+      "text": "the empty seat axiom says that there is"
+    },
+    {
+      "start": "2:41",
+      "end": "2:53",
+      "text": "the empty seat axiom says that there is a set with no members in other words the"
+    },
+    {
+      "start": "2:53",
+      "end": "2:53",
+      "text": "a set with no members in other words the"
+    },
+    {
+      "start": "2:53",
+      "end": "2:58",
+      "text": "a set with no members in other words the XS and X so that for our y y is not a"
+    },
+    {
+      "start": "2:58",
+      "end": "2:59",
+      "text": "XS and X so that for our y y is not a"
+    },
+    {
+      "start": "2:59",
+      "end": "3:03",
+      "text": "XS and X so that for our y y is not a member of X there is a set X so that for"
+    },
+    {
+      "start": "3:03",
+      "end": "3:03",
+      "text": "member of X there is a set X so that for"
+    },
+    {
+      "start": "3:03",
+      "end": "3:05",
+      "text": "member of X there is a set X so that for every y y is not a member of X in other"
+    },
+    {
+      "start": "3:05",
+      "end": "3:05",
+      "text": "every y y is not a member of X in other"
+    },
+    {
+      "start": "3:05",
+      "end": "3:08",
+      "text": "every y y is not a member of X in other words X doesn't have a member so X is"
+    },
+    {
+      "start": "3:08",
+      "end": "3:08",
+      "text": "words X doesn't have a member so X is"
+    },
+    {
+      "start": "3:08",
+      "end": "3:10",
+      "text": "words X doesn't have a member so X is the empty set"
+    },
+    {
+      "start": "3:10",
+      "end": "3:10",
+      "text": "the empty set"
+    },
+    {
+      "start": "3:10",
+      "end": "3:13",
+      "text": "the empty set so this axiom asserts the existence of"
+    },
+    {
+      "start": "3:13",
+      "end": "3:13",
+      "text": "so this axiom asserts the existence of"
+    },
+    {
+      "start": "3:13",
+      "end": "3:18",
+      "text": "so this axiom asserts the existence of an empty set the third axiom is the"
+    },
+    {
+      "start": "3:18",
+      "end": "3:18",
+      "text": "an empty set the third axiom is the"
+    },
+    {
+      "start": "3:18",
+      "end": "3:27",
+      "text": "an empty set the third axiom is the pairing axiom pairing axiom says that"
+    },
+    {
+      "start": "3:27",
+      "end": "3:27",
+      "text": "pairing axiom pairing axiom says that"
+    },
+    {
+      "start": "3:27",
+      "end": "3:44",
+      "text": "pairing axiom pairing axiom says that for every pair of sets door exists a set"
+    },
+    {
+      "start": "4:04",
+      "end": "4:04",
+      "text": "in other words for every X and for every"
+    },
+    {
+      "start": "4:04",
+      "end": "4:12",
+      "text": "in other words for every X and for every Y for a pair XY offsets their exes Z so"
+    },
+    {
+      "start": "4:12",
+      "end": "4:12",
+      "text": "Y for a pair XY offsets their exes Z so"
+    },
+    {
+      "start": "4:12",
+      "end": "4:18",
+      "text": "Y for a pair XY offsets their exes Z so that for every u u belongs to Z if and"
+    },
+    {
+      "start": "4:18",
+      "end": "4:18",
+      "text": "that for every u u belongs to Z if and"
+    },
+    {
+      "start": "4:18",
+      "end": "4:25",
+      "text": "that for every u u belongs to Z if and only if u equal to X or u equal to Y T"
+    },
+    {
+      "start": "4:29",
+      "end": "4:29",
+      "text": "in other words for every pair XY of sets"
+    },
+    {
+      "start": "4:29",
+      "end": "4:33",
+      "text": "in other words for every pair XY of sets there is a set Z so that something is a"
+    },
+    {
+      "start": "4:33",
+      "end": "4:33",
+      "text": "there is a set Z so that something is a"
+    },
+    {
+      "start": "4:33",
+      "end": "4:35",
+      "text": "there is a set Z so that something is a member of Z precisely when that"
+    },
+    {
+      "start": "4:35",
+      "end": "4:35",
+      "text": "member of Z precisely when that"
+    },
+    {
+      "start": "4:35",
+      "end": "4:38",
+      "text": "member of Z precisely when that something happens to be either X or Y in"
+    },
+    {
+      "start": "4:38",
+      "end": "4:38",
+      "text": "something happens to be either X or Y in"
+    },
+    {
+      "start": "4:38",
+      "end": "4:41",
+      "text": "something happens to be either X or Y in other words z contains exactly x and y"
+    },
+    {
+      "start": "4:41",
+      "end": "4:41",
+      "text": "other words z contains exactly x and y"
+    },
+    {
+      "start": "4:41",
+      "end": "4:45",
+      "text": "other words z contains exactly x and y and nothing else"
+    },
+    {
+      "start": "5:02",
+      "end": "5:02",
+      "text": "power set of X we know is the set of all"
+    },
+    {
+      "start": "5:02",
+      "end": "5:10",
+      "text": "power set of X we know is the set of all subsets of X so the power set axiom"
+    },
+    {
+      "start": "5:10",
+      "end": "5:10",
+      "text": "subsets of X so the power set axiom"
+    },
+    {
+      "start": "5:10",
+      "end": "5:14",
+      "text": "subsets of X so the power set axiom asserts the existence of a power set for"
+    },
+    {
+      "start": "5:14",
+      "end": "5:14",
+      "text": "asserts the existence of a power set for"
+    },
+    {
+      "start": "5:14",
+      "end": "5:18",
+      "text": "asserts the existence of a power set for every set X there is a set which happens"
+    },
+    {
+      "start": "5:18",
+      "end": "5:18",
+      "text": "every set X there is a set which happens"
+    },
+    {
+      "start": "5:18",
+      "end": "5:20",
+      "text": "every set X there is a set which happens to be the power set of X in other words"
+    },
+    {
+      "start": "5:20",
+      "end": "5:20",
+      "text": "to be the power set of X in other words"
+    },
+    {
+      "start": "5:20",
+      "end": "5:25",
+      "text": "to be the power set of X in other words for all X there exists of Y which"
+    },
+    {
+      "start": "5:25",
+      "end": "5:25",
+      "text": "for all X there exists of Y which"
+    },
+    {
+      "start": "5:25",
+      "end": "5:27",
+      "text": "for all X there exists of Y which happens to be the power set of X so how"
+    },
+    {
+      "start": "5:27",
+      "end": "5:27",
+      "text": "happens to be the power set of X so how"
+    },
+    {
+      "start": "5:27",
+      "end": "5:29",
+      "text": "happens to be the power set of X so how do we state that we have to say that for"
+    },
+    {
+      "start": "5:29",
+      "end": "5:29",
+      "text": "do we state that we have to say that for"
+    },
+    {
+      "start": "5:29",
+      "end": "5:37",
+      "text": "do we state that we have to say that for every Z that belongs to Y precisely when"
+    },
+    {
+      "start": "5:37",
+      "end": "5:37",
+      "text": "every Z that belongs to Y precisely when"
+    },
+    {
+      "start": "5:37",
+      "end": "5:42",
+      "text": "every Z that belongs to Y precisely when Z is a subset of X in other words Z is a"
+    },
+    {
+      "start": "5:42",
+      "end": "5:42",
+      "text": "Z is a subset of X in other words Z is a"
+    },
+    {
+      "start": "5:42",
+      "end": "5:45",
+      "text": "Z is a subset of X in other words Z is a member of Y precisely when is it happens"
+    },
+    {
+      "start": "5:45",
+      "end": "5:45",
+      "text": "member of Y precisely when is it happens"
+    },
+    {
+      "start": "5:45",
+      "end": "5:48",
+      "text": "member of Y precisely when is it happens to be a subset of X or Y will contain"
+    },
+    {
+      "start": "5:48",
+      "end": "5:48",
+      "text": "to be a subset of X or Y will contain"
+    },
+    {
+      "start": "5:48",
+      "end": "5:51",
+      "text": "to be a subset of X or Y will contain precisely the subsets of X or Y is the"
+    },
+    {
+      "start": "5:51",
+      "end": "5:51",
+      "text": "precisely the subsets of X or Y is the"
+    },
+    {
+      "start": "5:51",
+      "end": "5:55",
+      "text": "precisely the subsets of X or Y is the power set of X so axiom for asserts the"
+    },
+    {
+      "start": "5:55",
+      "end": "5:55",
+      "text": "power set of X so axiom for asserts the"
+    },
+    {
+      "start": "5:55",
+      "end": "6:01",
+      "text": "power set of X so axiom for asserts the existence of the power set for every set"
+    },
+    {
+      "start": "6:01",
+      "end": "6:01",
+      "text": "existence of the power set for every set"
+    },
+    {
+      "start": "6:01",
+      "end": "6:11",
+      "text": "existence of the power set for every set the fifth axiom is the subset axiom"
+    },
+    {
+      "start": "6:21",
+      "end": "6:21",
+      "text": "this is in fact an axiom schema for a"
+    },
+    {
+      "start": "6:21",
+      "end": "6:27",
+      "text": "this is in fact an axiom schema for a formula alpha with its free variables"
+    },
+    {
+      "start": "6:27",
+      "end": "6:27",
+      "text": "formula alpha with its free variables"
+    },
+    {
+      "start": "6:27",
+      "end": "6:37",
+      "text": "formula alpha with its free variables among"
+    },
+    {
+      "start": "6:46",
+      "end": "6:46",
+      "text": "t1 through PK y and u so alpha is a"
+    },
+    {
+      "start": "6:46",
+      "end": "6:51",
+      "text": "t1 through PK y and u so alpha is a formula with three variables among these"
+    },
+    {
+      "start": "6:58",
+      "end": "6:58",
+      "text": "we have this following axiom for all T 1"
+    },
+    {
+      "start": "6:58",
+      "end": "7:02",
+      "text": "we have this following axiom for all T 1 through P K for every tuple T 1 through"
+    },
+    {
+      "start": "7:02",
+      "end": "7:02",
+      "text": "through P K for every tuple T 1 through"
+    },
+    {
+      "start": "7:02",
+      "end": "7:11",
+      "text": "through P K for every tuple T 1 through TK and for every u there exist an X so"
+    },
+    {
+      "start": "7:11",
+      "end": "7:11",
+      "text": "TK and for every u there exist an X so"
+    },
+    {
+      "start": "7:11",
+      "end": "7:17",
+      "text": "TK and for every u there exist an X so that for every Y Y belongs to X if and"
+    },
+    {
+      "start": "7:17",
+      "end": "7:17",
+      "text": "that for every Y Y belongs to X if and"
+    },
+    {
+      "start": "7:17",
+      "end": "7:27",
+      "text": "that for every Y Y belongs to X if and only if Y belongs to you and alpha of t1"
+    },
+    {
+      "start": "7:27",
+      "end": "7:28",
+      "text": "only if Y belongs to you and alpha of t1"
+    },
+    {
+      "start": "7:28",
+      "end": "7:34",
+      "text": "only if Y belongs to you and alpha of t1 through PK y u is true"
+    },
+    {
+      "start": "7:37",
+      "end": "7:37",
+      "text": "this will be an axiom for every formula"
+    },
+    {
+      "start": "7:37",
+      "end": "7:39",
+      "text": "this will be an axiom for every formula alpha with its free variables among t1"
+    },
+    {
+      "start": "7:39",
+      "end": "7:39",
+      "text": "alpha with its free variables among t1"
+    },
+    {
+      "start": "7:39",
+      "end": "7:43",
+      "text": "alpha with its free variables among t1 through TK by u so when given through TK"
+    },
+    {
+      "start": "7:43",
+      "end": "7:43",
+      "text": "through TK by u so when given through TK"
+    },
+    {
+      "start": "7:43",
+      "end": "7:47",
+      "text": "through TK by u so when given through TK y you are supplied as arguments to alpha"
+    },
+    {
+      "start": "7:47",
+      "end": "7:47",
+      "text": "y you are supplied as arguments to alpha"
+    },
+    {
+      "start": "7:47",
+      "end": "7:49",
+      "text": "y you are supplied as arguments to alpha you have to perform the substitution if"
+    },
+    {
+      "start": "7:49",
+      "end": "7:49",
+      "text": "you have to perform the substitution if"
+    },
+    {
+      "start": "7:49",
+      "end": "7:51",
+      "text": "you have to perform the substitution if one of them happens to be the free"
+    },
+    {
+      "start": "7:51",
+      "end": "7:51",
+      "text": "one of them happens to be the free"
+    },
+    {
+      "start": "7:51",
+      "end": "7:55",
+      "text": "one of them happens to be the free variable for example if t1 is not a free"
+    },
+    {
+      "start": "7:55",
+      "end": "7:55",
+      "text": "variable for example if t1 is not a free"
+    },
+    {
+      "start": "7:55",
+      "end": "7:57",
+      "text": "variable for example if t1 is not a free variable then the argument which is"
+    },
+    {
+      "start": "7:57",
+      "end": "7:57",
+      "text": "variable then the argument which is"
+    },
+    {
+      "start": "7:57",
+      "end": "8:02",
+      "text": "variable then the argument which is applied here will not be substituted so"
+    },
+    {
+      "start": "8:02",
+      "end": "8:02",
+      "text": "applied here will not be substituted so"
+    },
+    {
+      "start": "8:02",
+      "end": "8:05",
+      "text": "applied here will not be substituted so what does it say what it says is that"
+    },
+    {
+      "start": "8:05",
+      "end": "8:05",
+      "text": "what does it say what it says is that"
+    },
+    {
+      "start": "8:05",
+      "end": "8:13",
+      "text": "what does it say what it says is that given any K topple p1 through PK and a"
+    },
+    {
+      "start": "8:13",
+      "end": "8:13",
+      "text": "given any K topple p1 through PK and a"
+    },
+    {
+      "start": "8:13",
+      "end": "8:18",
+      "text": "given any K topple p1 through PK and a set u then we can pick out the members"
+    },
+    {
+      "start": "8:18",
+      "end": "8:18",
+      "text": "set u then we can pick out the members"
+    },
+    {
+      "start": "8:18",
+      "end": "8:24",
+      "text": "set u then we can pick out the members of U which satisfy the formula alpha"
+    },
+    {
+      "start": "8:24",
+      "end": "8:24",
+      "text": "of U which satisfy the formula alpha"
+    },
+    {
+      "start": "8:24",
+      "end": "8:30",
+      "text": "of U which satisfy the formula alpha along with y nu with p1 through T in"
+    },
+    {
+      "start": "8:30",
+      "end": "8:30",
+      "text": "along with y nu with p1 through T in"
+    },
+    {
+      "start": "8:30",
+      "end": "8:33",
+      "text": "along with y nu with p1 through T in other words given the tuples couple t1"
+    },
+    {
+      "start": "8:33",
+      "end": "8:33",
+      "text": "other words given the tuples couple t1"
+    },
+    {
+      "start": "8:33",
+      "end": "8:38",
+      "text": "other words given the tuples couple t1 through TK and you there X is an X or"
+    },
+    {
+      "start": "8:38",
+      "end": "8:38",
+      "text": "through TK and you there X is an X or"
+    },
+    {
+      "start": "8:38",
+      "end": "8:44",
+      "text": "through TK and you there X is an X or set which we can synthesize from you and"
+    },
+    {
+      "start": "8:44",
+      "end": "8:44",
+      "text": "set which we can synthesize from you and"
+    },
+    {
+      "start": "8:44",
+      "end": "8:49",
+      "text": "set which we can synthesize from you and t1 through TK so that membership in X of"
+    },
+    {
+      "start": "8:49",
+      "end": "8:49",
+      "text": "t1 through TK so that membership in X of"
+    },
+    {
+      "start": "8:49",
+      "end": "8:50",
+      "text": "t1 through TK so that membership in X of Y"
+    },
+    {
+      "start": "8:50",
+      "end": "8:50",
+      "text": "Y"
+    },
+    {
+      "start": "8:50",
+      "end": "8:53",
+      "text": "Y we'll be precisely when why is the"
+    },
+    {
+      "start": "8:53",
+      "end": "8:53",
+      "text": "we'll be precisely when why is the"
+    },
+    {
+      "start": "8:53",
+      "end": "8:55",
+      "text": "we'll be precisely when why is the number of you in other words X will be a"
+    },
+    {
+      "start": "8:55",
+      "end": "8:55",
+      "text": "number of you in other words X will be a"
+    },
+    {
+      "start": "8:55",
+      "end": "8:57",
+      "text": "number of you in other words X will be a subset of you so we are forming a subset"
+    },
+    {
+      "start": "8:57",
+      "end": "8:57",
+      "text": "subset of you so we are forming a subset"
+    },
+    {
+      "start": "8:57",
+      "end": "9:02",
+      "text": "subset of you so we are forming a subset of you X is a subset of you and moreover"
+    },
+    {
+      "start": "9:02",
+      "end": "9:02",
+      "text": "of you X is a subset of you and moreover"
+    },
+    {
+      "start": "9:02",
+      "end": "9:07",
+      "text": "of you X is a subset of you and moreover you and Y will have to satisfy the"
+    },
+    {
+      "start": "9:07",
+      "end": "9:07",
+      "text": "you and Y will have to satisfy the"
+    },
+    {
+      "start": "9:07",
+      "end": "9:11",
+      "text": "you and Y will have to satisfy the condition alpha along with t1 through TK"
+    },
+    {
+      "start": "9:11",
+      "end": "9:11",
+      "text": "condition alpha along with t1 through TK"
+    },
+    {
+      "start": "9:11",
+      "end": "9:15",
+      "text": "condition alpha along with t1 through TK this is the way of forming subsets of a"
+    },
+    {
+      "start": "9:15",
+      "end": "9:15",
+      "text": "this is the way of forming subsets of a"
+    },
+    {
+      "start": "9:15",
+      "end": "9:22",
+      "text": "this is the way of forming subsets of a given set you an example would be for"
+    },
+    {
+      "start": "9:22",
+      "end": "9:22",
+      "text": "given set you an example would be for"
+    },
+    {
+      "start": "9:22",
+      "end": "9:30",
+      "text": "given set you an example would be for all T for all you the XS annex so that"
+    },
+    {
+      "start": "9:30",
+      "end": "9:30",
+      "text": "all T for all you the XS annex so that"
+    },
+    {
+      "start": "9:30",
+      "end": "9:35",
+      "text": "all T for all you the XS annex so that for every Y Y belongs to X precisely"
+    },
+    {
+      "start": "9:35",
+      "end": "9:35",
+      "text": "for every Y Y belongs to X precisely"
+    },
+    {
+      "start": "9:35",
+      "end": "9:39",
+      "text": "for every Y Y belongs to X precisely when y belongs to T and Y belongs to you"
+    },
+    {
+      "start": "9:39",
+      "end": "9:39",
+      "text": "when y belongs to T and Y belongs to you"
+    },
+    {
+      "start": "9:39",
+      "end": "9:46",
+      "text": "when y belongs to T and Y belongs to you now what does this assert there exists"
+    },
+    {
+      "start": "9:46",
+      "end": "9:46",
+      "text": "now what does this assert there exists"
+    },
+    {
+      "start": "9:46",
+      "end": "9:54",
+      "text": "now what does this assert there exists the intersection of"
+    },
+    {
+      "start": "10:00",
+      "end": "10:00",
+      "text": "he and you so for every said you when T"
+    },
+    {
+      "start": "10:00",
+      "end": "10:03",
+      "text": "he and you so for every said you when T is supplied we can form the intersection"
+    },
+    {
+      "start": "10:03",
+      "end": "10:03",
+      "text": "is supplied we can form the intersection"
+    },
+    {
+      "start": "10:03",
+      "end": "10:05",
+      "text": "is supplied we can form the intersection of T and U in other words from you we"
+    },
+    {
+      "start": "10:05",
+      "end": "10:05",
+      "text": "of T and U in other words from you we"
+    },
+    {
+      "start": "10:05",
+      "end": "10:08",
+      "text": "of T and U in other words from you we can form the subset of members of U"
+    },
+    {
+      "start": "10:08",
+      "end": "10:08",
+      "text": "can form the subset of members of U"
+    },
+    {
+      "start": "10:08",
+      "end": "10:12",
+      "text": "can form the subset of members of U which are also members of T so this is a"
+    },
+    {
+      "start": "10:12",
+      "end": "10:12",
+      "text": "which are also members of T so this is a"
+    },
+    {
+      "start": "10:12",
+      "end": "10:17",
+      "text": "which are also members of T so this is a way of forming subsets of U the sixth"
+    },
+    {
+      "start": "10:17",
+      "end": "10:17",
+      "text": "way of forming subsets of U the sixth"
+    },
+    {
+      "start": "10:17",
+      "end": "10:25",
+      "text": "way of forming subsets of U the sixth axiom is the Union axiom Union axiom"
+    },
+    {
+      "start": "10:25",
+      "end": "10:25",
+      "text": "axiom is the Union axiom Union axiom"
+    },
+    {
+      "start": "10:25",
+      "end": "10:29",
+      "text": "axiom is the Union axiom Union axiom says that for every X there exists of I"
+    },
+    {
+      "start": "10:29",
+      "end": "10:29",
+      "text": "says that for every X there exists of I"
+    },
+    {
+      "start": "10:29",
+      "end": "10:35",
+      "text": "says that for every X there exists of I saw that for every Z Z belongs to Y"
+    },
+    {
+      "start": "10:35",
+      "end": "10:35",
+      "text": "saw that for every Z Z belongs to Y"
+    },
+    {
+      "start": "10:35",
+      "end": "10:41",
+      "text": "saw that for every Z Z belongs to Y precisely when the XS are you so that Z"
+    },
+    {
+      "start": "10:41",
+      "end": "10:41",
+      "text": "precisely when the XS are you so that Z"
+    },
+    {
+      "start": "10:41",
+      "end": "10:48",
+      "text": "precisely when the XS are you so that Z belongs to you and you belongs to X or"
+    },
+    {
+      "start": "10:48",
+      "end": "10:48",
+      "text": "belongs to you and you belongs to X or"
+    },
+    {
+      "start": "10:48",
+      "end": "10:51",
+      "text": "belongs to you and you belongs to X or in other words given any set X we can"
+    },
+    {
+      "start": "10:51",
+      "end": "10:51",
+      "text": "in other words given any set X we can"
+    },
+    {
+      "start": "10:51",
+      "end": "10:54",
+      "text": "in other words given any set X we can construct a set Y which will contain"
+    },
+    {
+      "start": "10:54",
+      "end": "10:54",
+      "text": "construct a set Y which will contain"
+    },
+    {
+      "start": "10:54",
+      "end": "10:56",
+      "text": "construct a set Y which will contain precisely the members of members of X"
+    },
+    {
+      "start": "10:56",
+      "end": "10:56",
+      "text": "precisely the members of members of X"
+    },
+    {
+      "start": "10:56",
+      "end": "10:59",
+      "text": "precisely the members of members of X that as far as Z to belong to Y that"
+    },
+    {
+      "start": "10:59",
+      "end": "10:59",
+      "text": "that as far as Z to belong to Y that"
+    },
+    {
+      "start": "10:59",
+      "end": "11:02",
+      "text": "that as far as Z to belong to Y that will have to belong to some U which in"
+    },
+    {
+      "start": "11:02",
+      "end": "11:02",
+      "text": "will have to belong to some U which in"
+    },
+    {
+      "start": "11:02",
+      "end": "11:11",
+      "text": "will have to belong to some U which in turn belongs to X so for any X there is"
+    },
+    {
+      "start": "11:11",
+      "end": "11:11",
+      "text": "turn belongs to X so for any X there is"
+    },
+    {
+      "start": "11:11",
+      "end": "11:18",
+      "text": "turn belongs to X so for any X there is a set Y that contains precisely the"
+    },
+    {
+      "start": "11:18",
+      "end": "11:18",
+      "text": "a set Y that contains precisely the"
+    },
+    {
+      "start": "11:18",
+      "end": "11:30",
+      "text": "a set Y that contains precisely the members of members of X"
+    },
+    {
+      "start": "11:34",
+      "end": "11:34",
+      "text": "vii axiom in our list is the axiom of"
+    },
+    {
+      "start": "11:34",
+      "end": "11:43",
+      "text": "vii axiom in our list is the axiom of choice axiom of choice is that for any"
+    },
+    {
+      "start": "11:43",
+      "end": "11:43",
+      "text": "choice axiom of choice is that for any"
+    },
+    {
+      "start": "11:43",
+      "end": "11:59",
+      "text": "choice axiom of choice is that for any relation are there X is a function f"
+    },
+    {
+      "start": "12:05",
+      "end": "12:05",
+      "text": "which is a subset of r such that the"
+    },
+    {
+      "start": "12:05",
+      "end": "12:13",
+      "text": "which is a subset of r such that the domain of f is the domain of all why is"
+    },
+    {
+      "start": "12:13",
+      "end": "12:13",
+      "text": "domain of f is the domain of all why is"
+    },
+    {
+      "start": "12:13",
+      "end": "12:15",
+      "text": "domain of f is the domain of all why is this called the axiom of choice given a"
+    },
+    {
+      "start": "12:15",
+      "end": "12:15",
+      "text": "this called the axiom of choice given a"
+    },
+    {
+      "start": "12:15",
+      "end": "12:21",
+      "text": "this called the axiom of choice given a relation of let us say from A to B"
+    },
+    {
+      "start": "12:21",
+      "end": "12:21",
+      "text": "relation of let us say from A to B"
+    },
+    {
+      "start": "12:21",
+      "end": "12:24",
+      "text": "relation of let us say from A to B therefore this is a subset of a cross B"
+    },
+    {
+      "start": "12:24",
+      "end": "12:24",
+      "text": "therefore this is a subset of a cross B"
+    },
+    {
+      "start": "12:24",
+      "end": "12:29",
+      "text": "therefore this is a subset of a cross B then consider some member X of a under"
+    },
+    {
+      "start": "12:29",
+      "end": "12:29",
+      "text": "then consider some member X of a under"
+    },
+    {
+      "start": "12:29",
+      "end": "12:33",
+      "text": "then consider some member X of a under the relation are X may have two images"
+    },
+    {
+      "start": "12:33",
+      "end": "12:33",
+      "text": "the relation are X may have two images"
+    },
+    {
+      "start": "12:33",
+      "end": "12:39",
+      "text": "the relation are X may have two images let us say y1 and y2 but what we"
+    },
+    {
+      "start": "12:39",
+      "end": "12:39",
+      "text": "let us say y1 and y2 but what we"
+    },
+    {
+      "start": "12:39",
+      "end": "12:42",
+      "text": "let us say y1 and y2 but what we construct here is a function the domain"
+    },
+    {
+      "start": "12:42",
+      "end": "12:42",
+      "text": "construct here is a function the domain"
+    },
+    {
+      "start": "12:42",
+      "end": "12:44",
+      "text": "construct here is a function the domain of which is identical to the domain of R"
+    },
+    {
+      "start": "12:44",
+      "end": "12:44",
+      "text": "of which is identical to the domain of R"
+    },
+    {
+      "start": "12:44",
+      "end": "12:48",
+      "text": "of which is identical to the domain of R therefore X will have to have an image"
+    },
+    {
+      "start": "12:48",
+      "end": "12:48",
+      "text": "therefore X will have to have an image"
+    },
+    {
+      "start": "12:48",
+      "end": "12:54",
+      "text": "therefore X will have to have an image under F as well but then X has two"
+    },
+    {
+      "start": "12:54",
+      "end": "12:54",
+      "text": "under F as well but then X has two"
+    },
+    {
+      "start": "12:54",
+      "end": "12:57",
+      "text": "under F as well but then X has two images under R to form f you will have"
+    },
+    {
+      "start": "12:57",
+      "end": "12:57",
+      "text": "images under R to form f you will have"
+    },
+    {
+      "start": "12:57",
+      "end": "12:59",
+      "text": "images under R to form f you will have to pick one of them that is you have to"
+    },
+    {
+      "start": "12:59",
+      "end": "12:59",
+      "text": "to pick one of them that is you have to"
+    },
+    {
+      "start": "12:59",
+      "end": "13:04",
+      "text": "to pick one of them that is you have to exercise the choice y1 or Y do one of"
+    },
+    {
+      "start": "13:04",
+      "end": "13:04",
+      "text": "exercise the choice y1 or Y do one of"
+    },
+    {
+      "start": "13:04",
+      "end": "13:08",
+      "text": "exercise the choice y1 or Y do one of them will be f of X for the function f"
+    },
+    {
+      "start": "13:08",
+      "end": "13:08",
+      "text": "them will be f of X for the function f"
+    },
+    {
+      "start": "13:08",
+      "end": "13:12",
+      "text": "them will be f of X for the function f that we are going to construct therefore"
+    },
+    {
+      "start": "13:12",
+      "end": "13:12",
+      "text": "that we are going to construct therefore"
+    },
+    {
+      "start": "13:12",
+      "end": "13:15",
+      "text": "that we are going to construct therefore we are exercising a choice when we"
+    },
+    {
+      "start": "13:15",
+      "end": "13:15",
+      "text": "we are exercising a choice when we"
+    },
+    {
+      "start": "13:15",
+      "end": "13:19",
+      "text": "we are exercising a choice when we construct function f so what axiom of"
+    },
+    {
+      "start": "13:19",
+      "end": "13:19",
+      "text": "construct function f so what axiom of"
+    },
+    {
+      "start": "13:19",
+      "end": "13:21",
+      "text": "construct function f so what axiom of choice is that for any relation are the"
+    },
+    {
+      "start": "13:21",
+      "end": "13:21",
+      "text": "choice is that for any relation are the"
+    },
+    {
+      "start": "13:21",
+      "end": "13:24",
+      "text": "choice is that for any relation are the accessor function satisfying this"
+    },
+    {
+      "start": "13:24",
+      "end": "13:24",
+      "text": "accessor function satisfying this"
+    },
+    {
+      "start": "13:24",
+      "end": "13:25",
+      "text": "accessor function satisfying this condition that is the domain of the"
+    },
+    {
+      "start": "13:25",
+      "end": "13:25",
+      "text": "condition that is the domain of the"
+    },
+    {
+      "start": "13:25",
+      "end": "13:27",
+      "text": "condition that is the domain of the function is identical to the domain of"
+    },
+    {
+      "start": "13:27",
+      "end": "13:27",
+      "text": "function is identical to the domain of"
+    },
+    {
+      "start": "13:27",
+      "end": "13:32",
+      "text": "function is identical to the domain of odd"
+    },
+    {
+      "start": "13:40",
+      "end": "13:40",
+      "text": "what this says is that there is an"
+    },
+    {
+      "start": "13:40",
+      "end": "13:48",
+      "text": "what this says is that there is an inductive set"
+    },
+    {
+      "start": "13:56",
+      "end": "13:56",
+      "text": "or formally directs ascetics so that the"
+    },
+    {
+      "start": "13:56",
+      "end": "14:00",
+      "text": "or formally directs ascetics so that the empties it belongs to X and XS closed"
+    },
+    {
+      "start": "14:00",
+      "end": "14:00",
+      "text": "empties it belongs to X and XS closed"
+    },
+    {
+      "start": "14:00",
+      "end": "14:04",
+      "text": "empties it belongs to X and XS closed under the successor operate for every Y"
+    },
+    {
+      "start": "14:04",
+      "end": "14:04",
+      "text": "under the successor operate for every Y"
+    },
+    {
+      "start": "14:04",
+      "end": "14:07",
+      "text": "under the successor operate for every Y if Y belongs to X then the successor of"
+    },
+    {
+      "start": "14:07",
+      "end": "14:07",
+      "text": "if Y belongs to X then the successor of"
+    },
+    {
+      "start": "14:07",
+      "end": "14:10",
+      "text": "if Y belongs to X then the successor of Y also belongs to X that's when X is"
+    },
+    {
+      "start": "14:10",
+      "end": "14:10",
+      "text": "Y also belongs to X that's when X is"
+    },
+    {
+      "start": "14:10",
+      "end": "14:13",
+      "text": "Y also belongs to X that's when X is closed under the successor operate so"
+    },
+    {
+      "start": "14:13",
+      "end": "14:13",
+      "text": "closed under the successor operate so"
+    },
+    {
+      "start": "14:13",
+      "end": "14:15",
+      "text": "closed under the successor operate so the Infinity axiom says that there is an"
+    },
+    {
+      "start": "14:15",
+      "end": "14:15",
+      "text": "the Infinity axiom says that there is an"
+    },
+    {
+      "start": "14:15",
+      "end": "14:23",
+      "text": "the Infinity axiom says that there is an inductive set and the ninth axiom is the"
+    },
+    {
+      "start": "14:23",
+      "end": "14:23",
+      "text": "inductive set and the ninth axiom is the"
+    },
+    {
+      "start": "14:23",
+      "end": "14:32",
+      "text": "inductive set and the ninth axiom is the replacement axiom"
+    },
+    {
+      "start": "14:37",
+      "end": "14:37",
+      "text": "consider that you suppose every member"
+    },
+    {
+      "start": "14:37",
+      "end": "14:48",
+      "text": "consider that you suppose every member of you has a nominee an effects so why"
+    },
+    {
+      "start": "14:48",
+      "end": "14:48",
+      "text": "of you has a nominee an effects so why"
+    },
+    {
+      "start": "14:48",
+      "end": "14:50",
+      "text": "of you has a nominee an effects so why the nominee is gonna fly"
+    },
+    {
+      "start": "14:50",
+      "end": "14:50",
+      "text": "the nominee is gonna fly"
+    },
+    {
+      "start": "14:50",
+      "end": "14:54",
+      "text": "the nominee is gonna fly so the nominee function defines a unique"
+    },
+    {
+      "start": "14:54",
+      "end": "14:54",
+      "text": "so the nominee function defines a unique"
+    },
+    {
+      "start": "14:54",
+      "end": "14:59",
+      "text": "so the nominee function defines a unique nominee for every X then what does axiom"
+    },
+    {
+      "start": "14:59",
+      "end": "14:59",
+      "text": "nominee for every X then what does axiom"
+    },
+    {
+      "start": "14:59",
+      "end": "15:02",
+      "text": "nominee for every X then what does axiom says is that if every member of you has"
+    },
+    {
+      "start": "15:02",
+      "end": "15:02",
+      "text": "says is that if every member of you has"
+    },
+    {
+      "start": "15:02",
+      "end": "15:07",
+      "text": "says is that if every member of you has a nominee then there is a set that"
+    },
+    {
+      "start": "15:07",
+      "end": "15:07",
+      "text": "a nominee then there is a set that"
+    },
+    {
+      "start": "15:07",
+      "end": "15:24",
+      "text": "a nominee then there is a set that contains precisely the nominees of"
+    },
+    {
+      "start": "15:41",
+      "end": "15:41",
+      "text": "or in other words for any formula knew"
+    },
+    {
+      "start": "15:41",
+      "end": "15:45",
+      "text": "or in other words for any formula knew of XY which in fact asserts that Y is"
+    },
+    {
+      "start": "15:45",
+      "end": "15:45",
+      "text": "of XY which in fact asserts that Y is"
+    },
+    {
+      "start": "15:45",
+      "end": "15:58",
+      "text": "of XY which in fact asserts that Y is the nominee of X in which Z is not free"
+    },
+    {
+      "start": "16:10",
+      "end": "16:10",
+      "text": "for all X belonging to you for all a and"
+    },
+    {
+      "start": "16:10",
+      "end": "16:24",
+      "text": "for all X belonging to you for all a and B new of X a and new of X B implies that"
+    },
+    {
+      "start": "16:24",
+      "end": "16:24",
+      "text": "B new of X a and new of X B implies that"
+    },
+    {
+      "start": "16:24",
+      "end": "16:31",
+      "text": "B new of X a and new of X B implies that a equal to B so this is the antecedent"
+    },
+    {
+      "start": "16:31",
+      "end": "16:31",
+      "text": "a equal to B so this is the antecedent"
+    },
+    {
+      "start": "16:31",
+      "end": "16:35",
+      "text": "a equal to B so this is the antecedent of an implication what this says is that"
+    },
+    {
+      "start": "16:35",
+      "end": "16:35",
+      "text": "of an implication what this says is that"
+    },
+    {
+      "start": "16:35",
+      "end": "16:40",
+      "text": "of an implication what this says is that for every a B new of X a and new of X B"
+    },
+    {
+      "start": "16:40",
+      "end": "16:40",
+      "text": "for every a B new of X a and new of X B"
+    },
+    {
+      "start": "16:40",
+      "end": "16:42",
+      "text": "for every a B new of X a and new of X B implies that a equal to B in other words"
+    },
+    {
+      "start": "16:42",
+      "end": "16:42",
+      "text": "implies that a equal to B in other words"
+    },
+    {
+      "start": "16:42",
+      "end": "16:48",
+      "text": "implies that a equal to B in other words there is exactly one a for every X so"
+    },
+    {
+      "start": "16:48",
+      "end": "16:48",
+      "text": "there is exactly one a for every X so"
+    },
+    {
+      "start": "16:48",
+      "end": "16:51",
+      "text": "there is exactly one a for every X so that new of X a is satisfied in other"
+    },
+    {
+      "start": "16:51",
+      "end": "16:51",
+      "text": "that new of X a is satisfied in other"
+    },
+    {
+      "start": "16:51",
+      "end": "16:59",
+      "text": "that new of X a is satisfied in other words X has a unique nominee then the"
+    },
+    {
+      "start": "16:59",
+      "end": "16:59",
+      "text": "words X has a unique nominee then the"
+    },
+    {
+      "start": "16:59",
+      "end": "17:05",
+      "text": "words X has a unique nominee then the rexis Z so that for all Y Y belongs to Z"
+    },
+    {
+      "start": "17:05",
+      "end": "17:05",
+      "text": "rexis Z so that for all Y Y belongs to Z"
+    },
+    {
+      "start": "17:05",
+      "end": "17:13",
+      "text": "rexis Z so that for all Y Y belongs to Z if and only if the rexis X belongs to"
+    },
+    {
+      "start": "17:13",
+      "end": "17:13",
+      "text": "if and only if the rexis X belongs to"
+    },
+    {
+      "start": "17:13",
+      "end": "17:19",
+      "text": "if and only if the rexis X belongs to you so that new of x5"
+    },
+    {
+      "start": "17:23",
+      "end": "17:23",
+      "text": "in other words the rexis is that which"
+    },
+    {
+      "start": "17:23",
+      "end": "17:25",
+      "text": "in other words the rexis is that which contains exactly the nominees of the"
+    },
+    {
+      "start": "17:25",
+      "end": "17:25",
+      "text": "contains exactly the nominees of the"
+    },
+    {
+      "start": "17:25",
+      "end": "17:29",
+      "text": "contains exactly the nominees of the members of you that is for every y y"
+    },
+    {
+      "start": "17:29",
+      "end": "17:29",
+      "text": "members of you that is for every y y"
+    },
+    {
+      "start": "17:29",
+      "end": "17:32",
+      "text": "members of you that is for every y y belongs to Z precisely when y is the"
+    },
+    {
+      "start": "17:32",
+      "end": "17:32",
+      "text": "belongs to Z precisely when y is the"
+    },
+    {
+      "start": "17:32",
+      "end": "17:36",
+      "text": "belongs to Z precisely when y is the nominee of some X which belongs to you"
+    },
+    {
+      "start": "17:36",
+      "end": "17:36",
+      "text": "nominee of some X which belongs to you"
+    },
+    {
+      "start": "17:36",
+      "end": "17:41",
+      "text": "nominee of some X which belongs to you so the assertion is exactly that we had"
+    },
+    {
+      "start": "17:41",
+      "end": "17:41",
+      "text": "so the assertion is exactly that we had"
+    },
+    {
+      "start": "17:41",
+      "end": "17:42",
+      "text": "so the assertion is exactly that we had in mind there is a set that contains"
+    },
+    {
+      "start": "17:42",
+      "end": "17:42",
+      "text": "in mind there is a set that contains"
+    },
+    {
+      "start": "17:42",
+      "end": "17:45",
+      "text": "in mind there is a set that contains precisely the nominees of the members of"
+    },
+    {
+      "start": "17:45",
+      "end": "17:45",
+      "text": "precisely the nominees of the members of"
+    },
+    {
+      "start": "17:45",
+      "end": "17:51",
+      "text": "precisely the nominees of the members of you and the final axiom is the"
+    },
+    {
+      "start": "17:51",
+      "end": "17:51",
+      "text": "you and the final axiom is the"
+    },
+    {
+      "start": "17:51",
+      "end": "18:03",
+      "text": "you and the final axiom is the regularity axiom to say is that every"
+    },
+    {
+      "start": "18:03",
+      "end": "18:03",
+      "text": "regularity axiom to say is that every"
+    },
+    {
+      "start": "18:03",
+      "end": "18:16",
+      "text": "regularity axiom to say is that every non-empty set X has a member Y"
+    },
+    {
+      "start": "18:18",
+      "end": "18:18",
+      "text": "rip"
+    },
+    {
+      "start": "18:18",
+      "end": "18:27",
+      "text": "rip X intersection Y for the file"
+    },
+    {
+      "start": "18:34",
+      "end": "18:34",
+      "text": "you can show that this implies no set is"
+    },
+    {
+      "start": "18:34",
+      "end": "18:43",
+      "text": "you can show that this implies no set is an element of itself"
+    },
+    {
+      "start": "18:46",
+      "end": "18:46",
+      "text": "the paradoxes that are known within"
+    },
+    {
+      "start": "18:46",
+      "end": "18:49",
+      "text": "the paradoxes that are known within naive set theory will not arise within"
+    },
+    {
+      "start": "18:49",
+      "end": "18:49",
+      "text": "naive set theory will not arise within"
+    },
+    {
+      "start": "18:49",
+      "end": "18:52",
+      "text": "naive set theory will not arise within thermal or angles a theory now let us"
+    },
+    {
+      "start": "18:52",
+      "end": "18:52",
+      "text": "thermal or angles a theory now let us"
+    },
+    {
+      "start": "18:52",
+      "end": "19:07",
+      "text": "thermal or angles a theory now let us consider the notion of equinumerous it"
+    },
+    {
+      "start": "19:18",
+      "end": "19:18",
+      "text": "we say that set a is equinumerous with"
+    },
+    {
+      "start": "19:18",
+      "end": "19:26",
+      "text": "we say that set a is equinumerous with set B denoted in this fashion a is akin"
+    },
+    {
+      "start": "19:26",
+      "end": "19:26",
+      "text": "set B denoted in this fashion a is akin"
+    },
+    {
+      "start": "19:26",
+      "end": "19:30",
+      "text": "set B denoted in this fashion a is akin numerous with set B if and only if"
+    },
+    {
+      "start": "19:30",
+      "end": "19:30",
+      "text": "numerous with set B if and only if"
+    },
+    {
+      "start": "19:30",
+      "end": "19:38",
+      "text": "numerous with set B if and only if directs us a one-to-one mapping from a"
+    },
+    {
+      "start": "19:38",
+      "end": "19:38",
+      "text": "directs us a one-to-one mapping from a"
+    },
+    {
+      "start": "19:38",
+      "end": "19:46",
+      "text": "directs us a one-to-one mapping from a onto B"
+    },
+    {
+      "start": "19:54",
+      "end": "19:54",
+      "text": "we have seen that n cross n is equal"
+    },
+    {
+      "start": "19:54",
+      "end": "20:00",
+      "text": "we have seen that n cross n is equal immerse with end the set of all ordered"
+    },
+    {
+      "start": "20:00",
+      "end": "20:00",
+      "text": "immerse with end the set of all ordered"
+    },
+    {
+      "start": "20:00",
+      "end": "20:06",
+      "text": "immerse with end the set of all ordered pairs obtained from n is equal immerse"
+    },
+    {
+      "start": "20:06",
+      "end": "20:06",
+      "text": "pairs obtained from n is equal immerse"
+    },
+    {
+      "start": "20:06",
+      "end": "20:15",
+      "text": "pairs obtained from n is equal immerse with n itself similarly n is equals with"
+    },
+    {
+      "start": "20:15",
+      "end": "20:15",
+      "text": "with n itself similarly n is equals with"
+    },
+    {
+      "start": "20:15",
+      "end": "20:22",
+      "text": "with n itself similarly n is equals with the set of all even natural numbers n is"
+    },
+    {
+      "start": "20:22",
+      "end": "20:22",
+      "text": "the set of all even natural numbers n is"
+    },
+    {
+      "start": "20:22",
+      "end": "20:30",
+      "text": "the set of all even natural numbers n is the set of all natural numbers set of"
+    },
+    {
+      "start": "20:30",
+      "end": "20:30",
+      "text": "the set of all natural numbers set of"
+    },
+    {
+      "start": "20:30",
+      "end": "20:41",
+      "text": "the set of all natural numbers set of all even natural numbers"
+    },
+    {
+      "start": "20:45",
+      "end": "20:45",
+      "text": "is any so there is a mapping from n to n"
+    },
+    {
+      "start": "20:45",
+      "end": "20:50",
+      "text": "is any so there is a mapping from n to n e which is 1 to 1 and 1/2 in which we"
+    },
+    {
+      "start": "20:50",
+      "end": "20:50",
+      "text": "e which is 1 to 1 and 1/2 in which we"
+    },
+    {
+      "start": "20:50",
+      "end": "21:03",
+      "text": "e which is 1 to 1 and 1/2 in which we map extra to X coming to real numbers we"
+    },
+    {
+      "start": "21:03",
+      "end": "21:03",
+      "text": "map extra to X coming to real numbers we"
+    },
+    {
+      "start": "21:03",
+      "end": "21:06",
+      "text": "map extra to X coming to real numbers we can show that the interval from 0 to 1"
+    },
+    {
+      "start": "21:06",
+      "end": "21:06",
+      "text": "can show that the interval from 0 to 1"
+    },
+    {
+      "start": "21:06",
+      "end": "21:10",
+      "text": "can show that the interval from 0 to 1 this equinumerous with the set of all"
+    },
+    {
+      "start": "21:10",
+      "end": "21:10",
+      "text": "this equinumerous with the set of all"
+    },
+    {
+      "start": "21:10",
+      "end": "21:16",
+      "text": "this equinumerous with the set of all real numbers how do we show this to show"
+    },
+    {
+      "start": "21:16",
+      "end": "21:16",
+      "text": "real numbers how do we show this to show"
+    },
+    {
+      "start": "21:16",
+      "end": "21:20",
+      "text": "real numbers how do we show this to show this we consider the real line let us"
+    },
+    {
+      "start": "21:20",
+      "end": "21:20",
+      "text": "this we consider the real line let us"
+    },
+    {
+      "start": "21:20",
+      "end": "21:24",
+      "text": "this we consider the real line let us say this is the origin and this is 1 so"
+    },
+    {
+      "start": "21:24",
+      "end": "21:24",
+      "text": "say this is the origin and this is 1 so"
+    },
+    {
+      "start": "21:24",
+      "end": "21:26",
+      "text": "say this is the origin and this is 1 so we are considering the set of all points"
+    },
+    {
+      "start": "21:26",
+      "end": "21:26",
+      "text": "we are considering the set of all points"
+    },
+    {
+      "start": "21:26",
+      "end": "21:29",
+      "text": "we are considering the set of all points from 0 to 1 on the real line we want to"
+    },
+    {
+      "start": "21:29",
+      "end": "21:29",
+      "text": "from 0 to 1 on the real line we want to"
+    },
+    {
+      "start": "21:29",
+      "end": "21:33",
+      "text": "from 0 to 1 on the real line we want to show that this set as equinumerous with"
+    },
+    {
+      "start": "21:33",
+      "end": "21:33",
+      "text": "show that this set as equinumerous with"
+    },
+    {
+      "start": "21:33",
+      "end": "21:39",
+      "text": "show that this set as equinumerous with the points from the real line itself to"
+    },
+    {
+      "start": "21:39",
+      "end": "21:39",
+      "text": "the points from the real line itself to"
+    },
+    {
+      "start": "21:39",
+      "end": "21:41",
+      "text": "the points from the real line itself to prove this what we do is this consider"
+    },
+    {
+      "start": "21:41",
+      "end": "21:41",
+      "text": "prove this what we do is this consider"
+    },
+    {
+      "start": "21:41",
+      "end": "21:44",
+      "text": "prove this what we do is this consider the portion of the real line from 0 to 1"
+    },
+    {
+      "start": "21:44",
+      "end": "21:44",
+      "text": "the portion of the real line from 0 to 1"
+    },
+    {
+      "start": "21:44",
+      "end": "21:47",
+      "text": "the portion of the real line from 0 to 1 that is a line segment from 0 to 1 we"
+    },
+    {
+      "start": "21:47",
+      "end": "21:47",
+      "text": "that is a line segment from 0 to 1 we"
+    },
+    {
+      "start": "21:47",
+      "end": "21:52",
+      "text": "that is a line segment from 0 to 1 we take it and bend it so that it forms a"
+    },
+    {
+      "start": "21:52",
+      "end": "21:52",
+      "text": "take it and bend it so that it forms a"
+    },
+    {
+      "start": "21:52",
+      "end": "21:56",
+      "text": "take it and bend it so that it forms a semicircle and arrange the semicircle so"
+    },
+    {
+      "start": "21:56",
+      "end": "21:56",
+      "text": "semicircle and arrange the semicircle so"
+    },
+    {
+      "start": "21:56",
+      "end": "22:00",
+      "text": "semicircle and arrange the semicircle so that the real line is a tangent to the"
+    },
+    {
+      "start": "22:00",
+      "end": "22:00",
+      "text": "that the real line is a tangent to the"
+    },
+    {
+      "start": "22:00",
+      "end": "22:04",
+      "text": "that the real line is a tangent to the semicircle so the length of the"
+    },
+    {
+      "start": "22:04",
+      "end": "22:04",
+      "text": "semicircle so the length of the"
+    },
+    {
+      "start": "22:04",
+      "end": "22:09",
+      "text": "semicircle so the length of the semicircle is 1 because this has been"
+    },
+    {
+      "start": "22:09",
+      "end": "22:09",
+      "text": "semicircle is 1 because this has been"
+    },
+    {
+      "start": "22:09",
+      "end": "22:11",
+      "text": "semicircle is 1 because this has been obtained from the interval 0 to 1 by"
+    },
+    {
+      "start": "22:11",
+      "end": "22:11",
+      "text": "obtained from the interval 0 to 1 by"
+    },
+    {
+      "start": "22:11",
+      "end": "22:14",
+      "text": "obtained from the interval 0 to 1 by bending the interval 0 to 1 so this has"
+    },
+    {
+      "start": "22:14",
+      "end": "22:14",
+      "text": "bending the interval 0 to 1 so this has"
+    },
+    {
+      "start": "22:14",
+      "end": "22:21",
+      "text": "bending the interval 0 to 1 so this has a radius of 1 by pi"
+    },
+    {
+      "start": "22:26",
+      "end": "22:26",
+      "text": "so the origin of the circle would be 0"
+    },
+    {
+      "start": "22:26",
+      "end": "22:38",
+      "text": "so the origin of the circle would be 0 minus 1 by 3 on the real plane so this"
+    },
+    {
+      "start": "22:38",
+      "end": "22:38",
+      "text": "minus 1 by 3 on the real plane so this"
+    },
+    {
+      "start": "22:38",
+      "end": "22:43",
+      "text": "minus 1 by 3 on the real plane so this is what the origin is and then let us"
+    },
+    {
+      "start": "22:43",
+      "end": "22:43",
+      "text": "is what the origin is and then let us"
+    },
+    {
+      "start": "22:43",
+      "end": "22:48",
+      "text": "is what the origin is and then let us say we draw a line passing through the"
+    },
+    {
+      "start": "22:48",
+      "end": "22:48",
+      "text": "say we draw a line passing through the"
+    },
+    {
+      "start": "22:48",
+      "end": "22:52",
+      "text": "say we draw a line passing through the origin of the circle and some point on"
+    },
+    {
+      "start": "22:52",
+      "end": "22:52",
+      "text": "origin of the circle and some point on"
+    },
+    {
+      "start": "22:52",
+      "end": "23:00",
+      "text": "origin of the circle and some point on the real line this way the Ray with the"
+    },
+    {
+      "start": "23:00",
+      "end": "23:00",
+      "text": "the real line this way the Ray with the"
+    },
+    {
+      "start": "23:00",
+      "end": "23:08",
+      "text": "the real line this way the Ray with the origin as its vertex will intersect the"
+    },
+    {
+      "start": "23:08",
+      "end": "23:08",
+      "text": "origin as its vertex will intersect the"
+    },
+    {
+      "start": "23:08",
+      "end": "23:12",
+      "text": "origin as its vertex will intersect the semicircle at some point and it will"
+    },
+    {
+      "start": "23:12",
+      "end": "23:12",
+      "text": "semicircle at some point and it will"
+    },
+    {
+      "start": "23:12",
+      "end": "23:14",
+      "text": "semicircle at some point and it will intersect the real line exactly one"
+    },
+    {
+      "start": "23:14",
+      "end": "23:14",
+      "text": "intersect the real line exactly one"
+    },
+    {
+      "start": "23:14",
+      "end": "23:17",
+      "text": "intersect the real line exactly one point then let us define a function f"
+    },
+    {
+      "start": "23:17",
+      "end": "23:17",
+      "text": "point then let us define a function f"
+    },
+    {
+      "start": "23:17",
+      "end": "23:23",
+      "text": "point then let us define a function f which Maps the circular point onto the"
+    },
+    {
+      "start": "23:23",
+      "end": "23:23",
+      "text": "which Maps the circular point onto the"
+    },
+    {
+      "start": "23:23",
+      "end": "23:26",
+      "text": "which Maps the circular point onto the real line point so f is defined in this"
+    },
+    {
+      "start": "23:26",
+      "end": "23:26",
+      "text": "real line point so f is defined in this"
+    },
+    {
+      "start": "23:26",
+      "end": "23:35",
+      "text": "real line point so f is defined in this manner so this function f Maps the"
+    },
+    {
+      "start": "23:35",
+      "end": "23:35",
+      "text": "manner so this function f Maps the"
+    },
+    {
+      "start": "23:35",
+      "end": "23:41",
+      "text": "manner so this function f Maps the interval 0 to 1"
+    },
+    {
+      "start": "23:56",
+      "end": "23:56",
+      "text": "instead of another line for example this"
+    },
+    {
+      "start": "23:56",
+      "end": "24:01",
+      "text": "instead of another line for example this will pass through these two points so"
+    },
+    {
+      "start": "24:01",
+      "end": "24:01",
+      "text": "will pass through these two points so"
+    },
+    {
+      "start": "24:01",
+      "end": "24:03",
+      "text": "will pass through these two points so this point is mapped to and negative"
+    },
+    {
+      "start": "24:03",
+      "end": "24:03",
+      "text": "this point is mapped to and negative"
+    },
+    {
+      "start": "24:03",
+      "end": "24:07",
+      "text": "this point is mapped to and negative real number so it shows that the"
+    },
+    {
+      "start": "24:07",
+      "end": "24:07",
+      "text": "real number so it shows that the"
+    },
+    {
+      "start": "24:07",
+      "end": "24:12",
+      "text": "real number so it shows that the interval 0 to 1 has a 1 to 1 onto"
+    },
+    {
+      "start": "24:12",
+      "end": "24:12",
+      "text": "interval 0 to 1 has a 1 to 1 onto"
+    },
+    {
+      "start": "24:12",
+      "end": "24:15",
+      "text": "interval 0 to 1 has a 1 to 1 onto mapping to the set of all real numbers"
+    },
+    {
+      "start": "24:15",
+      "end": "24:15",
+      "text": "mapping to the set of all real numbers"
+    },
+    {
+      "start": "24:15",
+      "end": "24:19",
+      "text": "mapping to the set of all real numbers therefore the interval 0 to 1 is equal"
+    },
+    {
+      "start": "24:19",
+      "end": "24:19",
+      "text": "therefore the interval 0 to 1 is equal"
+    },
+    {
+      "start": "24:19",
+      "end": "24:24",
+      "text": "therefore the interval 0 to 1 is equal muris with the set of all real numbers"
+    },
+    {
+      "start": "24:30",
+      "end": "24:30",
+      "text": "let this be the notation for the set of"
+    },
+    {
+      "start": "24:30",
+      "end": "24:40",
+      "text": "let this be the notation for the set of all functions from A to B"
+    },
+    {
+      "start": "24:49",
+      "end": "24:49",
+      "text": "in particular a - will denote the set of"
+    },
+    {
+      "start": "24:49",
+      "end": "25:00",
+      "text": "in particular a - will denote the set of all functions from"
+    },
+    {
+      "start": "25:05",
+      "end": "25:05",
+      "text": "a to the set to which according to our"
+    },
+    {
+      "start": "25:05",
+      "end": "25:09",
+      "text": "a to the set to which according to our definition is this we are considering"
+    },
+    {
+      "start": "25:09",
+      "end": "25:09",
+      "text": "definition is this we are considering"
+    },
+    {
+      "start": "25:09",
+      "end": "25:12",
+      "text": "definition is this we are considering the natural number two in the embedding"
+    },
+    {
+      "start": "25:12",
+      "end": "25:13",
+      "text": "the natural number two in the embedding"
+    },
+    {
+      "start": "25:13",
+      "end": "25:14",
+      "text": "the natural number two in the embedding of the theory of natural numbers in set"
+    },
+    {
+      "start": "25:14",
+      "end": "25:14",
+      "text": "of the theory of natural numbers in set"
+    },
+    {
+      "start": "25:14",
+      "end": "25:16",
+      "text": "of the theory of natural numbers in set theory we had defined natural number two"
+    },
+    {
+      "start": "25:16",
+      "end": "25:16",
+      "text": "theory we had defined natural number two"
+    },
+    {
+      "start": "25:16",
+      "end": "25:21",
+      "text": "theory we had defined natural number two as the set 0 1 where 0 is the empty set"
+    },
+    {
+      "start": "25:21",
+      "end": "25:21",
+      "text": "as the set 0 1 where 0 is the empty set"
+    },
+    {
+      "start": "25:21",
+      "end": "25:24",
+      "text": "as the set 0 1 where 0 is the empty set and 1 is the singleton containing the"
+    },
+    {
+      "start": "25:24",
+      "end": "25:24",
+      "text": "and 1 is the singleton containing the"
+    },
+    {
+      "start": "25:24",
+      "end": "25:25",
+      "text": "and 1 is the singleton containing the empty set"
+    },
+    {
+      "start": "25:25",
+      "end": "25:25",
+      "text": "empty set"
+    },
+    {
+      "start": "25:25",
+      "end": "25:28",
+      "text": "empty set so by superscript a 2 we denote the set"
+    },
+    {
+      "start": "25:28",
+      "end": "25:28",
+      "text": "so by superscript a 2 we denote the set"
+    },
+    {
+      "start": "25:28",
+      "end": "25:34",
+      "text": "so by superscript a 2 we denote the set of all functions from a 2 to recall to"
+    },
+    {
+      "start": "25:34",
+      "end": "25:34",
+      "text": "of all functions from a 2 to recall to"
+    },
+    {
+      "start": "25:34",
+      "end": "25:44",
+      "text": "of all functions from a 2 to recall to power a is the power set of a we claim"
+    },
+    {
+      "start": "25:44",
+      "end": "25:44",
+      "text": "power a is the power set of a we claim"
+    },
+    {
+      "start": "25:44",
+      "end": "25:50",
+      "text": "power a is the power set of a we claim that superscript 8 to this equinumerous"
+    },
+    {
+      "start": "25:50",
+      "end": "25:50",
+      "text": "that superscript 8 to this equinumerous"
+    },
+    {
+      "start": "25:50",
+      "end": "25:55",
+      "text": "that superscript 8 to this equinumerous with do superscript a this is the set of"
+    },
+    {
+      "start": "25:55",
+      "end": "25:55",
+      "text": "with do superscript a this is the set of"
+    },
+    {
+      "start": "25:55",
+      "end": "25:59",
+      "text": "with do superscript a this is the set of all functions from a to 2 and this is"
+    },
+    {
+      "start": "25:59",
+      "end": "25:59",
+      "text": "all functions from a to 2 and this is"
+    },
+    {
+      "start": "25:59",
+      "end": "26:05",
+      "text": "all functions from a to 2 and this is the set of all subsets of a these two"
+    },
+    {
+      "start": "26:05",
+      "end": "26:05",
+      "text": "the set of all subsets of a these two"
+    },
+    {
+      "start": "26:05",
+      "end": "26:08",
+      "text": "the set of all subsets of a these two sets are equal numerous but how do we"
+    },
+    {
+      "start": "26:08",
+      "end": "26:08",
+      "text": "sets are equal numerous but how do we"
+    },
+    {
+      "start": "26:08",
+      "end": "26:11",
+      "text": "sets are equal numerous but how do we show that they are equinumerous let us"
+    },
+    {
+      "start": "26:11",
+      "end": "26:11",
+      "text": "show that they are equinumerous let us"
+    },
+    {
+      "start": "26:11",
+      "end": "26:22",
+      "text": "show that they are equinumerous let us consider any subsets of a"
+    },
+    {
+      "start": "26:26",
+      "end": "26:26",
+      "text": "supposed to be the subset then B has a"
+    },
+    {
+      "start": "26:26",
+      "end": "26:28",
+      "text": "supposed to be the subset then B has a characteristic function the"
+    },
+    {
+      "start": "26:28",
+      "end": "26:28",
+      "text": "characteristic function the"
+    },
+    {
+      "start": "26:28",
+      "end": "26:31",
+      "text": "characteristic function the characteristic function of B FB is"
+    },
+    {
+      "start": "26:31",
+      "end": "26:31",
+      "text": "characteristic function of B FB is"
+    },
+    {
+      "start": "26:31",
+      "end": "26:35",
+      "text": "characteristic function of B FB is defined in this manner FB of X is 1 if"
+    },
+    {
+      "start": "26:35",
+      "end": "26:35",
+      "text": "defined in this manner FB of X is 1 if"
+    },
+    {
+      "start": "26:35",
+      "end": "26:41",
+      "text": "defined in this manner FB of X is 1 if and only if X belongs to B or in other"
+    },
+    {
+      "start": "26:41",
+      "end": "26:41",
+      "text": "and only if X belongs to B or in other"
+    },
+    {
+      "start": "26:41",
+      "end": "26:47",
+      "text": "and only if X belongs to B or in other words it's 1 if X belongs to B it is 0"
+    },
+    {
+      "start": "26:47",
+      "end": "26:47",
+      "text": "words it's 1 if X belongs to B it is 0"
+    },
+    {
+      "start": "26:47",
+      "end": "26:51",
+      "text": "words it's 1 if X belongs to B it is 0 otherwise the characteristic function is"
+    },
+    {
+      "start": "26:51",
+      "end": "26:51",
+      "text": "otherwise the characteristic function is"
+    },
+    {
+      "start": "26:51",
+      "end": "26:56",
+      "text": "otherwise the characteristic function is a binary function so FB happens to be a"
+    },
+    {
+      "start": "26:56",
+      "end": "26:56",
+      "text": "a binary function so FB happens to be a"
+    },
+    {
+      "start": "26:56",
+      "end": "27:05",
+      "text": "a binary function so FB happens to be a mapping from a to 2 so FB is a member of"
+    },
+    {
+      "start": "27:05",
+      "end": "27:05",
+      "text": "mapping from a to 2 so FB is a member of"
+    },
+    {
+      "start": "27:05",
+      "end": "27:10",
+      "text": "mapping from a to 2 so FB is a member of the set of all functions from a to 2 so"
+    },
+    {
+      "start": "27:10",
+      "end": "27:10",
+      "text": "the set of all functions from a to 2 so"
+    },
+    {
+      "start": "27:10",
+      "end": "27:13",
+      "text": "the set of all functions from a to 2 so what we find is this corresponding to"
+    },
+    {
+      "start": "27:13",
+      "end": "27:13",
+      "text": "what we find is this corresponding to"
+    },
+    {
+      "start": "27:13",
+      "end": "27:17",
+      "text": "what we find is this corresponding to any subset B of a there exists a unique"
+    },
+    {
+      "start": "27:17",
+      "end": "27:17",
+      "text": "any subset B of a there exists a unique"
+    },
+    {
+      "start": "27:17",
+      "end": "27:26",
+      "text": "any subset B of a there exists a unique function f b of superscript a 2 and this"
+    },
+    {
+      "start": "27:26",
+      "end": "27:26",
+      "text": "function f b of superscript a 2 and this"
+    },
+    {
+      "start": "27:26",
+      "end": "27:28",
+      "text": "function f b of superscript a 2 and this is a unique function the characteristic"
+    },
+    {
+      "start": "27:28",
+      "end": "27:28",
+      "text": "is a unique function the characteristic"
+    },
+    {
+      "start": "27:28",
+      "end": "27:32",
+      "text": "is a unique function the characteristic function of B happens to be a member of"
+    },
+    {
+      "start": "27:32",
+      "end": "27:32",
+      "text": "function of B happens to be a member of"
+    },
+    {
+      "start": "27:32",
+      "end": "27:36",
+      "text": "function of B happens to be a member of superscript a 2 therefore these two sets"
+    },
+    {
+      "start": "27:36",
+      "end": "27:36",
+      "text": "superscript a 2 therefore these two sets"
+    },
+    {
+      "start": "27:36",
+      "end": "27:45",
+      "text": "superscript a 2 therefore these two sets are equal numerous theorem it says that"
+    },
+    {
+      "start": "27:45",
+      "end": "27:45",
+      "text": "are equal numerous theorem it says that"
+    },
+    {
+      "start": "27:45",
+      "end": "27:50",
+      "text": "are equal numerous theorem it says that a is not equal murus with its own power"
+    },
+    {
+      "start": "27:50",
+      "end": "27:50",
+      "text": "a is not equal murus with its own power"
+    },
+    {
+      "start": "27:50",
+      "end": "27:55",
+      "text": "a is not equal murus with its own power set no set is equinumerous with its own"
+    },
+    {
+      "start": "27:55",
+      "end": "27:55",
+      "text": "set no set is equinumerous with its own"
+    },
+    {
+      "start": "27:55",
+      "end": "28:02",
+      "text": "set no set is equinumerous with its own power set how do we prove this consider"
+    },
+    {
+      "start": "28:02",
+      "end": "28:02",
+      "text": "power set how do we prove this consider"
+    },
+    {
+      "start": "28:02",
+      "end": "28:08",
+      "text": "power set how do we prove this consider any mapping F"
+    },
+    {
+      "start": "28:12",
+      "end": "28:12",
+      "text": "consider an arbitrary mapping F from a 2"
+    },
+    {
+      "start": "28:12",
+      "end": "28:17",
+      "text": "consider an arbitrary mapping F from a 2 to power a so it Maps the members of a"
+    },
+    {
+      "start": "28:17",
+      "end": "28:17",
+      "text": "to power a so it Maps the members of a"
+    },
+    {
+      "start": "28:17",
+      "end": "28:26",
+      "text": "to power a so it Maps the members of a two subsets of a so for X f of X is a"
+    },
+    {
+      "start": "28:26",
+      "end": "28:26",
+      "text": "two subsets of a so for X f of X is a"
+    },
+    {
+      "start": "28:26",
+      "end": "28:31",
+      "text": "two subsets of a so for X f of X is a subset of a when X is a member of a so"
+    },
+    {
+      "start": "28:31",
+      "end": "28:31",
+      "text": "subset of a when X is a member of a so"
+    },
+    {
+      "start": "28:31",
+      "end": "28:37",
+      "text": "subset of a when X is a member of a so let us say that X owns the members of f"
+    },
+    {
+      "start": "28:37",
+      "end": "28:37",
+      "text": "let us say that X owns the members of f"
+    },
+    {
+      "start": "28:37",
+      "end": "28:45",
+      "text": "let us say that X owns the members of f of X"
+    },
+    {
+      "start": "28:53",
+      "end": "28:53",
+      "text": "then let us define a set B B is the set"
+    },
+    {
+      "start": "28:53",
+      "end": "29:00",
+      "text": "then let us define a set B B is the set of precisely those members of a so that"
+    },
+    {
+      "start": "29:00",
+      "end": "29:00",
+      "text": "of precisely those members of a so that"
+    },
+    {
+      "start": "29:00",
+      "end": "29:03",
+      "text": "of precisely those members of a so that X does not belong to f of X in other"
+    },
+    {
+      "start": "29:03",
+      "end": "29:03",
+      "text": "X does not belong to f of X in other"
+    },
+    {
+      "start": "29:03",
+      "end": "29:17",
+      "text": "X does not belong to f of X in other words B is the set of those members of a"
+    },
+    {
+      "start": "29:41",
+      "end": "29:41",
+      "text": "for each X belongs to a X belongs to B"
+    },
+    {
+      "start": "29:41",
+      "end": "29:47",
+      "text": "for each X belongs to a X belongs to B if and only if X does not belong to f of"
+    },
+    {
+      "start": "29:47",
+      "end": "29:47",
+      "text": "if and only if X does not belong to f of"
+    },
+    {
+      "start": "29:47",
+      "end": "29:55",
+      "text": "if and only if X does not belong to f of X by definition for some x belonging to"
+    },
+    {
+      "start": "29:55",
+      "end": "29:55",
+      "text": "X by definition for some x belonging to"
+    },
+    {
+      "start": "29:55",
+      "end": "30:05",
+      "text": "X by definition for some x belonging to a if B equal to f of X suppose B happens"
+    },
+    {
+      "start": "30:05",
+      "end": "30:05",
+      "text": "a if B equal to f of X suppose B happens"
+    },
+    {
+      "start": "30:05",
+      "end": "30:12",
+      "text": "a if B equal to f of X suppose B happens to be the image of some X under F then"
+    },
+    {
+      "start": "30:12",
+      "end": "30:12",
+      "text": "to be the image of some X under F then"
+    },
+    {
+      "start": "30:12",
+      "end": "30:15",
+      "text": "to be the image of some X under F then let us consider the possibilities one"
+    },
+    {
+      "start": "30:15",
+      "end": "30:15",
+      "text": "let us consider the possibilities one"
+    },
+    {
+      "start": "30:15",
+      "end": "30:22",
+      "text": "let us consider the possibilities one possibility is that X belongs to B but"
+    },
+    {
+      "start": "30:22",
+      "end": "30:22",
+      "text": "possibility is that X belongs to B but"
+    },
+    {
+      "start": "30:22",
+      "end": "30:26",
+      "text": "possibility is that X belongs to B but then B is the same as f of X then X"
+    },
+    {
+      "start": "30:26",
+      "end": "30:26",
+      "text": "then B is the same as f of X then X"
+    },
+    {
+      "start": "30:26",
+      "end": "30:31",
+      "text": "then B is the same as f of X then X belongs to f of X if X belongs to f of X"
+    },
+    {
+      "start": "30:31",
+      "end": "30:31",
+      "text": "belongs to f of X if X belongs to f of X"
+    },
+    {
+      "start": "30:31",
+      "end": "30:34",
+      "text": "belongs to f of X if X belongs to f of X then X should not belong to B because b"
+    },
+    {
+      "start": "30:34",
+      "end": "30:34",
+      "text": "then X should not belong to B because b"
+    },
+    {
+      "start": "30:34",
+      "end": "30:38",
+      "text": "then X should not belong to B because b happens to be the set of precisely those"
+    },
+    {
+      "start": "30:38",
+      "end": "30:38",
+      "text": "happens to be the set of precisely those"
+    },
+    {
+      "start": "30:38",
+      "end": "30:42",
+      "text": "happens to be the set of precisely those that do not own themselves so if X"
+    },
+    {
+      "start": "30:42",
+      "end": "30:42",
+      "text": "that do not own themselves so if X"
+    },
+    {
+      "start": "30:42",
+      "end": "30:45",
+      "text": "that do not own themselves so if X belongs to f of X then X owns itself so"
+    },
+    {
+      "start": "30:45",
+      "end": "30:45",
+      "text": "belongs to f of X then X owns itself so"
+    },
+    {
+      "start": "30:45",
+      "end": "30:48",
+      "text": "belongs to f of X then X owns itself so X shouldn't belong to B on the other"
+    },
+    {
+      "start": "30:48",
+      "end": "30:48",
+      "text": "X shouldn't belong to B on the other"
+    },
+    {
+      "start": "30:48",
+      "end": "30:55",
+      "text": "X shouldn't belong to B on the other hand if X does not belong to B then X"
+    },
+    {
+      "start": "30:55",
+      "end": "30:55",
+      "text": "hand if X does not belong to B then X"
+    },
+    {
+      "start": "30:55",
+      "end": "31:00",
+      "text": "hand if X does not belong to B then X doesn't own itself this implies that X"
+    },
+    {
+      "start": "31:00",
+      "end": "31:00",
+      "text": "doesn't own itself this implies that X"
+    },
+    {
+      "start": "31:00",
+      "end": "31:03",
+      "text": "doesn't own itself this implies that X belongs to B so either way we get a"
+    },
+    {
+      "start": "31:03",
+      "end": "31:03",
+      "text": "belongs to B so either way we get a"
+    },
+    {
+      "start": "31:03",
+      "end": "31:06",
+      "text": "belongs to B so either way we get a contradiction therefore what we have is"
+    },
+    {
+      "start": "31:06",
+      "end": "31:07",
+      "text": "contradiction therefore what we have is"
+    },
+    {
+      "start": "31:07",
+      "end": "31:22",
+      "text": "contradiction therefore what we have is that B is not equal to f of X for any X"
+    },
+    {
+      "start": "31:26",
+      "end": "31:26",
+      "text": "but bees of course a subset of a which"
+    },
+    {
+      "start": "31:26",
+      "end": "31:31",
+      "text": "but bees of course a subset of a which means B is a member of to power a"
+    },
+    {
+      "start": "31:35",
+      "end": "31:35",
+      "text": "therefore there is a member of to power"
+    },
+    {
+      "start": "31:35",
+      "end": "31:52",
+      "text": "therefore there is a member of to power a that is not an image"
+    },
+    {
+      "start": "31:56",
+      "end": "31:56",
+      "text": "under the function f or in other words F"
+    },
+    {
+      "start": "31:56",
+      "end": "32:03",
+      "text": "under the function f or in other words F is not one to mind you the function f"
+    },
+    {
+      "start": "32:03",
+      "end": "32:03",
+      "text": "is not one to mind you the function f"
+    },
+    {
+      "start": "32:03",
+      "end": "32:05",
+      "text": "is not one to mind you the function f that we considered as an arbitrary one"
+    },
+    {
+      "start": "32:05",
+      "end": "32:05",
+      "text": "that we considered as an arbitrary one"
+    },
+    {
+      "start": "32:05",
+      "end": "32:07",
+      "text": "that we considered as an arbitrary one we have considered an arbitrary function"
+    },
+    {
+      "start": "32:07",
+      "end": "32:07",
+      "text": "we have considered an arbitrary function"
+    },
+    {
+      "start": "32:07",
+      "end": "32:08",
+      "text": "we have considered an arbitrary function f here"
+    },
+    {
+      "start": "32:08",
+      "end": "32:08",
+      "text": "f here"
+    },
+    {
+      "start": "32:08",
+      "end": "32:10",
+      "text": "f here and what we have shown is that this"
+    },
+    {
+      "start": "32:10",
+      "end": "32:10",
+      "text": "and what we have shown is that this"
+    },
+    {
+      "start": "32:10",
+      "end": "32:13",
+      "text": "and what we have shown is that this function is not on two so any function f"
+    },
+    {
+      "start": "32:13",
+      "end": "32:13",
+      "text": "function is not on two so any function f"
+    },
+    {
+      "start": "32:13",
+      "end": "32:19",
+      "text": "function is not on two so any function f from a to Papa a is on - so what we have"
+    },
+    {
+      "start": "32:19",
+      "end": "32:19",
+      "text": "from a to Papa a is on - so what we have"
+    },
+    {
+      "start": "32:19",
+      "end": "32:24",
+      "text": "from a to Papa a is on - so what we have established is that f is not one - since"
+    },
+    {
+      "start": "32:24",
+      "end": "32:24",
+      "text": "established is that f is not one - since"
+    },
+    {
+      "start": "32:24",
+      "end": "32:30",
+      "text": "established is that f is not one - since F is arbitrary we have that no function"
+    },
+    {
+      "start": "32:30",
+      "end": "32:30",
+      "text": "F is arbitrary we have that no function"
+    },
+    {
+      "start": "32:30",
+      "end": "32:40",
+      "text": "F is arbitrary we have that no function from a to - bar a is on which means a is"
+    },
+    {
+      "start": "32:40",
+      "end": "32:40",
+      "text": "from a to - bar a is on which means a is"
+    },
+    {
+      "start": "32:40",
+      "end": "32:45",
+      "text": "from a to - bar a is on which means a is not equal muris to 2pi in other words no"
+    },
+    {
+      "start": "32:45",
+      "end": "32:45",
+      "text": "not equal muris to 2pi in other words no"
+    },
+    {
+      "start": "32:45",
+      "end": "32:48",
+      "text": "not equal muris to 2pi in other words no set can be equinumerous with its own"
+    },
+    {
+      "start": "32:48",
+      "end": "32:48",
+      "text": "set can be equinumerous with its own"
+    },
+    {
+      "start": "32:48",
+      "end": "32:57",
+      "text": "set can be equinumerous with its own power set we say that a set is finite"
+    },
+    {
+      "start": "33:04",
+      "end": "33:04",
+      "text": "if it is equinumerous with a natural"
+    },
+    {
+      "start": "33:04",
+      "end": "33:19",
+      "text": "if it is equinumerous with a natural number now let us consider a theorem"
+    },
+    {
+      "start": "33:19",
+      "end": "33:19",
+      "text": "number now let us consider a theorem"
+    },
+    {
+      "start": "33:19",
+      "end": "33:21",
+      "text": "number now let us consider a theorem which is famous under the name"
+    },
+    {
+      "start": "33:21",
+      "end": "33:21",
+      "text": "which is famous under the name"
+    },
+    {
+      "start": "33:21",
+      "end": "33:26",
+      "text": "which is famous under the name pigeonhole principle for pigeonhole"
+    },
+    {
+      "start": "33:26",
+      "end": "33:26",
+      "text": "pigeonhole principle for pigeonhole"
+    },
+    {
+      "start": "33:26",
+      "end": "33:35",
+      "text": "pigeonhole principle for pigeonhole principle says that no natural number is"
+    },
+    {
+      "start": "33:46",
+      "end": "33:46",
+      "text": "equinumerous with a proper subset of"
+    },
+    {
+      "start": "33:46",
+      "end": "33:50",
+      "text": "equinumerous with a proper subset of itself"
+    },
+    {
+      "start": "33:55",
+      "end": "33:55",
+      "text": "remember n minus one is a subset of n"
+    },
+    {
+      "start": "33:55",
+      "end": "33:57",
+      "text": "remember n minus one is a subset of n under the definition of our natural"
+    },
+    {
+      "start": "33:57",
+      "end": "33:57",
+      "text": "under the definition of our natural"
+    },
+    {
+      "start": "33:57",
+      "end": "34:00",
+      "text": "under the definition of our natural numbers so what it says is that no"
+    },
+    {
+      "start": "34:00",
+      "end": "34:00",
+      "text": "numbers so what it says is that no"
+    },
+    {
+      "start": "34:00",
+      "end": "34:03",
+      "text": "numbers so what it says is that no natural number is equinumerous with any"
+    },
+    {
+      "start": "34:03",
+      "end": "34:03",
+      "text": "natural number is equinumerous with any"
+    },
+    {
+      "start": "34:03",
+      "end": "34:09",
+      "text": "natural number is equinumerous with any smaller natural number therefore as a"
+    },
+    {
+      "start": "34:09",
+      "end": "34:09",
+      "text": "smaller natural number therefore as a"
+    },
+    {
+      "start": "34:09",
+      "end": "34:15",
+      "text": "smaller natural number therefore as a corollary we can argue that any set"
+    },
+    {
+      "start": "34:24",
+      "end": "34:24",
+      "text": "equinumerous with a proper subset of"
+    },
+    {
+      "start": "34:24",
+      "end": "34:32",
+      "text": "equinumerous with a proper subset of itself"
+    },
+    {
+      "start": "34:43",
+      "end": "34:43",
+      "text": "in other words it is not equinumerous"
+    },
+    {
+      "start": "34:43",
+      "end": "34:49",
+      "text": "in other words it is not equinumerous with any natural number for a finite set"
+    },
+    {
+      "start": "34:49",
+      "end": "34:49",
+      "text": "with any natural number for a finite set"
+    },
+    {
+      "start": "34:49",
+      "end": "34:58",
+      "text": "with any natural number for a finite set a the natural number that is"
+    },
+    {
+      "start": "34:58",
+      "end": "34:58",
+      "text": "a the natural number that is"
+    },
+    {
+      "start": "34:58",
+      "end": "35:09",
+      "text": "a the natural number that is equinumerous with"
+    },
+    {
+      "start": "35:32",
+      "end": "35:32",
+      "text": "this is denoted as card a for example"
+    },
+    {
+      "start": "35:32",
+      "end": "35:37",
+      "text": "this is denoted as card a for example consider the set"
+    },
+    {
+      "start": "35:50",
+      "end": "35:50",
+      "text": "there is a one-to-one mapping from the"
+    },
+    {
+      "start": "35:50",
+      "end": "35:57",
+      "text": "there is a one-to-one mapping from the given set a 1/2 the natural number for"
+    },
+    {
+      "start": "35:57",
+      "end": "35:57",
+      "text": "given set a 1/2 the natural number for"
+    },
+    {
+      "start": "35:57",
+      "end": "36:02",
+      "text": "given set a 1/2 the natural number for therefore a is equanimous with 4 but in"
+    },
+    {
+      "start": "36:02",
+      "end": "36:02",
+      "text": "therefore a is equanimous with 4 but in"
+    },
+    {
+      "start": "36:02",
+      "end": "36:06",
+      "text": "therefore a is equanimous with 4 but in other words the Cardinal number of a is"
+    },
+    {
+      "start": "36:06",
+      "end": "36:06",
+      "text": "other words the Cardinal number of a is"
+    },
+    {
+      "start": "36:06",
+      "end": "36:11",
+      "text": "other words the Cardinal number of a is 4 or we say the cardinality of a is 4 so"
+    },
+    {
+      "start": "36:11",
+      "end": "36:11",
+      "text": "4 or we say the cardinality of a is 4 so"
+    },
+    {
+      "start": "36:11",
+      "end": "36:14",
+      "text": "4 or we say the cardinality of a is 4 so for every finite set there is a natural"
+    },
+    {
+      "start": "36:14",
+      "end": "36:14",
+      "text": "for every finite set there is a natural"
+    },
+    {
+      "start": "36:14",
+      "end": "36:17",
+      "text": "for every finite set there is a natural number that forms its cardinality to"
+    },
+    {
+      "start": "36:17",
+      "end": "36:17",
+      "text": "number that forms its cardinality to"
+    },
+    {
+      "start": "36:17",
+      "end": "36:21",
+      "text": "number that forms its cardinality to finite sets our equinumerous means they"
+    },
+    {
+      "start": "36:21",
+      "end": "36:21",
+      "text": "finite sets our equinumerous means they"
+    },
+    {
+      "start": "36:21",
+      "end": "36:25",
+      "text": "finite sets our equinumerous means they have exactly the same cardinal numbers"
+    },
+    {
+      "start": "36:25",
+      "end": "36:25",
+      "text": "have exactly the same cardinal numbers"
+    },
+    {
+      "start": "36:25",
+      "end": "36:33",
+      "text": "have exactly the same cardinal numbers or in general for any two sets a and B"
+    },
+    {
+      "start": "36:33",
+      "end": "36:33",
+      "text": "or in general for any two sets a and B"
+    },
+    {
+      "start": "36:33",
+      "end": "36:37",
+      "text": "or in general for any two sets a and B finite or infinite we say that the"
+    },
+    {
+      "start": "36:37",
+      "end": "36:37",
+      "text": "finite or infinite we say that the"
+    },
+    {
+      "start": "36:37",
+      "end": "36:39",
+      "text": "finite or infinite we say that the cardinality of a is equal to cardinality"
+    },
+    {
+      "start": "36:39",
+      "end": "36:39",
+      "text": "cardinality of a is equal to cardinality"
+    },
+    {
+      "start": "36:39",
+      "end": "36:43",
+      "text": "cardinality of a is equal to cardinality of B or the definition of cardinality"
+    },
+    {
+      "start": "36:43",
+      "end": "36:43",
+      "text": "of B or the definition of cardinality"
+    },
+    {
+      "start": "36:43",
+      "end": "36:47",
+      "text": "of B or the definition of cardinality this is if and only if a is equal Amyris"
+    },
+    {
+      "start": "36:47",
+      "end": "36:47",
+      "text": "this is if and only if a is equal Amyris"
+    },
+    {
+      "start": "36:47",
+      "end": "36:50",
+      "text": "this is if and only if a is equal Amyris with B so there is a one-to-one on to"
+    },
+    {
+      "start": "36:50",
+      "end": "36:50",
+      "text": "with B so there is a one-to-one on to"
+    },
+    {
+      "start": "36:50",
+      "end": "36:52",
+      "text": "with B so there is a one-to-one on to mapping from A to B that is precisely"
+    },
+    {
+      "start": "36:52",
+      "end": "36:52",
+      "text": "mapping from A to B that is precisely"
+    },
+    {
+      "start": "36:52",
+      "end": "36:55",
+      "text": "mapping from A to B that is precisely when the cardinality of a and B are"
+    },
+    {
+      "start": "36:55",
+      "end": "36:55",
+      "text": "when the cardinality of a and B are"
+    },
+    {
+      "start": "36:55",
+      "end": "37:00",
+      "text": "when the cardinality of a and B are identical the cardinality of the set of"
+    },
+    {
+      "start": "37:00",
+      "end": "37:00",
+      "text": "identical the cardinality of the set of"
+    },
+    {
+      "start": "37:00",
+      "end": "37:14",
+      "text": "identical the cardinality of the set of natural numbers is denoted as LF not"
+    },
+    {
+      "start": "37:18",
+      "end": "37:18",
+      "text": "using the hebrew letter Alif using"
+    },
+    {
+      "start": "37:18",
+      "end": "37:22",
+      "text": "using the hebrew letter Alif using cardinal numbers we can form what is"
+    },
+    {
+      "start": "37:22",
+      "end": "37:22",
+      "text": "cardinal numbers we can form what is"
+    },
+    {
+      "start": "37:22",
+      "end": "37:31",
+      "text": "cardinal numbers we can form what is called cardinal arithmetic cardinal"
+    },
+    {
+      "start": "37:31",
+      "end": "37:31",
+      "text": "called cardinal arithmetic cardinal"
+    },
+    {
+      "start": "37:31",
+      "end": "37:32",
+      "text": "called cardinal arithmetic cardinal arithmetic has several interesting"
+    },
+    {
+      "start": "37:32",
+      "end": "37:33",
+      "text": "arithmetic has several interesting"
+    },
+    {
+      "start": "37:33",
+      "end": "37:34",
+      "text": "arithmetic has several interesting properties"
+    },
+    {
+      "start": "37:34",
+      "end": "37:34",
+      "text": "properties"
+    },
+    {
+      "start": "37:34",
+      "end": "37:44",
+      "text": "properties if Kappa and lambda are cardinal numbers"
+    },
+    {
+      "start": "37:47",
+      "end": "37:47",
+      "text": "which means there is a set a with"
+    },
+    {
+      "start": "37:47",
+      "end": "37:51",
+      "text": "which means there is a set a with cardinality Kappa and there is a set B"
+    },
+    {
+      "start": "37:51",
+      "end": "37:51",
+      "text": "cardinality Kappa and there is a set B"
+    },
+    {
+      "start": "37:51",
+      "end": "37:56",
+      "text": "cardinality Kappa and there is a set B with cardinality lambda all let us say"
+    },
+    {
+      "start": "37:56",
+      "end": "37:56",
+      "text": "with cardinality lambda all let us say"
+    },
+    {
+      "start": "37:56",
+      "end": "38:00",
+      "text": "with cardinality lambda all let us say using matching letters K and L with"
+    },
+    {
+      "start": "38:00",
+      "end": "38:00",
+      "text": "using matching letters K and L with"
+    },
+    {
+      "start": "38:00",
+      "end": "38:03",
+      "text": "using matching letters K and L with cardinalities Kappa lambda respectively"
+    },
+    {
+      "start": "38:03",
+      "end": "38:03",
+      "text": "cardinalities Kappa lambda respectively"
+    },
+    {
+      "start": "38:03",
+      "end": "38:11",
+      "text": "cardinalities Kappa lambda respectively then coppice lambda is the cardinal"
+    },
+    {
+      "start": "38:11",
+      "end": "38:11",
+      "text": "then coppice lambda is the cardinal"
+    },
+    {
+      "start": "38:11",
+      "end": "38:22",
+      "text": "then coppice lambda is the cardinal number of K Union L Kappa into lambda is"
+    },
+    {
+      "start": "38:22",
+      "end": "38:22",
+      "text": "number of K Union L Kappa into lambda is"
+    },
+    {
+      "start": "38:22",
+      "end": "38:35",
+      "text": "number of K Union L Kappa into lambda is the cardinal number of K cross L"
+    },
+    {
+      "start": "38:39",
+      "end": "38:39",
+      "text": "kappa power lambda it's the cardinal"
+    },
+    {
+      "start": "38:39",
+      "end": "38:45",
+      "text": "kappa power lambda it's the cardinal number of the set of all functions from"
+    },
+    {
+      "start": "38:45",
+      "end": "38:45",
+      "text": "number of the set of all functions from"
+    },
+    {
+      "start": "38:45",
+      "end": "38:50",
+      "text": "number of the set of all functions from L to K when K and lambda are finite"
+    },
+    {
+      "start": "38:50",
+      "end": "38:50",
+      "text": "L to K when K and lambda are finite"
+    },
+    {
+      "start": "38:50",
+      "end": "38:53",
+      "text": "L to K when K and lambda are finite these of course function the way we"
+    },
+    {
+      "start": "38:53",
+      "end": "38:53",
+      "text": "these of course function the way we"
+    },
+    {
+      "start": "38:53",
+      "end": "38:56",
+      "text": "these of course function the way we expect for example if K and L are finite"
+    },
+    {
+      "start": "38:56",
+      "end": "38:56",
+      "text": "expect for example if K and L are finite"
+    },
+    {
+      "start": "38:56",
+      "end": "39:00",
+      "text": "expect for example if K and L are finite sets K Union L has K plus lambda"
+    },
+    {
+      "start": "39:00",
+      "end": "39:00",
+      "text": "sets K Union L has K plus lambda"
+    },
+    {
+      "start": "39:00",
+      "end": "39:02",
+      "text": "sets K Union L has K plus lambda elements at the most if K and L are"
+    },
+    {
+      "start": "39:02",
+      "end": "39:02",
+      "text": "elements at the most if K and L are"
+    },
+    {
+      "start": "39:02",
+      "end": "39:07",
+      "text": "elements at the most if K and L are disjoint sets K into lambda is the"
+    },
+    {
+      "start": "39:07",
+      "end": "39:07",
+      "text": "disjoint sets K into lambda is the"
+    },
+    {
+      "start": "39:07",
+      "end": "39:10",
+      "text": "disjoint sets K into lambda is the cardinality of K cross L which is indeed"
+    },
+    {
+      "start": "39:10",
+      "end": "39:10",
+      "text": "cardinality of K cross L which is indeed"
+    },
+    {
+      "start": "39:10",
+      "end": "39:15",
+      "text": "cardinality of K cross L which is indeed the case k has Kappa elements and L has"
+    },
+    {
+      "start": "39:15",
+      "end": "39:15",
+      "text": "the case k has Kappa elements and L has"
+    },
+    {
+      "start": "39:15",
+      "end": "39:17",
+      "text": "the case k has Kappa elements and L has lambda elements so Kappa into lambda is"
+    },
+    {
+      "start": "39:17",
+      "end": "39:17",
+      "text": "lambda elements so Kappa into lambda is"
+    },
+    {
+      "start": "39:17",
+      "end": "39:20",
+      "text": "lambda elements so Kappa into lambda is the cardinality of K cross L kapa power"
+    },
+    {
+      "start": "39:20",
+      "end": "39:20",
+      "text": "the cardinality of K cross L kapa power"
+    },
+    {
+      "start": "39:20",
+      "end": "39:24",
+      "text": "the cardinality of K cross L kapa power lambda is the cardinality of L to K"
+    },
+    {
+      "start": "39:24",
+      "end": "39:24",
+      "text": "lambda is the cardinality of L to K"
+    },
+    {
+      "start": "39:24",
+      "end": "39:25",
+      "text": "lambda is the cardinality of L to K there is a set of all functions from L"
+    },
+    {
+      "start": "39:25",
+      "end": "39:25",
+      "text": "there is a set of all functions from L"
+    },
+    {
+      "start": "39:25",
+      "end": "39:36",
+      "text": "there is a set of all functions from L to K we say that set B dominates a we"
+    },
+    {
+      "start": "39:36",
+      "end": "39:36",
+      "text": "to K we say that set B dominates a we"
+    },
+    {
+      "start": "39:36",
+      "end": "39:41",
+      "text": "to K we say that set B dominates a we just denoted as"
+    },
+    {
+      "start": "39:43",
+      "end": "39:43",
+      "text": "in this fashion for two sets a and B we"
+    },
+    {
+      "start": "39:43",
+      "end": "39:46",
+      "text": "in this fashion for two sets a and B we write a less than or equal to B to"
+    },
+    {
+      "start": "39:46",
+      "end": "39:46",
+      "text": "write a less than or equal to B to"
+    },
+    {
+      "start": "39:46",
+      "end": "39:48",
+      "text": "write a less than or equal to B to indicate that B dominates a we say those"
+    },
+    {
+      "start": "39:48",
+      "end": "39:48",
+      "text": "indicate that B dominates a we say those"
+    },
+    {
+      "start": "39:48",
+      "end": "39:56",
+      "text": "indicate that B dominates a we say those precisely when there is a one-to-one"
+    },
+    {
+      "start": "39:56",
+      "end": "39:56",
+      "text": "precisely when there is a one-to-one"
+    },
+    {
+      "start": "39:56",
+      "end": "40:05",
+      "text": "precisely when there is a one-to-one mapping"
+    },
+    {
+      "start": "40:14",
+      "end": "40:14",
+      "text": "from a into be my chosen into mapping"
+    },
+    {
+      "start": "40:14",
+      "end": "40:18",
+      "text": "from a into be my chosen into mapping which means the cardinality of a is less"
+    },
+    {
+      "start": "40:18",
+      "end": "40:18",
+      "text": "which means the cardinality of a is less"
+    },
+    {
+      "start": "40:18",
+      "end": "40:22",
+      "text": "which means the cardinality of a is less than or equal to the cardinality of week"
+    },
+    {
+      "start": "40:25",
+      "end": "40:25",
+      "text": "so using this definition we can say that"
+    },
+    {
+      "start": "40:25",
+      "end": "40:36",
+      "text": "so using this definition we can say that a is countable if and only if a is"
+    },
+    {
+      "start": "40:36",
+      "end": "40:36",
+      "text": "a is countable if and only if a is"
+    },
+    {
+      "start": "40:36",
+      "end": "40:40",
+      "text": "a is countable if and only if a is dominated by the set of natural numbers"
+    },
+    {
+      "start": "40:40",
+      "end": "40:40",
+      "text": "dominated by the set of natural numbers"
+    },
+    {
+      "start": "40:40",
+      "end": "40:44",
+      "text": "dominated by the set of natural numbers in other words the cardinality of a is"
+    },
+    {
+      "start": "40:44",
+      "end": "40:44",
+      "text": "in other words the cardinality of a is"
+    },
+    {
+      "start": "40:44",
+      "end": "40:47",
+      "text": "in other words the cardinality of a is less than or equal to the cardinality of"
+    },
+    {
+      "start": "40:47",
+      "end": "40:47",
+      "text": "less than or equal to the cardinality of"
+    },
+    {
+      "start": "40:47",
+      "end": "40:53",
+      "text": "less than or equal to the cardinality of LF not a famous theorem of set theory"
+    },
+    {
+      "start": "40:53",
+      "end": "40:53",
+      "text": "LF not a famous theorem of set theory"
+    },
+    {
+      "start": "40:53",
+      "end": "41:03",
+      "text": "LF not a famous theorem of set theory called showed a Bernstein theorem"
+    },
+    {
+      "start": "41:17",
+      "end": "41:17",
+      "text": "dominates B then a and B are"
+    },
+    {
+      "start": "41:17",
+      "end": "41:21",
+      "text": "dominates B then a and B are equinumerous in other words if the"
+    },
+    {
+      "start": "41:21",
+      "end": "41:21",
+      "text": "equinumerous in other words if the"
+    },
+    {
+      "start": "41:21",
+      "end": "41:26",
+      "text": "equinumerous in other words if the cardinality of a and B have this"
+    },
+    {
+      "start": "41:26",
+      "end": "41:27",
+      "text": "cardinality of a and B have this"
+    },
+    {
+      "start": "41:27",
+      "end": "41:29",
+      "text": "cardinality of a and B have this property that the cardinality of a is"
+    },
+    {
+      "start": "41:29",
+      "end": "41:29",
+      "text": "property that the cardinality of a is"
+    },
+    {
+      "start": "41:29",
+      "end": "41:31",
+      "text": "property that the cardinality of a is less than or equal to the cardinality of"
+    },
+    {
+      "start": "41:31",
+      "end": "41:31",
+      "text": "less than or equal to the cardinality of"
+    },
+    {
+      "start": "41:31",
+      "end": "41:35",
+      "text": "less than or equal to the cardinality of B and the cardinality of B is less than"
+    },
+    {
+      "start": "41:35",
+      "end": "41:36",
+      "text": "B and the cardinality of B is less than"
+    },
+    {
+      "start": "41:36",
+      "end": "41:39",
+      "text": "B and the cardinality of B is less than or equal to the cardinality of a then"
+    },
+    {
+      "start": "41:39",
+      "end": "41:39",
+      "text": "or equal to the cardinality of a then"
+    },
+    {
+      "start": "41:39",
+      "end": "41:51",
+      "text": "or equal to the cardinality of a then the to have identical chord melodies"
+    },
+    {
+      "start": "41:55",
+      "end": "41:55",
+      "text": "related theorem is that a countable"
+    },
+    {
+      "start": "41:55",
+      "end": "42:20",
+      "text": "related theorem is that a countable union of countable sets this count"
+    },
+    {
+      "start": "42:25",
+      "end": "42:25",
+      "text": "another theorem search that for a"
+    },
+    {
+      "start": "42:25",
+      "end": "42:35",
+      "text": "another theorem search that for a cardinal number kapa kapa is less than a"
+    },
+    {
+      "start": "42:35",
+      "end": "42:35",
+      "text": "cardinal number kapa kapa is less than a"
+    },
+    {
+      "start": "42:35",
+      "end": "42:45",
+      "text": "cardinal number kapa kapa is less than a left north if and only if kapa is finite"
+    },
+    {
+      "start": "42:50",
+      "end": "42:50",
+      "text": "in other words in a sense the set of"
+    },
+    {
+      "start": "42:50",
+      "end": "42:53",
+      "text": "in other words in a sense the set of natural numbers is the smallest infinite"
+    },
+    {
+      "start": "42:53",
+      "end": "42:53",
+      "text": "natural numbers is the smallest infinite"
+    },
+    {
+      "start": "42:53",
+      "end": "43:03",
+      "text": "natural numbers is the smallest infinite set so we know that I left not and to"
+    },
+    {
+      "start": "43:03",
+      "end": "43:03",
+      "text": "set so we know that I left not and to"
+    },
+    {
+      "start": "43:03",
+      "end": "43:08",
+      "text": "set so we know that I left not and to power LS not are not identical"
+    },
+    {
+      "start": "43:08",
+      "end": "43:08",
+      "text": "power LS not are not identical"
+    },
+    {
+      "start": "43:08",
+      "end": "43:13",
+      "text": "power LS not are not identical I left notice the cardinality of the set"
+    },
+    {
+      "start": "43:13",
+      "end": "43:13",
+      "text": "I left notice the cardinality of the set"
+    },
+    {
+      "start": "43:13",
+      "end": "43:17",
+      "text": "I left notice the cardinality of the set of natural numbers and to power left nor"
+    },
+    {
+      "start": "43:17",
+      "end": "43:17",
+      "text": "of natural numbers and to power left nor"
+    },
+    {
+      "start": "43:17",
+      "end": "43:19",
+      "text": "of natural numbers and to power left nor does the cardinality of the set of all"
+    },
+    {
+      "start": "43:19",
+      "end": "43:19",
+      "text": "does the cardinality of the set of all"
+    },
+    {
+      "start": "43:19",
+      "end": "43:23",
+      "text": "does the cardinality of the set of all real numbers we know that this is a"
+    },
+    {
+      "start": "43:23",
+      "end": "43:23",
+      "text": "real numbers we know that this is a"
+    },
+    {
+      "start": "43:23",
+      "end": "43:25",
+      "text": "real numbers we know that this is a countable set and this is not a"
+    },
+    {
+      "start": "43:25",
+      "end": "43:25",
+      "text": "countable set and this is not a"
+    },
+    {
+      "start": "43:25",
+      "end": "43:28",
+      "text": "countable set and this is not a countable set so the two have different"
+    },
+    {
+      "start": "43:28",
+      "end": "43:28",
+      "text": "countable set so the two have different"
+    },
+    {
+      "start": "43:28",
+      "end": "43:33",
+      "text": "countable set so the two have different cardinalities but can they were yeah"
+    },
+    {
+      "start": "43:33",
+      "end": "43:33",
+      "text": "cardinalities but can they were yeah"
+    },
+    {
+      "start": "43:33",
+      "end": "43:37",
+      "text": "cardinalities but can they were yeah cardinality between these two Cantor"
+    },
+    {
+      "start": "43:37",
+      "end": "43:37",
+      "text": "cardinality between these two Cantor"
+    },
+    {
+      "start": "43:37",
+      "end": "43:39",
+      "text": "cardinality between these two Cantor conjectured that there is no set of"
+    },
+    {
+      "start": "43:39",
+      "end": "43:39",
+      "text": "conjectured that there is no set of"
+    },
+    {
+      "start": "43:39",
+      "end": "43:45",
+      "text": "conjectured that there is no set of cardinality between a left not and to"
+    },
+    {
+      "start": "43:45",
+      "end": "43:45",
+      "text": "cardinality between a left not and to"
+    },
+    {
+      "start": "43:45",
+      "end": "43:49",
+      "text": "cardinality between a left not and to power left not this conjecture was"
+    },
+    {
+      "start": "43:49",
+      "end": "43:49",
+      "text": "power left not this conjecture was"
+    },
+    {
+      "start": "43:49",
+      "end": "44:00",
+      "text": "power left not this conjecture was called the continuum hypothesis"
+    },
+    {
+      "start": "44:16",
+      "end": "44:16",
+      "text": "in 1939 yodel showed that the Continuum"
+    },
+    {
+      "start": "44:16",
+      "end": "44:30",
+      "text": "in 1939 yodel showed that the Continuum Hypothesis cannot be disproved from the"
+    },
+    {
+      "start": "44:30",
+      "end": "44:30",
+      "text": "Hypothesis cannot be disproved from the"
+    },
+    {
+      "start": "44:30",
+      "end": "44:35",
+      "text": "Hypothesis cannot be disproved from the similar angle axioms of set theory 1939"
+    },
+    {
+      "start": "44:35",
+      "end": "44:35",
+      "text": "similar angle axioms of set theory 1939"
+    },
+    {
+      "start": "44:35",
+      "end": "44:37",
+      "text": "similar angle axioms of set theory 1939 Ural showed that continuum hypothesis"
+    },
+    {
+      "start": "44:37",
+      "end": "44:37",
+      "text": "Ural showed that continuum hypothesis"
+    },
+    {
+      "start": "44:37",
+      "end": "44:42",
+      "text": "Ural showed that continuum hypothesis cannot be disproved from the axioms of"
+    },
+    {
+      "start": "44:42",
+      "end": "44:42",
+      "text": "cannot be disproved from the axioms of"
+    },
+    {
+      "start": "44:42",
+      "end": "44:44",
+      "text": "cannot be disproved from the axioms of set theory in other words the"
+    },
+    {
+      "start": "44:44",
+      "end": "44:44",
+      "text": "set theory in other words the"
+    },
+    {
+      "start": "44:44",
+      "end": "44:47",
+      "text": "set theory in other words the contradiction of continuum hypothesis"
+    },
+    {
+      "start": "44:47",
+      "end": "44:47",
+      "text": "contradiction of continuum hypothesis"
+    },
+    {
+      "start": "44:47",
+      "end": "44:51",
+      "text": "contradiction of continuum hypothesis cannot be proved many years later in"
+    },
+    {
+      "start": "44:51",
+      "end": "44:51",
+      "text": "cannot be proved many years later in"
+    },
+    {
+      "start": "44:51",
+      "end": "44:59",
+      "text": "cannot be proved many years later in 1963 cohan showed that continuum"
+    },
+    {
+      "start": "44:59",
+      "end": "44:59",
+      "text": "1963 cohan showed that continuum"
+    },
+    {
+      "start": "44:59",
+      "end": "45:10",
+      "text": "1963 cohan showed that continuum hypothesis cannot be proved either"
+    },
+    {
+      "start": "45:14",
+      "end": "45:14",
+      "text": "so the statement that is Continuum"
+    },
+    {
+      "start": "45:14",
+      "end": "45:17",
+      "text": "so the statement that is Continuum Hypothesis that is there is no set with"
+    },
+    {
+      "start": "45:17",
+      "end": "45:17",
+      "text": "Hypothesis that is there is no set with"
+    },
+    {
+      "start": "45:17",
+      "end": "45:19",
+      "text": "Hypothesis that is there is no set with cardinality between LF not in too"
+    },
+    {
+      "start": "45:19",
+      "end": "45:19",
+      "text": "cardinality between LF not in too"
+    },
+    {
+      "start": "45:19",
+      "end": "45:24",
+      "text": "cardinality between LF not in too perilous not can neither be proved not"
+    },
+    {
+      "start": "45:24",
+      "end": "45:24",
+      "text": "perilous not can neither be proved not"
+    },
+    {
+      "start": "45:24",
+      "end": "45:28",
+      "text": "perilous not can neither be proved not be disproved from set theory but if you"
+    },
+    {
+      "start": "45:28",
+      "end": "45:28",
+      "text": "be disproved from set theory but if you"
+    },
+    {
+      "start": "45:28",
+      "end": "45:30",
+      "text": "be disproved from set theory but if you consider the two statements the"
+    },
+    {
+      "start": "45:30",
+      "end": "45:30",
+      "text": "consider the two statements the"
+    },
+    {
+      "start": "45:30",
+      "end": "45:32",
+      "text": "consider the two statements the Continuum's hypothesis and its"
+    },
+    {
+      "start": "45:32",
+      "end": "45:32",
+      "text": "Continuum's hypothesis and its"
+    },
+    {
+      "start": "45:32",
+      "end": "45:42",
+      "text": "Continuum's hypothesis and its contradiction one of them must be true"
+    },
+    {
+      "start": "45:49",
+      "end": "45:49",
+      "text": "therefore either CH or CH bar is a"
+    },
+    {
+      "start": "45:49",
+      "end": "46:04",
+      "text": "therefore either CH or CH bar is a statement that is true but unprovable"
+    },
+    {
+      "start": "46:08",
+      "end": "46:08",
+      "text": "in Ramallah Frankel axiomatization of"
+    },
+    {
+      "start": "46:08",
+      "end": "46:13",
+      "text": "in Ramallah Frankel axiomatization of cetera so this is a statement which is -"
+    },
+    {
+      "start": "46:13",
+      "end": "46:13",
+      "text": "cetera so this is a statement which is -"
+    },
+    {
+      "start": "46:13",
+      "end": "46:17",
+      "text": "cetera so this is a statement which is - but unprovable in set theory hope to see"
+    },
+    {
+      "start": "46:17",
+      "end": "46:17",
+      "text": "but unprovable in set theory hope to see"
+    },
+    {
+      "start": "46:17",
+      "end": "46:23",
+      "text": "but unprovable in set theory hope to see you in the other lectures thank you"
+    }
+  ],
+  "timestamped": true
+}

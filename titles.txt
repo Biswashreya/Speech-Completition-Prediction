@@ -1,39 +1,10 @@
-Motivation for Counting
-Paper Folding Example
-Rubik's Cube Example
-Factorial Example
-Counting in Computer Science
-Motivation for Catalan numbers
-Rule of Sum and Rule of Product
-Problems on Rule of Sum and Rule of Product
-Factorial Explained
-Proof of n! - Part 1
-Proof of n! - Part 2
-Astronomical Numbers
-Permutations - Part 1
-Permutations - Part 2
-Permutations - Part 3
-Permutations - Part 4
-Problems on Permutations
-Combinations - Part 1
-Combinations - Part 2
-Combinations - Part 3
-Combinations - Part 4
-Problems on Combinations
-Difference between Permuations and Combinations
-Combination with Repetition - Part 1
-Combination with Repetition - Part 2
-Combination with Repetition - Problems
-Binomial theorem
-Applications of Binomial theorem
-Properties of Binomial theorem
-Multinomial theorem
-Problems on Binomial theorem
-Pascal's Triangle
-Fun facts on Pascal's Triangle
-Catalan Numbers - Part 1
-Catalan Numbers - Part 2
-Catalan Numbers - Part 3
-Catalan Numbers - Part 4
-Examples of Catalan numbers
-Chapter Summary
+Lec 1: Boolean Functions
+Lec 2: Propositional Calculus: Introduction
+Lec 3: First Order Logic: Introduction
+Lec 4: First Order Logic: Introduction (Cont'd)
+Lec 5: Proof System for Propcal
+Lec 6: First Order Logic: wffs, interpretations, models
+Lec 7: Soundness and Completeness of the First Order Proof System
+Lec 8: Sets, Relations, Functions
+Lec 9: Functions, Embedding of the theories of naturals numbers and integers in Set Theory
+Lec 10: Embedding of the theories of integers and rational numbers in Set Theory; Countable Sets

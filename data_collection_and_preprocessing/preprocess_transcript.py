@@ -3,8 +3,8 @@ import json
 import re
 import pandas as pd
 
-INPUT_DIR = "transcripts/discrete-mathematics-prof-sudarshan-iyengar"
-OUTPUT_CSV = "preprocessed_transcripts.csv"
+INPUT_DIR = "formatted_transcripts"
+OUTPUT_CSV = "new_transcripts2.csv"
 MIN_WORDS = 50
 
 
