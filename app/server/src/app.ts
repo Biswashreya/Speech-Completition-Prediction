@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import authRoutes from "./routes/auth.routes";
+import transcriptRoutes from "./routes/transcript.routes";
 
 const app = express();
 app.use(
@@ -12,6 +13,7 @@ app.use(
 app.use(express.json());
 
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/transcript", transcriptRoutes);
 
 app.get("/", (_: Request, res: Response) => {
   res.send("API Running");

@@ -2,6 +2,6 @@
 **/*.ipynb_checkpoints
 clustering/
 data_collection_and_preprocessing/
-squential_prediction/
+sequential_analysis/
 topic_identification/
 transcripts/
