@@ -1,7 +1,7 @@
 import { spawn } from "child_process";
 import path from "path";
 
-export const runPyton = (
+export const runPython = (
   scriptName: string,
   args: string[] = []
 ): Promise<string> => {
