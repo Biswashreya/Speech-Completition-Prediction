@@ -40,22 +40,8 @@ cluster_labels = clusterer.fit_predict(umap_embeddings)
 end = time.time()
 print(f"Clustering done in {end - start:.2f} sec")
 
-output_data = []
+df["embedding"] = [e.tolist() for e in embeddings]
+df["cluster"] = cluster_labels
 
-for i, row in df.iterrows():
-    item = {
-        "file": row["file"],
-        "course": row["course"],
-        "source": row["source"],
-        "start": row["start"],
-        "end": row["end"],
-        "text": row["text"],
-        "embedding": embeddings[i].tolist(),
-        "cluster": int(cluster_labels[i])
-    }
-    output_data.append(item)
-
-with open(args.output, "w", encoding="utf-8") as f:
-    json.dump(output_data, f, indent=2, ensure_ascii=False)
-
-print(f"OK: saved {len(output_data)} rows to {args.output}")
+df.to_csv(args.output, index=False)
+print(f"OK: saved {len(df)} rows to {args.output}")
