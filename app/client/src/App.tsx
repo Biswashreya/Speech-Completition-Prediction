@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Signup, Login, UploadTranscript } from "./pages";
 import type React from "react";
 import { useAuth } from "./store/auth";
+import { SequentialAnalysis } from "./pages/SequentialAnalysis";
 
 function PrivateRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuth();
@@ -25,6 +26,14 @@ function App() {
           element={
             <PrivateRoute>
               <UploadTranscript />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/sequential_analysis"
+          element={
+            <PrivateRoute>
+              <SequentialAnalysis />
             </PrivateRoute>
           }
         />
