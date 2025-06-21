@@ -17,21 +17,18 @@ type GainPoint = {
   gain: number;
 };
 
-type GainData = {
-  file: string;
-  cluster: number;
+type GainFile = {
   text: string;
   data: GainPoint[];
-  summary: {
-    total_words: number;
-    unique_words: number;
-    stopwords: number;
-  };
+};
+
+type GainData = {
+  [fileName: string]: GainFile;
 };
 
 export function SequentialAnalysis() {
   const { isAuthenticated } = useAuth();
-  const [gainData, setGainData] = useState<GainData[]>([]);
+  const [gainData, setGainData] = useState<GainData>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -61,25 +58,28 @@ export function SequentialAnalysis() {
   }
 
   return (
-    <div className="p-6 space-y-6">
-      <h1 className="text-xl font-bold">Sequential Gain Analysis</h1>
+    <div className="p-6 space-y-6 relative">
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-xl font-bold">Sequential Gain Analysis</h1>
+        <button
+          onClick={() => useAuth.getState().logout()}
+          className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
+        >
+          Logout
+        </button>
+      </div>
 
-      {gainData.map((item, index) => (
-        <div key={index} className="border rounded-xl p-4 shadow bg-white">
-          <h2 className="font-semibold mb-2">
-            File: {item.file} | Cluster: {item.cluster}
+      {Object.entries(gainData).map(([fileName, fileData]) => (
+        <div key={fileName} className="border rounded-xl p-4 shadow bg-white">
+          <h2 className="font-semibold mb-2 text-purple-700">
+            File: {fileName}
           </h2>
           <p className="mb-2 text-gray-600 text-sm">
-            {item.text.substring(0, 200)}...
+            {fileData.text.substring(0, 200)}...
           </p>
 
-          <div className="text-sm mb-2 text-gray-700">
-            Total Words: {item.summary.total_words} | Unique:{" "}
-            {item.summary.unique_words} | Stopwords: {item.summary.stopwords}
-          </div>
-
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={item.data}>
+            <LineChart data={fileData.data}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis
                 dataKey="position"

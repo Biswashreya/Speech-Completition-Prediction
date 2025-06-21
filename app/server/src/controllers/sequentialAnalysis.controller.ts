@@ -17,9 +17,9 @@ export const initialPreprocessing = async (req: Request, res: Response) => {
       "--output",
       outputJSON,
       "--samples",
-      "10",
+      "1",
       "--stopword-weight",
-      "0.3",
+      "0.04",
     ];
 
     console.log("Running python script");
