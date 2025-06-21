@@ -7,15 +7,24 @@ const storage = multer.diskStorage({
   },
 
   filename: function (req, file, cb) {
-    cb(null, Date.now() + "-" + file.originalname);
+    if (file.mimetype === "text/csv" || file.originalname.endsWith(".csv")) {
+      cb(null, "transcript.csv");
+    } else {
+      cb(null, Date.now() + "-" + file.originalname);
+    }
   },
 });
 
 export const upload = multer({
   storage: storage,
   fileFilter: function (req, file, cb) {
-    if (file.mimetype !== "application/json") {
-      return cb(new Error("Only JSON files are allowed"));
+    const allowedTypes = ["application.json", "text/csv"];
+
+    if (
+      !allowedTypes.includes(file.mimetype) &&
+      !file.originalname.endsWith(".csv")
+    ) {
+      return cb(new Error("Only JSON or CSV files are allowed"));
     }
     cb(null, true);
   },

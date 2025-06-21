@@ -46,13 +46,13 @@ function UploadTranscript() {
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
       <div className="w-full max-w-lg bg-gray-800 p-10 rounded-xl shadow-lg border border-gray-700">
         <h2 className="text-2xl font-extrabold text-center text-white">
-          Upload Transcript (JSON)
+          Upload Transcript (JSON or CSV)
         </h2>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
           <input
             type="file"
-            accept=".json"
+            accept=".json,.csv"
             onChange={handleFileChange}
             className="w-full text-white bg-gray-700 border border-gray-600 rounded px-3 py-2"
           />
