@@ -28,7 +28,8 @@ function Signup() {
         name: user.username,
       });
 
-      navigate("/");
+      // navigate("/upload-transcript");
+      navigate("/analysis");
     } catch (e: any) {
       console.error("Signup failed:", e?.response?.data);
       alert("Signup failed: " + e?.response?.data?.details);

@@ -24,7 +24,8 @@ function Login() {
         name: user.username,
       });
 
-      navigate("/");
+      // navigate("/upload-transcript");
+      navigate("/analysis");
     } catch (e: any) {
       console.error("Login failed: ", e?.response?.data);
       alert("Login failed: " + e?.response?.data?.details);

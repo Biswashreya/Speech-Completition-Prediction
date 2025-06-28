@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Signup, Login, UploadTranscript } from "./pages";
+import { Signup, Login, UploadTranscript, Analysis } from "./pages";
 import type React from "react";
 import { useAuth } from "./store/auth";
 import { SequentialAnalysis } from "./pages/SequentialAnalysis";
@@ -34,6 +34,14 @@ function App() {
           element={
             <PrivateRoute>
               <SequentialAnalysis />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/analysis"
+          element={
+            <PrivateRoute>
+              <Analysis />
             </PrivateRoute>
           }
         />

@@ -35,7 +35,7 @@ function UploadTranscript() {
       alert("Transcript uploaded successfully!");
 
       // redirect somewhere later
-      //   navigate("/");
+      navigate("/analysis");
     } catch (err: any) {
       console.error("Upload failed:", err?.response?.data);
       alert("Upload failed: " + err?.response?.data?.message);

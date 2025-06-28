@@ -1,13 +1,21 @@
-import React from "react";
+import { type FC, type ButtonHTMLAttributes } from "react";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  Icon?: FC<{ size?: number }>;
+};
 
-const Button = ({ className = "", children, ...props }: ButtonProps) => {
+const Button: FC<ButtonProps> = ({
+  className = "",
+  children,
+  Icon,
+  ...props
+}) => {
   return (
     <button
       {...props}
-      className={`bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ${className}`}
+      className={`flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ${className}`}
     >
+      {Icon && <Icon size={18} />}
       {children}
     </button>
   );
