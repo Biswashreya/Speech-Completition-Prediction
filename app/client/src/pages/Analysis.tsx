@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
-import { FileUp, UploadCloud, LogOut } from "lucide-react";
+import {
+  FileUp,
+  UploadCloud,
+  LogOut,
+  FileText,
+  LineChart as LineChartIcon,
+  CheckCircle,
+  Hourglass,
+  PieChart,
+} from "lucide-react";
 import {
   LineChart,
   Line,
@@ -20,14 +29,27 @@ type GainData = { [fileName: string]: GainFile };
 
 export default function Analysis() {
   const { isAuthenticated, logout } = useAuth();
+
   const [file, setFile] = useState<File | null>(null);
-  const [uploading, setUploading] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const [gainData, setGainData] = useState<GainData>({});
+  const [uploadedFileName, setUploadedFileName] = useState<string | null>(null);
   const [loadingAnalysis, setLoadingAnalysis] = useState(false);
+
+  const [showGraph, setShowGraph] = useState(false);
+  const [showTopics, setShowTopics] = useState(false);
+  const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
     fetchGainData();
   }, []);
+
+  const resetStateForNewUpload = () => {
+    setShowGraph(false);
+    setShowTopics(false);
+    setUploadedFileName(null);
+    setFile(null);
+  };
 
   const fetchGainData = async () => {
     try {
@@ -35,7 +57,11 @@ export default function Analysis() {
       const res = await API.get("/sequential_analysis/initial_preprocessing", {
         withCredentials: true,
       });
-      setGainData(res.data);
+
+      if (Object.keys(res.data).length > 0) {
+        setGainData(res.data);
+        setUploadedFileName(Object.keys(res.data)[0]);
+      }
     } catch (err) {
       console.error("Error fetching analysis:", err);
     } finally {
@@ -45,40 +71,76 @@ export default function Analysis() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
+      resetStateForNewUpload();
       setFile(e.target.files[0]);
     }
   };
 
-  const handleUpload = async () => {
+  const handleUploadAndAnalyze = async () => {
     if (!file) return;
     const formData = new FormData();
     formData.append("file", file);
 
+    setIsUploading(true);
     try {
-      setUploading(true);
       await API.post("/transcript/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
-      alert("Upload successful!");
+
       await fetchGainData();
+      alert(`Successfully analyzed "${file.name}"!`);
     } catch (err: any) {
-      console.error("Upload failed:", err?.response?.data);
-      alert("Upload failed: " + err?.response?.data?.message);
+      console.error("Upload or Analysis failed:", err);
+      alert("An error occurred: " + (err.message || "Please try again."));
+      resetStateForNewUpload();
     } finally {
-      setUploading(false);
+      setIsUploading(false);
     }
   };
 
+  const handleGenerateGraph = () => setShowGraph((prev) => !prev);
+  const handleShowTopics = () => setShowTopics((prev) => !prev);
+
+  const handleDragEvents = {
+    onDragEnter: (e: React.DragEvent<HTMLLabelElement>) => {
+      e.preventDefault();
+      setIsDragging(true);
+    },
+    onDragLeave: (e: React.DragEvent<HTMLLabelElement>) => {
+      e.preventDefault();
+      setIsDragging(false);
+    },
+    onDragOver: (e: React.DragEvent<HTMLLabelElement>) => {
+      e.preventDefault();
+    },
+    onDrop: (e: React.DragEvent<HTMLLabelElement>) => {
+      e.preventDefault();
+      setIsDragging(false);
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        resetStateForNewUpload();
+        setFile(e.dataTransfer.files[0]);
+        e.dataTransfer.clearData();
+      }
+    },
+  };
+
   if (!isAuthenticated) return <Navigate to="/login" />;
+
+  const fileName = uploadedFileName || Object.keys(gainData)[0];
+  const fileData = fileName ? gainData[fileName] : null;
+  const isAnalysisReady = !!fileData;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-indigo-900 text-white font-sans p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
         <header className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-2xl sm:text-3xl font-bold">
-              Transcript Analysis
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
+              Analysis Dashboard
             </h1>
+            <p className="text-sm text-indigo-300">
+              A user-driven dashboard for transcript analysis.
+            </p>
           </div>
           <Button
             onClick={logout}
@@ -90,26 +152,25 @@ export default function Analysis() {
         </header>
 
         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left: Upload Section */}
-          <div className="space-y-8">
+          <div className="lg:col-span-1 space-y-8">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                <UploadCloud size={22} />
-                Upload Transcript
+                <UploadCloud size={22} /> Upload & Analyze
               </h3>
-
               <label
                 htmlFor="dropzone-file"
-                className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-gray-500 rounded-lg cursor-pointer hover:bg-white/10 transition-colors"
+                className={`flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-lg cursor-pointer transition-colors ${
+                  isDragging
+                    ? "border-indigo-400 bg-white/20"
+                    : "border-gray-500 hover:bg-white/10"
+                }`}
+                {...handleDragEvents}
               >
-                <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                  <FileUp className="w-10 h-10 mb-3 text-gray-400" />
-                  <p className="mb-2 text-sm text-gray-400 text-center">
+                <div className="flex flex-col items-center justify-center">
+                  <FileUp className="w-8 h-8 mb-2 text-gray-400" />
+                  <p className="text-sm text-gray-400 text-center">
                     <span className="font-semibold">Click to upload</span> or
-                    drag and drop
-                  </p>
-                  <p className="text-xs text-gray-500">
-                    JSON or CSV files only
+                    drag & drop
                   </p>
                 </div>
                 <input
@@ -120,84 +181,128 @@ export default function Analysis() {
                   accept=".json,.csv"
                 />
               </label>
-
               {file && (
-                <p className="mt-4 text-center text-sm text-indigo-300">
-                  Selected: {file.name}
-                </p>
+                <div className="text-center mt-4">
+                  <p className="text-sm text-indigo-300">
+                    Selected: <span className="font-bold">{file.name}</span>
+                  </p>
+                  <Button
+                    onClick={handleUploadAndAnalyze}
+                    disabled={isUploading}
+                    className="w-full mt-2"
+                  >
+                    {isUploading ? "Uploading..." : "Upload & Analyze"}
+                  </Button>
+                </div>
               )}
+            </div>
 
-              <Button
-                onClick={handleUpload}
-                disabled={!file || uploading}
-                className="w-full mt-4"
-              >
-                {uploading ? "Uploading..." : "Upload & Analyze"}
-              </Button>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                <PieChart size={22} /> View Results
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-300">Status</h4>
+                  {isAnalysisReady ? (
+                    <p className="text-green-400 flex items-center gap-2">
+                      <CheckCircle size={18} /> Analysis ready for:{" "}
+                      <span className="font-bold">{fileName}</span>
+                    </p>
+                  ) : (
+                    <p className="text-amber-400 flex items-center gap-2">
+                      <Hourglass size={18} /> Waiting for file...
+                    </p>
+                  )}
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-2.5">
+                  <div
+                    className="bg-indigo-500 h-2.5 rounded-full"
+                    style={{ width: isAnalysisReady ? "100%" : "0%" }}
+                  ></div>
+                </div>
+                <div className="pt-2 space-y-3">
+                  <Button
+                    onClick={handleGenerateGraph}
+                    disabled={!isAnalysisReady}
+                    className="w-full"
+                  >
+                    {showGraph ? "Hide Graph" : "Show Graph"}
+                  </Button>
+                  <Button
+                    onClick={handleShowTopics}
+                    disabled={!isAnalysisReady}
+                    className="w-full bg-teal-600 hover:bg-teal-700"
+                  >
+                    {showTopics ? "Hide Topics" : "Show Topics"}
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Right: Graphs */}
-          <div className="lg:col-span-2 space-y-8">
-            {loadingAnalysis && (
-              <div className="bg-white/10 rounded-xl p-6 text-center text-gray-300">
-                Loading analysis...
+          <div className="lg:col-span-2 space-y-8 min-h-[400px]">
+            {loadingAnalysis ? (
+              <div className="flex items-center justify-center h-full bg-white/10 rounded-2xl p-10 text-center animate-pulse">
+                <p className="text-lg text-gray-300">Loading analysis...</p>
+              </div>
+            ) : isAnalysisReady && fileData ? (
+              <>
+                {showGraph && (
+                  <div className="bg-white/10 rounded-2xl p-6 animate-fade-in">
+                    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                      <LineChartIcon size={22} /> Gain Curve
+                    </h3>
+                    <ResponsiveContainer width="100%" height={300}>
+                      <LineChart data={fileData.data}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#4A5568" />
+                        <XAxis dataKey="position" stroke="#A0AEC0" />
+                        <YAxis stroke="#A0AEC0" />
+                        <Tooltip
+                          contentStyle={{
+                            backgroundColor: "rgba(31, 41, 55, 0.8)",
+                            borderColor: "#4A5568",
+                            color: "#E5E7EB",
+                            borderRadius: "0.5rem",
+                          }}
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey="gain"
+                          stroke="#8b5cf6"
+                          strokeWidth={2}
+                          dot={false}
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                )}
+
+                {showTopics && (
+                  <div className="bg-white/10 rounded-2xl p-6 animate-fade-in">
+                    <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                      <FileText size={22} /> Topics & Timestamps
+                    </h3>
+                    <div className="bg-black/20 p-4 rounded-lg max-h-48 overflow-y-auto text-gray-300 text-sm leading-relaxed">
+                      <p className="font-bold text-teal-400 mb-2">
+                        [00:00–00:45] - Topic A
+                      </p>
+                      <p className="mb-4">Placeholder summary for Topic A.</p>
+                      <p className="font-bold text-teal-400 mb-2">
+                        [00:45–01:30] - Topic B
+                      </p>
+                      <p>Placeholder summary for Topic B.</p>
+                    </div>
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="flex items-center justify-center h-full bg-white/10 rounded-2xl p-10 text-center animate-fade-in">
+                <p className="text-lg text-gray-300">
+                  Upload a file to begin analysis.
+                </p>
               </div>
             )}
-
-            {!loadingAnalysis &&
-              Object.entries(gainData).map(([fileName, fileData]) => (
-                <div
-                  key={fileName}
-                  className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow p-6 animate-fade-in"
-                >
-                  <h2 className="text-xl font-semibold text-indigo-300 mb-2">
-                    File: {fileName}
-                  </h2>
-                  {/* <p className="text-sm text-gray-300 mb-4">
-                    {fileData.text.substring(0, 200)}...
-                  </p> */}
-
-                  <ResponsiveContainer width="100%" height={300}>
-                    <LineChart data={fileData.data}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#4A5568" />
-                      <XAxis
-                        dataKey="position"
-                        stroke="#A0AEC0"
-                        label={{
-                          value: "Word Position",
-                          position: "insideBottom",
-                          offset: -5,
-                          fill: "#A0AEC0",
-                        }}
-                      />
-                      <YAxis
-                        stroke="#A0AEC0"
-                        label={{
-                          value: "Gain",
-                          angle: -90,
-                          position: "insideLeft",
-                          fill: "#A0AEC0",
-                        }}
-                      />
-                      <Tooltip
-                        contentStyle={{
-                          backgroundColor: "rgba(31, 41, 55, 0.8)",
-                          borderColor: "#4A5568",
-                          color: "#E5E7EB",
-                        }}
-                      />
-                      <Line
-                        type="monotone"
-                        dataKey="gain"
-                        stroke="#8b5cf6"
-                        strokeWidth={2}
-                        dot={false}
-                      />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
-              ))}
           </div>
         </main>
       </div>
