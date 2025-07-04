@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import path from "path";
+import fs from "fs/promises";
 import { runPython } from "../scripts/runPython";
 
 export const uploadTranscript = async (req: Request, res: Response) => {
@@ -17,17 +18,15 @@ export const uploadTranscript = async (req: Request, res: Response) => {
       "../../data/clustered_embeddings.csv"
     );
     const finalCsv = path.join(__dirname, "../../data/progress_added.csv");
+    const titleCsv = path.join(__dirname, "../../data/titles.csv");
 
-    // embed and cluster
-
+    // Step 1: embed and cluster
     const clusterArgs = ["--input", inputCsv, "--output", clusteredCsv];
-
     console.log("Running embeddings + clustering script after upload...");
     const clusterResult = await runPython("embed_and_cluster.py", clusterArgs);
     console.log("Python cluster result:", clusterResult);
 
-    // progress labels
-
+    // Step 2: progress labels
     const labelArgs = [
       "--input",
       clusteredCsv,
@@ -42,9 +41,14 @@ export const uploadTranscript = async (req: Request, res: Response) => {
     const labelResult = await runPython("progressbar.py", labelArgs);
     console.log("Python label result:", labelResult);
 
-    // send res
+    // Step 3: generate titles
+    const titleArgs = ["--input", clusteredCsv, "--output", titleCsv];
+    console.log("Generating titles...");
+    const titleResult = await runPython("generate-titles.py", titleArgs);
+    console.log("Title generation result:", titleResult);
+
     res.status(200).json({
-      message: "File uploaded successfully and embeddings/clustering done",
+      message: "Upload + embeddings + labels + titles complete",
       filename: req.file.filename,
     });
   } catch (e: any) {
@@ -52,8 +56,6 @@ export const uploadTranscript = async (req: Request, res: Response) => {
     res.status(500).json({ message: "Server error", details: e.message });
   }
 };
-
-import fs from "fs/promises";
 
 export const generateEmbeddingsAndClusters = async (
   req: Request,
@@ -121,5 +123,43 @@ export const generateLabels = async (req: Request, res: Response) => {
   } catch (e: any) {
     console.error("Error in generateLabels:", e.message);
     res.status(500).json({ message: "Server error", details: e.message });
+  }
+};
+
+// manual title generation
+export const generateTitles = async (req: Request, res: Response) => {
+  try {
+    const inputCsv = path.join(
+      __dirname,
+      "../../data/clustered_embeddings.csv"
+    );
+    const outputCsv = path.join(__dirname, "../../data/titles.csv");
+
+    const args = ["--input", inputCsv, "--output", outputCsv];
+
+    console.log("Running title generation...");
+    const result = await runPython("generate-titles.py", args);
+    console.log("Title generation result:", result);
+
+    const csvContent = await fs.readFile(outputCsv, "utf-8");
+
+    res.status(200).json({
+      message: "Titles generated",
+      csvContent,
+    });
+  } catch (e: any) {
+    console.error("Error in generateTitles:", e.message);
+    res.status(500).json({ message: "Server error", details: e.message });
+  }
+};
+
+export const getTitlesCsv = async (req: Request, res: Response) => {
+  try {
+    const filePath = path.join(__dirname, "../../data/titles.csv");
+    const csvContent = await fs.readFile(filePath, "utf-8");
+    res.type("text/csv").send(csvContent);
+  } catch (e: any) {
+    console.error("Error reading titles.csv:", e.message);
+    res.status(500).json({ message: "Failed to load titles", error: e.message });
   }
 };

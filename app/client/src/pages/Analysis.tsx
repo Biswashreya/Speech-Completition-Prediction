@@ -26,6 +26,7 @@ import Button from "../components/Button";
 type GainPoint = { position: number; gain: number };
 type GainFile = { text: string; data: GainPoint[] };
 type GainData = { [fileName: string]: GainFile };
+type Topic = { start: string; title: string };
 
 export default function Analysis() {
   const { isAuthenticated, logout } = useAuth();
@@ -39,16 +40,14 @@ export default function Analysis() {
   const [showGraph, setShowGraph] = useState(false);
   const [showTopics, setShowTopics] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
-
-  useEffect(() => {
-    fetchGainData();
-  }, []);
+  const [topics, setTopics] = useState<Topic[]>([]);
 
   const resetStateForNewUpload = () => {
     setShowGraph(false);
     setShowTopics(false);
     setUploadedFileName(null);
     setFile(null);
+    setTopics([]);
   };
 
   const fetchGainData = async () => {
@@ -60,12 +59,36 @@ export default function Analysis() {
 
       if (Object.keys(res.data).length > 0) {
         setGainData(res.data);
-        setUploadedFileName(Object.keys(res.data)[0]);
+        const filename = Object.keys(res.data)[0];
+        setUploadedFileName(filename);
+        await fetchTopics(); // ⬅ no filename passed
       }
     } catch (err) {
       console.error("Error fetching analysis:", err);
     } finally {
       setLoadingAnalysis(false);
+    }
+  };
+
+  const fetchTopics = async () => {
+    try {
+      const res = await API.get("/transcript/titles", {
+        responseType: "text",
+        withCredentials: true,
+      });
+
+      const lines = res.data.trim().split("\n").slice(1); // skip header
+      const rows: Topic[] = lines.map((line) => {
+        const [start, title] = line.split(",");
+        return {
+          start: start.trim(),
+          title: title.trim(),
+        };
+      });
+
+      setTopics(rows);
+    } catch (err) {
+      console.error("Error fetching topics:", err);
     }
   };
 
@@ -88,6 +111,7 @@ export default function Analysis() {
       });
 
       await fetchGainData();
+      await fetchTopics();
       alert(`Successfully analyzed "${file.name}"!`);
     } catch (err: any) {
       console.error("Upload or Analysis failed:", err);
@@ -127,7 +151,8 @@ export default function Analysis() {
   if (!isAuthenticated) return <Navigate to="/login" />;
 
   const fileName = uploadedFileName || Object.keys(gainData)[0];
-  const fileData = fileName ? gainData[fileName] : null;
+  const fileData: GainFile | null =
+    fileName && gainData[fileName] ? gainData[fileName] : null;
   const isAnalysisReady = !!fileData;
 
   return (
@@ -283,15 +308,18 @@ export default function Analysis() {
                     <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
                       <FileText size={22} /> Topics & Timestamps
                     </h3>
-                    <div className="bg-black/20 p-4 rounded-lg max-h-48 overflow-y-auto text-gray-300 text-sm leading-relaxed">
-                      <p className="font-bold text-teal-400 mb-2">
-                        [00:00–00:45] - Topic A
-                      </p>
-                      <p className="mb-4">Placeholder summary for Topic A.</p>
-                      <p className="font-bold text-teal-400 mb-2">
-                        [00:45–01:30] - Topic B
-                      </p>
-                      <p>Placeholder summary for Topic B.</p>
+                    <div className="bg-black/20 p-4 rounded-lg max-h-64 overflow-y-auto text-gray-300 text-sm leading-relaxed">
+                      {topics.length === 0 ? (
+                        <p className="text-gray-400 italic">No topics found.</p>
+                      ) : (
+                        topics.map((topic, idx) => (
+                          <div key={idx} className="mb-4">
+                            <p className="font-bold text-teal-400 mb-1">
+                              [{topic.start}] - {topic.title}
+                            </p>
+                          </div>
+                        ))
+                      )}
                     </div>
                   </div>
                 )}
