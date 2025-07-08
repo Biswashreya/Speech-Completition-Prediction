@@ -78,7 +78,7 @@ export default function Analysis() {
       });
 
       const lines = res.data.trim().split("\n").slice(1); // skip header
-      const rows: Topic[] = lines.map((line) => {
+      const rows: Topic[] = lines.map((line:any) => {
         const [start, title] = line.split(",");
         return {
           start: start.trim(),
@@ -230,15 +230,30 @@ export default function Analysis() {
                 <div>
                   <h4 className="font-semibold text-gray-300">Status</h4>
                   {isAnalysisReady ? (
-                    <p className="text-green-400 flex items-center gap-2">
-                      <CheckCircle size={18} /> Analysis ready for:{" "}
-                      <span className="font-bold">{fileName}</span>
-                    </p>
-                  ) : (
-                    <p className="text-amber-400 flex items-center gap-2">
-                      <Hourglass size={18} /> Waiting for file...
-                    </p>
-                  )}
+  <>
+    <p className="text-green-400 flex items-center gap-2">
+      <CheckCircle size={18} /> Analysis ready for:{" "}
+      <span className="font-bold">{fileName}</span>
+    </p>
+
+    {/* ✅ Speech Progress Percentage Bar (Dummy) */}
+    <div className="mt-4">
+      <p className="text-sm text-indigo-300 mb-1">
+        Transcript Completion: <span className="font-semibold">68%</span>
+      </p>
+      <div className="w-full bg-gray-700 rounded-full h-2.5">
+        <div
+          className="bg-indigo-400 h-2.5 rounded-full transition-all duration-300"
+          style={{ width: `68%` }}
+        ></div>
+      </div>
+    </div>
+  </>
+) : (
+  <p className="text-amber-400 flex items-center gap-2">
+    <Hourglass size={18} /> Waiting for file...
+  </p>
+)}
                 </div>
                 <div className="w-full bg-gray-700 rounded-full h-2.5">
                   <div
