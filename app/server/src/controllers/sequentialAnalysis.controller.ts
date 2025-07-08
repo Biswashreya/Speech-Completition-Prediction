@@ -7,7 +7,7 @@ export const initialPreprocessing = async (req: Request, res: Response) => {
   try {
     const inputCsv = path.join(
       __dirname,
-      "../../data/clustered_embeddings.csv"
+      "../../data/progress_added.csv"
     );
     const outputJSON = path.join(__dirname, "../../data/output_gain.json");
 
@@ -22,7 +22,7 @@ export const initialPreprocessing = async (req: Request, res: Response) => {
       "0.04",
     ];
 
-    console.log("Running python script");
+    console.log("Creating gain curve");
     const result = await runPython("gain-curve.py", args);
 
     console.log("Python result:", result);

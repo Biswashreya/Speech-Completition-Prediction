@@ -13,23 +13,30 @@ export const uploadTranscript = async (req: Request, res: Response) => {
     console.log("Uploaded file: ", req.file.filename);
 
     const inputCsv = path.join(__dirname, "../../data/transcript.csv");
-    const clusteredCsv = path.join(
-      __dirname,
-      "../../data/clustered_embeddings.csv"
-    );
+    const embeddedCsv = path.join(__dirname, "../../data/embeddings.csv");
+    // const clusteredCsv = path.join(
+    //   __dirname,
+    //   "../../data/clustered_embeddings.csv"
+    // );
     const finalCsv = path.join(__dirname, "../../data/progress_added.csv");
     const titleCsv = path.join(__dirname, "../../data/titles.csv");
 
     // Step 1: embed and cluster
-    const clusterArgs = ["--input", inputCsv, "--output", clusteredCsv];
-    console.log("Running embeddings + clustering script after upload...");
-    const clusterResult = await runPython("embed_and_cluster.py", clusterArgs);
-    console.log("Python cluster result:", clusterResult);
+    // const clusterArgs = ["--input", inputCsv, "--output", clusteredCsv];
+    // console.log("Running embeddings + clustering script after upload...");
+    // const clusterResult = await runPython("embed_and_cluster.py", clusterArgs);
+    const embedArgs = ["--input", inputCsv, "--output", embeddedCsv];
+    console.log("Running embeddings script after upload...");
+    const embedResult = await runPython("embed.py", embedArgs);
+    console.log("Python cluster result:", embedResult);
+
+    await fs.unlink(inputCsv);
+    console.log("Deleted transcript.csv after embedding");
 
     // Step 2: progress labels
     const labelArgs = [
       "--input",
-      clusteredCsv,
+      embeddedCsv,
       "--output",
       finalCsv,
       "--num_classes",
@@ -41,8 +48,11 @@ export const uploadTranscript = async (req: Request, res: Response) => {
     const labelResult = await runPython("progressbar.py", labelArgs);
     console.log("Python label result:", labelResult);
 
+    await fs.unlink(embeddedCsv);
+    console.log("Deleted embeddings.csv after labeling");
+
     // Step 3: generate titles
-    const titleArgs = ["--input", clusteredCsv, "--output", titleCsv];
+    const titleArgs = ["--input", finalCsv, "--output", titleCsv];
     console.log("Generating titles...");
     const titleResult = await runPython("generate-titles.py", titleArgs);
     console.log("Title generation result:", titleResult);
@@ -160,6 +170,8 @@ export const getTitlesCsv = async (req: Request, res: Response) => {
     res.type("text/csv").send(csvContent);
   } catch (e: any) {
     console.error("Error reading titles.csv:", e.message);
-    res.status(500).json({ message: "Failed to load titles", error: e.message });
+    res
+      .status(500)
+      .json({ message: "Failed to load titles", error: e.message });
   }
 };
