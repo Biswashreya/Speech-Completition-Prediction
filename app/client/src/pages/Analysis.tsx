@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import {
   FileUp,
@@ -78,7 +78,7 @@ export default function Analysis() {
       });
 
       const lines = res.data.trim().split("\n").slice(1); // skip header
-      const rows: Topic[] = lines.map((line) => {
+      const rows: Topic[] = lines.map((line:any) => {
         const [start, title] = line.split(",");
         return {
           start: start.trim(),
@@ -230,15 +230,36 @@ export default function Analysis() {
                 <div>
                   <h4 className="font-semibold text-gray-300">Status</h4>
                   {isAnalysisReady ? (
-                    <p className="text-green-400 flex items-center gap-2">
-                      <CheckCircle size={18} /> Analysis ready for:{" "}
-                      <span className="font-bold">{fileName}</span>
-                    </p>
-                  ) : (
-                    <p className="text-amber-400 flex items-center gap-2">
-                      <Hourglass size={18} /> Waiting for file...
-                    </p>
-                  )}
+  <>
+    <p className="text-green-400 flex items-center gap-2">
+      <CheckCircle size={18} /> Analysis ready for:{" "}
+      <span className="font-bold">{fileName}</span>
+    </p>
+
+    {/* ✅ Speech Progress Percentage Bar (Dummy) */}
+    <div className="mt-6">
+  <p className="text-sm text-indigo-300 mb-2">
+    Transcript Completion:
+  </p>
+  <div className="relative w-full bg-gray-800 rounded-full h-5 shadow-inner overflow-hidden">
+    <div
+      className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 transition-all duration-700"
+      style={{ width: `68%` }}
+    ></div>
+    <span
+      className="absolute right-2 top-1/2 transform -translate-y-1/2 text-xs font-bold text-white"
+      style={{ textShadow: "0 1px 2px rgba(0,0,0,0.6)" }}
+    >
+      68%
+    </span>
+  </div>
+</div>
+  </>
+) : (
+  <p className="text-amber-400 flex items-center gap-2">
+    <Hourglass size={18} /> Waiting for file...
+  </p>
+)}
                 </div>
                 <div className="w-full bg-gray-700 rounded-full h-2.5">
                   <div
