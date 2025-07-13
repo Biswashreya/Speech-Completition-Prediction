@@ -55,7 +55,7 @@ export const uploadTranscript = async (req: Request, res: Response) => {
     const titleArgs = ["--input", finalCsv, "--output", titleCsv];
     console.log("Generating titles...");
     const titleResult = await runPython("generate-titles.py", titleArgs);
-    console.log("Title generation result:", titleResult);
+    // console.log("Title generation result:", titleResult);
 
     res.status(200).json({
       message: "Upload + embeddings + labels + titles complete",
