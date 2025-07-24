@@ -61,6 +61,13 @@ export const uploadTranscript = async (req: Request, res: Response) => {
       message: "Upload + embeddings + labels + titles complete",
       filename: req.file.filename,
     });
+
+    // Step 4: predict final progress
+    const resultPath = path.join(__dirname, "../../data/final_result.txt");
+    const predictArgs = ["--input", finalCsv, "--output", resultPath];
+    console.log("Running final progress prediction...");
+    const predictResult = await runPython("predict_progress.py", predictArgs);
+    console.log("Final prediction result:", predictResult);
   } catch (e: any) {
     console.error("Upload error: ", e.message);
     res.status(500).json({ message: "Server error", details: e.message });
@@ -173,5 +180,20 @@ export const getTitlesCsv = async (req: Request, res: Response) => {
     res
       .status(500)
       .json({ message: "Failed to load titles", error: e.message });
+  }
+};
+
+// manual progress  prediction
+export const getPredictedProgress = async (req: Request, res: Response) => {
+  try {
+    const filePath = path.join(__dirname, "../../data/final_result.txt");
+    const raw = await fs.readFile(filePath, "utf-8");
+    const progress = parseFloat(raw);
+    res.status(200).json({ progress });
+  } catch (e: any) {
+    console.error("Error reading final_result.txt:", e.message);
+    res
+      .status(500)
+      .json({ message: "Failed to read progress result", error: e.message });
   }
 };
